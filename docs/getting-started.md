@@ -14,6 +14,33 @@ A ✅ marks a step you can do with **only free / open-source tools** (see
 
 ---
 
+## Step 0 — just cloned the repo? Paste this to orient your agent
+
+Open the `unreal-reels` folder in Cowork (or Claude Code / Cursor) and paste this. It tells the
+agent to read the repo's contract and pipeline, then check whether your keys are set — so it knows
+what's going on before you ask for anything:
+
+```text
+This is the Unreal Reels repo — a storyboard-first, audio-first pipeline for turning a
+script, song, or topic into a short video. Get oriented before we start:
+
+1. Read AGENTS.md and README.md to learn the operating contract and the beat_sheet.json schema.
+2. Skim scripts/ (the engine), aspects/ (songbird / bios / explainer), and docs/getting-started.md.
+3. Check which service keys are set in my environment (HIGGSFIELD, ELEVENLABS, FAL) without
+   printing their values — just tell me which are present and which are missing.
+4. List any existing projects in reels/ and tell me their status.
+
+Then summarize, in a few sentences, what this repo does and the phase-gated pipeline (beats →
+audio → references → storyboard → video → overlay). Finally, ask me which of the three aspects I
+want to make — a music video (Songbird), a mini-bio (Bios), or an explainer — and what about.
+Don't run any generation yet; wait for me to choose.
+```
+
+The agent will read itself in, report which paid services you're set up for, and stop and ask
+what you want to make. From there, follow the matching walkthrough below.
+
+---
+
 ## A) Music video — Songbird
 
 Most free-friendly: a lyric/audiogram video needs **no paid services** (you bring the track).

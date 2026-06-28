@@ -11,9 +11,11 @@
 #
 # Stills must be committed + pushed first, or the raw URLs won't resolve in MJ.
 #
-# Override the look per batch without editing the script:
+# Default look is neutral: "as a simple wooden mannequin --ar 16:9".
+# Replace STYLE with ANY style string (and FLAGS with any MJ flags / your own
+# --profile) per batch, without editing the script:
 #   STYLE="the style of Simon Stålenhag, digital art, sci-fi, chiaroscuro effect" \
-#   FLAGS="--ar 16:9 --profile k5fe8o3 tcmnom7 pdktj6x" \
+#   FLAGS="--ar 16:9 --profile <your-profile-id>" \
 #   ./midjourney_prompts.sh reels/little-red-cap-full
 #
 # Requires: jq.
@@ -29,8 +31,8 @@ REPO="${REPO:-nikbearbrown/unreal-reels}"
 BRANCH="${BRANCH:-main}"
 slug=$(basename "$FOLDER")
 BASE="https://raw.githubusercontent.com/$REPO/$BRANCH/reels/$slug/discord"
-STYLE="${STYLE:-the style of Simon Stålenhag, digital art, sci-fi, chiaroscuro effect}"
-FLAGS="${FLAGS:---ar 16:9 --profile k5fe8o3 tcmnom7 pdktj6x}"
+STYLE="${STYLE:-as a simple wooden mannequin}"
+FLAGS="${FLAGS:---ar 16:9}"
 
 OUT="$FOLDER/midjourney_prompts.txt"
 : > "$OUT"; n=0

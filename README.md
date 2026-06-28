@@ -98,7 +98,9 @@ aspects/     songbird · bios · explainer — each bundles its genre skill(s):
 skills/      shared/ — cross-cutting skills every aspect uses:
                media-router (which medium per beat) · pacing (how long should it be)
 examples/    one tiny starter input per aspect
-reels/       YOUR projects (git-ignored — never committed)
+reels/       YOUR projects — the reproducible DEFINITION is committed (beat_sheet.json,
+               source text, discord/ storyboard JPGs, midjourney_prompts.txt); the heavy
+               regenerable output (full-res stills, audio, video) stays local (git-ignored)
 ```
 
 ## License
