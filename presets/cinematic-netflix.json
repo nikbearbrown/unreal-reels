@@ -1,0 +1,17 @@
+{
+  "name": "cinematic-netflix",
+  "description": "Photoreal live-action film look — naturalistic, period-drama grade. The default for story/film and bios.",
+  "style_bible": {
+    "visual_style": "photoreal cinematic live-action, Netflix period-drama look, naturalistic",
+    "color_palette": "grounded natural tones, controlled contrast",
+    "lighting_style": "soft motivated light, natural shadow, no theatrical rim"
+  },
+  "generation": {
+    "model": "flux_2",
+    "flux_model": "pro",
+    "resolution": "2k",
+    "aspect_ratio": "16:9"
+  },
+  "negative": "Single cinematic film still, one continuous full-frame photographic image. No text, no captions, no speech bubbles, no lettering, no watermark. No split screen, no panels, no collage. Distinct separate subjects, not merged.",
+  "notes": "Identity comes from the reference library; the beat prompt carries action + composition. Keep look here, never per-beat."
+}

@@ -1,0 +1,18 @@
+# Unreal Reels — Python dependencies.   pip install -r requirements.txt
+
+# --- Core (always needed) ---
+requests          # ElevenLabs text-to-speech calls
+mutagen           # measure real audio durations (the master clock)
+
+# --- Optional: fal.ai (style LoRA training / alternate models) ---
+fal-client
+
+# --- Optional: Songbird music aspect (beat / onset analysis) ---
+# On Intel macOS install these via conda instead (llvmlite won't pip-build):
+#   conda create -n unreal -c conda-forge librosa soundfile numpy
+librosa
+soundfile
+numpy
+
+# --- Optional: forced alignment for lyric / caption timing ---
+faster-whisper

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Backstop: refuse to commit large files (media should already be in .gitignore).
+# Activate once per clone:  git config core.hooksPath .githooks
+# Bash 3.2-safe.
+
+LIMIT_MB=50
+LIMIT=$((LIMIT_MB * 1024 * 1024))
+big=""
+while IFS= read -r f; do
+  [ -f "$f" ] || continue
+  sz=$(wc -c < "$f" 2>/dev/null | tr -d ' ')
+  [ -z "$sz" ] && continue
+  if [ "$sz" -gt "$LIMIT" ]; then
+    big="${big}
+  $((sz / 1024 / 1024)) MB  $f"
+  fi
+done < <(git diff --cached --name-only --diff-filter=AM)
+
+if [ -n "$big" ]; then
+  echo "✗ commit blocked — staged file(s) over ${LIMIT_MB}MB:${big}"
+  echo ""
+  echo "These are almost certainly media that belongs in .gitignore."
+  echo "Unstage with:  git restore --staged <file>   (then add a rule to .gitignore)"
+  exit 1
+fi
+exit 0

@@ -1,0 +1,24 @@
+{
+  "name": "phone-grounded",
+  "description": "Found-footage realism — looks like an ordinary phone captured one impossible thing. The anti-spectacle look for 'unreal' reels.",
+  "style_bible": {
+    "visual_style": "ordinary smartphone footage, handheld, naturalistic, not a film production",
+    "color_palette": "flat, slightly desaturated, true-to-life",
+    "lighting_style": "flat overcast or fluorescent, boring/available light, no dramatic lighting"
+  },
+  "generation": {
+    "model": "flux_2",
+    "flux_model": "pro",
+    "resolution": "2k",
+    "aspect_ratio": "9:16"
+  },
+  "negative": "No text, no captions, no split screen, no panels. No cinematic grading, no golden hour, no studio lighting, no rim light.",
+  "grounding_rules": [
+    "One impossible thing per shot; everything else physically ordinary.",
+    "Anchor to a real, mundane, specific place; let the impossible intrude.",
+    "Phone-camera realism: slight overexposure, autofocus settling, mild compression; lightly stabilized, not wildly shaky.",
+    "Default all-in-focus; shallow depth only when a phone would synthesize it.",
+    "People react like bystanders who grabbed a phone, not film extras."
+  ],
+  "notes": "This is ONE preset, not the law. Don't apply phone-grounding to cinematic projects."
+}

@@ -1,0 +1,9 @@
+TITLE: Ada Lovelace
+
+In the 1840s, working from notes on Charles Babbage's never-built Analytical Engine, Ada
+Lovelace wrote what is often called the first computer program: a step-by-step method for the
+machine to compute Bernoulli numbers. But her real leap was conceptual. Where others saw a giant
+calculator, she saw that a machine able to manipulate symbols could, in principle, do far more
+than arithmetic — it might compose music or create art, if only the rules were written down. She
+glimpsed general-purpose computation a century before it existed. She died at thirty-six, her
+notes nearly forgotten, until the dawn of the computer age proved her right.
