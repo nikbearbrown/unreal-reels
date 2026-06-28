@@ -87,11 +87,17 @@ bash   scripts/generate_storyboard_flux.sh reels/my-film # FLUX storyboard from 
 ## Layout
 
 ```
-scripts/     the engine — segment, audio, references, storyboard, (video, overlay)
+scripts/     THE STORYBOARD ENGINE — segment, audio, references, FLUX storyboard, (video, overlay)
+SKILL.md     the engine as an agent skill (the core; the aspects below feed it)
 presets/     look presets (cinematic-netflix, phone-grounded, …) — one knob for the whole look
 docs/        getting-started · setup · services · open-source-vs-paid · pipeline · references
-aspects/     songbird / bios / explainer — the genre authors that feed the engine
-examples/    one tiny worked example per aspect
+aspects/     songbird · bios · explainer — each bundles its genre skill(s):
+               songbird/  → muzak, muzak-overlay     (music videos)
+               bios/      → mini-bio                  (mini-biographies)
+               explainer/ → bears-doodles, scout      (learning videos)
+skills/      shared/ — cross-cutting skills every aspect uses:
+               media-router (which medium per beat) · pacing (how long should it be)
+examples/    one tiny starter input per aspect
 reels/       YOUR projects (git-ignored — never committed)
 ```
 

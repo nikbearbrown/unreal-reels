@@ -51,6 +51,12 @@ echo "flux storyboard: $FOLDER  model=flux_2/$MODEL  aspect=$ASPECT  res=$RES  $
 
 for i in $(seq 0 $((n-1))); do
   bid=$(jq -r ".beats[$i].beat_id" "$SPEC"); want "$bid" || continue
+  # FILL_ONLY=1: skip any beat that already has at least one still (you curated to a
+  # keeper). Only fully-empty beats regenerate — so deleting bad variations won't
+  # trigger re-gen of the keeper's missing sibling.
+  if [ "${FILL_ONLY:-0}" = 1 ] && ls "$GEN/${bid}_v"*.png >/dev/null 2>&1; then
+    echo "=== $bid  — has a keeper, skip (FILL_ONLY) ==="; skip=$((skip+1)); continue
+  fi
   iprompt=$(jq -r ".beats[$i].image_prompt" "$SPEC")
   [ -z "$iprompt" ] && iprompt=$(jq -r ".beats[$i].narration_text" "$SPEC")
   prompt="$STYLE A single film still: $iprompt. $NEG"

@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BearsDoodlesBeatSheet",
+  "type": "object",
+  "required": ["metadata", "beats"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["slug", "title", "series", "voice_id", "accent_color", "forbidden_color", "text_font"],
+      "properties": {
+        "slug": { "type": "string", "description": "kebab-case; also the YouTube slug and folder name" },
+        "title": { "type": "string" },
+        "series": { "type": "string", "default": "Bears Doodles" },
+        "source": { "type": "string", "description": "chapter path or candidate the video is built from" },
+        "aspect_ratio": { "type": "string", "enum": ["16:9", "9:16"], "default": "16:9" },
+        "voice_id": { "type": "string", "default": "" },
+        "accent_color": { "type": "string", "default": "#5A5653" },
+        "forbidden_color": { "type": "string", "default": "#C0392B" },
+        "text_font": { "type": "string", "default": "Shadows Into Light" },
+        "thing": { "type": "string", "description": "the small object that represents the concept (Earth, sun, particle)" },
+        "total_estimated_duration_seconds": { "type": "number" }
+      }
+    },
+    "beats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["beat_id", "beat_type", "scene_index", "narration_text", "tts_normalized_text", "render", "approval_status"],
+        "properties": {
+          "beat_id": { "type": "string", "description": "INTRO, then A00, A01, ... sequential" },
+          "beat_type": { "type": "string", "enum": ["INTRO", "ACCUMULATE", "CUT", "HOLD", "ZOOM"] },
+          "scene_index": { "type": "integer" },
+          "render": { "type": "string", "enum": ["manim", "doodle", "none"], "description": "none = HOLD/INTRO with no new element to render" },
+          "narration_text": { "type": "string", "description": "display form, with symbols; used for captions" },
+          "tts_normalized_text": { "type": "string", "description": "spoken form; math symbols expanded" },
+          "accumulated_scene_state": { "type": "array", "items": { "type": "string" } },
+          "new_visual_element": { "type": "string" },
+          "start_frame_prompt": { "type": "string" },
+          "end_frame_prompt": { "type": "string" },
+          "video_animation_prompt": { "type": "string" },
+          "negative_prompt": { "type": "string" },
+          "tts_voice_settings": {
+            "type": "object",
+            "properties": {
+              "model_id": { "type": "string", "default": "eleven_multilingual_v2" },
+              "stability": { "type": "number", "default": 0.80 },
+              "similarity_boost": { "type": "number", "default": 0.75 },
+              "style": { "type": "number", "default": 0.00 },
+              "speed": { "type": "number", "default": 0.92 }
+            }
+          },
+          "audio_file": { "type": ["string", "null"] },
+          "actual_duration_s": { "type": ["number", "null"] },
+          "asset_uuid": { "type": ["string", "null"], "description": "persistent Higgsfield UUID for the approved frame" },
+          "video_file": { "type": ["string", "null"] },
+          "approval_status": { "type": "string", "enum": ["pending", "approved", "rejected"], "default": "pending" }
+        }
+      }
+    }
+  }
+}

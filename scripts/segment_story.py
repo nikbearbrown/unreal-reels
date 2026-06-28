@@ -23,7 +23,7 @@ Usage:
   python segment_story.py source.txt --meta-from ../little-red-cap/beat_sheet.json \\
       --slug little-red-cap-full --title "Little Red-Cap (full)" -o beat_sheet.json
 """
-import argparse, json, re, sys
+import argparse, json, os, re, sys
 from pathlib import Path
 
 SYNONYMS = {
@@ -96,7 +96,8 @@ def main():
     ap.add_argument("--meta-from", help="existing beat_sheet.json to lift metadata from")
     ap.add_argument("--slug", required=True)
     ap.add_argument("--title", required=True)
-    ap.add_argument("--voice", default="TyW6NH39JcFb5M3xdIIk")
+    ap.add_argument("--voice", default=os.getenv("ELEVENLABS_VOICE_ID", ""),
+                    help="ElevenLabs voice id (default: $ELEVENLABS_VOICE_ID; set your own)")
     ap.add_argument("--max-words", type=int, default=22)
     ap.add_argument("--min-words", type=int, default=7)
     ap.add_argument("-o", "--out", default="beat_sheet.json")
