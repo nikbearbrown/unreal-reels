@@ -66,9 +66,29 @@ git config core.hooksPath .githooks   # enable the >50MB commit guard
 # 2. point your agent at AGENTS.md and say what you want to make
 ```
 
-Then, in an agent session: *"Make a 60-second explainer of photosynthesis"* or
-*"Turn these lyrics into a music video."* The agent reads [`AGENTS.md`](AGENTS.md),
-segments the beats, and walks you through the gates.
+**Just opened the folder in an agent (Cowork / Claude Code / Cursor)?** Paste this first so it
+orients itself before you ask for anything:
+
+```text
+This is the Unreal Reels repo — a storyboard-first, audio-first pipeline for turning a
+script, song, or topic into a short video. Get oriented before we start:
+
+1. Read AGENTS.md and README.md to learn the operating contract and the beat_sheet.json schema.
+2. Skim scripts/ (the engine), aspects/ (songbird / bios / explainer), and docs/getting-started.md.
+3. Check which service keys are set in my environment (HIGGSFIELD, ELEVENLABS, FAL) without
+   printing their values — just tell me which are present and which are missing.
+4. List any existing projects in reels/ and tell me their status.
+
+Then summarize, in a few sentences, what this repo does and the phase-gated pipeline (beats →
+audio → references → storyboard → video → overlay). Finally, ask me which of the three aspects I
+want to make — a music video (Songbird), a mini-bio (Bios), or an explainer — and what about.
+Don't run any generation yet; wait for me to choose.
+```
+
+It reads itself in, reports which paid services you're set up for, and stops to ask what you want.
+Then just say it: *"Make a 60-second explainer of photosynthesis"* or *"Turn these lyrics into a
+music video."* The agent reads [`AGENTS.md`](AGENTS.md), segments the beats, and walks you through
+the gates.
 
 **New here?** [`docs/getting-started.md`](docs/getting-started.md) walks you through making one
 of each — a music video, a mini-bio, and an explainer. Not sure what's free vs. paid?
