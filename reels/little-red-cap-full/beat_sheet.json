@@ -1,0 +1,1616 @@
+{
+  "metadata": {
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "style_bible": {
+      "visual_style": "photoreal cinematic live-action fairy tale, Netflix period-drama look, naturalistic",
+      "color_palette": "cold forest greens and greys, the bright red cloak, warm candlelit cottage interior",
+      "lighting_style": "flat overcast winter daylight in the wood; warm low light inside the cottage"
+    },
+    "characters": [
+      {
+        "name": "Red Cap",
+        "driver": "soul",
+        "soul_id": "dc7b4aba-3da7-4373-9fe0-cc380f45bd4e",
+        "look": "young woman, dark braided hair, a red hooded cloak over a cream dress",
+        "reference_image": "/Users/nik/Documents/Cowork/Manim/Muzak/grimms/shots/red-riding-hood/female_red-riding_01.png",
+        "ref_key": "red"
+      },
+      {
+        "name": "Wolf",
+        "driver": "reference",
+        "reference_image": "/Users/nik/Documents/Cowork/Manim/Muzak/grimms/shots/red-riding-hood/bad-wolf.png",
+        "look": "a massive black wolf with pale ice-blue eyes and tan brow markings",
+        "ref_key": "wolf"
+      },
+      {
+        "name": "Grandmother",
+        "driver": "soul",
+        "soul_id": "dc7b4aba-3da7-4373-9fe0-cc380f45bd4e",
+        "look": "the Red Cap actress aged \u2014 silver hair, 60s, kindly lined face, nightdress and shawl",
+        "reference_image": "/Users/nik/Documents/Cowork/Manim/Muzak/grimms/shots/red-riding-hood/grandmother_red-riding_01.png",
+        "ref_key": "grandma"
+      },
+      {
+        "name": "Huntsman",
+        "driver": "soul",
+        "soul_id": "5c969ba3-1686-4440-b4b3-220056fdd351",
+        "look": "tall crossfit-built man, buzz cut, red-and-black plaid flannel, black beanie",
+        "reference_image": "/Users/nik/Documents/Cowork/Manim/Muzak/grimms/shots/red-riding-hood/male_liam-bear-brown_01.png",
+        "ref_key": "woodsman"
+      }
+    ],
+    "aspect_ratio": "16:9",
+    "style_preset": "cinematic",
+    "slug": "little-red-cap-full",
+    "title": "Little Red-Cap (full)",
+    "total_estimated_duration_seconds": 413.26,
+    "ref_prefix": "little-red-cap"
+  },
+  "beats": [
+    {
+      "beat_id": "B01",
+      "narration_text": "Once upon a time there was a dear little girl who was loved by everyone who looked at her, but most of all by her grandmother,",
+      "tts_normalized_text": "Once upon a time there was a dear little girl who was loved by everyone who looked at her, but most of all by her grandmother,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "a young girl in a red velvet hooded cloak in a sunlit cottage garden, smiling, beloved",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 6.45,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B02",
+      "narration_text": "and there was nothing that she would not have given to the child.",
+      "tts_normalized_text": "and there was nothing that she would not have given to the child.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl in her red cloak holding a small gift, warm affectionate cottage interior",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 3.24,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B03",
+      "narration_text": "Once she gave her a little cap of red velvet, which suited her so well that she would never wear anything else;",
+      "tts_normalized_text": "Once she gave her a little cap of red velvet, which suited her so well that she would never wear anything else;",
+      "scene_description": "",
+      "characters_present": [],
+      "camera": "pull_back",
+      "image_prompt": "close-up of a red velvet hooded cape resting on a worn wooden table, candlelight",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 5.8,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B04",
+      "narration_text": "so she was always called 'Little Red-Cap.",
+      "tts_normalized_text": "so she was always called 'Little Red-Cap.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "portrait of the girl wearing her red hooded cloak, hood up, soft daylight",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 2.32,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B05",
+      "narration_text": "One day her mother said to her: 'Come, Little Red-Cap, here is a piece of cake and a bottle of wine; take them to your grandmother,",
+      "tts_normalized_text": "One day her mother said to her: 'Come, Little Red-Cap, here is a piece of cake and a bottle of wine; take them to your grandmother,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "the girl taking a covered basket of cake and wine from her mother at a cottage doorway",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 7.24,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B06",
+      "narration_text": "she is ill and weak, and they will do her good.",
+      "tts_normalized_text": "she is ill and weak, and they will do her good.",
+      "scene_description": "",
+      "characters_present": [
+        "Grandmother"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "a frail old woman lying pale and ill in a dim cottage bed",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 2.59,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B07",
+      "narration_text": "Set out before it gets hot, and when you are going, walk nicely and quietly and do not run off the path,",
+      "tts_normalized_text": "Set out before it gets hot, and when you are going, walk nicely and quietly and do not run off the path,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the red-cloaked girl setting out along a forest path in soft morning light, basket in hand",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 6.71,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B08",
+      "narration_text": "or you may fall and break the bottle, and then your grandmother will get nothing; and when you go into her room, don't forget to say, \"Good morning\",",
+      "tts_normalized_text": "or you may fall and break the bottle, and then your grandmother will get nothing; and when you go into her room, don't forget to say, \"Good morning\",",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl carefully carrying a basket with a bottle of wine along a wooded path",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 8.8,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B09",
+      "narration_text": "and don't peep into every corner before you do it.",
+      "tts_normalized_text": "and don't peep into every corner before you do it.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "the girl walking quietly through the wood, glancing around, basket on her arm",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B09.mp3",
+      "actual_duration_s": 2.69,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B10",
+      "narration_text": "'I will take great care,' said Little Red-Cap to her mother, and gave her hand on it.",
+      "tts_normalized_text": "'I will take great care,' said Little Red-Cap to her mother, and gave her hand on it.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl giving her hand in promise to her mother at the cottage gate",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B10.mp3",
+      "actual_duration_s": 4.91,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B11",
+      "narration_text": "The grandmother lived out in the wood, half a league from the village, and just as Little Red-Cap entered the wood, a wolf met her.",
+      "tts_normalized_text": "The grandmother lived out in the wood, half a league from the village, and just as Little Red-Cap entered the wood, a wolf met her.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the girl entering a deep wood as a large dark wolf steps onto the path to meet her",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B11.mp3",
+      "actual_duration_s": 7.6,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B12",
+      "narration_text": "Red-Cap did not know what a wicked creature he was, and was not at all afraid of him. 'Good day, Little Red-Cap,' said he. 'Thank you kindly, wolf.",
+      "tts_normalized_text": "Red-Cap did not know what a wicked creature he was, and was not at all afraid of him. 'Good day, Little Red-Cap,' said he. 'Thank you kindly, wolf.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl unafraid speaking with the dark wolf on the forest path",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B12.mp3",
+      "actual_duration_s": 10.29,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B13",
+      "narration_text": "'Whither away so early, Little Red-Cap? 'To my grandmother's. 'What have you got in your apron?",
+      "tts_normalized_text": "'Whither away so early, Little Red-Cap? 'To my grandmother's. 'What have you got in your apron?",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "static",
+      "image_prompt": "the dark wolf walking beside the girl, eyeing her covered basket, dim wood",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B13.mp3",
+      "actual_duration_s": 5.28,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B14",
+      "narration_text": "'Cake and wine; yesterday was baking-day, so poor sick grandmother is to have something good, to make her stronger. 'Where does your grandmother live, Little Red-Cap?",
+      "tts_normalized_text": "'Cake and wine; yesterday was baking-day, so poor sick grandmother is to have something good, to make her stronger. 'Where does your grandmother live, Little Red-Cap?",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the wolf close beside the girl as she gestures deeper into the wood",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B14.mp3",
+      "actual_duration_s": 10.03,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B15",
+      "narration_text": "'A good quarter of a league farther on in the wood; her house stands under the three large oak-trees, the nut-trees are just below;",
+      "tts_normalized_text": "'A good quarter of a league farther on in the wood; her house stands under the three large oak-trees, the nut-trees are just below;",
+      "scene_description": "",
+      "characters_present": [],
+      "camera": "pull_back",
+      "image_prompt": "a small cottage standing under three large bare oak trees deep in a misty wood",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B15.mp3",
+      "actual_duration_s": 7.89,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B16",
+      "narration_text": "you surely must know it,' replied Little Red-Cap.",
+      "tts_normalized_text": "you surely must know it,' replied Little Red-Cap.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl pointing along the forest path, describing the way, dim wood",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B16.mp3",
+      "actual_duration_s": 3.19,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B17",
+      "narration_text": "The wolf thought to himself: 'What a tender young creature!",
+      "tts_normalized_text": "The wolf thought to himself: 'What a tender young creature!",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "static",
+      "image_prompt": "close on a dark wolf's cunning face, hungry eyes, shadowed wood",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B17.mp3",
+      "actual_duration_s": 3.58,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B18",
+      "narration_text": "what a nice plump mouthful--she will be better to eat than the old woman.",
+      "tts_normalized_text": "what a nice plump mouthful--she will be better to eat than the old woman.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the dark wolf licking its jaws, watching a small red-cloaked figure far down the path",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B18.mp3",
+      "actual_duration_s": 3.94,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B19",
+      "narration_text": "I must act craftily, so as to catch both.",
+      "tts_normalized_text": "I must act craftily, so as to catch both.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the dark wolf slinking off the path with a scheming look, dim forest",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B19.mp3",
+      "actual_duration_s": 2.4,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B20",
+      "narration_text": "So he walked for a short time by the side of Little Red-Cap, and then he said: 'See, Little Red-Cap,",
+      "tts_normalized_text": "So he walked for a short time by the side of Little Red-Cap, and then he said: 'See, Little Red-Cap,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the wolf walking close beside the girl, gesturing toward bright wildflowers",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B20.mp3",
+      "actual_duration_s": 5.88,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B21",
+      "narration_text": "how pretty the flowers are about here--why do you not look round?",
+      "tts_normalized_text": "how pretty the flowers are about here--why do you not look round?",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "the girl turning to look at bright wildflowers and sunbeams in the wood",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B21.mp3",
+      "actual_duration_s": 3.37,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B22",
+      "narration_text": "I believe, too, that you do not hear how sweetly the little birds are singing; you walk gravely along as if you were going to school,",
+      "tts_normalized_text": "I believe, too, that you do not hear how sweetly the little birds are singing; you walk gravely along as if you were going to school,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl walking gravely along the path while birds and light fill the trees",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B22.mp3",
+      "actual_duration_s": 7.18,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B23",
+      "narration_text": "while everything else out here in the wood is merry.",
+      "tts_normalized_text": "while everything else out here in the wood is merry.",
+      "scene_description": "",
+      "characters_present": [],
+      "camera": "pull_back",
+      "image_prompt": "a sunlit merry stretch of forest, wildflowers and dappled golden light",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B23.mp3",
+      "actual_duration_s": 2.74,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B24",
+      "narration_text": "Little Red-Cap raised her eyes, and when she saw the sunbeams dancing here and there through the trees, and pretty flowers growing everywhere, she thought:",
+      "tts_normalized_text": "Little Red-Cap raised her eyes, and when she saw the sunbeams dancing here and there through the trees, and pretty flowers growing everywhere, she thought:",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl lifting her eyes to sunbeams dancing through the trees, delighted, flowers everywhere",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B24.mp3",
+      "actual_duration_s": 8.86,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B25",
+      "narration_text": "'Suppose I take grandmother a fresh nosegay; that would please her too.",
+      "tts_normalized_text": "'Suppose I take grandmother a fresh nosegay; that would please her too.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "the girl gathering a fresh nosegay of wildflowers in the wood",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B25.mp3",
+      "actual_duration_s": 4.36,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B26",
+      "narration_text": "It is so early in the day that I shall still get there in good time';",
+      "tts_normalized_text": "It is so early in the day that I shall still get there in good time';",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl picking flowers in the bright early-day wood, unhurried",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B26.mp3",
+      "actual_duration_s": 3.71,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B27",
+      "narration_text": "and so she ran from the path into the wood to look for flowers.",
+      "tts_normalized_text": "and so she ran from the path into the wood to look for flowers.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the girl leaving the path, wandering in among the trees after flowers",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B27.mp3",
+      "actual_duration_s": 3.58,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B28",
+      "narration_text": "And whenever she had picked one, she fancied that she saw a still prettier one farther on, and ran after it,",
+      "tts_normalized_text": "And whenever she had picked one, she fancied that she saw a still prettier one farther on, and ran after it,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl reaching for ever-prettier flowers, drawn deeper among the trees",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B28.mp3",
+      "actual_duration_s": 6.22,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B29",
+      "narration_text": "and so got deeper and deeper into the wood.",
+      "tts_normalized_text": "and so got deeper and deeper into the wood.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "the small red-cloaked girl deep among tall dark trees, surrounded by wood",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B29.mp3",
+      "actual_duration_s": 2.22,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B30",
+      "narration_text": "Meanwhile the wolf ran straight to the grandmother's house and knocked at the door. 'Who is there? 'Little Red-Cap,' replied the wolf.",
+      "tts_normalized_text": "Meanwhile the wolf ran straight to the grandmother's house and knocked at the door. 'Who is there? 'Little Red-Cap,' replied the wolf.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the dark wolf reaching a cottage door and raising a paw to knock",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B30.mp3",
+      "actual_duration_s": 8.31,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B31",
+      "narration_text": "'She is bringing cake and wine; open the door.",
+      "tts_normalized_text": "'She is bringing cake and wine; open the door.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the wolf at the cottage door, head tilted, pretending innocence",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B31.mp3",
+      "actual_duration_s": 2.77,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B32",
+      "narration_text": "'Lift the latch,' called out the grandmother, 'I am too weak, and cannot get up.",
+      "tts_normalized_text": "'Lift the latch,' called out the grandmother, 'I am too weak, and cannot get up.",
+      "scene_description": "",
+      "characters_present": [
+        "Grandmother"
+      ],
+      "camera": "push_in",
+      "image_prompt": "a frail old woman in bed calling weakly toward the cottage door",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B32.mp3",
+      "actual_duration_s": 4.62,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B33",
+      "narration_text": "The wolf lifted the latch, the door sprang open, and without saying a word he went straight to the grandmother's bed, and devoured her.",
+      "tts_normalized_text": "The wolf lifted the latch, the door sprang open, and without saying a word he went straight to the grandmother's bed, and devoured her.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf",
+        "Grandmother"
+      ],
+      "camera": "static",
+      "image_prompt": "the dark wolf rushing toward an old woman's bed in a dim cottage",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B33.mp3",
+      "actual_duration_s": 7.78,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B34",
+      "narration_text": "Then he put on her clothes, dressed himself in her cap laid himself in bed and drew the curtains.",
+      "tts_normalized_text": "Then he put on her clothes, dressed himself in her cap laid himself in bed and drew the curtains.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "a wolf wearing an old woman's cap and nightgown climbing into bed, drawing the curtains",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B34.mp3",
+      "actual_duration_s": 5.15,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B35",
+      "narration_text": "Little Red-Cap, however, had been running about picking flowers, and when she had gathered so many that she could carry no more, she remembered her grandmother,",
+      "tts_normalized_text": "Little Red-Cap, however, had been running about picking flowers, and when she had gathered so many that she could carry no more, she remembered her grandmother,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the girl with an armful of flowers, remembering, pausing in the wood",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B35.mp3",
+      "actual_duration_s": 9.04,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B36",
+      "narration_text": "and set out on the way to her.",
+      "tts_normalized_text": "and set out on the way to her.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl setting off along the path toward the cottage, flowers in her arm",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B36.mp3",
+      "actual_duration_s": 1.7,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B37",
+      "narration_text": "She was surprised to find the cottage-door standing open, and when she went into the room, she had such a strange feeling that she said to herself:",
+      "tts_normalized_text": "She was surprised to find the cottage-door standing open, and when she went into the room, she had such a strange feeling that she said to herself:",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "the girl finding the cottage door standing open, an uneasy look in the dim doorway",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B37.mp3",
+      "actual_duration_s": 8.12,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B38",
+      "narration_text": "'Oh dear!",
+      "tts_normalized_text": "'Oh dear!",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl pausing uneasily just inside the dim cottage",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B38.mp3",
+      "actual_duration_s": 1.15,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B39",
+      "narration_text": "how uneasy I feel today, and at other times I like being with grandmother so much.",
+      "tts_normalized_text": "how uneasy I feel today, and at other times I like being with grandmother so much.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the girl standing uneasy in the dim cottage room, sensing something wrong",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B39.mp3",
+      "actual_duration_s": 4.6,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B40",
+      "narration_text": "She called out: 'Good morning,' but received no answer; so she went to the bed and drew back the curtains.",
+      "tts_normalized_text": "She called out: 'Good morning,' but received no answer; so she went to the bed and drew back the curtains.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl drawing back the bed curtains in the dim cottage",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B40.mp3",
+      "actual_duration_s": 6.22,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B41",
+      "narration_text": "There lay her grandmother with her cap pulled far over her face, and looking very strange. 'Oh!",
+      "tts_normalized_text": "There lay her grandmother with her cap pulled far over her face, and looking very strange. 'Oh!",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "static",
+      "image_prompt": "a wolf lying in a bed wearing a white linen nightcap pulled low, paws under the quilt, dim cottage, ominous",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B41.mp3",
+      "actual_duration_s": 6.45,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B42",
+      "narration_text": "grandmother,' she said, 'what big ears you have!",
+      "tts_normalized_text": "grandmother,' she said, 'what big ears you have!",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "close on a wolf in a white linen nightcap lying in bed, its large pointed ears showing under the cap, dim light",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B42.mp3",
+      "actual_duration_s": 3.16,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B43",
+      "narration_text": "'The better to hear you with, my child,' was the reply. 'But, grandmother, what big eyes you have! she said.",
+      "tts_normalized_text": "'The better to hear you with, my child,' was the reply. 'But, grandmother, what big eyes you have! she said.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "a wolf in a white linen nightcap lying in bed, wide yellow eyes fixed forward, dim cottage",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B43.mp3",
+      "actual_duration_s": 6.3,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B44",
+      "narration_text": "'The better to see you with, my dear. 'But, grandmother, what large hands you have! 'The better to hug you with. 'Oh!",
+      "tts_normalized_text": "'The better to see you with, my dear. 'But, grandmother, what large hands you have! 'The better to hug you with. 'Oh!",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "push_in",
+      "image_prompt": "a wolf in a white linen nightcap lying in bed, reaching out one large paw, menacing, dim light",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B44.mp3",
+      "actual_duration_s": 6.69,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B45",
+      "narration_text": "but, grandmother, what a terrible big mouth you have! 'The better to eat you with!",
+      "tts_normalized_text": "but, grandmother, what a terrible big mouth you have! 'The better to eat you with!",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "static",
+      "image_prompt": "a wolf in a white linen nightcap lying in bed, jaws open wide showing teeth, shadows deepening",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B45.mp3",
+      "actual_duration_s": 4.44,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B46",
+      "narration_text": "And scarcely had the wolf said this, than with one bound he was out of bed and swallowed up Red-Cap.",
+      "tts_normalized_text": "And scarcely had the wolf said this, than with one bound he was out of bed and swallowed up Red-Cap.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the wolf lunging up from the bed toward the girl, sudden motion, dim cottage",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B46.mp3",
+      "actual_duration_s": 5.8,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B47",
+      "narration_text": "When the wolf had appeased his appetite, he lay down again in the bed, fell asleep and began to snore very loud.",
+      "tts_normalized_text": "When the wolf had appeased his appetite, he lay down again in the bed, fell asleep and began to snore very loud.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "a sated wolf lying back in the bed, asleep, cap askew, mouth open snoring",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B47.mp3",
+      "actual_duration_s": 6.16,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B48",
+      "narration_text": "The huntsman was just passing the house, and thought to himself: 'How the old woman is snoring!",
+      "tts_normalized_text": "The huntsman was just passing the house, and thought to himself: 'How the old woman is snoring!",
+      "scene_description": "",
+      "characters_present": [
+        "Huntsman"
+      ],
+      "camera": "push_in",
+      "image_prompt": "a huntsman in a red-and-black plaid jacket and black beanie pausing outside a cottage, listening",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B48.mp3",
+      "actual_duration_s": 5.75,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B49",
+      "narration_text": "I must just see if she wants anything.",
+      "tts_normalized_text": "I must just see if she wants anything.",
+      "scene_description": "",
+      "characters_present": [
+        "Huntsman"
+      ],
+      "camera": "static",
+      "image_prompt": "the huntsman stepping toward the cottage door, concerned, axe at his side",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B49.mp3",
+      "actual_duration_s": 1.99,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B50",
+      "narration_text": "So he went into the room, and when he came to the bed, he saw that the wolf was lying in it.",
+      "tts_normalized_text": "So he went into the room, and when he came to the bed, he saw that the wolf was lying in it.",
+      "scene_description": "",
+      "characters_present": [
+        "Huntsman",
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the huntsman entering a dim bedroom to find a wolf sprawled in the bed",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B50.mp3",
+      "actual_duration_s": 5.25,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B51",
+      "narration_text": "'Do I find you here, you old sinner! said he. 'I have long sought you!",
+      "tts_normalized_text": "'Do I find you here, you old sinner! said he. 'I have long sought you!",
+      "scene_description": "",
+      "characters_present": [
+        "Huntsman"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the huntsman standing grimly over the sleeping wolf, recognizing an old foe",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B51.mp3",
+      "actual_duration_s": 4.13,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B52",
+      "narration_text": "Then just as he was going to fire at him, it occurred to him that the wolf might have devoured the grandmother,",
+      "tts_normalized_text": "Then just as he was going to fire at him, it occurred to him that the wolf might have devoured the grandmother,",
+      "scene_description": "",
+      "characters_present": [
+        "Huntsman"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the huntsman lowering his weapon, a sudden thought crossing his face, by the bed",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B52.mp3",
+      "actual_duration_s": 5.51,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B53",
+      "narration_text": "and that she might still be saved, so he did not fire, but took a pair of scissors,",
+      "tts_normalized_text": "and that she might still be saved, so he did not fire, but took a pair of scissors,",
+      "scene_description": "",
+      "characters_present": [
+        "Huntsman"
+      ],
+      "camera": "static",
+      "image_prompt": "the huntsman taking up a pair of shears beside the bed, the sleeping wolf nearby",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B53.mp3",
+      "actual_duration_s": 4.31,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B54",
+      "narration_text": "and began to cut open the stomach of the sleeping wolf.",
+      "tts_normalized_text": "and began to cut open the stomach of the sleeping wolf.",
+      "scene_description": "",
+      "characters_present": [
+        "Huntsman",
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the huntsman carefully cutting open the belly of the sleeping wolf",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B54.mp3",
+      "actual_duration_s": 2.93,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B55",
+      "narration_text": "When he had made two snips, he saw the little Red-Cap shining, and then he made two snips more, and the little girl sprang out, crying: 'Ah,",
+      "tts_normalized_text": "When he had made two snips, he saw the little Red-Cap shining, and then he made two snips more, and the little girl sprang out, crying: 'Ah,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the girl springing out into the dim room, relieved and frightened",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B55.mp3",
+      "actual_duration_s": 8.44,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B56",
+      "narration_text": "how frightened I have been!",
+      "tts_normalized_text": "how frightened I have been!",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl catching her breath, shaken, in the dim cottage",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B56.mp3",
+      "actual_duration_s": 1.52,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B57",
+      "narration_text": "How dark it was inside the wolf'; and after that the aged grandmother came out alive also, but scarcely able to breathe.",
+      "tts_normalized_text": "How dark it was inside the wolf'; and after that the aged grandmother came out alive also, but scarcely able to breathe.",
+      "scene_description": "",
+      "characters_present": [
+        "Grandmother"
+      ],
+      "camera": "static",
+      "image_prompt": "the aged grandmother emerging alive, weak and breathless, being helped up",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B57.mp3",
+      "actual_duration_s": 6.95,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B58",
+      "narration_text": "Red-Cap, however, quickly fetched great stones with which they filled the wolf's belly, and when he awoke, he wanted to run away,",
+      "tts_normalized_text": "Red-Cap, however, quickly fetched great stones with which they filled the wolf's belly, and when he awoke, he wanted to run away,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl carrying heavy stones to fill the sleeping wolf's belly",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B58.mp3",
+      "actual_duration_s": 7.24,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B59",
+      "narration_text": "but the stones were so heavy that he collapsed at once, and fell dead. Then all three were delighted.",
+      "tts_normalized_text": "but the stones were so heavy that he collapsed at once, and fell dead. Then all three were delighted.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "a wolf collapsed and dead on the cottage floor, heavy and still",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B59.mp3",
+      "actual_duration_s": 5.88,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B60",
+      "narration_text": "The huntsman drew off the wolf's skin and went home with it; the grandmother ate the cake and drank the wine which Red-Cap had brought, and revived,",
+      "tts_normalized_text": "The huntsman drew off the wolf's skin and went home with it; the grandmother ate the cake and drank the wine which Red-Cap had brought, and revived,",
+      "scene_description": "",
+      "characters_present": [
+        "Grandmother"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the grandmother revived, eating cake and drinking wine at a warm cottage table",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B60.mp3",
+      "actual_duration_s": 7.89,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B61",
+      "narration_text": "but Red-Cap thought to herself: 'As long as I live, I will never by myself leave the path, to run into the wood,",
+      "tts_normalized_text": "but Red-Cap thought to herself: 'As long as I live, I will never by myself leave the path, to run into the wood,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "the girl resolute, quietly vowing to herself, soft light",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B61.mp3",
+      "actual_duration_s": 7.29,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B62",
+      "narration_text": "when my mother has forbidden me to do so.",
+      "tts_normalized_text": "when my mother has forbidden me to do so.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl walking obediently along the forest path, the wood behind her",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B62.mp3",
+      "actual_duration_s": 2.32,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B63",
+      "narration_text": "It also related that once when Red-Cap was again taking cakes to the old grandmother, another wolf spoke to her, and tried to entice her from the path.",
+      "tts_normalized_text": "It also related that once when Red-Cap was again taking cakes to the old grandmother, another wolf spoke to her, and tried to entice her from the path.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "later, the girl with a basket of cakes as another wolf tries to lure her off the path",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B63.mp3",
+      "actual_duration_s": 8.31,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B64",
+      "narration_text": "Red-Cap, however, was on her guard, and went straight forward on her way, and told her grandmother that she had met the wolf,",
+      "tts_normalized_text": "Red-Cap, however, was on her guard, and went straight forward on her way, and told her grandmother that she had met the wolf,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl walking straight on past the wolf, resolute, toward the cottage",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B64.mp3",
+      "actual_duration_s": 6.69,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B65",
+      "narration_text": "and that he had said 'good morning' to her, but with such a wicked look in his eyes,",
+      "tts_normalized_text": "and that he had said 'good morning' to her, but with such a wicked look in his eyes,",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "static",
+      "image_prompt": "a wolf on a public road giving a false friendly look with wicked eyes",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B65.mp3",
+      "actual_duration_s": 4.6,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B66",
+      "narration_text": "that if they had not been on the public road she was certain he would have eaten her up.",
+      "tts_normalized_text": "that if they had not been on the public road she was certain he would have eaten her up.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl on a busy public road, wary, the wolf watching from the verge",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B66.mp3",
+      "actual_duration_s": 4.18,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B67",
+      "narration_text": "'Well,' said the grandmother, 'we will shut the door, that he may not come in.",
+      "tts_normalized_text": "'Well,' said the grandmother, 'we will shut the door, that he may not come in.",
+      "scene_description": "",
+      "characters_present": [
+        "Grandmother"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the grandmother bolting the cottage door, cautious",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B67.mp3",
+      "actual_duration_s": 4.73,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B68",
+      "narration_text": "Soon afterwards the wolf knocked, and cried: 'Open the door, grandmother, I am Little Red-Cap, and am bringing you some cakes.",
+      "tts_normalized_text": "Soon afterwards the wolf knocked, and cried: 'Open the door, grandmother, I am Little Red-Cap, and am bringing you some cakes.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "push_in",
+      "image_prompt": "a wolf at the cottage door, pretending, paw raised to knock",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B68.mp3",
+      "actual_duration_s": 7.18,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B69",
+      "narration_text": "But they did not speak, or open the door, so the grey-beard stole twice or thrice round the house, and at last jumped on the roof,",
+      "tts_normalized_text": "But they did not speak, or open the door, so the grey-beard stole twice or thrice round the house, and at last jumped on the roof,",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "static",
+      "image_prompt": "a grey wolf creeping around the house and leaping up onto the cottage roof",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B69.mp3",
+      "actual_duration_s": 8.12,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B70",
+      "narration_text": "intending to wait until Red-Cap went home in the evening, and then to steal after her and devour her in the darkness.",
+      "tts_normalized_text": "intending to wait until Red-Cap went home in the evening, and then to steal after her and devour her in the darkness.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the wolf crouched on the cottage roof, waiting in the gathering dark",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B70.mp3",
+      "actual_duration_s": 6.22,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B71",
+      "narration_text": "But the grandmother saw what was in his thoughts.",
+      "tts_normalized_text": "But the grandmother saw what was in his thoughts.",
+      "scene_description": "",
+      "characters_present": [
+        "Grandmother"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the grandmother inside the cottage, looking up knowingly, sensing the danger",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B71.mp3",
+      "actual_duration_s": 2.53,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B72",
+      "narration_text": "In front of the house was a great stone trough, so she said to the child: 'Take the pail, Red-Cap; I made some sausages yesterday,",
+      "tts_normalized_text": "In front of the house was a great stone trough, so she said to the child: 'Take the pail, Red-Cap; I made some sausages yesterday,",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the girl taking a pail beside a great stone trough in front of the house",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B72.mp3",
+      "actual_duration_s": 7.76,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B73",
+      "narration_text": "so carry the water in which I boiled them to the trough.",
+      "tts_normalized_text": "so carry the water in which I boiled them to the trough.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "the girl carrying steaming water to the great stone trough",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B73.mp3",
+      "actual_duration_s": 2.95,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B74",
+      "narration_text": "Red-Cap carried until the great trough was quite full.",
+      "tts_normalized_text": "Red-Cap carried until the great trough was quite full.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl filling the great stone trough to the brim, steam rising",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B74.mp3",
+      "actual_duration_s": 3.16,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B75",
+      "narration_text": "Then the smell of the sausages reached the wolf, and he sniffed and peeped down,",
+      "tts_normalized_text": "Then the smell of the sausages reached the wolf, and he sniffed and peeped down,",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "the wolf on the roof sniffing and peering down toward the trough, tempted",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B75.mp3",
+      "actual_duration_s": 4.13,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B76",
+      "narration_text": "and at last stretched out his neck so far that he could no longer keep his footing and began to slip,",
+      "tts_normalized_text": "and at last stretched out his neck so far that he could no longer keep his footing and began to slip,",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the wolf stretching its neck far over the roof edge, losing its footing",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B76.mp3",
+      "actual_duration_s": 5.38,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B77",
+      "narration_text": "and slipped down from the roof straight into the great trough, and was drowned.",
+      "tts_normalized_text": "and slipped down from the roof straight into the great trough, and was drowned.",
+      "scene_description": "",
+      "characters_present": [
+        "Wolf"
+      ],
+      "camera": "static",
+      "image_prompt": "a wolf slipping from a cottage roof and falling into a great water trough",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B77.mp3",
+      "actual_duration_s": 4.13,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B78",
+      "narration_text": "But Red-Cap went joyously home, and no one ever did anything to harm her again.",
+      "tts_normalized_text": "But Red-Cap went joyously home, and no one ever did anything to harm her again.",
+      "scene_description": "",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "the girl walking joyously home along a bright forest path, safe at last",
+      "video_prompt": "",
+      "audio_file": "mp3/beat-B78.mp3",
+      "actual_duration_s": 4.26,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    }
+  ]
+}

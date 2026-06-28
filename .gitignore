@@ -1,14 +1,25 @@
 # ----------------------------------------------------------------------------
-# Private content & generated media (never commit)
-# (NOTE: git .gitignore does NOT support inline comments — keep patterns bare)
+# REELS: commit the reproducible DEFINITION so others can re-render or adapt —
+#   beat_sheet.json, source text, and the curated character REFERENCE images.
+# Exclude the heavy, regenerable OUTPUT — rendered video, narration audio,
+#   storyboard stills, and reference candidates (the rejects).
+# (git .gitignore does NOT support inline comments — keep patterns bare.)
 # ----------------------------------------------------------------------------
-reels/
-characters/
-**/references/
-**/candidates/
+
+# Regenerable / heavy output dirs (anywhere)
+# stills/ = full-res PNG working masters (local only); the small committed JPGs
+# live in each reel's discord/ folder (export_discord.sh).
 **/stills/
-**/mp3/
 **/out/
+**/mp3/
+**/candidates/
+
+# Old stray local dir (root only)
+/characters/
+
+# ----------------------------------------------------------------------------
+# Rendered / heavy media by extension (never commit)
+# ----------------------------------------------------------------------------
 *.wav
 *.mp3
 *.m4a
@@ -20,14 +31,6 @@ characters/
 *.mkv
 *.webm
 *.avi
-*.png
-*.jpg
-*.jpeg
-*.webp
-*.gif
-*.tiff
-*.bmp
-*.psd
 *.safetensors
 *.ckpt
 *.bin
@@ -35,7 +38,14 @@ characters/
 *.tar
 *.gz
 
-# Un-ignore small docs / example images if ever needed:
+# Images: PNG is the large local working master (FLUX/SoulID 2K output) — do NOT commit.
+# JPG is the committed repo format (stills + references, converted from PNG; ~20x smaller).
+*.png
+*.gif
+*.tiff
+*.bmp
+*.psd
+# (*.jpg / *.jpeg / *.webp are NOT ignored — they commit)
 !docs/**/*.png
 !examples/**/*.png
 
@@ -62,14 +72,10 @@ __pycache__/
 venv/
 
 # ----------------------------------------------------------------------------
-# OS / editor
+# OS / editor / packaged skills
 # ----------------------------------------------------------------------------
 .DS_Store
 *.swp
 .idea/
 .vscode/
-
-# ----------------------------------------------------------------------------
-# Packaged skills
-# ----------------------------------------------------------------------------
 *.skill
