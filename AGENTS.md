@@ -97,6 +97,21 @@ This pipeline calls **Higgsfield** (SoulID, FLUX.2, image-to-video), **ElevenLab
 optionally **fal.ai** (LoRA/style). If a key is missing, tell the user exactly which service
 and link `docs/services.md` — never invent a workaround, never commit a key.
 
+## Handing off commands
+
+Whenever you give the user a command to run, make it **copy-paste-ready with
+absolute full paths**, in its own code block — never a bare `npm run …` or a
+relative path the user has to resolve. Always `cd` into the exact directory first,
+e.g.:
+
+```
+cd "/Users/<user>/Documents/Cowork/unreal-reels/lectures/<slug>/remotion" && npm run studio
+```
+
+One command per block; if there are multiple steps, number them and give each its
+own block. (Heavy/credit steps still run on the user's machine — hand off the
+command, don't claim you produced the output.)
+
 ## What never to do
 
 - Never put narration/dialogue text into an image prompt.

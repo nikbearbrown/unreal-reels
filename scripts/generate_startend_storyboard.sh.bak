@@ -1,0 +1,96 @@
+#!/usr/bin/env bash
+# generate_startend_storyboard.sh — FLUX storyboard frames for a MIXED dance reel.
+# Per beat, branches on beat.video_model:
+#   kling        -> a START frame and an END frame (Kling tweens between them)
+#   seedance_2_0 -> a single START frame (Seedance animates it with the audio slice)
+# Frames go to stills/story/<beat>_start.png (+ _end.png for kling) and are recorded
+# as beat.storyboard_start / beat.storyboard_end. FLUX at 1k is unlimited on most plans
+# (RES=1k default); a storyboard still is re-rendered by the video model anyway.
+#
+# Usage:
+#   ./generate_startend_storyboard.sh <reel_folder>            # all beats
+#   ./generate_startend_storyboard.sh <reel_folder> B01 B02    # specific beats
+#   DRY_RUN=1 ...  FILL_ONLY=1 ...  MODEL_ID=flux_2  RES=1k  ASPECT=16:9
+set -uo pipefail
+FOLDER="${1:?usage: generate_startend_storyboard.sh <reel_folder> [BEAT_ID...]}"; shift || true
+SPEC="$FOLDER/beat_sheet.json"
+[ -f "$SPEC" ] || { echo "no beat_sheet.json in $FOLDER" >&2; exit 1; }
+for t in jq curl; do command -v "$t" >/dev/null || { echo "missing: $t" >&2; exit 1; }; done
+
+DRY_RUN="${DRY_RUN:-0}"; MODEL_ID="${MODEL_ID:-flux_2}"; RES="${RES:-1k}"; FLUX_MODEL="${FLUX_MODEL:-pro}"
+ASPECT="${ASPECT:-$(jq -r '.metadata.aspect_ratio // "16:9"' "$SPEC")}"
+MAX_RETRIES="${MAX_RETRIES:-4}"; RETRY_BASE="${RETRY_BASE:-20}"; THROTTLE="${THROTTLE:-2}"
+OUT="$FOLDER/stills/story"; mkdir -p "$OUT"
+if [ "$DRY_RUN" != 1 ]; then
+  command -v higgsfield >/dev/null || { echo "missing: higgsfield (or DRY_RUN=1)" >&2; exit 1; }
+  higgsfield account status >/dev/null 2>&1 || { echo "higgsfield not authenticated" >&2; exit 1; }
+fi
+abspath(){ case "$1" in /*) printf '%s' "$1";; *) printf '%s/%s' "$FOLDER" "$1";; esac; }
+CHAR=$(jq -r '.metadata.character // "the character"' "$SPEC")
+BG=$(jq -r '.metadata.background // "a plain backdrop"' "$SPEC")
+STYLE=$(jq -r '.metadata.style_suffix // ""' "$SPEC")
+NEG="One character, full body, centered. No text, no captions, no watermark, no split screen, no panels, no collage, no black bars."
+declare -a PICK=("$@")
+want(){ [ ${#PICK[@]} -eq 0 ] && return 0; for x in "${PICK[@]}"; do [ "$x" = "$1" ] && return 0; done; return 1; }
+
+# gen <prompt> <input_image> <out.png> ; returns 0 on success
+gen(){
+  local prompt="$1" img="$2" out="$3"
+  local args=(generate create "$MODEL_ID" --aspect_ratio "$ASPECT" --resolution "$RES" --prompt "$prompt" --image "$img")
+  [ "$MODEL_ID" = "flux_2" ] && args+=(--model "$FLUX_MODEL")
+  args+=(--wait --json)
+  if [ "$DRY_RUN" = 1 ]; then printf '    -> %s\n      higgsfield' "$out"; printf ' %q' "${args[@]}"; echo; return 0; fi
+  local attempt=1 resp url
+  while [ "$attempt" -le "$MAX_RETRIES" ]; do
+    resp=$(higgsfield "${args[@]}" 2>&1)
+    url=$(printf '%s' "$resp" | jq -r '.[].result_url // empty' 2>/dev/null | head -1)
+    if [ -n "$url" ] && curl -fsSL "$url" -o "$out"; then echo "    -> $out"; rm -f "${out%.png}.err"; return 0; fi
+    printf '%s' "$resp" > "${out%.png}.err"
+    if printf '%s' "$resp" | grep -qiE "rate|429|busy|timeout|temporarily|try again|concurrent|503|502"; then
+      local w=$((RETRY_BASE*attempt)); echo "    transient — wait ${w}s ($attempt/$MAX_RETRIES)"; sleep "$w"
+    else echo "    FAILED: $(printf '%s' "$resp" | tail -1 | cut -c1-120)"; return 1; fi
+    attempt=$((attempt+1))
+  done; return 1
+}
+
+ok=0; skip=0; fail=0
+n=$(jq '.beats | length' "$SPEC")
+echo "start/end storyboard: $FOLDER  $MODEL_ID $ASPECT $RES -> stills/story/$([ "$DRY_RUN" = 1 ] && echo '  (DRY_RUN)')"
+for i in $(seq 0 $((n-1))); do
+  bid=$(jq -r ".beats[$i].beat_id" "$SPEC"); want "$bid" || continue
+  model=$(jq -r ".beats[$i].video_model // \"kling\"" "$SPEC")
+  startf="$OUT/${bid}_start.png"; endf="$OUT/${bid}_end.png"
+  if [ "${FILL_ONLY:-0}" = 1 ]; then
+    if [ "$model" = "kling" ]; then [ -e "$startf" ] && [ -e "$endf" ] && { echo "=== $bid done, skip ==="; skip=$((skip+1)); continue; }
+    else [ -e "$startf" ] && { echo "=== $bid done, skip ==="; skip=$((skip+1)); continue; }; fi
+  fi
+  src=$(abspath "$(jq -r ".beats[$i].chosen_still" "$SPEC")")
+  [ -f "$src" ] || { echo "=== $bid src still missing: $src ==="; fail=$((fail+1)); continue; }
+  move=$(jq -r ".beats[$i].dance_move // \"a dance pose\"" "$SPEC")
+  echo; echo "=== $bid  [$model]  src=$(basename "$src") ==="
+  ps="$CHAR, at the START of $move, full body, centered, wide $ASPECT framing. $BG. $STYLE. $NEG"
+  echo "  start:"; gen "$ps" "$src" "$startf" && ok=$((ok+1)) || fail=$((fail+1)); sleep "$THROTTLE"
+  if [ "$model" = "kling" ]; then
+    base="$startf"; [ "$DRY_RUN" = 1 ] && base="$src"
+    pe="$CHAR, at the END of $move, the resolved end position, full body, centered, wide $ASPECT, SAME framing, lighting and background as the reference image. $BG. $STYLE. $NEG"
+    echo "  end:"; gen "$pe" "$base" "$endf" && ok=$((ok+1)) || fail=$((fail+1)); sleep "$THROTTLE"
+  fi
+done
+
+if [ "$DRY_RUN" != 1 ]; then
+  python3 - "$SPEC" "$FOLDER" <<'PY'
+import json, os, sys
+spec, folder = sys.argv[1], sys.argv[2]
+d = json.load(open(spec))
+for b in d["beats"]:
+    s = f"stills/story/{b['beat_id']}_start.png"
+    e = f"stills/story/{b['beat_id']}_end.png"
+    if os.path.exists(os.path.join(folder, s)): b["storyboard_start"] = s
+    if b.get("video_model","kling") == "kling" and os.path.exists(os.path.join(folder, e)): b["storyboard_end"] = e
+json.dump(d, open(spec, "w"), ensure_ascii=False, indent=2)
+print("recorded storyboard frames | starts:", sum(1 for b in d['beats'] if b.get('storyboard_start')),
+      "ends:", sum(1 for b in d['beats'] if b.get('storyboard_end')))
+PY
+fi
+echo; echo "done — $ok frames, $fail failed, $skip skipped."
+exit 0

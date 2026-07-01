@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "fps": 30,
+  "lines": [
+    {
+      "index": 0,
+      "text": "On Sesame Street,where the cookies crumble,",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 3,
+      "endFrame": 109
+    },
+    {
+      "index": 1,
+      "text": "Cookie Monster sings,his voice a humble",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 112,
+      "endFrame": 232
+    },
+    {
+      "index": 2,
+      "text": "Five-note wonder,a simple song,",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 235,
+      "endFrame": 356
+    },
+    {
+      "index": 3,
+      "text": "Where cookies and melodies belong.",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 359,
+      "endFrame": 472
+    },
+    {
+      "index": 4,
+      "text": "\"C is for cookie,\" that's good enough for me,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 475,
+      "endFrame": 595
+    },
+    {
+      "index": 5,
+      "text": "Five little notes in a cookie melody.",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 598,
+      "endFrame": 718
+    },
+    {
+      "index": 6,
+      "text": "A monster's voice,deep and true,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 721,
+      "endFrame": 841
+    },
+    {
+      "index": 7,
+      "text": "Singing the blues,'bout cookies too.",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 844,
+      "endFrame": 950
+    },
+    {
+      "index": 8,
+      "text": "No ballads here,just crunchy treats,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 953,
+      "endFrame": 1073
+    },
+    {
+      "index": 9,
+      "text": "On the stage,he feels the beats.",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1076,
+      "endFrame": 1197
+    },
+    {
+      "index": 10,
+      "text": "Grover might join,a duet they'd try,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1200,
+      "endFrame": 1319
+    },
+    {
+      "index": 11,
+      "text": "Sounds like a cookie-filled battle cry.",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1322,
+      "endFrame": 1428
+    },
+    {
+      "index": 12,
+      "text": "Bill Sherman laughs,says it's quite a show,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1431,
+      "endFrame": 1551
+    },
+    {
+      "index": 13,
+      "text": "With growls and gargles,the tunes they flow.",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1554,
+      "endFrame": 1674
+    },
+    {
+      "index": 14,
+      "text": "\"Arrggh\" they sing,not always on key,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1677,
+      "endFrame": 1783
+    },
+    {
+      "index": 15,
+      "text": "But in Cookie's world,it's perfect harmony.",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1786,
+      "endFrame": 1906
+    },
+    {
+      "index": 16,
+      "text": "\"C is for cookie,\" that's good enough for me,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1909,
+      "endFrame": 2029
+    },
+    {
+      "index": 17,
+      "text": "Five little notes in a cookie melody.",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 2032,
+      "endFrame": 2152
+    },
+    {
+      "index": 18,
+      "text": "A monster's voice,deep and true,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 2155,
+      "endFrame": 2266
+    },
+    {
+      "index": 19,
+      "text": "Singing the blues,'bout cookies too.",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2269,
+      "endFrame": 2391
+    },
+    {
+      "index": 20,
+      "text": "So if you wander down Sesame Street,",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2394,
+      "endFrame": 2514
+    },
+    {
+      "index": 21,
+      "text": "And a singing monster you happen to meet.",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2517,
+      "endFrame": 2630
+    },
+    {
+      "index": 22,
+      "text": "Remember it's Cookie,with his charming range,",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2633,
+      "endFrame": 2740
+    },
+    {
+      "index": 23,
+      "text": "Five notes of joy,and none would change.",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2743,
+      "endFrame": 2862
+    },
+    {
+      "index": 24,
+      "text": "\"C is for cookie,\" that's good enough for me,",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2865,
+      "endFrame": 2985
+    },
+    {
+      "index": 25,
+      "text": "Five little notes in a cookie melody.",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2988,
+      "endFrame": 3094
+    },
+    {
+      "index": 26,
+      "text": "A monster's voice,deep and true,",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3097,
+      "endFrame": 3217
+    },
+    {
+      "index": 27,
+      "text": "Singing the blues,'bout cookies too.",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3220,
+      "endFrame": 3340
+    },
+    {
+      "index": 28,
+      "text": "Bill Sherman laughs,says it's quite a show,",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3343,
+      "endFrame": 3463
+    },
+    {
+      "index": 29,
+      "text": "With growls and gargles,the tunes they flow.",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3466,
+      "endFrame": 3573
+    },
+    {
+      "index": 30,
+      "text": "\"Arrggh\" they sing,not always on key,",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3576,
+      "endFrame": 3695
+    },
+    {
+      "index": 31,
+      "text": "But in Cookie's world,it's perfect harmony.",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3698,
+      "endFrame": 3819
+    },
+    {
+      "index": 32,
+      "text": "\"C is for cookie,\" that's good enough for me,",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3822,
+      "endFrame": 3941
+    },
+    {
+      "index": 33,
+      "text": "Five little notes in a cookie melody.",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3944,
+      "endFrame": 4051
+    },
+    {
+      "index": 34,
+      "text": "A monster's voice,deep and true,",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 4054,
+      "endFrame": 4173
+    },
+    {
+      "index": 35,
+      "text": "Singing the blues,'bout cookies too.",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 4176,
+      "endFrame": 4296
+    },
+    {
+      "index": 36,
+      "text": "So if you wander down Sesame Street,",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 4299,
+      "endFrame": 4405
+    },
+    {
+      "index": 37,
+      "text": "And a singing monster you happen to meet.",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4408,
+      "endFrame": 4528
+    },
+    {
+      "index": 38,
+      "text": "Remember it's Cookie,with his charming range,",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4531,
+      "endFrame": 4652
+    },
+    {
+      "index": 39,
+      "text": "Five notes of joy,and none would change.",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4655,
+      "endFrame": 4774
+    },
+    {
+      "index": 40,
+      "text": "\"C is for cookie,\" that's good enough for me,",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4777,
+      "endFrame": 4883
+    },
+    {
+      "index": 41,
+      "text": "Five little notes in a cookie melody.",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4886,
+      "endFrame": 5007
+    },
+    {
+      "index": 42,
+      "text": "A monster's voice,deep and true,",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 5010,
+      "endFrame": 5130
+    },
+    {
+      "index": 43,
+      "text": "Singing the blues,'bout cookies too.",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 5133,
+      "endFrame": 5246
+    }
+  ],
+  "density": {
+    "words_per_second": 1.61,
+    "density_class": "moderate",
+    "avg_line_length": 6.4,
+    "line_count": 44,
+    "word_count": 282
+  },
+  "title": "C is for Cookie"
+}

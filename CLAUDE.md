@@ -23,6 +23,9 @@ it. Everything below is Claude-/Claude-Code-specific.
   **cannot** run them. Build/validate the command, then hand it to the user to execute.
 - Heavy steps (Remotion render, video generation) are local and slow — hand off the command,
   don't claim you produced the output.
+- **Always hand off commands copy-paste-ready with absolute full paths** (`cd "/Users/.../unreal-reels/…" && …`),
+  one command per code block, steps numbered — never a bare or relative command. See
+  AGENTS.md → "Handing off commands."
 
 ## Secrets & private content
 

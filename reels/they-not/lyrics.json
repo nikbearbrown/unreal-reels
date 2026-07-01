@@ -1,0 +1,398 @@
+{
+  "version": 1,
+  "fps": 30,
+  "lines": [
+    {
+      "index": 0,
+      "text": "They dance in suits, I walk in fire",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 2,
+      "endFrame": 93
+    },
+    {
+      "index": 1,
+      "text": "They sell the wind, I hold the wire",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 96,
+      "endFrame": 191
+    },
+    {
+      "index": 2,
+      "text": "They go flip flop, wig wag, zig zag",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 194,
+      "endFrame": 290
+    },
+    {
+      "index": 3,
+      "text": "Shake hands, then bail with the bag",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 293,
+      "endFrame": 400
+    },
+    {
+      "index": 4,
+      "text": "They go flip flop, wig wag, zig zag",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 403,
+      "endFrame": 499
+    },
+    {
+      "index": 5,
+      "text": "One vote, two lies, same tag",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 502,
+      "endFrame": 596
+    },
+    {
+      "index": 6,
+      "text": "One day peace, next day war",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 599,
+      "endFrame": 694
+    },
+    {
+      "index": 7,
+      "text": "One side less, one side more",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 697,
+      "endFrame": 805
+    },
+    {
+      "index": 8,
+      "text": "They swap their face for every poll",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 808,
+      "endFrame": 904
+    },
+    {
+      "index": 9,
+      "text": "But I still speak with one soul",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 907,
+      "endFrame": 1003
+    },
+    {
+      "index": 10,
+      "text": "They not, they not",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1006,
+      "endFrame": 1102
+    },
+    {
+      "index": 11,
+      "text": "I are, I are",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1105,
+      "endFrame": 1213
+    },
+    {
+      "index": 12,
+      "text": "They spin, they spin",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1216,
+      "endFrame": 1311
+    },
+    {
+      "index": 13,
+      "text": "I scar, I scar",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1314,
+      "endFrame": 1410
+    },
+    {
+      "index": 14,
+      "text": "They float, they float",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 1413,
+      "endFrame": 1520
+    },
+    {
+      "index": 15,
+      "text": "I ground, I ground",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 1523,
+      "endFrame": 1620
+    },
+    {
+      "index": 16,
+      "text": "They talk, they talk",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 1623,
+      "endFrame": 1713
+    },
+    {
+      "index": 17,
+      "text": "I sound, I sound",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 1716,
+      "endFrame": 1812
+    },
+    {
+      "index": 18,
+      "text": "They shake the truth like dice in a cup",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 1815,
+      "endFrame": 1921
+    },
+    {
+      "index": 19,
+      "text": "Smile big, then drink blood from the cup",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 1924,
+      "endFrame": 2020
+    },
+    {
+      "index": 20,
+      "text": "They remix laws, redact the blame",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2023,
+      "endFrame": 2123
+    },
+    {
+      "index": 21,
+      "text": "I stay the same when they change names",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2126,
+      "endFrame": 2222
+    },
+    {
+      "index": 22,
+      "text": "They sign away what I protect",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2225,
+      "endFrame": 2333
+    },
+    {
+      "index": 23,
+      "text": "Say unity with disrespect",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2336,
+      "endFrame": 2432
+    },
+    {
+      "index": 24,
+      "text": "But I was raised by calloused hands",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2435,
+      "endFrame": 2530
+    },
+    {
+      "index": 25,
+      "text": "That built this song \u2014 not shifting sands",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2533,
+      "endFrame": 2640
+    },
+    {
+      "index": 26,
+      "text": "They go flip flop, wig wag, zig zag",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2643,
+      "endFrame": 2739
+    },
+    {
+      "index": 27,
+      "text": "Chasing clouds in a plastic flag",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2742,
+      "endFrame": 2837
+    },
+    {
+      "index": 28,
+      "text": "They go flip flop, wig wag, zig zag",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2840,
+      "endFrame": 2935
+    },
+    {
+      "index": 29,
+      "text": "One face cracks, another they drag",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2938,
+      "endFrame": 3047
+    },
+    {
+      "index": 30,
+      "text": "They wear crowns that melt in rain",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3050,
+      "endFrame": 3146
+    },
+    {
+      "index": 31,
+      "text": "They preach justice, then profit from pain",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3149,
+      "endFrame": 3243
+    },
+    {
+      "index": 32,
+      "text": "But I\u2014",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3246,
+      "endFrame": 3341
+    },
+    {
+      "index": 33,
+      "text": "I walk no aisle but my own",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3344,
+      "endFrame": 3453
+    },
+    {
+      "index": 34,
+      "text": "My spine don't bend for throne or stone",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3456,
+      "endFrame": 3555
+    },
+    {
+      "index": 35,
+      "text": "They not, they not",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3558,
+      "endFrame": 3656
+    },
+    {
+      "index": 36,
+      "text": "I are, I are",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3659,
+      "endFrame": 3767
+    },
+    {
+      "index": 37,
+      "text": "They sink, they sink",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3770,
+      "endFrame": 3865
+    },
+    {
+      "index": 38,
+      "text": "I star, I star",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3868,
+      "endFrame": 3965
+    },
+    {
+      "index": 39,
+      "text": "They flip, they flip",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3968,
+      "endFrame": 4065
+    },
+    {
+      "index": 40,
+      "text": "I stand, I stand",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 4068,
+      "endFrame": 4175
+    },
+    {
+      "index": 41,
+      "text": "They run, they run",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 4178,
+      "endFrame": 4276
+    },
+    {
+      "index": 42,
+      "text": "I land, I land",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4279,
+      "endFrame": 4377
+    },
+    {
+      "index": 43,
+      "text": "Let them zig and zag",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4380,
+      "endFrame": 4474
+    },
+    {
+      "index": 44,
+      "text": "I'll blaze the path",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4477,
+      "endFrame": 4585
+    },
+    {
+      "index": 45,
+      "text": "They not",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4588,
+      "endFrame": 4684
+    },
+    {
+      "index": 46,
+      "text": "I are",
+      "section": "section_8",
+      "tag": null,
+      "startFrame": 4687,
+      "endFrame": 4783
+    },
+    {
+      "index": 47,
+      "text": "And that is math",
+      "section": "section_8",
+      "tag": null,
+      "startFrame": 4786,
+      "endFrame": 4882
+    }
+  ],
+  "density": {
+    "words_per_second": 1.64,
+    "density_class": "moderate",
+    "avg_line_length": 5.6,
+    "line_count": 48,
+    "word_count": 267
+  },
+  "title": "They Not / I Are"
+}

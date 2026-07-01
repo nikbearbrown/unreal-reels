@@ -1,0 +1,582 @@
+{
+  "version": 1,
+  "fps": 30,
+  "lines": [
+    {
+      "index": 0,
+      "text": "Five little speckled frogs",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 4,
+      "endFrame": 74
+    },
+    {
+      "index": 1,
+      "text": "Sat on a speckled log",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 77,
+      "endFrame": 147
+    },
+    {
+      "index": 2,
+      "text": "Eating some most delicious bugs",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 150,
+      "endFrame": 221
+    },
+    {
+      "index": 3,
+      "text": "Yum yum!",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 224,
+      "endFrame": 294
+    },
+    {
+      "index": 4,
+      "text": "One jumped into the pool",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 297,
+      "endFrame": 369
+    },
+    {
+      "index": 5,
+      "text": "Where it was nice and cool",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 372,
+      "endFrame": 462
+    },
+    {
+      "index": 6,
+      "text": "Then there were four green speckled frogs",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 465,
+      "endFrame": 535
+    },
+    {
+      "index": 7,
+      "text": "Glug glug!",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 538,
+      "endFrame": 609
+    },
+    {
+      "index": 8,
+      "text": "Four little speckled frogs",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 612,
+      "endFrame": 685
+    },
+    {
+      "index": 9,
+      "text": "Sat on a speckled log",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 688,
+      "endFrame": 758
+    },
+    {
+      "index": 10,
+      "text": "Eating some most delicious bugs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 761,
+      "endFrame": 832
+    },
+    {
+      "index": 11,
+      "text": "Yum yum!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 835,
+      "endFrame": 924
+    },
+    {
+      "index": 12,
+      "text": "One jumped into the pool",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 927,
+      "endFrame": 998
+    },
+    {
+      "index": 13,
+      "text": "Where it was nice and cool",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1001,
+      "endFrame": 1072
+    },
+    {
+      "index": 14,
+      "text": "Then there were three green speckled frogs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1075,
+      "endFrame": 1146
+    },
+    {
+      "index": 15,
+      "text": "Glug glug!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1149,
+      "endFrame": 1220
+    },
+    {
+      "index": 16,
+      "text": "Three little speckled frogs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1223,
+      "endFrame": 1293
+    },
+    {
+      "index": 17,
+      "text": "Sat on a speckled log",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1296,
+      "endFrame": 1385
+    },
+    {
+      "index": 18,
+      "text": "Eating some most delicious bugs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1388,
+      "endFrame": 1458
+    },
+    {
+      "index": 19,
+      "text": "Yum yum!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1461,
+      "endFrame": 1532
+    },
+    {
+      "index": 20,
+      "text": "One jumped into the pool",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1535,
+      "endFrame": 1605
+    },
+    {
+      "index": 21,
+      "text": "Where it was nice and cool",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1608,
+      "endFrame": 1679
+    },
+    {
+      "index": 22,
+      "text": "Then there were two green speckled frogs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1682,
+      "endFrame": 1753
+    },
+    {
+      "index": 23,
+      "text": "Glug glug!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1756,
+      "endFrame": 1845
+    },
+    {
+      "index": 24,
+      "text": "Two little speckled frogs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1848,
+      "endFrame": 1919
+    },
+    {
+      "index": 25,
+      "text": "Sat on a speckled log",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1922,
+      "endFrame": 1993
+    },
+    {
+      "index": 26,
+      "text": "Eating some most delicious bugs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 1996,
+      "endFrame": 2062
+    },
+    {
+      "index": 27,
+      "text": "Yum yum!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2065,
+      "endFrame": 2140
+    },
+    {
+      "index": 28,
+      "text": "One jumped into the pool",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2143,
+      "endFrame": 2214
+    },
+    {
+      "index": 29,
+      "text": "Where it was nice and cool",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2217,
+      "endFrame": 2306
+    },
+    {
+      "index": 30,
+      "text": "Then there was one green speckled frog",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2309,
+      "endFrame": 2380
+    },
+    {
+      "index": 31,
+      "text": "Glug glug!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2383,
+      "endFrame": 2453
+    },
+    {
+      "index": 32,
+      "text": "One little speckled frog",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2456,
+      "endFrame": 2527
+    },
+    {
+      "index": 33,
+      "text": "Sat on a speckled log",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2530,
+      "endFrame": 2602
+    },
+    {
+      "index": 34,
+      "text": "Eating some most delicious bugs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2605,
+      "endFrame": 2675
+    },
+    {
+      "index": 35,
+      "text": "Yum yum!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2678,
+      "endFrame": 2767
+    },
+    {
+      "index": 36,
+      "text": "He jumped into the pool",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2770,
+      "endFrame": 2841
+    },
+    {
+      "index": 37,
+      "text": "Where it was nice and cool",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2844,
+      "endFrame": 2914
+    },
+    {
+      "index": 38,
+      "text": "Then there were no green speckled frogs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2917,
+      "endFrame": 2988
+    },
+    {
+      "index": 39,
+      "text": "Glug glug!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2991,
+      "endFrame": 3061
+    },
+    {
+      "index": 40,
+      "text": "Oh no more speckled frogs",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3064,
+      "endFrame": 3135
+    },
+    {
+      "index": 41,
+      "text": "Not one on the log",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3138,
+      "endFrame": 3227
+    },
+    {
+      "index": 42,
+      "text": "No more frogs to sing this song",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3230,
+      "endFrame": 3300
+    },
+    {
+      "index": 43,
+      "text": "All gone!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3303,
+      "endFrame": 3373
+    },
+    {
+      "index": 44,
+      "text": "Each one took a dive",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3376,
+      "endFrame": 3447
+    },
+    {
+      "index": 45,
+      "text": "And they're swimming feeling alive",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3450,
+      "endFrame": 3521
+    },
+    {
+      "index": 46,
+      "text": "Down in the pool oh how they thrive!",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3524,
+      "endFrame": 3594
+    },
+    {
+      "index": 47,
+      "text": "Splish splash!",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3597,
+      "endFrame": 3686
+    },
+    {
+      "index": 48,
+      "text": "The pool is full of frogs",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3689,
+      "endFrame": 3759
+    },
+    {
+      "index": 49,
+      "text": "No more on the logs",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3762,
+      "endFrame": 3833
+    },
+    {
+      "index": 50,
+      "text": "They're happy in the water now",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3836,
+      "endFrame": 3906
+    },
+    {
+      "index": 51,
+      "text": "Where they belong!",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3909,
+      "endFrame": 3980
+    },
+    {
+      "index": 52,
+      "text": "They croak a joyful tune",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3983,
+      "endFrame": 4053
+    },
+    {
+      "index": 53,
+      "text": "Beneath the shining moon",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4056,
+      "endFrame": 4147
+    },
+    {
+      "index": 54,
+      "text": "Singing together with a happy swoon!",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4150,
+      "endFrame": 4220
+    },
+    {
+      "index": 55,
+      "text": "Ribbit ribbit!",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4223,
+      "endFrame": 4293
+    },
+    {
+      "index": 56,
+      "text": "Yum yum!",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4296,
+      "endFrame": 4367
+    },
+    {
+      "index": 57,
+      "text": "Ribbit ribbit!",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4370,
+      "endFrame": 4441
+    },
+    {
+      "index": 58,
+      "text": "Yum yum! Bugs in the air",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4444,
+      "endFrame": 4514
+    },
+    {
+      "index": 59,
+      "text": "Snapping snacks without a care",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4517,
+      "endFrame": 4606
+    },
+    {
+      "index": 60,
+      "text": "Glug glug! A bellyful treat",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4609,
+      "endFrame": 4681
+    },
+    {
+      "index": 61,
+      "text": "Swimming 'round with sticky feet!",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4684,
+      "endFrame": 4754
+    },
+    {
+      "index": 62,
+      "text": "Splish splash! They leap and play",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4757,
+      "endFrame": 4828
+    },
+    {
+      "index": 63,
+      "text": "Ribbit ribbit! Night and day!",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4831,
+      "endFrame": 4902
+    },
+    {
+      "index": 64,
+      "text": "Yum yum! Glug glug!",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4905,
+      "endFrame": 4976
+    },
+    {
+      "index": 65,
+      "text": "They hop and hug",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4979,
+      "endFrame": 5068
+    },
+    {
+      "index": 66,
+      "text": "Splish splash! In the bubbly bath",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 5071,
+      "endFrame": 5141
+    },
+    {
+      "index": 67,
+      "text": "Ribbit ribbit! Hear them laugh!",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 5144,
+      "endFrame": 5215
+    },
+    {
+      "index": 68,
+      "text": "No more logs just poolside cheer",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 5218,
+      "endFrame": 5289
+    },
+    {
+      "index": 69,
+      "text": "Froggies singing loud and clear:",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 5292,
+      "endFrame": 5363
+    },
+    {
+      "index": 70,
+      "text": "Yum yum! Glug glug! Splish splash! Yum yum! Ribbit ribbit!",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 5366,
+      "endFrame": 5439
+    }
+  ],
+  "density": {
+    "words_per_second": 1.83,
+    "density_class": "moderate",
+    "avg_line_length": 4.7,
+    "line_count": 71,
+    "word_count": 332
+  },
+  "title": "Five Little Speckled Frogs"
+}

@@ -1,0 +1,238 @@
+{
+  "version": 1,
+  "fps": 30,
+  "lines": [
+    {
+      "index": 0,
+      "text": "Late one night behind the wall",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 6,
+      "endFrame": 170
+    },
+    {
+      "index": 1,
+      "text": "Little mice held a midnight call",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 173,
+      "endFrame": 347
+    },
+    {
+      "index": 2,
+      "text": "Said that cat's got claws and a silent tread",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 350,
+      "endFrame": 521
+    },
+    {
+      "index": 3,
+      "text": "One more scare and I might drop dead",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 524,
+      "endFrame": 691
+    },
+    {
+      "index": 4,
+      "text": "Brown back grumbled ain't no peace",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 694,
+      "endFrame": 857
+    },
+    {
+      "index": 5,
+      "text": "I dive for crumbs and lose my fleece",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 860,
+      "endFrame": 1035
+    },
+    {
+      "index": 6,
+      "text": "She's a ghost with fangs and golden eyes",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1038,
+      "endFrame": 1212
+    },
+    {
+      "index": 7,
+      "text": "We gotta act before one more dies",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1215,
+      "endFrame": 1388
+    },
+    {
+      "index": 8,
+      "text": "Gray ear said let's bite and run",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1391,
+      "endFrame": 1556
+    },
+    {
+      "index": 9,
+      "text": "A hundred squeaks and she'll be done",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1559,
+      "endFrame": 1734
+    },
+    {
+      "index": 10,
+      "text": "But white whisker said I've got a plan",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1737,
+      "endFrame": 1911
+    },
+    {
+      "index": 11,
+      "text": "We'll hang a bell on that devil if we can",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1914,
+      "endFrame": 2089
+    },
+    {
+      "index": 12,
+      "text": "Ding a ling they all cried loud",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 2092,
+      "endFrame": 2251
+    },
+    {
+      "index": 13,
+      "text": "Freedom's ringin sang the crowd",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 2254,
+      "endFrame": 2430
+    },
+    {
+      "index": 14,
+      "text": "We'll hear her jingle we'll dance with glee",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 2433,
+      "endFrame": 2602
+    },
+    {
+      "index": 15,
+      "text": "She'll never again sneak up on me",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 2605,
+      "endFrame": 2776
+    },
+    {
+      "index": 16,
+      "text": "But brown back hushed the rebel cheer",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2779,
+      "endFrame": 2939
+    },
+    {
+      "index": 17,
+      "text": "With a voice like truth and a touch of fear",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 2942,
+      "endFrame": 3110
+    },
+    {
+      "index": 18,
+      "text": "That bell won't ring itself my friend",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3113,
+      "endFrame": 3291
+    },
+    {
+      "index": 19,
+      "text": "Who's gonna tie it round her end",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3294,
+      "endFrame": 3470
+    },
+    {
+      "index": 20,
+      "text": "White whisker coughed well not my gig",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 3473,
+      "endFrame": 3635
+    },
+    {
+      "index": 21,
+      "text": "I got a limp and a twisted twig",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 3638,
+      "endFrame": 3811
+    },
+    {
+      "index": 22,
+      "text": "Gray ear said that ain't my track",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 3814,
+      "endFrame": 3990
+    },
+    {
+      "index": 23,
+      "text": "Since I near got snapped I don't go back",
+      "section": "section_8",
+      "tag": null,
+      "startFrame": 3993,
+      "endFrame": 4169
+    },
+    {
+      "index": 24,
+      "text": "So one by one they slunk to bed",
+      "section": "section_8",
+      "tag": null,
+      "startFrame": 4172,
+      "endFrame": 4335
+    },
+    {
+      "index": 25,
+      "text": "No bell was hung no word was said",
+      "section": "section_8",
+      "tag": null,
+      "startFrame": 4338,
+      "endFrame": 4512
+    },
+    {
+      "index": 26,
+      "text": "You can preach and plan and talk real flat",
+      "section": "section_8",
+      "tag": null,
+      "startFrame": 4515,
+      "endFrame": 4689
+    },
+    {
+      "index": 27,
+      "text": "But baby someone's gotta bell that cat",
+      "section": "section_8",
+      "tag": null,
+      "startFrame": 4692,
+      "endFrame": 4852
+    }
+  ],
+  "density": {
+    "words_per_second": 1.3,
+    "density_class": "sparse",
+    "avg_line_length": 7.5,
+    "line_count": 28,
+    "word_count": 211
+  },
+  "title": "Who\u2019s Gonna Bell That Cat"
+}
