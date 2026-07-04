@@ -131,7 +131,7 @@ newsprint-ground renders at beat duration:
 `manim -qh --fps 24 vox_graphics.py <Scene> -o <beat>.mp4`. Counts are claims
 — `viz.note` records what to verify before render.
 
-## The equation tangent (doctrine: `brutalist/EQUATIONS.md`)
+## The equation tangent (rule owner: `aspects/explainer/brownblue/reference/equations.md`; lecture rendering: `brutalist/EQUATIONS.md`)
 
 When an equation appears, the film takes a short tangent — the five-zone
 template from `brutalist/EQUATIONS.md`, translated into Vox language. A
@@ -145,6 +145,14 @@ only ("…and that's demographic parity. Back to …").
   shares one `viz.tangent` block (the EQUATIONS.md authoring schema, plus
   `equation_tex` for real typesetting) and each beat names its `viz.zone`
   and optional `viz.spotlight` symbol.
+- Zone 5 is the claim the equation COMMITS you to: a contestable value
+  judgment for value-laden equations, the physical commitment for physics
+  ("energy comes only in these steps"). Optional only for pure bookkeeping;
+  simple equations may merge it into zone 2's sign-as-claim (the owner's
+  merge rule), but the commitment must be spoken somewhere in the bracket.
+- The bracket's narration ends with a re-entry cue handing back to the main
+  argument — or the immediately following beat's opening line does that work
+  explicitly.
 - Translation table: one-red-moving → **crimson spotlight** (the symbol being
   named turns crimson in equation + glossary row + example value at once);
   pink values box → **terracotta-tinted panel**; white mechanics → newsprint
