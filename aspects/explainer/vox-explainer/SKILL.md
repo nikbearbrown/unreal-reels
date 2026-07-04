@@ -145,6 +145,31 @@ only ("…and that's demographic parity. Back to …").
 - Word-keyed spotlight advancement (crimson moving with the narration line)
   upgrades automatically when the Remotion assembly stage lands; until then
   each beat sets one static spotlight.
+- If the equation's author gets a "Who was X?" kicker (below), the tangent
+  stays on the math — the kicker owns the person. Never teach either twice.
+
+## The "Who was X?" kicker (bio tangent — RELEVANCE-GATED)
+
+Most explainers do NOT get one. Include it ONLY when the person is
+load-bearing — their idea is the film's turn, not a passing citation. If the
+film merely uses an equation, the credits line suffices. When it earns its
+place:
+
+- **Placement: the kicker.** After the argument resolves, usually the
+  penultimate or final beat — never interrupting the argument mid-film.
+  (Fixture: the UV catastrophe reel's A12 Planck portrait beat.)
+- **Size: 1–2 beats.** A face, a name, dates, and ONE human line that
+  reframes the film just watched ("He thought it was a mathematical trick.
+  It was quantum mechanics."). A life story is a different film — hand it
+  to `aspects/bios/voxbio`.
+- **Division of labor, never twice:** the equation tangent teaches the MATH;
+  the bio kicker teaches the PERSON; the mini-bio/voxbio teaches the LIFE.
+  If a mini-bio of X exists and covers the equation, the explainer's kicker
+  skips the equation entirely and may end by pointing at the bio ("the
+  Planck film"). Conversely a mini-bio never re-runs the explainer's tangent.
+- **Form:** STILL — real archive portrait (provenance sidecar mandatory,
+  real-people rule) + serif name with hairline underline + dates + the one
+  line. No isotype, no chart, no second idea on screen.
 
 ## Workflow (each gate is the user's)
 
