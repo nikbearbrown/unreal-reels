@@ -30,10 +30,12 @@ def chart_axes(xlabel="frequency", ylabel="brightness"):
         Line([PX0, PY0, 0], [PX1, PY0, 0], color=INK, stroke_width=2.5),
         Line([PX0, PY0, 0], [PX0, PY1, 0], color=INK, stroke_width=2.5),
     )
-    xl = Text(xlabel, font=SERIF, color=INK, font_size=20)
-    xl.next_to(ax[0], DOWN, buff=0.2).align_to(ax[0], RIGHT)
-    yl = Text(ylabel, font=SERIF, color=INK, font_size=20)
-    yl.rotate(PI / 2).next_to(ax[1], LEFT, buff=0.18).align_to(ax[1], UP)
+    # portrait: labels sit INSIDE the safe area — x-label under the axis
+    # pulled off the right edge, y-label horizontal above the axis top
+    xl = Text(xlabel, font=SERIF, color=INK, font_size=18)
+    xl.next_to(ax[0], DOWN, buff=0.18).align_to(ax[0], RIGHT).shift(LEFT * 0.25)
+    yl = Text(ylabel, font=SERIF, color=INK, font_size=18)
+    yl.next_to([PX0, PY1, 0], UP, buff=0.15).align_to(ax[1], LEFT)
     return VGroup(ax, xl, yl)
 
 
