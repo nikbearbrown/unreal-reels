@@ -213,9 +213,13 @@ class GlossaryTable(VGroup):
             for cell, x in zip(row, col_x):
                 cell.move_to(RIGHT * x, aligned_edge=LEFT)
         table.arrange(DOWN, aligned_edge=LEFT, buff=0.42)
+        spans = [col_x[i + 1] - col_x[i] - 0.35 for i in range(len(col_x) - 1)]
+        spans.append(3.4)                       # last column's budget
         for row in table:                       # re-pin columns after arrange
             y = row.get_center()[1]
-            for cell, x in zip(row, col_x):
+            for cell, x, span in zip(row, col_x, spans):
+                if cell.width > span:           # never bleed into the next column
+                    cell.scale_to_fit_width(span)
                 cell.move_to(RIGHT * x + UP * y, aligned_edge=LEFT)
         rule = Line(ORIGIN, RIGHT * (col_x[-1] + 1.6), stroke_width=1.6, color=BLUE)
         rule.next_to(table[0], DOWN, buff=0.14, aligned_edge=LEFT)
