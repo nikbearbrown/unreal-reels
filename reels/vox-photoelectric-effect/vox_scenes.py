@@ -23,13 +23,15 @@ def smooth_curve(fn, x0, x1, color, width=5, n=90):
 
 
 def hand_strike(m, color=TERRA):
-    """The editor's pen: a slightly wobbly strike through a mobject."""
+    """The editor's pen: a slightly wobbly strike through a mobject.
+    Declared _qc_intentional — striking text is the point, not a collision."""
     l, r = m.get_corner(DL), m.get_corner(UR)
     v = VMobject(color=color, stroke_width=6)
     pts = [np.array([l[0] - 0.15 + t * (r[0] - l[0] + 0.3),
                      l[1] + t * (r[1] - l[1]) + 0.06 * np.sin(9 * t), 0.0])
            for t in np.linspace(0, 1, 24)]
     v.set_points_smoothly(pts)
+    v._qc_intentional = True
     return v
 
 
@@ -103,7 +105,7 @@ class B05_MoreNotFaster(Scene):    # ~9.5s — more electrons, same energy
 class B07_WavesCant(Scene):        # ~10s — classical expectations, struck
     def construct(self):
         lb = SerifLabel("what waves would do", CRIMSON, size=30)
-        lb.to_edge(UP, buff=0.55)
+        lb.to_edge(UP, buff=0.75)             # inside the ±3.4 safe area
         rows = VGroup(
             Text("any color works, given time", font=SERIF, color=INK, font_size=32),
             Text("brighter means faster electrons", font=SERIF, color=INK, font_size=32),

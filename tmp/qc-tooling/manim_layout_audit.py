@@ -130,8 +130,12 @@ def _collect_texts(mob, out):
 def _collect_strokes(mob, out, cap):
     """Flatten every visible stroked (non-text) leaf VMobject into world-space
     line segments — curves, axes, connectors, rung lines. Text glyphs are skipped
-    (they are labels, not strokes)."""
+    (they are labels, not strokes). A mobject may declare itself an INTENTIONAL
+    annotation (strike-through, editor's ring) via `mob._qc_intentional = True`
+    — that subtree is exempt from TEXT_ON_CURVE; everything else still audits."""
     if len(out) >= cap:
+        return
+    if getattr(mob, "_qc_intentional", False):
         return
     if isinstance(mob, TEXT_TYPES):
         return

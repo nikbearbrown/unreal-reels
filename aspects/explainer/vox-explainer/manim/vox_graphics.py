@@ -130,6 +130,7 @@ class HandRing(VMobject):
                              np.sin(a) * h * (1 + wobble * np.cos(2 * a)), 0])
                for a in np.linspace(0.3, TAU + 0.55, 60)]
         self.set_points_smoothly(pts)
+        self._qc_intentional = True    # the editor's pen touches text on purpose
 
 
 # ------------------------------------- equation tangent (brutalist/EQUATIONS.md)
