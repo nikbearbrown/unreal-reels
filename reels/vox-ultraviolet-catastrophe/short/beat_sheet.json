@@ -19,14 +19,15 @@
   "supersedes": "reels/vox-the-ultraviolet-catastrophe (conversion test)",
   "notes": "Fresh build. GRAPHIC ~53% of beats accepted deliberately (chart arc = evidence section; MOTION.md short-form corollary).",
   "total_estimated_duration_seconds": 173.99,
-  "fit": "pad",
+  "playlist": "Quantum Mechanics (Vox Style)",
+  "fit": "crop",
+  "reformat": "center-cut, focus-aware; -916 overrides honored",
   "derived_from": "vox-ultraviolet-catastrophe",
   "dropped_beats": [
    "B14",
    "B16"
   ],
-  "playlist_short": "Shorts",
-  "playlist": "Quantum Mechanics (Vox Style)"
+  "playlist_short": "Shorts"
  },
  "beats": [
   {

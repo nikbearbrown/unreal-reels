@@ -4,11 +4,17 @@
 THE SHORTS LAW: a Short is a DERIVATIVE CUT, not a re-edit — drop the beats
 that don't earn vertical time (documents, the bear outro), end on a SILENT
 branded card the viewer reads (@handle + the Next: line), stay under the
-3:00 Shorts cap. The film letterboxes on the newsprint ground (metadata
-fit: pad); slots are symlinked from the parent reel so nothing re-renders.
+3:00 Shorts cap.
+
+THE REFORMAT RULE (16:9 → 9:16): every slot center-cuts, biased by the
+beat's shot.focus (the crop window follows the subject). The auto-cut is
+written NEXT TO the source as <beat>-916.mp4|.png so it is inspectable and
+replaceable: drop your own <beat>-916.* into media/ (or manim/) and the
+build uses it instead — rerun vox_short + compile, only that slot rebuilds.
+Auto-cuts are not overwritten once they exist (--recut forces).
 
 Usage:
-  python3 scripts/vox_short.py reels/<slug> --drop B14 B16 [--end-s 4.5]
+  python3 scripts/vox_short.py reels/<slug> --drop B14 B16 [--end-s 4.5] [--recut]
 Then:
   python3 scripts/vox_compile.py reels/<slug>/short --review --height 1920
 
@@ -78,6 +84,8 @@ def main():
     ap.add_argument("--next", dest="next_text", default=None)
     ap.add_argument("--end-s", type=float, default=4.5)
     ap.add_argument("--handle", default="@nikbearbrown")
+    ap.add_argument("--recut", action="store_true",
+                    help="regenerate auto -916 cuts (never touches hand-made ones you added while no auto-cut existed)")
     a = ap.parse_args()
     folder = a.folder.resolve()
     sheet = json.loads((folder / "beat_sheet.json").read_text())
@@ -93,19 +101,61 @@ def main():
         (b["narration_text"] for b in reversed(dropped)
          if b.get("shot", {}).get("type") == "CARD"), "")
 
-    # symlink kept slots + narration from the parent (nothing re-renders)
+    # resolve each kept slot to a 9:16 source: explicit -916 override wins,
+    # else auto-cut the 16:9 winner (focus-aware) into <bid>-916.* beside it
     for b in kept:
         bid = b["beat_id"]
-        for sub in ("media", "manim"):
-            for ext in (".mp4", ".mov", ".png", ".jpg"):
-                src = folder / sub / f"{bid}{ext}"
-                dst = short / sub / f"{bid}{ext}"
-                if src.exists() and not dst.exists():
-                    dst.symlink_to(Path("../..") / sub / src.name)
+        fx = float((b.get("shot", {}).get("focus") or [0.5, 0.5])[0])
+        override = None
+        for sub, exts in (("media", (".mp4", ".png", ".jpg")),
+                          ("manim", (".mp4",))):
+            for ext in exts:
+                p = folder / sub / f"{bid}-916{ext}"
+                if p.exists():
+                    override = (sub, p, ext)
+                    break
+            if override:
+                break
+        if override is None:
+            # the parent slot's winner, per compile precedence
+            src = None
+            for sub, ext in (("media", ".mp4"), ("manim", ".mp4"),
+                             ("manim", ".mov"), ("media", ".png"),
+                             ("media", ".jpg")):
+                p = folder / sub / f"{bid}{ext}"
+                if p.exists():
+                    src = (sub, p, ".mp4" if ext == ".mov" else ext)
+                    break
+            if src is None:
+                continue                        # slate — nothing to cut
+            sub, p, ext = src
+            cut = folder / sub / f"{bid}-916{ext}"
+            if a.recut or not cut.exists():
+                if ext == ".mp4":
+                    vf = (f"crop='min(iw,ih*9/16)':ih:"
+                          f"'max(0,min(iw-ow,iw*{fx:.4f}-ow/2))':0")
+                    subprocess.run([FFMPEG, "-y", "-v", "error", "-i", str(p),
+                                    "-vf", vf, "-c:v", "libx264", "-preset",
+                                    "veryfast", "-crf", "20", "-an", str(cut)],
+                                   check=True)
+                else:
+                    from PIL import Image
+                    im = Image.open(p)
+                    w, h = im.size
+                    cw = min(w, int(h * 9 / 16))
+                    x = max(0, min(w - cw, int(fx * w - cw / 2)))
+                    im.crop((x, 0, x + cw, h)).save(cut)
+                print(f"[short] {bid}  cut 16:9 -> {sub}/{cut.name} (focus x={fx:.2f})")
+            override = (sub, cut, ext)
+        sub, p, ext = override
+        dst = short / sub / f"{bid}{ext}"
+        if dst.is_symlink() or dst.exists():
+            dst.unlink()
+        dst.symlink_to(Path("../..") / sub / p.name)
         mp3 = folder / (b.get("audio_file") or f"mp3/beat-{bid}.mp3")
-        dst = short / "mp3" / mp3.name
-        if mp3.exists() and not dst.exists():
-            dst.symlink_to(Path("../..") / "mp3" / mp3.name)
+        mdst = short / "mp3" / mp3.name
+        if mp3.exists() and not mdst.exists():
+            mdst.symlink_to(Path("../..") / "mp3" / mp3.name)
 
     # the silent endcard: branded, read-only
     endcard_png(short / "media" / "END.png", a.handle, next_text, dark=True)
@@ -124,7 +174,8 @@ def main():
     })
 
     meta = dict(sheet["metadata"])
-    meta.update({"slug": f"{slug}-short", "aspect_ratio": "9:16", "fit": "pad",
+    meta.update({"slug": f"{slug}-short", "aspect_ratio": "9:16", "fit": "crop",
+                 "reformat": "center-cut, focus-aware; -916 overrides honored",
                  "derived_from": slug, "dropped_beats": a.drop,
                  "playlist_short": "Shorts"})
     total = sum(float(b["actual_duration_s"]) for b in kept)
