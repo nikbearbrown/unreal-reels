@@ -1,9 +1,9 @@
 {
  "metadata": {
-  "slug": "vox-ultraviolet-catastrophe",
+  "slug": "vox-ultraviolet-catastrophe-short",
   "title": "The Ultraviolet Catastrophe",
   "voice_id": "TyW6NH39JcFb5M3xdIIk",
-  "aspect_ratio": "16:9",
+  "aspect_ratio": "9:16",
   "style_preset": "vox-editorial",
   "isotype_mark": "square",
   "ground": "#F3EBDD",
@@ -18,7 +18,14 @@
   "source_chapter": "books/quantum-mechanics-vol1/chapters/01-why-classical-physics-failed.md",
   "supersedes": "reels/vox-the-ultraviolet-catastrophe (conversion test)",
   "notes": "Fresh build. GRAPHIC ~53% of beats accepted deliberately (chart arc = evidence section; MOTION.md short-form corollary).",
-  "total_estimated_duration_seconds": 190.15,
+  "total_estimated_duration_seconds": 173.99,
+  "fit": "pad",
+  "derived_from": "vox-ultraviolet-catastrophe",
+  "dropped_beats": [
+   "B14",
+   "B16"
+  ],
+  "playlist_short": "Shorts",
   "playlist": "Quantum Mechanics (Vox Style)"
  },
  "beats": [
@@ -325,22 +332,6 @@
    }
   },
   {
-   "beat_id": "B14",
-   "narration_text": "He read it to the Physical Society on December 14th, 1900 — his constant within one percent of today's value. It reads like an apology, not a manifesto.",
-   "tts_normalized_text": "He read it to the Physical Society on December fourteenth, nineteen hundred — his constant within one percent of today's value. It reads like an apology, not a manifesto.",
-   "actual_duration_s": 11.36,
-   "audio_file": "mp3/beat-B14.mp3",
-   "shot": {
-    "type": "DOCUMENT",
-    "source": "archive",
-    "focus": [
-     0.45,
-     0.5
-    ]
-   },
-   "new_visual_element": "[SCAN] Annalen der Physik 309, 553 (1901), 'Über das Gesetz der Energieverteilung im Normalspectrum' — title page; highlighter sweep on title, zoom-to-passage at assembly; renders as hold+slow-zoom until Remotion plane lands"
-  },
-  {
    "beat_id": "B15",
    "narration_text": "Planck spent years trying to remove the chunks from his own formula. It cannot be done. Who was this reluctant revolutionary? That's a story of its own.",
    "tts_normalized_text": "Planck spent years trying to remove the chunks from his own formula. It cannot be done. Who was this reluctant revolutionary? That's a story of its own.",
@@ -355,19 +346,20 @@
    "new_visual_element": "[PHOTO] Max Planck portrait, period-correct (~1901, age 42 — not the elderly icon); serif name label + dates 1858–1947 at assembly; bio kicker per SKILL.md (points at the bio-planck film)"
   },
   {
-   "beat_id": "B16",
-   "narration_text": "Next: light itself comes apart in chunks — the photoelectric effect.",
-   "tts_normalized_text": "Next: light itself comes apart in chunks — the photoelectric effect.",
-   "actual_duration_s": 9.301,
-   "audio_file": "mp3/beat-B16.mp3",
+   "beat_id": "END",
+   "narration_text": "",
+   "actual_duration_s": 4.5,
+   "audio_file": "mp3/beat-END.mp3",
    "shot": {
     "type": "CARD",
-    "source": "own"
+    "source": "own",
+    "motion": "hold",
+    "treatment": "none"
    },
    "card": {
-    "eyebrow": "NEXT",
-    "title": "THE PHOTOELECTRIC EFFECT",
-    "sub": "quantum, vol. 1 · chapter 1 continues"
+    "handle": "@nikbearbrown",
+    "next": "Next: light itself comes apart in chunks — the photoelectric effect.",
+    "silent": true
    }
   }
  ]

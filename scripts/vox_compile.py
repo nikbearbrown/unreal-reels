@@ -121,7 +121,10 @@ def resolve_slot(folder, bid):
             return p, status
     return None, "SLATE"
 
-def vf_fit(w, h):
+def vf_fit(w, h, fit="crop"):
+    if fit == "pad":        # letterbox on the newsprint ground (shorts wrap)
+        return (f"scale={w}:{h}:force_original_aspect_ratio=decrease,"
+                f"pad={w}:{h}:(ow-iw)/2:(oh-ih)/2:color=0xF3EBDD")
     return f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}"
 
 def vf_treatment(source, override=None):
@@ -138,7 +141,7 @@ def vf_treatment(source, override=None):
         return "hue=s=0.25,eq=contrast=1.12:brightness=0.01"
     return None
 
-def compile_clip(folder, beat, out, w, h, fps, font, work):
+def compile_clip(folder, beat, out, w, h, fps, font, work, fit="crop"):
     bid, dur = beat["beat_id"], float(beat["actual_duration_s"])
     shot = beat.get("shot", {})
     src, status = resolve_slot(folder, bid)
@@ -148,7 +151,7 @@ def compile_clip(folder, beat, out, w, h, fps, font, work):
 
     if status in ("VIDEO", "MANIM"):
         d = probe_dur(src) or dur
-        vf = [vf_fit(w, h)]
+        vf = [vf_fit(w, h, fit)]
         if treat and status == "VIDEO":
             vf.append(treat)
         delta = (d - dur) / dur
@@ -170,7 +173,7 @@ def compile_clip(folder, beat, out, w, h, fps, font, work):
         if iw and (iw < w or ih < h):
             print(f"[vox] WARNING {bid}: still {iw}x{ih} under output {w}x{h} — "
                   f"the move will reveal upscale artifacts (MOTION.md §1)")
-        vf = [vf_fit(w * 2, h * 2)]                        # oversample against zoompan shimmer
+        vf = [vf_fit(w * 2, h * 2, fit)]                   # oversample against zoompan shimmer
         if treat:
             vf.append(treat)
         # MOTION.md §1: motivated direction. shot.focus = [fx, fy] in 0–1
@@ -277,11 +280,13 @@ def main():
         out = clips / f"{bid}.mp4"
         src, status = resolve_slot(folder, bid)
         bshot = b.get("shot", {})
-        key = (f"L2|{w}x{h}@{fps}|{dur:.3f}|{bshot.get('motion', '')}"
+        key = (f"L2|{w}x{h}@{fps}|{sheet.get('metadata', {}).get('fit', 'crop')}"
+               f"|{dur:.3f}|{bshot.get('motion', '')}"
                f"|{bshot.get('focus', '')}|{bshot.get('treatment', '')}|"
                + (sha1(src) if src else "slate"))
         if a.force or manifest.get(bid) != key or not out.exists():
-            src, status = compile_clip(folder, b, out, w, h, fps, font, work)
+            src, status = compile_clip(folder, b, out, w, h, fps, font, work,
+                                       fit=sheet.get("metadata", {}).get("fit", "crop"))
             manifest[bid] = key
             print(f"[vox] compiled {bid}  {status:6}  {dur:5.1f}s" +
                   (f"  ← {src.name}" if src else ""))

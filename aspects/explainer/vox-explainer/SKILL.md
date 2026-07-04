@@ -258,6 +258,20 @@ slot rebuilds.
 Swaps at any later date: drop the new file in `media/`, rerun compile —
 only that slot recompiles.
 
+## The Shorts law (`scripts/vox_short.py`)
+
+A 9:16 Short is a DERIVATIVE CUT, never a re-edit: drop the beats that don't
+earn vertical time (documents, the bear outro — the bear belongs to the 16:9
+master), end on a SILENT branded card the viewer reads (@handle, terracotta
+hairline, the Next: line inherited from the dropped outro), stay under the
+3:00 Shorts cap. `python3 scripts/vox_short.py reels/<slug> --drop B14 B16`
+writes `short/` with symlinked slots (nothing re-renders), the endcard, and
+a 9:16 `fit: pad` sheet — the film letterboxes on the newsprint ground, so
+graphics beats read as native portrait layouts. Then compile `short/` with
+`--height 1920`. Playlist metadata: `playlist` names the style series
+("Quantum Mechanics (Vox Style)" — viewers choose their register),
+`playlist_short` is "Shorts".
+
 ## Converting an existing video (physics/ doodle & brownblue folders)
 
 `python3 scripts/vox_convert.py physics/<slug>` → `reels/vox-<slug>/` with the
