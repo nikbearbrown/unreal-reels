@@ -96,6 +96,11 @@ def main():
     for d in ("media", "manim", "mp3"):
         (short / d).mkdir(parents=True, exist_ok=True)
 
+    # a derivative inherits the parent's fact-check (Gate F)
+    fc = short / "FACTCHECK.md"
+    if (folder / "FACTCHECK.md").exists() and not fc.exists():
+        fc.symlink_to(Path("..") / "FACTCHECK.md")
+
     kept = [b for b in sheet["beats"] if b["beat_id"] not in a.drop]
     dropped = [b for b in sheet["beats"] if b["beat_id"] in a.drop]
     next_text = a.next_text or next(
