@@ -228,21 +228,29 @@ slot rebuilds.
 
 1. `plan` — script → beats (≤~28 words), shot type × source, prompts, viz
    data, archive queries → `SHOTLIST.md`. **GATE: approve the plan.**
-2. `audio` — ElevenLabs per beat, measure, lock. **GATE: hear it.**
-3. `run` — `bash scripts/vox_run.sh reels/<slug>` — THE FULL MACHINE PASS,
+2. `factcheck` — BEFORE any money or rendering: every factual claim in
+   narration, viz data, and card copy gets verified — against the source
+   chapter, primary sources, and independent computation of every number —
+   and written to the reel's `FACTCHECK.md`: claim | verdict (✓ / minor /
+   WRONG) | source/derivation | fix if needed. Editorial flourishes are
+   labeled as such, simplifications defended or reworded. vox_run REFUSES
+   to render without FACTCHECK.md (Gate F; `VOX_FACTS=0` for previz only).
+   Regenerate whenever narration or viz data changes. **GATE: claims hold.**
+3. `audio` — ElevenLabs per beat, measure, lock. **GATE: hear it.**
+4. `run` — `bash scripts/vox_run.sh reels/<slug>` — THE FULL MACHINE PASS,
    one command, free/local: Gate A (static check) → render every pending
    Manim scene to the measured durations → Gate B (pixel layout audit) →
    slot → outro law (branded closing card) → compile `--review`. The result
    is ALWAYS a full watchable video: motion graphics and outro finished,
    slates ONLY in slots that are yours (archive/ai media per SHOTLIST).
    **GATE: watch the cut — timing, pacing, beat-to-visual map.**
-4. `stills` — FLUX / nano-banana plates for ai slots (cheap — batch with
+5. `stills` — FLUX / nano-banana plates for ai slots (cheap — batch with
    per-step go-ahead); download archive picks for archive slots (free) with
    `.source.txt` sidecars; set `shot.focus` per still. Rerun `vox_run` —
    only changed slots recompile.
-5. `video` — Higgsfield i2v only for beats where the still + audio demand
+6. `video` — Higgsfield i2v only for beats where the still + audio demand
    motion (the expensive step, last, per-beat approval).
-6. `assemble` — Remotion annotation/caption plane keyed to word timestamps,
+7. `assemble` — Remotion annotation/caption plane keyed to word timestamps,
    treatment pass, credits from sidecars → clean master. **GATE: ship.**
    (Not yet built — until it lands, DOCUMENT/COMPOSITE annotation beats
    degrade gracefully to clean plates.)

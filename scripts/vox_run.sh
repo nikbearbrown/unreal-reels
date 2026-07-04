@@ -47,6 +47,17 @@ if [ -z "$PENDING" ]; then
   echo "[vox_run] nothing to render — recompiling only"
 fi
 
+# ---- GATE F: no rendering unverified claims (explainers teach — check facts)
+# FACTCHECK.md is written at the factcheck pass (SKILL.md workflow step 2):
+# every claim in narration/viz/cards, each with verdict + source. Regenerate
+# it whenever the script changes. Skip (previz only!) with VOX_FACTS=0.
+if [ "${VOX_FACTS:-1}" = "1" ] && [ -n "$PENDING" ] && [ ! -f "$ROOT/$REEL/FACTCHECK.md" ]; then
+  echo "[vox_run] GATE F FAILED: $REEL has no FACTCHECK.md — an explainer's"
+  echo "[vox_run] claims get verified BEFORE rendering. Run the factcheck pass"
+  echo "[vox_run] (see SKILL.md), or VOX_FACTS=0 for a previz-only exception."
+  exit 2
+fi
+
 # ---- GATE A: render-free pre-flight on every pending scene
 # The scenes file is checked from an ISOLATED copy: the checker's
 # repeated-animation heuristic assumes one Scene spanning a whole beat sheet
