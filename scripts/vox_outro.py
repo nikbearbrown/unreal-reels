@@ -117,23 +117,29 @@ def main():
     aspect_tag = ar.replace(":", "x")
 
     seed = int(hashlib.md5(slug.encode()).hexdigest(), 16)
-    dark = (a.force_bg == "dark") if a.force_bg else bool((seed >> 8) % 2)
-    bg, fg = (INK, CREAM) if dark else (CREAM, INK)
-    ground_tag = "dark" if dark else "light"
 
-    # Mascot pool, two families:
-    #   bearbrown-<ground>-<aspect>-NNN.mp4 — pre-composited full-frame ground
-    #   bearbrown-N.mp4 (root or MP4/)      — legacy green-screen, gets keyed
+    # THE POOL: pre-composited bearbrown-<ground>-<aspect>-NNN.mp4 clips for
+    # this aspect — no green screen. Pick is seeded (stable per film, varies
+    # across films); --force-bg narrows to one ground, --force-bear to one
+    # clip. Text color follows the CHOSEN clip's ground tag. Legacy keyed
+    # clips (MP4/) are a last resort only if the pool is empty.
     bears_dir = a.bears.resolve()
-    precomp = sorted(bears_dir.glob(f"*-{ground_tag}-{aspect_tag}-[0-9]*.mp4"))
-    legacy = ([p for p in sorted(bears_dir.glob("*-[0-9]*.mp4"))
-               if f"-{ground_tag}-" not in p.name and "-light-" not in p.name
-               and "-dark-" not in p.name]
-              or sorted((bears_dir / "MP4").glob("*-[0-9]*.mp4")))
-    variants, mode = (precomp, "base") if precomp else (legacy, "key")
-    if not variants:
-        sys.exit(f"[outro] no mascot clips in {bears_dir} (or MP4/)")
-    bear = variants[(a.force_bear - 1) % len(variants)] if a.force_bear else variants[seed % len(variants)]
+    pool = sorted(bears_dir.glob(f"*-{aspect_tag}-[0-9]*.mp4"))
+    if a.force_bg:
+        pool = [p for p in pool if f"-{a.force_bg}-" in p.name] or pool
+    if pool:
+        mode = "base"
+        bear = pool[(a.force_bear - 1) % len(pool)] if a.force_bear else pool[seed % len(pool)]
+        dark = "-dark-" in bear.name
+    else:
+        mode = "key"
+        legacy = (sorted((bears_dir / "MP4").glob("*-[0-9]*.mp4"))
+                  or sorted(bears_dir.glob("*-[0-9]*.mp4")))
+        if not legacy:
+            sys.exit(f"[outro] no mascot clips in {bears_dir} (or MP4/)")
+        bear = legacy[(a.force_bear - 1) % len(legacy)] if a.force_bear else legacy[seed % len(legacy)]
+        dark = (a.force_bg == "dark") if a.force_bg else bool((seed >> 8) % 2)
+    bg, fg = (INK, CREAM) if dark else (CREAM, INK)
 
     # --- the clock: narration + silence tail, at least as long as the bear
     mp3 = folder / (beat.get("audio_file") or f"mp3/beat-{bid}.mp3")
