@@ -136,21 +136,22 @@ class HandRing(VMobject):
 MONO = "Menlo"  # data numbers only — never the equation (EQUATIONS.md)
 
 
-def _math(tex_or_text, font_size=48, color=INK):
-    """Real math if LaTeX is available, italic serif otherwise."""
+def _math(tex, font_size=48, color=INK, plain=None):
+    """Real math if LaTeX is available; italic serif otherwise. The fallback
+    renders `plain` (the unicode form, 'E = hν') — NEVER the raw TeX."""
     try:
-        return MathTex(tex_or_text, font_size=font_size, color=color)
+        return MathTex(tex, font_size=font_size, color=color)
     except Exception:
-        return Text(tex_or_text, font=SERIF, color=color,
+        return Text(plain or tex, font=SERIF, color=color,
                     font_size=int(font_size * 0.75), slant=ITALIC)
 
 
 class EquationCard(VGroup):
     """Zone 1 — the symbolic form, large, isolated, on a slate card."""
 
-    def __init__(self, tex, spotlight=None, width=9.0, **kw):
+    def __init__(self, tex, spotlight=None, width=9.0, plain=None, **kw):
         super().__init__(**kw)
-        eq = _math(tex, font_size=56, color=WHITE)
+        eq = _math(tex, font_size=56, color=WHITE, plain=plain)
         if eq.width > width * 0.88:
             eq.scale_to_fit_width(width * 0.88)
         card = Rectangle(width=width, height=eq.height + 1.0)
@@ -201,7 +202,7 @@ class GlossaryTable(VGroup):
         for r in rows:
             hot = spotlight is not None and r["sym"] == spotlight
             sym = _math(r.get("sym_tex", r["sym"]), font_size=size + 8,
-                        color=CRIMSON if hot else INK)
+                        color=CRIMSON if hot else INK, plain=r["sym"])
             cells = VGroup(sym,
                            Text(r["role"], font=SERIF, color=TERRA if hot else BLUE,
                                 font_size=size - 4, slant=ITALIC),
@@ -269,7 +270,8 @@ class EquationTangent:
     def anchor(self, spotlight=None):
         """The persistent equation card, seated at the top of the frame."""
         return EquationCard(self.d.get("equation_tex", self.d["equation"]),
-                            spotlight=spotlight).to_edge(UP, buff=0.9)
+                            spotlight=spotlight,
+                            plain=self.d["equation"]).to_edge(UP, buff=0.9)
 
     def zone(self, which, spotlight=None):
         d = self.d
@@ -279,7 +281,10 @@ class EquationTangent:
              "claim":     lambda: ValuesClaim(d["values_claim"])}[which]()
         if z.width > 12.2:
             z.scale_to_fit_width(12.2)
-        return z.next_to(ORIGIN, DOWN, buff=0).shift(DOWN * 0.8)
+        if z.height > 4.3:                      # keep clear of the frame bottom
+            z.scale_to_fit_height(4.3)
+        z.move_to([0, -1.35, 0])                # band between anchor and bottom
+        return z
 
 
 # --------------------------------------------- fixture scenes (test reel)
