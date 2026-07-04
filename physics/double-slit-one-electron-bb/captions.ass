@@ -1,0 +1,73 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: bb,EB Garamond,52,&H0042E4F0,&H00D8E6EC,&H001D1616,&H64000000,0,0,0,0,100,100,0,0,1,3,0,2,120,120,90,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.95,bb,,0,0,0,,{\k33}Bear's {\k30}Notes {\k13}One {\k40}Electron {\k70}Interferes {\k10}With {\k37}Itself
+Dialogue: 0,0:00:03.29,0:00:06.01,bb,,0,0,0,,{\k27}Fire {\k50}electrons {\k27}at {\k20}two {\k33}slits {\k20}so {\k40}slowly {\k17}that {\k23}only
+Dialogue: 0,0:00:05.86,0:00:08.44,bb,,0,0,0,,{\k30}one {\k20}is {\k20}ever {\k17}in {\k7}the {\k40}machine {\k20}— {\k20}each {\k43}arrives
+Dialogue: 0,0:00:08.29,0:00:09.37,bb,,0,0,0,,{\k23}as {\k13}a {\k27}single {\k30}dot.
+Dialogue: 0,0:00:09.92,0:00:12.97,bb,,0,0,0,,{\k1}Ten {\k43}electrons {\k37}in, {\k10}the {\k23}dots {\k27}look {\k20}like {\k37}random {\k27}specks
+Dialogue: 0,0:00:12.86,0:00:14.17,bb,,0,0,0,,{\k27}— {\k17}no {\k30}pattern {\k20}at {\k20}all.
+Dialogue: 0,0:00:14.42,0:00:17.04,bb,,0,0,0,,{\k27}Common {\k20}sense {\k30}says {\k23}they {\k17}should {\k30}pile {\k30}into {\k27}two {\k43}heaps,
+Dialogue: 0,0:00:17.15,0:00:18.44,bb,,0,0,0,,{\k20}one {\k40}behind {\k27}each {\k27}slit.
+Dialogue: 0,0:00:18.73,0:00:21.48,bb,,0,0,0,,{\k20}Keep {\k47}firing, {\k20}and {\k30}something {\k57}impossible {\k33}begins {\k30}to {\k23}show.
+Dialogue: 0,0:00:21.84,0:00:25.12,bb,,0,0,0,,{\k30}Ripples {\k43}passing {\k23}through {\k20}two {\k40}openings {\k60}overlap {\k27}— {\k17}crest {\k20}on
+Dialogue: 0,0:00:24.97,0:00:27.76,bb,,0,0,0,,{\k30}crest {\k63}brightens, {\k20}crest {\k27}on {\k33}trough {\k60}cancels.
+Dialogue: 0,0:00:27.95,0:00:30.30,bb,,0,0,0,,{\k17}So {\k10}a {\k20}wave {\k27}hitting {\k27}two {\k33}slits {\k10}paints {\k40}stripes {\k23}on
+Dialogue: 0,0:00:30.15,0:00:31.03,bb,,0,0,0,,{\k7}the {\k23}far {\k43}screen:
+Dialogue: 0,0:00:31.32,0:00:33.20,bb,,0,0,0,,{\k37}strong, {\k30}weak, {\k33}strong.
+Dialogue: 0,0:00:33.57,0:00:35.35,bb,,0,0,0,,{\k10}A {\k23}ball {\k33}can't {\k27}overlap {\k27}with {\k43}anything:
+Dialogue: 0,0:00:35.60,0:00:37.15,bb,,0,0,0,,{\k10}it {\k20}takes {\k27}one {\k33}slit {\k13}or {\k13}the {\k23}other.
+Dialogue: 0,0:00:37.41,0:00:40.33,bb,,0,0,0,,{\k37}Balls {\k13}through {\k20}two {\k37}slits {\k30}stack {\k27}into {\k23}exactly {\k47}two {\k43}heaps
+Dialogue: 0,0:00:40.34,0:00:42.29,bb,,0,0,0,,{\k13}— {\k23}nothing {\k13}in {\k33}between, {\k17}no {\k40}stripes.
+Dialogue: 0,0:00:42.66,0:00:44.08,bb,,0,0,0,,{\k17}Now {\k27}watch {\k17}the {\k23}real {\k43}electrons:
+Dialogue: 0,0:00:44.23,0:00:46.94,bb,,0,0,0,,{\k30}two {\k30}hundred {\k30}dots, {\k7}and {\k7}a {\k17}faint {\k57}clustering {\k40}appears.
+Dialogue: 0,0:00:47.98,0:00:50.13,bb,,0,0,0,,{\k1}Six {\k1}thousand {\k27}dots, {\k20}and {\k70}unmistakable {\k30}stripes {\k23}are {\k30}forming.
+Dialogue: 0,0:00:51.19,0:00:51.71,bb,,0,0,0,,{\k1}Seventy {\k1}thousand {\k37}dots:
+Dialogue: 0,0:00:51.79,0:00:54.27,bb,,0,0,0,,{\k17}clean {\k37}bright {\k10}and {\k23}dark {\k43}bands {\k13}— {\k7}a {\k17}full {\k50}interference
+Dialogue: 0,0:00:54.12,0:00:54.67,bb,,0,0,0,,{\k40}pattern.
+Dialogue: 0,0:00:54.94,0:00:57.56,bb,,0,0,0,,{\k17}Lay {\k17}the {\k40}wave's {\k20}stripe {\k40}pattern {\k20}over {\k13}the {\k30}dots, {\k10}and
+Dialogue: 0,0:00:57.41,0:00:58.36,bb,,0,0,0,,{\k10}it {\k23}fits {\k47}perfectly.
+Dialogue: 0,0:00:58.73,0:01:01.41,bb,,0,0,0,,{\k13}And {\k13}there {\k13}are {\k27}bands {\k27}where {\k47}electrons {\k33}never {\k50}land {\k17}—
+Dialogue: 0,0:01:01.26,0:01:03.85,bb,,0,0,0,,{\k27}forbidden {\k47}zones {\k33}no {\k20}two-heap {\k37}story {\k23}can {\k33}explain.
+Dialogue: 0,0:01:04.24,0:01:04.76,bb,,0,0,0,,{\k37}Remember:
+Dialogue: 0,0:01:04.97,0:01:07.49,bb,,0,0,0,,{\k10}the {\k40}electrons {\k40}flew {\k40}alone {\k13}— {\k17}there {\k13}was {\k20}never {\k23}a
+Dialogue: 0,0:01:07.34,0:01:09.09,bb,,0,0,0,,{\k27}second {\k47}electron {\k23}to {\k37}interfere {\k27}with.
+Dialogue: 0,0:01:09.28,0:01:12.13,bb,,0,0,0,,{\k17}So {\k20}each {\k60}electron's {\k23}wave {\k43}passes {\k27}through {\k27}both {\k40}slits {\k13}at
+Dialogue: 0,0:01:11.98,0:01:13.66,bb,,0,0,0,,{\k27}once {\k20}and {\k57}interferes {\k10}with {\k40}itself.
+Dialogue: 0,0:01:13.96,0:01:16.11,bb,,0,0,0,,{\k13}The {\k23}dot {\k20}is {\k17}just {\k20}where {\k13}the {\k40}electron {\k20}is {\k33}found;
+Dialogue: 0,0:01:16.33,0:01:18.31,bb,,0,0,0,,{\k10}the {\k30}stripes {\k27}map {\k20}where {\k33}finding {\k20}it {\k17}is {\k27}likely.
+Dialogue: 0,0:01:18.64,0:01:20.42,bb,,0,0,0,,{\k20}That {\k47}likelihood {\k30}map {\k27}has {\k13}a {\k27}name:
+Dialogue: 0,0:01:20.87,0:01:24.06,bb,,0,0,0,,{\k33}psi {\k37}squared, {\k10}the {\k27}square {\k17}of {\k10}the {\k47}electron's {\k37}wave {\k43}function.
+Dialogue: 0,0:01:24.33,0:01:26.78,bb,,0,0,0,,{\k17}And {\k10}the {\k27}stripe {\k40}spacing {\k17}is {\k23}set {\k20}by {\k13}the {\k63}electron's
+Dialogue: 0,0:01:26.63,0:01:30.45,bb,,0,0,0,,{\k40}wavelength {\k23}— {\k30}lambda {\k40}equals {\k37}h {\k27}over {\k37}p, {\k23}de {\k53}Broglie's
+Dialogue: 0,0:01:30.30,0:01:30.65,bb,,0,0,0,,{\k20}rule.
+Dialogue: 0,0:01:30.97,0:01:33.65,bb,,0,0,0,,{\k13}One {\k40}electron {\k43}arrives {\k27}like {\k10}a {\k40}particle {\k20}and {\k33}travels {\k27}like
+Dialogue: 0,0:01:33.50,0:01:35.79,bb,,0,0,0,,{\k13}a {\k27}wave {\k17}— {\k30}both, {\k40}every {\k30}single {\k33}time.
+Dialogue: 0,0:01:36.29,0:01:37.94,bb,,0,0,0,,{\k1}Peek {\k13}at {\k17}which {\k17}slit {\k10}it {\k20}took, {\k7}and {\k10}the {\k30}stripes
+Dialogue: 0,0:01:37.79,0:01:40.44,bb,,0,0,0,,{\k40}vanish {\k17}— {\k23}not {\k23}because {\k20}you {\k50}jostled {\k13}it, {\k7}but {\k27}because
+Dialogue: 0,0:01:40.29,0:01:40.88,bb,,0,0,0,,{\k23}you {\k20}know.
+Dialogue: 0,0:01:41.21,0:01:42.53,bb,,0,0,0,,{\k23}This {\k27}isn't {\k10}just {\k57}electrons:
+Dialogue: 0,0:01:43.04,0:01:45.49,bb,,0,0,0,,{\k33}molecules {\k30}of {\k17}two {\k17}thousand {\k23}atoms {\k20}have {\k27}painted {\k20}the {\k20}same
+Dialogue: 0,0:01:45.34,0:01:45.86,bb,,0,0,0,,{\k37}stripes.
+Dialogue: 0,0:01:46.23,0:01:49.25,bb,,0,0,0,,{\k17}You {\k13}have {\k13}a {\k40}wavelength {\k23}too {\k23}— {\k30}walking, {\k63}about {\k13}ten
+Dialogue: 0,0:01:49.13,0:01:52.28,bb,,0,0,0,,{\k20}to {\k7}the {\k27}minus {\k27}thirty-five {\k37}meters, {\k70}far {\k20}too {\k40}small {\k23}for
+Dialogue: 0,0:01:52.13,0:01:53.38,bb,,0,0,0,,{\k17}any {\k37}doorway {\k23}to {\k33}reveal.
+Dialogue: 0,0:01:53.70,0:01:56.12,bb,,0,0,0,,{\k17}We {\k20}didn't {\k20}say {\k17}what {\k10}the {\k20}wave {\k37}function {\k43}actually {\k43}is,
+Dialogue: 0,0:01:56.17,0:01:59.38,bb,,0,0,0,,{\k10}or {\k20}how {\k40}crystals {\k40}first {\k40}revealed {\k37}matter {\k43}waves {\k20}— {\k30}each
+Dialogue: 0,0:01:59.23,0:02:00.22,bb,,0,0,0,,{\k17}is {\k17}its {\k20}own {\k30}video.
+Dialogue: 0,0:02:00.62,0:02:01.50,bb,,0,0,0,,{\k23}Try {\k13}it {\k37}yourself:
+Dialogue: 0,0:02:01.72,0:02:04.57,bb,,0,0,0,,{\k33}compute {\k17}your {\k20}own {\k13}de {\k17}Broglie {\k43}wavelength, {\k60}h {\k20}over {\k23}m
+Dialogue: 0,0:02:04.42,0:02:06.17,bb,,0,0,0,,{\k27}times {\k40}v, {\k27}on {\k13}your {\k27}next {\k27}walk.
+Dialogue: 0,0:02:06.50,0:02:09.72,bb,,0,0,0,,{\k30}Thanks {\k13}for {\k37}watching {\k23}One {\k43}Electron {\k70}Interferes {\k10}With {\k50}Itself {\k13}—
+Dialogue: 0,0:02:09.57,0:02:12.52,bb,,0,0,0,,{\k27}more {\k20}at {\k23}youtube {\k1}dot {\k73}com, {\k50}slash, {\k40}at {\k10}Nik {\k23}Bear
+Dialogue: 0,0:02:12.37,0:02:12.88,bb,,0,0,0,,{\k37}Brown.

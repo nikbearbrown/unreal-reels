@@ -1,0 +1,2504 @@
+{
+  "fps": 30,
+  "slides": {
+    "INTRO": {
+      "lines": [
+        {
+          "text": "Bear's Notes One Electron Interferes With Itself",
+          "startFrame": 0,
+          "endFrame": 84,
+          "words": [
+            {
+              "text": "Bear's",
+              "startFrame": 0,
+              "endFrame": 10
+            },
+            {
+              "text": "Notes",
+              "startFrame": 10,
+              "endFrame": 19
+            },
+            {
+              "text": "One",
+              "startFrame": 33,
+              "endFrame": 37
+            },
+            {
+              "text": "Electron",
+              "startFrame": 37,
+              "endFrame": 49
+            },
+            {
+              "text": "Interferes",
+              "startFrame": 49,
+              "endFrame": 70
+            },
+            {
+              "text": "With",
+              "startFrame": 70,
+              "endFrame": 73
+            },
+            {
+              "text": "Itself",
+              "startFrame": 73,
+              "endFrame": 84
+            }
+          ]
+        }
+      ]
+    },
+    "H01": {
+      "lines": [
+        {
+          "text": "Fire electrons at two slits so slowly that only",
+          "startFrame": 0,
+          "endFrame": 77,
+          "words": [
+            {
+              "text": "Fire",
+              "startFrame": 0,
+              "endFrame": 8
+            },
+            {
+              "text": "electrons",
+              "startFrame": 8,
+              "endFrame": 23
+            },
+            {
+              "text": "at",
+              "startFrame": 23,
+              "endFrame": 31
+            },
+            {
+              "text": "two",
+              "startFrame": 31,
+              "endFrame": 37
+            },
+            {
+              "text": "slits",
+              "startFrame": 37,
+              "endFrame": 47
+            },
+            {
+              "text": "so",
+              "startFrame": 47,
+              "endFrame": 53
+            },
+            {
+              "text": "slowly",
+              "startFrame": 53,
+              "endFrame": 65
+            },
+            {
+              "text": "that",
+              "startFrame": 65,
+              "endFrame": 70
+            },
+            {
+              "text": "only",
+              "startFrame": 70,
+              "endFrame": 77
+            }
+          ]
+        },
+        {
+          "text": "one is ever in the machine — each arrives",
+          "startFrame": 77,
+          "endFrame": 150,
+          "words": [
+            {
+              "text": "one",
+              "startFrame": 77,
+              "endFrame": 86
+            },
+            {
+              "text": "is",
+              "startFrame": 86,
+              "endFrame": 92
+            },
+            {
+              "text": "ever",
+              "startFrame": 92,
+              "endFrame": 98
+            },
+            {
+              "text": "in",
+              "startFrame": 98,
+              "endFrame": 103
+            },
+            {
+              "text": "the",
+              "startFrame": 103,
+              "endFrame": 105
+            },
+            {
+              "text": "machine",
+              "startFrame": 105,
+              "endFrame": 117
+            },
+            {
+              "text": "—",
+              "startFrame": 124,
+              "endFrame": 130
+            },
+            {
+              "text": "each",
+              "startFrame": 131,
+              "endFrame": 137
+            },
+            {
+              "text": "arrives",
+              "startFrame": 137,
+              "endFrame": 150
+            }
+          ]
+        },
+        {
+          "text": "as a single dot.",
+          "startFrame": 150,
+          "endFrame": 178,
+          "words": [
+            {
+              "text": "as",
+              "startFrame": 150,
+              "endFrame": 157
+            },
+            {
+              "text": "a",
+              "startFrame": 157,
+              "endFrame": 161
+            },
+            {
+              "text": "single",
+              "startFrame": 161,
+              "endFrame": 169
+            },
+            {
+              "text": "dot.",
+              "startFrame": 169,
+              "endFrame": 178
+            }
+          ]
+        }
+      ]
+    },
+    "H02": {
+      "lines": [
+        {
+          "text": "Ten electrons in, the dots look like random specks",
+          "startFrame": 7,
+          "endFrame": 94,
+          "words": [
+            {
+              "text": "Ten",
+              "startFrame": 7,
+              "endFrame": 7
+            },
+            {
+              "text": "electrons",
+              "startFrame": 7,
+              "endFrame": 20
+            },
+            {
+              "text": "in,",
+              "startFrame": 20,
+              "endFrame": 31
+            },
+            {
+              "text": "the",
+              "startFrame": 42,
+              "endFrame": 45
+            },
+            {
+              "text": "dots",
+              "startFrame": 45,
+              "endFrame": 52
+            },
+            {
+              "text": "look",
+              "startFrame": 52,
+              "endFrame": 60
+            },
+            {
+              "text": "like",
+              "startFrame": 60,
+              "endFrame": 66
+            },
+            {
+              "text": "random",
+              "startFrame": 66,
+              "endFrame": 77
+            },
+            {
+              "text": "specks",
+              "startFrame": 86,
+              "endFrame": 94
+            }
+          ]
+        },
+        {
+          "text": "— no pattern at all.",
+          "startFrame": 95,
+          "endFrame": 130,
+          "words": [
+            {
+              "text": "—",
+              "startFrame": 95,
+              "endFrame": 103
+            },
+            {
+              "text": "no",
+              "startFrame": 104,
+              "endFrame": 109
+            },
+            {
+              "text": "pattern",
+              "startFrame": 109,
+              "endFrame": 118
+            },
+            {
+              "text": "at",
+              "startFrame": 118,
+              "endFrame": 124
+            },
+            {
+              "text": "all.",
+              "startFrame": 124,
+              "endFrame": 130
+            }
+          ]
+        }
+      ]
+    },
+    "H03": {
+      "lines": [
+        {
+          "text": "Common sense says they should pile into two heaps,",
+          "startFrame": 0,
+          "endFrame": 74,
+          "words": [
+            {
+              "text": "Common",
+              "startFrame": 0,
+              "endFrame": 8
+            },
+            {
+              "text": "sense",
+              "startFrame": 8,
+              "endFrame": 14
+            },
+            {
+              "text": "says",
+              "startFrame": 14,
+              "endFrame": 23
+            },
+            {
+              "text": "they",
+              "startFrame": 23,
+              "endFrame": 30
+            },
+            {
+              "text": "should",
+              "startFrame": 30,
+              "endFrame": 35
+            },
+            {
+              "text": "pile",
+              "startFrame": 35,
+              "endFrame": 44
+            },
+            {
+              "text": "into",
+              "startFrame": 44,
+              "endFrame": 53
+            },
+            {
+              "text": "two",
+              "startFrame": 53,
+              "endFrame": 61
+            },
+            {
+              "text": "heaps,",
+              "startFrame": 61,
+              "endFrame": 74
+            }
+          ]
+        },
+        {
+          "text": "one behind each slit.",
+          "startFrame": 82,
+          "endFrame": 116,
+          "words": [
+            {
+              "text": "one",
+              "startFrame": 82,
+              "endFrame": 88
+            },
+            {
+              "text": "behind",
+              "startFrame": 88,
+              "endFrame": 100
+            },
+            {
+              "text": "each",
+              "startFrame": 100,
+              "endFrame": 108
+            },
+            {
+              "text": "slit.",
+              "startFrame": 108,
+              "endFrame": 116
+            }
+          ]
+        }
+      ]
+    },
+    "H04": {
+      "lines": [
+        {
+          "text": "Keep firing, and something impossible begins to show.",
+          "startFrame": 0,
+          "endFrame": 78,
+          "words": [
+            {
+              "text": "Keep",
+              "startFrame": 0,
+              "endFrame": 6
+            },
+            {
+              "text": "firing,",
+              "startFrame": 6,
+              "endFrame": 20
+            },
+            {
+              "text": "and",
+              "startFrame": 20,
+              "endFrame": 26
+            },
+            {
+              "text": "something",
+              "startFrame": 26,
+              "endFrame": 35
+            },
+            {
+              "text": "impossible",
+              "startFrame": 35,
+              "endFrame": 52
+            },
+            {
+              "text": "begins",
+              "startFrame": 52,
+              "endFrame": 62
+            },
+            {
+              "text": "to",
+              "startFrame": 62,
+              "endFrame": 71
+            },
+            {
+              "text": "show.",
+              "startFrame": 71,
+              "endFrame": 78
+            }
+          ]
+        }
+      ]
+    },
+    "W01": {
+      "lines": [
+        {
+          "text": "Ripples passing through two openings overlap — crest on",
+          "startFrame": 0,
+          "endFrame": 94,
+          "words": [
+            {
+              "text": "Ripples",
+              "startFrame": 0,
+              "endFrame": 9
+            },
+            {
+              "text": "passing",
+              "startFrame": 9,
+              "endFrame": 22
+            },
+            {
+              "text": "through",
+              "startFrame": 22,
+              "endFrame": 29
+            },
+            {
+              "text": "two",
+              "startFrame": 29,
+              "endFrame": 35
+            },
+            {
+              "text": "openings",
+              "startFrame": 35,
+              "endFrame": 47
+            },
+            {
+              "text": "overlap",
+              "startFrame": 47,
+              "endFrame": 65
+            },
+            {
+              "text": "—",
+              "startFrame": 74,
+              "endFrame": 82
+            },
+            {
+              "text": "crest",
+              "startFrame": 83,
+              "endFrame": 88
+            },
+            {
+              "text": "on",
+              "startFrame": 88,
+              "endFrame": 94
+            }
+          ]
+        },
+        {
+          "text": "crest brightens, crest on trough cancels.",
+          "startFrame": 94,
+          "endFrame": 173,
+          "words": [
+            {
+              "text": "crest",
+              "startFrame": 94,
+              "endFrame": 103
+            },
+            {
+              "text": "brightens,",
+              "startFrame": 103,
+              "endFrame": 122
+            },
+            {
+              "text": "crest",
+              "startFrame": 131,
+              "endFrame": 137
+            },
+            {
+              "text": "on",
+              "startFrame": 137,
+              "endFrame": 145
+            },
+            {
+              "text": "trough",
+              "startFrame": 145,
+              "endFrame": 155
+            },
+            {
+              "text": "cancels.",
+              "startFrame": 155,
+              "endFrame": 173
+            }
+          ]
+        }
+      ]
+    },
+    "W02": {
+      "lines": [
+        {
+          "text": "So a wave hitting two slits paints stripes on",
+          "startFrame": 0,
+          "endFrame": 66,
+          "words": [
+            {
+              "text": "So",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "a",
+              "startFrame": 5,
+              "endFrame": 8
+            },
+            {
+              "text": "wave",
+              "startFrame": 8,
+              "endFrame": 14
+            },
+            {
+              "text": "hitting",
+              "startFrame": 14,
+              "endFrame": 22
+            },
+            {
+              "text": "two",
+              "startFrame": 22,
+              "endFrame": 30
+            },
+            {
+              "text": "slits",
+              "startFrame": 30,
+              "endFrame": 40
+            },
+            {
+              "text": "paints",
+              "startFrame": 44,
+              "endFrame": 47
+            },
+            {
+              "text": "stripes",
+              "startFrame": 47,
+              "endFrame": 59
+            },
+            {
+              "text": "on",
+              "startFrame": 59,
+              "endFrame": 66
+            }
+          ]
+        },
+        {
+          "text": "the far screen:",
+          "startFrame": 66,
+          "endFrame": 88,
+          "words": [
+            {
+              "text": "the",
+              "startFrame": 66,
+              "endFrame": 68
+            },
+            {
+              "text": "far",
+              "startFrame": 68,
+              "endFrame": 75
+            },
+            {
+              "text": "screen:",
+              "startFrame": 75,
+              "endFrame": 88
+            }
+          ]
+        },
+        {
+          "text": "strong, weak, strong.",
+          "startFrame": 101,
+          "endFrame": 153,
+          "words": [
+            {
+              "text": "strong,",
+              "startFrame": 101,
+              "endFrame": 112
+            },
+            {
+              "text": "weak,",
+              "startFrame": 123,
+              "endFrame": 132
+            },
+            {
+              "text": "strong.",
+              "startFrame": 143,
+              "endFrame": 153
+            }
+          ]
+        }
+      ]
+    },
+    "L01": {
+      "lines": [
+        {
+          "text": "A ball can't overlap with anything:",
+          "startFrame": 0,
+          "endFrame": 49,
+          "words": [
+            {
+              "text": "A",
+              "startFrame": 0,
+              "endFrame": 3
+            },
+            {
+              "text": "ball",
+              "startFrame": 3,
+              "endFrame": 10
+            },
+            {
+              "text": "can't",
+              "startFrame": 10,
+              "endFrame": 20
+            },
+            {
+              "text": "overlap",
+              "startFrame": 20,
+              "endFrame": 28
+            },
+            {
+              "text": "with",
+              "startFrame": 28,
+              "endFrame": 36
+            },
+            {
+              "text": "anything:",
+              "startFrame": 36,
+              "endFrame": 49
+            }
+          ]
+        },
+        {
+          "text": "it takes one slit or the other.",
+          "startFrame": 61,
+          "endFrame": 103,
+          "words": [
+            {
+              "text": "it",
+              "startFrame": 61,
+              "endFrame": 64
+            },
+            {
+              "text": "takes",
+              "startFrame": 64,
+              "endFrame": 70
+            },
+            {
+              "text": "one",
+              "startFrame": 70,
+              "endFrame": 78
+            },
+            {
+              "text": "slit",
+              "startFrame": 78,
+              "endFrame": 88
+            },
+            {
+              "text": "or",
+              "startFrame": 88,
+              "endFrame": 92
+            },
+            {
+              "text": "the",
+              "startFrame": 92,
+              "endFrame": 96
+            },
+            {
+              "text": "other.",
+              "startFrame": 96,
+              "endFrame": 103
+            }
+          ]
+        }
+      ]
+    },
+    "L02": {
+      "lines": [
+        {
+          "text": "Balls through two slits stack into exactly two heaps",
+          "startFrame": 0,
+          "endFrame": 83,
+          "words": [
+            {
+              "text": "Balls",
+              "startFrame": 0,
+              "endFrame": 11
+            },
+            {
+              "text": "through",
+              "startFrame": 11,
+              "endFrame": 15
+            },
+            {
+              "text": "two",
+              "startFrame": 15,
+              "endFrame": 21
+            },
+            {
+              "text": "slits",
+              "startFrame": 21,
+              "endFrame": 32
+            },
+            {
+              "text": "stack",
+              "startFrame": 32,
+              "endFrame": 41
+            },
+            {
+              "text": "into",
+              "startFrame": 41,
+              "endFrame": 49
+            },
+            {
+              "text": "exactly",
+              "startFrame": 49,
+              "endFrame": 56
+            },
+            {
+              "text": "two",
+              "startFrame": 56,
+              "endFrame": 70
+            },
+            {
+              "text": "heaps",
+              "startFrame": 70,
+              "endFrame": 83
+            }
+          ]
+        },
+        {
+          "text": "— nothing in between, no stripes.",
+          "startFrame": 88,
+          "endFrame": 142,
+          "words": [
+            {
+              "text": "—",
+              "startFrame": 88,
+              "endFrame": 92
+            },
+            {
+              "text": "nothing",
+              "startFrame": 93,
+              "endFrame": 100
+            },
+            {
+              "text": "in",
+              "startFrame": 100,
+              "endFrame": 104
+            },
+            {
+              "text": "between,",
+              "startFrame": 104,
+              "endFrame": 114
+            },
+            {
+              "text": "no",
+              "startFrame": 125,
+              "endFrame": 130
+            },
+            {
+              "text": "stripes.",
+              "startFrame": 130,
+              "endFrame": 142
+            }
+          ]
+        }
+      ]
+    },
+    "T01": {
+      "lines": [
+        {
+          "text": "Now watch the real electrons:",
+          "startFrame": 0,
+          "endFrame": 38,
+          "words": [
+            {
+              "text": "Now",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "watch",
+              "startFrame": 5,
+              "endFrame": 13
+            },
+            {
+              "text": "the",
+              "startFrame": 13,
+              "endFrame": 18
+            },
+            {
+              "text": "real",
+              "startFrame": 18,
+              "endFrame": 25
+            },
+            {
+              "text": "electrons:",
+              "startFrame": 25,
+              "endFrame": 38
+            }
+          ]
+        },
+        {
+          "text": "two hundred dots, and a faint clustering appears.",
+          "startFrame": 47,
+          "endFrame": 124,
+          "words": [
+            {
+              "text": "two",
+              "startFrame": 47,
+              "endFrame": 56
+            },
+            {
+              "text": "hundred",
+              "startFrame": 56,
+              "endFrame": 65
+            },
+            {
+              "text": "dots,",
+              "startFrame": 65,
+              "endFrame": 74
+            },
+            {
+              "text": "and",
+              "startFrame": 86,
+              "endFrame": 88
+            },
+            {
+              "text": "a",
+              "startFrame": 88,
+              "endFrame": 90
+            },
+            {
+              "text": "faint",
+              "startFrame": 90,
+              "endFrame": 95
+            },
+            {
+              "text": "clustering",
+              "startFrame": 95,
+              "endFrame": 112
+            },
+            {
+              "text": "appears.",
+              "startFrame": 112,
+              "endFrame": 124
+            }
+          ]
+        }
+      ]
+    },
+    "T02": {
+      "lines": [
+        {
+          "text": "Six thousand dots, and unmistakable stripes are forming.",
+          "startFrame": 21,
+          "endFrame": 81,
+          "words": [
+            {
+              "text": "Six",
+              "startFrame": 21,
+              "endFrame": 21
+            },
+            {
+              "text": "thousand",
+              "startFrame": 21,
+              "endFrame": 21
+            },
+            {
+              "text": "dots,",
+              "startFrame": 21,
+              "endFrame": 29
+            },
+            {
+              "text": "and",
+              "startFrame": 29,
+              "endFrame": 35
+            },
+            {
+              "text": "unmistakable",
+              "startFrame": 35,
+              "endFrame": 56
+            },
+            {
+              "text": "stripes",
+              "startFrame": 56,
+              "endFrame": 65
+            },
+            {
+              "text": "are",
+              "startFrame": 65,
+              "endFrame": 72
+            },
+            {
+              "text": "forming.",
+              "startFrame": 72,
+              "endFrame": 81
+            }
+          ]
+        }
+      ]
+    },
+    "T03": {
+      "lines": [
+        {
+          "text": "Seventy thousand dots:",
+          "startFrame": 24,
+          "endFrame": 35,
+          "words": [
+            {
+              "text": "Seventy",
+              "startFrame": 24,
+              "endFrame": 24
+            },
+            {
+              "text": "thousand",
+              "startFrame": 24,
+              "endFrame": 24
+            },
+            {
+              "text": "dots:",
+              "startFrame": 24,
+              "endFrame": 35
+            }
+          ]
+        },
+        {
+          "text": "clean bright and dark bands — a full interference",
+          "startFrame": 42,
+          "endFrame": 112,
+          "words": [
+            {
+              "text": "clean",
+              "startFrame": 42,
+              "endFrame": 47
+            },
+            {
+              "text": "bright",
+              "startFrame": 47,
+              "endFrame": 58
+            },
+            {
+              "text": "and",
+              "startFrame": 58,
+              "endFrame": 61
+            },
+            {
+              "text": "dark",
+              "startFrame": 61,
+              "endFrame": 68
+            },
+            {
+              "text": "bands",
+              "startFrame": 68,
+              "endFrame": 81
+            },
+            {
+              "text": "—",
+              "startFrame": 86,
+              "endFrame": 90
+            },
+            {
+              "text": "a",
+              "startFrame": 90,
+              "endFrame": 92
+            },
+            {
+              "text": "full",
+              "startFrame": 92,
+              "endFrame": 97
+            },
+            {
+              "text": "interference",
+              "startFrame": 97,
+              "endFrame": 112
+            }
+          ]
+        },
+        {
+          "text": "pattern.",
+          "startFrame": 112,
+          "endFrame": 124,
+          "words": [
+            {
+              "text": "pattern.",
+              "startFrame": 112,
+              "endFrame": 124
+            }
+          ]
+        }
+      ]
+    },
+    "T04": {
+      "lines": [
+        {
+          "text": "Lay the wave's stripe pattern over the dots, and",
+          "startFrame": 0,
+          "endFrame": 74,
+          "words": [
+            {
+              "text": "Lay",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "the",
+              "startFrame": 5,
+              "endFrame": 10
+            },
+            {
+              "text": "wave's",
+              "startFrame": 10,
+              "endFrame": 22
+            },
+            {
+              "text": "stripe",
+              "startFrame": 22,
+              "endFrame": 28
+            },
+            {
+              "text": "pattern",
+              "startFrame": 28,
+              "endFrame": 40
+            },
+            {
+              "text": "over",
+              "startFrame": 40,
+              "endFrame": 46
+            },
+            {
+              "text": "the",
+              "startFrame": 46,
+              "endFrame": 50
+            },
+            {
+              "text": "dots,",
+              "startFrame": 50,
+              "endFrame": 59
+            },
+            {
+              "text": "and",
+              "startFrame": 71,
+              "endFrame": 74
+            }
+          ]
+        },
+        {
+          "text": "it fits perfectly.",
+          "startFrame": 74,
+          "endFrame": 98,
+          "words": [
+            {
+              "text": "it",
+              "startFrame": 74,
+              "endFrame": 77
+            },
+            {
+              "text": "fits",
+              "startFrame": 77,
+              "endFrame": 84
+            },
+            {
+              "text": "perfectly.",
+              "startFrame": 84,
+              "endFrame": 98
+            }
+          ]
+        }
+      ]
+    },
+    "T05": {
+      "lines": [
+        {
+          "text": "And there are bands where electrons never land —",
+          "startFrame": 0,
+          "endFrame": 76,
+          "words": [
+            {
+              "text": "And",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "there",
+              "startFrame": 4,
+              "endFrame": 8
+            },
+            {
+              "text": "are",
+              "startFrame": 8,
+              "endFrame": 12
+            },
+            {
+              "text": "bands",
+              "startFrame": 12,
+              "endFrame": 20
+            },
+            {
+              "text": "where",
+              "startFrame": 20,
+              "endFrame": 28
+            },
+            {
+              "text": "electrons",
+              "startFrame": 28,
+              "endFrame": 42
+            },
+            {
+              "text": "never",
+              "startFrame": 42,
+              "endFrame": 52
+            },
+            {
+              "text": "land",
+              "startFrame": 52,
+              "endFrame": 67
+            },
+            {
+              "text": "—",
+              "startFrame": 71,
+              "endFrame": 76
+            }
+          ]
+        },
+        {
+          "text": "forbidden zones no two-heap story can explain.",
+          "startFrame": 76,
+          "endFrame": 149,
+          "words": [
+            {
+              "text": "forbidden",
+              "startFrame": 76,
+              "endFrame": 84
+            },
+            {
+              "text": "zones",
+              "startFrame": 84,
+              "endFrame": 98
+            },
+            {
+              "text": "no",
+              "startFrame": 98,
+              "endFrame": 108
+            },
+            {
+              "text": "two-heap",
+              "startFrame": 114,
+              "endFrame": 120
+            },
+            {
+              "text": "story",
+              "startFrame": 121,
+              "endFrame": 132
+            },
+            {
+              "text": "can",
+              "startFrame": 132,
+              "endFrame": 139
+            },
+            {
+              "text": "explain.",
+              "startFrame": 139,
+              "endFrame": 149
+            }
+          ]
+        }
+      ]
+    },
+    "T06": {
+      "lines": [
+        {
+          "text": "Remember:",
+          "startFrame": 0,
+          "endFrame": 11,
+          "words": [
+            {
+              "text": "Remember:",
+              "startFrame": 0,
+              "endFrame": 11
+            }
+          ]
+        },
+        {
+          "text": "the electrons flew alone — there was never a",
+          "startFrame": 22,
+          "endFrame": 93,
+          "words": [
+            {
+              "text": "the",
+              "startFrame": 22,
+              "endFrame": 25
+            },
+            {
+              "text": "electrons",
+              "startFrame": 25,
+              "endFrame": 37
+            },
+            {
+              "text": "flew",
+              "startFrame": 37,
+              "endFrame": 49
+            },
+            {
+              "text": "alone",
+              "startFrame": 49,
+              "endFrame": 61
+            },
+            {
+              "text": "—",
+              "startFrame": 66,
+              "endFrame": 70
+            },
+            {
+              "text": "there",
+              "startFrame": 71,
+              "endFrame": 76
+            },
+            {
+              "text": "was",
+              "startFrame": 76,
+              "endFrame": 80
+            },
+            {
+              "text": "never",
+              "startFrame": 80,
+              "endFrame": 86
+            },
+            {
+              "text": "a",
+              "startFrame": 86,
+              "endFrame": 93
+            }
+          ]
+        },
+        {
+          "text": "second electron to interfere with.",
+          "startFrame": 93,
+          "endFrame": 141,
+          "words": [
+            {
+              "text": "second",
+              "startFrame": 93,
+              "endFrame": 101
+            },
+            {
+              "text": "electron",
+              "startFrame": 101,
+              "endFrame": 115
+            },
+            {
+              "text": "to",
+              "startFrame": 115,
+              "endFrame": 122
+            },
+            {
+              "text": "interfere",
+              "startFrame": 122,
+              "endFrame": 133
+            },
+            {
+              "text": "with.",
+              "startFrame": 133,
+              "endFrame": 141
+            }
+          ]
+        }
+      ]
+    },
+    "A01": {
+      "lines": [
+        {
+          "text": "So each electron's wave passes through both slits at",
+          "startFrame": 0,
+          "endFrame": 81,
+          "words": [
+            {
+              "text": "So",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "each",
+              "startFrame": 5,
+              "endFrame": 11
+            },
+            {
+              "text": "electron's",
+              "startFrame": 11,
+              "endFrame": 29
+            },
+            {
+              "text": "wave",
+              "startFrame": 29,
+              "endFrame": 36
+            },
+            {
+              "text": "passes",
+              "startFrame": 36,
+              "endFrame": 49
+            },
+            {
+              "text": "through",
+              "startFrame": 49,
+              "endFrame": 57
+            },
+            {
+              "text": "both",
+              "startFrame": 57,
+              "endFrame": 65
+            },
+            {
+              "text": "slits",
+              "startFrame": 65,
+              "endFrame": 77
+            },
+            {
+              "text": "at",
+              "startFrame": 77,
+              "endFrame": 81
+            }
+          ]
+        },
+        {
+          "text": "once and interferes with itself.",
+          "startFrame": 81,
+          "endFrame": 127,
+          "words": [
+            {
+              "text": "once",
+              "startFrame": 81,
+              "endFrame": 89
+            },
+            {
+              "text": "and",
+              "startFrame": 89,
+              "endFrame": 95
+            },
+            {
+              "text": "interferes",
+              "startFrame": 95,
+              "endFrame": 112
+            },
+            {
+              "text": "with",
+              "startFrame": 112,
+              "endFrame": 115
+            },
+            {
+              "text": "itself.",
+              "startFrame": 115,
+              "endFrame": 127
+            }
+          ]
+        }
+      ]
+    },
+    "A02": {
+      "lines": [
+        {
+          "text": "The dot is just where the electron is found;",
+          "startFrame": 0,
+          "endFrame": 60,
+          "words": [
+            {
+              "text": "The",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "dot",
+              "startFrame": 4,
+              "endFrame": 11
+            },
+            {
+              "text": "is",
+              "startFrame": 11,
+              "endFrame": 17
+            },
+            {
+              "text": "just",
+              "startFrame": 17,
+              "endFrame": 22
+            },
+            {
+              "text": "where",
+              "startFrame": 22,
+              "endFrame": 28
+            },
+            {
+              "text": "the",
+              "startFrame": 28,
+              "endFrame": 32
+            },
+            {
+              "text": "electron",
+              "startFrame": 32,
+              "endFrame": 44
+            },
+            {
+              "text": "is",
+              "startFrame": 44,
+              "endFrame": 50
+            },
+            {
+              "text": "found;",
+              "startFrame": 50,
+              "endFrame": 60
+            }
+          ]
+        },
+        {
+          "text": "the stripes map where finding it is likely.",
+          "startFrame": 71,
+          "endFrame": 126,
+          "words": [
+            {
+              "text": "the",
+              "startFrame": 71,
+              "endFrame": 74
+            },
+            {
+              "text": "stripes",
+              "startFrame": 74,
+              "endFrame": 83
+            },
+            {
+              "text": "map",
+              "startFrame": 83,
+              "endFrame": 91
+            },
+            {
+              "text": "where",
+              "startFrame": 91,
+              "endFrame": 97
+            },
+            {
+              "text": "finding",
+              "startFrame": 97,
+              "endFrame": 107
+            },
+            {
+              "text": "it",
+              "startFrame": 107,
+              "endFrame": 113
+            },
+            {
+              "text": "is",
+              "startFrame": 113,
+              "endFrame": 118
+            },
+            {
+              "text": "likely.",
+              "startFrame": 118,
+              "endFrame": 126
+            }
+          ]
+        }
+      ]
+    },
+    "A03": {
+      "lines": [
+        {
+          "text": "That likelihood map has a name:",
+          "startFrame": 0,
+          "endFrame": 49,
+          "words": [
+            {
+              "text": "That",
+              "startFrame": 0,
+              "endFrame": 6
+            },
+            {
+              "text": "likelihood",
+              "startFrame": 6,
+              "endFrame": 20
+            },
+            {
+              "text": "map",
+              "startFrame": 20,
+              "endFrame": 29
+            },
+            {
+              "text": "has",
+              "startFrame": 29,
+              "endFrame": 37
+            },
+            {
+              "text": "a",
+              "startFrame": 37,
+              "endFrame": 41
+            },
+            {
+              "text": "name:",
+              "startFrame": 41,
+              "endFrame": 49
+            }
+          ]
+        },
+        {
+          "text": "psi squared, the square of the electron's wave function.",
+          "startFrame": 67,
+          "endFrame": 158,
+          "words": [
+            {
+              "text": "psi",
+              "startFrame": 67,
+              "endFrame": 77
+            },
+            {
+              "text": "squared,",
+              "startFrame": 77,
+              "endFrame": 88
+            },
+            {
+              "text": "the",
+              "startFrame": 101,
+              "endFrame": 104
+            },
+            {
+              "text": "square",
+              "startFrame": 104,
+              "endFrame": 112
+            },
+            {
+              "text": "of",
+              "startFrame": 112,
+              "endFrame": 117
+            },
+            {
+              "text": "the",
+              "startFrame": 117,
+              "endFrame": 120
+            },
+            {
+              "text": "electron's",
+              "startFrame": 120,
+              "endFrame": 134
+            },
+            {
+              "text": "wave",
+              "startFrame": 134,
+              "endFrame": 145
+            },
+            {
+              "text": "function.",
+              "startFrame": 145,
+              "endFrame": 158
+            }
+          ]
+        }
+      ]
+    },
+    "A04": {
+      "lines": [
+        {
+          "text": "And the stripe spacing is set by the electron's",
+          "startFrame": 0,
+          "endFrame": 69,
+          "words": [
+            {
+              "text": "And",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "the",
+              "startFrame": 5,
+              "endFrame": 8
+            },
+            {
+              "text": "stripe",
+              "startFrame": 8,
+              "endFrame": 16
+            },
+            {
+              "text": "spacing",
+              "startFrame": 16,
+              "endFrame": 28
+            },
+            {
+              "text": "is",
+              "startFrame": 28,
+              "endFrame": 33
+            },
+            {
+              "text": "set",
+              "startFrame": 33,
+              "endFrame": 40
+            },
+            {
+              "text": "by",
+              "startFrame": 40,
+              "endFrame": 46
+            },
+            {
+              "text": "the",
+              "startFrame": 46,
+              "endFrame": 50
+            },
+            {
+              "text": "electron's",
+              "startFrame": 50,
+              "endFrame": 69
+            }
+          ]
+        },
+        {
+          "text": "wavelength — lambda equals h over p, de Broglie's",
+          "startFrame": 69,
+          "endFrame": 179,
+          "words": [
+            {
+              "text": "wavelength",
+              "startFrame": 69,
+              "endFrame": 81
+            },
+            {
+              "text": "—",
+              "startFrame": 89,
+              "endFrame": 96
+            },
+            {
+              "text": "lambda",
+              "startFrame": 97,
+              "endFrame": 106
+            },
+            {
+              "text": "equals",
+              "startFrame": 106,
+              "endFrame": 118
+            },
+            {
+              "text": "h",
+              "startFrame": 118,
+              "endFrame": 129
+            },
+            {
+              "text": "over",
+              "startFrame": 129,
+              "endFrame": 137
+            },
+            {
+              "text": "p,",
+              "startFrame": 137,
+              "endFrame": 148
+            },
+            {
+              "text": "de",
+              "startFrame": 155,
+              "endFrame": 162
+            },
+            {
+              "text": "Broglie's",
+              "startFrame": 163,
+              "endFrame": 179
+            }
+          ]
+        },
+        {
+          "text": "rule.",
+          "startFrame": 179,
+          "endFrame": 185,
+          "words": [
+            {
+              "text": "rule.",
+              "startFrame": 179,
+              "endFrame": 185
+            }
+          ]
+        }
+      ]
+    },
+    "Y01": {
+      "lines": [
+        {
+          "text": "One electron arrives like a particle and travels like",
+          "startFrame": 0,
+          "endFrame": 76,
+          "words": [
+            {
+              "text": "One",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "electron",
+              "startFrame": 4,
+              "endFrame": 16
+            },
+            {
+              "text": "arrives",
+              "startFrame": 16,
+              "endFrame": 29
+            },
+            {
+              "text": "like",
+              "startFrame": 29,
+              "endFrame": 37
+            },
+            {
+              "text": "a",
+              "startFrame": 37,
+              "endFrame": 40
+            },
+            {
+              "text": "particle",
+              "startFrame": 40,
+              "endFrame": 52
+            },
+            {
+              "text": "and",
+              "startFrame": 52,
+              "endFrame": 58
+            },
+            {
+              "text": "travels",
+              "startFrame": 58,
+              "endFrame": 68
+            },
+            {
+              "text": "like",
+              "startFrame": 68,
+              "endFrame": 76
+            }
+          ]
+        },
+        {
+          "text": "a wave — both, every single time.",
+          "startFrame": 76,
+          "endFrame": 140,
+          "words": [
+            {
+              "text": "a",
+              "startFrame": 76,
+              "endFrame": 80
+            },
+            {
+              "text": "wave",
+              "startFrame": 80,
+              "endFrame": 88
+            },
+            {
+              "text": "—",
+              "startFrame": 94,
+              "endFrame": 99
+            },
+            {
+              "text": "both,",
+              "startFrame": 100,
+              "endFrame": 109
+            },
+            {
+              "text": "every",
+              "startFrame": 109,
+              "endFrame": 121
+            },
+            {
+              "text": "single",
+              "startFrame": 121,
+              "endFrame": 130
+            },
+            {
+              "text": "time.",
+              "startFrame": 130,
+              "endFrame": 140
+            }
+          ]
+        }
+      ]
+    },
+    "Y02": {
+      "lines": [
+        {
+          "text": "Peek at which slit it took, and the stripes",
+          "startFrame": 7,
+          "endFrame": 52,
+          "words": [
+            {
+              "text": "Peek",
+              "startFrame": 7,
+              "endFrame": 7
+            },
+            {
+              "text": "at",
+              "startFrame": 7,
+              "endFrame": 11
+            },
+            {
+              "text": "which",
+              "startFrame": 11,
+              "endFrame": 16
+            },
+            {
+              "text": "slit",
+              "startFrame": 20,
+              "endFrame": 25
+            },
+            {
+              "text": "it",
+              "startFrame": 25,
+              "endFrame": 28
+            },
+            {
+              "text": "took,",
+              "startFrame": 28,
+              "endFrame": 34
+            },
+            {
+              "text": "and",
+              "startFrame": 37,
+              "endFrame": 39
+            },
+            {
+              "text": "the",
+              "startFrame": 40,
+              "endFrame": 43
+            },
+            {
+              "text": "stripes",
+              "startFrame": 43,
+              "endFrame": 52
+            }
+          ]
+        },
+        {
+          "text": "vanish — not because you jostled it, but because",
+          "startFrame": 52,
+          "endFrame": 127,
+          "words": [
+            {
+              "text": "vanish",
+              "startFrame": 52,
+              "endFrame": 64
+            },
+            {
+              "text": "—",
+              "startFrame": 69,
+              "endFrame": 74
+            },
+            {
+              "text": "not",
+              "startFrame": 74,
+              "endFrame": 81
+            },
+            {
+              "text": "because",
+              "startFrame": 81,
+              "endFrame": 88
+            },
+            {
+              "text": "you",
+              "startFrame": 88,
+              "endFrame": 94
+            },
+            {
+              "text": "jostled",
+              "startFrame": 94,
+              "endFrame": 109
+            },
+            {
+              "text": "it,",
+              "startFrame": 109,
+              "endFrame": 113
+            },
+            {
+              "text": "but",
+              "startFrame": 117,
+              "endFrame": 119
+            },
+            {
+              "text": "because",
+              "startFrame": 119,
+              "endFrame": 127
+            }
+          ]
+        },
+        {
+          "text": "you know.",
+          "startFrame": 127,
+          "endFrame": 140,
+          "words": [
+            {
+              "text": "you",
+              "startFrame": 127,
+              "endFrame": 134
+            },
+            {
+              "text": "know.",
+              "startFrame": 134,
+              "endFrame": 140
+            }
+          ]
+        }
+      ]
+    },
+    "N01": {
+      "lines": [
+        {
+          "text": "This isn't just electrons:",
+          "startFrame": 0,
+          "endFrame": 35,
+          "words": [
+            {
+              "text": "This",
+              "startFrame": 0,
+              "endFrame": 7
+            },
+            {
+              "text": "isn't",
+              "startFrame": 7,
+              "endFrame": 15
+            },
+            {
+              "text": "just",
+              "startFrame": 15,
+              "endFrame": 18
+            },
+            {
+              "text": "electrons:",
+              "startFrame": 18,
+              "endFrame": 35
+            }
+          ]
+        },
+        {
+          "text": "molecules of two thousand atoms have painted the same",
+          "startFrame": 55,
+          "endFrame": 124,
+          "words": [
+            {
+              "text": "molecules",
+              "startFrame": 55,
+              "endFrame": 65
+            },
+            {
+              "text": "of",
+              "startFrame": 65,
+              "endFrame": 74
+            },
+            {
+              "text": "two",
+              "startFrame": 79,
+              "endFrame": 84
+            },
+            {
+              "text": "thousand",
+              "startFrame": 85,
+              "endFrame": 90
+            },
+            {
+              "text": "atoms",
+              "startFrame": 91,
+              "endFrame": 98
+            },
+            {
+              "text": "have",
+              "startFrame": 98,
+              "endFrame": 104
+            },
+            {
+              "text": "painted",
+              "startFrame": 104,
+              "endFrame": 112
+            },
+            {
+              "text": "the",
+              "startFrame": 112,
+              "endFrame": 118
+            },
+            {
+              "text": "same",
+              "startFrame": 118,
+              "endFrame": 124
+            }
+          ]
+        },
+        {
+          "text": "stripes.",
+          "startFrame": 124,
+          "endFrame": 135,
+          "words": [
+            {
+              "text": "stripes.",
+              "startFrame": 124,
+              "endFrame": 135
+            }
+          ]
+        }
+      ]
+    },
+    "N02": {
+      "lines": [
+        {
+          "text": "You have a wavelength too — walking, about ten",
+          "startFrame": 0,
+          "endFrame": 86,
+          "words": [
+            {
+              "text": "You",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "have",
+              "startFrame": 5,
+              "endFrame": 9
+            },
+            {
+              "text": "a",
+              "startFrame": 9,
+              "endFrame": 13
+            },
+            {
+              "text": "wavelength",
+              "startFrame": 13,
+              "endFrame": 25
+            },
+            {
+              "text": "too",
+              "startFrame": 33,
+              "endFrame": 40
+            },
+            {
+              "text": "—",
+              "startFrame": 41,
+              "endFrame": 48
+            },
+            {
+              "text": "walking,",
+              "startFrame": 49,
+              "endFrame": 58
+            },
+            {
+              "text": "about",
+              "startFrame": 58,
+              "endFrame": 77
+            },
+            {
+              "text": "ten",
+              "startFrame": 82,
+              "endFrame": 86
+            }
+          ]
+        },
+        {
+          "text": "to the minus thirty-five meters, far too small for",
+          "startFrame": 87,
+          "endFrame": 177,
+          "words": [
+            {
+              "text": "to",
+              "startFrame": 87,
+              "endFrame": 93
+            },
+            {
+              "text": "the",
+              "startFrame": 93,
+              "endFrame": 95
+            },
+            {
+              "text": "minus",
+              "startFrame": 95,
+              "endFrame": 103
+            },
+            {
+              "text": "thirty-five",
+              "startFrame": 111,
+              "endFrame": 119
+            },
+            {
+              "text": "meters,",
+              "startFrame": 120,
+              "endFrame": 131
+            },
+            {
+              "text": "far",
+              "startFrame": 131,
+              "endFrame": 152
+            },
+            {
+              "text": "too",
+              "startFrame": 152,
+              "endFrame": 158
+            },
+            {
+              "text": "small",
+              "startFrame": 158,
+              "endFrame": 170
+            },
+            {
+              "text": "for",
+              "startFrame": 170,
+              "endFrame": 177
+            }
+          ]
+        },
+        {
+          "text": "any doorway to reveal.",
+          "startFrame": 177,
+          "endFrame": 210,
+          "words": [
+            {
+              "text": "any",
+              "startFrame": 177,
+              "endFrame": 182
+            },
+            {
+              "text": "doorway",
+              "startFrame": 182,
+              "endFrame": 193
+            },
+            {
+              "text": "to",
+              "startFrame": 193,
+              "endFrame": 200
+            },
+            {
+              "text": "reveal.",
+              "startFrame": 200,
+              "endFrame": 210
+            }
+          ]
+        }
+      ]
+    },
+    "B01": {
+      "lines": [
+        {
+          "text": "We didn't say what the wave function actually is,",
+          "startFrame": 0,
+          "endFrame": 68,
+          "words": [
+            {
+              "text": "We",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "didn't",
+              "startFrame": 5,
+              "endFrame": 11
+            },
+            {
+              "text": "say",
+              "startFrame": 11,
+              "endFrame": 17
+            },
+            {
+              "text": "what",
+              "startFrame": 17,
+              "endFrame": 22
+            },
+            {
+              "text": "the",
+              "startFrame": 22,
+              "endFrame": 25
+            },
+            {
+              "text": "wave",
+              "startFrame": 25,
+              "endFrame": 31
+            },
+            {
+              "text": "function",
+              "startFrame": 31,
+              "endFrame": 42
+            },
+            {
+              "text": "actually",
+              "startFrame": 42,
+              "endFrame": 55
+            },
+            {
+              "text": "is,",
+              "startFrame": 55,
+              "endFrame": 68
+            }
+          ]
+        },
+        {
+          "text": "or how crystals first revealed matter waves — each",
+          "startFrame": 74,
+          "endFrame": 166,
+          "words": [
+            {
+              "text": "or",
+              "startFrame": 74,
+              "endFrame": 77
+            },
+            {
+              "text": "how",
+              "startFrame": 77,
+              "endFrame": 83
+            },
+            {
+              "text": "crystals",
+              "startFrame": 83,
+              "endFrame": 95
+            },
+            {
+              "text": "first",
+              "startFrame": 95,
+              "endFrame": 107
+            },
+            {
+              "text": "revealed",
+              "startFrame": 107,
+              "endFrame": 119
+            },
+            {
+              "text": "matter",
+              "startFrame": 119,
+              "endFrame": 130
+            },
+            {
+              "text": "waves",
+              "startFrame": 130,
+              "endFrame": 143
+            },
+            {
+              "text": "—",
+              "startFrame": 150,
+              "endFrame": 156
+            },
+            {
+              "text": "each",
+              "startFrame": 157,
+              "endFrame": 166
+            }
+          ]
+        },
+        {
+          "text": "is its own video.",
+          "startFrame": 166,
+          "endFrame": 191,
+          "words": [
+            {
+              "text": "is",
+              "startFrame": 166,
+              "endFrame": 171
+            },
+            {
+              "text": "its",
+              "startFrame": 171,
+              "endFrame": 176
+            },
+            {
+              "text": "own",
+              "startFrame": 176,
+              "endFrame": 182
+            },
+            {
+              "text": "video.",
+              "startFrame": 182,
+              "endFrame": 191
+            }
+          ]
+        }
+      ]
+    },
+    "B02": {
+      "lines": [
+        {
+          "text": "Try it yourself:",
+          "startFrame": 0,
+          "endFrame": 22,
+          "words": [
+            {
+              "text": "Try",
+              "startFrame": 0,
+              "endFrame": 7
+            },
+            {
+              "text": "it",
+              "startFrame": 7,
+              "endFrame": 11
+            },
+            {
+              "text": "yourself:",
+              "startFrame": 11,
+              "endFrame": 22
+            }
+          ]
+        },
+        {
+          "text": "compute your own de Broglie wavelength, h over m",
+          "startFrame": 33,
+          "endFrame": 114,
+          "words": [
+            {
+              "text": "compute",
+              "startFrame": 33,
+              "endFrame": 43
+            },
+            {
+              "text": "your",
+              "startFrame": 43,
+              "endFrame": 48
+            },
+            {
+              "text": "own",
+              "startFrame": 48,
+              "endFrame": 54
+            },
+            {
+              "text": "de",
+              "startFrame": 54,
+              "endFrame": 58
+            },
+            {
+              "text": "Broglie",
+              "startFrame": 64,
+              "endFrame": 69
+            },
+            {
+              "text": "wavelength,",
+              "startFrame": 70,
+              "endFrame": 83
+            },
+            {
+              "text": "h",
+              "startFrame": 83,
+              "endFrame": 101
+            },
+            {
+              "text": "over",
+              "startFrame": 101,
+              "endFrame": 107
+            },
+            {
+              "text": "m",
+              "startFrame": 107,
+              "endFrame": 114
+            }
+          ]
+        },
+        {
+          "text": "times v, on your next walk.",
+          "startFrame": 114,
+          "endFrame": 162,
+          "words": [
+            {
+              "text": "times",
+              "startFrame": 114,
+              "endFrame": 122
+            },
+            {
+              "text": "v,",
+              "startFrame": 122,
+              "endFrame": 134
+            },
+            {
+              "text": "on",
+              "startFrame": 134,
+              "endFrame": 142
+            },
+            {
+              "text": "your",
+              "startFrame": 142,
+              "endFrame": 146
+            },
+            {
+              "text": "next",
+              "startFrame": 146,
+              "endFrame": 154
+            },
+            {
+              "text": "walk.",
+              "startFrame": 154,
+              "endFrame": 162
+            }
+          ]
+        }
+      ]
+    },
+    "OUTRO": {
+      "lines": [
+        {
+          "text": "Thanks for watching One Electron Interferes With Itself —",
+          "startFrame": 0,
+          "endFrame": 92,
+          "words": [
+            {
+              "text": "Thanks",
+              "startFrame": 0,
+              "endFrame": 9
+            },
+            {
+              "text": "for",
+              "startFrame": 9,
+              "endFrame": 13
+            },
+            {
+              "text": "watching",
+              "startFrame": 13,
+              "endFrame": 24
+            },
+            {
+              "text": "One",
+              "startFrame": 24,
+              "endFrame": 31
+            },
+            {
+              "text": "Electron",
+              "startFrame": 31,
+              "endFrame": 44
+            },
+            {
+              "text": "Interferes",
+              "startFrame": 44,
+              "endFrame": 65
+            },
+            {
+              "text": "With",
+              "startFrame": 65,
+              "endFrame": 68
+            },
+            {
+              "text": "Itself",
+              "startFrame": 68,
+              "endFrame": 83
+            },
+            {
+              "text": "—",
+              "startFrame": 88,
+              "endFrame": 92
+            }
+          ]
+        },
+        {
+          "text": "more at youtube dot com, slash, at Nik Bear",
+          "startFrame": 92,
+          "endFrame": 176,
+          "words": [
+            {
+              "text": "more",
+              "startFrame": 92,
+              "endFrame": 100
+            },
+            {
+              "text": "at",
+              "startFrame": 100,
+              "endFrame": 106
+            },
+            {
+              "text": "youtube",
+              "startFrame": 106,
+              "endFrame": 113
+            },
+            {
+              "text": "dot",
+              "startFrame": 113,
+              "endFrame": 113
+            },
+            {
+              "text": "com,",
+              "startFrame": 113,
+              "endFrame": 135
+            },
+            {
+              "text": "slash,",
+              "startFrame": 135,
+              "endFrame": 150
+            },
+            {
+              "text": "at",
+              "startFrame": 150,
+              "endFrame": 162
+            },
+            {
+              "text": "Nik",
+              "startFrame": 165,
+              "endFrame": 168
+            },
+            {
+              "text": "Bear",
+              "startFrame": 169,
+              "endFrame": 176
+            }
+          ]
+        },
+        {
+          "text": "Brown.",
+          "startFrame": 176,
+          "endFrame": 187,
+          "words": [
+            {
+              "text": "Brown.",
+              "startFrame": 176,
+              "endFrame": 187
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

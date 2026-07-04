@@ -1,0 +1,22 @@
+{
+  "INTRO": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4630889-cosy-creatures-002-bear.svg",
+    "score": 6,
+    "duration": 4.68
+  },
+  "H01": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4538717-electronic-devices-007-wall-socket.svg",
+    "score": 5,
+    "duration": 4.73
+  },
+  "H02": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4585701-arrows-and-infographic-elements-001-arrow.svg",
+    "score": 5,
+    "duration": 4.62
+  },
+  "OUTRO": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4630889-cosy-creatures-002-bear.svg",
+    "score": 6,
+    "duration": 9.46
+  }
+}

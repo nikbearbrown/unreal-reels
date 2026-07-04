@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "slug": "tunnel-through-thin-wall",
+    "title": "Why a Particle Can Pass Through a Wall It Can't Go Over",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/06-finite-wells-steps-and-barriers.md (Candidate 05)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#quantumtunneling",
+      "#quantumphysics",
+      "#wavefunction",
+      "#tunneling",
+      "#barrier",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#STEM",
+      "#BearsNotes"
+    ],
+    "thing": "a wave decaying through a barrier and re-emerging on the far side",
+    "color_notes": "Wave = accent Warm Slate #5A5653. Barrier block + 'can't cross' = red #C0392B. Floor/labels = ink #1a1a1a.",
+    "total_estimated_duration_seconds": 62.87
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy a Particle Can Pass Through a Wall It Can't Go Over",
+      "tts_normalized_text": "Bear's Notes\n\nWhy a Particle Can Pass Through a Wall It Can't Go Over",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 5.09,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "Roll a ball at a hill too steep to climb, and it always rolls back down.",
+      "tts_normalized_text": "Roll a ball at a hill too steep to climb, and it always rolls back down.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person rolling a ball up a steep hill; it rolls back",
+      "start_frame_prompt": "[DOODLE OBJECT = a person rolling a ball toward a steep hill]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person watching the ball roll back down the steep hill]",
+      "video_animation_prompt": "the person and steep hill draw in, a ball rolls partway up and rolls back down; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.36,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "Aim a quantum particle at a wall it can't cross — and sometimes it's already on the far side.",
+      "tts_normalized_text": "Aim a quantum particle at a wall it can't cross — and sometimes it's already on the far side.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person startled to see the particle on the other side of a wall",
+      "start_frame_prompt": "[DOODLE OBJECT = a person facing a tall wall with a tiny particle in front of it]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person startled, the tiny particle now on the far side of the wall]",
+      "video_animation_prompt": "the person, wall and particle draw in, the particle disappears and reappears beyond the wall as the person looks startled; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 5.69,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A quantum wave travels toward a barrier it hasn't the energy to climb.",
+      "tts_normalized_text": "A quantum wave travels toward a barrier it hasn't the energy to climb.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "an oscillating wave from the left, a tall red barrier block ahead",
+      "video_animation_prompt": "MANIM: a baseline, an oscillating accent wave entering from the left moving right, a tall red barrier block on the right with its top above the wave's energy",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Classically it must stop and bounce — but a wave can't just cut off at the wall.",
+      "tts_normalized_text": "Classically it must stop and bounce — but a wave can't just cut off at the wall.",
+      "accumulated_scene_state": [
+        "baseline",
+        "incident wave",
+        "red barrier"
+      ],
+      "new_visual_element": "a red 'stop' at the wall face that the wave refuses to obey",
+      "video_animation_prompt": "MANIM: the wave reaches the barrier's left face; a red stop mark appears but the wave does not abruptly vanish at the edge",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 4.86,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Inside the barrier the wave stops oscillating and instead decays, fading deeper in.",
+      "tts_normalized_text": "Inside the barrier the wave stops oscillating and instead decays, fading deeper in.",
+      "accumulated_scene_state": [
+        "baseline",
+        "incident wave",
+        "red barrier"
+      ],
+      "new_visual_element": "the wave morphs to an exponential decay curve inside the barrier",
+      "video_animation_prompt": "MANIM: inside the barrier the oscillation morphs into a smooth exponential decay curve hugging the baseline, fading toward the far edge",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 5.2,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "A thick barrier lets it fade to almost nothing before reaching the far side.",
+      "tts_normalized_text": "A thick barrier lets it fade to almost nothing before reaching the far side.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a thick barrier; incident wave + decay reaching ~zero at the exit, nothing beyond",
+      "video_animation_prompt": "MANIM: redraw with a THICK red barrier; incident wave then a decay curve that reaches essentially zero at the far edge; no wave beyond",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 4.55,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "But make the barrier thin, and the wave still has leftover height at the far edge.",
+      "tts_normalized_text": "But make the barrier thin, and the wave still has leftover height at the far edge.",
+      "accumulated_scene_state": [
+        "thick barrier",
+        "decay to ~zero"
+      ],
+      "new_visual_element": "the barrier narrows; the decay curve now still has amplitude at the exit",
+      "video_animation_prompt": "MANIM: animate the barrier narrowing to thin; the decay curve now ends with visible leftover amplitude at the far edge",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 4.6,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "From that leftover, a full traveling wave relaunches on the other side.",
+      "tts_normalized_text": "From that leftover, a full traveling wave relaunches on the other side.",
+      "accumulated_scene_state": [
+        "thin barrier",
+        "decay with leftover amplitude"
+      ],
+      "new_visual_element": "a smaller oscillating wave emerging past the thin barrier",
+      "video_animation_prompt": "MANIM: from the leftover amplitude at the exit, draw a smaller-amplitude oscillating wave traveling right beyond the barrier",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Its smaller height means a small but real chance the particle appears beyond the wall.",
+      "tts_normalized_text": "Its smaller height means a small but real chance the particle appears beyond the wall.",
+      "accumulated_scene_state": [
+        "thin barrier",
+        "decay tail",
+        "transmitted wave"
+      ],
+      "new_visual_element": "the transmitted wave labelled 'small but real chance'",
+      "video_animation_prompt": "MANIM: label the small transmitted wave 'small but real chance'; contrast its height with the incident wave",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 4.96,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "It never climbed the wall; it leaked through — the barrier was simply thin enough.",
+      "tts_normalized_text": "It never climbed the wall; it leaked through — the barrier was simply thin enough.",
+      "accumulated_scene_state": [
+        "thin barrier",
+        "decay tail",
+        "transmitted wave"
+      ],
+      "new_visual_element": "full picture with a handwritten 'tunneled through, not over' label",
+      "video_animation_prompt": "MANIM: hold on incident wave + decay tail inside + transmitted wave, with a handwritten label 'tunneled through, not over'; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 4.78,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 5,
+      "render": "none",
+      "narration_text": "Thanks for watching Why a Particle Can Pass Through a Wall It Can't Go Over — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why a Particle Can Pass Through a Wall It Can't Go Over. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, channel URL in bottom margin, scene kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 10.16,
+      "approval_status": "pending"
+    }
+  ]
+}

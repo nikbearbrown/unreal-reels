@@ -1,0 +1,26 @@
+{
+  "scene": "ultraviolet_catastrophe_worked",
+  "snapshots": 37,
+  "errors": 0,
+  "warnings": 1,
+  "safe_area": [
+    6.3,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": [
+    {
+      "type": "OFF_SAFE_AREA",
+      "severity": "WARN",
+      "text": "brightness",
+      "t": 17.53,
+      "snap": 13,
+      "box": [
+        -6.6,
+        2.63,
+        -5.4,
+        3.01
+      ]
+    }
+  ]
+}

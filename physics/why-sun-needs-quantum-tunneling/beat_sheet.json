@@ -1,0 +1,474 @@
+{
+  "metadata": {
+    "slug": "why-sun-needs-quantum-tunneling",
+    "title": "Why the Sun Needs Quantum Tunneling",
+    "series": "Bears Notes",
+    "source": "user-provided transcript used as conceptual inspiration only",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "thing": "sun and tunneling barrier",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#QuantumMechanics",
+      "#Fusion",
+      "#Sun",
+      "#Physics",
+      "#BearsNotes"
+    ],
+    "total_estimated_duration_seconds": 59.37
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "none",
+      "narration_text": "Bear's Notes\n\nWhy the Sun Needs Quantum Tunneling",
+      "tts_normalized_text": "Bear's Notes\n\nWhy the Sun Needs Quantum Tunneling",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card",
+      "start_frame_prompt": "blank white title card",
+      "end_frame_prompt": "Bear's Notes title card with small intro marker",
+      "video_prompt": "Title card appears in handwritten text, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.89
+    },
+    {
+      "beat_id": "A00",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "manim",
+      "narration_text": "The Sun cannot be running on ordinary fire.",
+      "tts_normalized_text": "The Sun cannot be running on ordinary fire.",
+      "accumulated_scene_state": [
+        "sun outline"
+      ],
+      "new_visual_element": "crossed-out fire label",
+      "start_frame_prompt": "sun outline",
+      "end_frame_prompt": "sun outline with ordinary fire crossed out",
+      "video_prompt": "A sun outline and crossed-out fire label draw themselves, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A00.mp3",
+      "actual_duration_s": 2.46
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "A giant bonfire would spend its fuel absurdly fast.",
+      "tts_normalized_text": "A giant bonfire would spend its fuel absurdly fast.",
+      "accumulated_scene_state": [
+        "giant bonfire"
+      ],
+      "new_visual_element": "fast empty fuel gauge",
+      "start_frame_prompt": "giant bonfire",
+      "end_frame_prompt": "giant bonfire with fast empty fuel gauge",
+      "video_prompt": "A fuel gauge empties beside a giant bonfire, drawn stroke by stroke, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 3.47
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "render": "manim",
+      "narration_text": "Yet the Sun has shined for billions of years.",
+      "tts_normalized_text": "Yet the Sun has shined for billions of years.",
+      "accumulated_scene_state": [
+        "sun outline"
+      ],
+      "new_visual_element": "billions of years timeline",
+      "start_frame_prompt": "sun outline",
+      "end_frame_prompt": "sun outline with billions of years timeline",
+      "video_prompt": "A long timeline appears beside the sun, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 2.51
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "Its real engine lives deep in the core.",
+      "tts_normalized_text": "Its real engine lives deep in the core.",
+      "accumulated_scene_state": [
+        "sun cross-section"
+      ],
+      "new_visual_element": "core engine marker",
+      "start_frame_prompt": "sun cross-section",
+      "end_frame_prompt": "sun cross-section with core marker",
+      "video_prompt": "A sun cross-section and core marker draw themselves, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 2.22
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "Hydrogen nuclei squeeze together there under enormous pressure.",
+      "tts_normalized_text": "Hydrogen nuclei squeeze together there under enormous pressure.",
+      "accumulated_scene_state": [
+        "core marker"
+      ],
+      "new_visual_element": "squeezed hydrogen nuclei",
+      "start_frame_prompt": "core marker",
+      "end_frame_prompt": "core marker with squeezed hydrogen nuclei",
+      "video_prompt": "Hydrogen nuclei squeeze together inside the core, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.37
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "If they touch closely enough, they can fuse into helium.",
+      "tts_normalized_text": "If they touch closely enough, they can fuse into helium.",
+      "accumulated_scene_state": [
+        "two hydrogen nuclei"
+      ],
+      "new_visual_element": "helium nucleus",
+      "start_frame_prompt": "two hydrogen nuclei",
+      "end_frame_prompt": "two hydrogen nuclei merging into helium",
+      "video_prompt": "Two hydrogen nuclei merge into a helium nucleus, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 3.16
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Fusion releases energy because a little mass becomes light.",
+      "tts_normalized_text": "Fusion releases energy because a little mass becomes light.",
+      "accumulated_scene_state": [
+        "helium nucleus"
+      ],
+      "new_visual_element": "light rays",
+      "start_frame_prompt": "helium nucleus",
+      "end_frame_prompt": "helium nucleus with light rays",
+      "video_prompt": "Light rays appear around the helium nucleus, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 3.37
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "But two hydrogen nuclei both carry positive charge.",
+      "tts_normalized_text": "But two hydrogen nuclei both carry positive charge.",
+      "accumulated_scene_state": [
+        "two positive nuclei"
+      ],
+      "new_visual_element": "plus charge labels",
+      "start_frame_prompt": "two hydrogen nuclei",
+      "end_frame_prompt": "two hydrogen nuclei with plus labels",
+      "video_prompt": "Plus charge labels appear on two nuclei, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 3.29
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Their electric repulsion builds a steep barrier between them.",
+      "tts_normalized_text": "Their electric repulsion builds a steep barrier between them.",
+      "accumulated_scene_state": [
+        "two positive nuclei"
+      ],
+      "new_visual_element": "repulsion barrier",
+      "start_frame_prompt": "two positive nuclei",
+      "end_frame_prompt": "two positive nuclei with steep barrier",
+      "video_prompt": "A steep repulsion barrier rises between two nuclei, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 3.47
+    },
+    {
+      "beat_id": "A09",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Classical physics says most nuclei should bounce away.",
+      "tts_normalized_text": "Classical physics says most nuclei should bounce away.",
+      "accumulated_scene_state": [
+        "repulsion barrier"
+      ],
+      "new_visual_element": "bounce arrow",
+      "start_frame_prompt": "repulsion barrier",
+      "end_frame_prompt": "repulsion barrier with bounce arrow",
+      "video_prompt": "A bounce arrow reflects from the barrier, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A09.mp3",
+      "actual_duration_s": 3.06
+    },
+    {
+      "beat_id": "A10",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Quantum mechanics adds a strange escape hatch.",
+      "tts_normalized_text": "Quantum mechanics adds a strange escape hatch.",
+      "accumulated_scene_state": [
+        "barrier"
+      ],
+      "new_visual_element": "tunnel hatch",
+      "start_frame_prompt": "barrier",
+      "end_frame_prompt": "barrier with tunnel hatch",
+      "video_prompt": "A tunnel hatch appears under a barrier, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A10.mp3",
+      "actual_duration_s": 2.74
+    },
+    {
+      "beat_id": "A11",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "A nucleus can sometimes tunnel through the barrier.",
+      "tts_normalized_text": "A nucleus can sometimes tunnel through the barrier.",
+      "accumulated_scene_state": [
+        "barrier",
+        "tunnel hatch"
+      ],
+      "new_visual_element": "tunneling path",
+      "start_frame_prompt": "barrier with tunnel hatch",
+      "end_frame_prompt": "barrier with nucleus tunneling path",
+      "video_prompt": "A nucleus follows a dotted tunneling path through the barrier, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A11.mp3",
+      "actual_duration_s": 3.0
+    },
+    {
+      "beat_id": "A12",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "Each tunneling chance is tiny for one pair.",
+      "tts_normalized_text": "Each tunneling chance is tiny for one pair.",
+      "accumulated_scene_state": [
+        "one pair",
+        "tiny chance label"
+      ],
+      "new_visual_element": "tiny chance label",
+      "start_frame_prompt": "one pair of nuclei",
+      "end_frame_prompt": "one pair of nuclei with tiny chance label",
+      "video_prompt": "A tiny chance label appears beside one pair, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A12.mp3",
+      "actual_duration_s": 2.64
+    },
+    {
+      "beat_id": "A13",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "The Sun contains an enormous number of pairs.",
+      "tts_normalized_text": "The Sun contains an enormous number of pairs.",
+      "accumulated_scene_state": [
+        "many pairs"
+      ],
+      "new_visual_element": "many pair dots",
+      "start_frame_prompt": "one pair of nuclei",
+      "end_frame_prompt": "many pairs filling the sun",
+      "video_prompt": "Many pairs of nuclei appear inside a sun outline, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A13.mp3",
+      "actual_duration_s": 2.69
+    },
+    {
+      "beat_id": "A14",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "Tiny chances multiplied by the Sun become steady fusion.",
+      "tts_normalized_text": "Tiny chances multiplied by the Sun become steady fusion.",
+      "accumulated_scene_state": [
+        "many pairs filling the sun"
+      ],
+      "new_visual_element": "steady fusion glow",
+      "start_frame_prompt": "many pairs filling sun outline",
+      "end_frame_prompt": "many pairs with steady fusion glow",
+      "video_prompt": "A steady fusion glow appears inside the sun, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A14.mp3",
+      "actual_duration_s": 3.53
+    },
+    {
+      "beat_id": "A15",
+      "beat_type": "HOLD",
+      "scene_index": 7,
+      "render": "doodle",
+      "narration_text": "So tomorrow's sunlight is partly a quantum leak.",
+      "tts_normalized_text": "So tomorrow's sunlight is partly a quantum leak.",
+      "accumulated_scene_state": [
+        "sunlight beam",
+        "quantum leak label"
+      ],
+      "new_visual_element": "quantum leak sunlight doodle",
+      "start_frame_prompt": "sunlight beam",
+      "end_frame_prompt": "sunlight beam with quantum leak label",
+      "video_prompt": "A sunlight beam leaks through a tiny quantum tunnel, drawn stroke by stroke, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A15.mp3",
+      "actual_duration_s": 2.95
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 8,
+      "render": "none",
+      "narration_text": "Thanks for watching Why the Sun Needs Quantum Tunneling - find more Bear's Notes at youtube.com/@NikBearBrown",
+      "tts_normalized_text": "Thanks for watching Why the Sun Needs Quantum Tunneling - find more Bear's Notes at youtube.com/@NikBearBrown",
+      "accumulated_scene_state": [],
+      "new_visual_element": "outro title",
+      "start_frame_prompt": "final diagram with title margin",
+      "end_frame_prompt": "final diagram with title in upper margin",
+      "video_prompt": "Title appears in upper margin, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 7.55
+    }
+  ]
+}

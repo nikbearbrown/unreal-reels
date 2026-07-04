@@ -1,0 +1,503 @@
+{
+  "metadata": {
+    "slug": "why-uncertainty-is-wave-problem",
+    "title": "Why Uncertainty Is a Wave Problem",
+    "series": "Bears Notes",
+    "source": "user-provided transcript used as conceptual inspiration only",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "thing": "wave packet uncertainty",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#QuantumMechanics",
+      "#UncertaintyPrinciple",
+      "#Waves",
+      "#Physics",
+      "#BearsNotes"
+    ],
+    "total_estimated_duration_seconds": 60.53
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "none",
+      "narration_text": "Bear's Notes\n\nWhy Uncertainty Is a Wave Problem",
+      "tts_normalized_text": "Bear's Notes\n\nWhy Uncertainty Is a Wave Problem",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card",
+      "start_frame_prompt": "blank white title card",
+      "end_frame_prompt": "Bear's Notes title card with small intro marker",
+      "video_prompt": "Title card appears in handwritten text, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.71
+    },
+    {
+      "beat_id": "A00",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "Uncertainty sounds like quantum mechanics being mysterious on purpose.",
+      "tts_normalized_text": "Uncertainty sounds like quantum mechanics being mysterious on purpose.",
+      "accumulated_scene_state": [
+        "mystery label"
+      ],
+      "new_visual_element": "crossed-out mystery fog",
+      "start_frame_prompt": "mystery label on white background",
+      "end_frame_prompt": "mystery label crossed out with wave clue",
+      "video_prompt": "A mystery label is crossed out and replaced by a wave clue, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A00.mp3",
+      "actual_duration_s": 4.13
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "But waves already know this trick.",
+      "tts_normalized_text": "But waves already know this trick.",
+      "accumulated_scene_state": [
+        "wave trick label"
+      ],
+      "new_visual_element": "simple wave",
+      "start_frame_prompt": "blank white background",
+      "end_frame_prompt": "simple wave with wave trick label",
+      "video_prompt": "A simple wave appears with a wave trick label, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 1.99
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A long smooth wave has a very clear spacing.",
+      "tts_normalized_text": "A long smooth wave has a very clear spacing.",
+      "accumulated_scene_state": [
+        "long smooth wave"
+      ],
+      "new_visual_element": "crest spacing bracket",
+      "start_frame_prompt": "long smooth wave",
+      "end_frame_prompt": "long smooth wave with crest spacing bracket",
+      "video_prompt": "A long smooth wave and crest spacing bracket draw themselves, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 2.77
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "That spacing gives the wave a clear frequency.",
+      "tts_normalized_text": "That spacing gives the wave a clear frequency.",
+      "accumulated_scene_state": [
+        "long smooth wave",
+        "crest spacing bracket"
+      ],
+      "new_visual_element": "clear frequency label",
+      "start_frame_prompt": "long wave with spacing bracket",
+      "end_frame_prompt": "long wave with clear frequency label",
+      "video_prompt": "A clear frequency label appears beside the spacing bracket, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 2.74
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "But the long wave is spread across the whole screen.",
+      "tts_normalized_text": "But the long wave is spread across the whole screen.",
+      "accumulated_scene_state": [
+        "long wave",
+        "clear frequency label"
+      ],
+      "new_visual_element": "spread out position label",
+      "start_frame_prompt": "long wave with clear frequency label",
+      "end_frame_prompt": "long wave with spread out position label",
+      "video_prompt": "A spread-out position label appears across the long wave, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.11
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "A short pulse has a much clearer location.",
+      "tts_normalized_text": "A short pulse has a much clearer location.",
+      "accumulated_scene_state": [
+        "short pulse"
+      ],
+      "new_visual_element": "location bracket",
+      "start_frame_prompt": "short wave pulse",
+      "end_frame_prompt": "short wave pulse with location bracket",
+      "video_prompt": "A short pulse and location bracket draw themselves, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 2.51
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Its crests do not repeat long enough to pick one spacing.",
+      "tts_normalized_text": "Its crests do not repeat long enough to pick one spacing.",
+      "accumulated_scene_state": [
+        "short pulse",
+        "location bracket"
+      ],
+      "new_visual_element": "ambiguous spacing marks",
+      "start_frame_prompt": "short pulse with location bracket",
+      "end_frame_prompt": "short pulse with ambiguous spacing marks",
+      "video_prompt": "Ambiguous spacing marks appear over a short pulse, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 3.34
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "So a sharp position smears out the frequency.",
+      "tts_normalized_text": "So a sharp position smears out the frequency.",
+      "accumulated_scene_state": [
+        "sharp position",
+        "smeared frequency"
+      ],
+      "new_visual_element": "tradeoff arrow",
+      "start_frame_prompt": "sharp position and smeared frequency labels",
+      "end_frame_prompt": "sharp position arrow to smeared frequency",
+      "video_prompt": "A tradeoff arrow connects sharp position to smeared frequency, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 2.69
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "A sharp frequency smears out the position.",
+      "tts_normalized_text": "A sharp frequency smears out the position.",
+      "accumulated_scene_state": [
+        "sharp position tradeoff"
+      ],
+      "new_visual_element": "reverse tradeoff arrow",
+      "start_frame_prompt": "sharp position tradeoff",
+      "end_frame_prompt": "two-way tradeoff between frequency and position",
+      "video_prompt": "A reverse tradeoff arrow completes the two-way tradeoff, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 2.4
+    },
+    {
+      "beat_id": "A09",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "Quantum particles use waves to describe their motion.",
+      "tts_normalized_text": "Quantum particles use waves to describe their motion.",
+      "accumulated_scene_state": [
+        "particle dot",
+        "wave packet"
+      ],
+      "new_visual_element": "particle wave packet",
+      "start_frame_prompt": "particle dot",
+      "end_frame_prompt": "particle dot inside wave packet",
+      "video_prompt": "A particle dot and wave packet draw themselves, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A09.mp3",
+      "actual_duration_s": 3.19
+    },
+    {
+      "beat_id": "A10",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "Position comes from where the wave packet sits.",
+      "tts_normalized_text": "Position comes from where the wave packet sits.",
+      "accumulated_scene_state": [
+        "particle wave packet"
+      ],
+      "new_visual_element": "position bracket",
+      "start_frame_prompt": "particle wave packet",
+      "end_frame_prompt": "wave packet with position bracket",
+      "video_prompt": "A position bracket appears around the wave packet, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A10.mp3",
+      "actual_duration_s": 2.74
+    },
+    {
+      "beat_id": "A11",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "Momentum comes from the wave packet's frequency content.",
+      "tts_normalized_text": "Momentum comes from the wave packet's frequency content.",
+      "accumulated_scene_state": [
+        "particle wave packet",
+        "position bracket"
+      ],
+      "new_visual_element": "momentum frequency label",
+      "start_frame_prompt": "wave packet with position bracket",
+      "end_frame_prompt": "wave packet with momentum frequency label",
+      "video_prompt": "A momentum from frequency label appears beside the packet, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A11.mp3",
+      "actual_duration_s": 3.42
+    },
+    {
+      "beat_id": "A12",
+      "beat_type": "CUT",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "Narrowing the packet adds many frequencies at once.",
+      "tts_normalized_text": "Narrowing the packet adds many frequencies at once.",
+      "accumulated_scene_state": [
+        "narrow packet"
+      ],
+      "new_visual_element": "many frequency components",
+      "start_frame_prompt": "narrow packet",
+      "end_frame_prompt": "narrow packet with many frequency components",
+      "video_prompt": "Many frequency components appear below a narrow packet, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A12.mp3",
+      "actual_duration_s": 3.11
+    },
+    {
+      "beat_id": "A13",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "Many frequencies mean many possible momenta.",
+      "tts_normalized_text": "Many frequencies mean many possible momenta.",
+      "accumulated_scene_state": [
+        "many frequency components"
+      ],
+      "new_visual_element": "many momentum arrows",
+      "start_frame_prompt": "many frequency components",
+      "end_frame_prompt": "many frequency components with many momentum arrows",
+      "video_prompt": "Many momentum arrows appear under many frequency components, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A13.mp3",
+      "actual_duration_s": 2.74
+    },
+    {
+      "beat_id": "A14",
+      "beat_type": "CUT",
+      "scene_index": 8,
+      "render": "manim",
+      "narration_text": "The uncertainty principle is wave bookkeeping.",
+      "tts_normalized_text": "The uncertainty principle is wave bookkeeping.",
+      "accumulated_scene_state": [
+        "delta x delta p tradeoff"
+      ],
+      "new_visual_element": "uncertainty summary",
+      "start_frame_prompt": "position and momentum tradeoff",
+      "end_frame_prompt": "position and momentum tradeoff with uncertainty summary",
+      "video_prompt": "A concise uncertainty summary appears, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A14.mp3",
+      "actual_duration_s": 2.64
+    },
+    {
+      "beat_id": "A15",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 8,
+      "render": "manim",
+      "narration_text": "Quantum weirdness did not invent the tradeoff.",
+      "tts_normalized_text": "Quantum weirdness did not invent the tradeoff.",
+      "accumulated_scene_state": [
+        "uncertainty summary"
+      ],
+      "new_visual_element": "not invented label",
+      "start_frame_prompt": "uncertainty summary",
+      "end_frame_prompt": "uncertainty summary with not invented label",
+      "video_prompt": "A not invented label appears beside the wave tradeoff, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A15.mp3",
+      "actual_duration_s": 2.82
+    },
+    {
+      "beat_id": "A16",
+      "beat_type": "HOLD",
+      "scene_index": 8,
+      "render": "manim",
+      "narration_text": "It made the tradeoff unavoidable for particles.",
+      "tts_normalized_text": "It made the tradeoff unavoidable for particles.",
+      "accumulated_scene_state": [
+        "uncertainty summary",
+        "particle label"
+      ],
+      "new_visual_element": "unavoidable particle label",
+      "start_frame_prompt": "uncertainty summary",
+      "end_frame_prompt": "uncertainty summary with unavoidable particle label",
+      "video_prompt": "An unavoidable for particles label appears, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A16.mp3",
+      "actual_duration_s": 2.59
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 9,
+      "render": "none",
+      "narration_text": "Thanks for watching Why Uncertainty Is a Wave Problem - find more Bear's Notes at youtube.com/@NikBearBrown",
+      "tts_normalized_text": "Thanks for watching Why Uncertainty Is a Wave Problem - find more Bear's Notes at youtube.com/@NikBearBrown",
+      "accumulated_scene_state": [],
+      "new_visual_element": "outro title",
+      "start_frame_prompt": "final diagram with title margin",
+      "end_frame_prompt": "final diagram with title in upper margin",
+      "video_prompt": "Title appears in upper margin, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 7.89
+    }
+  ]
+}

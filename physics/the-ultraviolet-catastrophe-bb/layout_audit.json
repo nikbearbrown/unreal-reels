@@ -1,0 +1,60 @@
+{
+  "scene": "the_ultraviolet_catastrophe_bb",
+  "snapshots": 96,
+  "errors": 2,
+  "warnings": 1,
+  "safe_area": [
+    1.95,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": [
+    {
+      "type": "TEXT_ON_CURVE",
+      "severity": "ERROR",
+      "text": "infinite",
+      "t": 10.02,
+      "snap": 5,
+      "box": [
+        0.66,
+        2.75,
+        1.75,
+        3.05
+      ]
+    },
+    {
+      "type": "TEXT_ON_CURVE",
+      "severity": "ERROR",
+      "text": "ultraviolet",
+      "t": 49.85,
+      "snap": 30,
+      "box": [
+        0.75,
+        2.67,
+        1.78,
+        2.88
+      ]
+    },
+    {
+      "type": "TEXT_ON_TEXT",
+      "severity": "WARN",
+      "ratio": 0.179,
+      "a": "ultraviolet",
+      "b": "classical",
+      "t": 58.18,
+      "snap": 36,
+      "box_a": [
+        0.75,
+        2.67,
+        1.78,
+        2.88
+      ],
+      "box_b": [
+        0.23,
+        2.75,
+        0.99,
+        2.97
+      ]
+    }
+  ]
+}

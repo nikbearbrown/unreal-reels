@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "slug": "ultraviolet-catastrophe-worked",
+    "title": "The Ultraviolet Catastrophe: Why Quantizing Energy Fixes It (Worked Example)",
+    "series": "Bears Notes",
+    "tier": "deep",
+    "depth_of": "the-ultraviolet-catastrophe",
+    "aspect_ratio": "16:9",
+    "render_orientations": [
+      "16:9"
+    ],
+    "source": "quantum-mechanics-vol1/chapters/01-why-classical-physics-failed.md (deep expand of Candidate 02)",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#ultravioletcatastrophe",
+      "#planck",
+      "#blackbody",
+      "#rayleighjeans",
+      "#wienslaw",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "the blackbody brightness curve: classical Rayleigh-Jeans runs to infinity, Planck's energy chunks E=hf freeze out high-frequency modes, worked with room-temperature vs solar numbers",
+    "color_notes": "Axes/labels/numbers = ink #1a1a1a. The Rayleigh-Jeans runaway = red #C0392B. The Planck curve + boxed E=hf = accent #5A5653. Math is MathTex (LaTeX).",
+    "math_rendering": "MathTex (LaTeX). kT(300K)=0.0259 eV. UV 5eV: hf/kT~193, e^-193 ~ 1e-84. Wien b=2898 um*K; 300K->9.7um, 5800K->0.50um.",
+    "total_estimated_duration_seconds": 97.74
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Bear's Notes\n\nThe Ultraviolet Catastrophe: Why Quantizing Energy Fixes It",
+      "tts_normalized_text": "Bear's Notes.\n\nThe Ultraviolet Catastrophe: Why Quantizing Energy Fixes It.",
+      "new_visual_element": "title card: brand + runaway-vs-peak curve motif + title",
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 5.09
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Classical physics said a warm object's glow should blast you with ultraviolet.",
+      "tts_normalized_text": "Classical physics said a warm object's glow should blast you with ultraviolet.",
+      "new_visual_element": "narration card + runaway curve",
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.44
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "It doesn't — and the fix was Planck's idea that energy comes in chunks.",
+      "tts_normalized_text": "It doesn't — and the fix was Planck's idea that energy comes in chunks.",
+      "new_visual_element": "narration card + peaked curve",
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.13
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Plot brightness against frequency: a real object rises, peaks, and falls.",
+      "tts_normalized_text": "Plot brightness against frequency: a real object rises, peaks, and falls.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "axes + the real (Planck) curve, ghosted",
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 5.09
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "But classical theory ran the curve off to infinity — the ultraviolet catastrophe.",
+      "tts_normalized_text": "But classical theory ran the curve off to infinity — the ultraviolet catastrophe.",
+      "accumulated_scene_state": [
+        "axes"
+      ],
+      "new_visual_element": "the runaway curve shooting up",
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 4.68
+    },
+    {
+      "beat_id": "M01",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Here's the broken step, and the fix.",
+      "tts_normalized_text": "Here's the broken step, and the fix.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "plot left, math right",
+      "audio_file": "mp3/beat-M01.mp3",
+      "actual_duration_s": 2.27
+    },
+    {
+      "beat_id": "M02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "\\bar{E} = kT",
+      "narration_text": "Classical physics gives every wave mode the same energy, k T.",
+      "tts_normalized_text": "Classical physics gives every wave mode the same energy, k T.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "formula line 1",
+      "audio_file": "mp3/beat-M02.mp3",
+      "actual_duration_s": 3.94
+    },
+    {
+      "beat_id": "M03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "u \\propto f^2\\,kT",
+      "narration_text": "And the number of modes climbs as f-squared — so brightness diverges.",
+      "tts_normalized_text": "And the number of modes climbs as f squared — so brightness diverges.",
+      "accumulated_scene_state": [
+        "kT"
+      ],
+      "new_visual_element": "divergence",
+      "audio_file": "mp3/beat-M03.mp3",
+      "actual_duration_s": 4.26
+    },
+    {
+      "beat_id": "M04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "E = hf",
+      "narration_text": "Planck's rule: energy comes only in chunks of E equals h f.",
+      "tts_normalized_text": "Planck's rule: energy comes only in chunks of E equals h f.",
+      "accumulated_scene_state": [
+        "divergence"
+      ],
+      "new_visual_element": "boxed E = hf",
+      "audio_file": "mp3/beat-M04.mp3",
+      "actual_duration_s": 4.08
+    },
+    {
+      "beat_id": "M05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "e^{-hf/kT}",
+      "narration_text": "A high-frequency mode needs a whole costly chunk, so it's frozen out — suppressed by e to the minus h f over k T.",
+      "tts_normalized_text": "A high-frequency mode needs a whole costly chunk, so it's frozen out — suppressed by e to the minus h f over k T.",
+      "accumulated_scene_state": [
+        "E=hf"
+      ],
+      "new_visual_element": "Boltzmann suppression",
+      "audio_file": "mp3/beat-M05.mp3",
+      "actual_duration_s": 7.18
+    },
+    {
+      "beat_id": "M06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "u \\propto \\frac{f^3}{e^{hf/kT}-1}",
+      "narration_text": "That gives Planck's law — which peaks and falls.",
+      "tts_normalized_text": "That gives Planck's law — which peaks and falls.",
+      "accumulated_scene_state": [
+        "suppression"
+      ],
+      "new_visual_element": "Planck's law",
+      "audio_file": "mp3/beat-M06.mp3",
+      "actual_duration_s": 2.59
+    },
+    {
+      "beat_id": "W01",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Put numbers on it at room temperature, three hundred kelvin.",
+      "tts_normalized_text": "Put numbers on it at room temperature, three hundred kelvin.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "givens: T = 300 K",
+      "audio_file": "mp3/beat-W01.mp3",
+      "actual_duration_s": 2.82
+    },
+    {
+      "beat_id": "W02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "kT \\approx 0.026\\ \\text{eV}",
+      "narration_text": "Thermal energy k T is about zero point zero two six electron-volts.",
+      "tts_normalized_text": "Thermal energy k T is about zero point zero two six electron volts.",
+      "accumulated_scene_state": [
+        "T"
+      ],
+      "new_visual_element": "kT computed",
+      "audio_file": "mp3/beat-W02.mp3",
+      "actual_duration_s": 4.26
+    },
+    {
+      "beat_id": "W03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "\\frac{hf}{kT} \\approx \\frac{5}{0.026} \\approx 193",
+      "narration_text": "A five electron-volt ultraviolet chunk is almost two hundred times bigger.",
+      "tts_normalized_text": "A five electron volt ultraviolet chunk is almost two hundred times bigger.",
+      "accumulated_scene_state": [
+        "kT"
+      ],
+      "new_visual_element": "the ratio",
+      "audio_file": "mp3/beat-W03.mp3",
+      "actual_duration_s": 4.36
+    },
+    {
+      "beat_id": "W04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "e^{-193} \\sim 10^{-84}",
+      "narration_text": "Its odds are e to the minus one ninety three — about ten to the minus eighty-four. Essentially no ultraviolet at all.",
+      "tts_normalized_text": "Its odds are e to the minus one ninety three — about ten to the minus eighty four. Essentially no ultraviolet at all.",
+      "accumulated_scene_state": [
+        "ratio"
+      ],
+      "new_visual_element": "suppression result (red)",
+      "audio_file": "mp3/beat-W04.mp3",
+      "actual_duration_s": 6.53
+    },
+    {
+      "beat_id": "W05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "\\lambda_{\\max} = \\frac{b}{T}",
+      "narration_text": "The peak instead sits in the infrared — Wien's law, lambda-max equals b over T.",
+      "tts_normalized_text": "The peak instead sits in the infrared — Wien's law, lambda max equals b over T.",
+      "accumulated_scene_state": [
+        "suppression"
+      ],
+      "new_visual_element": "Wien's law",
+      "audio_file": "mp3/beat-W05.mp3",
+      "actual_duration_s": 5.15
+    },
+    {
+      "beat_id": "W06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "\\lambda_{\\max}(300\\,\\text{K}) \\approx 9.7\\,\\mu\\text{m}",
+      "narration_text": "At three hundred kelvin that's about ten microns; the sun, at fifty-eight hundred, peaks near half a micron — visible light.",
+      "tts_normalized_text": "At three hundred kelvin that's about ten microns; the sun, at fifty eight hundred, peaks near half a micron — visible light.",
+      "accumulated_scene_state": [
+        "Wien"
+      ],
+      "new_visual_element": "two peaks on a spectrum strip: 300K IR vs 5800K visible",
+      "audio_file": "mp3/beat-W06.mp3",
+      "actual_duration_s": 8.44
+    },
+    {
+      "beat_id": "P01",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Heat it hotter and the peak slides toward visible — a stove glows red, a filament white.",
+      "tts_normalized_text": "Heat it hotter and the peak slides toward visible — a stove glows red, a filament white.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "peak sliding left as T rises",
+      "audio_file": "mp3/beat-P01.mp3",
+      "actual_duration_s": 5.2
+    },
+    {
+      "beat_id": "R01",
+      "beat_type": "CUT",
+      "scene_index": 7,
+      "render": "manim",
+      "math_tex": "E = hf",
+      "narration_text": "Quantizing energy — E equals h f — starves the costly high-frequency modes.",
+      "tts_normalized_text": "Quantizing energy — E equals h f — starves the costly high-frequency modes.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "boxed E = hf, centered",
+      "audio_file": "mp3/beat-R01.mp3",
+      "actual_duration_s": 5.28
+    },
+    {
+      "beat_id": "R02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 7,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "No infinity — just a peak that climbs with temperature.",
+      "tts_normalized_text": "No infinity — just a peak that climbs with temperature.",
+      "accumulated_scene_state": [
+        "equation"
+      ],
+      "new_visual_element": "recap line",
+      "audio_file": "mp3/beat-R02.mp3",
+      "actual_duration_s": 2.93
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 8,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Thanks for watching — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching — find more Bear's Notes at youtube dot com slash at Nik Bear Brown.",
+      "new_visual_element": "cleared outro card: thanks + title + channel",
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 5.02
+    }
+  ]
+}

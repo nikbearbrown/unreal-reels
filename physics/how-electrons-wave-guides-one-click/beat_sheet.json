@@ -1,0 +1,430 @@
+{
+  "metadata": {
+    "slug": "how-electrons-wave-guides-one-click",
+    "title": "How an Electron's Wave Guides One Click",
+    "series": "Bears Notes",
+    "source": "user-provided transcript used as conceptual inspiration only",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "thing": "electron probability wave",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#QuantumMechanics",
+      "#WaveParticleDuality",
+      "#Electron",
+      "#BearsNotes"
+    ],
+    "total_estimated_duration_seconds": 56.67
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "none",
+      "narration_text": "Bear's Notes\n\nHow an Electron's Wave Guides One Click",
+      "tts_normalized_text": "Bear's Notes\n\nHow an Electron's Wave Guides One Click",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card",
+      "start_frame_prompt": "blank white title card",
+      "end_frame_prompt": "Bear's Notes title card with small intro marker",
+      "video_prompt": "Title card appears in handwritten text, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 4.13
+    },
+    {
+      "beat_id": "A00",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "An electron does not carry a tiny route card through space.",
+      "tts_normalized_text": "An electron does not carry a tiny route card through space.",
+      "accumulated_scene_state": [
+        "electron dot"
+      ],
+      "new_visual_element": "crossed-out tiny route card",
+      "start_frame_prompt": "small electron dot on white background",
+      "end_frame_prompt": "electron dot with crossed-out tiny route card",
+      "video_prompt": "A tiny route card appears and is crossed out, drawn stroke by stroke, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A00.mp3",
+      "actual_duration_s": 3.29
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "Before we look, its wave spreads across possible landing places.",
+      "tts_normalized_text": "Before we look, its wave spreads across possible landing places.",
+      "accumulated_scene_state": [
+        "spreading wave"
+      ],
+      "new_visual_element": "possible landing marks",
+      "start_frame_prompt": "spreading probability wave",
+      "end_frame_prompt": "spreading probability wave with several possible landing marks",
+      "video_prompt": "A spreading wave and possible landing marks draw themselves, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 3.84
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "The wave is not extra electron material poured everywhere.",
+      "tts_normalized_text": "The wave is not extra electron material poured everywhere.",
+      "accumulated_scene_state": [
+        "spreading wave",
+        "possible landing marks"
+      ],
+      "new_visual_element": "not material label",
+      "start_frame_prompt": "spreading probability wave with possible landing marks",
+      "end_frame_prompt": "spreading probability wave with not material label",
+      "video_prompt": "A not material label appears in red, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 3.37
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "It is a probability landscape for one future click.",
+      "tts_normalized_text": "It is a probability landscape for one future click.",
+      "accumulated_scene_state": [
+        "probability curve"
+      ],
+      "new_visual_element": "future click marker",
+      "start_frame_prompt": "probability landscape curve",
+      "end_frame_prompt": "probability curve with one future click marker",
+      "video_prompt": "A probability curve and one click marker draw themselves, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 3.11
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "High parts of the landscape mean more likely here.",
+      "tts_normalized_text": "High parts of the landscape mean more likely here.",
+      "accumulated_scene_state": [
+        "probability curve",
+        "future click marker"
+      ],
+      "new_visual_element": "high likely label",
+      "start_frame_prompt": "probability curve",
+      "end_frame_prompt": "probability curve with high likely label",
+      "video_prompt": "A high likely label appears near the tall curve region, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 2.82
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Low parts mean possible, but much less likely.",
+      "tts_normalized_text": "Low parts mean possible, but much less likely.",
+      "accumulated_scene_state": [
+        "probability curve",
+        "future click marker",
+        "high likely label"
+      ],
+      "new_visual_element": "low less likely label",
+      "start_frame_prompt": "probability curve with high likely label",
+      "end_frame_prompt": "probability curve with high and low likelihood labels",
+      "video_prompt": "A low less likely label appears near the small curve region, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 2.87
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "When a detector checks, one red dot appears.",
+      "tts_normalized_text": "When a detector checks, one red dot appears.",
+      "accumulated_scene_state": [
+        "detector wall"
+      ],
+      "new_visual_element": "one red detection dot",
+      "start_frame_prompt": "detector wall on white background",
+      "end_frame_prompt": "detector wall with one red dot",
+      "video_prompt": "A detector wall and one red detection dot appear, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 2.74
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "The whole landscape collapses into that single result.",
+      "tts_normalized_text": "The whole landscape collapses into that single result.",
+      "accumulated_scene_state": [
+        "detector wall",
+        "one red detection dot"
+      ],
+      "new_visual_element": "collapsed landscape arrow",
+      "start_frame_prompt": "detector wall with one red dot",
+      "end_frame_prompt": "faded probability landscape pointing into one red dot",
+      "video_prompt": "A faded probability landscape points into one red dot, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 3.16
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Run the same setup again, and another dot appears.",
+      "tts_normalized_text": "Run the same setup again, and another dot appears.",
+      "accumulated_scene_state": [
+        "detector wall",
+        "second red detection dot"
+      ],
+      "new_visual_element": "another detection dot",
+      "start_frame_prompt": "detector wall on white background",
+      "end_frame_prompt": "detector wall with another detection dot",
+      "video_prompt": "Another detection dot appears on the wall, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 2.87
+    },
+    {
+      "beat_id": "A09",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "After many runs, the dots trace the wave's shape.",
+      "tts_normalized_text": "After many runs, the dots trace the wave's shape.",
+      "accumulated_scene_state": [
+        "detector wall",
+        "many detection dots"
+      ],
+      "new_visual_element": "dot pattern matching wave",
+      "start_frame_prompt": "detector wall with few dots",
+      "end_frame_prompt": "detector wall with many dots matching the wave",
+      "video_prompt": "Many dots appear and trace the wave shape, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A09.mp3",
+      "actual_duration_s": 3.16
+    },
+    {
+      "beat_id": "A10",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "doodle",
+      "narration_text": "So the wave guides the statistics, not a hidden bead.",
+      "tts_normalized_text": "So the wave guides the statistics, not a hidden bead.",
+      "accumulated_scene_state": [
+        "probability wave",
+        "crossed-out hidden bead"
+      ],
+      "new_visual_element": "crossed-out hidden bead",
+      "start_frame_prompt": "probability wave on white background",
+      "end_frame_prompt": "probability wave with crossed-out hidden bead",
+      "video_prompt": "A hidden bead appears and is crossed out beside a probability wave, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A10.mp3",
+      "actual_duration_s": 2.95
+    },
+    {
+      "beat_id": "A11",
+      "beat_type": "CUT",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "The hard work is predicting how that wave moves.",
+      "tts_normalized_text": "The hard work is predicting how that wave moves.",
+      "accumulated_scene_state": [
+        "moving wave"
+      ],
+      "new_visual_element": "motion arrow",
+      "start_frame_prompt": "probability wave on axes",
+      "end_frame_prompt": "probability wave with motion arrow",
+      "video_prompt": "A wave and motion arrow draw themselves, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A11.mp3",
+      "actual_duration_s": 2.77
+    },
+    {
+      "beat_id": "A12",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "Quantum mechanics is the rulebook for that moving landscape.",
+      "tts_normalized_text": "Quantum mechanics is the rulebook for that moving landscape.",
+      "accumulated_scene_state": [
+        "moving wave",
+        "motion arrow"
+      ],
+      "new_visual_element": "quantum mechanics label",
+      "start_frame_prompt": "moving wave with motion arrow",
+      "end_frame_prompt": "moving wave with quantum mechanics label",
+      "video_prompt": "The quantum mechanics label appears over a moving wave, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A12.mp3",
+      "actual_duration_s": 3.34
+    },
+    {
+      "beat_id": "A13",
+      "beat_type": "HOLD",
+      "scene_index": 8,
+      "render": "manim",
+      "narration_text": "One spread-out possibility map can steer one sharp detection.",
+      "tts_normalized_text": "One spread-out possibility map can steer one sharp detection.",
+      "accumulated_scene_state": [
+        "possibility map",
+        "sharp detection"
+      ],
+      "new_visual_element": "final summary",
+      "start_frame_prompt": "possibility map and sharp detection",
+      "end_frame_prompt": "possibility map steering one sharp detection",
+      "video_prompt": "A final summary diagram appears, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A13.mp3",
+      "actual_duration_s": 3.58
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 9,
+      "render": "none",
+      "narration_text": "Thanks for watching How an Electron's Wave Guides One Click - find more Bear's Notes at youtube.com/@NikBearBrown",
+      "tts_normalized_text": "Thanks for watching How an Electron's Wave Guides One Click - find more Bear's Notes at youtube.com/@NikBearBrown",
+      "accumulated_scene_state": [],
+      "new_visual_element": "outro title",
+      "start_frame_prompt": "final diagram with title margin",
+      "end_frame_prompt": "final diagram with title in upper margin",
+      "video_prompt": "Title appears in upper margin, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 8.67
+    }
+  ]
+}

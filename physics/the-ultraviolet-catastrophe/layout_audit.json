@@ -1,0 +1,39 @@
+{
+  "scene": "the_ultraviolet_catastrophe",
+  "snapshots": 52,
+  "errors": 1,
+  "warnings": 1,
+  "safe_area": [
+    1.95,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": [
+    {
+      "type": "OFF_FRAME",
+      "severity": "ERROR",
+      "text": "realglow",
+      "t": 46.3,
+      "snap": 29,
+      "box": [
+        1.65,
+        -0.61,
+        2.72,
+        -0.19
+      ]
+    },
+    {
+      "type": "OFF_SAFE_AREA",
+      "severity": "WARN",
+      "text": "brightness",
+      "t": 21.3,
+      "snap": 13,
+      "box": [
+        -2.05,
+        3.06,
+        -0.85,
+        3.44
+      ]
+    }
+  ]
+}

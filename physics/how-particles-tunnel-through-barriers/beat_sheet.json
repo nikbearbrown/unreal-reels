@@ -1,0 +1,427 @@
+{
+  "metadata": {
+    "slug": "how-particles-tunnel-through-barriers",
+    "title": "How Particles Tunnel Through Barriers",
+    "series": "Bears Notes",
+    "source": "User-provided transcript inspiration about tunneling through a barrier",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "thing": "barrier",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "total_estimated_duration_seconds": 58.04,
+    "hashtags": [
+      "#QuantumMechanics",
+      "#Physics",
+      "#Tunneling",
+      "#STEM"
+    ]
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "none",
+      "narration_text": "Bear's Notes\n\nHow Particles Tunnel Through Barriers",
+      "tts_normalized_text": "Bear's Notes\n\nHow Particles Tunnel Through Barriers",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.66,
+      "approval_status": "approved"
+    },
+    {
+      "beat_id": "A00",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "A classical ball cannot cheat a hill.",
+      "tts_normalized_text": "A classical ball cannot cheat a hill.",
+      "accumulated_scene_state": [
+        "doodle placeholder: classical ball denied by hill"
+      ],
+      "new_visual_element": "classical ball denied by hill",
+      "doodle_prompt": "classical ball rolling in a valley, blocked by a tall hill, flat vector illustration. Thick black lines, solid colors, bold lines, simple details. White background. Napkin sketch style, simple doodle, black and white. --ar 16:9 --profile 2hu1pm2 j3xc8st i7dpdo9 8qzx41e 196d1wf",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A00.mp3",
+      "actual_duration_s": 2.12
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "render": "manim",
+      "narration_text": "It climbs only as high as its starting energy allows.",
+      "tts_normalized_text": "It climbs only as high as its starting energy allows.",
+      "accumulated_scene_state": [
+        "valley curve",
+        "ball",
+        "starting energy line"
+      ],
+      "new_visual_element": "starting energy line",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 3.29
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "render": "manim",
+      "narration_text": "A taller barrier turns the far valley into forbidden territory.",
+      "tts_normalized_text": "A taller barrier turns the far valley into forbidden territory.",
+      "accumulated_scene_state": [
+        "valley curve",
+        "ball",
+        "starting energy line",
+        "forbidden far valley"
+      ],
+      "new_visual_element": "forbidden far valley",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 3.71
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "Quantum particles are described by waves, not tiny certainty dots.",
+      "tts_normalized_text": "Quantum particles are described by waves, not tiny certainty dots.",
+      "accumulated_scene_state": [
+        "wave packet",
+        "crossed certainty dot"
+      ],
+      "new_visual_element": "wave packet",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 4.62
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "Most of the wave stays in the first valley.",
+      "tts_normalized_text": "Most of the wave stays in the first valley.",
+      "accumulated_scene_state": [
+        "left valley",
+        "large wave packet"
+      ],
+      "new_visual_element": "large left-side wave",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 2.22
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "A thin tail leaks into the barrier.",
+      "tts_normalized_text": "A thin tail leaks into the barrier.",
+      "accumulated_scene_state": [
+        "left valley",
+        "large wave packet",
+        "barrier",
+        "decaying tail"
+      ],
+      "new_visual_element": "decaying tail inside barrier",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 2.17
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "Sometimes that tail reaches the far side.",
+      "tts_normalized_text": "Sometimes that tail reaches the far side.",
+      "accumulated_scene_state": [
+        "left wave",
+        "barrier tail",
+        "small right-side wave"
+      ],
+      "new_visual_element": "small transmitted wave",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 2.35
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "When we look, the particle may appear beyond the wall.",
+      "tts_normalized_text": "When we look, the particle may appear beyond the wall.",
+      "accumulated_scene_state": [
+        "left wave",
+        "barrier tail",
+        "right-side wave",
+        "detection dot"
+      ],
+      "new_visual_element": "detection dot beyond wall",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 2.93
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "The chance is small, but not zero.",
+      "tts_normalized_text": "The chance is small, but not zero.",
+      "accumulated_scene_state": [
+        "left wave",
+        "barrier tail",
+        "right-side wave",
+        "small not zero label"
+      ],
+      "new_visual_element": "small but not zero label",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 2.27
+    },
+    {
+      "beat_id": "A09",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A wider barrier makes the leaked tail fade faster.",
+      "tts_normalized_text": "A wider barrier makes the leaked tail fade faster.",
+      "accumulated_scene_state": [
+        "wide barrier",
+        "short fading tail"
+      ],
+      "new_visual_element": "wide barrier comparison",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A09.mp3",
+      "actual_duration_s": 3.42
+    },
+    {
+      "beat_id": "A10",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A lower barrier lets more of the wave survive.",
+      "tts_normalized_text": "A lower barrier lets more of the wave survive.",
+      "accumulated_scene_state": [
+        "wide barrier comparison",
+        "lower barrier comparison"
+      ],
+      "new_visual_element": "lower barrier comparison",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A10.mp3",
+      "actual_duration_s": 2.82
+    },
+    {
+      "beat_id": "A11",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "The particle can even be found inside the forbidden region.",
+      "tts_normalized_text": "The particle can even be found inside the forbidden region.",
+      "accumulated_scene_state": [
+        "forbidden region",
+        "particle inside"
+      ],
+      "new_visual_element": "particle inside forbidden region",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A11.mp3",
+      "actual_duration_s": 3.06
+    },
+    {
+      "beat_id": "A12",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "doodle",
+      "narration_text": "That is not a hidden tunnel in the mountain.",
+      "tts_normalized_text": "That is not a hidden tunnel in the mountain.",
+      "accumulated_scene_state": [
+        "doodle placeholder: crossed-out secret tunnel"
+      ],
+      "new_visual_element": "not a secret tunnel",
+      "doodle_prompt": "crossed-out secret tunnel through a mountain, flat vector illustration. Thick black lines, solid colors, bold lines, simple details. White background. Napkin sketch style, simple doodle, black and white. --ar 16:9 --profile 2hu1pm2 j3xc8st i7dpdo9 8qzx41e 196d1wf",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A12.mp3",
+      "actual_duration_s": 2.27
+    },
+    {
+      "beat_id": "A13",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "It is the wave refusing to stop instantly.",
+      "tts_normalized_text": "It is the wave refusing to stop instantly.",
+      "accumulated_scene_state": [
+        "continuous wave at boundary"
+      ],
+      "new_visual_element": "continuous wave crossing boundary",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A13.mp3",
+      "actual_duration_s": 2.53
+    },
+    {
+      "beat_id": "A14",
+      "beat_type": "CUT",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "In atoms, this lets electrons spend time inside nuclei.",
+      "tts_normalized_text": "In atoms, this lets electrons spend time inside nuclei.",
+      "accumulated_scene_state": [
+        "atom nucleus",
+        "electron cloud inside nucleus"
+      ],
+      "new_visual_element": "electron cloud inside nucleus",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A14.mp3",
+      "actual_duration_s": 3.71
+    },
+    {
+      "beat_id": "A15",
+      "beat_type": "HOLD",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "Tunneling turns impossible paths into tiny probabilities.",
+      "tts_normalized_text": "Tunneling turns impossible paths into tiny probabilities.",
+      "accumulated_scene_state": [
+        "impossible paths",
+        "tiny probabilities"
+      ],
+      "new_visual_element": "summary labels",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A15.mp3",
+      "actual_duration_s": 3.42
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 8,
+      "render": "none",
+      "narration_text": "Thanks for watching How Particles Tunnel Through Barriers - find more Bear's Notes at youtube.com/@NikBearBrown",
+      "tts_normalized_text": "Thanks for watching How Particles Tunnel Through Barriers - find more Bear's Notes at youtube dot com slash at Nik Bear Brown",
+      "accumulated_scene_state": [
+        "final summary"
+      ],
+      "new_visual_element": "outro title",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 7.47,
+      "approval_status": "approved"
+    }
+  ]
+}

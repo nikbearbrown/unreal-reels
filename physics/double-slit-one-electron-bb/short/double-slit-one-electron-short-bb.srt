@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:03,287
+Bear's Notes
+One Electron Interferes With Itself
+
+2
+00:00:03,580 --> 00:00:08,133
+Fire electrons at two slits one at a time — each arrives as a single dot.
+
+3
+00:00:08,410 --> 00:00:12,763
+Ten in, the dots look random; common sense says two heaps, one behind each slit.
+
+4
+00:00:13,010 --> 00:00:18,263
+Seventy thousand in: stripes — bright and dark bands no two-heap picture allows.
+
+5
+00:00:18,680 --> 00:00:23,000
+Stripes are what waves do: ripples through both slits overlap and cancel.
+
+6
+00:00:23,230 --> 00:00:26,950
+Particles can't do that — a ball takes one slit and joins its heap.
+
+7
+00:00:27,170 --> 00:00:31,757
+And these electrons flew alone: never a second one in the machine to interfere with.
+
+8
+00:00:31,950 --> 00:00:35,970
+So each electron's wave goes through both slits and interferes with itself.
+
+9
+00:00:36,210 --> 00:00:40,997
+The dot is where it's found; the stripes map where finding it is likely — psi squared.
+
+10
+00:00:41,070 --> 00:00:45,057
+Peek at which slit it took, and the stripes vanish — information kills them.
+
+11
+00:00:45,200 --> 00:00:50,853
+Molecules of two thousand atoms paint the same stripes; your wavelength is just too small to show it.
+
+12
+00:00:50,950 --> 00:01:01,003
+The full story — the buildup, de Broglie's wavelength, the forbidden bands — is in the long video. Thanks for watching — more at youtube dot com, slash, at Nik Bear Brown.

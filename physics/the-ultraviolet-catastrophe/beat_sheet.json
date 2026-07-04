@@ -1,0 +1,387 @@
+{
+  "metadata": {
+    "slug": "the-ultraviolet-catastrophe",
+    "title": "The Ultraviolet Catastrophe",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/01-why-classical-physics-failed.md (Candidate 02)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "thing": "a character warmed by a wall whose glow is the blackbody spectrum",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#quantumphysics",
+      "#physics",
+      "#ultravioletcatastrophe",
+      "#planck",
+      "#blackbody",
+      "#quantummechanics",
+      "#science",
+      "#STEM",
+      "#education",
+      "#BearsNotes"
+    ],
+    "color_notes": "Rayleigh-Jeans runaway = forbidden red #C0392B (the catastrophe). Planck/measured curve = accent Warm Slate #5A5653 (the truth). All other line art = ink #1a1a1a.",
+    "total_estimated_duration_seconds": 77.37,
+    "deep_slug": "ultraviolet-catastrophe-worked",
+    "deep_teaser_tex": "E = hf"
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nThe Ultraviolet Catastrophe",
+      "tts_normalized_text": "Bear's Notes\n\nThe Ultraviolet Catastrophe",
+      "accumulated_scene_state": [],
+      "new_visual_element": "series character draws in, then the title in Shadows Into Light",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly character, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same character, fully drawn",
+      "video_animation_prompt": "the character draws itself in stroke by stroke, no hand visible, white background; then the title 'The Ultraviolet Catastrophe' appears in Shadows Into Light beneath the brand line",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.16,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "Everything warm is quietly glowing — your body, a campfire, the sun — all giving off light.",
+      "tts_normalized_text": "Everything warm is quietly glowing — your body, a campfire, the sun — all giving off light.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person warming by a campfire",
+      "start_frame_prompt": "[DOODLE OBJECT = a person sitting beside a small campfire, relaxed and warm]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person by the campfire, soft glow lines rising from the fire]",
+      "video_animation_prompt": "the person and campfire draw themselves in stroke by stroke, soft glow lines rise; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 6.4,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "Our best classical theory predicted that glow should blast you with endless ultraviolet — but it doesn't.",
+      "tts_normalized_text": "Our best classical theory predicted that glow should blast you with endless ultraviolet — but it doesn't.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person bracing as ultraviolet ray-lines blast toward them",
+      "start_frame_prompt": "[DOODLE OBJECT = a person standing, calm]",
+      "end_frame_prompt": "[DOODLE OBJECT = the same person bracing, arms up, as many sharp ray-lines blast toward them from one side]",
+      "video_animation_prompt": "sharp ray-lines draw themselves stroke by stroke blasting toward the person as they brace; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 6.5,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "Plot how brightly an object glows against the frequency of the light it emits.",
+      "tts_normalized_text": "Plot how brightly an object glows against the frequency of the light it emits.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "axes: x = frequency, y = brightness",
+      "video_animation_prompt": "MANIM: draw x-axis labeled 'frequency' and y-axis labeled 'brightness', stroke-on, ink #1a1a1a, white bg",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 4.41,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "At low frequencies, only a few light-wave patterns fit inside the object.",
+      "tts_normalized_text": "At low frequencies, only a few light-wave patterns fit inside the object.",
+      "accumulated_scene_state": [
+        "axes"
+      ],
+      "new_visual_element": "2-3 small standing-wave arcs near the low-frequency end",
+      "video_animation_prompt": "MANIM: draw 3 small sine arcs above the low-frequency region of the x-axis, stroke-on; axes stay locked",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 4.73,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "But the number of possible patterns climbs faster and faster as the frequency rises.",
+      "tts_normalized_text": "But the number of possible patterns climbs faster and faster as the frequency rises.",
+      "accumulated_scene_state": [
+        "axes",
+        "few low-frequency wave arcs"
+      ],
+      "new_visual_element": "many more arcs packing in toward high frequency; a faint dashed count curve rising as f-squared",
+      "video_animation_prompt": "MANIM: progressively draw more, tighter arcs left-to-right; overlay a faint dashed 'count grows as f squared' guide rising; existing elements locked",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 4.96,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "Classical physics hands every single pattern the exact same share of energy.",
+      "tts_normalized_text": "Classical physics hands every single pattern the exact same share of energy.",
+      "accumulated_scene_state": [
+        "axes",
+        "wave arcs (few to many)",
+        "f-squared count guide"
+      ],
+      "new_visual_element": "equal-height energy bars dropping onto every arc",
+      "video_animation_prompt": "MANIM: drop an identical-height small bar onto each arc in sequence (same height = equal energy); arcs/axes locked",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "Countless patterns, each fully funded, drive the predicted brightness screaming toward infinity.",
+      "tts_normalized_text": "Countless patterns, each fully funded, drive the predicted brightness screaming toward infinity.",
+      "accumulated_scene_state": [
+        "axes",
+        "wave arcs",
+        "f-squared count guide",
+        "equal energy bars"
+      ],
+      "new_visual_element": "the Rayleigh-Jeans curve climbing steeply off the top of the frame (forbidden red)",
+      "video_animation_prompt": "MANIM: trace the Rayleigh-Jeans curve in forbidden red #C0392B rising ever more steeply and shooting off the top edge; everything else locked",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 5.85,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "But real objects stay calm — their glow rises, peaks, and gently falls.",
+      "tts_normalized_text": "But real objects stay calm — their glow rises, peaks, and gently falls.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "fresh axes with the faint red runaway as a ghost, plus the measured curve in Warm Slate that rises, peaks, falls",
+      "video_animation_prompt": "MANIM: redraw axes; show the red runaway faded to a ghost; trace the measured curve in accent Warm Slate #5A5653 (rise-peak-fall) as the contrast",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 5.51,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "The fix is a strange rule: energy comes only in whole chunks, never slivers.",
+      "tts_normalized_text": "The fix is a strange rule: energy comes only in whole chunks, never slivers.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a smooth ramp crossed out beside a staircase of discrete equal chunks",
+      "video_animation_prompt": "MANIM: draw a smooth ramp, strike it through; draw a staircase of discrete equal chunks beside it (compare: continuous vs quantized)",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 4.86,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A09",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Each chunk costs more at higher frequency — ultraviolet light is wildly expensive.",
+      "tts_normalized_text": "Each chunk costs more at higher frequency — ultraviolet light is wildly expensive.",
+      "accumulated_scene_state": [
+        "struck-out smooth ramp",
+        "staircase of equal chunks"
+      ],
+      "new_visual_element": "chunks redrawn growing taller with frequency; a price tag on the tallest (UV) chunk",
+      "video_animation_prompt": "MANIM: chunks grow taller left to right with frequency; draw a price tag on the tallest UV chunk; ramp stays struck",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A09.mp3",
+      "actual_duration_s": 5.2,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A10",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "The warm object simply cannot afford those costly high-frequency patterns.",
+      "tts_normalized_text": "The warm object simply cannot afford those costly high-frequency patterns.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the spectrum's high-frequency wave arcs greying out / going empty",
+      "video_animation_prompt": "MANIM: redraw axes + arcs; fade the high-frequency arcs to empty grey outlines (unaffordable), low-frequency arcs stay solid ink",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A10.mp3",
+      "actual_duration_s": 4.86,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A11",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "So the expensive patterns stay empty, and the runaway curve bends back to zero.",
+      "tts_normalized_text": "So the expensive patterns stay empty, and the runaway curve bends back to zero.",
+      "accumulated_scene_state": [
+        "axes",
+        "solid low-frequency arcs",
+        "empty high-frequency arcs"
+      ],
+      "new_visual_element": "the red runaway curve bending down to meet the Warm Slate Planck curve",
+      "video_animation_prompt": "MANIM: animate the red Rayleigh-Jeans curve bending downward and resolving into the Warm Slate Planck curve (rise-peak-fall back to zero); transform",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A11.mp3",
+      "actual_duration_s": 4.6,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A12",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "That one rule — energy in chunks — lit the fuse of all quantum physics.",
+      "tts_normalized_text": "That one rule — energy in chunks — lit the fuse of all quantum physics.",
+      "accumulated_scene_state": [
+        "axes",
+        "arcs",
+        "Planck curve in Warm Slate"
+      ],
+      "new_visual_element": "one energy chunk highlighted, settling on the finished Planck curve",
+      "video_animation_prompt": "MANIM: highlight a single discrete chunk on the curve and hold on the finished Planck curve; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A12.mp3",
+      "actual_duration_s": 5.25,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 6,
+      "render": "none",
+      "narration_text": "Thanks for watching The Ultraviolet Catastrophe — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching The Ultraviolet Catastrophe. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "outro card: thanks text + channel URL, with a bear doodle marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a friendly bear waving goodbye]",
+      "end_frame_prompt": "[DOODLE OBJECT = the bear waving]",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke and waves; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 6.77,
+      "approval_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "slug": "double-slit-one-electron-short-bb",
+    "title": "One Electron Interferes With Itself",
+    "series": "Brown Blue",
+    "source": "quantum-mechanics-vol1/chapters/02-matter-waves.md",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "style": "dark",
+    "text_font": "EB Garamond",
+    "accent_color": "#58C4DD",
+    "brown_color": "#CD853F",
+    "highlight_color": "#F0E442",
+    "forbidden_color": "#C8102E",
+    "thing": "the single-electron buildup: dots becoming fringes",
+    "template": "3b1b",
+    "short_cut_of": "double-slit-one-electron-bb",
+    "voice_settings": {
+      "model_id": "eleven_multilingual_v2",
+      "stability": 0.8,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 0.92,
+      "output_format": "mp3_44100_128"
+    },
+    "playlist": "Quantum Mechanics (One Minute)",
+    "playlist_short": "Shorts",
+    "chapters": [
+      [
+        "INTRO",
+        "Intro"
+      ],
+      [
+        "H01",
+        "One dot at a time"
+      ],
+      [
+        "K01",
+        "Waves vs particles"
+      ],
+      [
+        "A01",
+        "Interfering with itself"
+      ],
+      [
+        "P01",
+        "Information kills the stripes"
+      ]
+    ],
+    "extra_tags": [
+      "double slit experiment",
+      "matter waves",
+      "de Broglie",
+      "wave function",
+      "interference"
+    ],
+    "hashtags_line": "#quantum #physics #quantummechanics #science #education #doubleslit #deBroglie",
+    "long_title": "One Electron Interferes With Itself — in about a minute | Bear's Notes",
+    "short_title": "One Electron Interferes With Itself #Shorts",
+    "description_blurb": "The single-electron double slit in about a minute: dots land one at a time, random at first — then 70,000 dots later, interference stripes. Each electron's wave goes through both slits and interferes with itself; the dot histogram is |ψ|²; and watching which slit kills the fringes. Full explainer (the buildup, de Broglie's λ = h/p, the forbidden bands) on the channel.",
+    "short_blurb": "The single-electron double slit, in about a minute. Full explainer on the channel.",
+    "hook_beats": [
+      "H01",
+      "H02",
+      "H03"
+    ],
+    "total_estimated_duration_seconds": 61.9,
+    "hashtags": [
+      "Bear's Notes",
+      "quantum mechanics",
+      "physics",
+      "quantum physics",
+      "3Blue1Brown style",
+      "science explainer",
+      "education",
+      "STEM",
+      "double slit experiment",
+      "matter waves",
+      "de Broglie",
+      "wave function",
+      "interference"
+    ]
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "role": "INTRO",
+      "render": "manim",
+      "narration_text": "Bear's Notes\n\nOne Electron Interferes With Itself",
+      "tts_normalized_text": "Bear's Notes.\n\nOne Electron Interferes With Itself.",
+      "accumulated_scene_state": [
+        "title card"
+      ],
+      "new_visual_element": "Title card: 'Bear's Notes' small, title large in EB Garamond, thin brown rule, small blue accent mark on dark canvas.",
+      "video_animation_prompt": "Fade in series line, Write the title, brown underline, blue tick. Hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.58
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "Fire electrons at two slits one at a time — each arrives as a single dot.",
+      "tts_normalized_text": "Fire electrons at two slits one at a time — each arrives as a single dot.",
+      "accumulated_scene_state": [
+        "gun, two-slit barrier, screen",
+        "first dots"
+      ],
+      "new_visual_element": "[HOOK] The apparatus: gun (left), barrier with two slits (center), screen (right); a blue electron flies across and lands as an ink microdot; another follows.",
+      "video_animation_prompt": "Create apparatus; two electrons fly and land as microdots.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.83
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "Ten in, the dots look random; common sense says two heaps, one behind each slit.",
+      "tts_normalized_text": "Ten in, the dots look random; common sense says two heaps, one behind each slit.",
+      "accumulated_scene_state": [
+        "ten scattered dots",
+        "dashed two-heap outline",
+        "counter: 10"
+      ],
+      "new_visual_element": "[HOOK] Eight more scattered microdots; a dashed secondary two-heap curve appears at the screen; mono counter 'electrons: 10' bottom-left.",
+      "video_animation_prompt": "LaggedStart dots; Create dashed heaps; FadeIn counter.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.6
+    },
+    {
+      "beat_id": "H03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "Seventy thousand in: stripes — bright and dark bands no two-heap picture allows.",
+      "tts_normalized_text": "Seventy thousand in: stripes — bright and dark bands no two-heap picture allows.",
+      "accumulated_scene_state": [
+        "full fringe pattern in dots",
+        "counter: 70,000",
+        "heaps dimmed"
+      ],
+      "new_visual_element": "[HOOK] A rapid lagged rain completes clear fringe bands of dots; counter to 'electrons: 70,000'; the dashed heaps dim.",
+      "video_animation_prompt": "LaggedStart the full fringe batch; counter morph; heaps to low opacity.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H03.mp3",
+      "actual_duration_s": 5.67
+    },
+    {
+      "beat_id": "K01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Stripes are what waves do: ripples through both slits overlap and cancel.",
+      "tts_normalized_text": "Stripes are what waves do: ripples through both slits overlap and cancel.",
+      "accumulated_scene_state": [
+        "blue arc fans from both slits",
+        "blue striped curve at screen"
+      ],
+      "new_visual_element": "[INSTANCE] Blue arc fans bloom from both slits; a blue striped intensity curve draws along the screen, matching the dot bands.",
+      "video_animation_prompt": "Create both arc fans; Create striped curve over the dots.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-K01.mp3",
+      "actual_duration_s": 4.55
+    },
+    {
+      "beat_id": "K02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Particles can't do that — a ball takes one slit and joins its heap.",
+      "tts_normalized_text": "Particles can't do that — a ball takes one slit and joins its heap.",
+      "accumulated_scene_state": [
+        "brown ball through one slit",
+        "dashed heaps re-emphasized"
+      ],
+      "new_visual_element": "[INSTANCE] A brown ball flies through a single slit to the screen; the dashed two-heap curve pulses once.",
+      "video_animation_prompt": "Brown ball flight; heaps curve opacity up, Indicate, back down.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-K02.mp3",
+      "actual_duration_s": 3.94
+    },
+    {
+      "beat_id": "K03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "And these electrons flew alone: never a second one in the machine to interfere with.",
+      "tts_normalized_text": "And these electrons flew alone: never a second one in the machine to interfere with.",
+      "accumulated_scene_state": [
+        "label: one at a time, near gun"
+      ],
+      "new_visual_element": "[INSTANCE] Small ink label 'one at a time' by the gun; the gun pulses.",
+      "video_animation_prompt": "Write label; Indicate gun.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-K03.mp3",
+      "actual_duration_s": 4.78
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "So each electron's wave goes through both slits and interferes with itself.",
+      "tts_normalized_text": "So each electron's wave goes through both slits and interferes with itself.",
+      "accumulated_scene_state": [
+        "both arc fans pulse together"
+      ],
+      "new_visual_element": "[ABSTRACTION] Both arc fans brighten together — one electron's wave in both slits at once — then settle faint.",
+      "video_animation_prompt": "Fans to higher opacity together; hold; settle to faint.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.26
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "The dot is where it's found; the stripes map where finding it is likely — psi squared.",
+      "tts_normalized_text": "The dot is where it's found; the stripes map where finding it is likely — psi squared.",
+      "accumulated_scene_state": [
+        "top strip: |ψ|²"
+      ],
+      "new_visual_element": "[ABSTRACTION] MathTex |ψ|² writes in the top strip — the name as endpoint.",
+      "video_animation_prompt": "Write |\\psi|^2 in the top strip.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 4.86
+    },
+    {
+      "beat_id": "P01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "PAYOFF",
+      "render": "manim",
+      "narration_text": "Peek at which slit it took, and the stripes vanish — information kills them.",
+      "tts_normalized_text": "Peek at which slit it took, and the stripes vanish — information kills them.",
+      "accumulated_scene_state": [
+        "detector glyph at upper slit",
+        "stripes morph to heaps",
+        "dots dim"
+      ],
+      "new_visual_element": "[PAYOFF] A small secondary detector glyph appears at the upper slit; the blue striped curve morphs into brown two heaps; the dot bands dim.",
+      "video_animation_prompt": "FadeIn eye glyph; Transform stripes→heaps; dots to 30%.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-P01.mp3",
+      "actual_duration_s": 4.13
+    },
+    {
+      "beat_id": "B01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "BOUNDARY",
+      "render": "manim",
+      "narration_text": "Molecules of two thousand atoms paint the same stripes; your wavelength is just too small to show it.",
+      "tts_normalized_text": "Molecules of two thousand atoms paint the same stripes; your wavelength is just too small to show it.",
+      "accumulated_scene_state": [
+        "top strip: scale line replaces |ψ|²"
+      ],
+      "new_visual_element": "[BOUNDARY] The top strip content fades; a line writes: '2,000-atom molecules: stripes · you: λ ≈ 10⁻³⁵ m'.",
+      "video_animation_prompt": "FadeOut |ψ|²; write the scale line fitted to the top strip.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 5.75
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "HOLD",
+      "scene_index": 1,
+      "role": "OUTRO",
+      "render": "manim",
+      "narration_text": "The full story — the buildup, de Broglie's wavelength, the forbidden bands — is in the long video. Thanks for watching — more at youtube dot com, slash, at Nik Bear Brown.",
+      "tts_normalized_text": "The full story — the buildup, de Broglie's wavelength, the forbidden bands — is in the long video. Thanks for watching — more at youtube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [
+        "final frame holds",
+        "title parked in top strip at 70% ink"
+      ],
+      "new_visual_element": "[OUTRO] Top strip clears; the title parks there at 70% ink; the lab stays below.",
+      "video_animation_prompt": "FadeOut top-strip content; FadeIn fitted title at 70% opacity; hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 10.95
+    }
+  ]
+}

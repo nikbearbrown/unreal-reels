@@ -1,0 +1,18 @@
+{
+  "INTRO": {
+    "icon": null,
+    "kind": "title",
+    "duration": 5.46
+  },
+  "H01": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Cowork/Manim/shared/svg/4585701-arrows-and-infographic-elements-001-arrow.svg",
+    "kind": "icon",
+    "score": 3,
+    "duration": 4.6
+  },
+  "OUTRO": {
+    "icon": null,
+    "kind": "title",
+    "duration": 10.21
+  }
+}

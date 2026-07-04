@@ -1,0 +1,34 @@
+{
+  "scene": "why_uncertainty_is_wave_problem",
+  "snapshots": 61,
+  "errors": 0,
+  "warnings": 1,
+  "safe_area": [
+    6.3,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": [
+    {
+      "type": "TEXT_ON_TEXT",
+      "severity": "WARN",
+      "ratio": 0.346,
+      "a": "position",
+      "b": "momentumcomesfromfrequency",
+      "t": 38.73,
+      "snap": 40,
+      "box_a": [
+        -0.57,
+        -2.57,
+        0.57,
+        -2.08
+      ],
+      "box_b": [
+        -2.87,
+        -3.0,
+        2.87,
+        -2.4
+      ]
+    }
+  ]
+}

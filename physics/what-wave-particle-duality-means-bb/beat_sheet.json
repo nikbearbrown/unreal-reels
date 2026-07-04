@@ -1,0 +1,468 @@
+{
+  "metadata": {
+    "slug": "what-wave-particle-duality-means-bb",
+    "title": "What Wave–Particle Duality Actually Means",
+    "series": "Brown Blue",
+    "source": "quantum-mechanics-vol1/chapters/02-matter-waves.md",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "style": "dark",
+    "text_font": "EB Garamond",
+    "accent_color": "#58C4DD",
+    "brown_color": "#CD853F",
+    "highlight_color": "#F0E442",
+    "forbidden_color": "#C8102E",
+    "thing": "the possibility wave replacing the ball-with-ripples cartoon",
+    "template": "3b1b",
+    "voice_settings": {
+      "model_id": "eleven_multilingual_v2",
+      "stability": 0.8,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 0.92,
+      "output_format": "mp3_44100_128"
+    },
+    "playlist": "Quantum Mechanics",
+    "playlist_short": "Shorts",
+    "chapters": [
+      [
+        "INTRO",
+        "Intro"
+      ],
+      [
+        "H01",
+        "The cartoon everyone draws"
+      ],
+      [
+        "M01",
+        "Two questions, two answers"
+      ],
+      [
+        "S01",
+        "Two stories, both wrong"
+      ],
+      [
+        "A01",
+        "One object: the wave"
+      ],
+      [
+        "Y01",
+        "The cartoon, repaired"
+      ],
+      [
+        "N01",
+        "The sizes don't lie"
+      ],
+      [
+        "B01",
+        "What we skipped, and your turn"
+      ]
+    ],
+    "extra_tags": [
+      "wave particle duality",
+      "matter waves",
+      "wave function",
+      "de Broglie",
+      "quantum mechanics explained",
+      "Born rule"
+    ],
+    "hashtags_line": "#quantum #physics #quantummechanics #science #education #duality #wavefunction",
+    "long_title": "What Wave–Particle Duality Actually Means — it's not a ball with ripples | Bear's Notes",
+    "description_blurb": "In this video: why the ball-with-ripples cartoon is dimensionally impossible (the wave of a lab electron is tens of thousands of times wider than the 'ball' could be); two questions that get two different answers — stripes for 'how do you travel?', one whole dot for 'where are you?'; why 'secret route' and 'wave of stuff' both fail; the one honest picture — a wave of possibility, |ψ|²; and duality's real meaning: wave-shaped possibilities, particle-shaped results.",
+    "short_blurb": "Duality without the ball-with-ripples cartoon. Full explainer on the channel.",
+    "hook_beats": [
+      "H01",
+      "H02",
+      "H03"
+    ],
+    "total_estimated_duration_seconds": 141.96
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "role": "INTRO",
+      "render": "manim",
+      "narration_text": "Bear's Notes\n\nWhat Wave–Particle Duality Actually Means",
+      "tts_normalized_text": "Bear's Notes.\n\nWhat Wave–Particle Duality Actually Means.",
+      "accumulated_scene_state": [
+        "title card"
+      ],
+      "new_visual_element": "Title card: 'Bear's Notes' small, title large in EB Garamond, thin brown rule, small blue accent mark on dark canvas.",
+      "video_animation_prompt": "Fade in series line, Write the title, brown underline, blue tick. Hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.58
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "Ask anyone to draw an electron and you'll get the same cartoon: a little ball with ripples around it.",
+      "tts_normalized_text": "Ask anyone to draw an electron and you'll get the same cartoon: a little ball with ripples around it.",
+      "accumulated_scene_state": [
+        "brown ball with concentric ripples, center of MAIN"
+      ],
+      "new_visual_element": "[HOOK] The popular cartoon: a brown ball at center with concentric secondary ripple circles around it.",
+      "video_animation_prompt": "GrowFromCenter the ball; Create three ripple circles around it.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 5.33
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "It feels perfect — a solid particle core wearing a wavy coat.",
+      "tts_normalized_text": "It feels perfect — a solid particle core wearing a wavy coat.",
+      "accumulated_scene_state": [
+        "labels: core, coat"
+      ],
+      "new_visual_element": "[HOOK] Two small ink labels: 'the core' pointing at the ball, 'the coat' at the ripples — placed in clear space left of the cartoon.",
+      "video_animation_prompt": "Write both labels with thin pointer lines; brief hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 3.66
+    },
+    {
+      "beat_id": "H03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "But measure both parts: a lab electron's ripples span a tenth of a nanometer, while the ball would be tens of thousands of times smaller.",
+      "tts_normalized_text": "But measure both parts: a lab electron's ripples span a tenth of a nanometer, while the ball would be tens of thousands of times smaller.",
+      "accumulated_scene_state": [
+        "brace over ripple span: 0.167 nm",
+        "tiny tick at ball: ÷ 60,000"
+      ],
+      "new_visual_element": "[HOOK] A brace spans the ripples labeled '0.167 nm' (blue); beneath the ball a tiny tick labeled '÷ 60,000' (ink) — the dimensional mismatch.",
+      "video_animation_prompt": "GrowFromCenter brace + write 0.167 nm; tick + ÷ 60,000 label at the ball.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H03.mp3",
+      "actual_duration_s": 8.62
+    },
+    {
+      "beat_id": "H04",
+      "beat_type": "HOLD",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "The coat is a stadium and the ball is a grain of dust — this cartoon cannot be the thing.",
+      "tts_normalized_text": "The coat is a stadium and the ball is a grain of dust — this cartoon cannot be the thing.",
+      "accumulated_scene_state": [
+        "cartoon dimmed",
+        "highlight ?"
+      ],
+      "new_visual_element": "[HOOK] The cartoon dims; a single highlight '?' beside it.",
+      "video_animation_prompt": "Cartoon to 40% opacity; FadeIn '?', Indicate.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H04.mp3",
+      "actual_duration_s": 4.78
+    },
+    {
+      "beat_id": "M01",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "So interrogate the electron itself, with two different questions.",
+      "tts_normalized_text": "So interrogate the electron itself, with two different questions.",
+      "accumulated_scene_state": [
+        "compact lab: gun, two slits, screen"
+      ],
+      "new_visual_element": "[INSTANCE] Fresh canvas. A compact version of the concept-#3 lab builds: gun, two-slit barrier, screen — the interrogation room.",
+      "video_animation_prompt": "Create compact gun/barrier/screen in MAIN.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-M01.mp3",
+      "actual_duration_s": 3.66
+    },
+    {
+      "beat_id": "M02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Ask \"how do you travel?\" — send many through two slits — and the answer comes back striped, the signature of a wave.",
+      "tts_normalized_text": "Ask \"how do you travel?\" — send many through two slits — and the answer comes back striped, the signature of a wave.",
+      "accumulated_scene_state": [
+        "striped intensity curve on screen",
+        "label Q1"
+      ],
+      "new_visual_element": "[INSTANCE] A quick flurry of faint streaks crosses; the blue striped curve draws along the screen; small ink label 'how do you travel? → stripes' top-left.",
+      "video_animation_prompt": "Lagged faint streaks; Create striped curve; write the Q1 label top-left.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-M02.mp3",
+      "actual_duration_s": 6.71
+    },
+    {
+      "beat_id": "M03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Ask \"where are you?\" — put up a screen — and each answer is one whole dot, never half an electron, never a smear.",
+      "tts_normalized_text": "Ask \"where are you?\" — put up a screen — and each answer is one whole dot, never half an electron, never a smear.",
+      "accumulated_scene_state": [
+        "one flight → one whole dot",
+        "label Q2"
+      ],
+      "new_visual_element": "[INSTANCE] One blue electron flies and lands as a single whole ink dot; label 'where are you? → one whole dot' joins beneath the first label.",
+      "video_animation_prompt": "Single flight to a bright band; dot lands; write Q2 label under Q1.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-M03.mp3",
+      "actual_duration_s": 6.95
+    },
+    {
+      "beat_id": "S01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Try the story \"it's really a particle with a secret route\" — then two slits should give two heaps, and they don't.",
+      "tts_normalized_text": "Try the story \"it's really a particle with a secret route\" — then two slits should give two heaps, and they don't.",
+      "accumulated_scene_state": [
+        "brown dashed two-heap curve, struck through"
+      ],
+      "new_visual_element": "[INSTANCE] A brown dashed two-heap curve appears at the screen — the secret-route prediction — then a hairline strike crosses it.",
+      "video_animation_prompt": "Create dashed heaps; diagonal strike; both drop to low opacity.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-S01.mp3",
+      "actual_duration_s": 6.64
+    },
+    {
+      "beat_id": "S02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Try the story \"it's really a spread-out wave of stuff\" — then a detector should sometimes catch a fraction, and it never does.",
+      "tts_normalized_text": "Try the story \"it's really a spread-out wave of stuff\" — then a detector should sometimes catch a fraction, and it never does.",
+      "accumulated_scene_state": [
+        "half-dot glyph, struck through"
+      ],
+      "new_visual_element": "[INSTANCE] A half-dot (semicircle) glyph appears near the screen — the fractional-detection prediction — and is struck through.",
+      "video_animation_prompt": "FadeIn semicircle glyph; strike; both to low opacity.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-S02.mp3",
+      "actual_duration_s": 7.78
+    },
+    {
+      "beat_id": "S03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Both comfortable stories fail: the electron is neither a tiny marble nor a material ripple.",
+      "tts_normalized_text": "Both comfortable stories fail: the electron is neither a tiny marble nor a material ripple.",
+      "accumulated_scene_state": [
+        "struck stories fade out"
+      ],
+      "new_visual_element": "[INSTANCE] Both struck glyphs fade away; a beat of stillness on the clean lab.",
+      "video_animation_prompt": "FadeOut both struck items; brief hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-S03.mp3",
+      "actual_duration_s": 5.69
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "Here is the honest picture: between the gun and the screen there is one object — a wave.",
+      "tts_normalized_text": "Here is the honest picture: between the gun and the screen there is one object — a wave.",
+      "accumulated_scene_state": [
+        "blue wave packet traveling across the lab"
+      ],
+      "new_visual_element": "[ABSTRACTION] A clean blue wave packet (gaussian-envelope wiggle) appears at the gun and glides toward the barrier — the ONE object.",
+      "video_animation_prompt": "Create packet at left; animate it gliding rightward toward the slits.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 5.28
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "That wave is not electron-stuff smeared through space; it is a map of possibility — brighter means more likely.",
+      "tts_normalized_text": "That wave is not electron-stuff smeared through space; it is a map of possibility — brighter means more likely.",
+      "accumulated_scene_state": [
+        "side card: map of possibility",
+        "side eq: |ψ|²"
+      ],
+      "new_visual_element": "[ABSTRACTION] SIDE: 'a map of possibility' writes, and beneath it MathTex |ψ|² — the map's name (recalled from the last video).",
+      "video_animation_prompt": "Write side line; Write |\\psi|^2 in the side eq row.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 6.92
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "The dot is not the wave shrinking back into a ball; it is the answer you forced by asking where.",
+      "tts_normalized_text": "The dot is not the wave shrinking back into a ball; it is the answer you forced by asking where.",
+      "accumulated_scene_state": [
+        "packet reaches screen",
+        "one dot appears, packet fades"
+      ],
+      "new_visual_element": "[ABSTRACTION] The packet reaches the screen; a single whole dot appears in a bright band and the packet fades — answer, not shrinkage.",
+      "video_animation_prompt": "Packet glides to the screen; dot pops with a small flash; packet fades out.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 5.93
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "That is all duality means: wave-shaped possibilities, particle-shaped results — one object, two kinds of question.",
+      "tts_normalized_text": "That is all duality means: wave-shaped possibilities, particle-shaped results — one object, two kinds of question.",
+      "accumulated_scene_state": [
+        "side: the two-line definition"
+      ],
+      "new_visual_element": "[ABSTRACTION] SIDE: the endpoint definition writes on two lines — 'wave-shaped possibilities' / 'particle-shaped results'.",
+      "video_animation_prompt": "Write the two definition lines in the side card row.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 7.34
+    },
+    {
+      "beat_id": "Y01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "PAYOFF",
+      "render": "manim",
+      "narration_text": "Now repair the cartoon: erase the little ball, keep the wave — and let the dot exist only at the moment of arrival.",
+      "tts_normalized_text": "Now repair the cartoon: erase the little ball, keep the wave — and let the dot exist only at the moment of arrival.",
+      "accumulated_scene_state": [
+        "hook cartoon returns small",
+        "ball fades, ripples morph into a packet"
+      ],
+      "new_visual_element": "[PAYOFF] The hook's ball-with-ripples returns, small; the ball fades away and the ripples morph into a clean blue packet — the repaired picture.",
+      "video_animation_prompt": "FadeIn small cartoon; FadeOut ball; ReplacementTransform ripples → small packet.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-Y01.mp3",
+      "actual_duration_s": 7.05
+    },
+    {
+      "beat_id": "Y02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "PAYOFF",
+      "render": "manim",
+      "narration_text": "The electron isn't sometimes a wave and sometimes a particle; it is always the wave in between, and always a whole dot when asked.",
+      "tts_normalized_text": "The electron isn't sometimes a wave and sometimes a particle; it is always the wave in between, and always a whole dot when asked.",
+      "accumulated_scene_state": [
+        "repaired packet replays: glide → dot"
+      ],
+      "new_visual_element": "[PAYOFF] The repaired packet glides once more and ends as a single whole dot at the screen — the full story in one motion.",
+      "video_animation_prompt": "Packet glides right; dot pops at screen; packet fades.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-Y02.mp3",
+      "actual_duration_s": 8.36
+    },
+    {
+      "beat_id": "N01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "PAYOFF",
+      "render": "manim",
+      "narration_text": "The sizes make it vivid: that wave spans zero point one six seven nanometers — atom-spacing scale, exactly why crystals can reveal it.",
+      "tts_normalized_text": "The sizes make it vivid: that wave spans zero point one six seven nanometers — atom-spacing scale, exactly why crystals can reveal it.",
+      "accumulated_scene_state": [
+        "side cleared",
+        "scale card: λ = 0.167 nm ≈ atom spacing"
+      ],
+      "new_visual_element": "[PAYOFF·NUMBER] The side column clears; a scale card writes: MathTex λ = 0.167 nm with 'atom-spacing scale' beneath.",
+      "video_animation_prompt": "FadeOut side content; write λ line + subtitle in the freed side column.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-N01.mp3",
+      "actual_duration_s": 9.74
+    },
+    {
+      "beat_id": "N02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "PAYOFF",
+      "render": "manim",
+      "narration_text": "And between your questions the wave is the only thing evolving — every chip and laser is engineered by computing the wave, never by tracking little balls.",
+      "tts_normalized_text": "And between your questions the wave is the only thing evolving — every chip and laser is engineered by computing the wave, never by tracking little balls.",
+      "accumulated_scene_state": [
+        "side line: chips & lasers run on the wave"
+      ],
+      "new_visual_element": "[PAYOFF] Below the scale card: 'chips & lasers are built on the wave' (secondary).",
+      "video_animation_prompt": "Write the engineering line beneath; brief hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-N02.mp3",
+      "actual_duration_s": 9.14
+    },
+    {
+      "beat_id": "B01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "role": "BOUNDARY",
+      "render": "manim",
+      "narration_text": "We haven't yet written the wave down, normalized it, or found its equation of motion — that's the next two videos.",
+      "tts_normalized_text": "We haven't yet written the wave down, normalized it, or found its equation of motion — that's the next two videos.",
+      "accumulated_scene_state": [
+        "close card: definition lines + |ψ|²",
+        "next tags"
+      ],
+      "new_visual_element": "[BOUNDARY] Clean close: 'wave-shaped possibilities / particle-shaped results' with |ψ|² beneath; tags: 'next · the wave function', 'next · Schrödinger's equation'.",
+      "video_animation_prompt": "Write definition lines + eq stacked; LaggedStart the two tags.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 6.11
+    },
+    {
+      "beat_id": "B02",
+      "beat_type": "HOLD",
+      "scene_index": 3,
+      "role": "BOUNDARY",
+      "render": "manim",
+      "narration_text": "Try it yourself: find a ball-with-ripples picture in a textbook or video, and say precisely what it gets wrong.",
+      "tts_normalized_text": "Try it yourself: find a ball-with-ripples picture in a textbook or video, and say precisely what it gets wrong.",
+      "accumulated_scene_state": [
+        "close parked low-center",
+        "exercise in highlight"
+      ],
+      "new_visual_element": "[BOUNDARY] Tags fade; the close shrinks and parks mid-high; the exercise writes across the lower band in highlight.",
+      "video_animation_prompt": "FadeOut tags; shrink-park the close; Write exercise line.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 5.98
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "HOLD",
+      "scene_index": 3,
+      "role": "OUTRO",
+      "render": "manim",
+      "narration_text": "Thanks for watching What Wave–Particle Duality Actually Means — more at youtube dot com, slash, at Nik Bear Brown.",
+      "tts_normalized_text": "Thanks for watching What Wave–Particle Duality Actually Means — more at youtube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [
+        "final frame holds",
+        "title parked in the reserved top band"
+      ],
+      "new_visual_element": "[OUTRO] The finished close stays; the title parks fitted inside the reserved top band at 70% ink.",
+      "video_animation_prompt": "FadeIn fitted title in the top band; hold to end of narration.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 6.71
+    }
+  ]
+}

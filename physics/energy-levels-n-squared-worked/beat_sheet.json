@@ -1,0 +1,541 @@
+{
+  "metadata": {
+    "slug": "energy-levels-n-squared-worked",
+    "title": "Particle in a Box: Where the n² Energy Formula Comes From (Worked Example)",
+    "series": "Bears Notes",
+    "tier": "deep",
+    "depth_of": "energy-levels-arent-evenly-spaced",
+    "aspect_ratio": "16:9",
+    "render_orientations": [
+      "16:9"
+    ],
+    "source": "quantum-mechanics-vol1/chapters/05-the-infinite-square-well.md (deep expand of Candidate 12)",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#particleinabox",
+      "#quantumwell",
+      "#energyquantization",
+      "#quantumdots",
+      "#nsquared",
+      "#schrodinger",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "a standing-wave-in-a-box whose energy ladder is first shown qualitatively, then derived into E_n = n^2 h^2 / 8mL^2, then worked with real numbers for an electron in a 1 nm box, then tied to quantum-dot color",
+    "color_notes": "Wave + rungs + formula highlight = accent Warm Slate #5A5653. The n^2 / final-answer emphasis = red #C0392B. Axes, labels, numbers = ink #1a1a1a. Math is MathTex (LaTeX); prose/labels are Shadows Into Light.",
+    "math_rendering": "All formulas render as Manim MathTex (LaTeX, MacTeX). Text/labels render in Shadows Into Light. See `math_tex` per beat.",
+    "total_estimated_duration_seconds": 119.81
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "manim",
+      "narration_text": "Bear's Notes\n\nWhy quantum energy levels grow as n squared",
+      "tts_normalized_text": "Bear's Notes.\n\nWhy quantum energy levels grow as n squared.",
+      "new_visual_element": "infographic title card: brand + an n^2 energy-ladder hero motif + title",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: Bear's Notes brand, a small energy ladder whose rungs fan as n^2 draws in, then the title in Shadows Into Light.",
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.53
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "manim",
+      "narration_text": "You'd expect a ladder of energy rungs to be evenly spaced, like a normal ladder.",
+      "tts_normalized_text": "You'd expect a ladder of energy rungs to be evenly spaced, like a normal ladder.",
+      "new_visual_element": "an evenly spaced ladder",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: narration card + four evenly spaced accent rungs.",
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.41
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "But a quantum box's rungs fan apart the higher you climb.",
+      "tts_normalized_text": "But a quantum box's rungs fan apart the higher you climb.",
+      "new_visual_element": "rungs fanning apart",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: narration card + rungs that fan apart upward.",
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 3.34
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A particle trapped in a box can only be the standing waves that fit exactly.",
+      "tts_normalized_text": "A particle trapped in a box can only be the standing waves that fit exactly.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "box walls + the n=1 half-wave",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: draw box walls; the n=1 half-wave fills the box.",
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.6
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The lowest fits half a wave; the next a full wave; then one and a half.",
+      "tts_normalized_text": "The lowest fits half a wave; the next a full wave; then one and a half.",
+      "accumulated_scene_state": [
+        "box",
+        "wave"
+      ],
+      "new_visual_element": "wave morphs n=1 -> 2 -> 3 -> 4",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: Transform the wave through n=1..4, n-label updating.",
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 4.55
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Its energy climbs as one, four, nine, sixteen — the squares.",
+      "tts_normalized_text": "Its energy climbs as one, four, nine, sixteen — the squares.",
+      "accumulated_scene_state": [
+        "box",
+        "wave"
+      ],
+      "new_visual_element": "energy axis with rungs at 1, 4, 9, 16",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: an energy axis appears at right; rungs land at 1,4,9,16 with values.",
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 3.89
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The gaps — three, five, seven — keep widening.",
+      "tts_normalized_text": "The gaps — three, five, seven — keep widening.",
+      "accumulated_scene_state": [
+        "box",
+        "wave",
+        "ladder"
+      ],
+      "new_visual_element": "red gap arrows 3, 5, 7",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: red double-arrows mark gaps 3,5,7 between the rungs.",
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 2.46
+    },
+    {
+      "beat_id": "M01",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Let's turn that picture into a formula.",
+      "tts_normalized_text": "Let's turn that picture into a formula.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "clean slate: the box with the n half-wave + space for math",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: keep a single box+wave on the left, clear the right for the derivation.",
+      "audio_file": "mp3/beat-M01.mp3",
+      "actual_duration_s": 1.99
+    },
+    {
+      "beat_id": "M02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Level n fits n half-waves across a box of width L.",
+      "tts_normalized_text": "Level n fits n half-waves across a box of width L.",
+      "accumulated_scene_state": [
+        "box+wave"
+      ],
+      "new_visual_element": "label the box width L and count n half-waves",
+      "math_tex": "n\\ \\text{half-waves in width } L",
+      "video_animation_prompt": "MANIM: brace the box width as L (MathTex), annotate the n half-waves.",
+      "audio_file": "mp3/beat-M02.mp3",
+      "actual_duration_s": 3.24
+    },
+    {
+      "beat_id": "M03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "So its wavelength is lambda-n equals two L over n.",
+      "tts_normalized_text": "So its wavelength is lambda n equals two L over n.",
+      "accumulated_scene_state": [
+        "box+wave",
+        "L"
+      ],
+      "new_visual_element": "first formula line",
+      "math_tex": "\\lambda_n = \\frac{2L}{n}",
+      "video_animation_prompt": "MANIM: Write the MathTex lambda_n = 2L/n.",
+      "audio_file": "mp3/beat-M03.mp3",
+      "actual_duration_s": 3.29
+    },
+    {
+      "beat_id": "M04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "More half-waves means a shorter wavelength.",
+      "tts_normalized_text": "More half-waves means a shorter wavelength.",
+      "accumulated_scene_state": [
+        "box+wave",
+        "lambda"
+      ],
+      "new_visual_element": "indicate lambda shrinking as n grows",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: brief Indicate on lambda_n and the wave compressing.",
+      "audio_file": "mp3/beat-M04.mp3",
+      "actual_duration_s": 2.22
+    },
+    {
+      "beat_id": "M05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "A shorter wavelength means more momentum: p equals h over lambda.",
+      "tts_normalized_text": "A shorter wavelength means more momentum: p equals h over lambda.",
+      "accumulated_scene_state": [
+        "lambda formula"
+      ],
+      "new_visual_element": "second formula line",
+      "math_tex": "p = \\frac{h}{\\lambda}",
+      "video_animation_prompt": "MANIM: Write MathTex p = h/lambda below the first line.",
+      "audio_file": "mp3/beat-M05.mp3",
+      "actual_duration_s": 4.36
+    },
+    {
+      "beat_id": "M06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "And kinetic energy grows as momentum squared — E equals p-squared over two m.",
+      "tts_normalized_text": "And kinetic energy grows as momentum squared — E equals p squared over two m.",
+      "accumulated_scene_state": [
+        "lambda",
+        "p"
+      ],
+      "new_visual_element": "third formula line",
+      "math_tex": "E = \\frac{p^2}{2m}",
+      "video_animation_prompt": "MANIM: Write MathTex E = p^2/(2m).",
+      "audio_file": "mp3/beat-M06.mp3",
+      "actual_duration_s": 5.09
+    },
+    {
+      "beat_id": "M07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Substitute, and the n lands upstairs, squared.",
+      "tts_normalized_text": "Substitute, and the n lands upstairs, squared.",
+      "accumulated_scene_state": [
+        "lambda",
+        "p",
+        "E"
+      ],
+      "new_visual_element": "chain the substitutions",
+      "math_tex": "E_n = \\frac{(h/\\lambda_n)^2}{2m}",
+      "video_animation_prompt": "MANIM: TransformMatchingTex chaining lambda_n into p into E.",
+      "audio_file": "mp3/beat-M07.mp3",
+      "actual_duration_s": 2.93
+    },
+    {
+      "beat_id": "M08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "E-n equals n-squared times h-squared over eight m L-squared.",
+      "tts_normalized_text": "E n equals n squared times h squared over eight m L squared.",
+      "accumulated_scene_state": [
+        "derivation"
+      ],
+      "new_visual_element": "the result formula, boxed",
+      "math_tex": "E_n = \\frac{n^2 h^2}{8 m L^2}",
+      "video_animation_prompt": "MANIM: resolve to MathTex E_n = n^2 h^2 / (8 m L^2); box it in accent.",
+      "audio_file": "mp3/beat-M08.mp3",
+      "actual_duration_s": 3.89
+    },
+    {
+      "beat_id": "M09",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "The n-squared isn't an accident — energy goes as one over the wavelength squared, and the wavelength shrinks as one over n.",
+      "tts_normalized_text": "The n squared isn't an accident — energy goes as one over the wavelength squared, and the wavelength shrinks as one over n.",
+      "accumulated_scene_state": [
+        "result"
+      ],
+      "new_visual_element": "highlight the n^2",
+      "math_tex": "n^2",
+      "video_animation_prompt": "MANIM: Indicate the n^2 in red, trace it back to lambda_n = 2L/n.",
+      "audio_file": "mp3/beat-M09.mp3",
+      "actual_duration_s": 7.34
+    },
+    {
+      "beat_id": "W01",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Now let's put real numbers on it.",
+      "tts_normalized_text": "Now let's put real numbers on it.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the boxed formula re-centered for substitution",
+      "math_tex": "E_n = \\frac{n^2 h^2}{8 m L^2}",
+      "video_animation_prompt": "MANIM: carry the result formula to the top, clear room below for numbers.",
+      "audio_file": "mp3/beat-W01.mp3",
+      "actual_duration_s": 1.7
+    },
+    {
+      "beat_id": "W02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Take an electron in a box one nanometer wide.",
+      "tts_normalized_text": "Take an electron in a box one nanometer wide.",
+      "accumulated_scene_state": [
+        "formula"
+      ],
+      "new_visual_element": "givens: electron, L = 1 nm",
+      "math_tex": "L = 1\\,\\text{nm}",
+      "video_animation_prompt": "MANIM: write the givens (electron mass m, L = 1 nm) as MathTex.",
+      "audio_file": "mp3/beat-W02.mp3",
+      "actual_duration_s": 2.77
+    },
+    {
+      "beat_id": "W03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Plug in: the ground state, E-one, is about zero point three eight electron-volts.",
+      "tts_normalized_text": "Plug in: the ground state, E one, is about zero point three eight electron volts.",
+      "accumulated_scene_state": [
+        "formula",
+        "givens"
+      ],
+      "new_visual_element": "E_1 computed",
+      "math_tex": "E_1 \\approx 0.38\\ \\text{eV}",
+      "video_animation_prompt": "MANIM: substitute n=1; reveal MathTex E_1 approx 0.38 eV; mark its rung.",
+      "audio_file": "mp3/beat-W03.mp3",
+      "actual_duration_s": 4.78
+    },
+    {
+      "beat_id": "W04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "The second level is four times that — about one point five electron-volts.",
+      "tts_normalized_text": "The second level is four times that — about one point five electron volts.",
+      "accumulated_scene_state": [
+        "formula",
+        "E_1"
+      ],
+      "new_visual_element": "E_2 computed",
+      "math_tex": "E_2 = 4E_1 \\approx 1.5\\ \\text{eV}",
+      "video_animation_prompt": "MANIM: MathTex E_2 = 4 E_1 approx 1.5 eV; mark its rung higher.",
+      "audio_file": "mp3/beat-W04.mp3",
+      "actual_duration_s": 4.49
+    },
+    {
+      "beat_id": "W05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "So the jump from level one to level two costs about one point one electron-volts.",
+      "tts_normalized_text": "So the jump from level one to level two costs about one point one electron volts.",
+      "accumulated_scene_state": [
+        "E_1",
+        "E_2"
+      ],
+      "new_visual_element": "the gap arrow + delta E",
+      "math_tex": "\\Delta E = E_2 - E_1 \\approx 1.1\\ \\text{eV}",
+      "video_animation_prompt": "MANIM: red arrow between rungs 1 and 2; MathTex Delta E approx 1.1 eV.",
+      "audio_file": "mp3/beat-W05.mp3",
+      "actual_duration_s": 4.6
+    },
+    {
+      "beat_id": "W06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "That energy leaves as a single photon.",
+      "tts_normalized_text": "That energy leaves as a single photon.",
+      "accumulated_scene_state": [
+        "delta E"
+      ],
+      "new_visual_element": "a photon emitted from the transition",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: a wavy photon arrow leaves the gap.",
+      "audio_file": "mp3/beat-W06.mp3",
+      "actual_duration_s": 2.32
+    },
+    {
+      "beat_id": "W07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Its wavelength is h c over E — about eleven hundred nanometers.",
+      "tts_normalized_text": "Its wavelength is h c over delta E — about eleven hundred nanometers.",
+      "accumulated_scene_state": [
+        "photon"
+      ],
+      "new_visual_element": "photon wavelength computed",
+      "math_tex": "\\lambda = \\frac{hc}{\\Delta E} \\approx 1100\\ \\text{nm}",
+      "video_animation_prompt": "MANIM: MathTex lambda = hc/Delta E approx 1100 nm.",
+      "audio_file": "mp3/beat-W07.mp3",
+      "actual_duration_s": 4.55
+    },
+    {
+      "beat_id": "W08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Near-infrared light, set entirely by the size of the box.",
+      "tts_normalized_text": "Near-infrared light, set entirely by the size of the box.",
+      "accumulated_scene_state": [
+        "lambda"
+      ],
+      "new_visual_element": "place 1100 nm on a tiny spectrum, near-IR",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: a small spectrum strip; mark ~1100 nm in the near-IR.",
+      "audio_file": "mp3/beat-W08.mp3",
+      "actual_duration_s": 3.37
+    },
+    {
+      "beat_id": "P01",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "This is exactly how a quantum dot works.",
+      "tts_normalized_text": "This is exactly how a quantum dot works.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a quantum dot (small box)",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: draw a small dot/box labeled 'quantum dot'.",
+      "audio_file": "mp3/beat-P01.mp3",
+      "actual_duration_s": 2.46
+    },
+    {
+      "beat_id": "P02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "Shrink the box and every energy scales up as one over L squared.",
+      "tts_normalized_text": "Shrink the box and every energy scales up as one over L squared.",
+      "accumulated_scene_state": [
+        "dot"
+      ],
+      "new_visual_element": "scaling relation",
+      "math_tex": "E \\propto \\frac{1}{L^2}",
+      "video_animation_prompt": "MANIM: MathTex E proportional to 1/L^2.",
+      "audio_file": "mp3/beat-P02.mp3",
+      "actual_duration_s": 3.71
+    },
+    {
+      "beat_id": "P03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "Smaller dots jump higher and glow bluer; larger dots glow redder.",
+      "tts_normalized_text": "Smaller dots jump higher and glow bluer; larger dots glow redder.",
+      "accumulated_scene_state": [
+        "dot",
+        "scaling"
+      ],
+      "new_visual_element": "two dots, small=blue / large=red",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: two boxes side by side; small one's rungs higher + blue glow, large one red.",
+      "audio_file": "mp3/beat-P03.mp3",
+      "actual_duration_s": 4.68
+    },
+    {
+      "beat_id": "P04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "A quantum dot's color is just this formula, made visible.",
+      "tts_normalized_text": "A quantum dot's color is just this formula, made visible.",
+      "accumulated_scene_state": [
+        "two dots"
+      ],
+      "new_visual_element": "callback to E_n formula beside the dots",
+      "math_tex": "E_n = \\frac{n^2 h^2}{8 m L^2}",
+      "video_animation_prompt": "MANIM: bring back the boxed formula next to the two glowing dots.",
+      "audio_file": "mp3/beat-P04.mp3",
+      "actual_duration_s": 3.19
+    },
+    {
+      "beat_id": "R01",
+      "beat_type": "CUT",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "So the rungs fan out as n-squared because energy lives in the square of the momentum.",
+      "tts_normalized_text": "So the rungs fan out as n squared because energy lives in the square of the momentum.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "recap card 1",
+      "math_tex": "E \\sim p^2",
+      "video_animation_prompt": "MANIM: recap line + MathTex E ~ p^2 with the fanning ladder.",
+      "audio_file": "mp3/beat-R01.mp3",
+      "actual_duration_s": 4.44
+    },
+    {
+      "beat_id": "R02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "And momentum climbs with every half-wave you add to the box.",
+      "tts_normalized_text": "And momentum climbs with every half-wave you add to the box.",
+      "accumulated_scene_state": [
+        "recap"
+      ],
+      "new_visual_element": "recap card 2",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: a half-wave adds, the momentum/energy tick up.",
+      "audio_file": "mp3/beat-R02.mp3",
+      "actual_duration_s": 3.37
+    },
+    {
+      "beat_id": "R03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "Same picture as the short — now with the numbers behind it.",
+      "tts_normalized_text": "Same picture as the short — now with the numbers behind it.",
+      "accumulated_scene_state": [
+        "recap"
+      ],
+      "new_visual_element": "the boxed result formula one last time",
+      "math_tex": "E_n = \\frac{n^2 h^2}{8 m L^2}",
+      "video_animation_prompt": "MANIM: the boxed formula settles center as the closer.",
+      "audio_file": "mp3/beat-R03.mp3",
+      "actual_duration_s": 3.42
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 8,
+      "render": "manim",
+      "narration_text": "Thanks for watching — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching — find more Bear's Notes at youtube dot com slash at Nik Bear Brown.",
+      "new_visual_element": "separate cleared outro card: thanks + title + channel",
+      "math_tex": null,
+      "video_animation_prompt": "MANIM: clear canvas; 'Thanks for watching' + title + youtube.com/@NikBearBrown.",
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 4.83
+    }
+  ]
+}

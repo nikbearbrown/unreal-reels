@@ -1,0 +1,310 @@
+{
+  "metadata": {
+    "slug": "stationary-state-is-actually-spinning",
+    "title": "Why a 'Stationary' Quantum State Is Actually Spinning",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/04-the-schrodinger-equation.md (Candidate 09)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#stationarystate",
+      "#energyeigenstate",
+      "#complexplane",
+      "#wavefunction",
+      "#quantumphase",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "a clock hand spinning in the complex plane while its squared length holds still",
+    "color_notes": "Spinning hand + tip + traced circle = accent Warm Slate #5A5653. Re/Im projections = ghost grey. Steady probability bar = ink outline; the closing 'spinning underneath' emphasis = red #C0392B.",
+    "total_estimated_duration_seconds": 62.09
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy a 'Stationary' Quantum State Is Actually Spinning",
+      "tts_normalized_text": "Bear's Notes\n\nWhy a 'Stationary' Quantum State Is Actually Spinning",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 4.86,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "Physicists call an energy eigenstate 'stationary' because nothing you can measure about it ever changes.",
+      "tts_normalized_text": "Physicists call an energy eigenstate 'stationary' because nothing you can measure about it ever changes.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person staring at a perfectly still, frozen object",
+      "start_frame_prompt": "[DOODLE OBJECT = a person calmly staring at a small object floating perfectly still]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person nodding at the motionless floating object]",
+      "video_animation_prompt": "the person and a motionless floating object draw in; nothing about the object moves; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 5.93,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "But peek underneath, and the wave function is spinning the entire time.",
+      "tts_normalized_text": "But peek underneath, and the wave function is spinning the entire time.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person lifting a cover to reveal a spinning clock hand",
+      "start_frame_prompt": "[DOODLE OBJECT = a person lifting a cover off an object to peek underneath]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person surprised to find a spinning clock hand under the cover]",
+      "video_animation_prompt": "the person lifts a cover to reveal a spinning clock hand whirring underneath; surprise; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.18,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The wave function lives in the complex plane: a real axis and an imaginary one.",
+      "tts_normalized_text": "The wave function lives in the complex plane: a real axis and an imaginary one.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "an Argand plane with Re (horizontal) and Im (vertical) axes",
+      "video_animation_prompt": "MANIM: draw a complex plane on the left with a horizontal 'Re' axis and a vertical 'Im' axis",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 5.28,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "An energy eigenstate is an arrow in that plane — a clock hand.",
+      "tts_normalized_text": "An energy eigenstate is an arrow in that plane — a clock hand.",
+      "accumulated_scene_state": [
+        "complex plane"
+      ],
+      "new_visual_element": "a fixed-length arrow (clock hand) from the origin, tip dot",
+      "video_animation_prompt": "MANIM: draw an arrow from the origin to a point on a circle — the clock hand — with a dot at its tip",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 3.76,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "It spins steadily, at a rate set entirely by its energy.",
+      "tts_normalized_text": "It spins steadily, at a rate set entirely by its energy.",
+      "accumulated_scene_state": [
+        "clock hand"
+      ],
+      "new_visual_element": "the hand begins rotating at a constant rate",
+      "video_animation_prompt": "MANIM: start the hand rotating continuously at a constant angular rate (ValueTracker on the angle)",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 3.53,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Its real and imaginary parts oscillate ninety degrees apart, like the shadow of a turning hand.",
+      "tts_normalized_text": "Its real and imaginary parts oscillate ninety degrees apart, like the shadow of a turning hand.",
+      "accumulated_scene_state": [
+        "spinning hand"
+      ],
+      "new_visual_element": "dashed projections onto the Re and Im axes that oscillate as it spins",
+      "video_animation_prompt": "MANIM: drop dashed projection lines from the tip onto the Re and Im axes; they slide back and forth as the hand turns",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 6.16,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "But the hand's length never changes — the tip just traces a circle.",
+      "tts_normalized_text": "But the hand's length never changes — the tip just traces a circle.",
+      "accumulated_scene_state": [
+        "spinning hand",
+        "projections"
+      ],
+      "new_visual_element": "the traced circle highlighted; length is constant",
+      "video_animation_prompt": "MANIM: highlight the dashed circle the tip traces; indicate the constant radius",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 4.13,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Probability is that length squared — and squaring throws the spinning angle away.",
+      "tts_normalized_text": "Probability is that length squared — and squaring throws the spinning angle away.",
+      "accumulated_scene_state": [
+        "spinning hand",
+        "constant circle"
+      ],
+      "new_visual_element": "a steady probability bar appears on the right, |psi|^2",
+      "video_animation_prompt": "MANIM: on the right, raise a steady bar labelled |psi|^2 whose height is the squared length; it does not move",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 4.96,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "So the hand whirls on the left while the only thing you can observe sits frozen on the right.",
+      "tts_normalized_text": "So the hand whirls on the left while the only thing you can observe sits frozen on the right.",
+      "accumulated_scene_state": [
+        "spinning hand",
+        "steady bar"
+      ],
+      "new_visual_element": "'spinning' tag on the hand, 'frozen' tag on the bar",
+      "video_animation_prompt": "MANIM: tag the left panel 'spinning' and the right panel 'frozen' while motion continues",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 5.43,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "That's the trick of the word: stationary on the outside, spinning underneath.",
+      "tts_normalized_text": "That's the trick of the word: stationary on the outside, spinning underneath.",
+      "accumulated_scene_state": [
+        "two panels"
+      ],
+      "new_visual_element": "red label 'stationary outside, spinning underneath'",
+      "video_animation_prompt": "MANIM: settle the scene and write a red label 'stationary outside, spinning underneath'; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 4.49,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 4,
+      "render": "none",
+      "narration_text": "Thanks for watching Why a 'Stationary' Quantum State Is Actually Spinning — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why a Stationary Quantum State Is Actually Spinning. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, final frozen frame kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 9.38,
+      "approval_status": "pending"
+    }
+  ]
+}

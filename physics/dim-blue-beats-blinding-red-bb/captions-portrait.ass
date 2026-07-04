@@ -1,0 +1,84 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: bb,EB Garamond,46,&H0042E4F0,&H00D8E6EC,&H001D1616,&H64000000,0,0,0,0,100,100,0,0,1,3,0,2,120,120,430,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.35,bb,,0,0,0,,{\k33}Bear's {\k23}Notes {\k17}Why {\k13}a {\k10}Dim {\k20}Blue {\k27}Lamp {\k27}Beats {\k10}a
+Dialogue: 0,0:00:02.20,0:00:03.12,bb,,0,0,0,,{\k37}Blinding {\k17}Red {\k23}One
+Dialogue: 0,0:00:03.37,0:00:05.39,bb,,0,0,0,,{\k17}Aim {\k17}the {\k37}brightest {\k27}red {\k27}lamp {\k20}you {\k23}own {\k17}at {\k3}a
+Dialogue: 0,0:00:05.24,0:00:07.75,bb,,0,0,0,,{\k20}metal {\k37}plate {\k1}— {\k50}and {\k13}not {\k27}one {\k43}electron {\k47}escapes.
+Dialogue: 0,0:00:08.15,0:00:10.87,bb,,0,0,0,,{\k43}Swap {\k10}in {\k7}a {\k20}dim {\k33}blue {\k33}glow, {\k20}and {\k47}electrons {\k43}fly
+Dialogue: 0,0:00:10.72,0:00:12.27,bb,,0,0,0,,{\k27}off {\k20}the {\k33}instant {\k7}it {\k40}lands.
+Dialogue: 0,0:00:12.56,0:00:14.91,bb,,0,0,0,,{\k27}Crank {\k13}the {\k17}red {\k27}lamp {\k20}up {\k13}to {\k50}blinding, {\k17}pour {\k23}on
+Dialogue: 0,0:00:14.76,0:00:17.14,bb,,0,0,0,,{\k20}more {\k17}and {\k17}more {\k30}light {\k17}— {\k13}and {\k30}still, {\k60}nothing.
+Dialogue: 0,0:00:17.52,0:00:20.04,bb,,0,0,0,,{\k43}Brightness {\k17}is {\k37}energy, {\k10}so {\k20}more {\k20}ought {\k13}to {\k17}mean {\k33}more
+Dialogue: 0,0:00:20.02,0:00:21.70,bb,,0,0,0,,{\k13}— {\k13}yet {\k17}here {\k17}it {\k13}means {\k37}nothing {\k17}at {\k23}all.
+Dialogue: 0,0:00:21.96,0:00:25.34,bb,,0,0,0,,{\k13}A {\k23}wave {\k50}washes {\k23}its {\k27}energy {\k57}smoothly {\k43}over {\k30}every {\k57}electron,
+Dialogue: 0,0:00:25.59,0:00:28.24,bb,,0,0,0,,{\k23}so {\k20}enough {\k40}brightness {\k30}should {\k47}eventually {\k33}shake {\k27}any {\k20}one {\k10}of
+Dialogue: 0,0:00:28.09,0:00:28.64,bb,,0,0,0,,{\k13}them {\k27}loose.
+Dialogue: 0,0:00:29.07,0:00:31.89,bb,,0,0,0,,{\k17}But {\k23}below {\k20}a {\k27}certain {\k37}color, {\k13}no {\k40}brightness {\k33}and {\k17}no
+Dialogue: 0,0:00:31.74,0:00:34.62,bb,,0,0,0,,{\k47}patience {\k33}ever {\k27}free {\k10}a {\k27}single {\k57}electron {\k20}— {\k17}so {\k13}the
+Dialogue: 0,0:00:34.74,0:00:36.72,bb,,0,0,0,,{\k20}smooth-wave {\k43}picture {\k20}is {\k33}simply {\k30}wrong {\k33}here.
+Dialogue: 0,0:00:37.01,0:00:39.83,bb,,0,0,0,,{\k17}So {\k23}stop {\k43}picturing {\k13}a {\k23}smooth {\k33}wave, {\k53}and {\k30}picture {\k30}light
+Dialogue: 0,0:00:39.68,0:00:41.19,bb,,0,0,0,,{\k43}arriving {\k20}as {\k33}separate {\k40}packets.
+Dialogue: 0,0:00:41.56,0:00:44.31,bb,,0,0,0,,{\k23}Each {\k33}packet {\k37}carries {\k20}a {\k23}fixed {\k40}energy {\k30}set {\k30}only {\k23}by
+Dialogue: 0,0:00:44.16,0:00:47.54,bb,,0,0,0,,{\k17}its {\k37}color {\k23}— {\k13}red {\k37}packets {\k40}weak, {\k13}blue {\k43}packets {\k43}strong.
+Dialogue: 0,0:00:47.91,0:00:49.96,bb,,0,0,0,,{\k17}Turn {\k17}up {\k13}the {\k37}brightness {\k23}and {\k10}you {\k13}get {\k20}more {\k40}packets
+Dialogue: 0,0:00:49.81,0:00:51.73,bb,,0,0,0,,{\k27}per {\k37}second, {\k20}never {\k37}fatter {\k30}ones.
+Dialogue: 0,0:00:52.09,0:00:54.61,bb,,0,0,0,,{\k23}Every {\k47}electron {\k33}sits {\k20}in {\k10}the {\k27}metal {\k33}behind {\k17}a {\k27}fixed
+Dialogue: 0,0:00:54.46,0:00:57.01,bb,,0,0,0,,{\k40}escape {\k20}cost {\k17}it {\k20}must {\k20}be {\k30}handed {\k30}all {\k20}at {\k23}once
+Dialogue: 0,0:00:56.86,0:00:57.81,bb,,0,0,0,,{\k27}to {\k20}break {\k33}free.
+Dialogue: 0,0:00:58.12,0:01:00.54,bb,,0,0,0,,{\k17}And {\k7}a {\k30}packet {\k20}is {\k27}swallowed {\k33}whole {\k23}by {\k23}one {\k47}electron
+Dialogue: 0,0:01:00.52,0:01:02.37,bb,,0,0,0,,{\k13}— {\k17}never {\k37}shared {\k20}as {\k30}sips {\k27}among {\k27}many.
+Dialogue: 0,0:01:02.67,0:01:05.35,bb,,0,0,0,,{\k13}A {\k23}weak {\k23}red {\k37}packet {\k43}lands, {\k23}falls {\k30}short {\k20}of {\k10}the
+Dialogue: 0,0:01:05.20,0:01:08.29,bb,,0,0,0,,{\k23}escape {\k40}cost, {\k7}and {\k13}its {\k37}energy {\k30}just {\k40}bleeds {\k30}away {\k23}as
+Dialogue: 0,0:01:08.14,0:01:08.49,bb,,0,0,0,,{\k20}heat.
+Dialogue: 0,0:01:08.78,0:01:11.03,bb,,0,0,0,,{\k17}Pour {\k23}on {\k33}millions {\k23}of {\k20}red {\k43}packets {\k20}and {\k10}every {\k10}one
+Dialogue: 0,0:01:10.91,0:01:13.96,bb,,0,0,0,,{\k33}still {\k30}falls {\k37}short {\k17}— {\k7}a {\k23}flood {\k13}of {\k27}near-misses {\k47}frees
+Dialogue: 0,0:01:13.81,0:01:14.26,bb,,0,0,0,,{\k30}nothing.
+Dialogue: 0,0:01:14.53,0:01:17.81,bb,,0,0,0,,{\k23}Now {\k33}one {\k30}faint {\k27}blue {\k37}packet {\k53}lands, {\k27}clears {\k20}the {\k30}escape
+Dialogue: 0,0:01:17.66,0:01:20.58,bb,,0,0,0,,{\k33}cost {\k23}in {\k10}a {\k23}single {\k40}hit, {\k47}and {\k13}an {\k40}electron {\k47}flies
+Dialogue: 0,0:01:20.43,0:01:20.95,bb,,0,0,0,,{\k37}free.
+Dialogue: 0,0:01:21.30,0:01:24.12,bb,,0,0,0,,{\k27}Whatever {\k47}energy {\k20}is {\k23}left {\k37}after {\k23}paying {\k17}the {\k37}cost {\k37}becomes
+Dialogue: 0,0:01:23.97,0:01:25.45,bb,,0,0,0,,{\k33}that {\k23}electron's {\k53}speed.
+Dialogue: 0,0:01:25.85,0:01:28.93,bb,,0,0,0,,{\k20}So {\k23}a {\k50}packet's {\k33}energy {\k27}is {\k20}just {\k17}a {\k53}constant {\k50}times
+Dialogue: 0,0:01:28.78,0:01:31.90,bb,,0,0,0,,{\k20}its {\k60}frequency {\k20}— {\k20}write {\k20}it {\k23}E {\k47}equals {\k30}h {\k30}nu
+Dialogue: 0,0:01:32.02,0:01:34.40,bb,,0,0,0,,{\k27}— {\k20}and {\k17}that {\k37}packet {\k17}of {\k27}light {\k23}has {\k17}a {\k37}name:
+Dialogue: 0,0:01:34.65,0:01:35.27,bb,,0,0,0,,{\k10}a {\k37}photon.
+Dialogue: 0,0:01:35.72,0:01:38.44,bb,,0,0,0,,{\k13}An {\k40}electron {\k43}escapes {\k40}only {\k20}when {\k27}h {\k23}nu {\k27}beats {\k23}the
+Dialogue: 0,0:01:38.29,0:01:41.04,bb,,0,0,0,,{\k27}cost, {\k7}and {\k13}the {\k33}leftover {\k40}is {\k13}its {\k30}kinetic {\k50}energy:
+Dialogue: 0,0:01:41.35,0:01:44.17,bb,,0,0,0,,{\k20}K {\k43}equals {\k33}h {\k33}nu {\k43}minus {\k27}the {\k33}escape {\k33}cost.
+Dialogue: 0,0:01:44.58,0:01:47.60,bb,,0,0,0,,{\k27}Below {\k17}the {\k47}frequency {\k30}where {\k30}h {\k10}nu {\k40}exactly {\k53}equals {\k20}the
+Dialogue: 0,0:01:47.45,0:01:50.46,bb,,0,0,0,,{\k47}cost, {\k17}no {\k40}packet {\k27}can {\k20}ever {\k30}pay {\k17}— {\k30}that's {\k10}the
+Dialogue: 0,0:01:50.31,0:01:51.26,bb,,0,0,0,,{\k33}threshold {\k47}color.
+Dialogue: 0,0:01:51.50,0:01:53.08,bb,,0,0,0,,{\k23}Now {\k17}the {\k33}mystery {\k70}dissolves:
+Dialogue: 0,0:01:53.23,0:01:56.68,bb,,0,0,0,,{\k43}brightness {\k23}only {\k33}counts {\k20}the {\k33}packets, {\k10}but {\k30}color {\k47}decides {\k40}whether
+Dialogue: 0,0:01:56.53,0:01:58.22,bb,,0,0,0,,{\k30}any {\k33}single {\k37}packet {\k23}can {\k30}pay.
+Dialogue: 0,0:01:58.50,0:02:01.02,bb,,0,0,0,,{\k13}A {\k50}blinding {\k20}red {\k33}lamp {\k20}is {\k10}a {\k40}torrent {\k10}of {\k40}packets
+Dialogue: 0,0:02:00.87,0:02:02.15,bb,,0,0,0,,{\k27}that {\k27}each {\k23}fall {\k37}short;
+Dialogue: 0,0:02:02.43,0:02:04.52,bb,,0,0,0,,{\k7}a {\k20}dim {\k33}blue {\k30}lamp {\k17}is {\k10}a {\k37}trickle {\k17}that {\k23}each
+Dialogue: 0,0:02:04.37,0:02:05.22,bb,,0,0,0,,{\k27}clear {\k20}the {\k23}bar.
+Dialogue: 0,0:02:05.50,0:02:09.38,bb,,0,0,0,,{\k13}On {\k43}sodium, {\k67}ultraviolet {\k13}at {\k17}three {\k17}hundred {\k57}nanometers {\k37}brings {\k20}four
+Dialogue: 0,0:02:09.27,0:02:11.88,bb,,0,0,0,,{\k20}point {\k20}one {\k47}electron {\k40}volts {\k30}against {\k23}a {\k17}two {\k17}point {\k13}three
+Dialogue: 0,0:02:11.77,0:02:14.72,bb,,0,0,0,,{\k37}cost, {\k60}and {\k40}electrons {\k37}leave {\k27}with {\k33}energy {\k17}to {\k30}spare.
+Dialogue: 0,0:02:15.01,0:02:17.76,bb,,0,0,0,,{\k30}Slide {\k17}to {\k23}green, {\k63}and {\k23}each {\k30}packet {\k33}lands {\k17}a {\k23}hair
+Dialogue: 0,0:02:17.61,0:02:20.73,bb,,0,0,0,,{\k27}below {\k17}the {\k47}cost {\k17}— {\k27}now {\k23}not {\k23}one {\k47}electron {\k50}leaves,
+Dialogue: 0,0:02:20.94,0:02:23.09,bb,,0,0,0,,{\k17}not {\k23}even {\k27}under {\k13}a {\k20}ten {\k20}thousand {\k23}watt {\k33}lamp.
+Dialogue: 0,0:02:23.40,0:02:26.35,bb,,0,0,0,,{\k17}We {\k20}didn't {\k30}measure {\k17}the {\k43}constant {\k27}h {\k50}itself, {\k17}or {\k27}ask
+Dialogue: 0,0:02:26.20,0:02:28.68,bb,,0,0,0,,{\k17}how {\k27}one {\k40}packet {\k23}can {\k23}also {\k33}behave {\k27}like {\k17}a {\k27}wave
+Dialogue: 0,0:02:28.80,0:02:30.28,bb,,0,0,0,,{\k23}— {\k23}each {\k17}is {\k13}its {\k20}own {\k33}video.
+Dialogue: 0,0:02:30.64,0:02:31.52,bb,,0,0,0,,{\k23}Try {\k13}it {\k37}yourself:
+Dialogue: 0,0:02:31.87,0:02:33.99,bb,,0,0,0,,{\k13}look {\k13}up {\k10}a {\k37}metal's {\k23}escape {\k37}cost {\k23}and {\k20}find {\k20}the
+Dialogue: 0,0:02:33.84,0:02:36.42,bb,,0,0,0,,{\k33}longest {\k47}wavelength {\k30}of {\k23}light {\k20}that {\k13}can {\k27}still {\k33}free {\k17}an
+Dialogue: 0,0:02:36.27,0:02:36.82,bb,,0,0,0,,{\k40}electron.
+Dialogue: 0,0:02:37.28,0:02:39.33,bb,,0,0,0,,{\k27}Thanks {\k10}for {\k33}watching {\k23}Why {\k10}a {\k13}Dim {\k20}Blue {\k30}Lamp {\k23}Beats
+Dialogue: 0,0:02:39.18,0:02:41.20,bb,,0,0,0,,{\k13}a {\k33}Blinding {\k20}Red {\k27}One {\k13}— {\k20}more {\k17}at {\k27}youtube {\k1}dot
+Dialogue: 0,0:02:41.05,0:02:43.36,bb,,0,0,0,,{\k67}com, {\k40}slash, {\k37}at {\k7}Nik {\k27}Bear {\k30}Brown.

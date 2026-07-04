@@ -1,0 +1,314 @@
+{
+  "metadata": {
+    "slug": "energy-levels-arent-evenly-spaced",
+    "title": "Why Quantum Energy Levels Aren't Evenly Spaced",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/05-the-infinite-square-well.md (Candidate 12)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#infinitesquarewell",
+      "#energylevels",
+      "#quantization",
+      "#standingwaves",
+      "#particleinabox",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "a stack of standing waves (1,2,3,4 half-waves) with energy rungs rising as n-squared",
+    "color_notes": "Standing waves + energy rungs = accent Warm Slate #5A5653. Energy axis, walls, value numbers = ink #1a1a1a. The widening-gap braces and the closing 'n squared' emphasis = red #C0392B.",
+    "total_estimated_duration_seconds": 55.38,
+    "deep_slug": "energy-levels-n-squared-worked",
+    "deep_teaser_tex": "E_n = \\frac{n^2 h^2}{8 m L^2}"
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy Quantum Energy Levels Aren't Evenly Spaced",
+      "tts_normalized_text": "Bear's Notes\n\nWhy Quantum Energy Levels Aren't Evenly Spaced",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.76,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "You'd expect a ladder of energy rungs to be evenly spaced, like any normal ladder.",
+      "tts_normalized_text": "You'd expect a ladder of energy rungs to be evenly spaced, like any normal ladder.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person climbing an evenly-spaced ladder",
+      "start_frame_prompt": "[DOODLE OBJECT = a person climbing a ladder with evenly spaced rungs]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person partway up an evenly spaced ladder]",
+      "video_animation_prompt": "the person and an evenly spaced ladder draw in; the person climbs steadily; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.86,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "But a quantum box's rungs fan apart the higher you climb.",
+      "tts_normalized_text": "But a quantum box's rungs fan apart the higher you climb.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person on a ladder whose rungs widen toward the top",
+      "start_frame_prompt": "[DOODLE OBJECT = a person on a ladder whose rungs get farther apart toward the top]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person straining to reach a far-apart upper rung]",
+      "video_animation_prompt": "the ladder draws in with rungs spaced wider and wider toward the top; the person strains to reach the next one; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 3.42,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "On the left, a wave in a box; on the right, its energy on a ladder.",
+      "tts_normalized_text": "On the left, a wave in a box; on the right, its energy on a ladder.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a box (left) and an energy axis (right)",
+      "video_animation_prompt": "MANIM: draw a box on the left and a vertical energy axis on the right",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.44,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The lowest state fits one half-wave, and its energy is one rung up.",
+      "tts_normalized_text": "The lowest state fits one half-wave, and its energy is one rung up.",
+      "accumulated_scene_state": [
+        "box",
+        "energy axis"
+      ],
+      "new_visual_element": "n=1 wave (one hump) + energy rung at 1",
+      "video_animation_prompt": "MANIM: draw the n=1 standing wave (one hump) in the box and a rung at energy 1 on the axis",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 3.84,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Add a second half-wave and the energy doesn't double — it quadruples, to four.",
+      "tts_normalized_text": "Add a second half-wave and the energy doesn't double — it quadruples, to four.",
+      "accumulated_scene_state": [
+        "n=1 wave",
+        "rung at 1"
+      ],
+      "new_visual_element": "n=2 wave (two humps) + energy rung at 4",
+      "video_animation_prompt": "MANIM: transform the wave to n=2 (two humps) and add a rung at energy 4, much higher than 1",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 4.68,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Three half-waves land at nine; four land at sixteen.",
+      "tts_normalized_text": "Three half-waves land at nine; four land at sixteen.",
+      "accumulated_scene_state": [
+        "n=2 wave",
+        "rungs at 1, 4"
+      ],
+      "new_visual_element": "n=3 then n=4 waves + rungs at 9 and 16",
+      "video_animation_prompt": "MANIM: step the wave to n=3 then n=4, adding rungs at 9 and 16; the box wave gets more humps",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.71,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "So the rungs sit at one, four, nine, sixteen — and the gaps keep widening.",
+      "tts_normalized_text": "So the rungs sit at one, four, nine, sixteen — and the gaps keep widening.",
+      "accumulated_scene_state": [
+        "four rungs"
+      ],
+      "new_visual_element": "the widening gaps (3, 5, 7) marked between rungs",
+      "video_animation_prompt": "MANIM: mark the gaps between consecutive rungs (3, 5, 7) showing they grow",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 4.68,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The reason: each step packs in one more half-wave, so the wavelength shrinks.",
+      "tts_normalized_text": "The reason: each step packs in one more half-wave, so the wavelength shrinks.",
+      "accumulated_scene_state": [
+        "four rungs",
+        "gaps"
+      ],
+      "new_visual_element": "highlight that the box wave's wavelength shrinks with each step",
+      "video_animation_prompt": "MANIM: highlight the shrinking wavelength in the box as n grows (shorter and shorter humps)",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 4.41,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "And energy depends on the square of how many waves fit, so doubling them quadruples it.",
+      "tts_normalized_text": "And energy depends on the square of how many waves fit, so doubling them quadruples it.",
+      "accumulated_scene_state": [
+        "ladder",
+        "shrinking wavelength"
+      ],
+      "new_visual_element": "the n vs n-squared relationship called out",
+      "video_animation_prompt": "MANIM: call out 'energy is proportional to (number of waves) squared' linking the count to the rung height",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 4.78,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "That's why the rungs fan apart instead of marching up in even steps.",
+      "tts_normalized_text": "That's why the rungs fan apart instead of marching up in even steps.",
+      "accumulated_scene_state": [
+        "ladder"
+      ],
+      "new_visual_element": "red label 'energy grows as n squared'",
+      "video_animation_prompt": "MANIM: settle the ladder and write a red label 'energy grows as n squared'; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 3.94,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 4,
+      "render": "none",
+      "narration_text": "Thanks for watching Why Quantum Energy Levels Aren't Evenly Spaced — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why Quantum Energy Levels Aren't Evenly Spaced. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, final ladder kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 8.86,
+      "approval_status": "pending"
+    }
+  ]
+}

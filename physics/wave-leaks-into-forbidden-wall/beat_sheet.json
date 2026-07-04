@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "slug": "wave-leaks-into-forbidden-wall",
+    "title": "Why a Quantum Particle Leaks Into a Wall It Can't Climb",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/06-finite-wells-steps-and-barriers.md (Candidate 13)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#evanescentwave",
+      "#potentialstep",
+      "#quantumtunneling",
+      "#wavefunction",
+      "#classicallyforbidden",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "an oscillating wave hitting a step, morphing into a decaying tail that bleeds into the shaded forbidden zone",
+    "color_notes": "The wave = accent Warm Slate #5A5653. The forbidden zone shading + 'forbidden' label + closing emphasis = red #C0392B. Wall, baseline, brackets = ink #1a1a1a.",
+    "total_estimated_duration_seconds": 58.67
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy a Quantum Particle Leaks Into a Wall It Can't Climb",
+      "tts_normalized_text": "Bear's Notes\n\nWhy a Quantum Particle Leaks Into a Wall It Can't Climb",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 5.56,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "A ball without enough energy to climb a hill just rolls back down the slope.",
+      "tts_normalized_text": "A ball without enough energy to climb a hill just rolls back down the slope.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person watching a ball roll up a hill and back down",
+      "start_frame_prompt": "[DOODLE OBJECT = a person watching a ball partway up a hill]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person watching the ball roll back down the hill]",
+      "video_animation_prompt": "the person and a hill draw in; a ball rolls partway up and rolls back down; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.18,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "But a quantum particle's wave seeps into the hillside before it turns back.",
+      "tts_normalized_text": "But a quantum particle's wave seeps into the hillside before it turns back.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person surprised as a wave glows into the hill",
+      "start_frame_prompt": "[DOODLE OBJECT = a person surprised as a glowing wave seeps into a hillside]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person watching a faint wave fade into the hill]",
+      "video_animation_prompt": "the person draws in; a glowing wave seeps a little way into the hillside then fades; the person is surprised; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Here's the setup: open space on the left, a forbidden wall on the right.",
+      "tts_normalized_text": "Here's the setup: open space on the left, a forbidden wall on the right.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "baseline, a wall at center, shaded forbidden zone on the right",
+      "video_animation_prompt": "MANIM: draw a baseline, a vertical wall at the centre, and shade the right side red as the forbidden zone labelled 'not enough energy'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A classical ball rolls up to the wall and simply turns back.",
+      "tts_normalized_text": "A classical ball rolls up to the wall and simply turns back.",
+      "accumulated_scene_state": [
+        "wall",
+        "forbidden zone"
+      ],
+      "new_visual_element": "a ball rolls to the wall and bounces back",
+      "video_animation_prompt": "MANIM: a ball rolls in from the left to the wall, then rolls back; label 'turns back'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 3.58,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Now the quantum particle: it arrives as an oscillating wave.",
+      "tts_normalized_text": "Now the quantum particle: it arrives as an oscillating wave.",
+      "accumulated_scene_state": [
+        "wall",
+        "forbidden zone"
+      ],
+      "new_visual_element": "an oscillating wave on the allowed side up to the wall",
+      "video_animation_prompt": "MANIM: draw an oscillating wave on the left, reaching the wall at a non-zero value",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 3.94,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "At the wall it can't cut to zero — the wave has to stay smooth.",
+      "tts_normalized_text": "At the wall it can't cut to zero — the wave has to stay smooth.",
+      "accumulated_scene_state": [
+        "oscillating wave"
+      ],
+      "new_visual_element": "the boundary value marked at the wall (non-zero, smooth)",
+      "video_animation_prompt": "MANIM: mark the wave's value at the wall with a dot; note it must join smoothly, not drop to zero",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.84,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "So inside the wall it switches from waving to a fading exponential decay.",
+      "tts_normalized_text": "So inside the wall it switches from waving to a fading exponential decay.",
+      "accumulated_scene_state": [
+        "oscillating wave",
+        "boundary value"
+      ],
+      "new_visual_element": "the continued oscillation morphs into a decaying tail in the shaded zone",
+      "video_animation_prompt": "MANIM: show a faded naive oscillation continuing into the forbidden zone, then morph it into a smooth exponential decay tail",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 4.68,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The tail reaches only a finite distance in before dying away.",
+      "tts_normalized_text": "The tail reaches only a finite distance in before dying away.",
+      "accumulated_scene_state": [
+        "decay tail"
+      ],
+      "new_visual_element": "a bracket showing the finite penetration depth",
+      "video_animation_prompt": "MANIM: bracket the penetration depth of the decay tail; label 'finite reach'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 3.94,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The particle is still reflected — but its wave reached where it's classically forbidden to be.",
+      "tts_normalized_text": "The particle is still reflected — but its wave reached where it's classically forbidden to be.",
+      "accumulated_scene_state": [
+        "decay tail",
+        "finite reach"
+      ],
+      "new_visual_element": "a reflected-back arrow on the allowed side",
+      "video_animation_prompt": "MANIM: add a leftward 'reflected' arrow on the allowed side while the decay tail stays in the forbidden zone",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 5.2,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Oscillating outside, fading inside — the wave leaks into a wall it can never climb.",
+      "tts_normalized_text": "Oscillating outside, fading inside — the wave leaks into a wall it can never climb.",
+      "accumulated_scene_state": [
+        "full picture"
+      ],
+      "new_visual_element": "red label 'the wave leaks into the forbidden wall'",
+      "video_animation_prompt": "MANIM: settle the picture and write a red label 'the wave leaks into the forbidden wall'; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 5.33,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 4,
+      "render": "none",
+      "narration_text": "Thanks for watching Why a Quantum Particle Leaks Into a Wall It Can't Climb — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why a Quantum Particle Leaks Into a Wall It Can't Climb. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, final picture kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 9.8,
+      "approval_status": "pending"
+    }
+  ]
+}

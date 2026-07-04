@@ -1,0 +1,1215 @@
+{
+  "fps": 30,
+  "slides": {
+    "INTRO": {
+      "lines": [
+        {
+          "text": "Bear's Notes Why a Dim Blue Lamp Beats a",
+          "startFrame": 0,
+          "endFrame": 70,
+          "words": [
+            {
+              "text": "Bear's",
+              "startFrame": 0,
+              "endFrame": 10
+            },
+            {
+              "text": "Notes",
+              "startFrame": 10,
+              "endFrame": 18
+            },
+            {
+              "text": "Why",
+              "startFrame": 29,
+              "endFrame": 33
+            },
+            {
+              "text": "a",
+              "startFrame": 33,
+              "endFrame": 37
+            },
+            {
+              "text": "Dim",
+              "startFrame": 37,
+              "endFrame": 41
+            },
+            {
+              "text": "Blue",
+              "startFrame": 41,
+              "endFrame": 49
+            },
+            {
+              "text": "Lamp",
+              "startFrame": 49,
+              "endFrame": 58
+            },
+            {
+              "text": "Beats",
+              "startFrame": 58,
+              "endFrame": 65
+            },
+            {
+              "text": "a",
+              "startFrame": 65,
+              "endFrame": 70
+            }
+          ]
+        },
+        {
+          "text": "Blinding Red One",
+          "startFrame": 70,
+          "endFrame": 93,
+          "words": [
+            {
+              "text": "Blinding",
+              "startFrame": 70,
+              "endFrame": 82
+            },
+            {
+              "text": "Red",
+              "startFrame": 82,
+              "endFrame": 87
+            },
+            {
+              "text": "One",
+              "startFrame": 87,
+              "endFrame": 93
+            }
+          ]
+        }
+      ]
+    },
+    "H01": {
+      "lines": [
+        {
+          "text": "Aim the brightest red lamp you own at a",
+          "startFrame": 0,
+          "endFrame": 55,
+          "words": [
+            {
+              "text": "Aim",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "the",
+              "startFrame": 5,
+              "endFrame": 10
+            },
+            {
+              "text": "brightest",
+              "startFrame": 10,
+              "endFrame": 20
+            },
+            {
+              "text": "red",
+              "startFrame": 20,
+              "endFrame": 29
+            },
+            {
+              "text": "lamp",
+              "startFrame": 29,
+              "endFrame": 37
+            },
+            {
+              "text": "you",
+              "startFrame": 37,
+              "endFrame": 43
+            },
+            {
+              "text": "own",
+              "startFrame": 43,
+              "endFrame": 49
+            },
+            {
+              "text": "at",
+              "startFrame": 49,
+              "endFrame": 53
+            },
+            {
+              "text": "a",
+              "startFrame": 53,
+              "endFrame": 55
+            }
+          ]
+        },
+        {
+          "text": "metal plate — and not one electron escapes.",
+          "startFrame": 55,
+          "endFrame": 127,
+          "words": [
+            {
+              "text": "metal",
+              "startFrame": 55,
+              "endFrame": 61
+            },
+            {
+              "text": "plate",
+              "startFrame": 61,
+              "endFrame": 71
+            },
+            {
+              "text": "—",
+              "startFrame": 71,
+              "endFrame": 71
+            },
+            {
+              "text": "and",
+              "startFrame": 71,
+              "endFrame": 86
+            },
+            {
+              "text": "not",
+              "startFrame": 86,
+              "endFrame": 91
+            },
+            {
+              "text": "one",
+              "startFrame": 91,
+              "endFrame": 100
+            },
+            {
+              "text": "electron",
+              "startFrame": 100,
+              "endFrame": 113
+            },
+            {
+              "text": "escapes.",
+              "startFrame": 113,
+              "endFrame": 127
+            }
+          ]
+        }
+      ]
+    },
+    "H02": {
+      "lines": [
+        {
+          "text": "Swap in a dim blue glow, and electrons fly",
+          "startFrame": 0,
+          "endFrame": 70,
+          "words": [
+            {
+              "text": "Swap",
+              "startFrame": 0,
+              "endFrame": 11
+            },
+            {
+              "text": "in",
+              "startFrame": 11,
+              "endFrame": 14
+            },
+            {
+              "text": "a",
+              "startFrame": 14,
+              "endFrame": 17
+            },
+            {
+              "text": "dim",
+              "startFrame": 17,
+              "endFrame": 21
+            },
+            {
+              "text": "blue",
+              "startFrame": 21,
+              "endFrame": 31
+            },
+            {
+              "text": "glow,",
+              "startFrame": 31,
+              "endFrame": 40
+            },
+            {
+              "text": "and",
+              "startFrame": 40,
+              "endFrame": 46
+            },
+            {
+              "text": "electrons",
+              "startFrame": 46,
+              "endFrame": 58
+            },
+            {
+              "text": "fly",
+              "startFrame": 58,
+              "endFrame": 70
+            }
+          ]
+        },
+        {
+          "text": "off instantly.",
+          "startFrame": 70,
+          "endFrame": 94,
+          "words": [
+            {
+              "text": "off",
+              "startFrame": 70,
+              "endFrame": 79
+            },
+            {
+              "text": "instantly.",
+              "startFrame": 79,
+              "endFrame": 94
+            }
+          ]
+        }
+      ]
+    },
+    "H03": {
+      "lines": [
+        {
+          "text": "Crank the red to blinding and still — nothing.",
+          "startFrame": 0,
+          "endFrame": 64,
+          "words": [
+            {
+              "text": "Crank",
+              "startFrame": 0,
+              "endFrame": 8
+            },
+            {
+              "text": "the",
+              "startFrame": 8,
+              "endFrame": 12
+            },
+            {
+              "text": "red",
+              "startFrame": 12,
+              "endFrame": 17
+            },
+            {
+              "text": "to",
+              "startFrame": 17,
+              "endFrame": 22
+            },
+            {
+              "text": "blinding",
+              "startFrame": 22,
+              "endFrame": 35
+            },
+            {
+              "text": "and",
+              "startFrame": 37,
+              "endFrame": 37
+            },
+            {
+              "text": "still",
+              "startFrame": 37,
+              "endFrame": 46
+            },
+            {
+              "text": "—",
+              "startFrame": 51,
+              "endFrame": 55
+            },
+            {
+              "text": "nothing.",
+              "startFrame": 55,
+              "endFrame": 64
+            }
+          ]
+        }
+      ]
+    },
+    "K01": {
+      "lines": [
+        {
+          "text": "So stop picturing a smooth wave:",
+          "startFrame": 0,
+          "endFrame": 57,
+          "words": [
+            {
+              "text": "So",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "stop",
+              "startFrame": 5,
+              "endFrame": 14
+            },
+            {
+              "text": "picturing",
+              "startFrame": 14,
+              "endFrame": 29
+            },
+            {
+              "text": "a",
+              "startFrame": 29,
+              "endFrame": 33
+            },
+            {
+              "text": "smooth",
+              "startFrame": 33,
+              "endFrame": 40
+            },
+            {
+              "text": "wave:",
+              "startFrame": 40,
+              "endFrame": 57
+            }
+          ]
+        },
+        {
+          "text": "light arrives as separate packets.",
+          "startFrame": 72,
+          "endFrame": 120,
+          "words": [
+            {
+              "text": "light",
+              "startFrame": 72,
+              "endFrame": 75
+            },
+            {
+              "text": "arrives",
+              "startFrame": 75,
+              "endFrame": 89
+            },
+            {
+              "text": "as",
+              "startFrame": 89,
+              "endFrame": 97
+            },
+            {
+              "text": "separate",
+              "startFrame": 97,
+              "endFrame": 109
+            },
+            {
+              "text": "packets.",
+              "startFrame": 109,
+              "endFrame": 120
+            }
+          ]
+        }
+      ]
+    },
+    "K02": {
+      "lines": [
+        {
+          "text": "Each packet's energy is set only by its color",
+          "startFrame": 0,
+          "endFrame": 75,
+          "words": [
+            {
+              "text": "Each",
+              "startFrame": 0,
+              "endFrame": 7
+            },
+            {
+              "text": "packet's",
+              "startFrame": 7,
+              "endFrame": 22
+            },
+            {
+              "text": "energy",
+              "startFrame": 22,
+              "endFrame": 31
+            },
+            {
+              "text": "is",
+              "startFrame": 31,
+              "endFrame": 35
+            },
+            {
+              "text": "set",
+              "startFrame": 35,
+              "endFrame": 42
+            },
+            {
+              "text": "only",
+              "startFrame": 42,
+              "endFrame": 52
+            },
+            {
+              "text": "by",
+              "startFrame": 52,
+              "endFrame": 59
+            },
+            {
+              "text": "its",
+              "startFrame": 59,
+              "endFrame": 65
+            },
+            {
+              "text": "color",
+              "startFrame": 65,
+              "endFrame": 75
+            }
+          ]
+        },
+        {
+          "text": "— red packets weak, blue packets strong.",
+          "startFrame": 83,
+          "endFrame": 156,
+          "words": [
+            {
+              "text": "—",
+              "startFrame": 83,
+              "endFrame": 90
+            },
+            {
+              "text": "red",
+              "startFrame": 91,
+              "endFrame": 96
+            },
+            {
+              "text": "packets",
+              "startFrame": 96,
+              "endFrame": 108
+            },
+            {
+              "text": "weak,",
+              "startFrame": 108,
+              "endFrame": 118
+            },
+            {
+              "text": "blue",
+              "startFrame": 130,
+              "endFrame": 134
+            },
+            {
+              "text": "packets",
+              "startFrame": 134,
+              "endFrame": 145
+            },
+            {
+              "text": "strong.",
+              "startFrame": 145,
+              "endFrame": 156
+            }
+          ]
+        }
+      ]
+    },
+    "K03": {
+      "lines": [
+        {
+          "text": "Brightness just means more packets per second, never fatter",
+          "startFrame": 0,
+          "endFrame": 79,
+          "words": [
+            {
+              "text": "Brightness",
+              "startFrame": 0,
+              "endFrame": 11
+            },
+            {
+              "text": "just",
+              "startFrame": 11,
+              "endFrame": 17
+            },
+            {
+              "text": "means",
+              "startFrame": 17,
+              "endFrame": 23
+            },
+            {
+              "text": "more",
+              "startFrame": 23,
+              "endFrame": 32
+            },
+            {
+              "text": "packets",
+              "startFrame": 32,
+              "endFrame": 43
+            },
+            {
+              "text": "per",
+              "startFrame": 43,
+              "endFrame": 50
+            },
+            {
+              "text": "second,",
+              "startFrame": 50,
+              "endFrame": 60
+            },
+            {
+              "text": "never",
+              "startFrame": 60,
+              "endFrame": 68
+            },
+            {
+              "text": "fatter",
+              "startFrame": 68,
+              "endFrame": 79
+            }
+          ]
+        },
+        {
+          "text": "ones.",
+          "startFrame": 79,
+          "endFrame": 86,
+          "words": [
+            {
+              "text": "ones.",
+              "startFrame": 79,
+              "endFrame": 86
+            }
+          ]
+        }
+      ]
+    },
+    "C01": {
+      "lines": [
+        {
+          "text": "And an electron breaks free only if one single",
+          "startFrame": 0,
+          "endFrame": 74,
+          "words": [
+            {
+              "text": "And",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "an",
+              "startFrame": 4,
+              "endFrame": 8
+            },
+            {
+              "text": "electron",
+              "startFrame": 8,
+              "endFrame": 20
+            },
+            {
+              "text": "breaks",
+              "startFrame": 20,
+              "endFrame": 31
+            },
+            {
+              "text": "free",
+              "startFrame": 31,
+              "endFrame": 41
+            },
+            {
+              "text": "only",
+              "startFrame": 41,
+              "endFrame": 52
+            },
+            {
+              "text": "if",
+              "startFrame": 52,
+              "endFrame": 58
+            },
+            {
+              "text": "one",
+              "startFrame": 58,
+              "endFrame": 63
+            },
+            {
+              "text": "single",
+              "startFrame": 63,
+              "endFrame": 74
+            }
+          ]
+        },
+        {
+          "text": "packet pays its whole escape cost at once.",
+          "startFrame": 74,
+          "endFrame": 143,
+          "words": [
+            {
+              "text": "packet",
+              "startFrame": 74,
+              "endFrame": 86
+            },
+            {
+              "text": "pays",
+              "startFrame": 86,
+              "endFrame": 95
+            },
+            {
+              "text": "its",
+              "startFrame": 95,
+              "endFrame": 101
+            },
+            {
+              "text": "whole",
+              "startFrame": 101,
+              "endFrame": 107
+            },
+            {
+              "text": "escape",
+              "startFrame": 107,
+              "endFrame": 117
+            },
+            {
+              "text": "cost",
+              "startFrame": 117,
+              "endFrame": 128
+            },
+            {
+              "text": "at",
+              "startFrame": 128,
+              "endFrame": 134
+            },
+            {
+              "text": "once.",
+              "startFrame": 134,
+              "endFrame": 143
+            }
+          ]
+        }
+      ]
+    },
+    "X01": {
+      "lines": [
+        {
+          "text": "Every red packet falls short — a flood of",
+          "startFrame": 0,
+          "endFrame": 66,
+          "words": [
+            {
+              "text": "Every",
+              "startFrame": 0,
+              "endFrame": 7
+            },
+            {
+              "text": "red",
+              "startFrame": 7,
+              "endFrame": 13
+            },
+            {
+              "text": "packet",
+              "startFrame": 13,
+              "endFrame": 24
+            },
+            {
+              "text": "falls",
+              "startFrame": 24,
+              "endFrame": 32
+            },
+            {
+              "text": "short",
+              "startFrame": 32,
+              "endFrame": 43
+            },
+            {
+              "text": "—",
+              "startFrame": 48,
+              "endFrame": 53
+            },
+            {
+              "text": "a",
+              "startFrame": 53,
+              "endFrame": 56
+            },
+            {
+              "text": "flood",
+              "startFrame": 56,
+              "endFrame": 62
+            },
+            {
+              "text": "of",
+              "startFrame": 62,
+              "endFrame": 66
+            }
+          ]
+        },
+        {
+          "text": "near-misses frees nothing.",
+          "startFrame": 74,
+          "endFrame": 103,
+          "words": [
+            {
+              "text": "near-misses",
+              "startFrame": 74,
+              "endFrame": 80
+            },
+            {
+              "text": "frees",
+              "startFrame": 81,
+              "endFrame": 95
+            },
+            {
+              "text": "nothing.",
+              "startFrame": 95,
+              "endFrame": 103
+            }
+          ]
+        }
+      ]
+    },
+    "X02": {
+      "lines": [
+        {
+          "text": "One faint blue packet clears the cost in a",
+          "startFrame": 0,
+          "endFrame": 67,
+          "words": [
+            {
+              "text": "One",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "faint",
+              "startFrame": 4,
+              "endFrame": 13
+            },
+            {
+              "text": "blue",
+              "startFrame": 13,
+              "endFrame": 19
+            },
+            {
+              "text": "packet",
+              "startFrame": 19,
+              "endFrame": 31
+            },
+            {
+              "text": "clears",
+              "startFrame": 31,
+              "endFrame": 41
+            },
+            {
+              "text": "the",
+              "startFrame": 41,
+              "endFrame": 49
+            },
+            {
+              "text": "cost",
+              "startFrame": 49,
+              "endFrame": 57
+            },
+            {
+              "text": "in",
+              "startFrame": 57,
+              "endFrame": 65
+            },
+            {
+              "text": "a",
+              "startFrame": 65,
+              "endFrame": 67
+            }
+          ]
+        },
+        {
+          "text": "single hit, and the electron flies.",
+          "startFrame": 67,
+          "endFrame": 126,
+          "words": [
+            {
+              "text": "single",
+              "startFrame": 67,
+              "endFrame": 75
+            },
+            {
+              "text": "hit,",
+              "startFrame": 75,
+              "endFrame": 85
+            },
+            {
+              "text": "and",
+              "startFrame": 85,
+              "endFrame": 95
+            },
+            {
+              "text": "the",
+              "startFrame": 95,
+              "endFrame": 99
+            },
+            {
+              "text": "electron",
+              "startFrame": 99,
+              "endFrame": 112
+            },
+            {
+              "text": "flies.",
+              "startFrame": 112,
+              "endFrame": 126
+            }
+          ]
+        }
+      ]
+    },
+    "A01": {
+      "lines": [
+        {
+          "text": "That's E equals h nu:",
+          "startFrame": 0,
+          "endFrame": 57,
+          "words": [
+            {
+              "text": "That's",
+              "startFrame": 0,
+              "endFrame": 13
+            },
+            {
+              "text": "E",
+              "startFrame": 13,
+              "endFrame": 17
+            },
+            {
+              "text": "equals",
+              "startFrame": 17,
+              "endFrame": 29
+            },
+            {
+              "text": "h",
+              "startFrame": 29,
+              "endFrame": 38
+            },
+            {
+              "text": "nu:",
+              "startFrame": 48,
+              "endFrame": 57
+            }
+          ]
+        },
+        {
+          "text": "color is energy, and the packet is called a",
+          "startFrame": 58,
+          "endFrame": 134,
+          "words": [
+            {
+              "text": "color",
+              "startFrame": 58,
+              "endFrame": 71
+            },
+            {
+              "text": "is",
+              "startFrame": 71,
+              "endFrame": 77
+            },
+            {
+              "text": "energy,",
+              "startFrame": 77,
+              "endFrame": 88
+            },
+            {
+              "text": "and",
+              "startFrame": 98,
+              "endFrame": 103
+            },
+            {
+              "text": "the",
+              "startFrame": 103,
+              "endFrame": 106
+            },
+            {
+              "text": "packet",
+              "startFrame": 106,
+              "endFrame": 115
+            },
+            {
+              "text": "is",
+              "startFrame": 115,
+              "endFrame": 121
+            },
+            {
+              "text": "called",
+              "startFrame": 121,
+              "endFrame": 129
+            },
+            {
+              "text": "a",
+              "startFrame": 129,
+              "endFrame": 134
+            }
+          ]
+        },
+        {
+          "text": "photon.",
+          "startFrame": 134,
+          "endFrame": 145,
+          "words": [
+            {
+              "text": "photon.",
+              "startFrame": 134,
+              "endFrame": 145
+            }
+          ]
+        }
+      ]
+    },
+    "P01": {
+      "lines": [
+        {
+          "text": "Brightness counts the packets;",
+          "startFrame": 0,
+          "endFrame": 38,
+          "words": [
+            {
+              "text": "Brightness",
+              "startFrame": 0,
+              "endFrame": 14
+            },
+            {
+              "text": "counts",
+              "startFrame": 14,
+              "endFrame": 23
+            },
+            {
+              "text": "the",
+              "startFrame": 23,
+              "endFrame": 28
+            },
+            {
+              "text": "packets;",
+              "startFrame": 28,
+              "endFrame": 38
+            }
+          ]
+        },
+        {
+          "text": "color decides whether any one of them can pay.",
+          "startFrame": 53,
+          "endFrame": 118,
+          "words": [
+            {
+              "text": "color",
+              "startFrame": 53,
+              "endFrame": 62
+            },
+            {
+              "text": "decides",
+              "startFrame": 62,
+              "endFrame": 73
+            },
+            {
+              "text": "whether",
+              "startFrame": 73,
+              "endFrame": 83
+            },
+            {
+              "text": "any",
+              "startFrame": 83,
+              "endFrame": 92
+            },
+            {
+              "text": "one",
+              "startFrame": 92,
+              "endFrame": 98
+            },
+            {
+              "text": "of",
+              "startFrame": 98,
+              "endFrame": 101
+            },
+            {
+              "text": "them",
+              "startFrame": 101,
+              "endFrame": 105
+            },
+            {
+              "text": "can",
+              "startFrame": 105,
+              "endFrame": 110
+            },
+            {
+              "text": "pay.",
+              "startFrame": 110,
+              "endFrame": 118
+            }
+          ]
+        }
+      ]
+    },
+    "OUTRO": {
+      "lines": [
+        {
+          "text": "The full story — the leftover energy, the threshold",
+          "startFrame": 0,
+          "endFrame": 82,
+          "words": [
+            {
+              "text": "The",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "full",
+              "startFrame": 4,
+              "endFrame": 10
+            },
+            {
+              "text": "story",
+              "startFrame": 10,
+              "endFrame": 22
+            },
+            {
+              "text": "—",
+              "startFrame": 28,
+              "endFrame": 34
+            },
+            {
+              "text": "the",
+              "startFrame": 34,
+              "endFrame": 37
+            },
+            {
+              "text": "leftover",
+              "startFrame": 37,
+              "endFrame": 44
+            },
+            {
+              "text": "energy,",
+              "startFrame": 44,
+              "endFrame": 60
+            },
+            {
+              "text": "the",
+              "startFrame": 70,
+              "endFrame": 73
+            },
+            {
+              "text": "threshold",
+              "startFrame": 73,
+              "endFrame": 82
+            }
+          ]
+        },
+        {
+          "text": "color, the sodium numbers — is in the long",
+          "startFrame": 82,
+          "endFrame": 161,
+          "words": [
+            {
+              "text": "color,",
+              "startFrame": 82,
+              "endFrame": 95
+            },
+            {
+              "text": "the",
+              "startFrame": 103,
+              "endFrame": 109
+            },
+            {
+              "text": "sodium",
+              "startFrame": 109,
+              "endFrame": 119
+            },
+            {
+              "text": "numbers",
+              "startFrame": 119,
+              "endFrame": 131
+            },
+            {
+              "text": "—",
+              "startFrame": 136,
+              "endFrame": 140
+            },
+            {
+              "text": "is",
+              "startFrame": 140,
+              "endFrame": 148
+            },
+            {
+              "text": "in",
+              "startFrame": 148,
+              "endFrame": 152
+            },
+            {
+              "text": "the",
+              "startFrame": 152,
+              "endFrame": 155
+            },
+            {
+              "text": "long",
+              "startFrame": 155,
+              "endFrame": 161
+            }
+          ]
+        },
+        {
+          "text": "video.",
+          "startFrame": 161,
+          "endFrame": 173,
+          "words": [
+            {
+              "text": "video.",
+              "startFrame": 161,
+              "endFrame": 173
+            }
+          ]
+        },
+        {
+          "text": "Thanks for watching — more at youtube dot com,",
+          "startFrame": 189,
+          "endFrame": 260,
+          "words": [
+            {
+              "text": "Thanks",
+              "startFrame": 189,
+              "endFrame": 197
+            },
+            {
+              "text": "for",
+              "startFrame": 197,
+              "endFrame": 202
+            },
+            {
+              "text": "watching",
+              "startFrame": 202,
+              "endFrame": 214
+            },
+            {
+              "text": "—",
+              "startFrame": 218,
+              "endFrame": 222
+            },
+            {
+              "text": "more",
+              "startFrame": 223,
+              "endFrame": 229
+            },
+            {
+              "text": "at",
+              "startFrame": 229,
+              "endFrame": 234
+            },
+            {
+              "text": "youtube",
+              "startFrame": 234,
+              "endFrame": 241
+            },
+            {
+              "text": "dot",
+              "startFrame": 241,
+              "endFrame": 241
+            },
+            {
+              "text": "com,",
+              "startFrame": 241,
+              "endFrame": 260
+            }
+          ]
+        },
+        {
+          "text": "slash, at Nik Bear Brown.",
+          "startFrame": 260,
+          "endFrame": 295,
+          "words": [
+            {
+              "text": "slash,",
+              "startFrame": 260,
+              "endFrame": 278
+            },
+            {
+              "text": "at",
+              "startFrame": 278,
+              "endFrame": 295
+            },
+            {
+              "text": "Nik",
+              "startFrame": 295,
+              "endFrame": 295
+            },
+            {
+              "text": "Bear",
+              "startFrame": 295,
+              "endFrame": 295
+            },
+            {
+              "text": "Brown.",
+              "startFrame": 295,
+              "endFrame": 295
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

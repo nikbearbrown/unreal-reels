@@ -1,0 +1,425 @@
+{
+  "metadata": {
+    "slug": "why-lasers-make-photons-march-together",
+    "title": "Why Lasers Make Photons March Together",
+    "series": "Bears Notes",
+    "source": "User-provided transcript inspiration about lasers and stimulated emission",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "thing": "laser cavity",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "total_estimated_duration_seconds": 64.1,
+    "hashtags": [
+      "#Physics",
+      "#Lasers",
+      "#QuantumMechanics",
+      "#Photons",
+      "#STEM"
+    ]
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "none",
+      "narration_text": "Bear's Notes\n\nWhy Lasers Make Photons March Together",
+      "tts_normalized_text": "Bear's Notes\n\nWhy Lasers Make Photons March Together",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.84
+    },
+    {
+      "beat_id": "A00",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "manim",
+      "narration_text": "A laser starts with atoms pumped full of extra energy.",
+      "tts_normalized_text": "A laser starts with atoms pumped full of extra energy.",
+      "accumulated_scene_state": [
+        "excited atoms"
+      ],
+      "new_visual_element": "excited atoms",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A00.mp3",
+      "actual_duration_s": 3.06
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "render": "manim",
+      "narration_text": "Each excited atom can release that energy as light.",
+      "tts_normalized_text": "Each excited atom can release that energy as light.",
+      "accumulated_scene_state": [
+        "excited atoms",
+        "emitted photon"
+      ],
+      "new_visual_element": "emitted photon",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 3.16
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "One passing photon can make another atom emit.",
+      "tts_normalized_text": "One passing photon can make another atom emit.",
+      "accumulated_scene_state": [
+        "passing photon",
+        "excited atom"
+      ],
+      "new_visual_element": "stimulated atom",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 2.74
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "The new photon copies the first photon's direction.",
+      "tts_normalized_text": "The new photon copies the first photon's direction.",
+      "accumulated_scene_state": [
+        "two same direction photons"
+      ],
+      "new_visual_element": "copied direction photon",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 3.11
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "It also copies the photon's color, phase, and polarization.",
+      "tts_normalized_text": "It also copies the photon's color, phase, and polarization.",
+      "accumulated_scene_state": [
+        "matching photon labels"
+      ],
+      "new_visual_element": "matching labels",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.89
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "HOLD",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "That copying is called stimulated emission.",
+      "tts_normalized_text": "That copying is called stimulated emission.",
+      "accumulated_scene_state": [
+        "stimulated emission label"
+      ],
+      "new_visual_element": "stimulated emission label",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 2.35
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Mirrors send the light back through the atoms again.",
+      "tts_normalized_text": "Mirrors send the light back through the atoms again.",
+      "accumulated_scene_state": [
+        "laser cavity mirrors"
+      ],
+      "new_visual_element": "mirrors",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 2.77
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Every pass gives more excited atoms a nudge.",
+      "tts_normalized_text": "Every pass gives more excited atoms a nudge.",
+      "accumulated_scene_state": [
+        "atoms nudged by beam"
+      ],
+      "new_visual_element": "nudged atoms",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 2.93
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The matching photons multiply into a bright crowd.",
+      "tts_normalized_text": "The matching photons multiply into a bright crowd.",
+      "accumulated_scene_state": [
+        "matching photon crowd"
+      ],
+      "new_visual_element": "photon crowd",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 3.16
+    },
+    {
+      "beat_id": "A09",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "doodle",
+      "narration_text": "Photons are not labeled like tiny coins.",
+      "tts_normalized_text": "Photons are not labeled like tiny coins.",
+      "accumulated_scene_state": [
+        "doodle placeholder: unlabeled photons not coins"
+      ],
+      "new_visual_element": "unlabeled photons not coins",
+      "doodle_prompt": "two identical photons beside crossed-out labeled coins, flat vector illustration. Thick black lines, solid colors, bold lines, simple details. White background. Napkin sketch style, simple doodle, black and white. --ar 16:9 --profile 2hu1pm2 j3xc8st i7dpdo9 8qzx41e 196d1wf",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A09.mp3",
+      "actual_duration_s": 2.46
+    },
+    {
+      "beat_id": "A10",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Two photons in the same state count as one shared pattern.",
+      "tts_normalized_text": "Two photons in the same state count as one shared pattern.",
+      "accumulated_scene_state": [
+        "same state pattern"
+      ],
+      "new_visual_element": "same state pattern",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A10.mp3",
+      "actual_duration_s": 3.24
+    },
+    {
+      "beat_id": "A11",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Two different states leave fewer matching paths.",
+      "tts_normalized_text": "Two different states leave fewer matching paths.",
+      "accumulated_scene_state": [
+        "different state comparison"
+      ],
+      "new_visual_element": "different states",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A11.mp3",
+      "actual_duration_s": 3.11
+    },
+    {
+      "beat_id": "A12",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Quantum bookkeeping favors photons joining an occupied state.",
+      "tts_normalized_text": "Quantum bookkeeping favors photons joining an occupied state.",
+      "accumulated_scene_state": [
+        "occupied state favored"
+      ],
+      "new_visual_element": "favored occupied state",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A12.mp3",
+      "actual_duration_s": 4.0
+    },
+    {
+      "beat_id": "A13",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "An excited atom is therefore easier to trigger by matching light.",
+      "tts_normalized_text": "An excited atom is therefore easier to trigger by matching light.",
+      "accumulated_scene_state": [
+        "matching light triggers atom"
+      ],
+      "new_visual_element": "triggered atom",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A13.mp3",
+      "actual_duration_s": 3.66
+    },
+    {
+      "beat_id": "A14",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "The cavity keeps rewarding the same photon pattern.",
+      "tts_normalized_text": "The cavity keeps rewarding the same photon pattern.",
+      "accumulated_scene_state": [
+        "rewarded cavity pattern"
+      ],
+      "new_visual_element": "rewarded pattern",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A14.mp3",
+      "actual_duration_s": 3.06
+    },
+    {
+      "beat_id": "A15",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "A small opening lets part of that pattern escape.",
+      "tts_normalized_text": "A small opening lets part of that pattern escape.",
+      "accumulated_scene_state": [
+        "output coupler opening"
+      ],
+      "new_visual_element": "opening",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A15.mp3",
+      "actual_duration_s": 2.95
+    },
+    {
+      "beat_id": "A16",
+      "beat_type": "HOLD",
+      "scene_index": 6,
+      "render": "manim",
+      "narration_text": "The escaping stream is coherent laser light.",
+      "tts_normalized_text": "The escaping stream is coherent laser light.",
+      "accumulated_scene_state": [
+        "coherent laser beam"
+      ],
+      "new_visual_element": "coherent laser beam",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A16.mp3",
+      "actual_duration_s": 2.77
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 7,
+      "render": "none",
+      "narration_text": "Thanks for watching Why Lasers Make Photons March Together - find more Bear's Notes at youtube.com/@NikBearBrown",
+      "tts_normalized_text": "Thanks for watching Why Lasers Make Photons March Together - find more Bear's Notes at youtube dot com slash at Nik Bear Brown",
+      "accumulated_scene_state": [
+        "final laser diagram"
+      ],
+      "new_visual_element": "outro title",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 7.84
+    }
+  ]
+}

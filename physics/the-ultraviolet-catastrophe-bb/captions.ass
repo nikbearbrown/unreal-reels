@@ -1,0 +1,74 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: bb,EB Garamond,52,&H0042E4F0,&H00D8E6EC,&H001D1616,&H64000000,0,0,0,0,100,100,0,0,1,3,0,2,120,120,90,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.92,bb,,0,0,0,,{\k33}Bear's {\k23}Notes {\k7}The {\k53}Ultraviolet {\k40}Catastrophe
+Dialogue: 0,0:00:02.32,0:00:05.00,bb,,0,0,0,,{\k20}Heat {\k23}any {\k33}object {\k20}and {\k10}it {\k57}glows, {\k10}and {\k30}physics {\k23}in
+Dialogue: 0,0:00:04.85,0:00:06.80,bb,,0,0,0,,{\k53}1900 {\k37}could {\k30}predict {\k30}that {\k30}glow.
+Dialogue: 0,0:00:07.10,0:00:09.22,bb,,0,0,0,,{\k13}The {\k37}prediction {\k20}was {\k17}not {\k27}"very {\k27}bright" {\k17}— {\k10}it {\k13}was
+Dialogue: 0,0:00:09.07,0:00:09.98,bb,,0,0,0,,{\k37}infinitely {\k40}bright.
+Dialogue: 0,0:00:10.26,0:00:12.84,bb,,0,0,0,,{\k37}Taken {\k33}literally, {\k23}the {\k30}warm {\k40}walls {\k17}of {\k13}your {\k23}room {\k27}should
+Dialogue: 0,0:00:12.69,0:00:14.64,bb,,0,0,0,,{\k33}blast {\k30}you {\k20}with {\k77}ultraviolet {\k20}light.
+Dialogue: 0,0:00:14.94,0:00:18.12,bb,,0,0,0,,{\k17}They {\k30}don't, {\k27}so {\k33}something {\k37}inside {\k40}perfectly {\k27}good {\k33}physics {\k27}is
+Dialogue: 0,0:00:17.97,0:00:19.52,bb,,0,0,0,,{\k30}broken {\k20}— {\k20}let's {\k20}find {\k27}where.
+Dialogue: 0,0:00:19.77,0:00:22.29,bb,,0,0,0,,{\k27}Picture {\k23}light {\k33}trapped {\k20}in {\k3}a {\k30}box, {\k23}rattling {\k33}back {\k17}and
+Dialogue: 0,0:00:22.14,0:00:23.49,bb,,0,0,0,,{\k30}forth {\k20}as {\k37}standing {\k33}waves.
+Dialogue: 0,0:00:23.90,0:00:26.55,bb,,0,0,0,,{\k13}At {\k17}low {\k53}frequency, {\k17}only {\k13}a {\k20}few {\k27}wave {\k40}patterns {\k27}fit
+Dialogue: 0,0:00:26.40,0:00:27.35,bb,,0,0,0,,{\k33}inside {\k20}the {\k27}box.
+Dialogue: 0,0:00:27.69,0:00:30.41,bb,,0,0,0,,{\k23}Raise {\k17}the {\k33}frequency {\k30}and {\k23}far {\k17}more {\k43}patterns {\k37}fit {\k17}—
+Dialogue: 0,0:00:30.29,0:00:32.41,bb,,0,0,0,,{\k10}the {\k27}count {\k40}climbs {\k27}like {\k47}frequency {\k47}squared.
+Dialogue: 0,0:00:32.73,0:00:35.81,bb,,0,0,0,,{\k47}Classical {\k30}physics {\k33}then {\k23}hands {\k33}every {\k33}pattern {\k23}the {\k30}exact {\k40}same
+Dialogue: 0,0:00:35.66,0:00:36.61,bb,,0,0,0,,{\k30}share {\k20}of {\k30}energy.
+Dialogue: 0,0:00:36.94,0:00:39.52,bb,,0,0,0,,{\k13}A {\k17}few {\k27}cheap {\k43}patterns, {\k20}then {\k13}a {\k33}rising {\k33}flood {\k13}of
+Dialogue: 0,0:00:39.37,0:00:41.26,bb,,0,0,0,,{\k20}them, {\k20}each {\k20}one {\k40}fully {\k33}funded.
+Dialogue: 0,0:00:41.54,0:00:44.46,bb,,0,0,0,,{\k50}Multiply {\k17}the {\k40}exploding {\k30}count {\k20}by {\k17}that {\k30}fixed {\k17}share, {\k33}and
+Dialogue: 0,0:00:44.31,0:00:45.96,bb,,0,0,0,,{\k10}the {\k33}predicted {\k33}glow {\k33}races {\k40}upward.
+Dialogue: 0,0:00:46.32,0:00:49.07,bb,,0,0,0,,{\k30}Plot {\k17}it, {\k10}and {\k10}the {\k23}curve {\k47}climbs {\k30}without {\k17}limit {\k33}straight
+Dialogue: 0,0:00:48.92,0:00:50.30,bb,,0,0,0,,{\k30}into {\k17}the {\k77}ultraviolet.
+Dialogue: 0,0:00:50.50,0:00:52.72,bb,,0,0,0,,{\k17}But {\k27}measure {\k20}a {\k17}real {\k27}hot {\k37}object, {\k23}and {\k20}its {\k20}glow
+Dialogue: 0,0:00:52.57,0:00:54.78,bb,,0,0,0,,{\k47}rises, {\k20}peaks, {\k37}then {\k33}gently {\k37}falls.
+Dialogue: 0,0:00:55.18,0:00:56.66,bb,,0,0,0,,{\k17}Two {\k37}curves {\k23}for {\k17}one {\k40}object:
+Dialogue: 0,0:00:56.91,0:00:59.46,bb,,0,0,0,,{\k13}one {\k30}screams {\k27}to {\k40}infinity, {\k7}the {\k23}other {\k23}comes {\k23}home {\k17}to
+Dialogue: 0,0:00:59.31,0:00:59.73,bb,,0,0,0,,{\k27}zero.
+Dialogue: 0,0:01:00.04,0:01:02.82,bb,,0,0,0,,{\k17}So {\k20}which {\k27}honest-looking {\k37}step {\k13}in {\k17}that {\k37}argument {\k27}was {\k37}actually
+Dialogue: 0,0:01:02.67,0:01:03.26,bb,,0,0,0,,{\k20}the {\k23}lie?
+Dialogue: 0,0:01:03.62,0:01:06.30,bb,,0,0,0,,{\k17}Not {\k13}the {\k37}counting {\k17}— {\k7}the {\k47}geometry {\k27}of {\k33}standing {\k33}waves
+Dialogue: 0,0:01:06.15,0:01:07.74,bb,,0,0,0,,{\k17}in {\k7}a {\k37}box {\k20}is {\k20}rock {\k43}solid.
+Dialogue: 0,0:01:08.03,0:01:10.41,bb,,0,0,0,,{\k13}The {\k33}culprit {\k20}is {\k10}the {\k33}quiet {\k47}assumption {\k23}that {\k7}a {\k37}pattern
+Dialogue: 0,0:01:10.26,0:01:12.65,bb,,0,0,0,,{\k23}can {\k27}hold {\k23}any {\k47}energy, {\k50}down {\k13}to {\k40}slivers.
+Dialogue: 0,0:01:13.46,0:01:14.34,bb,,0,0,0,,{\k1}Planck's {\k30}desperate {\k43}remedy:
+Dialogue: 0,0:01:14.56,0:01:16.87,bb,,0,0,0,,{\k7}a {\k50}pattern's {\k30}energy {\k20}comes {\k33}only {\k17}in {\k20}whole {\k40}chunks.
+Dialogue: 0,0:01:17.20,0:01:20.92,bb,,0,0,0,,{\k23}Each {\k27}chunk {\k23}is {\k20}worth {\k10}a {\k30}tiny {\k23}new {\k47}constant, {\k40}h,
+Dialogue: 0,0:01:20.77,0:01:23.02,bb,,0,0,0,,{\k70}times {\k20}how {\k37}fast {\k23}the {\k20}wave {\k40}wiggles.
+Dialogue: 0,0:01:24.03,0:01:26.68,bb,,0,0,0,,{\k1}Low-frequency {\k30}chunks {\k20}are {\k30}cheap, {\k7}so {\k27}nothing {\k47}changes {\k27}where {\k43}classical
+Dialogue: 0,0:01:26.53,0:01:27.91,bb,,0,0,0,,{\k37}physics {\k43}already {\k43}worked.
+Dialogue: 0,0:01:28.14,0:01:31.62,bb,,0,0,0,,{\k17}But {\k30}high-frequency {\k30}chunks {\k20}are {\k50}expensive {\k20}— {\k60}ultraviolet {\k20}light {\k20}is
+Dialogue: 0,0:01:31.61,0:01:32.82,bb,,0,0,0,,{\k10}billed {\k23}in {\k43}costly {\k30}lumps.
+Dialogue: 0,0:01:33.18,0:01:36.86,bb,,0,0,0,,{\k10}A {\k23}warm {\k40}object {\k43}simply {\k37}cannot {\k33}afford {\k27}those {\k53}costly {\k87}ultraviolet
+Dialogue: 0,0:01:36.71,0:01:37.20,bb,,0,0,0,,{\k33}chunks.
+Dialogue: 0,0:01:37.54,0:01:40.46,bb,,0,0,0,,{\k17}So {\k13}the {\k37}expensive {\k40}patterns {\k37}stay {\k33}empty, {\k10}and {\k10}the {\k33}runaway
+Dialogue: 0,0:01:40.31,0:01:42.26,bb,,0,0,0,,{\k33}curve {\k40}bends {\k23}back {\k30}down {\k23}to {\k30}zero.
+Dialogue: 0,0:01:42.56,0:01:44.88,bb,,0,0,0,,{\k17}The {\k40}catastrophe {\k33}was {\k23}never {\k37}real {\k17}— {\k10}it {\k10}was {\k13}the
+Dialogue: 0,0:01:44.73,0:01:46.64,bb,,0,0,0,,{\k30}price {\k17}of {\k33}pretending {\k47}energy {\k20}is {\k30}smooth.
+Dialogue: 0,0:01:47.00,0:01:48.55,bb,,0,0,0,,{\k13}One {\k33}ratio {\k37}decides {\k57}everything:
+Dialogue: 0,0:01:48.80,0:01:50.92,bb,,0,0,0,,{\k7}the {\k40}chunk's {\k27}cost {\k30}against {\k23}the {\k27}warmth {\k43}available.
+Dialogue: 0,0:01:51.26,0:01:53.64,bb,,0,0,0,,{\k17}When {\k37}warmth {\k40}dwarfs {\k13}the {\k27}chunk {\k7}it {\k17}looks {\k57}classical;
+Dialogue: 0,0:01:53.93,0:01:56.18,bb,,0,0,0,,{\k10}when {\k13}the {\k27}chunk {\k37}wins, {\k10}it {\k20}looks {\k43}quantum.
+Dialogue: 0,0:01:56.51,0:01:59.43,bb,,0,0,0,,{\k23}That {\k33}single {\k40}rule {\k13}— {\k27}energy {\k10}in {\k20}whole {\k43}chunks {\k17}—
+Dialogue: 0,0:01:59.31,0:02:01.09,bb,,0,0,0,,{\k10}is {\k17}the {\k30}seed {\k17}of {\k17}all {\k37}quantum {\k37}physics.
+Dialogue: 0,0:02:01.47,0:02:04.59,bb,,0,0,0,,{\k17}We {\k23}didn't {\k33}derive {\k57}Planck's {\k30}exact {\k47}curve, {\k17}and {\k10}we {\k23}left
+Dialogue: 0,0:02:04.44,0:02:06.45,bb,,0,0,0,,{\k43}light's {\k13}own {\k53}graininess {\k20}for {\k27}next {\k30}time.
+Dialogue: 0,0:02:06.72,0:02:07.64,bb,,0,0,0,,{\k20}Try {\k17}this {\k40}yourself:
+Dialogue: 0,0:02:07.99,0:02:10.90,bb,,0,0,0,,{\k47}estimate {\k20}a {\k33}chunk's {\k27}cost {\k23}for {\k23}green {\k33}light, {\k13}and {\k17}weigh
+Dialogue: 0,0:02:10.75,0:02:12.44,bb,,0,0,0,,{\k13}it {\k30}against {\k33}room-temperature {\k33}warmth.
+Dialogue: 0,0:02:12.81,0:02:15.63,bb,,0,0,0,,{\k27}Thanks {\k10}for {\k30}watching {\k17}The {\k50}Ultraviolet {\k53}Catastrophe {\k20}— {\k20}more {\k13}at
+Dialogue: 0,0:02:15.48,0:02:17.29,bb,,0,0,0,,{\k20}youtube {\k1}dot {\k67}com, {\k43}slash, {\k37}at {\k1}Nik {\k1}Bear {\k1}Brown.

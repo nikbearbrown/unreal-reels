@@ -1,0 +1,26 @@
+{
+  "scene": "energy_levels_n_squared_worked",
+  "snapshots": 59,
+  "errors": 0,
+  "warnings": 1,
+  "safe_area": [
+    6.3,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": [
+    {
+      "type": "OFF_SAFE_AREA",
+      "severity": "WARN",
+      "text": "energy",
+      "t": 14.53,
+      "snap": 13,
+      "box": [
+        0.37,
+        3.12,
+        1.23,
+        3.46
+      ]
+    }
+  ]
+}

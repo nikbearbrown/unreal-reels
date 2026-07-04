@@ -1,0 +1,34 @@
+{
+  "scene": "stationary_state_is_actually_spinning",
+  "snapshots": 29,
+  "errors": 0,
+  "warnings": 1,
+  "safe_area": [
+    6.3,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": [
+    {
+      "type": "TEXT_ON_TEXT",
+      "severity": "WARN",
+      "ratio": 0.411,
+      "a": "Im",
+      "b": "real&imaginary,90degreesapart",
+      "t": 33.73,
+      "snap": 17,
+      "box_a": [
+        -3.31,
+        2.62,
+        -3.09,
+        2.87
+      ],
+      "box_b": [
+        -5.5,
+        2.77,
+        -0.9,
+        3.23
+      ]
+    }
+  ]
+}

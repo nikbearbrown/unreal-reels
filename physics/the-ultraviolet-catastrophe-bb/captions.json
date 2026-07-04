@@ -1,0 +1,2562 @@
+{
+  "fps": 30,
+  "slides": {
+    "INTRO": {
+      "lines": [
+        {
+          "text": "Bear's Notes The Ultraviolet Catastrophe",
+          "startFrame": 0,
+          "endFrame": 53,
+          "words": [
+            {
+              "text": "Bear's",
+              "startFrame": 0,
+              "endFrame": 10
+            },
+            {
+              "text": "Notes",
+              "startFrame": 10,
+              "endFrame": 17
+            },
+            {
+              "text": "The",
+              "startFrame": 23,
+              "endFrame": 25
+            },
+            {
+              "text": "Ultraviolet",
+              "startFrame": 25,
+              "endFrame": 41
+            },
+            {
+              "text": "Catastrophe",
+              "startFrame": 41,
+              "endFrame": 53
+            }
+          ]
+        }
+      ]
+    },
+    "H01": {
+      "lines": [
+        {
+          "text": "Heat any object and it glows, and physics in",
+          "startFrame": 0,
+          "endFrame": 76,
+          "words": [
+            {
+              "text": "Heat",
+              "startFrame": 0,
+              "endFrame": 6
+            },
+            {
+              "text": "any",
+              "startFrame": 6,
+              "endFrame": 13
+            },
+            {
+              "text": "object",
+              "startFrame": 13,
+              "endFrame": 23
+            },
+            {
+              "text": "and",
+              "startFrame": 23,
+              "endFrame": 29
+            },
+            {
+              "text": "it",
+              "startFrame": 29,
+              "endFrame": 32
+            },
+            {
+              "text": "glows,",
+              "startFrame": 32,
+              "endFrame": 49
+            },
+            {
+              "text": "and",
+              "startFrame": 57,
+              "endFrame": 60
+            },
+            {
+              "text": "physics",
+              "startFrame": 60,
+              "endFrame": 69
+            },
+            {
+              "text": "in",
+              "startFrame": 69,
+              "endFrame": 76
+            }
+          ]
+        },
+        {
+          "text": "1900 could predict that glow.",
+          "startFrame": 76,
+          "endFrame": 130,
+          "words": [
+            {
+              "text": "1900",
+              "startFrame": 76,
+              "endFrame": 92
+            },
+            {
+              "text": "could",
+              "startFrame": 92,
+              "endFrame": 103
+            },
+            {
+              "text": "predict",
+              "startFrame": 103,
+              "endFrame": 112
+            },
+            {
+              "text": "that",
+              "startFrame": 112,
+              "endFrame": 121
+            },
+            {
+              "text": "glow.",
+              "startFrame": 121,
+              "endFrame": 130
+            }
+          ]
+        }
+      ]
+    },
+    "H02": {
+      "lines": [
+        {
+          "text": "The prediction was not \"very bright\" — it was",
+          "startFrame": 0,
+          "endFrame": 59,
+          "words": [
+            {
+              "text": "The",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "prediction",
+              "startFrame": 4,
+              "endFrame": 15
+            },
+            {
+              "text": "was",
+              "startFrame": 15,
+              "endFrame": 21
+            },
+            {
+              "text": "not",
+              "startFrame": 21,
+              "endFrame": 26
+            },
+            {
+              "text": "\"very",
+              "startFrame": 26,
+              "endFrame": 34
+            },
+            {
+              "text": "bright\"",
+              "startFrame": 34,
+              "endFrame": 42
+            },
+            {
+              "text": "—",
+              "startFrame": 47,
+              "endFrame": 52
+            },
+            {
+              "text": "it",
+              "startFrame": 52,
+              "endFrame": 55
+            },
+            {
+              "text": "was",
+              "startFrame": 55,
+              "endFrame": 59
+            }
+          ]
+        },
+        {
+          "text": "infinitely bright.",
+          "startFrame": 59,
+          "endFrame": 82,
+          "words": [
+            {
+              "text": "infinitely",
+              "startFrame": 59,
+              "endFrame": 70
+            },
+            {
+              "text": "bright.",
+              "startFrame": 70,
+              "endFrame": 82
+            }
+          ]
+        }
+      ]
+    },
+    "H03": {
+      "lines": [
+        {
+          "text": "Taken literally, the warm walls of your room should",
+          "startFrame": 0,
+          "endFrame": 73,
+          "words": [
+            {
+              "text": "Taken",
+              "startFrame": 0,
+              "endFrame": 11
+            },
+            {
+              "text": "literally,",
+              "startFrame": 11,
+              "endFrame": 21
+            },
+            {
+              "text": "the",
+              "startFrame": 21,
+              "endFrame": 28
+            },
+            {
+              "text": "warm",
+              "startFrame": 28,
+              "endFrame": 37
+            },
+            {
+              "text": "walls",
+              "startFrame": 37,
+              "endFrame": 49
+            },
+            {
+              "text": "of",
+              "startFrame": 49,
+              "endFrame": 54
+            },
+            {
+              "text": "your",
+              "startFrame": 54,
+              "endFrame": 58
+            },
+            {
+              "text": "room",
+              "startFrame": 58,
+              "endFrame": 65
+            },
+            {
+              "text": "should",
+              "startFrame": 65,
+              "endFrame": 73
+            }
+          ]
+        },
+        {
+          "text": "blast you with ultraviolet light.",
+          "startFrame": 73,
+          "endFrame": 127,
+          "words": [
+            {
+              "text": "blast",
+              "startFrame": 73,
+              "endFrame": 83
+            },
+            {
+              "text": "you",
+              "startFrame": 83,
+              "endFrame": 92
+            },
+            {
+              "text": "with",
+              "startFrame": 92,
+              "endFrame": 98
+            },
+            {
+              "text": "ultraviolet",
+              "startFrame": 98,
+              "endFrame": 121
+            },
+            {
+              "text": "light.",
+              "startFrame": 121,
+              "endFrame": 127
+            }
+          ]
+        }
+      ]
+    },
+    "H04": {
+      "lines": [
+        {
+          "text": "They don't, so something inside perfectly good physics is",
+          "startFrame": 0,
+          "endFrame": 91,
+          "words": [
+            {
+              "text": "They",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "don't,",
+              "startFrame": 5,
+              "endFrame": 14
+            },
+            {
+              "text": "so",
+              "startFrame": 24,
+              "endFrame": 32
+            },
+            {
+              "text": "something",
+              "startFrame": 32,
+              "endFrame": 42
+            },
+            {
+              "text": "inside",
+              "startFrame": 42,
+              "endFrame": 53
+            },
+            {
+              "text": "perfectly",
+              "startFrame": 53,
+              "endFrame": 65
+            },
+            {
+              "text": "good",
+              "startFrame": 65,
+              "endFrame": 73
+            },
+            {
+              "text": "physics",
+              "startFrame": 73,
+              "endFrame": 83
+            },
+            {
+              "text": "is",
+              "startFrame": 83,
+              "endFrame": 91
+            }
+          ]
+        },
+        {
+          "text": "broken — let's find where.",
+          "startFrame": 91,
+          "endFrame": 133,
+          "words": [
+            {
+              "text": "broken",
+              "startFrame": 91,
+              "endFrame": 100
+            },
+            {
+              "text": "—",
+              "startFrame": 106,
+              "endFrame": 112
+            },
+            {
+              "text": "let's",
+              "startFrame": 113,
+              "endFrame": 119
+            },
+            {
+              "text": "find",
+              "startFrame": 119,
+              "endFrame": 125
+            },
+            {
+              "text": "where.",
+              "startFrame": 125,
+              "endFrame": 133
+            }
+          ]
+        }
+      ]
+    },
+    "M01": {
+      "lines": [
+        {
+          "text": "Picture light trapped in a box, rattling back and",
+          "startFrame": 0,
+          "endFrame": 71,
+          "words": [
+            {
+              "text": "Picture",
+              "startFrame": 0,
+              "endFrame": 8
+            },
+            {
+              "text": "light",
+              "startFrame": 8,
+              "endFrame": 15
+            },
+            {
+              "text": "trapped",
+              "startFrame": 15,
+              "endFrame": 25
+            },
+            {
+              "text": "in",
+              "startFrame": 25,
+              "endFrame": 31
+            },
+            {
+              "text": "a",
+              "startFrame": 31,
+              "endFrame": 32
+            },
+            {
+              "text": "box,",
+              "startFrame": 32,
+              "endFrame": 41
+            },
+            {
+              "text": "rattling",
+              "startFrame": 49,
+              "endFrame": 56
+            },
+            {
+              "text": "back",
+              "startFrame": 56,
+              "endFrame": 66
+            },
+            {
+              "text": "and",
+              "startFrame": 66,
+              "endFrame": 71
+            }
+          ]
+        },
+        {
+          "text": "forth as standing waves.",
+          "startFrame": 71,
+          "endFrame": 107,
+          "words": [
+            {
+              "text": "forth",
+              "startFrame": 71,
+              "endFrame": 80
+            },
+            {
+              "text": "as",
+              "startFrame": 80,
+              "endFrame": 86
+            },
+            {
+              "text": "standing",
+              "startFrame": 86,
+              "endFrame": 97
+            },
+            {
+              "text": "waves.",
+              "startFrame": 97,
+              "endFrame": 107
+            }
+          ]
+        }
+      ]
+    },
+    "M02": {
+      "lines": [
+        {
+          "text": "At low frequency, only a few wave patterns fit",
+          "startFrame": 0,
+          "endFrame": 75,
+          "words": [
+            {
+              "text": "At",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "low",
+              "startFrame": 4,
+              "endFrame": 9
+            },
+            {
+              "text": "frequency,",
+              "startFrame": 9,
+              "endFrame": 25
+            },
+            {
+              "text": "only",
+              "startFrame": 32,
+              "endFrame": 37
+            },
+            {
+              "text": "a",
+              "startFrame": 37,
+              "endFrame": 41
+            },
+            {
+              "text": "few",
+              "startFrame": 41,
+              "endFrame": 47
+            },
+            {
+              "text": "wave",
+              "startFrame": 47,
+              "endFrame": 55
+            },
+            {
+              "text": "patterns",
+              "startFrame": 55,
+              "endFrame": 67
+            },
+            {
+              "text": "fit",
+              "startFrame": 67,
+              "endFrame": 75
+            }
+          ]
+        },
+        {
+          "text": "inside the box.",
+          "startFrame": 75,
+          "endFrame": 99,
+          "words": [
+            {
+              "text": "inside",
+              "startFrame": 75,
+              "endFrame": 85
+            },
+            {
+              "text": "the",
+              "startFrame": 85,
+              "endFrame": 91
+            },
+            {
+              "text": "box.",
+              "startFrame": 91,
+              "endFrame": 99
+            }
+          ]
+        }
+      ]
+    },
+    "M03": {
+      "lines": [
+        {
+          "text": "Raise the frequency and far more patterns fit —",
+          "startFrame": 0,
+          "endFrame": 77,
+          "words": [
+            {
+              "text": "Raise",
+              "startFrame": 0,
+              "endFrame": 7
+            },
+            {
+              "text": "the",
+              "startFrame": 7,
+              "endFrame": 12
+            },
+            {
+              "text": "frequency",
+              "startFrame": 12,
+              "endFrame": 22
+            },
+            {
+              "text": "and",
+              "startFrame": 22,
+              "endFrame": 31
+            },
+            {
+              "text": "far",
+              "startFrame": 31,
+              "endFrame": 38
+            },
+            {
+              "text": "more",
+              "startFrame": 38,
+              "endFrame": 43
+            },
+            {
+              "text": "patterns",
+              "startFrame": 43,
+              "endFrame": 56
+            },
+            {
+              "text": "fit",
+              "startFrame": 56,
+              "endFrame": 67
+            },
+            {
+              "text": "—",
+              "startFrame": 72,
+              "endFrame": 77
+            }
+          ]
+        },
+        {
+          "text": "the count climbs like frequency squared.",
+          "startFrame": 78,
+          "endFrame": 137,
+          "words": [
+            {
+              "text": "the",
+              "startFrame": 78,
+              "endFrame": 81
+            },
+            {
+              "text": "count",
+              "startFrame": 81,
+              "endFrame": 89
+            },
+            {
+              "text": "climbs",
+              "startFrame": 89,
+              "endFrame": 101
+            },
+            {
+              "text": "like",
+              "startFrame": 101,
+              "endFrame": 109
+            },
+            {
+              "text": "frequency",
+              "startFrame": 109,
+              "endFrame": 123
+            },
+            {
+              "text": "squared.",
+              "startFrame": 123,
+              "endFrame": 137
+            }
+          ]
+        }
+      ]
+    },
+    "M04": {
+      "lines": [
+        {
+          "text": "Classical physics then hands every pattern the exact same",
+          "startFrame": 0,
+          "endFrame": 88,
+          "words": [
+            {
+              "text": "Classical",
+              "startFrame": 0,
+              "endFrame": 14
+            },
+            {
+              "text": "physics",
+              "startFrame": 14,
+              "endFrame": 23
+            },
+            {
+              "text": "then",
+              "startFrame": 23,
+              "endFrame": 33
+            },
+            {
+              "text": "hands",
+              "startFrame": 33,
+              "endFrame": 40
+            },
+            {
+              "text": "every",
+              "startFrame": 40,
+              "endFrame": 50
+            },
+            {
+              "text": "pattern",
+              "startFrame": 50,
+              "endFrame": 60
+            },
+            {
+              "text": "the",
+              "startFrame": 60,
+              "endFrame": 67
+            },
+            {
+              "text": "exact",
+              "startFrame": 67,
+              "endFrame": 76
+            },
+            {
+              "text": "same",
+              "startFrame": 76,
+              "endFrame": 88
+            }
+          ]
+        },
+        {
+          "text": "share of energy.",
+          "startFrame": 88,
+          "endFrame": 112,
+          "words": [
+            {
+              "text": "share",
+              "startFrame": 88,
+              "endFrame": 97
+            },
+            {
+              "text": "of",
+              "startFrame": 97,
+              "endFrame": 103
+            },
+            {
+              "text": "energy.",
+              "startFrame": 103,
+              "endFrame": 112
+            }
+          ]
+        }
+      ]
+    },
+    "M05": {
+      "lines": [
+        {
+          "text": "A few cheap patterns, then a rising flood of",
+          "startFrame": 0,
+          "endFrame": 73,
+          "words": [
+            {
+              "text": "A",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "few",
+              "startFrame": 4,
+              "endFrame": 9
+            },
+            {
+              "text": "cheap",
+              "startFrame": 9,
+              "endFrame": 17
+            },
+            {
+              "text": "patterns,",
+              "startFrame": 17,
+              "endFrame": 30
+            },
+            {
+              "text": "then",
+              "startFrame": 38,
+              "endFrame": 44
+            },
+            {
+              "text": "a",
+              "startFrame": 45,
+              "endFrame": 49
+            },
+            {
+              "text": "rising",
+              "startFrame": 49,
+              "endFrame": 59
+            },
+            {
+              "text": "flood",
+              "startFrame": 59,
+              "endFrame": 69
+            },
+            {
+              "text": "of",
+              "startFrame": 69,
+              "endFrame": 73
+            }
+          ]
+        },
+        {
+          "text": "them, each one fully funded.",
+          "startFrame": 73,
+          "endFrame": 125,
+          "words": [
+            {
+              "text": "them,",
+              "startFrame": 73,
+              "endFrame": 79
+            },
+            {
+              "text": "each",
+              "startFrame": 91,
+              "endFrame": 97
+            },
+            {
+              "text": "one",
+              "startFrame": 97,
+              "endFrame": 103
+            },
+            {
+              "text": "fully",
+              "startFrame": 103,
+              "endFrame": 115
+            },
+            {
+              "text": "funded.",
+              "startFrame": 115,
+              "endFrame": 125
+            }
+          ]
+        }
+      ]
+    },
+    "P01": {
+      "lines": [
+        {
+          "text": "Multiply the exploding count by that fixed share, and",
+          "startFrame": 0,
+          "endFrame": 83,
+          "words": [
+            {
+              "text": "Multiply",
+              "startFrame": 0,
+              "endFrame": 15
+            },
+            {
+              "text": "the",
+              "startFrame": 15,
+              "endFrame": 20
+            },
+            {
+              "text": "exploding",
+              "startFrame": 20,
+              "endFrame": 32
+            },
+            {
+              "text": "count",
+              "startFrame": 32,
+              "endFrame": 41
+            },
+            {
+              "text": "by",
+              "startFrame": 41,
+              "endFrame": 47
+            },
+            {
+              "text": "that",
+              "startFrame": 47,
+              "endFrame": 52
+            },
+            {
+              "text": "fixed",
+              "startFrame": 52,
+              "endFrame": 61
+            },
+            {
+              "text": "share,",
+              "startFrame": 67,
+              "endFrame": 72
+            },
+            {
+              "text": "and",
+              "startFrame": 73,
+              "endFrame": 83
+            }
+          ]
+        },
+        {
+          "text": "the predicted glow races upward.",
+          "startFrame": 83,
+          "endFrame": 128,
+          "words": [
+            {
+              "text": "the",
+              "startFrame": 83,
+              "endFrame": 86
+            },
+            {
+              "text": "predicted",
+              "startFrame": 86,
+              "endFrame": 96
+            },
+            {
+              "text": "glow",
+              "startFrame": 96,
+              "endFrame": 106
+            },
+            {
+              "text": "races",
+              "startFrame": 106,
+              "endFrame": 116
+            },
+            {
+              "text": "upward.",
+              "startFrame": 116,
+              "endFrame": 128
+            }
+          ]
+        }
+      ]
+    },
+    "P02": {
+      "lines": [
+        {
+          "text": "Plot it, and the curve climbs without limit straight",
+          "startFrame": 0,
+          "endFrame": 78,
+          "words": [
+            {
+              "text": "Plot",
+              "startFrame": 0,
+              "endFrame": 9
+            },
+            {
+              "text": "it,",
+              "startFrame": 9,
+              "endFrame": 14
+            },
+            {
+              "text": "and",
+              "startFrame": 20,
+              "endFrame": 23
+            },
+            {
+              "text": "the",
+              "startFrame": 23,
+              "endFrame": 26
+            },
+            {
+              "text": "curve",
+              "startFrame": 26,
+              "endFrame": 33
+            },
+            {
+              "text": "climbs",
+              "startFrame": 33,
+              "endFrame": 47
+            },
+            {
+              "text": "without",
+              "startFrame": 47,
+              "endFrame": 56
+            },
+            {
+              "text": "limit",
+              "startFrame": 62,
+              "endFrame": 67
+            },
+            {
+              "text": "straight",
+              "startFrame": 68,
+              "endFrame": 78
+            }
+          ]
+        },
+        {
+          "text": "into the ultraviolet.",
+          "startFrame": 78,
+          "endFrame": 115,
+          "words": [
+            {
+              "text": "into",
+              "startFrame": 78,
+              "endFrame": 87
+            },
+            {
+              "text": "the",
+              "startFrame": 87,
+              "endFrame": 92
+            },
+            {
+              "text": "ultraviolet.",
+              "startFrame": 92,
+              "endFrame": 115
+            }
+          ]
+        }
+      ]
+    },
+    "P03": {
+      "lines": [
+        {
+          "text": "But measure a real hot object, and its glow",
+          "startFrame": 0,
+          "endFrame": 62,
+          "words": [
+            {
+              "text": "But",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "measure",
+              "startFrame": 5,
+              "endFrame": 13
+            },
+            {
+              "text": "a",
+              "startFrame": 13,
+              "endFrame": 19
+            },
+            {
+              "text": "real",
+              "startFrame": 19,
+              "endFrame": 24
+            },
+            {
+              "text": "hot",
+              "startFrame": 24,
+              "endFrame": 32
+            },
+            {
+              "text": "object,",
+              "startFrame": 32,
+              "endFrame": 43
+            },
+            {
+              "text": "and",
+              "startFrame": 43,
+              "endFrame": 50
+            },
+            {
+              "text": "its",
+              "startFrame": 50,
+              "endFrame": 56
+            },
+            {
+              "text": "glow",
+              "startFrame": 56,
+              "endFrame": 62
+            }
+          ]
+        },
+        {
+          "text": "rises, peaks, then gently falls.",
+          "startFrame": 62,
+          "endFrame": 124,
+          "words": [
+            {
+              "text": "rises,",
+              "startFrame": 62,
+              "endFrame": 76
+            },
+            {
+              "text": "peaks,",
+              "startFrame": 86,
+              "endFrame": 92
+            },
+            {
+              "text": "then",
+              "startFrame": 92,
+              "endFrame": 103
+            },
+            {
+              "text": "gently",
+              "startFrame": 103,
+              "endFrame": 113
+            },
+            {
+              "text": "falls.",
+              "startFrame": 113,
+              "endFrame": 124
+            }
+          ]
+        }
+      ]
+    },
+    "P04": {
+      "lines": [
+        {
+          "text": "Two curves for one object:",
+          "startFrame": 0,
+          "endFrame": 40,
+          "words": [
+            {
+              "text": "Two",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "curves",
+              "startFrame": 5,
+              "endFrame": 16
+            },
+            {
+              "text": "for",
+              "startFrame": 16,
+              "endFrame": 23
+            },
+            {
+              "text": "one",
+              "startFrame": 23,
+              "endFrame": 28
+            },
+            {
+              "text": "object:",
+              "startFrame": 28,
+              "endFrame": 40
+            }
+          ]
+        },
+        {
+          "text": "one screams to infinity, the other comes home to",
+          "startFrame": 52,
+          "endFrame": 124,
+          "words": [
+            {
+              "text": "one",
+              "startFrame": 52,
+              "endFrame": 56
+            },
+            {
+              "text": "screams",
+              "startFrame": 56,
+              "endFrame": 65
+            },
+            {
+              "text": "to",
+              "startFrame": 65,
+              "endFrame": 73
+            },
+            {
+              "text": "infinity,",
+              "startFrame": 73,
+              "endFrame": 85
+            },
+            {
+              "text": "the",
+              "startFrame": 96,
+              "endFrame": 98
+            },
+            {
+              "text": "other",
+              "startFrame": 98,
+              "endFrame": 105
+            },
+            {
+              "text": "comes",
+              "startFrame": 105,
+              "endFrame": 112
+            },
+            {
+              "text": "home",
+              "startFrame": 112,
+              "endFrame": 119
+            },
+            {
+              "text": "to",
+              "startFrame": 119,
+              "endFrame": 124
+            }
+          ]
+        },
+        {
+          "text": "zero.",
+          "startFrame": 124,
+          "endFrame": 132,
+          "words": [
+            {
+              "text": "zero.",
+              "startFrame": 124,
+              "endFrame": 132
+            }
+          ]
+        }
+      ]
+    },
+    "D01": {
+      "lines": [
+        {
+          "text": "So which honest-looking step in that argument was actually",
+          "startFrame": 0,
+          "endFrame": 79,
+          "words": [
+            {
+              "text": "So",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "which",
+              "startFrame": 5,
+              "endFrame": 11
+            },
+            {
+              "text": "honest-looking",
+              "startFrame": 20,
+              "endFrame": 28
+            },
+            {
+              "text": "step",
+              "startFrame": 29,
+              "endFrame": 40
+            },
+            {
+              "text": "in",
+              "startFrame": 40,
+              "endFrame": 44
+            },
+            {
+              "text": "that",
+              "startFrame": 44,
+              "endFrame": 49
+            },
+            {
+              "text": "argument",
+              "startFrame": 49,
+              "endFrame": 60
+            },
+            {
+              "text": "was",
+              "startFrame": 60,
+              "endFrame": 68
+            },
+            {
+              "text": "actually",
+              "startFrame": 68,
+              "endFrame": 79
+            }
+          ]
+        },
+        {
+          "text": "the lie?",
+          "startFrame": 79,
+          "endFrame": 92,
+          "words": [
+            {
+              "text": "the",
+              "startFrame": 79,
+              "endFrame": 85
+            },
+            {
+              "text": "lie?",
+              "startFrame": 85,
+              "endFrame": 92
+            }
+          ]
+        }
+      ]
+    },
+    "D02": {
+      "lines": [
+        {
+          "text": "Not the counting — the geometry of standing waves",
+          "startFrame": 0,
+          "endFrame": 76,
+          "words": [
+            {
+              "text": "Not",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "the",
+              "startFrame": 5,
+              "endFrame": 9
+            },
+            {
+              "text": "counting",
+              "startFrame": 9,
+              "endFrame": 20
+            },
+            {
+              "text": "—",
+              "startFrame": 26,
+              "endFrame": 31
+            },
+            {
+              "text": "the",
+              "startFrame": 32,
+              "endFrame": 34
+            },
+            {
+              "text": "geometry",
+              "startFrame": 34,
+              "endFrame": 48
+            },
+            {
+              "text": "of",
+              "startFrame": 48,
+              "endFrame": 56
+            },
+            {
+              "text": "standing",
+              "startFrame": 56,
+              "endFrame": 66
+            },
+            {
+              "text": "waves",
+              "startFrame": 66,
+              "endFrame": 76
+            }
+          ]
+        },
+        {
+          "text": "in a box is rock solid.",
+          "startFrame": 76,
+          "endFrame": 119,
+          "words": [
+            {
+              "text": "in",
+              "startFrame": 76,
+              "endFrame": 81
+            },
+            {
+              "text": "a",
+              "startFrame": 81,
+              "endFrame": 83
+            },
+            {
+              "text": "box",
+              "startFrame": 83,
+              "endFrame": 94
+            },
+            {
+              "text": "is",
+              "startFrame": 94,
+              "endFrame": 100
+            },
+            {
+              "text": "rock",
+              "startFrame": 100,
+              "endFrame": 106
+            },
+            {
+              "text": "solid.",
+              "startFrame": 106,
+              "endFrame": 119
+            }
+          ]
+        }
+      ]
+    },
+    "D03": {
+      "lines": [
+        {
+          "text": "The culprit is the quiet assumption that a pattern",
+          "startFrame": 0,
+          "endFrame": 67,
+          "words": [
+            {
+              "text": "The",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "culprit",
+              "startFrame": 4,
+              "endFrame": 14
+            },
+            {
+              "text": "is",
+              "startFrame": 14,
+              "endFrame": 20
+            },
+            {
+              "text": "the",
+              "startFrame": 20,
+              "endFrame": 23
+            },
+            {
+              "text": "quiet",
+              "startFrame": 23,
+              "endFrame": 33
+            },
+            {
+              "text": "assumption",
+              "startFrame": 33,
+              "endFrame": 47
+            },
+            {
+              "text": "that",
+              "startFrame": 47,
+              "endFrame": 54
+            },
+            {
+              "text": "a",
+              "startFrame": 54,
+              "endFrame": 56
+            },
+            {
+              "text": "pattern",
+              "startFrame": 56,
+              "endFrame": 67
+            }
+          ]
+        },
+        {
+          "text": "can hold any energy, down to slivers.",
+          "startFrame": 67,
+          "endFrame": 134,
+          "words": [
+            {
+              "text": "can",
+              "startFrame": 67,
+              "endFrame": 74
+            },
+            {
+              "text": "hold",
+              "startFrame": 74,
+              "endFrame": 82
+            },
+            {
+              "text": "any",
+              "startFrame": 82,
+              "endFrame": 89
+            },
+            {
+              "text": "energy,",
+              "startFrame": 89,
+              "endFrame": 103
+            },
+            {
+              "text": "down",
+              "startFrame": 103,
+              "endFrame": 118
+            },
+            {
+              "text": "to",
+              "startFrame": 118,
+              "endFrame": 122
+            },
+            {
+              "text": "slivers.",
+              "startFrame": 122,
+              "endFrame": 134
+            }
+          ]
+        }
+      ]
+    },
+    "F01": {
+      "lines": [
+        {
+          "text": "Planck's desperate remedy:",
+          "startFrame": 14,
+          "endFrame": 36,
+          "words": [
+            {
+              "text": "Planck's",
+              "startFrame": 14,
+              "endFrame": 14
+            },
+            {
+              "text": "desperate",
+              "startFrame": 14,
+              "endFrame": 23
+            },
+            {
+              "text": "remedy:",
+              "startFrame": 23,
+              "endFrame": 36
+            }
+          ]
+        },
+        {
+          "text": "a pattern's energy comes only in whole chunks.",
+          "startFrame": 47,
+          "endFrame": 112,
+          "words": [
+            {
+              "text": "a",
+              "startFrame": 47,
+              "endFrame": 49
+            },
+            {
+              "text": "pattern's",
+              "startFrame": 49,
+              "endFrame": 64
+            },
+            {
+              "text": "energy",
+              "startFrame": 64,
+              "endFrame": 73
+            },
+            {
+              "text": "comes",
+              "startFrame": 73,
+              "endFrame": 79
+            },
+            {
+              "text": "only",
+              "startFrame": 79,
+              "endFrame": 89
+            },
+            {
+              "text": "in",
+              "startFrame": 89,
+              "endFrame": 94
+            },
+            {
+              "text": "whole",
+              "startFrame": 94,
+              "endFrame": 100
+            },
+            {
+              "text": "chunks.",
+              "startFrame": 100,
+              "endFrame": 112
+            }
+          ]
+        }
+      ]
+    },
+    "F02": {
+      "lines": [
+        {
+          "text": "Each chunk is worth a tiny new constant, h,",
+          "startFrame": 0,
+          "endFrame": 107,
+          "words": [
+            {
+              "text": "Each",
+              "startFrame": 0,
+              "endFrame": 7
+            },
+            {
+              "text": "chunk",
+              "startFrame": 7,
+              "endFrame": 15
+            },
+            {
+              "text": "is",
+              "startFrame": 15,
+              "endFrame": 22
+            },
+            {
+              "text": "worth",
+              "startFrame": 22,
+              "endFrame": 28
+            },
+            {
+              "text": "a",
+              "startFrame": 28,
+              "endFrame": 31
+            },
+            {
+              "text": "tiny",
+              "startFrame": 31,
+              "endFrame": 40
+            },
+            {
+              "text": "new",
+              "startFrame": 40,
+              "endFrame": 47
+            },
+            {
+              "text": "constant,",
+              "startFrame": 47,
+              "endFrame": 61
+            },
+            {
+              "text": "h,",
+              "startFrame": 95,
+              "endFrame": 107
+            }
+          ]
+        },
+        {
+          "text": "times how fast the wave wiggles.",
+          "startFrame": 107,
+          "endFrame": 170,
+          "words": [
+            {
+              "text": "times",
+              "startFrame": 107,
+              "endFrame": 128
+            },
+            {
+              "text": "how",
+              "startFrame": 128,
+              "endFrame": 134
+            },
+            {
+              "text": "fast",
+              "startFrame": 134,
+              "endFrame": 145
+            },
+            {
+              "text": "the",
+              "startFrame": 145,
+              "endFrame": 152
+            },
+            {
+              "text": "wave",
+              "startFrame": 152,
+              "endFrame": 158
+            },
+            {
+              "text": "wiggles.",
+              "startFrame": 158,
+              "endFrame": 170
+            }
+          ]
+        }
+      ]
+    },
+    "F03": {
+      "lines": [
+        {
+          "text": "Low-frequency chunks are cheap, so nothing changes where classical",
+          "startFrame": 20,
+          "endFrame": 95,
+          "words": [
+            {
+              "text": "Low-frequency",
+              "startFrame": 20,
+              "endFrame": 20
+            },
+            {
+              "text": "chunks",
+              "startFrame": 20,
+              "endFrame": 29
+            },
+            {
+              "text": "are",
+              "startFrame": 29,
+              "endFrame": 35
+            },
+            {
+              "text": "cheap,",
+              "startFrame": 35,
+              "endFrame": 44
+            },
+            {
+              "text": "so",
+              "startFrame": 50,
+              "endFrame": 52
+            },
+            {
+              "text": "nothing",
+              "startFrame": 52,
+              "endFrame": 60
+            },
+            {
+              "text": "changes",
+              "startFrame": 60,
+              "endFrame": 74
+            },
+            {
+              "text": "where",
+              "startFrame": 74,
+              "endFrame": 82
+            },
+            {
+              "text": "classical",
+              "startFrame": 82,
+              "endFrame": 95
+            }
+          ]
+        },
+        {
+          "text": "physics already worked.",
+          "startFrame": 95,
+          "endFrame": 132,
+          "words": [
+            {
+              "text": "physics",
+              "startFrame": 95,
+              "endFrame": 106
+            },
+            {
+              "text": "already",
+              "startFrame": 106,
+              "endFrame": 119
+            },
+            {
+              "text": "worked.",
+              "startFrame": 119,
+              "endFrame": 132
+            }
+          ]
+        }
+      ]
+    },
+    "F04": {
+      "lines": [
+        {
+          "text": "But high-frequency chunks are expensive — ultraviolet light is",
+          "startFrame": 0,
+          "endFrame": 100,
+          "words": [
+            {
+              "text": "But",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "high-frequency",
+              "startFrame": 15,
+              "endFrame": 24
+            },
+            {
+              "text": "chunks",
+              "startFrame": 25,
+              "endFrame": 34
+            },
+            {
+              "text": "are",
+              "startFrame": 34,
+              "endFrame": 40
+            },
+            {
+              "text": "expensive",
+              "startFrame": 40,
+              "endFrame": 55
+            },
+            {
+              "text": "—",
+              "startFrame": 63,
+              "endFrame": 69
+            },
+            {
+              "text": "ultraviolet",
+              "startFrame": 70,
+              "endFrame": 88
+            },
+            {
+              "text": "light",
+              "startFrame": 88,
+              "endFrame": 94
+            },
+            {
+              "text": "is",
+              "startFrame": 94,
+              "endFrame": 100
+            }
+          ]
+        },
+        {
+          "text": "billed in costly lumps.",
+          "startFrame": 104,
+          "endFrame": 136,
+          "words": [
+            {
+              "text": "billed",
+              "startFrame": 104,
+              "endFrame": 107
+            },
+            {
+              "text": "in",
+              "startFrame": 107,
+              "endFrame": 114
+            },
+            {
+              "text": "costly",
+              "startFrame": 114,
+              "endFrame": 127
+            },
+            {
+              "text": "lumps.",
+              "startFrame": 127,
+              "endFrame": 136
+            }
+          ]
+        }
+      ]
+    },
+    "Y01": {
+      "lines": [
+        {
+          "text": "A warm object simply cannot afford those costly ultraviolet",
+          "startFrame": 0,
+          "endFrame": 106,
+          "words": [
+            {
+              "text": "A",
+              "startFrame": 0,
+              "endFrame": 3
+            },
+            {
+              "text": "warm",
+              "startFrame": 3,
+              "endFrame": 10
+            },
+            {
+              "text": "object",
+              "startFrame": 10,
+              "endFrame": 22
+            },
+            {
+              "text": "simply",
+              "startFrame": 22,
+              "endFrame": 35
+            },
+            {
+              "text": "cannot",
+              "startFrame": 35,
+              "endFrame": 46
+            },
+            {
+              "text": "afford",
+              "startFrame": 46,
+              "endFrame": 56
+            },
+            {
+              "text": "those",
+              "startFrame": 56,
+              "endFrame": 64
+            },
+            {
+              "text": "costly",
+              "startFrame": 64,
+              "endFrame": 80
+            },
+            {
+              "text": "ultraviolet",
+              "startFrame": 80,
+              "endFrame": 106
+            }
+          ]
+        },
+        {
+          "text": "chunks.",
+          "startFrame": 106,
+          "endFrame": 116,
+          "words": [
+            {
+              "text": "chunks.",
+              "startFrame": 106,
+              "endFrame": 116
+            }
+          ]
+        }
+      ]
+    },
+    "Y02": {
+      "lines": [
+        {
+          "text": "So the expensive patterns stay empty, and the runaway",
+          "startFrame": 0,
+          "endFrame": 83,
+          "words": [
+            {
+              "text": "So",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "the",
+              "startFrame": 5,
+              "endFrame": 9
+            },
+            {
+              "text": "expensive",
+              "startFrame": 9,
+              "endFrame": 20
+            },
+            {
+              "text": "patterns",
+              "startFrame": 20,
+              "endFrame": 32
+            },
+            {
+              "text": "stay",
+              "startFrame": 32,
+              "endFrame": 43
+            },
+            {
+              "text": "empty,",
+              "startFrame": 43,
+              "endFrame": 53
+            },
+            {
+              "text": "and",
+              "startFrame": 67,
+              "endFrame": 70
+            },
+            {
+              "text": "the",
+              "startFrame": 70,
+              "endFrame": 73
+            },
+            {
+              "text": "runaway",
+              "startFrame": 73,
+              "endFrame": 83
+            }
+          ]
+        },
+        {
+          "text": "curve bends back down to zero.",
+          "startFrame": 83,
+          "endFrame": 137,
+          "words": [
+            {
+              "text": "curve",
+              "startFrame": 83,
+              "endFrame": 93
+            },
+            {
+              "text": "bends",
+              "startFrame": 93,
+              "endFrame": 105
+            },
+            {
+              "text": "back",
+              "startFrame": 105,
+              "endFrame": 112
+            },
+            {
+              "text": "down",
+              "startFrame": 112,
+              "endFrame": 121
+            },
+            {
+              "text": "to",
+              "startFrame": 121,
+              "endFrame": 128
+            },
+            {
+              "text": "zero.",
+              "startFrame": 128,
+              "endFrame": 137
+            }
+          ]
+        }
+      ]
+    },
+    "Y03": {
+      "lines": [
+        {
+          "text": "The catastrophe was never real — it was the",
+          "startFrame": 0,
+          "endFrame": 65,
+          "words": [
+            {
+              "text": "The",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "catastrophe",
+              "startFrame": 5,
+              "endFrame": 17
+            },
+            {
+              "text": "was",
+              "startFrame": 17,
+              "endFrame": 27
+            },
+            {
+              "text": "never",
+              "startFrame": 27,
+              "endFrame": 34
+            },
+            {
+              "text": "real",
+              "startFrame": 34,
+              "endFrame": 45
+            },
+            {
+              "text": "—",
+              "startFrame": 50,
+              "endFrame": 55
+            },
+            {
+              "text": "it",
+              "startFrame": 55,
+              "endFrame": 58
+            },
+            {
+              "text": "was",
+              "startFrame": 58,
+              "endFrame": 61
+            },
+            {
+              "text": "the",
+              "startFrame": 61,
+              "endFrame": 65
+            }
+          ]
+        },
+        {
+          "text": "price of pretending energy is smooth.",
+          "startFrame": 65,
+          "endFrame": 118,
+          "words": [
+            {
+              "text": "price",
+              "startFrame": 65,
+              "endFrame": 74
+            },
+            {
+              "text": "of",
+              "startFrame": 74,
+              "endFrame": 79
+            },
+            {
+              "text": "pretending",
+              "startFrame": 79,
+              "endFrame": 89
+            },
+            {
+              "text": "energy",
+              "startFrame": 89,
+              "endFrame": 103
+            },
+            {
+              "text": "is",
+              "startFrame": 103,
+              "endFrame": 109
+            },
+            {
+              "text": "smooth.",
+              "startFrame": 109,
+              "endFrame": 118
+            }
+          ]
+        }
+      ]
+    },
+    "S01": {
+      "lines": [
+        {
+          "text": "One ratio decides everything:",
+          "startFrame": 0,
+          "endFrame": 42,
+          "words": [
+            {
+              "text": "One",
+              "startFrame": 0,
+              "endFrame": 4
+            },
+            {
+              "text": "ratio",
+              "startFrame": 4,
+              "endFrame": 14
+            },
+            {
+              "text": "decides",
+              "startFrame": 14,
+              "endFrame": 25
+            },
+            {
+              "text": "everything:",
+              "startFrame": 25,
+              "endFrame": 42
+            }
+          ]
+        },
+        {
+          "text": "the chunk's cost against the warmth available.",
+          "startFrame": 54,
+          "endFrame": 113,
+          "words": [
+            {
+              "text": "the",
+              "startFrame": 54,
+              "endFrame": 56
+            },
+            {
+              "text": "chunk's",
+              "startFrame": 56,
+              "endFrame": 68
+            },
+            {
+              "text": "cost",
+              "startFrame": 68,
+              "endFrame": 76
+            },
+            {
+              "text": "against",
+              "startFrame": 76,
+              "endFrame": 85
+            },
+            {
+              "text": "the",
+              "startFrame": 85,
+              "endFrame": 92
+            },
+            {
+              "text": "warmth",
+              "startFrame": 92,
+              "endFrame": 100
+            },
+            {
+              "text": "available.",
+              "startFrame": 100,
+              "endFrame": 113
+            }
+          ]
+        }
+      ]
+    },
+    "S02": {
+      "lines": [
+        {
+          "text": "When warmth dwarfs the chunk it looks classical;",
+          "startFrame": 0,
+          "endFrame": 67,
+          "words": [
+            {
+              "text": "When",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "warmth",
+              "startFrame": 5,
+              "endFrame": 16
+            },
+            {
+              "text": "dwarfs",
+              "startFrame": 16,
+              "endFrame": 28
+            },
+            {
+              "text": "the",
+              "startFrame": 28,
+              "endFrame": 32
+            },
+            {
+              "text": "chunk",
+              "startFrame": 32,
+              "endFrame": 40
+            },
+            {
+              "text": "it",
+              "startFrame": 43,
+              "endFrame": 45
+            },
+            {
+              "text": "looks",
+              "startFrame": 45,
+              "endFrame": 50
+            },
+            {
+              "text": "classical;",
+              "startFrame": 50,
+              "endFrame": 67
+            }
+          ]
+        },
+        {
+          "text": "when the chunk wins, it looks quantum.",
+          "startFrame": 80,
+          "endFrame": 143,
+          "words": [
+            {
+              "text": "when",
+              "startFrame": 80,
+              "endFrame": 83
+            },
+            {
+              "text": "the",
+              "startFrame": 83,
+              "endFrame": 87
+            },
+            {
+              "text": "chunk",
+              "startFrame": 87,
+              "endFrame": 95
+            },
+            {
+              "text": "wins,",
+              "startFrame": 95,
+              "endFrame": 106
+            },
+            {
+              "text": "it",
+              "startFrame": 121,
+              "endFrame": 124
+            },
+            {
+              "text": "looks",
+              "startFrame": 124,
+              "endFrame": 130
+            },
+            {
+              "text": "quantum.",
+              "startFrame": 130,
+              "endFrame": 143
+            }
+          ]
+        }
+      ]
+    },
+    "B01": {
+      "lines": [
+        {
+          "text": "That single rule — energy in whole chunks —",
+          "startFrame": 0,
+          "endFrame": 83,
+          "words": [
+            {
+              "text": "That",
+              "startFrame": 0,
+              "endFrame": 7
+            },
+            {
+              "text": "single",
+              "startFrame": 7,
+              "endFrame": 17
+            },
+            {
+              "text": "rule",
+              "startFrame": 17,
+              "endFrame": 29
+            },
+            {
+              "text": "—",
+              "startFrame": 33,
+              "endFrame": 37
+            },
+            {
+              "text": "energy",
+              "startFrame": 38,
+              "endFrame": 46
+            },
+            {
+              "text": "in",
+              "startFrame": 50,
+              "endFrame": 53
+            },
+            {
+              "text": "whole",
+              "startFrame": 53,
+              "endFrame": 59
+            },
+            {
+              "text": "chunks",
+              "startFrame": 59,
+              "endFrame": 72
+            },
+            {
+              "text": "—",
+              "startFrame": 78,
+              "endFrame": 83
+            }
+          ]
+        },
+        {
+          "text": "is the seed of all quantum physics.",
+          "startFrame": 84,
+          "endFrame": 133,
+          "words": [
+            {
+              "text": "is",
+              "startFrame": 84,
+              "endFrame": 87
+            },
+            {
+              "text": "the",
+              "startFrame": 87,
+              "endFrame": 92
+            },
+            {
+              "text": "seed",
+              "startFrame": 92,
+              "endFrame": 101
+            },
+            {
+              "text": "of",
+              "startFrame": 101,
+              "endFrame": 106
+            },
+            {
+              "text": "all",
+              "startFrame": 106,
+              "endFrame": 111
+            },
+            {
+              "text": "quantum",
+              "startFrame": 111,
+              "endFrame": 122
+            },
+            {
+              "text": "physics.",
+              "startFrame": 122,
+              "endFrame": 133
+            }
+          ]
+        }
+      ]
+    },
+    "B02": {
+      "lines": [
+        {
+          "text": "We didn't derive Planck's exact curve, and we left",
+          "startFrame": 0,
+          "endFrame": 89,
+          "words": [
+            {
+              "text": "We",
+              "startFrame": 0,
+              "endFrame": 5
+            },
+            {
+              "text": "didn't",
+              "startFrame": 5,
+              "endFrame": 12
+            },
+            {
+              "text": "derive",
+              "startFrame": 12,
+              "endFrame": 22
+            },
+            {
+              "text": "Planck's",
+              "startFrame": 22,
+              "endFrame": 39
+            },
+            {
+              "text": "exact",
+              "startFrame": 39,
+              "endFrame": 48
+            },
+            {
+              "text": "curve,",
+              "startFrame": 48,
+              "endFrame": 62
+            },
+            {
+              "text": "and",
+              "startFrame": 74,
+              "endFrame": 79
+            },
+            {
+              "text": "we",
+              "startFrame": 79,
+              "endFrame": 82
+            },
+            {
+              "text": "left",
+              "startFrame": 82,
+              "endFrame": 89
+            }
+          ]
+        },
+        {
+          "text": "light's own graininess for next time.",
+          "startFrame": 89,
+          "endFrame": 145,
+          "words": [
+            {
+              "text": "light's",
+              "startFrame": 89,
+              "endFrame": 102
+            },
+            {
+              "text": "own",
+              "startFrame": 102,
+              "endFrame": 106
+            },
+            {
+              "text": "graininess",
+              "startFrame": 106,
+              "endFrame": 122
+            },
+            {
+              "text": "for",
+              "startFrame": 122,
+              "endFrame": 128
+            },
+            {
+              "text": "next",
+              "startFrame": 128,
+              "endFrame": 136
+            },
+            {
+              "text": "time.",
+              "startFrame": 136,
+              "endFrame": 145
+            }
+          ]
+        }
+      ]
+    },
+    "B03": {
+      "lines": [
+        {
+          "text": "Try this yourself:",
+          "startFrame": 0,
+          "endFrame": 23,
+          "words": [
+            {
+              "text": "Try",
+              "startFrame": 0,
+              "endFrame": 6
+            },
+            {
+              "text": "this",
+              "startFrame": 6,
+              "endFrame": 11
+            },
+            {
+              "text": "yourself:",
+              "startFrame": 11,
+              "endFrame": 23
+            }
+          ]
+        },
+        {
+          "text": "estimate a chunk's cost for green light, and weigh",
+          "startFrame": 38,
+          "endFrame": 121,
+          "words": [
+            {
+              "text": "estimate",
+              "startFrame": 38,
+              "endFrame": 52
+            },
+            {
+              "text": "a",
+              "startFrame": 52,
+              "endFrame": 58
+            },
+            {
+              "text": "chunk's",
+              "startFrame": 58,
+              "endFrame": 68
+            },
+            {
+              "text": "cost",
+              "startFrame": 68,
+              "endFrame": 76
+            },
+            {
+              "text": "for",
+              "startFrame": 76,
+              "endFrame": 83
+            },
+            {
+              "text": "green",
+              "startFrame": 83,
+              "endFrame": 90
+            },
+            {
+              "text": "light,",
+              "startFrame": 90,
+              "endFrame": 100
+            },
+            {
+              "text": "and",
+              "startFrame": 112,
+              "endFrame": 116
+            },
+            {
+              "text": "weigh",
+              "startFrame": 116,
+              "endFrame": 121
+            }
+          ]
+        },
+        {
+          "text": "it against room-temperature warmth.",
+          "startFrame": 121,
+          "endFrame": 167,
+          "words": [
+            {
+              "text": "it",
+              "startFrame": 121,
+              "endFrame": 125
+            },
+            {
+              "text": "against",
+              "startFrame": 125,
+              "endFrame": 134
+            },
+            {
+              "text": "room-temperature",
+              "startFrame": 145,
+              "endFrame": 155
+            },
+            {
+              "text": "warmth.",
+              "startFrame": 157,
+              "endFrame": 167
+            }
+          ]
+        }
+      ]
+    },
+    "OUTRO": {
+      "lines": [
+        {
+          "text": "Thanks for watching The Ultraviolet Catastrophe — more at",
+          "startFrame": 0,
+          "endFrame": 80,
+          "words": [
+            {
+              "text": "Thanks",
+              "startFrame": 0,
+              "endFrame": 8
+            },
+            {
+              "text": "for",
+              "startFrame": 8,
+              "endFrame": 11
+            },
+            {
+              "text": "watching",
+              "startFrame": 11,
+              "endFrame": 20
+            },
+            {
+              "text": "The",
+              "startFrame": 20,
+              "endFrame": 25
+            },
+            {
+              "text": "Ultraviolet",
+              "startFrame": 25,
+              "endFrame": 40
+            },
+            {
+              "text": "Catastrophe",
+              "startFrame": 40,
+              "endFrame": 56
+            },
+            {
+              "text": "—",
+              "startFrame": 63,
+              "endFrame": 69
+            },
+            {
+              "text": "more",
+              "startFrame": 70,
+              "endFrame": 76
+            },
+            {
+              "text": "at",
+              "startFrame": 76,
+              "endFrame": 80
+            }
+          ]
+        },
+        {
+          "text": "youtube dot com, slash, at Nik Bear Brown.",
+          "startFrame": 80,
+          "endFrame": 130,
+          "words": [
+            {
+              "text": "youtube",
+              "startFrame": 80,
+              "endFrame": 86
+            },
+            {
+              "text": "dot",
+              "startFrame": 86,
+              "endFrame": 86
+            },
+            {
+              "text": "com,",
+              "startFrame": 86,
+              "endFrame": 106
+            },
+            {
+              "text": "slash,",
+              "startFrame": 106,
+              "endFrame": 119
+            },
+            {
+              "text": "at",
+              "startFrame": 119,
+              "endFrame": 130
+            },
+            {
+              "text": "Nik",
+              "startFrame": 130,
+              "endFrame": 130
+            },
+            {
+              "text": "Bear",
+              "startFrame": 130,
+              "endFrame": 130
+            },
+            {
+              "text": "Brown.",
+              "startFrame": 130,
+              "endFrame": 130
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

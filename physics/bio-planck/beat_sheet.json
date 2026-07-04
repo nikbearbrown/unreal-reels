@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "slug": "bio-max-planck",
+    "title": "Max Planck — a Bear's Notes mini-bio",
+    "series": "Bears Notes — Bios",
+    "kind": "bio",
+    "aspect_ratio": "16:9",
+    "render_orientations": [
+      "16:9"
+    ],
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "bg_color": "#0E0E12",
+    "ink_color": "#F2F0EC",
+    "accent_color": "#5AA9E6",
+    "text_font": "Montserrat",
+    "structure": "Bear (voice clone) narrates throughout. Visuals ALTERNATE: render:clip = full-frame Higgsfield footage (the scientist Soul-ID, an application, or a phenomenon); render:manim = clean dark cinematic card (title / equation / date). Audio-first: each beat's visual = its narration length. Clip beats show a labeled placeholder until real footage is composited in (composite_clips.py).",
+    "total_estimated_duration_seconds": 32.94
+  },
+  "beats": [
+    {
+      "beat_id": "B01",
+      "render": "clip",
+      "beat_type": "FOOTAGE",
+      "narration_text": "Max Planck didn't set out to start a revolution.",
+      "tts_normalized_text": "Max Planck didn't set out to start a revolution.",
+      "shot": "Soul-ID Max Planck — period portrait, slow push-in, dim study, round glasses.",
+      "higgsfield_prompt": "Cinematic period portrait of an early-20th-century German physicist, round wire-rimmed glasses, dark three-piece suit, seated at a wooden desk in a dim university study with papers and an oil lamp, warm low-key Rembrandt lighting, shallow depth of field, faint dust drifting in the light, slow subtle push-in, 1900s documentary film grain, muted sepia-grey palette, contemplative mood, 5 seconds, no text, no captions",
+      "soul_ref": "Max Planck",
+      "clip_source": "soul-id",
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 2.64
+    },
+    {
+      "beat_id": "B02",
+      "render": "manim",
+      "beat_type": "TITLE",
+      "narration_text": "A careful German physicist, he just wanted to explain the glow of hot objects.",
+      "tts_normalized_text": "A careful German physicist, he just wanted to explain the glow of hot objects.",
+      "card": {
+        "kind": "title",
+        "name": "MAX PLANCK",
+        "dates": "1858 — 1947"
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 4.73
+    },
+    {
+      "beat_id": "B03",
+      "render": "clip",
+      "beat_type": "FOOTAGE",
+      "narration_text": "Classical physics said that glow should blast out endless ultraviolet.",
+      "tts_normalized_text": "Classical physics said that glow should blast out endless ultraviolet.",
+      "shot": "Phenomenon — a furnace / molten metal glowing white-hot, heat shimmer.",
+      "higgsfield_prompt": "Extreme close-up of an open industrial furnace door, molten white-hot metal glowing at its core, intense radiant heat shimmer distorting the air, a few sparks drifting upward, deep blacks surrounding a blinding hot center, slow dolly-in, high-contrast cinematic, anamorphic, 5 seconds, no text, no people",
+      "clip_source": "phenomenon",
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 4.02
+    },
+    {
+      "beat_id": "B04",
+      "render": "manim",
+      "beat_type": "EQUATION",
+      "narration_text": "Planck's fix: energy comes in discrete chunks — E equals h times frequency.",
+      "tts_normalized_text": "Planck's fix: energy comes in discrete chunks — E equals h times frequency.",
+      "card": {
+        "kind": "equation",
+        "label": "energy of a quantum",
+        "tex": "E = h\\nu"
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 5.38
+    },
+    {
+      "beat_id": "B05",
+      "render": "clip",
+      "beat_type": "FOOTAGE",
+      "narration_text": "That one idea underlies every transistor and laser in your pocket.",
+      "tts_normalized_text": "That one idea underlies every transistor and laser in your pocket.",
+      "shot": "Application — extreme macro of a silicon chip / wafer, probes, blue light.",
+      "higgsfield_prompt": "Extreme macro of a silicon semiconductor wafer rotating slowly, mirror-like surface with rainbow diffraction, fine etched circuitry and microscopic transistor arrays, cool blue and cyan light, clean high-tech laboratory, shallow rack focus drifting across the surface, cinematic, 5 seconds, no text, no people",
+      "clip_source": "application",
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 3.84
+    },
+    {
+      "beat_id": "B06",
+      "render": "manim",
+      "beat_type": "DATE",
+      "narration_text": "It won him the Nobel Prize in nineteen-eighteen, and opened the quantum age.",
+      "tts_normalized_text": "It won him the Nobel Prize in nineteen eighteen, and opened the quantum age.",
+      "card": {
+        "kind": "date",
+        "big": "1918",
+        "label": "Nobel Prize in Physics"
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 4.02
+    },
+    {
+      "beat_id": "B07",
+      "render": "clip",
+      "beat_type": "FOOTAGE",
+      "narration_text": "Max Planck — the reluctant father of the quantum, who never quite embraced the strange new world he had opened, yet changed physics forever.",
+      "tts_normalized_text": "Max Planck, the reluctant father of the quantum, who never quite embraced the strange new world he had opened, yet changed physics forever.",
+      "shot": "Soul-ID Max Planck — closing portrait, faint smile, fade to dark.",
+      "higgsfield_prompt": "Cinematic period portrait of the same early-20th-century German physicist, round wire-rimmed glasses, dark suit, calm and resolved with a faint knowing smile, soft key light slowly dimming, dark background, very slow push-in settling into stillness, gentle fade toward darkness at the very end, 1900s film look, muted palette, 5 seconds, no text",
+      "soul_ref": "Max Planck",
+      "clip_source": "soul-id",
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 8.31
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "slug": "dim-blue-beats-blinding-red-short-bb",
+    "title": "Why a Dim Blue Lamp Beats a Blinding Red One",
+    "series": "Brown Blue",
+    "source": "quantum-mechanics-vol1/chapters/01-why-classical-physics-failed.md",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "style": "dark",
+    "text_font": "EB Garamond",
+    "accent_color": "#58C4DD",
+    "brown_color": "#CD853F",
+    "highlight_color": "#F0E442",
+    "forbidden_color": "#C8102E",
+    "warm_color": "#FC6255",
+    "thing": "the packet-electron collision at the escape cost",
+    "template": "3b1b",
+    "short_cut_of": "dim-blue-beats-blinding-red-bb",
+    "palette_note": "Bear's call (2026-07-03, after viewing): literal RED for the low-frequency light — #FC6255 (3b1b-style red, reads on the dark canvas), overriding the series no-red rule for this video only. High-frequency stays blue #58C4DD. The layout audit checks geometry only, so this is safe.",
+    "voice_settings": {
+      "model_id": "eleven_multilingual_v2",
+      "stability": 0.8,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 0.92,
+      "output_format": "mp3_44100_128"
+    },
+    "playlist": "Quantum Mechanics (One Minute)",
+    "playlist_short": "Shorts",
+    "chapters": [
+      [
+        "INTRO",
+        "Intro"
+      ],
+      [
+        "H01",
+        "The anomaly"
+      ],
+      [
+        "K01",
+        "Light as packets"
+      ],
+      [
+        "C01",
+        "The escape cost"
+      ],
+      [
+        "A01",
+        "E = hν"
+      ],
+      [
+        "P01",
+        "Color decides"
+      ]
+    ],
+    "extra_tags": [
+      "photoelectric effect",
+      "Einstein",
+      "photon",
+      "E=hnu",
+      "work function",
+      "light quanta"
+    ],
+    "hashtags_line": "#quantum #physics #quantummechanics #science #education #Einstein #photoelectric",
+    "long_title": "Why a Dim Blue Lamp Beats a Blinding Red One — in about a minute | Bear's Notes",
+    "short_title": "Why a Dim Blue Lamp Beats a Blinding Red One #Shorts",
+    "description_blurb": "The photoelectric effect in about a minute: light as packets whose energy is set by color, an all-or-nothing escape cost, and why color — not brightness — decides. The full explainer (leftover energy, threshold frequency, sodium by the numbers) is on the channel.",
+    "short_blurb": "The photoelectric effect, in about a minute. Full explainer on the channel.",
+    "hook_beats": [
+      "H01",
+      "H02",
+      "H03"
+    ],
+    "total_estimated_duration_seconds": 62.76,
+    "hashtags": [
+      "Bear's Notes",
+      "quantum mechanics",
+      "physics",
+      "quantum physics",
+      "3Blue1Brown style",
+      "science explainer",
+      "education",
+      "STEM",
+      "photoelectric effect",
+      "Einstein",
+      "photon",
+      "E=hnu",
+      "work function",
+      "light quanta"
+    ]
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "role": "INTRO",
+      "render": "manim",
+      "narration_text": "Bear's Notes\n\nWhy a Dim Blue Lamp Beats a Blinding Red One",
+      "tts_normalized_text": "Bear's Notes.\n\nWhy a Dim Blue Lamp Beats a Blinding Red One.",
+      "accumulated_scene_state": [
+        "title card"
+      ],
+      "new_visual_element": "Title card: 'Bear's Notes' small, title large in EB Garamond, thin brown rule, small blue accent mark on dark canvas.",
+      "video_animation_prompt": "Fade in series line, Write the title, brown underline, blue tick. Hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.47
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "Aim the brightest red lamp you own at a metal plate — and not one electron escapes.",
+      "tts_normalized_text": "Aim the brightest red lamp you own at a metal plate — and not one electron escapes.",
+      "accumulated_scene_state": [
+        "plate with electrons",
+        "warm lamp, long waves",
+        "label: red"
+      ],
+      "new_visual_element": "[HOOK] Metal plate with blue electron dots; warm amber lamp pours long lazy waves onto it; label 'red'. Nothing moves.",
+      "video_animation_prompt": "Create plate + electrons; grow warm lamp; long-wavelength waves flow in. Electrons still.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.78
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "Swap in a dim blue glow, and electrons fly off instantly.",
+      "tts_normalized_text": "Swap in a dim blue glow, and electrons fly off instantly.",
+      "accumulated_scene_state": [
+        "blue lamp, short waves",
+        "electrons flying"
+      ],
+      "new_visual_element": "[HOOK] Lamp morphs to small dim blue; waves tighten; two electrons leap off at once; label 'blue'.",
+      "video_animation_prompt": "Transform lamp and waves; electrons fly off along arcs immediately.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 3.58
+    },
+    {
+      "beat_id": "H03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "Crank the red to blinding and still — nothing.",
+      "tts_normalized_text": "Crank the red to blinding and still — nothing.",
+      "accumulated_scene_state": [
+        "huge warm lamp, many waves",
+        "electrons still",
+        "×100"
+      ],
+      "new_visual_element": "[HOOK] Warm lamp returns huge and bright, waves multiply, '×100' appears; electrons stone still.",
+      "video_animation_prompt": "Transform back to big warm lamp; triple the waves; ×100 pops in; nothing moves.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H03.mp3",
+      "actual_duration_s": 2.64
+    },
+    {
+      "beat_id": "K01",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "So stop picturing a smooth wave: light arrives as separate packets.",
+      "tts_normalized_text": "So stop picturing a smooth wave: light arrives as separate packets.",
+      "accumulated_scene_state": [
+        "packet stream"
+      ],
+      "new_visual_element": "[INSTANCE] A smooth wave draws, then breaks into a marching stream of discrete packets.",
+      "video_animation_prompt": "Create smooth wave; Transform into evenly spaced packet dots drifting rightward.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-K01.mp3",
+      "actual_duration_s": 4.55
+    },
+    {
+      "beat_id": "K02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Each packet's energy is set only by its color — red packets weak, blue packets strong.",
+      "tts_normalized_text": "Each packet's energy is set only by its color — red packets weak, blue packets strong.",
+      "accumulated_scene_state": [
+        "warm packet + short bar",
+        "blue packet + tall bar"
+      ],
+      "new_visual_element": "[INSTANCE] One warm and one blue packet, each above an energy bar: short warm, tall blue; labels 'red · weak', 'blue · strong'.",
+      "video_animation_prompt": "Two packets enlarge from the stream; bars grow to different heights; labels write.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-K02.mp3",
+      "actual_duration_s": 5.69
+    },
+    {
+      "beat_id": "K03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Brightness just means more packets per second, never fatter ones.",
+      "tts_normalized_text": "Brightness just means more packets per second, never fatter ones.",
+      "accumulated_scene_state": [
+        "dense warm stream",
+        "warm bar unchanged"
+      ],
+      "new_visual_element": "[INSTANCE] The warm stream densifies; the warm energy bar stays the same height and flashes highlight once.",
+      "video_animation_prompt": "Multiply warm packets; Indicate the unchanged bar with highlight.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-K03.mp3",
+      "actual_duration_s": 3.34
+    },
+    {
+      "beat_id": "C01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "And an electron breaks free only if one single packet pays its whole escape cost at once.",
+      "tts_normalized_text": "And an electron breaks free only if one single packet pays its whole escape cost at once.",
+      "accumulated_scene_state": [
+        "well with electron",
+        "rim hairline: escape cost"
+      ],
+      "new_visual_element": "[INSTANCE] Comparison parks; a U-well appears with a blue electron at the bottom and a dashed rim hairline labeled 'escape cost'.",
+      "video_animation_prompt": "Packets shrink aside; Create well; electron drops in; rim + label write.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-C01.mp3",
+      "actual_duration_s": 5.25
+    },
+    {
+      "beat_id": "X01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "TRANSFORM",
+      "render": "manim",
+      "narration_text": "Every red packet falls short — a flood of near-misses frees nothing.",
+      "tts_normalized_text": "Every red packet falls short — a flood of near-misses frees nothing.",
+      "accumulated_scene_state": [
+        "rain of warm packets",
+        "electron bobbing short of rim",
+        "freed: 0"
+      ],
+      "new_visual_element": "[TRANSFORM] Warm packets rain in; the electron hops to the same sub-rim height each time and falls back; corner counter 'freed: 0'.",
+      "video_animation_prompt": "Lagged warm packets; electron bobs below the rim repeatedly; counter stays 0.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-X01.mp3",
+      "actual_duration_s": 3.89
+    },
+    {
+      "beat_id": "X02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "TRANSFORM",
+      "render": "manim",
+      "narration_text": "One faint blue packet clears the cost in a single hit, and the electron flies.",
+      "tts_normalized_text": "One faint blue packet clears the cost in a single hit, and the electron flies.",
+      "accumulated_scene_state": [
+        "electron escaped over rim",
+        "freed: 1"
+      ],
+      "new_visual_element": "[TRANSFORM] A single blue packet arrives; the electron shoots over the rim in one motion and arcs away; counter ticks to 1.",
+      "video_animation_prompt": "Blue packet in; electron rises past rim continuously, escapes; counter 0→1.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-X02.mp3",
+      "actual_duration_s": 4.73
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "That's E equals h nu: color is energy, and the packet is called a photon.",
+      "tts_normalized_text": "That's E equals h nu: color is energy, and the packet is called a photon.",
+      "accumulated_scene_state": [
+        "E = hν above the well",
+        "label: photon"
+      ],
+      "new_visual_element": "[ABSTRACTION] E = hν writes above the lab; 'photon' fades in beneath — the name as endpoint.",
+      "video_animation_prompt": "Write MathTex E = h\\nu; 'photon' fades in under it.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 5.43
+    },
+    {
+      "beat_id": "P01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "PAYOFF",
+      "render": "manim",
+      "narration_text": "Brightness counts the packets; color decides whether any one of them can pay.",
+      "tts_normalized_text": "Brightness counts the packets; color decides whether any one of them can pay.",
+      "accumulated_scene_state": [
+        "hook lamps return",
+        "torrent fails, trickle frees"
+      ],
+      "new_visual_element": "[PAYOFF] The two hook lamps return above the well: warm torrent — every hop dies below the rim; blue trickle — each packet lofts an electron out.",
+      "video_animation_prompt": "FadeIn both lamps; run both streams; warm fails en masse, blue frees one; brief hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-P01.mp3",
+      "actual_duration_s": 4.36
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "HOLD",
+      "scene_index": 2,
+      "role": "OUTRO",
+      "render": "manim",
+      "narration_text": "The full story — the leftover energy, the threshold color, the sodium numbers — is in the long video. Thanks for watching — more at youtube dot com, slash, at Nik Bear Brown.",
+      "tts_normalized_text": "The full story — the leftover energy, the threshold color, the sodium numbers — is in the long video. Thanks for watching — more at youtube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [
+        "final frame holds",
+        "title parked upper band 70%"
+      ],
+      "new_visual_element": "[OUTRO·BOUNDARY] The finished scene stays; the title parks in the upper margin band at 70% ink.",
+      "video_animation_prompt": "FadeIn small title top band at 70% opacity; hold to end of narration.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 11.05
+    }
+  ]
+}

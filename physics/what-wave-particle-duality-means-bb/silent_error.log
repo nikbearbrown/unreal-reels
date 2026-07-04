@@ -1,0 +1,25 @@
+step: LONG: PRE-RENDER layout audit 16:9
+cmd:  /Users/nik/ai/bin/python3 /Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/scripts/manim_layout_audit.py what_wave_particle_duality_means_bb.py --curve-strict
+cwd:  /Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/what-wave-particle-duality-means-bb
+exit: 1
+
+--- output (progress bars stripped) ---
+[bn_layout] mode=LANDSCAPE pixels=1920x1080 frame=14.22x8.00
+/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/scripts/manim_layout_audit.py:145: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+Traceback (most recent call last):
+  File "/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/scripts/manim_layout_audit.py", line 515, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/scripts/manim_layout_audit.py", line 416, in main
+    scene.render()
+  File "/Users/nik/ai/lib/python3.12/site-packages/manim/scene/scene.py", line 259, in render
+    self.construct()
+  File "/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/what-wave-particle-duality-means-bb/what_wave_particle_duality_means_bb.py", line 81, in construct
+    m(dur(bid))
+  File "/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/what-wave-particle-duality-means-bb/what_wave_particle_duality_means_bb.py", line 313, in draw_S02
+    half = Sector(outer_radius=0.14, angle=PI, color=INK,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nik/ai/lib/python3.12/site-packages/manim/mobject/geometry/arc.py", line 1039, in __init__
+    super().__init__(inner_radius=0, outer_radius=radius, **kwargs)
+TypeError: manim.mobject.geometry.arc.AnnularSector.__init__() got multiple values for keyword argument 'outer_radius'

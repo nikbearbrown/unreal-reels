@@ -1,0 +1,631 @@
+{
+  "metadata": {
+    "slug": "the-ultraviolet-catastrophe-bb",
+    "title": "The Ultraviolet Catastrophe",
+    "series": "Brown Blue",
+    "source": "quantum-mechanics-vol1/chapters/01-why-classical-physics-failed.md",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "style": "dark",
+    "text_font": "EB Garamond",
+    "accent_color": "#58C4DD",
+    "brown_color": "#CD853F",
+    "highlight_color": "#F0E442",
+    "forbidden_color": "#C8102E",
+    "thing": "the blackbody glow curve (brightness vs frequency)",
+    "template": "3b1b",
+    "voice_settings": {
+      "model_id": "eleven_multilingual_v2",
+      "stability": 0.8,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 0.92,
+      "output_format": "mp3_44100_128"
+    },
+    "total_estimated_duration_seconds": 138.27,
+    "hashtags": [
+      "Bear's Notes",
+      "quantum mechanics",
+      "physics",
+      "quantum physics",
+      "3Blue1Brown style",
+      "science explainer",
+      "education",
+      "STEM",
+      "ultraviolet catastrophe",
+      "blackbody radiation",
+      "Planck",
+      "Planck's constant",
+      "quantization",
+      "photon",
+      "E=hnu"
+    ],
+    "playlist": "Quantum Mechanics",
+    "playlist_short": "Shorts",
+    "chapters": [
+      [
+        "INTRO",
+        "Intro"
+      ],
+      [
+        "H01",
+        "A glow that should be infinite"
+      ],
+      [
+        "M01",
+        "Counting the patterns of light"
+      ],
+      [
+        "P01",
+        "The classical prediction runs away"
+      ],
+      [
+        "P03",
+        "What real objects actually do"
+      ],
+      [
+        "D01",
+        "Which step was the lie?"
+      ],
+      [
+        "F01",
+        "Planck's fix: energy in chunks"
+      ],
+      [
+        "Y01",
+        "Why the catastrophe never happens"
+      ],
+      [
+        "S01",
+        "Classical vs. quantum"
+      ],
+      [
+        "B01",
+        "Recap and your turn"
+      ]
+    ],
+    "extra_tags": [
+      "ultraviolet catastrophe",
+      "blackbody radiation",
+      "Planck",
+      "Planck's constant",
+      "quantization",
+      "photon",
+      "E=hnu"
+    ],
+    "hashtags_line": "#quantum #physics #quantummechanics #science #education #Planck #blackbody",
+    "long_title": "The Ultraviolet Catastrophe — how energy comes in chunks | Bear's Notes",
+    "description_blurb": "In this video: why counting standing-wave modes makes the classical prediction run away; where equipartition breaks; how energy in whole chunks (E = hν) bends the curve back to zero; and the ratio hν / kT that decides when quantum effects matter.",
+    "short_blurb": "The ultraviolet catastrophe, in one minute. Full explainer on the channel."
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "role": "INTRO",
+      "render": "manim",
+      "narration_text": "Bear's Notes\n\nThe Ultraviolet Catastrophe",
+      "tts_normalized_text": "Bear's Notes.\n\nThe Ultraviolet Catastrophe.",
+      "accumulated_scene_state": [
+        "title card"
+      ],
+      "new_visual_element": "Title card: 'Bear's Notes' small, 'The Ultraviolet Catastrophe' large in EB Garamond, a thin brown rule, a small blue accent mark on dark canvas.",
+      "video_animation_prompt": "Fade in series line, beat, then Write the title; draw the brown underline left-to-right; blue tick fades in. Hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 2.32
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "Heat any object and it glows, and physics in 1900 could predict that glow.",
+      "tts_normalized_text": "Heat any object and it glows, and physics in nineteen hundred could predict that glow.",
+      "accumulated_scene_state": [
+        "glowing object (blue-hot disk)"
+      ],
+      "new_visual_element": "[HOOK] A single object at center, warming from ink to blue-hot, faint glow rays. Concrete, no axes yet.",
+      "video_animation_prompt": "A filled circle warms in color; soft radial glow grows. Persistent object for the hook scene.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.78
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "The prediction was not \"very bright\" — it was infinitely bright.",
+      "tts_normalized_text": "The prediction was not very bright. It was infinitely bright.",
+      "accumulated_scene_state": [
+        "glowing object",
+        "word: infinite"
+      ],
+      "new_visual_element": "[HOOK] The glow rays shoot outward and off-frame; the word 'infinite' (highlight) appears briefly.",
+      "video_animation_prompt": "Glow rays extend violently past the frame edge; 'infinite' writes on in yellow highlight, then the highlight fades.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 3.16
+    },
+    {
+      "beat_id": "H03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "Taken literally, the warm walls of your room should blast you with ultraviolet light.",
+      "tts_normalized_text": "Taken literally, the warm walls of your room should blast you with ultraviolet light.",
+      "accumulated_scene_state": [
+        "room with radiating walls"
+      ],
+      "new_visual_element": "[HOOK] Object recontextualized as a room; walls emit sharp violet rays inward toward a small figure.",
+      "video_animation_prompt": "Transform the single object into a room outline; walls fire violet arrows inward. Transform, don't cut.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H03.mp3",
+      "actual_duration_s": 4.68
+    },
+    {
+      "beat_id": "H04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "role": "HOOK",
+      "render": "manim",
+      "narration_text": "They don't, so something inside perfectly good physics is broken — let's find where.",
+      "tts_normalized_text": "They don't. So something inside perfectly good physics is broken. Let's find where.",
+      "accumulated_scene_state": [
+        "calm room",
+        "question mark"
+      ],
+      "new_visual_element": "[HOOK] The violet arrows vanish; the room sits calm; a single question mark (highlight) pulses.",
+      "video_animation_prompt": "Violet arrows fade out; room returns to calm ink; a question mark fades in and pulses once.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-H04.mp3",
+      "actual_duration_s": 4.83
+    },
+    {
+      "beat_id": "M01",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Picture light trapped in a box, rattling back and forth as standing waves.",
+      "tts_normalized_text": "Picture light trapped in a box, rattling back and forth as standing waves.",
+      "accumulated_scene_state": [
+        "cavity box",
+        "one standing wave"
+      ],
+      "new_visual_element": "[INSTANCE] A box; inside, one blue standing-wave mode oscillating between walls.",
+      "video_animation_prompt": "Draw box; a single sine standing wave animates its antinodes up and down (ValueTracker time).",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-M01.mp3",
+      "actual_duration_s": 4.13
+    },
+    {
+      "beat_id": "M02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "At low frequency, only a few wave patterns fit inside the box.",
+      "tts_normalized_text": "At low frequency, only a few wave patterns fit inside the box.",
+      "accumulated_scene_state": [
+        "cavity box",
+        "3 low-frequency modes"
+      ],
+      "new_visual_element": "[INSTANCE] Two more low-order modes appear stacked; a small count '3' (mono) in the corner.",
+      "video_animation_prompt": "Add the 1st and 2nd overtone standing waves; a running tally shows 3. Few, well-spaced.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-M02.mp3",
+      "actual_duration_s": 3.79
+    },
+    {
+      "beat_id": "M03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Raise the frequency and far more patterns fit — the count climbs like frequency squared.",
+      "tts_normalized_text": "Raise the frequency and far more patterns fit. The count climbs like frequency squared.",
+      "accumulated_scene_state": [
+        "box crowded with many modes",
+        "count rising"
+      ],
+      "new_visual_element": "[INSTANCE] A cascade of ever-higher modes fills the box; the tally sprints upward.",
+      "video_animation_prompt": "Rapidly stack many higher-order modes; the mono count spins up fast (quadratic feel).",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-M03.mp3",
+      "actual_duration_s": 5.04
+    },
+    {
+      "beat_id": "M04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "Classical physics then hands every pattern the exact same share of energy.",
+      "tts_normalized_text": "Classical physics then hands every pattern the exact same share of energy.",
+      "accumulated_scene_state": [
+        "modes each tagged with equal energy token"
+      ],
+      "new_visual_element": "[INSTANCE] Each mode gets an identical small energy token (equal 'k T' coin) — equipartition made concrete.",
+      "video_animation_prompt": "A uniform token drops onto every mode simultaneously; all identical size. 'same share' idea.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-M04.mp3",
+      "actual_duration_s": 4.21
+    },
+    {
+      "beat_id": "M05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "role": "INSTANCE",
+      "render": "manim",
+      "narration_text": "A few cheap patterns, then a rising flood of them, each one fully funded.",
+      "tts_normalized_text": "A few cheap patterns, then a rising flood of them, each one fully funded.",
+      "accumulated_scene_state": [
+        "dense modes, all funded"
+      ],
+      "new_visual_element": "[INSTANCE] Emphasis pass: the crowd of high modes all carry the same token — the trouble is visible.",
+      "video_animation_prompt": "Highlight sweeps across the crowd showing every one funded equally; the density reads as a problem.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-M05.mp3",
+      "actual_duration_s": 4.6
+    },
+    {
+      "beat_id": "P01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "role": "TRANSFORM",
+      "render": "manim",
+      "narration_text": "Multiply the exploding count by that fixed share, and the predicted glow races upward.",
+      "tts_normalized_text": "Multiply the exploding count by that fixed share, and the predicted glow races upward.",
+      "accumulated_scene_state": [
+        "axes: brightness vs frequency",
+        "runaway curve starting"
+      ],
+      "new_visual_element": "[TRANSFORM] The box dissolves into axes (brightness vs frequency); the classical curve begins to draw.",
+      "video_animation_prompt": "ReplacementTransform the cavity into a set of axes; begin drawing the Rayleigh-Jeans curve from origin. This plot persists for the rest of the video.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-P01.mp3",
+      "actual_duration_s": 4.78
+    },
+    {
+      "beat_id": "P02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "TRANSFORM",
+      "render": "manim",
+      "narration_text": "Plot it, and the curve climbs without limit straight into the ultraviolet.",
+      "tts_normalized_text": "Plot it, and the curve climbs without limit straight into the ultraviolet.",
+      "accumulated_scene_state": [
+        "axes",
+        "runaway blue curve to top of frame"
+      ],
+      "new_visual_element": "[TRANSFORM] The classical curve shoots off the top of the frame; a 'UV' band marks the right axis.",
+      "video_animation_prompt": "Draw-on the curve accelerating upward off-frame; shade a violet 'ultraviolet' band at high frequency.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-P02.mp3",
+      "actual_duration_s": 4.18
+    },
+    {
+      "beat_id": "P03",
+      "beat_type": "HOLD",
+      "scene_index": 3,
+      "role": "ANOMALY",
+      "render": "manim",
+      "narration_text": "But measure a real hot object, and its glow rises, peaks, then gently falls.",
+      "tts_normalized_text": "But measure a real hot object, and its glow rises, peaks, then gently falls.",
+      "accumulated_scene_state": [
+        "axes",
+        "runaway curve",
+        "real hump curve (brown)"
+      ],
+      "new_visual_element": "[ANOMALY] The measured Planck hump draws in brown: rise, peak, fall to zero.",
+      "video_animation_prompt": "Draw-on the brown hump beneath the runaway; it peaks and returns to baseline. Hold to let both read.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-P03.mp3",
+      "actual_duration_s": 4.68
+    },
+    {
+      "beat_id": "P04",
+      "beat_type": "HOLD",
+      "scene_index": 3,
+      "role": "ANOMALY",
+      "render": "manim",
+      "narration_text": "Two curves for one object: one screams to infinity, the other comes home to zero.",
+      "tts_normalized_text": "Two curves for one object: one screams to infinity, the other comes home to zero.",
+      "accumulated_scene_state": [
+        "both curves labelled"
+      ],
+      "new_visual_element": "[ANOMALY] Labels: 'classical' (blue) and 'reality' (brown); the gap between them is shaded.",
+      "video_animation_prompt": "Write both labels; shade the widening gap between the curves in faint highlight. Hold on the contradiction.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-P04.mp3",
+      "actual_duration_s": 4.86
+    },
+    {
+      "beat_id": "D01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "DISCOVERY",
+      "render": "manim",
+      "narration_text": "So which honest-looking step in that argument was actually the lie?",
+      "tts_normalized_text": "So which honest-looking step in that argument was actually the lie?",
+      "accumulated_scene_state": [
+        "both curves",
+        "three step-cards: count / share / continuous"
+      ],
+      "new_visual_element": "[DISCOVERY] Three small cards slide in at the side: 'count modes', 'equal share', 'any energy'.",
+      "video_animation_prompt": "Three labelled cards fade in stacked; a highlight cursor hovers over them in turn.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-D01.mp3",
+      "actual_duration_s": 3.58
+    },
+    {
+      "beat_id": "D02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "DISCOVERY",
+      "render": "manim",
+      "narration_text": "Not the counting — the geometry of standing waves in a box is rock solid.",
+      "tts_normalized_text": "Not the counting. The geometry of standing waves in a box is rock solid.",
+      "accumulated_scene_state": [
+        "'count modes' card checked"
+      ],
+      "new_visual_element": "[DISCOVERY] 'count modes' card gets a check and dims — eliminated.",
+      "video_animation_prompt": "Check-mark the first card and dim it to secondary gray.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-D02.mp3",
+      "actual_duration_s": 4.41
+    },
+    {
+      "beat_id": "D03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "DISCOVERY",
+      "render": "manim",
+      "narration_text": "The culprit is the quiet assumption that a pattern can hold any energy, down to slivers.",
+      "tts_normalized_text": "The culprit is the quiet assumption that a pattern can hold any energy, down to slivers.",
+      "accumulated_scene_state": [
+        "'any energy' card highlighted as culprit"
+      ],
+      "new_visual_element": "[DISCOVERY] The 'any energy' card lights in highlight; a tiny continuous slider (0 to up) shown beside it.",
+      "video_animation_prompt": "Highlight the third card; draw a smooth continuous energy slider next to it (any value allowed).",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-D03.mp3",
+      "actual_duration_s": 4.96
+    },
+    {
+      "beat_id": "F01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "Planck's desperate remedy: a pattern's energy comes only in whole chunks.",
+      "tts_normalized_text": "Planck's desperate remedy: a pattern's energy comes only in whole chunks.",
+      "accumulated_scene_state": [
+        "continuous slider replaced by a discrete ladder"
+      ],
+      "new_visual_element": "[ABSTRACTION] The continuous slider snaps into a discrete ladder of evenly spaced rungs (0, one chunk, two chunks...).",
+      "video_animation_prompt": "Transform the smooth slider into a rung ladder; rungs click into place. The key morph of the video.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-F01.mp3",
+      "actual_duration_s": 4.21
+    },
+    {
+      "beat_id": "F02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "Each chunk is worth a tiny new constant, h, times how fast the wave wiggles.",
+      "tts_normalized_text": "Each chunk is worth a tiny new constant, Planck's constant h, times how fast the wave wiggles.",
+      "accumulated_scene_state": [
+        "ladder",
+        "E = h nu label"
+      ],
+      "new_visual_element": "[ABSTRACTION] Rung spacing labelled E = hν (MathTex) — the definition, arriving now as an endpoint.",
+      "video_animation_prompt": "Write E = h\\nu as the ladder's rung spacing; bracket one gap to show the chunk size.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-F02.mp3",
+      "actual_duration_s": 6.16
+    },
+    {
+      "beat_id": "F03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "Low-frequency chunks are cheap, so nothing changes where classical physics already worked.",
+      "tts_normalized_text": "Low-frequency chunks are cheap, so nothing changes where classical physics already worked.",
+      "accumulated_scene_state": [
+        "low-freq: tightly spaced ladder",
+        "curves agree at left"
+      ],
+      "new_visual_element": "[ABSTRACTION] At low frequency the ladder is fine-grained; the two curves are shown coinciding on the left of the plot.",
+      "video_animation_prompt": "Show a fine ladder; flash the left region where blue and brown curves overlap (agreement).",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-F03.mp3",
+      "actual_duration_s": 4.78
+    },
+    {
+      "beat_id": "F04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "ABSTRACTION",
+      "render": "manim",
+      "narration_text": "But high-frequency chunks are expensive — ultraviolet light is billed in costly lumps.",
+      "tts_normalized_text": "But high-frequency chunks are expensive. Ultraviolet light is billed in costly lumps.",
+      "accumulated_scene_state": [
+        "high-freq: widely spaced ladder",
+        "UV band"
+      ],
+      "new_visual_element": "[ABSTRACTION] At high frequency the ladder rungs are far apart; a big price tag sits on the first UV rung.",
+      "video_animation_prompt": "Stretch the ladder wide; place a price tag on the lowest UV rung to show the cost.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-F04.mp3",
+      "actual_duration_s": 5.04
+    },
+    {
+      "beat_id": "Y01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "PAYOFF",
+      "render": "manim",
+      "narration_text": "A warm object simply cannot afford those costly ultraviolet chunks.",
+      "tts_normalized_text": "A warm object simply cannot afford those costly ultraviolet chunks.",
+      "accumulated_scene_state": [
+        "UV rungs greyed as unaffordable"
+      ],
+      "new_visual_element": "[PAYOFF] The warmth budget (a small bar) can't reach the UV rung; that rung greys out, empty.",
+      "video_animation_prompt": "A thermal-budget bar rises but falls short of the UV rung; the rung dims to 'empty'.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-Y01.mp3",
+      "actual_duration_s": 4.36
+    },
+    {
+      "beat_id": "Y02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "PAYOFF",
+      "render": "manim",
+      "narration_text": "So the expensive patterns stay empty, and the runaway curve bends back down to zero.",
+      "tts_normalized_text": "So the expensive patterns stay empty, and the runaway curve bends back down to zero.",
+      "accumulated_scene_state": [
+        "blue runaway morphs onto the brown hump"
+      ],
+      "new_visual_element": "[PAYOFF] THE morph: the blue classical curve bends over and lands exactly on the brown real hump.",
+      "video_animation_prompt": "Transform the runaway blue curve into the hump shape so it overlays the brown reality curve. The hook resolves. Transform, don't cut.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-Y02.mp3",
+      "actual_duration_s": 5.02
+    },
+    {
+      "beat_id": "Y03",
+      "beat_type": "HOLD",
+      "scene_index": 3,
+      "role": "PAYOFF",
+      "render": "manim",
+      "narration_text": "The catastrophe was never real — it was the price of pretending energy is smooth.",
+      "tts_normalized_text": "The catastrophe was never real. It was the price of pretending energy is smooth.",
+      "accumulated_scene_state": [
+        "single reconciled hump curve"
+      ],
+      "new_visual_element": "[PAYOFF] Only one curve remains; the shaded gap is gone. Hold on the resolved plot.",
+      "video_animation_prompt": "Fade the redundant blue; the gap shading closes; one clean hump remains. Hold.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-Y03.mp3",
+      "actual_duration_s": 4.44
+    },
+    {
+      "beat_id": "S01",
+      "beat_type": "ZOOM",
+      "scene_index": 3,
+      "role": "SCALE",
+      "render": "manim",
+      "narration_text": "One ratio decides everything: the chunk's cost against the warmth available.",
+      "tts_normalized_text": "One ratio decides everything: the chunk's cost against the warmth available.",
+      "accumulated_scene_state": [
+        "ratio widget: chunk over warmth"
+      ],
+      "new_visual_element": "[SCALE] A compact ratio appears: (chunk cost) over (thermal warmth) — hν over k_B T in words.",
+      "video_animation_prompt": "Bring up a small fraction widget: numerator 'chunk cost', denominator 'warmth'. Zoom focus onto it.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-S01.mp3",
+      "actual_duration_s": 4.26
+    },
+    {
+      "beat_id": "S02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "role": "SCALE",
+      "render": "manim",
+      "narration_text": "When warmth dwarfs the chunk it looks classical; when the chunk wins, it looks quantum.",
+      "tts_normalized_text": "When warmth dwarfs the chunk it looks classical; when the chunk wins, it looks quantum.",
+      "accumulated_scene_state": [
+        "ratio with two regimes marked"
+      ],
+      "new_visual_element": "[SCALE] The ratio slides between two labelled regimes: 'classical' (small) and 'quantum' (large).",
+      "video_animation_prompt": "A marker slides along the ratio axis between 'classical' and 'quantum' poles.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-S02.mp3",
+      "actual_duration_s": 5.25
+    },
+    {
+      "beat_id": "B01",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "role": "BOUNDARY",
+      "render": "manim",
+      "narration_text": "That single rule — energy in whole chunks — is the seed of all quantum physics.",
+      "tts_normalized_text": "That single rule, energy in whole chunks, is the seed of all quantum physics.",
+      "accumulated_scene_state": [
+        "close card",
+        "E = h nu centered"
+      ],
+      "new_visual_element": "[BOUNDARY] Clean close card: E = hν centered, the ladder icon small beneath it.",
+      "video_animation_prompt": "Pull the plot to the upper margin; center E = h\\nu with the small ladder motif.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 4.96
+    },
+    {
+      "beat_id": "B02",
+      "beat_type": "HOLD",
+      "scene_index": 4,
+      "role": "BOUNDARY",
+      "render": "manim",
+      "narration_text": "We didn't derive Planck's exact curve, and we left light's own graininess for next time.",
+      "tts_normalized_text": "We didn't derive Planck's exact curve, and we left light's own graininess for next time.",
+      "accumulated_scene_state": [
+        "close card",
+        "two deferred tags"
+      ],
+      "new_visual_element": "[BOUNDARY] Two small 'next' tags: 'Planck's formula' and 'the photon' — honestly out of scope.",
+      "video_animation_prompt": "Two faint 'coming next' tags fade in below the equation, then settle.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 5.25
+    },
+    {
+      "beat_id": "B03",
+      "beat_type": "HOLD",
+      "scene_index": 4,
+      "role": "BOUNDARY",
+      "render": "manim",
+      "narration_text": "Try this yourself: estimate a chunk's cost for green light, and weigh it against room-temperature warmth.",
+      "tts_normalized_text": "Try this yourself: estimate a chunk's cost for green light, and weigh it against room-temperature warmth.",
+      "accumulated_scene_state": [
+        "close card",
+        "viewer exercise prompt"
+      ],
+      "new_visual_element": "[BOUNDARY] The viewer exercise appears as a single prompt line under the equation.",
+      "video_animation_prompt": "Write the exercise line; a small green-light + thermometer motif hints at the calculation.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 6.09
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "HOLD",
+      "scene_index": 4,
+      "role": "OUTRO",
+      "render": "none",
+      "narration_text": "Thanks for watching The Ultraviolet Catastrophe — more at youtube dot com, slash, at Nik Bear Brown.",
+      "tts_normalized_text": "Thanks for watching The Ultraviolet Catastrophe. More at youtube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [
+        "close card holds",
+        "title parked in upper margin band"
+      ],
+      "new_visual_element": "[OUTRO] Keep the close card; park the title in the upper margin; no channel URL on screen (spoken only).",
+      "video_animation_prompt": "No new element. Hold the final frame under the spoken outro.",
+      "approval_status": "pending",
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 5.46
+    }
+  ]
+}

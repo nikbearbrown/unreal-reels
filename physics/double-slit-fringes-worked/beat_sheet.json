@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "slug": "double-slit-fringes-worked",
+    "title": "The Double Slit: How Far Apart Are the Stripes? (Worked Example)",
+    "series": "Bears Notes",
+    "tier": "deep",
+    "depth_of": "double-slit-one-electron",
+    "aspect_ratio": "16:9",
+    "render_orientations": [
+      "16:9"
+    ],
+    "source": "quantum-mechanics-vol1/chapters/02-matter-waves.md (deep expand of Candidate 01)",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#doubleslit",
+      "#debroglie",
+      "#matterwaves",
+      "#interference",
+      "#electrondiffraction",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "two slits and a screen; the de Broglie wavelength lambda=h/p turned into a measurable fringe spacing delta-y = lambda L / d, worked for a 100 eV electron",
+    "color_notes": "Slits/screen/axes = ink #1a1a1a. Waves + fringe curve + boxed formula = accent #5A5653. The final fringe-spacing answer = red #C0392B. Math is MathTex (LaTeX).",
+    "math_rendering": "MathTex (LaTeX, MacTeX). de Broglie: lambda[nm] = 1.226/sqrt(V). 100 V -> 0.123 nm. d=100nm, L=0.5m -> dy=0.61mm.",
+    "total_estimated_duration_seconds": 73.86
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Bear's Notes\n\nThe Double Slit: How Far Apart Are the Stripes?",
+      "tts_normalized_text": "Bear's Notes.\n\nThe Double Slit: How Far Apart Are the Stripes?",
+      "new_visual_element": "title card: brand + slits-and-fringes motif + title",
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 4.18
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "One electron at a time still piles up into stripes — interference with itself.",
+      "tts_normalized_text": "One electron at a time still piles up into stripes — interference with itself.",
+      "new_visual_element": "narration card + faint fringe pattern",
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.68
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "And the spacing of those stripes is something we can predict.",
+      "tts_normalized_text": "And the spacing of those stripes is something we can predict.",
+      "new_visual_element": "narration card + a delta-y bracket on fringes",
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 2.93
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Each electron's wave passes through both slits and overlaps on the far side.",
+      "tts_normalized_text": "Each electron's wave passes through both slits and overlaps on the far side.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "two slits, waves spreading and overlapping",
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.68
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Bright fringes land where the two paths differ by a whole wavelength.",
+      "tts_normalized_text": "Bright fringes land where the two paths differ by a whole wavelength.",
+      "accumulated_scene_state": [
+        "slits",
+        "waves"
+      ],
+      "new_visual_element": "two path lines to a bright fringe",
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 4.0
+    },
+    {
+      "beat_id": "M01",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Let's pin the wavelength down.",
+      "tts_normalized_text": "Let's pin the wavelength down.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "geometry on the left, math on the right",
+      "audio_file": "mp3/beat-M01.mp3",
+      "actual_duration_s": 1.7
+    },
+    {
+      "beat_id": "M02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "\\lambda = \\frac{h}{p}",
+      "narration_text": "A particle's wavelength is de Broglie's — lambda equals h over p.",
+      "tts_normalized_text": "A particle's wavelength is de Broglie's — lambda equals h over p.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "formula line 1",
+      "audio_file": "mp3/beat-M02.mp3",
+      "actual_duration_s": 4.41
+    },
+    {
+      "beat_id": "M03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "d\\,\\sin\\theta = m\\lambda",
+      "narration_text": "Bright fringes sit where the path difference is a whole number of wavelengths.",
+      "tts_normalized_text": "Bright fringes sit where the path difference is a whole number of wavelengths.",
+      "accumulated_scene_state": [
+        "lambda"
+      ],
+      "new_visual_element": "maxima condition",
+      "audio_file": "mp3/beat-M03.mp3",
+      "actual_duration_s": 4.08
+    },
+    {
+      "beat_id": "M04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "\\Delta y = \\frac{\\lambda L}{d}",
+      "narration_text": "For small angles that spaces the stripes by delta-y equals lambda L over d.",
+      "tts_normalized_text": "For small angles that spaces the stripes by delta y equals lambda L over d.",
+      "accumulated_scene_state": [
+        "lambda",
+        "maxima"
+      ],
+      "new_visual_element": "boxed result delta-y = lambda L / d",
+      "audio_file": "mp3/beat-M04.mp3",
+      "actual_duration_s": 5.04
+    },
+    {
+      "beat_id": "W01",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Take an electron pushed through one hundred volts.",
+      "tts_normalized_text": "Take an electron pushed through one hundred volts.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "boxed formula at top; givens: 100 V electron",
+      "audio_file": "mp3/beat-W01.mp3",
+      "actual_duration_s": 2.74
+    },
+    {
+      "beat_id": "W02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "\\lambda = \\frac{h}{p} \\approx 0.12\\ \\text{nm}",
+      "narration_text": "Its momentum gives a wavelength of about zero point one two nanometres.",
+      "tts_normalized_text": "Its momentum gives a wavelength of about zero point one two nanometres.",
+      "accumulated_scene_state": [
+        "givens"
+      ],
+      "new_visual_element": "lambda computed",
+      "audio_file": "mp3/beat-W02.mp3",
+      "actual_duration_s": 4.26
+    },
+    {
+      "beat_id": "W03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "d = 100\\,\\text{nm},\\ \\ L = 0.5\\,\\text{m}",
+      "narration_text": "Set the slits one hundred nanometres apart, the screen half a metre away.",
+      "tts_normalized_text": "Set the slits one hundred nanometres apart, the screen half a metre away.",
+      "accumulated_scene_state": [
+        "lambda"
+      ],
+      "new_visual_element": "d and L marked on the geometry",
+      "audio_file": "mp3/beat-W03.mp3",
+      "actual_duration_s": 4.49
+    },
+    {
+      "beat_id": "W04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "\\Delta y = \\frac{\\lambda L}{d} \\approx 0.6\\ \\text{mm}",
+      "narration_text": "The stripes come out about zero point six millimetres apart — easily seen.",
+      "tts_normalized_text": "The stripes come out about zero point six millimetres apart — easily seen.",
+      "accumulated_scene_state": [
+        "lambda",
+        "d",
+        "L"
+      ],
+      "new_visual_element": "delta-y on a fringe pattern",
+      "audio_file": "mp3/beat-W04.mp3",
+      "actual_duration_s": 4.44
+    },
+    {
+      "beat_id": "P01",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Speed the electron up, its wavelength shrinks, and the stripes crowd closer.",
+      "tts_normalized_text": "Speed the electron up, its wavelength shrinks, and the stripes crowd closer.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "two fringe patterns: wide vs tight",
+      "audio_file": "mp3/beat-P01.mp3",
+      "actual_duration_s": 4.18
+    },
+    {
+      "beat_id": "P02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "This is exactly what Tonomura saw in 1989 — dots, one by one, building the fringes.",
+      "tts_normalized_text": "This is exactly what Tonomura saw in 1989 — dots, one by one, building the fringes.",
+      "accumulated_scene_state": [
+        "patterns"
+      ],
+      "new_visual_element": "single dots accumulating into stripes",
+      "audio_file": "mp3/beat-P02.mp3",
+      "actual_duration_s": 6.27
+    },
+    {
+      "beat_id": "R01",
+      "beat_type": "CUT",
+      "scene_index": 7,
+      "render": "manim",
+      "math_tex": "\\Delta y = \\frac{\\lambda L}{d}",
+      "narration_text": "The stripe spacing is just the electron's wavelength, made visible.",
+      "tts_normalized_text": "The stripe spacing is just the electron's wavelength, made visible.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "boxed equation, centered",
+      "audio_file": "mp3/beat-R01.mp3",
+      "actual_duration_s": 3.84
+    },
+    {
+      "beat_id": "R02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 7,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Random alone, lawful together — the wave sets the odds.",
+      "tts_normalized_text": "Random alone, lawful together — the wave sets the odds.",
+      "accumulated_scene_state": [
+        "equation"
+      ],
+      "new_visual_element": "recap line",
+      "audio_file": "mp3/beat-R02.mp3",
+      "actual_duration_s": 3.11
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 8,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Thanks for watching — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching — find more Bear's Notes at youtube dot com slash at Nik Bear Brown.",
+      "new_visual_element": "cleared outro card: thanks + title + channel",
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 4.83
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "INTRO": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4630889-cosy-creatures-002-bear.svg",
+    "score": 6,
+    "duration": 4.08
+  },
+  "H01": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4511875-strategy-018-ladder.svg",
+    "score": 3,
+    "duration": 4.41
+  },
+  "H02": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4511875-strategy-018-ladder.svg",
+    "score": 6,
+    "duration": 3.24
+  },
+  "OUTRO": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4630889-cosy-creatures-002-bear.svg",
+    "score": 6,
+    "duration": 8.2
+  }
+}

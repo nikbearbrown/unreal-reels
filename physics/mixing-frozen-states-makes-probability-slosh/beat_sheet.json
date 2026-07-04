@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "slug": "mixing-frozen-states-makes-probability-slosh",
+    "title": "Why Mixing Two Frozen Quantum States Makes Probability Slosh",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/04-the-schrodinger-equation.md (Candidate 10)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#superposition",
+      "#quantuminterference",
+      "#wavefunction",
+      "#probabilitydensity",
+      "#energyeigenstate",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "a probability cloud in a well sloshing left-right, driven by two clocks turning at different rates",
+    "color_notes": "Probability cloud = accent Warm Slate #5A5653 (filled). The two driving clock hands = ink (slow state 1) and accent (fast state 2). Well + labels = ink #1a1a1a. The closing 'two frozen states, motion' emphasis = red #C0392B.",
+    "total_estimated_duration_seconds": 61.57
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy Mixing Two Frozen Quantum States Makes Probability Slosh",
+      "tts_normalized_text": "Bear's Notes\n\nWhy Mixing Two Frozen Quantum States Makes Probability Slosh",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 6.35,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "Each energy state on its own has a probability cloud that just sits there, perfectly still.",
+      "tts_normalized_text": "Each energy state on its own has a probability cloud that just sits there, perfectly still.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person watching a still cloud sit motionless in a box",
+      "start_frame_prompt": "[DOODLE OBJECT = a person watching a single still cloud resting inside a box]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person calmly watching the motionless cloud in the box]",
+      "video_animation_prompt": "the person and a box with a single motionless cloud draw in; the cloud does not move; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 5.46,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "Add two of those still clouds together, and the result sloshes side to side.",
+      "tts_normalized_text": "Add two of those still clouds together, and the result sloshes side to side.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person startled as the combined cloud sloshes left and right",
+      "start_frame_prompt": "[DOODLE OBJECT = a person startled as a cloud in a box sloshes to one side]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person watching the cloud sloshed to the other side of the box]",
+      "video_animation_prompt": "the person draws in; a cloud in a box sloshes from one side to the other; the person is startled; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.49,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Here's a particle trapped in a box.",
+      "tts_normalized_text": "Here's a particle trapped in a box.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a well (two walls + floor)",
+      "video_animation_prompt": "MANIM: draw a square-well box — two tall walls and a floor",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 2.09,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Its lowest energy state has one smooth hump of probability that never moves.",
+      "tts_normalized_text": "Its lowest energy state has one smooth hump of probability that never moves.",
+      "accumulated_scene_state": [
+        "well"
+      ],
+      "new_visual_element": "ground-state probability cloud (single hump), static",
+      "video_animation_prompt": "MANIM: fill in the ground-state probability cloud — a single centred hump — and hold it still",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 4.91,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The next state up has a two-lobed cloud — also frozen in place.",
+      "tts_normalized_text": "The next state up has a two-lobed cloud — also frozen in place.",
+      "accumulated_scene_state": [
+        "well"
+      ],
+      "new_visual_element": "first-excited-state cloud (two lobes), static",
+      "video_animation_prompt": "MANIM: morph the cloud into the two-lobed first-excited-state probability cloud; hold it still",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 4.08,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Each one is secretly spinning underneath, but at its own steady rate set by its energy.",
+      "tts_normalized_text": "Each one is secretly spinning underneath, but at its own steady rate set by its energy.",
+      "accumulated_scene_state": [
+        "well",
+        "frozen cloud"
+      ],
+      "new_visual_element": "two small clock hands appear, one slow (state 1) one fast (state 2)",
+      "video_animation_prompt": "MANIM: bring in a small Argand inset with two hands — a slow ink hand (state 1) and a fast accent hand (state 2) — both turning while the cloud stays still",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 5.33,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Now add the two states together into one combined cloud.",
+      "tts_normalized_text": "Now add the two states together into one combined cloud.",
+      "accumulated_scene_state": [
+        "well",
+        "two clocks"
+      ],
+      "new_visual_element": "the combined superposition cloud forms (still snapshot)",
+      "video_animation_prompt": "MANIM: replace the single cloud with the combined two-state probability cloud, held still for a moment",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 3.29,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "As the two clocks drift apart, the combined cloud sloshes from one side of the box to the other.",
+      "tts_normalized_text": "As the two clocks drift apart, the combined cloud sloshes from one side of the box to the other.",
+      "accumulated_scene_state": [
+        "combined cloud",
+        "two clocks turning"
+      ],
+      "new_visual_element": "the cloud pumps left then right as the clocks separate",
+      "video_animation_prompt": "MANIM: start both clocks turning at different rates; the combined cloud sloshes left-right driven by their growing angle gap",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 5.98,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The sloshing keeps time with the gap between the clocks — the difference in their energies.",
+      "tts_normalized_text": "The sloshing keeps time with the gap between the clocks — the difference in their energies.",
+      "accumulated_scene_state": [
+        "sloshing cloud",
+        "two clocks turning"
+      ],
+      "new_visual_element": "the angle gap between the two hands highlighted as the driver",
+      "video_animation_prompt": "MANIM: highlight the angle gap between the two hands while the cloud keeps sloshing in step with it",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 5.04,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Two states that each go nowhere, mixed together, make probability move.",
+      "tts_normalized_text": "Two states that each go nowhere, mixed together, make probability move.",
+      "accumulated_scene_state": [
+        "sloshing cloud"
+      ],
+      "new_visual_element": "red label 'two frozen states, and the mix moves'",
+      "video_animation_prompt": "MANIM: settle on a slosh extreme and write a red label 'two frozen states, and the mix moves'; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 4.62,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 4,
+      "render": "none",
+      "narration_text": "Thanks for watching Why Mixing Two Frozen Quantum States Makes Probability Slosh — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why Mixing Two Frozen Quantum States Makes Probability Slosh. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, final sloshed frame kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 9.93,
+      "approval_status": "pending"
+    }
+  ]
+}

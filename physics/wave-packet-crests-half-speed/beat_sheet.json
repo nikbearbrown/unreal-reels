@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "slug": "wave-packet-crests-half-speed",
+    "title": "Why a Wave Packet's Wiggles Move at Half the Speed of the Packet",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/08-the-free-particle-and-wave-packets.md (Candidate 06)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#wavepacket",
+      "#quantumphysics",
+      "#groupvelocity",
+      "#phasevelocity",
+      "#dispersion",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#STEM",
+      "#BearsNotes"
+    ],
+    "thing": "a moving Gaussian wave packet whose crests lag the envelope",
+    "color_notes": "Wave + envelope = accent Warm Slate #5A5653. One tagged crest = red dot #C0392B. Labels = ink #1a1a1a.",
+    "total_estimated_duration_seconds": 62.01
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy a Wave Packet's Wiggles Move at Half the Speed of the Packet",
+      "tts_normalized_text": "Bear's Notes\n\nWhy a Wave Packet's Wiggles Move at Half the Speed of the Packet",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 5.51,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "A quantum particle travels as a little blob of waves — a moving lump full of ripples.",
+      "tts_normalized_text": "A quantum particle travels as a little blob of waves — a moving lump full of ripples.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person watching a rippling blob glide past",
+      "start_frame_prompt": "[DOODLE OBJECT = a person watching a blob full of ripples float by]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person watching the rippling blob move to the right]",
+      "video_animation_prompt": "the person draws in, a rippling blob glides past to the right; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 5.28,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "Watch closely and the ripples inside slide backward, even as the blob races forward.",
+      "tts_normalized_text": "Watch closely and the ripples inside slide backward, even as the blob races forward.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person doing a double-take at the backward ripples",
+      "start_frame_prompt": "[DOODLE OBJECT = a person leaning in to look closely at a moving rippling blob]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person doing a double-take, surprised, at the rippling blob]",
+      "video_animation_prompt": "the person leans in and does a double-take at the ripples sliding backward in the moving blob; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.78,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Here's the packet: a smooth envelope holding a train of wave crests.",
+      "tts_normalized_text": "Here's the packet: a smooth envelope holding a train of wave crests.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a static Gaussian envelope outline with internal wave crests",
+      "video_animation_prompt": "MANIM: draw a dashed Gaussian envelope (above and below) and the oscillating wave filling it, centred and static",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.26,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The envelope is where the particle actually is, and it glides forward at the particle's speed.",
+      "tts_normalized_text": "The envelope is where the particle actually is, and it glides forward at the particle's speed.",
+      "accumulated_scene_state": [
+        "envelope",
+        "internal crests"
+      ],
+      "new_visual_element": "the whole packet begins moving to the right (envelope speed)",
+      "video_animation_prompt": "MANIM: start the continuous motion — the packet (envelope + crests) translates rightward at the group velocity",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 5.8,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Tag one crest with a dot and watch it against the moving envelope.",
+      "tts_normalized_text": "Tag one crest with a dot and watch it against the moving envelope.",
+      "accumulated_scene_state": [
+        "moving packet"
+      ],
+      "new_visual_element": "a red dot pinned to one crest, riding the wave",
+      "video_animation_prompt": "MANIM: place a red dot on one crest; it rides the carrier at the phase velocity as the packet keeps moving",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 3.89,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The crest moves forward too, but only half as fast as the envelope.",
+      "tts_normalized_text": "The crest moves forward too, but only half as fast as the envelope.",
+      "accumulated_scene_state": [
+        "moving packet",
+        "tagged crest dot"
+      ],
+      "new_visual_element": "a speed legend: a long envelope arrow and a half-length crest arrow",
+      "video_animation_prompt": "MANIM: show a small legend — a long arrow 'envelope' and a half-length arrow 'crest' — while motion continues",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.89,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "So relative to the blob, the tagged crest slides steadily toward the rear.",
+      "tts_normalized_text": "So relative to the blob, the tagged crest slides steadily toward the rear.",
+      "accumulated_scene_state": [
+        "moving packet",
+        "tagged crest dot",
+        "speed legend"
+      ],
+      "new_visual_element": "the red dot visibly falling toward the back of the envelope",
+      "video_animation_prompt": "MANIM: continue motion; the tagged dot drifts from the centre toward the trailing edge of the envelope",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Fresh crests keep appearing at the front and melting away at the back.",
+      "tts_normalized_text": "Fresh crests keep appearing at the front and melting away at the back.",
+      "accumulated_scene_state": [
+        "moving packet",
+        "tagged crest near rear"
+      ],
+      "new_visual_element": "crests being born at the front edge and fading at the rear",
+      "video_animation_prompt": "MANIM: continue motion long enough to see crests grow in at the leading edge and shrink out at the trailing edge",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 4.18,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The crest speed is the phase velocity; the envelope's is twice it, the group velocity.",
+      "tts_normalized_text": "The crest speed is the phase velocity; the envelope's is twice it, the group velocity.",
+      "accumulated_scene_state": [
+        "moving packet"
+      ],
+      "new_visual_element": "labels: phase velocity on the crest, group velocity on the envelope",
+      "video_animation_prompt": "MANIM: slow/hold the motion and label the crest arrow 'phase velocity' and the envelope arrow 'group velocity = 2x'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 5.15,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "What you see and measure is the blob — the particle rides the envelope, not the ripples.",
+      "tts_normalized_text": "What you see and measure is the blob — the particle rides the envelope, not the ripples.",
+      "accumulated_scene_state": [
+        "packet",
+        "velocity labels"
+      ],
+      "new_visual_element": "the envelope highlighted and labelled 'the particle'",
+      "video_animation_prompt": "MANIM: emphasise the envelope (thicken/glow) with a label 'the particle is here'; fade the crest emphasis; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 5.09,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 4,
+      "render": "none",
+      "narration_text": "Thanks for watching Why a Wave Packet's Wiggles Move at Half the Speed of the Packet — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why a Wave Packet's Wiggles Move at Half the Speed of the Packet. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, channel URL in bottom margin, packet kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 9.87,
+      "approval_status": "pending"
+    }
+  ]
+}

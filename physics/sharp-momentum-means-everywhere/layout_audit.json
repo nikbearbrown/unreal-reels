@@ -1,0 +1,26 @@
+{
+  "scene": "sharp_momentum_means_everywhere",
+  "snapshots": 34,
+  "errors": 0,
+  "warnings": 1,
+  "safe_area": [
+    6.3,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": [
+    {
+      "type": "OFF_SAFE_AREA",
+      "severity": "WARN",
+      "text": "momenta",
+      "t": 15.6,
+      "snap": 13,
+      "box": [
+        -6.89,
+        2.39,
+        -6.1,
+        2.61
+      ]
+    }
+  ]
+}

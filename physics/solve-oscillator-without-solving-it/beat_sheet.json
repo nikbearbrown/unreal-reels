@@ -1,0 +1,310 @@
+{
+  "metadata": {
+    "slug": "solve-oscillator-without-solving-it",
+    "title": "Why You Can Solve a Quantum Oscillator Without Ever Solving It",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/07-the-harmonic-oscillator.md (Candidate 15)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#harmonicoscillator",
+      "#ladderoperators",
+      "#energylevels",
+      "#quantization",
+      "#creationannihilation",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "an evenly spaced energy ladder where a raise-arrow steps a dot up and a lower-arrow steps it down, hitting a floor it cannot pass",
+    "color_notes": "The dot + raise arrow + ladder = accent Warm Slate #5A5653. The floor it cannot pass + the killed-state X + closing emphasis = red #C0392B. Energy axis, rungs, labels = ink #1a1a1a.",
+    "total_estimated_duration_seconds": 57.83
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy You Can Solve a Quantum Oscillator Without Ever Solving It",
+      "tts_normalized_text": "Bear's Notes\n\nWhy You Can Solve a Quantum Oscillator Without Ever Solving It",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "Finding every energy of a quantum oscillator looks like a brutal differential equation.",
+      "tts_normalized_text": "Finding every energy of a quantum oscillator looks like a brutal differential equation.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person daunted by a wall of scary math",
+      "start_frame_prompt": "[DOODLE OBJECT = a person looking daunted at a chalkboard covered in scary equations]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person overwhelmed in front of a wall of equations]",
+      "video_animation_prompt": "the person and a chalkboard full of intimidating equations draw in; the person looks daunted; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.6,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "But two simple moves — step up, step down — hand you the whole answer.",
+      "tts_normalized_text": "But two simple moves — step up, step down — hand you the whole answer.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person relieved, holding an up arrow and a down arrow",
+      "start_frame_prompt": "[DOODLE OBJECT = a person holding a big up arrow and a big down arrow, relieved]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person smiling with an up arrow and a down arrow]",
+      "video_animation_prompt": "the person draws in holding an up arrow and a down arrow, relieved and smiling; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 5.04,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Picture the oscillator's energy on a vertical axis, with a state sitting at some level.",
+      "tts_normalized_text": "Picture the oscillator's energy on a vertical axis, with a state sitting at some level.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "an energy axis with one rung and a dot on it",
+      "video_animation_prompt": "MANIM: draw a vertical energy axis, one rung, and a dot sitting on that rung",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 5.09,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "One operator bumps any state up exactly one rung of energy.",
+      "tts_normalized_text": "One operator bumps any state up exactly one rung of energy.",
+      "accumulated_scene_state": [
+        "axis",
+        "dot on a rung"
+      ],
+      "new_visual_element": "raise operator: up arrow steps the dot up one new rung",
+      "video_animation_prompt": "MANIM: a raise arrow steps the dot up one rung; a new rung appears above; label 'raise'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 3.34,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Another operator bumps it back down, exactly one rung at a time.",
+      "tts_normalized_text": "Another operator bumps it back down, exactly one rung at a time.",
+      "accumulated_scene_state": [
+        "two rungs",
+        "dot"
+      ],
+      "new_visual_element": "lower operator: down arrow steps the dot down one rung",
+      "video_animation_prompt": "MANIM: a lower arrow steps the dot down one rung, adding a rung below; label 'lower'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 4.13,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Keep lowering and the dot marches down toward the bottom.",
+      "tts_normalized_text": "Keep lowering and the dot marches down toward the bottom.",
+      "accumulated_scene_state": [
+        "ladder forming",
+        "dot descending"
+      ],
+      "new_visual_element": "the dot steps down two more rungs to the floor",
+      "video_animation_prompt": "MANIM: step the dot down a couple more rungs, adding rungs, until it reaches the bottom rung",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.06,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "But energy can't be negative — so the bottom rung is a floor the lowering operator kills.",
+      "tts_normalized_text": "But energy can't be negative — so the bottom rung is a floor the lowering operator kills.",
+      "accumulated_scene_state": [
+        "dot on floor"
+      ],
+      "new_visual_element": "lowering at the floor hits a red X (state destroyed)",
+      "video_animation_prompt": "MANIM: mark the floor in red; try to lower below it and show a red X / 'nothing' — the floor cannot be passed",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 5.09,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "From that floor, the raising operator generates every level above it.",
+      "tts_normalized_text": "From that floor, the raising operator generates every level above it.",
+      "accumulated_scene_state": [
+        "floor"
+      ],
+      "new_visual_element": "raising repeatedly builds the whole ladder upward",
+      "video_animation_prompt": "MANIM: from the floor, repeatedly raise — accumulate rungs all the way up as the dot climbs",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "And every rung is the same step apart — a perfectly even ladder.",
+      "tts_normalized_text": "And every rung is the same step apart — a perfectly even ladder.",
+      "accumulated_scene_state": [
+        "full ladder"
+      ],
+      "new_visual_element": "equal-spacing braces between the rungs",
+      "video_animation_prompt": "MANIM: bracket the equal spacing between consecutive rungs to show the ladder is perfectly even",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 3.94,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The whole infinite spectrum, found by stepping a ladder — no equation ever solved.",
+      "tts_normalized_text": "The whole infinite spectrum, found by stepping a ladder — no equation ever solved.",
+      "accumulated_scene_state": [
+        "even ladder"
+      ],
+      "new_visual_element": "red label 'the whole spectrum, no equation solved'",
+      "video_animation_prompt": "MANIM: settle the ladder and write a red label 'the whole spectrum, no equation solved'; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 4.86,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 4,
+      "render": "none",
+      "narration_text": "Thanks for watching Why You Can Solve a Quantum Oscillator Without Ever Solving It — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why You Can Solve a Quantum Oscillator Without Ever Solving It. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, final ladder kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 10.06,
+      "approval_status": "pending"
+    }
+  ]
+}

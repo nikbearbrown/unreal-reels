@@ -1,0 +1,42 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: bb,EB Garamond,52,&H0042E4F0,&H00D8E6EC,&H001D1616,&H64000000,0,0,0,0,100,100,0,0,1,3,0,2,120,120,90,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.48,bb,,0,0,0,,{\k33}Bear's {\k27}Notes {\k13}Why {\k13}a {\k13}Dim {\k27}Blue {\k30}Lamp {\k23}Beats {\k17}a
+Dialogue: 0,0:00:02.33,0:00:03.25,bb,,0,0,0,,{\k40}Blinding {\k17}Red {\k20}One
+Dialogue: 0,0:00:03.47,0:00:05.45,bb,,0,0,0,,{\k17}Aim {\k17}the {\k33}brightest {\k30}red {\k27}lamp {\k20}you {\k20}own {\k13}at {\k7}a
+Dialogue: 0,0:00:05.30,0:00:07.85,bb,,0,0,0,,{\k20}metal {\k33}plate {\k1}— {\k50}and {\k17}not {\k30}one {\k43}electron {\k47}escapes.
+Dialogue: 0,0:00:08.25,0:00:10.73,bb,,0,0,0,,{\k37}Swap {\k10}in {\k10}a {\k13}dim {\k33}blue {\k30}glow, {\k20}and {\k40}electrons {\k40}fly
+Dialogue: 0,0:00:10.58,0:00:11.53,bb,,0,0,0,,{\k30}off {\k50}instantly.
+Dialogue: 0,0:00:11.83,0:00:14.11,bb,,0,0,0,,{\k27}Crank {\k13}the {\k17}red {\k17}to {\k43}blinding {\k1}and {\k30}still {\k13}— {\k30}nothing.
+Dialogue: 0,0:00:14.47,0:00:16.52,bb,,0,0,0,,{\k17}So {\k30}stop {\k50}picturing {\k13}a {\k23}smooth {\k57}wave:
+Dialogue: 0,0:00:16.87,0:00:18.62,bb,,0,0,0,,{\k10}light {\k47}arrives {\k27}as {\k40}separate {\k37}packets.
+Dialogue: 0,0:00:19.02,0:00:21.67,bb,,0,0,0,,{\k23}Each {\k50}packet's {\k30}energy {\k13}is {\k23}set {\k33}only {\k23}by {\k20}its {\k33}color
+Dialogue: 0,0:00:21.79,0:00:24.37,bb,,0,0,0,,{\k23}— {\k17}red {\k40}packets {\k33}weak, {\k13}blue {\k37}packets {\k37}strong.
+Dialogue: 0,0:00:24.71,0:00:27.49,bb,,0,0,0,,{\k37}Brightness {\k20}just {\k20}means {\k30}more {\k37}packets {\k23}per {\k33}second, {\k27}never {\k37}fatter
+Dialogue: 0,0:00:27.34,0:00:27.73,bb,,0,0,0,,{\k23}ones.
+Dialogue: 0,0:00:28.05,0:00:30.67,bb,,0,0,0,,{\k13}And {\k13}an {\k40}electron {\k37}breaks {\k33}free {\k37}only {\k20}if {\k17}one {\k37}single
+Dialogue: 0,0:00:30.52,0:00:32.97,bb,,0,0,0,,{\k40}packet {\k30}pays {\k20}its {\k20}whole {\k33}escape {\k37}cost {\k20}at {\k30}once.
+Dialogue: 0,0:00:33.30,0:00:35.65,bb,,0,0,0,,{\k23}Every {\k20}red {\k37}packet {\k27}falls {\k37}short {\k17}— {\k10}a {\k20}flood {\k13}of
+Dialogue: 0,0:00:35.77,0:00:36.88,bb,,0,0,0,,{\k20}near-misses {\k47}frees {\k27}nothing.
+Dialogue: 0,0:00:37.19,0:00:39.57,bb,,0,0,0,,{\k13}One {\k30}faint {\k20}blue {\k40}packet {\k33}clears {\k27}the {\k27}cost {\k27}in {\k7}a
+Dialogue: 0,0:00:39.42,0:00:41.54,bb,,0,0,0,,{\k27}single {\k33}hit, {\k33}and {\k13}the {\k43}electron {\k47}flies.
+Dialogue: 0,0:00:41.92,0:00:43.97,bb,,0,0,0,,{\k43}That's {\k13}E {\k40}equals {\k30}h {\k30}nu:
+Dialogue: 0,0:00:43.85,0:00:46.54,bb,,0,0,0,,{\k43}color {\k20}is {\k37}energy, {\k17}and {\k10}the {\k30}packet {\k20}is {\k27}called {\k17}a
+Dialogue: 0,0:00:46.39,0:00:46.90,bb,,0,0,0,,{\k37}photon.
+Dialogue: 0,0:00:47.35,0:00:48.77,bb,,0,0,0,,{\k47}Brightness {\k30}counts {\k17}the {\k33}packets;
+Dialogue: 0,0:00:49.12,0:00:51.43,bb,,0,0,0,,{\k30}color {\k37}decides {\k33}whether {\k30}any {\k20}one {\k10}of {\k13}them {\k17}can {\k27}pay.
+Dialogue: 0,0:00:51.71,0:00:54.59,bb,,0,0,0,,{\k13}The {\k20}full {\k40}story {\k20}— {\k10}the {\k23}leftover {\k53}energy, {\k10}the {\k30}threshold
+Dialogue: 0,0:00:54.44,0:00:57.23,bb,,0,0,0,,{\k43}color, {\k20}the {\k33}sodium {\k40}numbers {\k13}— {\k27}is {\k13}in {\k10}the {\k20}long
+Dialogue: 0,0:00:57.08,0:00:57.63,bb,,0,0,0,,{\k40}video.
+Dialogue: 0,0:00:58.01,0:01:00.53,bb,,0,0,0,,{\k27}Thanks {\k17}for {\k40}watching {\k13}— {\k20}more {\k17}at {\k23}youtube {\k1}dot {\k63}com,
+Dialogue: 0,0:01:00.38,0:01:01.69,bb,,0,0,0,,{\k60}slash, {\k57}at {\k1}Nik {\k1}Bear {\k1}Brown.

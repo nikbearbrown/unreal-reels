@@ -1,0 +1,480 @@
+{
+  "metadata": {
+    "slug": "what-wave-particle-duality-means",
+    "title": "What Wave-Particle Duality Means",
+    "series": "Bears Notes",
+    "source": "user-provided transcript used as conceptual inspiration only",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "thing": "electron",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#QuantumMechanics",
+      "#WaveParticleDuality",
+      "#Physics",
+      "#BearsNotes"
+    ],
+    "total_estimated_duration_seconds": 63.99
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "none",
+      "narration_text": "Bear's Notes\n\nWhat Wave-Particle Duality Means",
+      "tts_normalized_text": "Bear's Notes\n\nWhat Wave-Particle Duality Means",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card",
+      "start_frame_prompt": "blank white title card",
+      "end_frame_prompt": "Bear's Notes title card with small intro marker",
+      "video_prompt": "Title card appears in handwritten text, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.76
+    },
+    {
+      "beat_id": "A00",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "manim",
+      "narration_text": "Big objects usually give us one clean story.",
+      "tts_normalized_text": "Big objects usually give us one clean story.",
+      "accumulated_scene_state": [
+        "ground line"
+      ],
+      "new_visual_element": "single clean path",
+      "start_frame_prompt": "white background with ground line",
+      "end_frame_prompt": "one clean path ending at one stop",
+      "video_prompt": "A clean path and endpoint draw themselves stroke by stroke.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A00.mp3",
+      "actual_duration_s": 2.77
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 1,
+      "render": "manim",
+      "narration_text": "A marble rolls along one track to one stop.",
+      "tts_normalized_text": "A marble rolls along one track to one stop.",
+      "accumulated_scene_state": [
+        "single clean path"
+      ],
+      "new_visual_element": "marble on one track",
+      "start_frame_prompt": "single clean path",
+      "end_frame_prompt": "single clean path with marble and endpoint",
+      "video_prompt": "A marble and endpoint appear on one track, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 2.87
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "A ripple gives us the opposite kind of story.",
+      "tts_normalized_text": "A ripple gives us the opposite kind of story.",
+      "accumulated_scene_state": [
+        "ripple center"
+      ],
+      "new_visual_element": "first ripple ring",
+      "start_frame_prompt": "white background with ripple center",
+      "end_frame_prompt": "ripple center with first ring",
+      "video_prompt": "A ripple ring draws itself from the center.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 2.46
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 2,
+      "render": "manim",
+      "narration_text": "It spreads outward, touching many places together.",
+      "tts_normalized_text": "It spreads outward, touching many places together.",
+      "accumulated_scene_state": [
+        "ripple center",
+        "first ripple ring"
+      ],
+      "new_visual_element": "many ripple rings",
+      "start_frame_prompt": "one ripple ring",
+      "end_frame_prompt": "many ripple rings touching many points",
+      "video_prompt": "More ripple rings draw outward, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 3.16
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Quantum objects mix those two stories in one event.",
+      "tts_normalized_text": "Quantum objects mix those two stories in one event.",
+      "accumulated_scene_state": [
+        "one track label",
+        "spread label"
+      ],
+      "new_visual_element": "electron between the two labels",
+      "start_frame_prompt": "two labels on white background",
+      "end_frame_prompt": "electron between one-track and spread labels",
+      "video_prompt": "Electron appears between track and spread labels, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.11
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Before detection, an electron is described by a spreading wave.",
+      "tts_normalized_text": "Before detection, an electron is described by a spreading wave.",
+      "accumulated_scene_state": [
+        "electron"
+      ],
+      "new_visual_element": "spreading probability wave",
+      "start_frame_prompt": "electron dot",
+      "end_frame_prompt": "electron dot with spreading probability wave",
+      "video_prompt": "Probability wave expands from the electron dot.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 3.79
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "That wave is not smeared electron-stuff across the room.",
+      "tts_normalized_text": "That wave is not smeared electron stuff across the room.",
+      "accumulated_scene_state": [
+        "electron",
+        "probability wave"
+      ],
+      "new_visual_element": "not-stuff warning label",
+      "start_frame_prompt": "electron probability wave",
+      "end_frame_prompt": "electron probability wave with not-stuff warning",
+      "video_prompt": "A red warning label appears: not smeared stuff.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 3.16
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "It is a map of where one arrival may happen.",
+      "tts_normalized_text": "It is a map of where one arrival may happen.",
+      "accumulated_scene_state": [
+        "probability wave"
+      ],
+      "new_visual_element": "arrival map label",
+      "start_frame_prompt": "probability wave with warning",
+      "end_frame_prompt": "probability wave with arrival map label",
+      "video_prompt": "A map label points to the wave, no hand visible.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 2.51
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "When the electron is detected, the map gives one dot.",
+      "tts_normalized_text": "When the electron is detected, the map gives one dot.",
+      "accumulated_scene_state": [
+        "detector wall"
+      ],
+      "new_visual_element": "one detection dot",
+      "start_frame_prompt": "detector wall",
+      "end_frame_prompt": "detector wall with one dot",
+      "video_prompt": "One detection dot appears on a screen.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 3.29
+    },
+    {
+      "beat_id": "A09",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Repeat the experiment, and the dots make the map visible.",
+      "tts_normalized_text": "Repeat the experiment, and the dots make the map visible.",
+      "accumulated_scene_state": [
+        "detector wall",
+        "one dot"
+      ],
+      "new_visual_element": "many detection dots",
+      "start_frame_prompt": "detector wall with one dot",
+      "end_frame_prompt": "detector wall with many dots",
+      "video_prompt": "Many detection dots appear and reveal the pattern.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A09.mp3",
+      "actual_duration_s": 3.24
+    },
+    {
+      "beat_id": "A10",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "The wave predicts the pattern, not a tiny hidden route.",
+      "tts_normalized_text": "The wave predicts the pattern, not a tiny hidden route.",
+      "accumulated_scene_state": [
+        "screen dots"
+      ],
+      "new_visual_element": "probability curve",
+      "start_frame_prompt": "screen dots",
+      "end_frame_prompt": "screen dots with probability curve",
+      "video_prompt": "Probability curve draws beside the detection pattern.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A10.mp3",
+      "actual_duration_s": 3.19
+    },
+    {
+      "beat_id": "A11",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "The particle is the single click that finally appears.",
+      "tts_normalized_text": "The particle is the single click that finally appears.",
+      "accumulated_scene_state": [
+        "screen dots",
+        "probability curve"
+      ],
+      "new_visual_element": "single click label",
+      "start_frame_prompt": "pattern with probability curve",
+      "end_frame_prompt": "pattern with single click label",
+      "video_prompt": "A label points to one dot as the final click.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A11.mp3",
+      "actual_duration_s": 2.95
+    },
+    {
+      "beat_id": "A12",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "So duality means wave-shaped possibilities and particle-shaped results.",
+      "tts_normalized_text": "So duality means wave shaped possibilities and particle shaped results.",
+      "accumulated_scene_state": [
+        "wave-shaped possibilities",
+        "particle-shaped results"
+      ],
+      "new_visual_element": "duality summary",
+      "start_frame_prompt": "two-column summary",
+      "end_frame_prompt": "two-column summary with duality label",
+      "video_prompt": "Summary labels draw: wave-shaped possibilities plus particle-shaped results.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A12.mp3",
+      "actual_duration_s": 4.26
+    },
+    {
+      "beat_id": "A13",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "doodle",
+      "narration_text": "Imagine a whisper spreading everywhere, then landing in one ear.",
+      "tts_normalized_text": "Imagine a whisper spreading everywhere, then landing in one ear.",
+      "accumulated_scene_state": [
+        "whisper gag"
+      ],
+      "new_visual_element": "one ear receives whisper",
+      "start_frame_prompt": "whisper rings around several ears",
+      "end_frame_prompt": "whisper lands in one ear only",
+      "video_prompt": "Whisper rings spread, then one ear receives the sound.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "doodle_prompt": "a whisper spreading as sound rings toward several simple ears, only one ear receives it, flat vector illustration. Thick black lines, solid colors, bold lines, simple details. White background. Napkin sketch style, simple doodle, black and white. --ar 16:9 --profile 2hu1pm2 j3xc8st i7dpdo9 8qzx41e 196d1wf",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A13.mp3",
+      "actual_duration_s": 3.53
+    },
+    {
+      "beat_id": "A14",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "doodle",
+      "narration_text": "Imagine a pond ripple choosing one leaf and missing every other leaf.",
+      "tts_normalized_text": "Imagine a pond ripple choosing one leaf and missing every other leaf.",
+      "accumulated_scene_state": [
+        "pond ripple gag"
+      ],
+      "new_visual_element": "one leaf receives ripple",
+      "start_frame_prompt": "pond ripple and several leaves",
+      "end_frame_prompt": "pond ripple touches one leaf only",
+      "video_prompt": "A ripple reaches one leaf while every other leaf stays untouched.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "doodle_prompt": "a pond ripple choosing exactly one floating leaf while other leaves stay untouched, flat vector illustration. Thick black lines, solid colors, bold lines, simple details. White background. Napkin sketch style, simple doodle, black and white. --ar 16:9 --profile 2hu1pm2 j3xc8st i7dpdo9 8qzx41e 196d1wf",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A14.mp3",
+      "actual_duration_s": 4.21
+    },
+    {
+      "beat_id": "A15",
+      "beat_type": "HOLD",
+      "scene_index": 7,
+      "render": "manim",
+      "narration_text": "Quantum mechanics says electrons really behave that strangely.",
+      "tts_normalized_text": "Quantum mechanics says electrons really behave that strangely.",
+      "accumulated_scene_state": [
+        "duality summary"
+      ],
+      "new_visual_element": "strange-but-real label",
+      "start_frame_prompt": "duality summary",
+      "end_frame_prompt": "duality summary with strange-but-real label",
+      "video_prompt": "Final label appears under the duality summary.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A15.mp3",
+      "actual_duration_s": 3.53
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 8,
+      "render": "none",
+      "narration_text": "Thanks for watching What Wave-Particle Duality Means — find more Bear's Notes at youtube.com/@NikBearBrown",
+      "tts_normalized_text": "Thanks for watching What Wave-Particle Duality Means, find more Bear's Notes at youtube.com/@NikBearBrown",
+      "accumulated_scene_state": [
+        "final title"
+      ],
+      "new_visual_element": "outro title",
+      "start_frame_prompt": "final scene",
+      "end_frame_prompt": "final scene with title in top margin",
+      "video_prompt": "Outro title appears in upper safe margin.",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, shadow, paper texture, photorealistic, 3D render, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 8.2
+    }
+  ]
+}

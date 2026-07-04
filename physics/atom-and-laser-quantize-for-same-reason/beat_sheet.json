@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "slug": "atom-and-laser-quantize-for-same-reason",
+    "title": "Why an Atom and a Laser Cavity Quantize for the Same Reason",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/04-the-schrodinger-equation.md (Candidate 11)",
+    "aspect_ratio": "16:9",
+    "render_orientations": ["16:9", "9:16"],
+    "deep_slug": "atom-and-laser-quantize-worked",
+    "deep_teaser_tex": "\\frac{n\\lambda}{2} = L",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#standingwaves",
+      "#quantization",
+      "#energylevels",
+      "#laser",
+      "#interference",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "a wave between two walls — mismatched ones cancelling on reflection, fitted ones building a standing wave",
+    "color_notes": "Surviving / fitted waves = accent Warm Slate #5A5653. The mismatched wave's non-zero ends + the 'cancels' emphasis = red #C0392B. Walls, baseline, ladder lines, labels = ink #1a1a1a.",
+    "total_estimated_duration_seconds": 58.27
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy an Atom and a Laser Cavity Quantize for the Same Reason",
+      "tts_normalized_text": "Bear's Notes\n\nWhy an Atom and a Laser Cavity Quantize for the Same Reason",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 5.46,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "A laser emits only certain exact colors, and an atom holds only certain exact energies.",
+      "tts_normalized_text": "A laser emits only certain exact colors, and an atom holds only certain exact energies.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person holding a laser pointer beside a glowing atom",
+      "start_frame_prompt": "[DOODLE OBJECT = a person holding a laser pointer in one view and a glowing atom in the other]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person looking between a laser pointer and a glowing atom]",
+      "video_animation_prompt": "the person, a laser pointer, and a glowing atom draw in; the person looks between them; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 5.62,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "It turns out those two facts are really one and the same.",
+      "tts_normalized_text": "It turns out those two facts are really one and the same.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person drawing an equals sign between the laser and the atom",
+      "start_frame_prompt": "[DOODLE OBJECT = a laser pointer and a glowing atom with a big equals sign between them]",
+      "end_frame_prompt": "[DOODLE OBJECT = a laser pointer equals a glowing atom, the person nodding]",
+      "video_animation_prompt": "an equals sign draws in between the laser pointer and the glowing atom; the person nods; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 2.87,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Trap a wave between two walls.",
+      "tts_normalized_text": "Trap a wave between two walls.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "two walls / mirrors with a gap",
+      "video_animation_prompt": "MANIM: draw two vertical walls (mirrors) with a baseline between them",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 2.12,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Pick a wave at random and it won't reach zero at the walls.",
+      "tts_normalized_text": "Pick a wave at random and it won't reach zero at the walls.",
+      "accumulated_scene_state": [
+        "two walls"
+      ],
+      "new_visual_element": "a mismatched wave with non-zero ends marked in red",
+      "video_animation_prompt": "MANIM: draw a mismatched wave that does not vanish at the walls; mark its non-zero endpoints with red dots",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 3.24,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "On each round trip it lands out of step with itself and cancels to nothing.",
+      "tts_normalized_text": "On each round trip it lands out of step with itself and cancels to nothing.",
+      "accumulated_scene_state": [
+        "mismatched wave"
+      ],
+      "new_visual_element": "the wave and its reflected copy cancel to a flat line",
+      "video_animation_prompt": "MANIM: bring in the reflected copy out of phase; transform both into a flat line; label 'cancels' in red",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 4.21,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Only a wave that vanishes at both walls survives.",
+      "tts_normalized_text": "Only a wave that vanishes at both walls survives.",
+      "accumulated_scene_state": [
+        "two walls"
+      ],
+      "new_visual_element": "a fitted half-wave, zero at both ends (accent)",
+      "video_animation_prompt": "MANIM: draw a fitted standing wave (one hump) that is exactly zero at both walls; mark the zero endpoints in accent",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.47,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Now every round trip lands in step, reinforcing into a stable standing wave.",
+      "tts_normalized_text": "Now every round trip lands in step, reinforcing into a stable standing wave.",
+      "accumulated_scene_state": [
+        "fitted wave"
+      ],
+      "new_visual_element": "the fitted wave pulses and locks in as a steady standing wave",
+      "video_animation_prompt": "MANIM: pulse the fitted wave's amplitude to show reinforcement, then settle it as a steady standing wave; label 'reinforces'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 5.04,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Only a discrete set of waves fits — one hump, two, three, and so on.",
+      "tts_normalized_text": "Only a discrete set of waves fits — one hump, two, three, and so on.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a ladder of fitting modes n=1,2,3 stacked between the walls",
+      "video_animation_prompt": "MANIM: stack the first three fitting modes (n=1,2,3) on dashed level lines between the walls",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 4.62,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "In an atom those surviving modes are the allowed energies; in a laser cavity they're the allowed colors.",
+      "tts_normalized_text": "In an atom those surviving modes are the allowed energies; in a laser cavity they're the allowed colors.",
+      "accumulated_scene_state": [
+        "mode ladder"
+      ],
+      "new_visual_element": "the same ladder tagged 'ATOM: energies' and 'LASER: colors'",
+      "video_animation_prompt": "MANIM: tag the ladder on the left 'ATOM: energies' and on the right 'LASER: colors'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 6.03,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "narration_text": "Same fact, twice: only the waves that fit are allowed to exist.",
+      "tts_normalized_text": "Same fact, twice: only the waves that fit are allowed to exist.",
+      "accumulated_scene_state": [
+        "tagged ladder"
+      ],
+      "new_visual_element": "red label 'only what fits survives'",
+      "video_animation_prompt": "MANIM: settle the ladder and write a red label 'only what fits survives'; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 4.96,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 6,
+      "render": "none",
+      "narration_text": "Thanks for watching Why an Atom and a Laser Cavity Quantize for the Same Reason — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why an Atom and a Laser Cavity Quantize for the Same Reason. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, final ladder kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 10.63,
+      "approval_status": "pending"
+    }
+  ]
+}

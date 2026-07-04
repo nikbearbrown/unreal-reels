@@ -1,0 +1,364 @@
+{
+  "metadata": {
+    "slug": "photoelectric-effect-worked",
+    "title": "The Photoelectric Effect: Why Colour Beats Brightness (Worked Example)",
+    "series": "Bears Notes",
+    "tier": "deep",
+    "depth_of": "dim-blue-beats-blinding-red",
+    "aspect_ratio": "16:9",
+    "render_orientations": [
+      "16:9"
+    ],
+    "source": "quantum-mechanics-vol1/chapters/01-why-classical-physics-failed.md (deep expand of Candidate 03)",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#photoelectriceffect",
+      "#workfunction",
+      "#photon",
+      "#planck",
+      "#einstein",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "light packets hitting a metal plate; the photon energy E=hf compared against the work function phi, worked with real numbers for sodium (blue ejects, red never does)",
+    "color_notes": "Plate/electrons/axes = ink #1a1a1a. Blue packet/eject = blue #2A6FB0. Red packet/the 'no-ejection' verdict + boxed answer = red #C0392B. The formula highlight = accent #5A5653. Math is MathTex (LaTeX); prose/labels are Shadows Into Light.",
+    "math_rendering": "All formulas render as Manim MathTex (LaTeX, MacTeX). hc = 1240 eV*nm.",
+    "total_estimated_duration_seconds": 103.49
+  },
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Bear's Notes\n\nThe Photoelectric Effect: Why Colour Beats Brightness",
+      "tts_normalized_text": "Bear's Notes.\n\nThe Photoelectric Effect: Why Colour Beats Brightness.",
+      "new_visual_element": "title card: brand + a plate-and-photon hero motif + title",
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 5.09
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "A blinding red lamp frees no electrons — a faint blue one frees them instantly.",
+      "tts_normalized_text": "A blinding red lamp frees no electrons — a faint blue one frees them instantly.",
+      "new_visual_element": "narration card + red plate (nothing) vs blue plate (electron flies)",
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.68
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "The trick is that light's energy arrives in fixed, colour-sized packets.",
+      "tts_normalized_text": "The trick is that light's energy arrives in fixed, colour-sized packets.",
+      "new_visual_element": "narration card + small red packet, big blue packet",
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.13
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Light comes in packets, and each packet carries an energy set by its colour.",
+      "tts_normalized_text": "Light comes in packets, and each packet carries an energy set by its colour.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "metal plate + packets falling",
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.13
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Red packets are weak; blue packets are strong.",
+      "tts_normalized_text": "Red packets are weak; blue packets are strong.",
+      "accumulated_scene_state": [
+        "plate"
+      ],
+      "new_visual_element": "short red energy bar, tall blue bar",
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 2.93
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Freeing an electron needs one packet that clears the metal's escape energy.",
+      "tts_normalized_text": "Freeing an electron needs one packet that clears the metal's escape energy.",
+      "accumulated_scene_state": [
+        "plate",
+        "bars"
+      ],
+      "new_visual_element": "escape-energy threshold line; blue clears it, red doesn't",
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 4.08
+    },
+    {
+      "beat_id": "M01",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Let's turn that into a formula.",
+      "tts_normalized_text": "Let's turn that into a formula.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "plate on the left, space for math on the right",
+      "audio_file": "mp3/beat-M01.mp3",
+      "actual_duration_s": 1.75
+    },
+    {
+      "beat_id": "M02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "E = hf = \\frac{hc}{\\lambda}",
+      "narration_text": "A packet's energy is E equals h f — or h c over lambda.",
+      "tts_normalized_text": "A packet's energy is E equals h f — or h c over lambda.",
+      "accumulated_scene_state": [
+        "plate"
+      ],
+      "new_visual_element": "formula line 1",
+      "audio_file": "mp3/beat-M02.mp3",
+      "actual_duration_s": 4.18
+    },
+    {
+      "beat_id": "M03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "\\phi",
+      "narration_text": "Freeing an electron costs a fixed amount — the work function, phi.",
+      "tts_normalized_text": "Freeing an electron costs a fixed amount — the work function, phi.",
+      "accumulated_scene_state": [
+        "E=hf"
+      ],
+      "new_visual_element": "phi labelled as the escape cost",
+      "audio_file": "mp3/beat-M03.mp3",
+      "actual_duration_s": 4.18
+    },
+    {
+      "beat_id": "M04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "K_{\\max} = hf - \\phi",
+      "narration_text": "Whatever's left over becomes the electron's kinetic energy.",
+      "tts_normalized_text": "Whatever's left over becomes the electron's kinetic energy.",
+      "accumulated_scene_state": [
+        "E=hf",
+        "phi"
+      ],
+      "new_visual_element": "boxed result K_max = hf - phi",
+      "audio_file": "mp3/beat-M04.mp3",
+      "actual_duration_s": 3.19
+    },
+    {
+      "beat_id": "M05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "math_tex": "f_0 = \\frac{\\phi}{h}",
+      "narration_text": "Below a threshold frequency, f-naught equals phi over h, nothing comes off at all.",
+      "tts_normalized_text": "Below a threshold frequency, f naught equals phi over h, nothing comes off at all.",
+      "accumulated_scene_state": [
+        "result"
+      ],
+      "new_visual_element": "threshold f0",
+      "audio_file": "mp3/beat-M05.mp3",
+      "actual_duration_s": 5.09
+    },
+    {
+      "beat_id": "W01",
+      "beat_type": "CUT",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "\\phi_{\\text{Na}} \\approx 2.28\\ \\text{eV}",
+      "narration_text": "Put numbers on it: sodium's work function is about two point two eight electron-volts.",
+      "tts_normalized_text": "Put numbers on it: sodium's work function is about two point two eight electron volts.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "givens: sodium, phi = 2.28 eV; boxed formula at top",
+      "audio_file": "mp3/beat-W01.mp3",
+      "actual_duration_s": 4.78
+    },
+    {
+      "beat_id": "W02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "E_{\\text{blue}} = \\frac{hc}{450\\,\\text{nm}} \\approx 2.76\\ \\text{eV}",
+      "narration_text": "A blue photon at 450 nanometres carries about two point seven six electron-volts.",
+      "tts_normalized_text": "A blue photon at 450 nanometres carries about two point seven six electron volts.",
+      "accumulated_scene_state": [
+        "phi"
+      ],
+      "new_visual_element": "blue photon energy computed",
+      "audio_file": "mp3/beat-W02.mp3",
+      "actual_duration_s": 5.04
+    },
+    {
+      "beat_id": "W03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "K = 2.76 - 2.28 \\approx 0.48\\ \\text{eV}",
+      "narration_text": "Subtract the work function — about zero point four eight electron-volts of kinetic energy, and the electron flies.",
+      "tts_normalized_text": "Subtract the work function — about zero point four eight electron volts of kinetic energy, and the electron flies.",
+      "accumulated_scene_state": [
+        "phi",
+        "E_blue"
+      ],
+      "new_visual_element": "blue: electron ejected",
+      "audio_file": "mp3/beat-W03.mp3",
+      "actual_duration_s": 6.58
+    },
+    {
+      "beat_id": "W04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "E_{\\text{red}} = \\frac{hc}{700\\,\\text{nm}} \\approx 1.77\\ \\text{eV}",
+      "narration_text": "A red photon at 700 nanometres carries only about one point seven seven electron-volts.",
+      "tts_normalized_text": "A red photon at 700 nanometres carries only about one point seven seven electron volts.",
+      "accumulated_scene_state": [
+        "E_blue"
+      ],
+      "new_visual_element": "red photon energy computed",
+      "audio_file": "mp3/beat-W04.mp3",
+      "actual_duration_s": 5.43
+    },
+    {
+      "beat_id": "W05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "1.77 < 2.28",
+      "narration_text": "That's below two point two eight — so no electron escapes, no matter how bright.",
+      "tts_normalized_text": "That's below two point two eight — so no electron escapes, no matter how bright.",
+      "accumulated_scene_state": [
+        "E_red"
+      ],
+      "new_visual_element": "red: no ejection (red X)",
+      "audio_file": "mp3/beat-W05.mp3",
+      "actual_duration_s": 4.55
+    },
+    {
+      "beat_id": "W06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 5,
+      "render": "manim",
+      "math_tex": "\\lambda_0 = \\frac{hc}{\\phi} \\approx 544\\ \\text{nm}",
+      "narration_text": "The cutoff sits at lambda-naught equals h c over phi — about five hundred forty-four nanometres.",
+      "tts_normalized_text": "The cutoff sits at lambda naught equals h c over phi — about five hundred forty four nanometres.",
+      "accumulated_scene_state": [
+        "verdicts"
+      ],
+      "new_visual_element": "threshold wavelength on a spectrum strip",
+      "audio_file": "mp3/beat-W06.mp3",
+      "actual_duration_s": 6.11
+    },
+    {
+      "beat_id": "P01",
+      "beat_type": "CUT",
+      "scene_index": 6,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Turning up the brightness only sends more packets — not more energy in each one.",
+      "tts_normalized_text": "Turning up the brightness only sends more packets — not more energy in each one.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "many red packets, still no ejection",
+      "audio_file": "mp3/beat-P01.mp3",
+      "actual_duration_s": 4.21
+    },
+    {
+      "beat_id": "P02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "So a blinding red lamp stays useless, while a dim blue one works on the first hit.",
+      "tts_normalized_text": "So a blinding red lamp stays useless, while a dim blue one works on the first hit.",
+      "accumulated_scene_state": [
+        "red crowd"
+      ],
+      "new_visual_element": "one blue frees an electron",
+      "audio_file": "mp3/beat-P02.mp3",
+      "actual_duration_s": 4.68
+    },
+    {
+      "beat_id": "P03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 6,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Explaining this is what forced light to be quantized — Einstein's 1905 photon.",
+      "tts_normalized_text": "Explaining this is what forced light to be quantized — Einstein's 1905 photon.",
+      "accumulated_scene_state": [
+        "contrast"
+      ],
+      "new_visual_element": "'photon' label on the packet",
+      "audio_file": "mp3/beat-P03.mp3",
+      "actual_duration_s": 4.96
+    },
+    {
+      "beat_id": "R01",
+      "beat_type": "CUT",
+      "scene_index": 7,
+      "render": "manim",
+      "math_tex": "K_{\\max} = hf - \\phi",
+      "narration_text": "The whole story is one line — kinetic energy equals h f minus phi.",
+      "tts_normalized_text": "The whole story is one line — kinetic energy equals h f minus phi.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the boxed equation, centered",
+      "audio_file": "mp3/beat-R01.mp3",
+      "actual_duration_s": 4.44
+    },
+    {
+      "beat_id": "R02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 7,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Colour sets the energy per hit; brightness only sets how many hits.",
+      "tts_normalized_text": "Colour sets the energy per hit; brightness only sets how many hits.",
+      "accumulated_scene_state": [
+        "equation"
+      ],
+      "new_visual_element": "recap line",
+      "audio_file": "mp3/beat-R02.mp3",
+      "actual_duration_s": 4.08
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 8,
+      "render": "manim",
+      "math_tex": null,
+      "narration_text": "Thanks for watching — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching — find more Bear's Notes at youtube dot com slash at Nik Bear Brown.",
+      "new_visual_element": "cleared outro card: thanks + title + channel",
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 5.2
+    }
+  ]
+}

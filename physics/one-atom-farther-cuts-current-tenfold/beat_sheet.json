@@ -1,0 +1,312 @@
+{
+  "metadata": {
+    "slug": "one-atom-farther-cuts-current-tenfold",
+    "title": "Why One Extra Atom of Distance Cuts a Tunneling Current Tenfold",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/06-finite-wells-steps-and-barriers.md (Candidate 14)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#STM",
+      "#quantumtunneling",
+      "#scanningtunnelingmicroscope",
+      "#exponentialdecay",
+      "#nanotechnology",
+      "#quantumphysics",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#BearsNotes"
+    ],
+    "thing": "a microscope tip tracing a bumpy surface, the tunneling current swinging tenfold as the gap changes by one atom",
+    "color_notes": "The tunnel current / wave in the gap = accent Warm Slate #5A5653. The 'tenfold' multiplier emphasis = red #C0392B. Tip, surface, gauge, brackets = ink #1a1a1a.",
+    "total_estimated_duration_seconds": 59.23
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy One Extra Atom of Distance Cuts a Tunneling Current Tenfold",
+      "tts_normalized_text": "Bear's Notes\n\nWhy One Extra Atom of Distance Cuts a Tunneling Current Tenfold",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 5.28,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "A scanning microscope can feel a single atom's bump on a surface.",
+      "tts_normalized_text": "A scanning microscope can feel a single atom's bump on a surface.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person amazed at a microscope sensing one atom",
+      "start_frame_prompt": "[DOODLE OBJECT = a person looking at a sharp microscope tip hovering over a single bump on a surface]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person amazed, pointing at the single atom under the tip]",
+      "video_animation_prompt": "the person, a sharp microscope tip, and a surface with one bump draw in; the person is amazed; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 3.71,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "The trick is that moving the tip one atom farther away nearly tenths the current.",
+      "tts_normalized_text": "The trick is that moving the tip one atom farther away nearly tenths the current.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the tip lifted slightly, a current needle dropping hard",
+      "start_frame_prompt": "[DOODLE OBJECT = a microscope tip lifted a little, with a current meter needle dropping]",
+      "end_frame_prompt": "[DOODLE OBJECT = the tip higher, the meter needle collapsed to near zero]",
+      "video_animation_prompt": "the tip lifts a small amount and a current meter needle swings down hard; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.62,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A sharp tip floats a tiny gap above a bumpy row of atoms.",
+      "tts_normalized_text": "A sharp tip floats a tiny gap above a bumpy row of atoms.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a microscope tip above a bumpy atomic surface",
+      "video_animation_prompt": "MANIM: draw a bumpy atomic surface and a sharp tip hovering a small gap above it",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 3.76,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Electrons tunnel across the gap, giving a small current.",
+      "tts_normalized_text": "Electrons tunnel across the gap, giving a small current.",
+      "accumulated_scene_state": [
+        "tip",
+        "surface"
+      ],
+      "new_visual_element": "a glowing tunnel link in the gap + a current gauge",
+      "video_animation_prompt": "MANIM: draw a glowing tunnel link from tip to surface and a current gauge with a needle on the right",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 3.47,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "That current dies exponentially with the gap — each equal step of distance divides it by ten.",
+      "tts_normalized_text": "That current dies exponentially with the gap — each equal step of distance divides it by ten.",
+      "accumulated_scene_state": [
+        "tunnel link",
+        "gauge"
+      ],
+      "new_visual_element": "a small ladder: gap d, 2d, 3d -> current 1, 1/10, 1/100",
+      "video_animation_prompt": "MANIM: show three equal distance steps with currents 1, 1/10, 1/100 — equal steps multiply down",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 6.27,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Now drag the tip across the surface at a fixed height.",
+      "tts_normalized_text": "Now drag the tip across the surface at a fixed height.",
+      "accumulated_scene_state": [
+        "tip",
+        "surface",
+        "gauge"
+      ],
+      "new_visual_element": "the tip begins tracing left to right",
+      "video_animation_prompt": "MANIM: trace the tip left-to-right across the bumps at constant height; the gap shrinks over atoms and grows over valleys",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 3.16,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Over each atom the gap narrows and the current leaps; between them it collapses.",
+      "tts_normalized_text": "Over each atom the gap narrows and the current leaps; between them it collapses.",
+      "accumulated_scene_state": [
+        "tracing tip",
+        "swinging needle"
+      ],
+      "new_visual_element": "the needle swings wildly as the tip rides the bumps",
+      "video_animation_prompt": "MANIM: continue tracing; the gauge needle swings wildly between high and low as the tip rides atom to valley",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 4.62,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A change in height too small to see becomes a tenfold change in the signal.",
+      "tts_normalized_text": "A change in height too small to see becomes a tenfold change in the signal.",
+      "accumulated_scene_state": [
+        "trace"
+      ],
+      "new_visual_element": "tiny height bracket vs a big current swing",
+      "video_animation_prompt": "MANIM: park over a bump; bracket the tiny atom-height change and contrast with the large current swing on the gauge",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 4.91,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "That brutal sensitivity is exactly what lets the microscope see single atoms.",
+      "tts_normalized_text": "That brutal sensitivity is exactly what lets the microscope see single atoms.",
+      "accumulated_scene_state": [
+        "trace"
+      ],
+      "new_visual_element": "the traced current profile lines up with the atom positions",
+      "video_animation_prompt": "MANIM: show the current peaks lining up over the atom positions — the read-out maps the atoms",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 4.78,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "One atom closer, ten times the current — that's how we photograph atoms.",
+      "tts_normalized_text": "One atom closer, ten times the current — that's how we photograph atoms.",
+      "accumulated_scene_state": [
+        "full picture"
+      ],
+      "new_visual_element": "red label 'one atom closer, ten times the current'",
+      "video_animation_prompt": "MANIM: settle the picture and write a red label 'one atom closer, ten times the current'; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 4,
+      "render": "none",
+      "narration_text": "Thanks for watching Why One Extra Atom of Distance Cuts a Tunneling Current Tenfold — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why One Extra Atom of Distance Cuts a Tunneling Current Tenfold. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, final picture kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 10.34,
+      "approval_status": "pending"
+    }
+  ]
+}

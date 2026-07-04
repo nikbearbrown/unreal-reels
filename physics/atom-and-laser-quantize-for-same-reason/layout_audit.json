@@ -1,0 +1,12 @@
+{
+  "scene": "atom_and_laser_quantize_for_same_reason",
+  "snapshots": 35,
+  "errors": 0,
+  "warnings": 0,
+  "safe_area": [
+    6.3,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": []
+}

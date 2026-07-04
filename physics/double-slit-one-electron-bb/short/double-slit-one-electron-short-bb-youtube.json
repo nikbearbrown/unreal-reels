@@ -1,0 +1,89 @@
+{
+  "poster": {
+    "platform": "youtube",
+    "channel": "youtube.com/@NikBearBrown",
+    "series": "Brown Blue",
+    "source_chapter": "quantum-mechanics-vol1/chapters/02-matter-waves.md",
+    "playlist": "Brown Blue — Quantum Mechanics",
+    "upload_order": [
+      "long",
+      "short"
+    ],
+    "notes": "Consumed by a YouTube Data API v3 autoposter. Upload `long` first, then `short`. publishAt null = go live immediately; set an ISO8601 UTC time to schedule. Requires OAuth on the channel."
+  },
+  "long": {
+    "kind": "long",
+    "file": "mp4/double-slit-one-electron-short-bb.mp4",
+    "caption_file": "mp4/double-slit-one-electron-short-bb-caption.mp4",
+    "title": "One Electron Interferes With Itself — in about a minute | Bear's Notes",
+    "description": "Fire electrons at two slits one at a time — each arrives as a single dot. Ten in, the dots look random; common sense says two heaps, one behind each slit. Seventy thousand in: stripes — bright and dark bands no two-heap picture allows.\n\nA Brown Blue explainer, in the 3Blue1Brown tradition: concrete before abstract, mystery before formula.\n\nChapters:\n0:00 Intro\n0:19 Waves vs particles\n0:32 Interfering with itself\n\nThe single-electron double slit in about a minute: dots land one at a time, random at first — then 70,000 dots later, interference stripes. Each electron's wave goes through both slits and interferes with itself; the dot histogram is |ψ|²; and watching which slit kills the fringes. Full explainer (the buildup, de Broglie's λ = h/p, the forbidden bands) on the channel.\n\nSource: Quantum Mechanics, Vol. 1, Ch. 2 — Matter Waves.\n\nMore Bear's Notes: youtube.com/@NikBearBrown\n\n#quantum #physics #quantummechanics #science #education #doubleslit #deBroglie",
+    "tags": [
+      "Bear's Notes",
+      "quantum mechanics",
+      "physics",
+      "quantum physics",
+      "3Blue1Brown style",
+      "science explainer",
+      "education",
+      "STEM",
+      "double slit experiment",
+      "matter waves",
+      "de Broglie",
+      "wave function",
+      "interference"
+    ],
+    "categoryId": "27",
+    "privacyStatus": "private",
+    "publishAt": null,
+    "madeForKids": false,
+    "defaultLanguage": "en",
+    "captions": [
+      {
+        "language": "en",
+        "name": "English",
+        "file": "double-slit-one-electron-short-bb.srt"
+      }
+    ],
+    "thumbnail": null,
+    "isShort": false
+  },
+  "short": {
+    "kind": "short",
+    "file": "mp4/double-slit-one-electron-short-bb-short.mp4",
+    "caption_file": "mp4/double-slit-one-electron-short-bb-short-caption.mp4",
+    "title": "One Electron Interferes With Itself #Shorts",
+    "description": "Fire electrons at two slits one at a time — each arrives as a single dot. The single-electron double slit, in about a minute. Full explainer on the channel.\n\nyoutube.com/@NikBearBrown\n\n#Shorts #quantum #physics #science",
+    "tags": [
+      "Bear's Notes",
+      "quantum mechanics",
+      "physics",
+      "quantum physics",
+      "3Blue1Brown style",
+      "science explainer",
+      "education",
+      "STEM",
+      "double slit experiment",
+      "matter waves",
+      "de Broglie",
+      "wave function",
+      "interference",
+      "Shorts"
+    ],
+    "categoryId": "27",
+    "privacyStatus": "private",
+    "publishAt": null,
+    "madeForKids": false,
+    "defaultLanguage": "en",
+    "captions": [
+      {
+        "language": "en",
+        "name": "English",
+        "file": "double-slit-one-electron-short-bb.srt"
+      }
+    ],
+    "thumbnail": null,
+    "isShort": true
+  },
+  "duration_seconds": 61.9,
+  "slug": "double-slit-one-electron-short-bb"
+}

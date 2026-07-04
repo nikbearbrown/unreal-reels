@@ -1,0 +1,26 @@
+{
+  "scene": "wave_packet_crests_half_speed",
+  "snapshots": 28,
+  "errors": 0,
+  "warnings": 1,
+  "safe_area": [
+    6.3,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": [
+    {
+      "type": "OFF_SAFE_AREA",
+      "severity": "WARN",
+      "text": "theparticleishere",
+      "t": 50.27,
+      "snap": 20,
+      "box": [
+        4.32,
+        2.2,
+        6.94,
+        2.6
+      ]
+    }
+  ]
+}

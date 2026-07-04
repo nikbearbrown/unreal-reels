@@ -1,0 +1,318 @@
+{
+  "metadata": {
+    "slug": "why-particle-in-box-cannot-sit-still",
+    "title": "Why a Particle in a Box Cannot Sit Still",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/05-the-infinite-square-well.md (Candidate 04)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#quantumphysics",
+      "#particleinabox",
+      "#zeropointenergy",
+      "#wavefunction",
+      "#infinitewell",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#STEM",
+      "#BearsNotes"
+    ],
+    "thing": "a half-wave pinned between two walls, never able to flatten",
+    "color_notes": "Wavefunction arch = accent Warm Slate #5A5653. The forbidden flat/still attempt = red #C0392B. Walls, floor, labels = ink #1a1a1a.",
+    "total_estimated_duration_seconds": 59.73
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy a Particle in a Box Cannot Sit Still",
+      "tts_normalized_text": "Bear's Notes\n\nWhy a Particle in a Box Cannot Sit Still",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 3.89,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "Drop a marble into a box and it settles on the floor, perfectly still.",
+      "tts_normalized_text": "Drop a marble into a box and it settles on the floor, perfectly still.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person dropping a marble into a box; it rests on the floor",
+      "start_frame_prompt": "[DOODLE OBJECT = a person dropping a marble into an open box]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person looking into the box, a marble resting still on the floor of the box]",
+      "video_animation_prompt": "the person and box draw themselves in, a marble drops and settles still on the floor; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 4.55,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "Try the same with a quantum particle, and it refuses to ever hold still.",
+      "tts_normalized_text": "Try the same with a quantum particle, and it refuses to ever hold still.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person puzzled as the quantum particle keeps jittering in the box",
+      "start_frame_prompt": "[DOODLE OBJECT = a person looking into a box at a tiny jittering particle]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person puzzled, the tiny particle blurred with motion lines inside the box]",
+      "video_animation_prompt": "the person and box draw in, a tiny particle jitters with motion lines and never settles, the person looks puzzled; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.08,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Trap the particle between two hard walls; its wave must fall to zero at each.",
+      "tts_normalized_text": "Trap the particle between two hard walls; its wave must fall to zero at each.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "two vertical walls with a floor; markers showing the wave must be zero at both walls",
+      "video_animation_prompt": "MANIM: draw two vertical walls and a floor line; mark dots at the base of each wall showing the wave is pinned to zero there",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.73,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A perfectly flat, still wave would have to be zero everywhere — so nothing is there.",
+      "tts_normalized_text": "A perfectly flat, still wave would have to be zero everywhere — so nothing is there.",
+      "accumulated_scene_state": [
+        "two walls",
+        "floor",
+        "zero-at-walls markers"
+      ],
+      "new_visual_element": "a flat red line on the floor that fades to nothing (the still attempt fails)",
+      "video_animation_prompt": "MANIM: draw a flat red line along the floor between the walls, then fade it to nothing — a still wave is just zero, no particle; red #C0392B",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 4.55,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The smallest wave that fits is one gentle arch, peaking in the middle, zero at the walls.",
+      "tts_normalized_text": "The smallest wave that fits is one gentle arch, peaking in the middle, zero at the walls.",
+      "accumulated_scene_state": [
+        "two walls",
+        "floor",
+        "zero-at-walls markers"
+      ],
+      "new_visual_element": "a half-sine arch in accent, touching zero at both walls, peaking at centre",
+      "video_animation_prompt": "MANIM: draw a smooth half-sine arch in Warm Slate from the base of the left wall, peaking at centre, back to the base of the right wall",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 5.38,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "That arch is curved, and a quantum wave's curvature is exactly its kinetic energy.",
+      "tts_normalized_text": "That arch is curved, and a quantum wave's curvature is exactly its kinetic energy.",
+      "accumulated_scene_state": [
+        "two walls",
+        "floor",
+        "half-sine arch"
+      ],
+      "new_visual_element": "the arch's curvature highlighted, linked to an energy mark",
+      "video_animation_prompt": "MANIM: highlight the bending of the arch (a curvature glyph at the peak) and draw a small 'energy' bar/label tying curvature to kinetic energy",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 4.86,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "A flatter wave would carry less energy, but the walls forbid going completely flat.",
+      "tts_normalized_text": "A flatter wave would carry less energy, but the walls forbid going completely flat.",
+      "accumulated_scene_state": [
+        "two walls",
+        "floor",
+        "half-sine arch",
+        "energy mark"
+      ],
+      "new_visual_element": "the arch tries to flatten toward the floor and snaps back (can't reach zero)",
+      "video_animation_prompt": "MANIM: animate the arch lowering toward the floor then springing back to its half-sine shape — it cannot flatten without vanishing",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 4.91,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "So the lowest allowed state still bulges and curves — it still carries motion.",
+      "tts_normalized_text": "So the lowest allowed state still bulges and curves — it still carries motion.",
+      "accumulated_scene_state": [
+        "two walls",
+        "floor",
+        "half-sine arch"
+      ],
+      "new_visual_element": "an energy-level line above the floor (E1 > 0) beside the arch",
+      "video_animation_prompt": "MANIM: draw a horizontal energy level above the floor labelled with a small upward gap from zero, marking the ground state sits above zero energy",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 4.73,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Squeeze the box narrower and the arch sharpens, forcing the energy even higher.",
+      "tts_normalized_text": "Squeeze the box narrower and the arch sharpens, forcing the energy even higher.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the walls move inward, the arch steepens, the energy level rises",
+      "video_animation_prompt": "MANIM: redraw walls + arch; animate the walls moving inward so the arch becomes narrower and taller-curvature, and an energy level marker rising",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 4.83,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "It can never sit still; confinement itself guarantees a restless lowest state.",
+      "tts_normalized_text": "It can never sit still; confinement itself guarantees a restless lowest state.",
+      "accumulated_scene_state": [
+        "narrow walls",
+        "steep arch",
+        "raised energy level"
+      ],
+      "new_visual_element": "the arch with an 'E-one, ground state' label sitting above the floor, never zero",
+      "video_animation_prompt": "MANIM: settle on the arch with a handwritten 'E1 ground state' label on the energy level above the floor; clean close emphasising it never reaches zero",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 4.91,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 5,
+      "render": "none",
+      "narration_text": "Thanks for watching Why a Particle in a Box Cannot Sit Still — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why a Particle in a Box Cannot Sit Still. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, channel URL in bottom margin, scene kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 8.31,
+      "approval_status": "pending"
+    }
+  ]
+}

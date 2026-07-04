@@ -1,0 +1,341 @@
+{
+  "metadata": {
+    "slug": "double-slit-one-electron",
+    "title": "Why One Electron at a Time Still Builds Stripes",
+    "series": "Bears Notes",
+    "source": "quantum-mechanics-vol1/chapters/02-matter-waves.md (Candidate 01)",
+    "aspect_ratio": "16:9",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "accent_color": "#5A5653",
+    "forbidden_color": "#C0392B",
+    "text_font": "Shadows Into Light",
+    "channel_handle": "@NikBearBrown",
+    "channel_url": "youtube.com/@NikBearBrown",
+    "hashtags": [
+      "#quantumphysics",
+      "#doubleslit",
+      "#waveparticle",
+      "#interference",
+      "#electron",
+      "#quantummechanics",
+      "#physics",
+      "#science",
+      "#STEM",
+      "#BearsNotes"
+    ],
+    "thing": "a detector screen that fills with dots into interference fringes",
+    "color_notes": "Interference fringes / wave = accent Warm Slate #5A5653. Dots and apparatus = ink #1a1a1a. Red #C0392B reserved for emphasis if needed.",
+    "total_estimated_duration_seconds": 62.35,
+    "deep_slug": "double-slit-fringes-worked",
+    "deep_teaser_tex": "\\Delta y = \\frac{\\lambda L}{d}"
+  },
+  "doodle_prompt_template": "[DOODLE OBJECT] flat vector art. thick black lines. white background, minimalistic background, in the style of Ale Giorgini, minimalistic, with bold lines and solid colors, and simple details, flat illustration, minimalistic vector illustration with clean lines , white background, minimalistic background, sketch, simple doodle, napkin art, black and white, --ar 2:3 --profile 2hu1pm2 j3xc8st i7dpdo9",
+  "beats": [
+    {
+      "beat_id": "INTRO",
+      "beat_type": "INTRO",
+      "scene_index": 0,
+      "render": "doodle",
+      "narration_text": "Bear's Notes\n\nWhy One Electron at a Time Still Builds Stripes",
+      "tts_normalized_text": "Bear's Notes\n\nWhy One Electron at a Time Still Builds Stripes",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title card + bear marker",
+      "start_frame_prompt": "[DOODLE OBJECT = a small friendly bear, full body, standing, looking up with curiosity]",
+      "end_frame_prompt": "same bear, fully drawn",
+      "video_animation_prompt": "the bear draws itself in stroke by stroke, no hand visible, white background; then the title appears in Shadows Into Light",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-INTRO.mp3",
+      "actual_duration_s": 4.31,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H01",
+      "beat_type": "CUT",
+      "scene_index": 1,
+      "render": "doodle",
+      "narration_text": "Fire electrons at a screen one at a time, so alone that only one is ever in flight.",
+      "tts_normalized_text": "Fire electrons at a screen one at a time, so alone that only one is ever in flight.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a person at an electron gun firing a single electron",
+      "start_frame_prompt": "[DOODLE OBJECT = a person standing beside an electron gun apparatus]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person firing one small electron dot toward the right]",
+      "video_animation_prompt": "the person and gun draw themselves in stroke by stroke, one small electron shoots right; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H01.mp3",
+      "actual_duration_s": 5.04,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "H02",
+      "beat_type": "CUT",
+      "scene_index": 2,
+      "render": "doodle",
+      "narration_text": "Each should land as a single dot — a particle, with nothing to interfere with.",
+      "tts_normalized_text": "Each should land as a single dot — a particle, with nothing to interfere with.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "the person watching a single dot appear on a screen",
+      "start_frame_prompt": "[DOODLE OBJECT = a person looking at a screen with one small dot on it]",
+      "end_frame_prompt": "[DOODLE OBJECT = the person shrugging at the single dot on the screen]",
+      "video_animation_prompt": "the person and screen draw themselves in, one dot appears; person shrugs; no hand visible, white background, napkin art doodle style",
+      "negative_prompt": "hand, fingers, arm, pencil, pen, marker, stylus, writing tool, shadow, paper texture, yellowing, gradient, photorealistic, 3D render, gray shading, color, brush, eraser, artifacts, distortion, camera movement, zoom, pan, wiggle, blur",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-H02.mp3",
+      "actual_duration_s": 4.73,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A01",
+      "beat_type": "CUT",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Set up two narrow slits with a detector screen waiting behind them.",
+      "tts_normalized_text": "Set up two narrow slits with a detector screen waiting behind them.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "a barrier with two slits on the left, a tall detector screen on the right",
+      "video_animation_prompt": "MANIM: draw a vertical barrier with two gaps (slits) at left and a tall detector screen line at right, stroke-on, ink",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A01.mp3",
+      "actual_duration_s": 4.0,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A02",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "The first electrons strike the screen as scattered, random dots.",
+      "tts_normalized_text": "The first electrons strike the screen as scattered, random dots.",
+      "accumulated_scene_state": [
+        "two slits",
+        "detector screen"
+      ],
+      "new_visual_element": "a handful of random dots appearing on the screen",
+      "video_animation_prompt": "MANIM: a few dots pop onto the screen at random heights, one by one; slits/screen locked",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A02.mp3",
+      "actual_duration_s": 4.08,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A03",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "After a hundred, the dots still look like meaningless speckle.",
+      "tts_normalized_text": "After a hundred, the dots still look like meaningless speckle.",
+      "accumulated_scene_state": [
+        "two slits",
+        "detector screen",
+        "a few dots"
+      ],
+      "new_visual_element": "~100 dots, still random speckle",
+      "video_animation_prompt": "MANIM: rapidly add dots to ~100 total, still visually random; counter '100'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A03.mp3",
+      "actual_duration_s": 3.19,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A04",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "But after seventy thousand, the dots stack into sharp bright and dark stripes.",
+      "tts_normalized_text": "But after seventy thousand, the dots stack into sharp bright and dark stripes.",
+      "accumulated_scene_state": [
+        "two slits",
+        "detector screen",
+        "~100 random dots"
+      ],
+      "new_visual_element": "thousands of dots resolve into vertical interference fringes",
+      "video_animation_prompt": "MANIM: flood dots sampled from an interference probability so clear vertical fringe bands emerge; counter '70,000'",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A04.mp3",
+      "actual_duration_s": 4.91,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A05",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 3,
+      "render": "manim",
+      "narration_text": "Those stripes are an interference pattern — the signature of overlapping waves.",
+      "tts_normalized_text": "Those stripes are an interference pattern — the signature of overlapping waves.",
+      "accumulated_scene_state": [
+        "two slits",
+        "detector screen",
+        "fringe bands of dots"
+      ],
+      "new_visual_element": "a Warm-Slate intensity curve traced over the fringe bands",
+      "video_animation_prompt": "MANIM: overlay a smooth accent-color interference intensity curve aligned to the bands; dots locked",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A05.mp3",
+      "actual_duration_s": 4.62,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A06",
+      "beat_type": "CUT",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Each electron's wave passed through both slits at once and interfered with itself.",
+      "tts_normalized_text": "Each electron's wave passed through both slits at once and interfered with itself.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "one incoming wave splitting through both slits into two ripple fronts that overlap",
+      "video_animation_prompt": "MANIM: redraw slits; a single wavefront hits, emerges as two circular ripple sets from the slits, overlapping into an interference field",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A06.mp3",
+      "actual_duration_s": 4.78,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A07",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "That self-interference sets the odds of where its single dot can land.",
+      "tts_normalized_text": "That self-interference sets the odds of where its single dot can land.",
+      "accumulated_scene_state": [
+        "two slits",
+        "two overlapping ripple sets"
+      ],
+      "new_visual_element": "a probability envelope along the screen, peaks where ripples reinforce",
+      "video_animation_prompt": "MANIM: trace an accent probability curve on the screen, peaks aligned to constructive overlap, zeros at cancellation",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A07.mp3",
+      "actual_duration_s": 4.18,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A08",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "Any one dot is random; the crowd of them traces those odds exactly.",
+      "tts_normalized_text": "Any one dot is random; the crowd of them traces those odds exactly.",
+      "accumulated_scene_state": [
+        "two slits",
+        "ripples",
+        "probability envelope"
+      ],
+      "new_visual_element": "dots filling under the envelope until they match its shape",
+      "video_animation_prompt": "MANIM: dots rain onto the screen, densest under the envelope peaks, recreating the fringe pattern beneath the curve",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A08.mp3",
+      "actual_duration_s": 4.49,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "A09",
+      "beat_type": "ACCUMULATE",
+      "scene_index": 4,
+      "render": "manim",
+      "narration_text": "A particle too small to split still travels as a wave of possibility.",
+      "tts_normalized_text": "A particle too small to split still travels as a wave of possibility.",
+      "accumulated_scene_state": [
+        "probability envelope",
+        "fringe of dots"
+      ],
+      "new_visual_element": "a single wave gliding in, collapsing to one dot — wave and dot together",
+      "video_animation_prompt": "MANIM: show one wave travel to the screen and resolve into a single highlighted dot, with the envelope faint behind; clean close",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-A09.mp3",
+      "actual_duration_s": 4.41,
+      "approval_status": "pending"
+    },
+    {
+      "beat_id": "OUTRO",
+      "beat_type": "OUTRO",
+      "scene_index": 5,
+      "render": "none",
+      "narration_text": "Thanks for watching Why One Electron at a Time Still Builds Stripes — find more Bear's Notes at youtube.com/@NikBearBrown.",
+      "tts_normalized_text": "Thanks for watching, Why One Electron at a Time Still Builds Stripes. Find more Bear's Notes at YouTube dot com, slash, at Nik Bear Brown.",
+      "accumulated_scene_state": [],
+      "new_visual_element": "title in top margin, channel URL in bottom margin, plot kept",
+      "tts_voice_settings": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.8,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "speed": 0.92
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 9.61,
+      "approval_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+
+
+===== STEP: LONG: PRE-RENDER layout audit 16:9
+$ /Users/nik/ai/bin/python3 /Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/scripts/manim_layout_audit.py what_wave_particle_duality_means_bb.py --curve-strict
+cwd: /Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/what-wave-particle-duality-means-bb
+exit: 1
+[bn_layout] mode=LANDSCAPE pixels=1920x1080 frame=14.22x8.00
+
+Animation 0: FadeIn(Text("Bear's Notes")):   0%|          | 0/8 [00:00<?, ?it/s]
+                                                                                
+
+Animation 1: Write(VGroup of 2 submobjects):   0%|          | 0/21 [00:00<?, ?it/s]
+Animation 1: Write(VGroup of 2 submobjects):  43%|████▎     | 9/21 [00:00<00:00, 78.21it/s]
+Animation 1: Write(VGroup of 2 submobjects):  81%|████████  | 17/21 [00:00<00:00, 66.07it/s]
+                                                                                            
+
+Animation 2: Create(Line), etc.:   0%|          | 0/8 [00:00<?, ?it/s]
+                                                                      
+/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/scripts/manim_layout_audit.py:145: DeprecationWarning: This method is not guaranteed to stay around. Please prefer getting the attribute normally.
+  if float(mob.get_stroke_opacity()) <= 0.02:
+
+Animation 4: FadeOut(Group):   0%|          | 0/6 [00:00<?, ?it/s]
+Animation 4: FadeOut(Group):  67%|██████▋   | 4/6 [00:00<00:00, 39.87it/s]
+                                                                          
+
+Animation 5: FadeOut(Mobject):   0%|          | 0/6 [00:00<?, ?it/s]
+                                                                    
+
+Animation 7: GrowFromCenter(Dot):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                        
+
+Animation 8: LaggedStart(Group):   0%|          | 0/30 [00:00<?, ?it/s]
+                                                                       
+
+Animation 10: Write(Text('the core')), etc.:   0%|          | 0/17 [00:00<?, ?it/s]
+                                                                                   
+
+Animation 11: Write(Text('the coat')), etc.:   0%|          | 0/17 [00:00<?, ?it/s]
+                                                                                   
+
+Animation 13: GrowFromCenter(Brace), etc.:   0%|          | 0/21 [00:00<?, ?it/s]
+                                                                                 
+
+Animation 14: Create(Line), etc.:   0%|          | 0/18 [00:00<?, ?it/s]
+                                                                        
+
+Animation 16: _MethodAnimation(VGroup of 2 submobjects), etc.:   0%|          | 0/18 [00:00<?, ?it/s]
+Animation 16: _MethodAnimation(VGroup of 2 submobjects), etc.:  39%|███▉      | 7/18 [00:00<00:00, 62.09it/s]
+Animation 16: _MethodAnimation(VGroup of 2 submobjects), etc.:  83%|████████▎ | 15/18 [00:00<00:00, 69.02it/s]
+                                                                                                              
+
+Animation 17: FadeIn(Text('?')):   0%|          | 0/6 [00:00<?, ?it/s]
+                                                                      
+
+Animation 18: Indicate(Text('?')):   0%|          | 0/9 [00:00<?, ?it/s]
+                                                                        
+
+Animation 20: FadeOut(Group):   0%|          | 0/6 [00:00<?, ?it/s]
+                                                                   
+
+Animation 22: Create(RoundedRectangle), etc.:   0%|          | 0/32 [00:00<?, ?it/s]
+                                                                                    
+
+Animation 24: LaggedStart(Group):   0%|          | 0/18 [00:00<?, ?it/s]
+                                                                        
+
+Animation 25: FadeOut(VGroup of 5 submobjects), etc.:   0%|          | 0/24 [00:00<?, ?it/s]
+                                                                                            
+
+Animation 26: Write(Text('how do you travel?  → stripes')):   0%|          | 0/8 [00:00<?, ?it/s]
+                                                                                                 
+
+Animation 28: _MethodAnimation(Dot):   0%|          | 0/12 [00:00<?, ?it/s]
+                                                                           
+
+Animation 29: _MethodAnimation(Dot):   0%|          | 0/12 [00:00<?, ?it/s]
+                                                                           
+
+Animation 30: Flash(VGroup of 8 submobjects):   0%|          | 0/8 [00:00<?, ?it/s]
+                                                                                   
+
+Animation 31: Write(Text('where are you?  → one whole dot')):   0%|          | 0/8 [00:00<?, ?it/s]
+                                                                                                   
+
+Animation 33: Create(DashedVMobject):   0%|          | 0/24 [00:00<?, ?it/s]
+Animation 33: Create(DashedVMobject):  96%|█████████▌| 23/24 [00:00<00:00, 223.06it/s]
+                                                                                      
+
+Animation 34: Create(Line):   0%|          | 0/8 [00:00<?, ?it/s]
+                                                                 
+
+Animation 35: _MethodAnimation(VGroup of 2 submobjects):   0%|          | 0/6 [00:00<?, ?it/s]
+                                                                                              
+Traceback (most recent call last):
+  File "/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/scripts/manim_layout_audit.py", line 515, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/scripts/manim_layout_audit.py", line 416, in main
+    scene.render()
+  File "/Users/nik/ai/lib/python3.12/site-packages/manim/scene/scene.py", line 259, in render
+    self.construct()
+  File "/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/what-wave-particle-duality-means-bb/what_wave_particle_duality_means_bb.py", line 81, in construct
+    m(dur(bid))
+  File "/Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/what-wave-particle-duality-means-bb/what_wave_particle_duality_means_bb.py", line 313, in draw_S02
+    half = Sector(outer_radius=0.14, angle=PI, color=INK,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nik/ai/lib/python3.12/site-packages/manim/mobject/geometry/arc.py", line 1039, in __init__
+    super().__init__(inner_radius=0, outer_radius=radius, **kwargs)
+TypeError: manim.mobject.geometry.arc.AnnularSector.__init__() got multiple values for keyword argument 'outer_radius'

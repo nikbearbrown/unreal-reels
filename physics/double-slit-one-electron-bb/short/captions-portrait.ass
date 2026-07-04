@@ -1,0 +1,41 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: bb,EB Garamond,46,&H0042E4F0,&H00D8E6EC,&H001D1616,&H64000000,0,0,0,0,100,100,0,0,1,3,0,2,120,120,430,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.22,bb,,0,0,0,,{\k37}Bear's {\k37}Notes {\k13}One {\k47}Electron {\k73}Interferes {\k10}With {\k40}Itself
+Dialogue: 0,0:00:03.58,0:00:06.16,bb,,0,0,0,,{\k27}Fire {\k53}electrons {\k23}at {\k23}two {\k37}slits {\k20}one {\k13}at {\k10}a {\k37}time
+Dialogue: 0,0:00:06.01,0:00:08.06,bb,,0,0,0,,{\k1}— {\k50}each {\k40}arrives {\k23}as {\k17}a {\k30}single {\k30}dot.
+Dialogue: 0,0:00:08.41,0:00:09.99,bb,,0,0,0,,{\k23}Ten {\k23}in, {\k3}the {\k23}dots {\k23}look {\k37}random;
+Dialogue: 0,0:00:10.18,0:00:12.69,bb,,0,0,0,,{\k20}common {\k27}sense {\k27}says {\k27}two {\k37}heaps, {\k10}one {\k30}behind {\k27}each {\k23}slit.
+Dialogue: 0,0:00:13.88,0:00:14.36,bb,,0,0,0,,{\k1}Seventy {\k1}thousand {\k33}in:
+Dialogue: 0,0:00:14.48,0:00:17.89,bb,,0,0,0,,{\k47}stripes {\k17}— {\k40}bright {\k13}and {\k27}dark {\k43}bands {\k10}no {\k20}two-heap {\k40}picture
+Dialogue: 0,0:00:17.74,0:00:18.19,bb,,0,0,0,,{\k30}allows.
+Dialogue: 0,0:00:18.68,0:00:20.13,bb,,0,0,0,,{\k43}Stripes {\k10}are {\k20}what {\k30}waves {\k27}do:
+Dialogue: 0,0:00:20.41,0:00:22.93,bb,,0,0,0,,{\k23}ripples {\k27}through {\k23}both {\k47}slits {\k40}overlap {\k33}and {\k43}cancel.
+Dialogue: 0,0:00:23.23,0:00:25.65,bb,,0,0,0,,{\k40}Particles {\k33}can't {\k10}do {\k23}that {\k17}— {\k7}a {\k23}ball {\k23}takes {\k27}one
+Dialogue: 0,0:00:25.50,0:00:26.88,bb,,0,0,0,,{\k33}slit {\k17}and {\k27}joins {\k23}its {\k23}heap.
+Dialogue: 0,0:00:27.17,0:00:28.89,bb,,0,0,0,,{\k17}And {\k17}these {\k47}electrons {\k33}flew {\k43}alone:
+Dialogue: 0,0:00:29.30,0:00:31.35,bb,,0,0,0,,{\k20}never {\k13}a {\k30}second {\k20}one {\k10}in {\k10}the {\k30}machine {\k20}to {\k37}interfere
+Dialogue: 0,0:00:31.20,0:00:31.69,bb,,0,0,0,,{\k33}with.
+Dialogue: 0,0:00:31.95,0:00:34.77,bb,,0,0,0,,{\k17}So {\k20}each {\k60}electron's {\k20}wave {\k30}goes {\k27}through {\k27}both {\k53}slits {\k13}and
+Dialogue: 0,0:00:34.62,0:00:35.90,bb,,0,0,0,,{\k63}interferes {\k10}with {\k40}itself.
+Dialogue: 0,0:00:36.21,0:00:37.53,bb,,0,0,0,,{\k17}The {\k17}dot {\k17}is {\k13}where {\k20}it's {\k33}found;
+Dialogue: 0,0:00:37.74,0:00:40.16,bb,,0,0,0,,{\k3}the {\k40}stripes {\k17}map {\k23}where {\k33}finding {\k23}it {\k13}is {\k33}likely {\k20}—
+Dialogue: 0,0:00:40.01,0:00:40.93,bb,,0,0,0,,{\k20}psi {\k53}squared.
+Dialogue: 0,0:00:41.07,0:00:42.95,bb,,0,0,0,,{\k27}Peek {\k10}at {\k17}which {\k13}slit {\k10}it {\k20}took, {\k7}and {\k10}the {\k30}stripes
+Dialogue: 0,0:00:42.80,0:00:44.99,bb,,0,0,0,,{\k40}vanish {\k23}— {\k37}information {\k50}kills {\k27}them.
+Dialogue: 0,0:00:45.20,0:00:48.18,bb,,0,0,0,,{\k57}Molecules {\k20}of {\k13}two {\k17}thousand {\k43}atoms {\k30}paint {\k20}the {\k23}same {\k43}stripes;
+Dialogue: 0,0:00:48.47,0:00:50.78,bb,,0,0,0,,{\k17}your {\k43}wavelength {\k27}is {\k20}just {\k20}too {\k30}small {\k17}to {\k23}show {\k20}it.
+Dialogue: 0,0:00:50.95,0:00:54.03,bb,,0,0,0,,{\k13}The {\k17}full {\k40}story {\k20}— {\k7}the {\k53}buildup, {\k30}de {\k20}Broglie's {\k47}wavelength,
+Dialogue: 0,0:00:54.22,0:00:56.57,bb,,0,0,0,,{\k10}the {\k30}forbidden {\k50}bands {\k10}— {\k20}is {\k13}in {\k10}the {\k20}long {\k40}video.
+Dialogue: 0,0:00:57.02,0:00:59.83,bb,,0,0,0,,{\k30}Thanks {\k17}for {\k40}watching {\k17}— {\k27}more {\k20}at {\k27}youtube {\k1}dot {\k77}com,
+Dialogue: 0,0:00:59.68,0:01:00.93,bb,,0,0,0,,{\k50}slash, {\k60}at {\k1}Nik {\k1}Bear {\k1}Brown.

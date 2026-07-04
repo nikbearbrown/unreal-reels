@@ -1,0 +1,91 @@
+{
+  "poster": {
+    "platform": "youtube",
+    "channel": "youtube.com/@NikBearBrown",
+    "series": "Brown Blue",
+    "source_chapter": "quantum-mechanics-vol1/chapters/01-why-classical-physics-failed.md",
+    "playlist": "Brown Blue — Quantum Mechanics",
+    "upload_order": [
+      "long",
+      "short"
+    ],
+    "notes": "Consumed by a YouTube Data API v3 autoposter. Upload `long` first, then `short`. publishAt null = go live immediately; set an ISO8601 UTC time to schedule. Requires OAuth on the channel."
+  },
+  "long": {
+    "kind": "long",
+    "file": "mp4/dim-blue-beats-blinding-red-short-bb.mp4",
+    "caption_file": "mp4/dim-blue-beats-blinding-red-short-bb-caption.mp4",
+    "title": "Why a Dim Blue Lamp Beats a Blinding Red One — in about a minute | Bear's Notes",
+    "description": "Aim the brightest red lamp you own at a metal plate — and not one electron escapes. Swap in a dim blue glow, and electrons fly off instantly. Crank the red to blinding and still — nothing.\n\nA Brown Blue explainer, in the 3Blue1Brown tradition: concrete before abstract, mystery before formula.\n\nChapters:\n0:00 Intro\n0:14 Light as packets\n0:28 The escape cost\n0:42 E = hν\n\nThe photoelectric effect in about a minute: light as packets whose energy is set by color, an all-or-nothing escape cost, and why color — not brightness — decides. The full explainer (leftover energy, threshold frequency, sodium by the numbers) is on the channel.\n\nSource: Quantum Mechanics, Vol. 1, Ch. 1 — Why Classical Physics Failed.\n\nMore Bear's Notes: youtube.com/@NikBearBrown\n\n#quantum #physics #quantummechanics #science #education #Einstein #photoelectric",
+    "tags": [
+      "Bear's Notes",
+      "quantum mechanics",
+      "physics",
+      "quantum physics",
+      "3Blue1Brown style",
+      "science explainer",
+      "education",
+      "STEM",
+      "photoelectric effect",
+      "Einstein",
+      "photon",
+      "E=hnu",
+      "work function",
+      "light quanta"
+    ],
+    "categoryId": "27",
+    "privacyStatus": "private",
+    "publishAt": null,
+    "madeForKids": false,
+    "defaultLanguage": "en",
+    "captions": [
+      {
+        "language": "en",
+        "name": "English",
+        "file": "dim-blue-beats-blinding-red-short-bb.srt"
+      }
+    ],
+    "thumbnail": null,
+    "isShort": false
+  },
+  "short": {
+    "kind": "short",
+    "file": "mp4/dim-blue-beats-blinding-red-short-bb-short.mp4",
+    "caption_file": "mp4/dim-blue-beats-blinding-red-short-bb-short-caption.mp4",
+    "title": "Why a Dim Blue Lamp Beats a Blinding Red One #Shorts",
+    "description": "Aim the brightest red lamp you own at a metal plate — and not one electron escapes. The photoelectric effect, in about a minute. Full explainer on the channel.\n\nyoutube.com/@NikBearBrown\n\n#Shorts #quantum #physics #science",
+    "tags": [
+      "Bear's Notes",
+      "quantum mechanics",
+      "physics",
+      "quantum physics",
+      "3Blue1Brown style",
+      "science explainer",
+      "education",
+      "STEM",
+      "photoelectric effect",
+      "Einstein",
+      "photon",
+      "E=hnu",
+      "work function",
+      "light quanta",
+      "Shorts"
+    ],
+    "categoryId": "27",
+    "privacyStatus": "private",
+    "publishAt": null,
+    "madeForKids": false,
+    "defaultLanguage": "en",
+    "captions": [
+      {
+        "language": "en",
+        "name": "English",
+        "file": "dim-blue-beats-blinding-red-short-bb.srt"
+      }
+    ],
+    "thumbnail": null,
+    "isShort": true
+  },
+  "duration_seconds": 62.76,
+  "slug": "dim-blue-beats-blinding-red-short-bb"
+}

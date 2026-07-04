@@ -1,0 +1,22 @@
+{
+  "INTRO": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4630889-cosy-creatures-002-bear.svg",
+    "score": 6,
+    "duration": 7.6
+  },
+  "H01": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4585701-arrows-and-infographic-elements-005-refresh-arrow.svg",
+    "score": 4,
+    "duration": 4.02
+  },
+  "H02": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4474199-ethics-001-check.svg",
+    "score": 1,
+    "duration": 4.83
+  },
+  "OUTRO": {
+    "icon": "/sessions/nifty-cool-ritchie/mnt/Codex/Manim/shared/svg/4630889-cosy-creatures-002-bear.svg",
+    "score": 6,
+    "duration": 10.63
+  }
+}
