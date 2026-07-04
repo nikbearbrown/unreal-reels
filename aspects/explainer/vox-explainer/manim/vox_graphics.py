@@ -35,6 +35,18 @@ SERIF = "Georgia"  # swap for EB Garamond if installed
 
 config.background_color = GROUND
 
+# Portrait sync (the bn_layout fix): Manim CE sets pixel dims from -r W,H but
+# does NOT recompute frame_width, leaving the 16:9 default (14.22) — portrait
+# scenes composed for a 4.5-unit frame render at a third of their size. Keep
+# frame_height 8.0, derive frame_width from the real pixel aspect.
+try:
+    _pw = getattr(config, "pixel_width", None)
+    _ph = getattr(config, "pixel_height", None)
+    if _pw and _ph and abs(config.frame_width - config.frame_height * _pw / _ph) > 0.01:
+        config.frame_width = config.frame_height * (_pw / _ph)
+except Exception:
+    pass
+
 
 # ---------------------------------------------------------------- mobjects
 
