@@ -110,14 +110,30 @@ def main():
         sys.exit(f"[outro] beat {a.beat} not found")
     bid = beat["beat_id"]
 
-    variants = sorted(a.bears.resolve().glob("*-[0-9]*.mp4")) or sorted(a.bears.resolve().glob("*.mp4"))
-    if not variants:
-        sys.exit(f"[outro] no mascot clips in {a.bears}")
+    # frame follows the reel's aspect
+    ar = sheet.get("metadata", {}).get("aspect_ratio", "16:9")
+    global W, H
+    W, H = (1080, 1920) if ar == "9:16" else (1920, 1080)
+    aspect_tag = ar.replace(":", "x")
 
     seed = int(hashlib.md5(slug.encode()).hexdigest(), 16)
-    bear = variants[(a.force_bear - 1) % len(variants)] if a.force_bear else variants[seed % len(variants)]
     dark = (a.force_bg == "dark") if a.force_bg else bool((seed >> 8) % 2)
     bg, fg = (INK, CREAM) if dark else (CREAM, INK)
+    ground_tag = "dark" if dark else "light"
+
+    # Mascot pool, two families:
+    #   bearbrown-<ground>-<aspect>-NNN.mp4 — pre-composited full-frame ground
+    #   bearbrown-N.mp4 (root or MP4/)      — legacy green-screen, gets keyed
+    bears_dir = a.bears.resolve()
+    precomp = sorted(bears_dir.glob(f"*-{ground_tag}-{aspect_tag}-[0-9]*.mp4"))
+    legacy = ([p for p in sorted(bears_dir.glob("*-[0-9]*.mp4"))
+               if f"-{ground_tag}-" not in p.name and "-light-" not in p.name
+               and "-dark-" not in p.name]
+              or sorted((bears_dir / "MP4").glob("*-[0-9]*.mp4")))
+    variants, mode = (precomp, "base") if precomp else (legacy, "key")
+    if not variants:
+        sys.exit(f"[outro] no mascot clips in {bears_dir} (or MP4/)")
+    bear = variants[(a.force_bear - 1) % len(variants)] if a.force_bear else variants[seed % len(variants)]
 
     # --- the clock: narration + silence tail, at least as long as the bear
     mp3 = folder / (beat.get("audio_file") or f"mp3/beat-{bid}.mp3")
@@ -146,25 +162,42 @@ def main():
     ground_png = work / "outro-ground.png"
     ground.save(ground_png)
 
-    # --- composite: ground + keyed bear (scaled 70%, centered) + text
+    # --- composite + text. Two modes:
+    #   base: pre-composited mascot clip IS the ground (fit, freeze-pad)
+    #   key : legacy green-screen bear over the solid ground
     out = folder / "media" / f"{bid}.mp4"
     out.parent.mkdir(exist_ok=True)
-    bh = int(H * 0.70)
-    fc = (
-        f"[1:v]chromakey={KEY_COLOR}:0.24:0.06,despill=type=green,"
-        f"scale=-2:{bh}[bear];"
-        f"[0:v][bear]overlay=(W-w)/2:(H-h)/2+40:shortest=0[g1];"
-        f"[g1][2:v]overlay=(W-w)/2:56[g2];"
-        f"[g2][3:v]overlay=(W-w)/2:H-h-64"
-    )
-    sh([FFMPEG, "-y",
-        "-loop", "1", "-framerate", "24", "-i", str(ground_png),
-        "-i", str(bear),
-        "-loop", "1", "-framerate", "24", "-i", str(handle_png),
-        "-loop", "1", "-framerate", "24", "-i", str(next_png),
-        "-filter_complex", fc, "-t", f"{target:.3f}",
-        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-        "-pix_fmt", "yuv420p", "-r", "24", "-an", str(out)])
+    if mode == "base":
+        fc = (
+            f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,"
+            f"crop={W}:{H},tpad=stop_mode=clone:stop_duration={target + 0.5:.3f}[g0];"
+            f"[g0][1:v]overlay=(W-w)/2:56[g1];"
+            f"[g1][2:v]overlay=(W-w)/2:H-h-64"
+        )
+        sh([FFMPEG, "-y",
+            "-i", str(bear),
+            "-loop", "1", "-framerate", "24", "-i", str(handle_png),
+            "-loop", "1", "-framerate", "24", "-i", str(next_png),
+            "-filter_complex", fc, "-t", f"{target:.3f}",
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+            "-pix_fmt", "yuv420p", "-r", "24", "-an", str(out)])
+    else:
+        bh = int(H * 0.70)
+        fc = (
+            f"[1:v]chromakey={KEY_COLOR}:0.24:0.06,despill=type=green,"
+            f"scale=-2:{bh}[bear];"
+            f"[0:v][bear]overlay=(W-w)/2:(H-h)/2+40:shortest=0[g1];"
+            f"[g1][2:v]overlay=(W-w)/2:56[g2];"
+            f"[g2][3:v]overlay=(W-w)/2:H-h-64"
+        )
+        sh([FFMPEG, "-y",
+            "-loop", "1", "-framerate", "24", "-i", str(ground_png),
+            "-i", str(bear),
+            "-loop", "1", "-framerate", "24", "-i", str(handle_png),
+            "-loop", "1", "-framerate", "24", "-i", str(next_png),
+            "-filter_complex", fc, "-t", f"{target:.3f}",
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+            "-pix_fmt", "yuv420p", "-r", "24", "-an", str(out)])
 
     # --- pad the narration mp3 to the target (silence lives IN the clock)
     padded = work / f"outro-{bid}.mp3"
