@@ -78,10 +78,11 @@ TANGENT = EquationTangent({
 
 class B02_Title(Scene):            # 9.8s — title card
     def construct(self):
-        eye = Text("BEAR'S NOTES · QUANTUM, VOL. 1", font=SERIF, color=BLUE,
-                   font_size=24)
+        eye = Text("QUANTUM MECHANICS", font=SERIF, color=BLUE, font_size=24)
         t = Text("THE ULTRAVIOLET CATASTROPHE", font=SERIF, color=INK,
                  font_size=54, weight=BOLD)
+        if t.width > 12.0:                     # margins are law
+            t.scale_to_fit_width(12.0)
         u = Line(t.get_corner(DL) + DOWN * 0.15, t.get_corner(DR) + DOWN * 0.15,
                  color=CRIMSON, stroke_width=2)
         s = Text("why physics predicted infinite light", font=SERIF, color=INK,
@@ -105,11 +106,13 @@ class B04_MeasuredHump(Scene):     # 9.46s — the Berlin data
         cool = smooth_curve(lambda x: planck_shape(x, 0.62, 7.0),
                             X0 + 0.4, X1 - 0.4, NAVY, width=5)
         self.play(Create(cool), run_time=2.2, rate_func=linear)
-        hot = smooth_curve(lambda x: planck_shape(x, 1.0, 9.0),
+        # hotter: taller AND peak shifted toward the blue (Wien) — tmax
+        # smaller pushes the peak RIGHT in these scaled units
+        hot = smooth_curve(lambda x: planck_shape(x, 1.0, 5.5),
                            X0 + 0.4, X1 - 0.4, NAVY, width=4)
         hot.set_stroke(opacity=0.45)
         hot_lb = Text("hotter", font=SERIF, color=NAVY, font_size=24)
-        hot_lb.move_to([fx_pos(0.42), planck_shape(fx_pos(0.42), 1.0, 9.0) + 0.45, 0])
+        hot_lb.move_to([fx_pos(0.513), 1.85, 0])   # inside the hump, off both strokes
         self.play(Create(hot), FadeIn(hot_lb), run_time=1.8, rate_func=linear)
         self.wait(3.1)
 
@@ -138,7 +141,7 @@ class B07_RJRunaway(Scene):        # 9.69s — fits, then runs away
         dots = data_dots(0.62)
         self.add(dots)
         lb = SerifLabel("the Rayleigh–Jeans prediction", CRIMSON, size=30)
-        lb.to_edge(UP, buff=0.55).to_edge(LEFT, buff=0.9)
+        lb.to_edge(UP, buff=0.55)              # centered — clear of the y-axis label
         self.play(Write(lb[0]), Create(lb[1]), run_time=0.9)
         run = smooth_curve(rj, X0 + 0.4, fx_pos(0.97), CRIMSON, width=6)
         self.play(Create(run), run_time=4.6, rate_func=linear)
@@ -198,8 +201,9 @@ class B11_Staircase(Scene):        # 10.03s — only whole steps
 
 class T01_EqSentences(Scene):      # 9.98s — zone 2: sentences before symbols
     def construct(self):
-        eye = TANGENT.eyebrow().to_corner(UL, buff=0.6)
         anchor = TANGENT.anchor()
+        eye = TANGENT.eyebrow()
+        eye.next_to(anchor, UP, buff=0.18).align_to(anchor, LEFT)
         z = TANGENT.zone("sentences")
         self.play(FadeIn(eye), FadeIn(anchor), run_time=0.9)
         for row in z[0]:

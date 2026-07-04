@@ -80,7 +80,7 @@ for S in $PENDING; do
   if [ -z "$OUT" ]; then echo "[vox_run] ERROR: no output for $S"; exit 1; fi
   if [ "$VOX_QC" = "1" ] && [ -f "$QC/manim_layout_audit.py" ]; then
     rc=0
-    python3 "$QC/manim_layout_audit.py" "$GFXFILE" --class "$S" --png || rc=$?
+    python3 "$QC/manim_layout_audit.py" "$GFXFILE" --class "$S" --png --curve-strict || rc=$?
     if [ "$rc" -ge 2 ]; then
       echo "[vox_run] GATE B FAILED: $S has layout errors — mp4 NOT slotted."
       echo "[vox_run] see $GFX/layout_audit.md and the annotated PNGs beside it."

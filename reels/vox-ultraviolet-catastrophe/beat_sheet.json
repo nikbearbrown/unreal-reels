@@ -18,7 +18,7 @@
   "source_chapter": "books/quantum-mechanics-vol1/chapters/01-why-classical-physics-failed.md",
   "supersedes": "reels/vox-the-ultraviolet-catastrophe (conversion test)",
   "notes": "Fresh build. GRAPHIC ~53% of beats accepted deliberately (chart arc = evidence section; MOTION.md short-form corollary).",
-  "total_estimated_duration_seconds": 182.95
+  "total_estimated_duration_seconds": 11.36
  },
  "beats": [
   {
@@ -50,7 +50,7 @@
     "source": "own"
    },
    "card": {
-    "eyebrow": "BEAR'S NOTES · QUANTUM, VOL. 1",
+    "eyebrow": "QUANTUM MECHANICS",
     "title": "THE ULTRAVIOLET CATASTROPHE",
     "sub": "why physics predicted infinite light"
    }
@@ -323,7 +323,7 @@
    "beat_id": "B14",
    "narration_text": "He read it to the Physical Society on December 14th, 1900 — his constant within one percent of today's value. It reads like an apology, not a manifesto.",
    "tts_normalized_text": "He read it to the Physical Society on December fourteenth, nineteen hundred — his constant within one percent of today's value. It reads like an apology, not a manifesto.",
-   "actual_duration_s": 8.86,
+   "actual_duration_s": 11.36,
    "audio_file": "mp3/beat-B14.mp3",
    "shot": {
     "type": "DOCUMENT",
@@ -353,7 +353,7 @@
    "beat_id": "B16",
    "narration_text": "Next: light itself comes apart in chunks — the photoelectric effect.",
    "tts_normalized_text": "Next: light itself comes apart in chunks — the photoelectric effect.",
-   "actual_duration_s": 9.352,
+   "actual_duration_s": 9.301,
    "audio_file": "mp3/beat-B16.mp3",
    "shot": {
     "type": "CARD",
