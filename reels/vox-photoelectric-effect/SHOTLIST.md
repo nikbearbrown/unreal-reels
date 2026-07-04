@@ -18,9 +18,19 @@ Want: Heinrich Hertz portrait, or his spark-gap apparatus, 1880s.
 - https://commons.wikimedia.org/w/index.php?search=Heinrich+Hertz+portrait&title=Special:MediaSearch&type=image
 - https://commons.wikimedia.org/w/index.php?search=Hertz+spark+gap+apparatus&title=Special:MediaSearch&type=image
 
+People prompt (route two — generated stand-in => source: ai + disclosure):
+```
+Hyper-realistic portrait of a 30-year-old Heinrich Rudolf Hertz, 1887, German physicist, in the style of Edward Burtynsky, hyper-realist photograph, clean sharp focus, clear facial features --ar 16:9
+```
+
 ### B03 — STILL · Lenard / cathode-ray-era lab
 - https://commons.wikimedia.org/w/index.php?search=Philipp+Lenard&title=Special:MediaSearch&type=image
 - https://commons.wikimedia.org/w/index.php?search=cathode+ray+tube+laboratory+1900&title=Special:MediaSearch&type=image
+
+People prompt:
+```
+Hyper-realistic portrait of a 40-year-old Philipp Lenard, 1902, Hungarian-German physicist at cathode-ray apparatus, in the style of Edward Burtynsky, hyper-realist photograph, clean sharp focus, clear facial features --ar 16:9
+```
 
 ### B04 — COMPOSITE · arc lamp plate
 Want: carbon arc lamp / searchlight, early 1900s (the "blinding red arc lamp").
@@ -37,12 +47,27 @@ Want: young Einstein ~1905 (Bern years; the patent office portrait).
 - https://commons.wikimedia.org/w/index.php?search=Einstein+1905+patent+office&title=Special:MediaSearch&type=image
 - https://commons.wikimedia.org/wiki/Category:Albert_Einstein_by_year
 
+People prompt:
+```
+Hyper-realistic portrait of a 26-year-old Albert Einstein, 1905, German-born physicist at a patent office desk in Bern, in the style of Edward Burtynsky, hyper-realist photograph, clean sharp focus, clear facial features --ar 16:9
+```
+
 ### B12 — STILL · Millikan
 - https://commons.wikimedia.org/w/index.php?search=Robert+Millikan+laboratory&title=Special:MediaSearch&type=image
+
+People prompt:
+```
+Hyper-realistic portrait of a 47-year-old Robert Millikan, 1915, American physicist in a vacuum-apparatus laboratory, in the style of Edward Burtynsky, hyper-realist photograph, clean sharp focus, clear facial features --ar 16:9
+```
 
 ### B15 — STILL · Einstein portrait ~1905 (bio kicker)
 Period-correct young Einstein — NOT the elderly icon. Name + dates at assembly.
 - https://commons.wikimedia.org/w/index.php?search=Albert+Einstein+1904+OR+1905+portrait&title=Special:MediaSearch&type=image
+
+People prompt:
+```
+Hyper-realistic portrait of a 26-year-old Albert Einstein, 1905, German-born physicist, direct gaze, in the style of Edward Burtynsky, hyper-realist photograph, clean sharp focus, clear facial features --ar 16:9
+```
 
 ## GRAPHIC slots (PIPELINE — render after audio lock)
 

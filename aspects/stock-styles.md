@@ -22,6 +22,19 @@ poster/key art. Self-discloses as art.
 Honest-light color documentary realism. Native register: explainer plates,
 location/subject stills, texture-rich naturalism.
 
+## PORTRAIT — hyper-realist historical portrait (people prompts)
+
+> Hyper-realistic portrait of a [AGE]-year-old [NAME], [YEAR], [NATIONALITY]
+> [FIELD], in the style of Edward Burtynsky, hyper-realist photograph, clean
+> sharp focus, clear facial features --ar 16:9
+
+Fill AGE from birth year vs the scene's YEAR (compute it — do not guess).
+Use --ar 9:16 for portrait-frame variants. EVERY person slot in a SHOTLIST
+carries one of these alongside its archive queries: the archive photo is
+route one, the generated stand-in is route two — and a generated portrait of
+a real person ALWAYS means `source: ai` + disclosure sidecar (provenance
+rules; the credits block says so).
+
 ## Rules
 
 - One style per film. Mixing WARMONO and NATGEO plates in one edit breaks
