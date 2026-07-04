@@ -21,6 +21,7 @@ Usage:
 Free/local. No API calls. ffmpeg + Pillow + Python stdlib.
 """
 import argparse, hashlib, json, shutil, subprocess, sys
+from collections import Counter
 from pathlib import Path
 
 FFMPEG = shutil.which("ffmpeg") or "ffmpeg"
@@ -43,6 +44,16 @@ def probe_dur(path):
         return float(r.stdout.strip())
     except ValueError:
         return None
+
+def probe_wh(path):
+    r = subprocess.run([FFPROBE, "-v", "error", "-select_streams", "v:0",
+                        "-show_entries", "stream=width,height", "-of", "csv=p=0",
+                        str(path)], capture_output=True, text=True)
+    try:
+        vals = r.stdout.strip().splitlines()[0].split(",")
+        return int(vals[0]), int(vals[1])
+    except (ValueError, IndexError):
+        return None, None
 
 def sha1(path, extra=""):
     h = hashlib.sha1(); h.update(extra.encode())
@@ -145,17 +156,31 @@ def compile_clip(folder, beat, out, w, h, fps, font, work):
         cmd = [FFMPEG, "-y", "-i", src, "-vf", ",".join(vf), "-t", f"{dur:.3f}"] + enc
     elif status == "STILL":
         motion = shot.get("motion", "kenburns")
+        iw, ih = probe_wh(src)
+        if iw and (iw < w or ih < h):
+            print(f"[vox] WARNING {bid}: still {iw}x{ih} under output {w}x{h} — "
+                  f"the move will reveal upscale artifacts (MOTION.md §1)")
         vf = [vf_fit(w * 2, h * 2)]                        # oversample against zoompan shimmer
         if treat:
             vf.append(treat)
+        # MOTION.md §1: motivated direction. shot.focus = [fx, fy] in 0–1
+        # image coords; default 0.5,0.5 reproduces the old center move.
+        f_xy = shot.get("focus") or [0.5, 0.5]
+        fx = min(max(float(f_xy[0]), 0.0), 1.0)
+        fy = min(max(float(f_xy[1]), 0.0), 1.0)
+        frames = max(2, int(round(dur * fps)))
         if motion == "hold":
             vf.append(f"scale={w}:{h}")
-        else:                                               # ken burns, deterministic direction
-            frames = max(2, int(round(dur * fps)))
+        elif motion == "pan":                              # pan OR zoom, never both
+            ltr = int(hashlib.sha1(bid.encode()).hexdigest(), 16) % 2 == 0
+            prog = (f"on/{frames - 1}" if ltr else f"(1-on/{frames - 1})")
+            vf.append(f"zoompan=z='1.10':x='(iw-iw/zoom)*({prog})'"
+                      f":y='(ih-ih/zoom)*{fy:.4f}':d={frames}:s={w}x{h}:fps={fps}")
+        else:                                               # ken burns toward the focus
             zin = int(hashlib.sha1(bid.encode()).hexdigest(), 16) % 2 == 0
             z = (f"zoom+{0.08/frames:.6f}" if zin else f"1.08-{0.08/frames:.6f}*on")
-            vf.append(f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-                      f":d={frames}:s={w}x{h}:fps={fps}")
+            vf.append(f"zoompan=z='{z}':x='(iw-iw/zoom)*{fx:.4f}'"
+                      f":y='(ih-ih/zoom)*{fy:.4f}':d={frames}:s={w}x{h}:fps={fps}")
         cmd = [FFMPEG, "-y", "-loop", "1", "-i", src, "-vf", ",".join(vf),
                "-t", f"{dur:.3f}"] + enc
     else:                                                   # slate (PIL — no drawtext needed)
@@ -241,7 +266,9 @@ def main():
         bid, dur = b["beat_id"], float(b["actual_duration_s"])
         out = clips / f"{bid}.mp4"
         src, status = resolve_slot(folder, bid)
-        key = f"{w}x{h}@{fps}|{dur:.3f}|" + (sha1(src) if src else "slate")
+        bshot = b.get("shot", {})
+        key = (f"{w}x{h}@{fps}|{dur:.3f}|{bshot.get('motion', '')}"
+               f"|{bshot.get('focus', '')}|" + (sha1(src) if src else "slate"))
         if a.force or manifest.get(bid) != key or not out.exists():
             src, status = compile_clip(folder, b, out, w, h, fps, font, work)
             manifest[bid] = key
@@ -250,6 +277,22 @@ def main():
         report.append((bid, t0, dur, status, b.get("shot", {}).get("type", "?")))
         t0 += dur
     man_path.write_text(json.dumps(manifest, indent=1))
+
+    # motion pantry lint (MOTION.md): no language carries > ~40% of beats
+    def _eff_motion(b):
+        s = b.get("shot", {})
+        return (s.get("motion")
+                or ("kenburns" if s.get("type") == "STILL"
+                    else (s.get("type") or "?").lower()))
+    hist = Counter(_eff_motion(b) for b in beats)
+    print("[vox] motion histogram: "
+          + "  ".join(f"{k}:{n}" for k, n in hist.most_common()))
+    if len(beats) >= 8:
+        top, n = hist.most_common(1)[0]
+        if n / len(beats) > 0.40 and top != "card":
+            print(f"[vox] WARNING: '{top}' carries {n}/{len(beats)} beats "
+                  f"({n * 100 // len(beats)}%) — over the ~40% pantry cap; "
+                  f"convert the excess to another language (MOTION.md)")
 
     lst = clips / "concat.txt"
     lst.write_text("".join(f"file '{(clips / (b['beat_id'] + '.mp4')).resolve()}'\n"

@@ -76,6 +76,22 @@ swaps free.
 
 Rhythm lint: shot-type histogram; flag >2 consecutive same-type beats.
 
+## The motion pantry (`MOTION.md` — doctrine)
+
+Seven motion languages; a pantry, not a recipe — a language enters a film
+ONLY if it improves that beat, and most films use three or four. Per beat,
+`shot.motion` ∈ `hold | kenburns | pan | parallax | isotype | drawon | map |
+kinetic | annotate` (near-orthogonal to `shot.type`). Global rules: motion is
+subordinate to information delivery; no language carries >~40% of a film's
+beats (compiler prints the histogram and warns); reveals land on the spoken
+word; constant velocity for documentary moves, easing only for UI-feeling
+elements. Ken Burns beats may set `shot.focus: [fx, fy]` (0–1 image coords)
+to motivate the zoom toward the sentence's subject. Kinetic-type beats carry
+word-level `sub_beats` (captions generate from the same data); optional `sfx`
+tag per beat for the subliminal beat-synced sound pass. Full constraints,
+sequencing (which language, where in the film), and the built/pending status
+of each language: `MOTION.md`.
+
 ## THE SLOT CONTRACT
 
 ```
