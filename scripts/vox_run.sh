@@ -93,5 +93,14 @@ for S in $PENDING; do
 done
 
 cd "$ROOT"
+
+# ---- the outro law: brand the closing card (idempotent; needs audio + bears)
+if [ -d "$ROOT/bearbrown" ]; then
+  python3 scripts/vox_outro.py "$REEL" --bears "$ROOT/bearbrown" \
+    || echo "[vox_run] outro skipped (no narration mp3 yet? run generate_audio.py)"
+fi
+
 python3 scripts/vox_compile.py "$REEL" --review --height "$HEIGHT"
 echo "[vox_run] done → $REEL  (QC gates: $([ "$VOX_QC" = "1" ] && echo on || echo OFF))"
+echo "[vox_run] this was the FULL machine pass: motion graphics + outro done;"
+echo "[vox_run] any remaining slates are YOUR slots — see $REEL/SHOTLIST.md"

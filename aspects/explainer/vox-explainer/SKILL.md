@@ -213,15 +213,23 @@ slot rebuilds.
 1. `plan` — script → beats (≤~28 words), shot type × source, prompts, viz
    data, archive queries → `SHOTLIST.md`. **GATE: approve the plan.**
 2. `audio` — ElevenLabs per beat, measure, lock. **GATE: hear it.**
-3. `graphics` — render Manim fragments to measured durations (local, free).
+3. `run` — `bash scripts/vox_run.sh reels/<slug>` — THE FULL MACHINE PASS,
+   one command, free/local: Gate A (static check) → render every pending
+   Manim scene to the measured durations → Gate B (pixel layout audit) →
+   slot → outro law (branded closing card) → compile `--review`. The result
+   is ALWAYS a full watchable video: motion graphics and outro finished,
+   slates ONLY in slots that are yours (archive/ai media per SHOTLIST).
+   **GATE: watch the cut — timing, pacing, beat-to-visual map.**
 4. `stills` — FLUX / nano-banana plates for ai slots (cheap — batch with
-   per-step go-ahead); download archive picks for archive slots (free).
-5. `compile` — `python scripts/vox_compile.py reels/<slug> --review` →
-   watchable cut, slates where media is missing. **GATE: timing + content.**
-6. `video` — Higgsfield i2v only for beats where the still + audio demand
+   per-step go-ahead); download archive picks for archive slots (free) with
+   `.source.txt` sidecars; set `shot.focus` per still. Rerun `vox_run` —
+   only changed slots recompile.
+5. `video` — Higgsfield i2v only for beats where the still + audio demand
    motion (the expensive step, last, per-beat approval).
-7. `assemble` — Remotion annotation/caption plane keyed to word timestamps,
+6. `assemble` — Remotion annotation/caption plane keyed to word timestamps,
    treatment pass, credits from sidecars → clean master. **GATE: ship.**
+   (Not yet built — until it lands, DOCUMENT/COMPOSITE annotation beats
+   degrade gracefully to clean plates.)
 
 Swaps at any later date: drop the new file in `media/`, rerun compile —
 only that slot recompiles.
