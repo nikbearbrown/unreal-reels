@@ -115,6 +115,37 @@ newsprint-ground renders at beat duration:
 `manim -qh --fps 24 vox_graphics.py <Scene> -o <beat>.mp4`. Counts are claims
 — `viz.note` records what to verify before render.
 
+## The equation tangent (doctrine: `brutalist/EQUATIONS.md`)
+
+When an equation appears, the film takes a short tangent — the five-zone
+template from `brutalist/EQUATIONS.md`, translated into Vox language. A
+tangent explains; it never derives. **A tangent is a BEAT GROUP, not one long
+beat** (Vox rhythm stays ~5–12s/beat): the equation card persists as the
+anchor across the group while the zone below swaps per beat —
+sentences → glossary → worked example → values claim. Re-entry is narration
+only ("…and that's demographic parity. Back to …").
+
+- Beats are GRAPHIC type with `viz.pattern: "equation_tangent"`; the group
+  shares one `viz.tangent` block (the EQUATIONS.md authoring schema, plus
+  `equation_tex` for real typesetting) and each beat names its `viz.zone`
+  and optional `viz.spotlight` symbol.
+- Translation table: one-red-moving → **crimson spotlight** (the symbol being
+  named turns crimson in equation + glossary row + example value at once);
+  pink values box → **terracotta-tinted panel**; white mechanics → newsprint
+  ground + ink serif; KaTeX → **MathTex** (italic variables, roman operators;
+  `_math()` falls back to italic serif where LaTeX is absent). Data numbers
+  mono, never the equation.
+- Components in `vox_graphics.py`: `EquationTangent` (+ `EquationCard`,
+  `SentencePair`, `GlossaryTable`, `WorkedExample`, `ValuesClaim`); fixture
+  scenes `EQT_*` carry the demographic-parity demo.
+- Audit per tangent: sentences before symbols and the relation read as a
+  claim; glossary has the Role column; example holds-or-breaks and ends on
+  the human cost; values claim in the tinted panel; eyebrow on entry,
+  re-entry cue in the narration; ≤ ~45s across the group; no derivation.
+- Word-keyed spotlight advancement (crimson moving with the narration line)
+  upgrades automatically when the Remotion assembly stage lands; until then
+  each beat sets one static spotlight.
+
 ## Workflow (each gate is the user's)
 
 1. `plan` — script → beats (≤~28 words), shot type × source, prompts, viz

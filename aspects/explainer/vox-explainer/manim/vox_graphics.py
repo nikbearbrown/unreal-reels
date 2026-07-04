@@ -22,6 +22,10 @@ try:            # geometry-stub environments (static_scene_check) lack these
     BOLD
 except NameError:
     BOLD = "BOLD"
+try:
+    ITALIC
+except NameError:
+    ITALIC = "ITALIC"
 
 GROUND = "#F3EBDD"; INK = "#2F2A26"
 CRIMSON = "#BF3339"; NAVY = "#3D5A80"
@@ -114,6 +118,165 @@ class HandRing(VMobject):
                              np.sin(a) * h * (1 + wobble * np.cos(2 * a)), 0])
                for a in np.linspace(0.3, TAU + 0.55, 60)]
         self.set_points_smoothly(pts)
+
+
+# ------------------------------------- equation tangent (brutalist/EQUATIONS.md)
+# The five-zone tangent translated into Vox language. Doctrine lives in
+# brutalist/EQUATIONS.md; this is the Vox rendering of it:
+#   one red, moving  -> CRIMSON spotlight (equation + glossary row + example
+#                       value turn crimson together for the symbol being named)
+#   pink values box  -> terracotta-tinted panel (the editor's judgment)
+#   white mechanics  -> newsprint ground, ink serif
+#   KaTeX            -> MathTex (real math: italic vars, roman operators);
+#                       falls back to italic serif Text where LaTeX is absent
+# A tangent is a BEAT GROUP, not one long beat: the equation card persists as
+# the anchor; the zone below swaps per beat (sentences -> glossary -> example
+# -> claim). Re-entry is narration only. ~45s across the group; never derive.
+
+MONO = "Menlo"  # data numbers only — never the equation (EQUATIONS.md)
+
+
+def _math(tex_or_text, font_size=48, color=INK):
+    """Real math if LaTeX is available, italic serif otherwise."""
+    try:
+        return MathTex(tex_or_text, font_size=font_size, color=color)
+    except Exception:
+        return Text(tex_or_text, font=SERIF, color=color,
+                    font_size=int(font_size * 0.75), slant=ITALIC)
+
+
+class EquationCard(VGroup):
+    """Zone 1 — the symbolic form, large, isolated, on a slate card."""
+
+    def __init__(self, tex, spotlight=None, width=9.0, **kw):
+        super().__init__(**kw)
+        eq = _math(tex, font_size=56, color=WHITE)
+        if eq.width > width * 0.88:
+            eq.scale_to_fit_width(width * 0.88)
+        card = Rectangle(width=width, height=eq.height + 1.0)
+        card.set_fill(SLATE, 1).set_stroke(width=0)
+        eq.move_to(card)
+        if spotlight and hasattr(eq, "set_color_by_tex"):
+            eq.set_color_by_tex(spotlight, CRIMSON)
+        self.eq = eq
+        self.add(card, eq)
+
+
+class SentencePair(VGroup):
+    """Zone 2 — LHS / RHS as one sentence each, then the relation symbol
+    read as a claim. Sentences before symbols; the claim gets the accent."""
+
+    def __init__(self, lhs, rhs, claim, size=30, **kw):
+        super().__init__(**kw)
+        rows = VGroup()
+        for tag, sentence in (("LHS", lhs), ("RHS", rhs)):
+            chip = Text(tag, font=SERIF, color=WHITE, font_size=20)
+            box = SurroundingRectangle(chip, buff=0.1).set_fill(NAVY, 1).set_stroke(width=0)
+            line = Text(sentence, font=SERIF, color=INK, font_size=size)
+            row = VGroup(VGroup(box, chip), line).arrange(RIGHT, buff=0.35)
+            rows.add(row)
+        cl = SerifLabel(claim, accent=CRIMSON, size=size)
+        rows.add(cl)
+        rows.arrange(DOWN, aligned_edge=LEFT, buff=0.45)
+        self.claim = cl
+        self.add(rows)
+
+
+class GlossaryTable(VGroup):
+    """Zone 3 — Symbol | Role | Plain meaning | Domain. The Role column is
+    the point (random variable vs fixed value vs index vs operator)."""
+
+    COLS = ("Symbol", "Role", "Meaning", "Domain")
+
+    def __init__(self, rows, spotlight=None, col_x=(0.0, 2.2, 5.2, 9.6),
+                 size=26, **kw):
+        super().__init__(**kw)
+        table = VGroup()
+        header = VGroup(*[Text(h, font=SERIF, color=BLUE, font_size=size - 4)
+                          for h in self.COLS])
+        table.add(header)
+        for r in rows:
+            hot = spotlight is not None and r["sym"] == spotlight
+            sym = _math(r.get("sym_tex", r["sym"]), font_size=size + 8,
+                        color=CRIMSON if hot else INK)
+            cells = VGroup(sym,
+                           Text(r["role"], font=SERIF, color=TERRA if hot else BLUE,
+                                font_size=size - 4, slant=ITALIC),
+                           Text(r["mean"], font=SERIF, color=INK, font_size=size - 2),
+                           Text(r["dom"], font=MONO, color=INK, font_size=size - 6))
+            table.add(cells)
+        for row in table:
+            for cell, x in zip(row, col_x):
+                cell.move_to(RIGHT * x, aligned_edge=LEFT)
+        table.arrange(DOWN, aligned_edge=LEFT, buff=0.42)
+        for row in table:                       # re-pin columns after arrange
+            y = row.get_center()[1]
+            for cell, x in zip(row, col_x):
+                cell.move_to(RIGHT * x + UP * y, aligned_edge=LEFT)
+        rule = Line(ORIGIN, RIGHT * (col_x[-1] + 1.6), stroke_width=1.6, color=BLUE)
+        rule.next_to(table[0], DOWN, buff=0.14, aligned_edge=LEFT)
+        self.add(table, rule)
+
+
+class WorkedExample(VGroup):
+    """Zone 4 — real numbers that hold or break. Numbers in mono; verdict
+    explicit; end on what it costs the people involved."""
+
+    def __init__(self, ex, spotlight=None, size=30, **kw):
+        super().__init__(**kw)
+        scenario = Text(ex["scenario"], font=SERIF, color=INK, font_size=size)
+        lv = Text(ex["lhs_val"], font=MONO, color=CRIMSON, font_size=size + 14)
+        rv = Text(ex["rhs_val"], font=MONO, color=NAVY, font_size=size + 14)
+        vs = Text("vs", font=SERIF, color=BLUE, font_size=size - 4)
+        pair = VGroup(lv, vs, rv).arrange(RIGHT, buff=0.5)
+        verdict = SerifLabel(ex["verdict"], accent=TERRA, size=size)
+        cost = Text(ex["cost"], font=SERIF, color=INK, font_size=size - 4,
+                    slant=ITALIC)
+        self.pair, self.verdict = pair, verdict
+        self.add(VGroup(scenario, pair, verdict, cost)
+                 .arrange(DOWN, aligned_edge=LEFT, buff=0.45))
+
+
+class ValuesClaim(VGroup):
+    """Zone 5 — the contestable judgment. Terracotta tint = a value claim,
+    not mechanics (the Vox reading of the brutalist pink box)."""
+
+    def __init__(self, text, size=30, width=10.5, **kw):
+        super().__init__(**kw)
+        body = Text(text, font=SERIF, color=INK, font_size=size)
+        if body.width > width * 0.9:
+            body.scale_to_fit_width(width * 0.9)
+        panel = Rectangle(width=width, height=body.height + 0.9)
+        panel.set_fill(TERRA, 0.16).set_stroke(TERRA, 1.6)
+        body.move_to(panel)
+        self.add(panel, body)
+
+
+class EquationTangent:
+    """Builds the per-beat zone layouts from an EQUATIONS.md schema dict.
+    Each tangent beat scene calls .frame(zone, spotlight) and animates the
+    reveal across the beat's measured duration."""
+
+    def __init__(self, data):
+        self.d = data
+
+    def eyebrow(self):
+        return LabelChip(self.d["eyebrow"].upper(), accent=CRIMSON, size=22)
+
+    def anchor(self, spotlight=None):
+        """The persistent equation card, seated at the top of the frame."""
+        return EquationCard(self.d.get("equation_tex", self.d["equation"]),
+                            spotlight=spotlight).to_edge(UP, buff=0.9)
+
+    def zone(self, which, spotlight=None):
+        d = self.d
+        z = {"sentences": lambda: SentencePair(d["lhs"], d["rhs"], d["claim"]),
+             "glossary":  lambda: GlossaryTable(d["glossary"], spotlight),
+             "example":   lambda: WorkedExample(d["example"], spotlight),
+             "claim":     lambda: ValuesClaim(d["values_claim"])}[which]()
+        if z.width > 12.2:
+            z.scale_to_fit_width(12.2)
+        return z.next_to(ORIGIN, DOWN, buff=0).shift(DOWN * 0.8)
 
 
 # --------------------------------------------- fixture scenes (test reel)
@@ -414,3 +577,85 @@ class B22_End(Scene):              # ~4s
         s.next_to(t, DOWN, buff=0.4)
         self.play(FadeIn(t), FadeIn(s), run_time=1.0)
         self.wait(3.0)
+
+
+# ------------------------------- equation-tangent fixture (EQUATIONS.md demo)
+# Demographic parity, straight from the brutalist/EQUATIONS.md authoring
+# schema. One scene per tangent beat; durations are placeholders until a
+# reel's beat_sheet.json supplies measured audio. Render any of them:
+#   manim -qh --fps 24 -r 1920,1080 vox_graphics.py EQT_Glossary
+
+_DEMO_TANGENT = EquationTangent({
+    "eyebrow": "Metric 01 · equation · tangent",
+    "equation": "P(Ŷ=1 | A=a) = P(Ŷ=1 | A=b)",
+    "equation_tex": r"P(\hat{Y}=1 \mid A=a) = P(\hat{Y}=1 \mid A=b)",
+    "lhs": "How often the model says “yes” to group A.",
+    "rhs": "How often it says “yes” to group B.",
+    "claim": "These two rates must be equal — not close, equal.",
+    "glossary": [
+        {"sym": "Ŷ", "sym_tex": r"\hat{Y}", "role": "random variable",
+         "mean": "the model's prediction", "dom": "{0, 1}"},
+        {"sym": "A", "sym_tex": "A", "role": "random variable",
+         "mean": "group membership", "dom": "{a, b}"},
+        {"sym": "a, b", "sym_tex": "a, b", "role": "fixed values",
+         "mean": "the two specific groups", "dom": "categorical"},
+        {"sym": "P(·)", "sym_tex": r"P(\cdot)", "role": "operator",
+         "mean": "probability of", "dom": "[0, 1]"},
+    ],
+    "example": {
+        "scenario": "A bank approves loans at 40% in neighborhood A, 22% in B.",
+        "lhs_val": "40%", "rhs_val": "22%", "verdict": "40% ≠ 22% — violated",
+        "cost": "Group B is handed loans far less often, regardless of who would repay.",
+    },
+    "values_claim": "Outcomes should be equal regardless of base rates — redress over accuracy.",
+})
+
+
+class EQT_Sentences(Scene):        # ~10s — zone 2: sentences before symbols
+    def construct(self):
+        tg = _DEMO_TANGENT
+        eye = tg.eyebrow().to_corner(UL, buff=0.6)
+        anchor = tg.anchor()
+        z = tg.zone("sentences")
+        self.play(FadeIn(eye), FadeIn(anchor), run_time=0.8)
+        for row in z[0]:
+            self.play(FadeIn(row, shift=UP * 0.15), run_time=0.9)
+            self.wait(1.6)
+        self.wait(2.1)
+
+
+class EQT_Glossary(Scene):         # ~12s — zone 3: the Role column
+    def construct(self):
+        tg = _DEMO_TANGENT
+        anchor = tg.anchor(spotlight=r"\hat{Y}")
+        z = tg.zone("glossary", spotlight="Ŷ")
+        self.add(anchor)
+        self.play(FadeIn(z, shift=UP * 0.15), run_time=1.0)
+        self.wait(11.0)
+
+
+class EQT_Example(Scene):          # ~12s — zone 4: holds or breaks
+    def construct(self):
+        tg = _DEMO_TANGENT
+        anchor = tg.anchor()
+        z = tg.zone("example")
+        self.add(anchor)
+        rows = z[0]
+        self.play(FadeIn(rows[0]), run_time=0.8)     # scenario
+        self.wait(2.0)
+        self.play(FadeIn(rows[1], shift=UP * 0.15), run_time=0.9)   # 40% vs 22%
+        self.wait(2.0)
+        self.play(FadeIn(rows[2]), run_time=0.7)     # verdict
+        self.wait(1.8)
+        self.play(FadeIn(rows[3]), run_time=0.7)     # the cost
+        self.wait(3.1)
+
+
+class EQT_Claim(Scene):            # ~8s — zone 5: the contestable judgment
+    def construct(self):
+        tg = _DEMO_TANGENT
+        anchor = tg.anchor()
+        z = tg.zone("claim")
+        self.add(anchor)
+        self.play(FadeIn(z, shift=UP * 0.15), run_time=1.0)
+        self.wait(7.0)
