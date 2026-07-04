@@ -123,12 +123,17 @@ sound effect, it's too loud. Schema: optional `sfx` tag per beat, so the
 audio pass assembles from the same sheet as the visuals, not as a separate
 manual pass after picture lock.
 
-## Captions fall out of the schema
+## Captions fall out of the schema — as SIDECARS, never burn-ins
 
-Kinetic-type beats already carry word-level `sub_beats` timing — the SRT/VTT
-track generates from that same data, never as a separate transcription pass.
-Burned-in type is not a caption. Side benefit: a caption track surfaces
-timing drift immediately; an animation can hide it.
+THE CAPTION POLICY (settled): Vox-register explainers do NOT burn captions —
+narration + identical on-screen text is the redundancy principle's textbook
+failure. Burned/karaoke captions belong to music videos (lyrics ARE the
+content) and kids' videos (co-viewing, literacy), or when explicitly asked.
+Explainers ship the SRT/VTT as a SIDECAR generated from the beat sheet's
+timing (word-level `sub_beats` where present, beat windows otherwise) and
+hand it to the platform (`captions.insert`) — the viewer opts in, YouTube
+gets clean machine-readable text, and accessibility is better served than by
+pixels. Kinetic type stays what it is: emphasized fragments, not transcription.
 
 ## Typography note (decided: stay serif + mono)
 
