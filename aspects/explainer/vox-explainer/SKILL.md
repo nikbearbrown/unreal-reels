@@ -108,10 +108,11 @@ reels/<slug>/
   compile: `media/<beat>.mp4` > `manim/<beat>.mp4` > `media/<beat>.png`
   (animated per `shot.motion`) > **slate** (charcoal, beat id — a missing-media
   marker, standard production slate, so pass 1 is always watchable).
-- Conform at ingest: scale/crop → duration ladder (retime ±5% → trim head →
-  freeze tail → refuse >15%) → treatment per source. Rebuild recompiles ONLY
-  slots whose input hash changed, then re-concats. `scripts/vox_compile.py`
-  implements this.
+- Conform at ingest: scale/crop → duration ladder (retime ±5% exact; SHORT
+  clips SLOW to fit — never freeze, i2v motion is usually too fast anyway,
+  loud warning past 3× — LONG clips trim the tail, so key action goes early)
+  → treatment per source. Rebuild recompiles ONLY slots whose input hash
+  changed, then re-concats. `scripts/vox_compile.py` implements this.
 - The png in a FOOTAGE slot is both the placeholder and the i2v seed; the mp4
   is the upgrade. Stills + Ken Burns carry most beats; AI video where motion
   earns it (~5s beats sit in the i2v sweet spot).

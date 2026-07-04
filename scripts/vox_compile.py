@@ -147,11 +147,14 @@ def compile_clip(folder, beat, out, w, h, fps, font, work):
         delta = (d - dur) / dur
         if abs(delta) <= LADDER_RETIME and d > 0:          # retime to exact
             vf.append(f"setpts=PTS*{dur / d:.6f}")
-        elif d < dur:                                       # freeze tail
-            if (dur - d) / dur > LADDER_REFUSE:
-                print(f"[vox] WARNING {bid}: clip {d:.1f}s into {dur:.1f}s beat "
-                      f"(> {int(LADDER_REFUSE*100)}% short) — freeze-padded, consider regenerating")
-            vf.append(f"tpad=stop_mode=clone:stop_duration={dur - d + 0.2:.3f}")
+        elif d < dur and d > 0:                             # slow to fit — never freeze
+            ratio = dur / d
+            if ratio > 3.0:
+                print(f"[vox] WARNING {bid}: clip {d:.1f}s slowed {ratio:.1f}x "
+                      f"into {dur:.1f}s beat — extreme slow-mo, consider a longer generation")
+            else:
+                print(f"[vox] {bid}: clip {d:.1f}s slowed {ratio:.2f}x to fill {dur:.1f}s beat")
+            vf.append(f"setpts=PTS*{ratio:.6f}")
         # else: longer → trim (keep head) via -t below
         cmd = [FFMPEG, "-y", "-i", src, "-vf", ",".join(vf), "-t", f"{dur:.3f}"] + enc
     elif status == "STILL":
@@ -267,7 +270,7 @@ def main():
         out = clips / f"{bid}.mp4"
         src, status = resolve_slot(folder, bid)
         bshot = b.get("shot", {})
-        key = (f"{w}x{h}@{fps}|{dur:.3f}|{bshot.get('motion', '')}"
+        key = (f"L2|{w}x{h}@{fps}|{dur:.3f}|{bshot.get('motion', '')}"
                f"|{bshot.get('focus', '')}|" + (sha1(src) if src else "slate"))
         if a.force or manifest.get(bid) != key or not out.exists():
             src, status = compile_clip(folder, b, out, w, h, fps, font, work)

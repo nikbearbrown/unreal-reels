@@ -76,7 +76,10 @@ def main():
             d, need = probe_dur(out), float(beat.get("actual_duration_s") or 0)
             note = ""
             if d and need and d < need * 0.85:
-                note = f"  ⚠ clip {d:.1f}s < beat {need:.1f}s — will freeze-pad; consider a longer generation"
+                note = (f"  · clip {d:.1f}s < beat {need:.1f}s — will slow "
+                        f"{need / d:.1f}x to fit" +
+                        ("  ⚠ extreme slow-mo, consider a longer generation"
+                         if need / d > 3.0 else ""))
             print(f"[pantry] {bid}  VIDEO  sound stripped -> media/{bid}.mp4{note}")
             if shot.get("source") == "archive" and "hf_" in f.name:
                 print(f"[pantry] {bid}  ⚠ sheet says source=archive but file looks "
