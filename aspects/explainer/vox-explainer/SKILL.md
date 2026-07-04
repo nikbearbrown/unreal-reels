@@ -187,6 +187,19 @@ place:
   real-people rule) + serif name with hairline underline + dates + the one
   line. No isotype, no chart, no second idea on screen.
 
+## The outro law (`scripts/vox_outro.py`)
+
+Every film ends the same way: `@nikbearbrown` (serif, terracotta hairline) on
+top, a Bear Brown mascot variant dancing center frame (chroma-keyed from
+`bearbrown/`, full color — the one deliberately loud brand element), the
+beat's "Next:" line below. Ground is cream or ink and the mascot variant is
+picked deterministically from the reel slug — random across reels,
+reproducible within one. The outro may run past the narration; the silence
+tail is padded INTO the beat's mp3 (audio stays the master clock), and
+`actual_duration_s` updates to match. One command after audio lock:
+`python3 scripts/vox_outro.py reels/<slug>` — then recompile; only the outro
+slot rebuilds.
+
 ## Workflow (each gate is the user's)
 
 1. `plan` — script → beats (≤~28 words), shot type × source, prompts, viz
