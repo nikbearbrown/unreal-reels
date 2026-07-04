@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+"""vox_pantry.py — pantry intake: prepped assets -> slot-contract media.
+
+THE PANTRY LAW: raw finds never go straight into media/. They pass through
+reels/<slug>/pantry/, prefixed with their beat id, already restored:
+  - restoration (nanobanana via Higgsfield): WARMONO for period images,
+    NATGEO for modern ones (aspects/stock-styles.md)
+  - upscaled to survive the Ken Burns crop (Topaz etc.)
+This script does the mechanical rest:
+  - images  -> media/<BID>.png  (DOCUMENT beats: non-16:9 scans are cropped
+               to 16:9, anchored top-center so the title stays — override
+               with --doc-anchor 0..1, 0 = top)
+  - videos  -> media/<BID>.mp4 with the AUDIO STRIPPED (narration is the
+               only voice on the timeline)
+  - sidecar stubs (<BID>.source.txt) created when missing — ai/higgsfield
+    clips get a disclosure line per SKILL.md provenance rules
+  - warns: clip shorter than the beat (freeze-pad territory), undersized
+    stills, sheet source axis that contradicts the asset
+
+Usage: python3 scripts/vox_pantry.py reels/<slug> [--doc-anchor 0.0]
+Idempotent: reprocesses whatever is in pantry/; compile's hash manifest
+decides what actually recompiles.
+"""
+import argparse, json, re, shutil, subprocess, sys
+from pathlib import Path
+
+FFMPEG = shutil.which("ffmpeg") or "ffmpeg"
+FFPROBE = shutil.which("ffprobe") or "ffprobe"
+BID_RE = re.compile(r"^([A-Z]{1,3}\d{2})")
+
+
+def probe_dur(p):
+    r = subprocess.run([FFPROBE, "-v", "error", "-show_entries",
+                        "format=duration", "-of", "csv=p=0", str(p)],
+                       capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip())
+    except ValueError:
+        return None
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("folder", type=Path)
+    ap.add_argument("--doc-anchor", type=float, default=0.0,
+                    help="vertical anchor for DOCUMENT 16:9 crops (0=top)")
+    a = ap.parse_args()
+    folder = a.folder.resolve()
+    pantry, media = folder / "pantry", folder / "media"
+    if not pantry.is_dir():
+        sys.exit(f"[pantry] no pantry/ in {folder}")
+    media.mkdir(exist_ok=True)
+    sheet = json.loads((folder / "beat_sheet.json").read_text())
+    beats = {b["beat_id"]: b for b in sheet["beats"]}
+
+    from PIL import Image
+    done = []
+    for f in sorted(pantry.iterdir()):
+        m = BID_RE.match(f.name.lstrip())
+        if not m or f.name.endswith(".source.txt"):
+            if f.is_file() and not f.name.startswith("."):
+                print(f"[pantry] SKIP (no beat prefix): {f.name[:60]}")
+            continue
+        bid = m.group(1)
+        beat = beats.get(bid)
+        if beat is None:
+            print(f"[pantry] SKIP {f.name[:50]} — no beat {bid} in sheet")
+            continue
+        shot = beat.get("shot", {})
+        ext = f.suffix.lower()
+
+        if ext in (".mp4", ".mov", ".webm", ".mkv"):
+            out = media / f"{bid}.mp4"
+            subprocess.run([FFMPEG, "-y", "-v", "error", "-i", str(f),
+                            "-c:v", "copy", "-an", str(out)], check=True)
+            d, need = probe_dur(out), float(beat.get("actual_duration_s") or 0)
+            note = ""
+            if d and need and d < need * 0.85:
+                note = f"  ⚠ clip {d:.1f}s < beat {need:.1f}s — will freeze-pad; consider a longer generation"
+            print(f"[pantry] {bid}  VIDEO  sound stripped -> media/{bid}.mp4{note}")
+            if shot.get("source") == "archive" and "hf_" in f.name:
+                print(f"[pantry] {bid}  ⚠ sheet says source=archive but file looks "
+                      f"Higgsfield — set shot.source to 'ai' + disclosure sidecar")
+            done.append((bid, out, "ai" if "hf_" in f.name else shot.get("source", "own")))
+
+        elif ext in (".png", ".jpg", ".jpeg", ".webp", ".tif", ".tiff"):
+            out = media / f"{bid}.png"
+            im = Image.open(f)
+            w, h = im.size
+            if shot.get("type") == "DOCUMENT" and (w / h) < 1.5:
+                ch = int(w * 9 / 16)
+                y0 = int((h - ch) * max(0.0, min(1.0, a.doc_anchor)))
+                im = im.crop((0, y0, w, y0 + ch))
+                print(f"[pantry] {bid}  DOC    {w}x{h} -> 16:9 crop "
+                      f"({w}x{ch} @y={y0}) — CHECK the title survived")
+            if im.mode not in ("RGB", "L"):
+                im = im.convert("RGB")
+            im.save(out)
+            if im.size[0] < 1920:
+                print(f"[pantry] {bid}  ⚠ {im.size[0]}px wide < 1920 — Ken Burns will show artifacts")
+            print(f"[pantry] {bid}  IMAGE  -> media/{bid}.png  ({im.size[0]}x{im.size[1]})")
+            done.append((bid, out, shot.get("source", "own")))
+
+    # sidecar stubs
+    for bid, out, source in done:
+        sc = media / f"{bid}.source.txt"
+        if not sc.exists():
+            if source == "ai":
+                sc.write_text("AI-GENERATED (Higgsfield) — disclosure required in credits.\n"
+                              "Seed image (if i2v): FILL-IN\nPrompt/style: see SHOTLIST + aspects/stock-styles.md\n")
+            else:
+                sc.write_text("URL: FILL-IN\nLicense: FILL-IN\nCredit: FILL-IN\n")
+            print(f"[pantry] {bid}  sidecar stub -> media/{bid}.source.txt (FILL-IN)")
+
+    print(f"[pantry] {len(done)} asset(s) slotted. Set shot.focus per still, "
+          f"fill sidecars, then: bash scripts/vox_run.sh {folder.name}")
+
+
+if __name__ == "__main__":
+    main()

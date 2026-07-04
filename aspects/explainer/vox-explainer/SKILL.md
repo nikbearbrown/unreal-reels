@@ -121,6 +121,21 @@ reels/<slug>/
   beat-local clock + slot status) live on the assembly overlay — never baked
   into `clips/`. Clean master = same assembly, no flag.
 
+## The pantry law (`scripts/vox_pantry.py`)
+
+Raw finds never go straight into `media/`. They land in `reels/<slug>/pantry/`,
+prefixed with their beat id, already RESTORED: nanobanana (via Higgsfield)
+restoration pass — WARMONO for period images, NATGEO for modern ones
+(`aspects/stock-styles.md`) — and upscaled to survive the Ken Burns crop.
+Then one command does the mechanical rest:
+`python3 scripts/vox_pantry.py reels/<slug>` — strips audio from video
+(narration is the only voice on the timeline), crops non-16:9 DOCUMENT scans
+to 16:9 anchored so the title survives (verify by eye), renames everything to
+`media/<beat>.png|.mp4`, and writes sidecar stubs (ai/Higgsfield assets get
+the disclosure line). It warns on clips shorter than their beat, undersized
+stills, and source-axis contradictions. After intake: set `shot.focus` per
+still, fill the sidecars, rerun `vox_run`.
+
 ## The Manim graphics library (`manim/vox_graphics.py`)
 
 `IsotypeDotGrid` (count-up reveal, lag_ratio 0.003–0.01, duration = the

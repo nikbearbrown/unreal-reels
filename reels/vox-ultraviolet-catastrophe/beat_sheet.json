@@ -30,7 +30,11 @@
    "shot": {
     "type": "STILL",
     "source": "archive",
-    "motion": "kenburns"
+    "motion": "kenburns",
+    "focus": [
+     0.47,
+     0.58
+    ]
    },
    "new_visual_element": "[PHOTO] foundry interior, worker with glowing iron bar, early 1900s; set shot.focus on the glow once the image lands"
   },
@@ -136,7 +140,11 @@
    "shot": {
     "type": "STILL",
     "source": "archive",
-    "motion": "kenburns"
+    "motion": "kenburns",
+    "focus": [
+     0.45,
+     0.45
+    ]
    },
    "new_visual_element": "[PHOTO] domestic hearth with fire iron / poker, early 1900s interior; set shot.focus on the poker"
   },
@@ -164,8 +172,9 @@
    "audio_file": "mp3/beat-B10.mp3",
    "shot": {
     "type": "STILL",
-    "source": "archive",
-    "motion": "kenburns"
+    "source": "ai",
+    "motion": "kenburns",
+    "note": "Higgsfield i2v from archival Planck still — disclosure in credits; seed in sidecar"
    },
    "new_visual_element": "[PHOTO] Max Planck at desk or blackboard, circa 1900; set shot.focus on his face"
   },
@@ -315,7 +324,11 @@
    "audio_file": "mp3/beat-B14.mp3",
    "shot": {
     "type": "DOCUMENT",
-    "source": "archive"
+    "source": "archive",
+    "focus": [
+     0.45,
+     0.5
+    ]
    },
    "new_visual_element": "[SCAN] Annalen der Physik 309, 553 (1901), 'Über das Gesetz der Energieverteilung im Normalspectrum' — title page; highlighter sweep on title, zoom-to-passage at assembly; renders as hold+slow-zoom until Remotion plane lands"
   },
@@ -327,8 +340,9 @@
    "audio_file": "mp3/beat-B15.mp3",
    "shot": {
     "type": "STILL",
-    "source": "archive",
-    "motion": "kenburns"
+    "source": "ai",
+    "motion": "kenburns",
+    "note": "Higgsfield i2v from archival Planck still — disclosure in credits; seed in sidecar"
    },
    "new_visual_element": "[PHOTO] Max Planck portrait, period-correct (~1901, age 42 — not the elderly icon); serif name label + dates 1858–1947 at assembly; bio kicker per SKILL.md (points at the bio-planck film)"
   },
