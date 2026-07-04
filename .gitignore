@@ -80,3 +80,11 @@ venv/
 .vscode/
 *.skill
 /fonts/
+
+# ----------------------------------------------------------------------------
+# vox-explainer: machine-owned / regenerable (slot contract: clips/ is
+# recompiled from inputs; media/ is Manim's render cache)
+# ----------------------------------------------------------------------------
+**/clips/
+**/media/texts/
+**/media/videos/

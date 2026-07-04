@@ -105,6 +105,10 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="Plan only; no API calls")
     ap.add_argument("--only", nargs="*", default=None, help="Beat IDs to (re)generate")
     args = ap.parse_args()
+    if args.api_key:
+        # .env files edited on different platforms can leave \r, quotes, or
+        # whitespace on the key — urllib rejects such header values outright.
+        args.api_key = args.api_key.strip().strip("'\"").strip()
 
     folder = Path(args.folder).expanduser().resolve()
     sheet_path = folder / "beat_sheet.json"
