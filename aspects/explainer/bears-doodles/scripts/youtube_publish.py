@@ -126,6 +126,32 @@ def next_base_slot(scheduled: list[datetime], interval: timedelta, start: dateti
     return base + interval
 
 
+def playlist_last_time(youtube, playlist_id: str):
+    """The most recent moment anything in this playlist is (or will be)
+    public: max of scheduled publishAt (private, future) and published
+    publishedAt. None for an empty playlist."""
+    vid_ids, page = [], None
+    while True:
+        pl = youtube.playlistItems().list(
+            part="contentDetails", playlistId=playlist_id, maxResults=50,
+            pageToken=page).execute()
+        vid_ids += [i["contentDetails"]["videoId"] for i in pl.get("items", [])]
+        page = pl.get("nextPageToken")
+        if not page:
+            break
+    times = []
+    for i in range(0, len(vid_ids), 50):
+        vs = youtube.videos().list(part="status,snippet",
+                                   id=",".join(vid_ids[i:i + 50])).execute()
+        for v in vs.get("items", []):
+            st = v.get("status", {})
+            if st.get("privacyStatus") == "private" and st.get("publishAt"):
+                times.append(_parse_iso(st["publishAt"]))
+            elif v.get("snippet", {}).get("publishedAt"):
+                times.append(_parse_iso(v["snippet"]["publishedAt"]))
+    return max(times) if times else None
+
+
 # ── metadata ─────────────────────────────────────────────────────────────────
 def read_meta(folder: Path) -> dict:
     bs = json.loads((folder / "beat_sheet.json").read_text())
@@ -144,8 +170,11 @@ def read_meta(folder: Path) -> dict:
         tagline = " ".join(f"#{t}" for t in tags)
         desc = f"{title}\n\n{body}\n\n{tagline}\n\nyoutube.com/@NikBearBrown"
     srt = folder / f"{slug}.srt"
+    srt_short = folder / f"{slug}-short.srt"
     return dict(slug=slug, title=title, tags=tags, description=desc,
                 srt=(srt if srt.exists() else None),
+                srt_short=(srt_short if srt_short.exists() else None),
+                short_title=m.get("short_title"),
                 playlist=m.get("playlist"), playlist_short=m.get("playlist_short"))
 
 
@@ -283,6 +312,11 @@ def main(argv=None):
     ap.add_argument("--no-pairs", dest="pairs", action="store_false",
                     help="legacy: treat each folder independently")
     ap.add_argument("--interval-hours", type=float, default=4.0)
+    ap.add_argument("--schedule-scope", choices=["channel", "playlist"], default="channel",
+                    help="playlist: each upload schedules against ITS playlist — "
+                         "max(last in playlist + interval, now + floor)")
+    ap.add_argument("--floor-minutes", type=float, default=15.0,
+                    help="playlist scope: minimum minutes in the future for any slot")
     ap.add_argument("--start", default=None, help="ISO datetime for the first slot if none scheduled")
     ap.add_argument("--privacy", choices=["private", "unlisted"], default="private")
     ap.add_argument("--category", default=EDU_CATEGORY)
@@ -403,21 +437,22 @@ def main(argv=None):
 
     # schedule
     youtube = None
+    floor = timedelta(minutes=args.floor_minutes)
     if not args.dry_run:
         youtube = get_service(Path(args.client).expanduser().resolve(),
                               Path(args.token).expanduser().resolve())
-        scheduled = channel_scheduled_times(youtube)
+        scheduled = [] if args.schedule_scope == "playlist" else channel_scheduled_times(youtube)
     else:
         scheduled = []
         print("[yt] DRY RUN — reading channel skipped; schedule starts from --start or now+interval.")
     slot = next_base_slot(scheduled, interval, start)
+    pl_last = {}        # playlist scope: last known slot per playlist title
 
     print(f"[yt] {len(work)} upload(s), every {args.interval_hours}h, privacy={args.privacy}")
     if scheduled:
         print(f"[yt] latest already-scheduled on channel: {max(scheduled).isoformat()}")
     pl_cache = {}
     for key, folder, meta, w, f in work:
-        stamp = slot.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
         size = f.stat().st_size / 1e6
         # resolve the playlist this upload belongs to
         if w == "short":
@@ -425,6 +460,19 @@ def main(argv=None):
                 or meta.get("playlist") or args.playlist
         else:
             pl_name = meta.get("playlist") or args.playlist
+        # playlist-scoped scheduling: next = max(now + floor, last in playlist + interval)
+        if args.schedule_scope == "playlist":
+            now = datetime.now(timezone.utc)
+            if pl_name and pl_name not in pl_last and youtube is not None:
+                pid = ensure_playlist(youtube, pl_name, pl_cache)
+                last = playlist_last_time(youtube, pid)
+                if last:
+                    pl_last[pl_name] = last
+            last = pl_last.get(pl_name)
+            slot = max(now + floor, last + interval) if last else now + floor
+            if pl_name:
+                pl_last[pl_name] = slot
+        stamp = slot.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
         extras = []
         if pl_name:
             extras.append(f"playlist='{pl_name}'")
@@ -447,11 +495,12 @@ def main(argv=None):
             ledger[key] = {"videoId": vid, "publishAt": stamp, "file": str(f)}
             ledger_path.write_text(json.dumps(ledger, indent=2))
             print(f"      -> https://youtu.be/{vid}  (scheduled {stamp})")
-            # captions (best-effort; never fail the run over a caption)
-            if args.captions and meta.get("srt"):
+            # captions (best-effort; per-surface: the short's cut has its own timing)
+            srt = (meta.get("srt_short") or meta.get("srt")) if w == "short" else meta.get("srt")
+            if args.captions and srt:
                 try:
-                    insert_caption(youtube, vid, meta["srt"], args.caption_lang)
-                    print(f"      + captions: {meta['srt'].name}")
+                    insert_caption(youtube, vid, srt, args.caption_lang)
+                    print(f"      + captions: {srt.name}")
                 except Exception as e:
                     print(f"      ! caption upload failed: {str(e)[:160]}", file=sys.stderr)
             # playlist (best-effort)

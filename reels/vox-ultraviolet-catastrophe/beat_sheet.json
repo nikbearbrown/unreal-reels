@@ -19,7 +19,53 @@
   "supersedes": "reels/vox-the-ultraviolet-catastrophe (conversion test)",
   "notes": "Fresh build. GRAPHIC ~53% of beats accepted deliberately (chart arc = evidence section; MOTION.md short-form corollary).",
   "total_estimated_duration_seconds": 190.15,
-  "playlist": "Quantum Mechanics (Vox Style)"
+  "playlist": "Quantum Mechanics (Vox Style)",
+  "chapters": [
+   [
+    "B01",
+    "The glow"
+   ],
+   [
+    "B03",
+    "Berlin measures it"
+   ],
+   [
+    "B05",
+    "The classical argument"
+   ],
+   [
+    "B08",
+    "The catastrophe"
+   ],
+   [
+    "B10",
+    "Planck's desperate fix"
+   ],
+   [
+    "T01",
+    "The chunk law: E = hν"
+   ],
+   [
+    "B12",
+    "The curve that worked"
+   ],
+   [
+    "B14",
+    "Quantum's birthday"
+   ],
+   [
+    "B15",
+    "Who was Max Planck?"
+   ]
+  ],
+  "hashtags": [
+   "physics",
+   "quantumMechanics",
+   "Planck",
+   "scienceHistory"
+  ],
+  "description_blurb": "By 1900, the glow of hot objects had been measured to within one percent — and the best theory in physics predicted it infinitely wrong. The story of the ultraviolet catastrophe, and the desperate curve-fit that started quantum mechanics.",
+  "playlist_short": "Shorts"
  },
  "beats": [
   {
