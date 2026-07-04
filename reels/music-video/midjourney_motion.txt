@@ -1,0 +1,30 @@
+# Midjourney motion (Animate) prompts — apply after you pick the still for each beat.
+
+B01 Storybook fable: slow push-in as the mice scurry together. Smooth hand-drawn animation, gentle motion, no text.
+B02 Storybook fable: gentle bob as the mice gesture and squeak. Smooth hand-drawn animation, gentle motion, no text.
+B03 Storybook fable: the cat slinks forward, mice recoil. Smooth hand-drawn animation, gentle motion, no text.
+B04 Storybook fable: the mouse faints, caught by its friend. Smooth hand-drawn animation, gentle motion, no text.
+B05 Storybook fable: Brown Back grumbles and gestures. Smooth hand-drawn animation, gentle motion, no text.
+B06 Storybook fable: quick dash for the crumb and away. Smooth hand-drawn animation, gentle motion, no text.
+B07 Storybook fable: the cat's grinning face pushes in. Smooth hand-drawn animation, gentle motion, no text.
+B08 Storybook fable: the mice draw together, a paw shoots up. Smooth hand-drawn animation, gentle motion, no text.
+B09 Storybook fable: Gray Ear acts out the bite and run. Smooth hand-drawn animation, gentle motion, no text.
+B10 Storybook fable: the mice get excited, bouncing. Smooth hand-drawn animation, gentle motion, no text.
+B11 Storybook fable: White Whisker raises a paw, others lean in. Smooth hand-drawn animation, gentle motion, no text.
+B12 Storybook fable: the mouse mimes hanging the bell, it glints. Smooth hand-drawn animation, gentle motion, no text.
+B13 Storybook fable: the mice jump up cheering, bell swings. Smooth hand-drawn animation, gentle motion, no text.
+B14 Storybook fable: the mice dance into a conga line. Smooth hand-drawn animation, gentle motion, no text.
+B15 Storybook fable: the mice twirl and link paws. Smooth hand-drawn animation, gentle motion, no text.
+B16 Storybook fable: the belled cat slinks away, mouse laughs. Smooth hand-drawn animation, gentle motion, no text.
+B17 Storybook fable: Brown Back hushes them, cheer dies down. Smooth hand-drawn animation, gentle motion, no text.
+B18 Storybook fable: Brown Back speaks; the other shrinks. Smooth hand-drawn animation, gentle motion, no text.
+B19 Storybook fable: Brown Back points; the bell hangs still. Smooth hand-drawn animation, gentle motion, no text.
+B20 Storybook fable: mice inch toward the cat, then freeze. Smooth hand-drawn animation, gentle motion, no text.
+B21 Storybook fable: White Whisker backs off, points away. Smooth hand-drawn animation, gentle motion, no text.
+B22 Storybook fable: the mouse fakes a limp and hobbles off. Smooth hand-drawn animation, gentle motion, no text.
+B23 Storybook fable: Gray Ear shakes head and turns away. Smooth hand-drawn animation, gentle motion, no text.
+B24 Storybook fable: the mouse mimes a trap snap, shudders. Smooth hand-drawn animation, gentle motion, no text.
+B25 Storybook fable: the mice slink off into the dark. Smooth hand-drawn animation, gentle motion, no text.
+B26 Storybook fable: slow hold on the bell and sleeping cat. Smooth hand-drawn animation, gentle motion, no text.
+B27 Storybook fable: the mouse shrugs and looks to camera. Smooth hand-drawn animation, gentle motion, no text.
+B28 Storybook fable: slow push-in on the grinning cat, bell unhung. Smooth hand-drawn animation, gentle motion, no text.

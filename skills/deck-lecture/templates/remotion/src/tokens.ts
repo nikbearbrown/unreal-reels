@@ -22,4 +22,4 @@ export const DRAW = 16; // frames — a stroke drawing on
 
 // numeric tokens to set in mono: 60%, 0.8, 0.6/0.3, 2016, 40 (non-global: safe for
 // both String.split with the capture group AND RegExp.test without lastIndex state)
-export const NUM_RE = /(\d[\d.,]*\s*%?|\d+\s*\/\s*\d+)/;
+export const NUM_RE = /(\d[\d,]*\.\d+\s*%?|\d[\d,]*\s*%|\d[\d.,]*\s*\/\s*\d[\d.,]*)/;

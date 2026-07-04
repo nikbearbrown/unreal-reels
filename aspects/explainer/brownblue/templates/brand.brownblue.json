@@ -1,0 +1,48 @@
+{
+  "brand": "brownblue",
+  "series": "Brown Blue",
+  "channel_handle": "@NikBearBrown",
+  "channel_url": "youtube.com/@NikBearBrown",
+  "voice_id": "TyW6NH39JcFb5M3xdIIk",
+  "elevenlabs_key": "ENV:ELEVENLABS_API_KEY",
+  "default_style": "dark",
+
+  "fonts": {
+    "display": "EB Garamond",
+    "body": "EB Garamond",
+    "math": "LaTeX (Manim MathTex)",
+    "numbers": "JetBrains Mono",
+    "links": {
+      "EB Garamond": "https://fonts.google.com/specimen/EB+Garamond",
+      "JetBrains Mono": "https://fonts.google.com/specimen/JetBrains+Mono"
+    },
+    "note": "EB Garamond everywhere Lato/Inter serve in lectures. Math = MathTex (Computer Modern). Standalone numerals outside MathTex = JetBrains Mono. Drop the TTFs in each video's fonts/."
+  },
+
+  "styles": {
+    "dark": {
+      "bg_color": "#16161D",
+      "ink_color": "#ECE6D8",
+      "blue": "#58C4DD",
+      "brown": "#CD853F",
+      "highlight": "#F0E442",
+      "secondary_color": "#8A8780",
+      "hairline": "#3A3A44",
+      "note": "Default. Near-black canvas, parchment ink. Blue = the object under study; brown = its foil; yellow = transient emphasis, one at a time."
+    },
+    "light": {
+      "bg_color": "#FFFFFF",
+      "ink_color": "#2a1a0e",
+      "blue": "#0072B2",
+      "brown": "#8B5A2B",
+      "highlight": "#0072B2",
+      "secondary_color": "#545454",
+      "hairline": "#D4D4D4",
+      "note": "White-canvas alternate. Blue doubles as emphasis (yellow fails on white). Never pure black text."
+    }
+  },
+
+  "forbidden_color": "#C8102E",
+
+  "note": "Brown Blue — 3b1b-template pure-Manim explainers for Bear's Notes. Voice is the Bear Brown clone (set per beat_sheet). forbidden_color is the lecture red — it must never appear in a brownblue frame. Key via ELEVENLABS_API_KEY env var — NEVER commit."
+}

@@ -48,8 +48,15 @@ def main():
             "then re-run this script."
         )
 
-    deck = Path(args.deck).expanduser().resolve()
     folder = Path(args.folder).expanduser().resolve()
+    # Resolve a relative --deck against the LECTURE FOLDER first, then the CWD.
+    deck_arg = Path(args.deck).expanduser()
+    if not deck_arg.is_absolute() and (folder / deck_arg).exists():
+        deck = (folder / deck_arg).resolve()
+    else:
+        deck = deck_arg.resolve()
+    if not deck.exists():
+        raise SystemExit(f"[err] deck not found: {args.deck} (tried {folder / deck_arg} and {deck_arg.resolve()})")
     out = folder / "deck-stills"
     out.mkdir(parents=True, exist_ok=True)
 

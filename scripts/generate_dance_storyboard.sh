@@ -87,5 +87,5 @@ json.dump(d, open(spec, "w"), ensure_ascii=False, indent=2)
 print("recorded storyboard_169 for", sum(1 for b in d['beats'] if b.get('storyboard_169')), "beats")
 PY
 fi
-echo; echo "done — $ok ok, $fail failed, $skip skipped.  Then: STILL_KEY=storyboard_169 ASPECT=16:9 W=1920 H=1080 generate_video_seedance.sh $FOLDER"
+echo; echo "done — $ok ok, $fail failed, $skip skipped.  Then: STILL_KEY=storyboard_169 ASPECT=16:9 W=1920 H=1080 generate_video.sh $FOLDER"
 exit 0

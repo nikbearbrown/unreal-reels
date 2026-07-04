@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "slug": "bio-bose",
+    "title": "Satyendra Nath Bose — a Bear's Notes mini-bio",
+    "series": "Bears Notes — Bios",
+    "kind": "bio",
+    "aspect_ratio": "16:9",
+    "render_orientations": [
+      "16:9"
+    ],
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "bg_color": "#0E0E12",
+    "ink_color": "#F2F0EC",
+    "secondary_color": "#8A8780",
+    "text_font": "Montserrat",
+    "style": "white on near-black, grey secondary, no accent colour, Montserrat. Each beat's on-screen time = its narration length.",
+    "structure": "Bear narrates throughout; visuals alternate render:clip footage (soul-id / phenomenon / application) and render:manim cards (title / equation / date).",
+    "facts": "S. N. Bose 1894-1974. 1924 paper rederived Planck's law from quantum statistics; sent to Einstein, who translated + published it. Bosons named for him (Dirac). Bose-Einstein condensate predicted with Einstein (1924-25), realized 1995. Never won a Nobel.",
+    "total_estimated_duration_seconds": 29.53
+  },
+  "beats": [
+    {
+      "beat_id": "B01",
+      "render": "clip",
+      "beat_type": "FOOTAGE",
+      "narration_text": "In 1924, an unknown professor in Dhaka mailed Einstein a paper.",
+      "tts_normalized_text": "In nineteen twenty-four, an unknown professor in Dhaka mailed Einstein a paper.",
+      "shot": "Soul-ID S. N. Bose — period portrait, dim study, slow push-in.",
+      "higgsfield_prompt": "Cinematic period portrait of an early-20th-century Indian physicist, round glasses, dark suit, seated in a dim study with papers and books, warm low-key light, shallow depth of field, slow subtle push-in, 1920s documentary film grain, muted palette, contemplative, 5 seconds, no text",
+      "soul_ref": "Satyendra Nath Bose",
+      "clip_source": "soul-id",
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 4.41
+    },
+    {
+      "beat_id": "B02",
+      "render": "manim",
+      "beat_type": "TITLE",
+      "narration_text": "Satyendra Nath Bose had just counted light in a brand-new way.",
+      "tts_normalized_text": "Satyendra Nath Bose had just counted light in a brand new way.",
+      "card": {
+        "kind": "title",
+        "name": "SATYENDRA NATH BOSE",
+        "dates": "1894 — 1974"
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 3.47
+    },
+    {
+      "beat_id": "B03",
+      "render": "clip",
+      "beat_type": "FOOTAGE",
+      "narration_text": "He rederived the law of glowing heat using pure quantum statistics.",
+      "tts_normalized_text": "He rederived the law of glowing heat using pure quantum statistics.",
+      "shot": "Phenomenon — identical photons / quanta of light drifting and merging.",
+      "higgsfield_prompt": "slow-motion swarm of identical glowing spheres of light drifting through a dark void and merging into one bright cluster, soft blue-white glow, cinematic, shallow depth of field, 5 seconds, no text, no people",
+      "clip_source": "phenomenon",
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 4.0
+    },
+    {
+      "beat_id": "B04",
+      "render": "manim",
+      "beat_type": "EQUATION",
+      "narration_text": "His rule counts how many identical particles crowd into each energy state.",
+      "tts_normalized_text": "His rule counts how many identical particles crowd into each energy state.",
+      "card": {
+        "kind": "equation",
+        "label": "Bose-Einstein distribution",
+        "tex": "\\bar{n}_i = \\frac{1}{e^{(E_i-\\mu)/k_B T}-1}"
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 4.31
+    },
+    {
+      "beat_id": "B05",
+      "render": "clip",
+      "beat_type": "FOOTAGE",
+      "narration_text": "Particles that obey it — bosons — can pile into a single state.",
+      "tts_normalized_text": "Particles that obey it, bosons, can pile into a single state.",
+      "shot": "Application — a Bose-Einstein condensate forming (ultracold atom cloud).",
+      "higgsfield_prompt": "scientific visualization of an ultracold atom cloud condensing into a Bose-Einstein condensate, a single ghostly peak emerging from a cloud of scattered points, cool blue light, dark laboratory, slow zoom, cinematic, 5 seconds, no text, no people",
+      "clip_source": "application",
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 3.89
+    },
+    {
+      "beat_id": "B06",
+      "render": "manim",
+      "beat_type": "DATE",
+      "narration_text": "With Einstein he predicted a new state of matter, finally made in 1995.",
+      "tts_normalized_text": "With Einstein he predicted a new state of matter, finally made in nineteen ninety-five.",
+      "card": {
+        "kind": "date",
+        "big": "1995",
+        "label": "Bose-Einstein condensate realized"
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 4.96
+    },
+    {
+      "beat_id": "B07",
+      "render": "clip",
+      "beat_type": "FOOTAGE",
+      "narration_text": "Satyendra Nath Bose — who taught particles to share, and never won a Nobel.",
+      "tts_normalized_text": "Satyendra Nath Bose, who taught particles to share, and never won a Nobel.",
+      "shot": "Soul-ID S. N. Bose — calm closing portrait, soft light fading to dark.",
+      "higgsfield_prompt": "Cinematic period portrait of the same early-20th-century Indian physicist, round glasses, calm and resolved with a faint smile, soft key light slowly dimming, dark background, very slow push-in, gentle fade toward darkness at the very end, 1920s film look, muted palette, 5 seconds, no text",
+      "soul_ref": "Satyendra Nath Bose",
+      "clip_source": "soul-id",
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 4.49
+    }
+  ]
+}

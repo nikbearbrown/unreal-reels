@@ -18,6 +18,7 @@ import { DeckBackground } from "./DeckBackground";
 import { Captions, CaptionLine } from "./Captions";
 import { Doodle, DoodleSpec } from "./Doodle";
 import { Bullets, BulletSpec } from "./Bullets";
+import { ProgressiveFigure, FigureSpec } from "./ProgressiveFigure";
 import { EquationTangent, TangentSpec } from "./EquationTangent";
 import { SectionCard, SectionSpec } from "./SectionCard";
 import { useOverlayFonts } from "./fonts";
@@ -25,6 +26,7 @@ import beats from "./data/beats.json";
 import captions from "./data/captions.json";
 import doodles from "./data/doodles.json"; // { [beat_id]: { title?, elements: [...] } }
 import bulletsData from "./data/bullets.json"; // { [beat_id]: { title?, bullets: [...] } }
+import figuresData from "./data/figures.json"; // { [beat_id]: { svg, groups } } — progressive figures
 import tangentsData from "./data/tangents.json"; // { [beat_id]: TangentSpec }
 import sectionsData from "./data/sections.json"; // { [beat_id]: SectionSpec } — native cards
 import deckStills from "./data/deck-stills.json"; // number[] — slide indices prerendered to PNG
@@ -47,6 +49,8 @@ const doodleSpecs = doodles as Record<string, DoodleSpec>;
 const hasDoodle = (bid: string) => (doodleSpecs[bid]?.elements?.length ?? 0) > 0;
 const bulletSpecs = bulletsData as Record<string, BulletSpec>;
 const hasBullets = (bid: string) => (bulletSpecs[bid]?.bullets?.length ?? 0) > 0;
+const figureSpecs = figuresData as Record<string, FigureSpec>;
+const hasFigure = (bid: string) => !!figureSpecs[bid]?.svg;
 const tangentSpecs = tangentsData as Record<string, TangentSpec>;
 const sectionSpecs = sectionsData as Record<string, SectionSpec>;
 const HAS_STILL = new Set<number>(deckStills as number[]); // hold slides use the PNG when prerendered
@@ -71,6 +75,13 @@ const SlideVisual: React.FC<{ beat: Beat; dur: number; lines: CaptionLine[] }> =
   // hitch at the section boundaries that jittered the export every few minutes)
   if (sectionSpecs[bid]) {
     return <SectionCard spec={sectionSpecs[bid]} />;
+  }
+
+  // progressive figure: an authored SVG revealed part-by-part across the whole
+  // slide (no live hold, no still-then-restart flash). Highest visual priority —
+  // when a figure is authored for a slide, the figure IS the visual.
+  if (hasFigure(bid)) {
+    return <ProgressiveFigure spec={figureSpecs[bid]} lines={lines} scope={bid} />;
   }
 
   // equation tangent: a standalone generated explainer (no deck slide, no live hold)

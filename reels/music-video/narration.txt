@@ -1,0 +1,13 @@
+This is a music video — twenty-eight beats, under three minutes, built entirely inside Unreal Reels. Here's how to build this exact one, then make it your own.
+
+Everything's already here: the song, the lyrics, the beat sheet, the artwork, and twenty-eight ready-made clips. You don't need an account or a key to start.
+
+Phase one is assembly. One command cuts every clip to its beat, stitches them in order, and lays the song on top. Out comes a finished sixteen-by-nine video.
+
+Phase two — make it yours. Open the prompt list. Every line starts with its beat number, so when Midjourney saves the clip, it's already named for the beat.
+
+Drag in the reference plates so the mice and the cat stay the same characters across every shot. Pick a frame, animate it, download the clip.
+
+Rename each clip to its beat number, drop it in, and run the same assemble command. Your shots replace the originals — and the timing stays locked to the song.
+
+That's the whole idea: the audio is the clock, the references lock the look, and you curate every step. Now go bell that cat.

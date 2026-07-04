@@ -1,7 +1,7 @@
 # Who's Gonna Bell That Cat — shot list
 28 beats · 28 Kling · 0 Seedance · aspect 9:16 · audio `GDWhosGonnaBellThatCatParvatiBEAN-mastered.wav`
 
-Upload each beat's frame(s), paste the prompt, generate, download to `video/<beat_id>.mp4`. Then run the local assembly (`generate_video_seedance.sh FINAL=1` or the assemble step) — it stitches whatever clips are present and muxes the master track.
+Upload each beat's frame(s), paste the prompt, generate, download to `video/<beat_id>.mp4`. Then run the local assembly (`generate_video.sh FINAL=1` or the assemble step) — it stitches whatever clips are present and muxes the master track.
 
 ---
 ## Kling beats (web, Unlimited — fast run)

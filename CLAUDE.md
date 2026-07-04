@@ -18,6 +18,11 @@ it. Everything below is Claude-/Claude-Code-specific.
 - The engine is plain scripts in `scripts/` (Python + bash). Run them; don't reimplement.
 - `scripts/*.sh` are written **Bash 3.2-safe** (macOS default shell) — no `mapfile`, guard
   empty arrays. Keep them that way.
+- **ALWAYS ask before using ANY paid service.** Higgsfield (FLUX.2, image-to-video, Seedance),
+  ElevenLabs, and fal.ai bill the user's credits — image-to-video/Seedance is expensive. Never
+  start a credit-spending step without explicit per-step go-ahead. Free/local work (segment,
+  author, ffmpeg assembly, `--dry-run`/`DRY_RUN=1`, local Manim renders) needs no permission.
+  See AGENTS.md → First principles #6.
 - The image/video/audio calls go to **Higgsfield / ElevenLabs / fal.ai** over the network and
   cost credits. These run on the user's machine with their keys — you (in a sandbox) generally
   **cannot** run them. Build/validate the command, then hand it to the user to execute.
@@ -26,6 +31,10 @@ it. Everything below is Claude-/Claude-Code-specific.
 - **Always hand off commands copy-paste-ready with absolute full paths** (`cd "/Users/.../unreal-reels/…" && …`),
   one command per code block, steps numbered — never a bare or relative command. See
   AGENTS.md → "Handing off commands."
+- **Never make the user hand-edit a file.** When a value is missing, ask the user for it
+  and write it into the file yourself (`beat_sheet.json`, presets, etc.); confirm the
+  change. The user supplies values, the agent does the editing. See AGENTS.md → "Handing
+  off commands."
 
 ## Secrets & private content
 

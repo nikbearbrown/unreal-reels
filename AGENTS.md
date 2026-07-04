@@ -14,8 +14,19 @@ fully before acting. (Claude Code users: `CLAUDE.md` points here.)
    the storyboard frame, the clip). Don't batch past a gate unasked.
 4. **References, not descriptions, lock identity.** Characters are locked by reference
    *images* (a curated library), not by re-describing them in prompts.
+   When a beat has `assets` such as `PNG/foo.png`, those files are **reference inputs to
+   FLUX/Higgsfield**, not finished storyboard stills. Do not manufacture
+   `stills/story/...` locally by resizing/cropping those PNGs. The `stills/` outputs are
+   created by FLUX from the reference image(s) plus the beat's `image_prompt` or
+   `image_prompt_a`/`image_prompt_b`; see `docs/flux-storyboard-stills.md`.
 5. **One look knob.** The photographic aesthetic is a single swappable preset
    (`presets/`), applied to every beat — don't hand-tune look per shot.
+6. **ALWAYS ask before using ANY paid service.** Higgsfield (SoulID, FLUX.2, image-to-video,
+   Seedance), ElevenLabs TTS, and fal.ai all cost the user credits — some a lot (Seedance/
+   image-to-video is expensive). Never kick off a paid/credit-spending step without the user's
+   explicit go-ahead for *that* step. Free/local work (segmenting, authoring prompts, ffmpeg
+   assembly, `--dry-run`/`DRY_RUN=1` previews, Manim renders on the user's machine) needs no
+   permission; anything that bills an account does. When in doubt, it's paid — ask.
 
 ## The single source of truth: `beat_sheet.json`
 
@@ -97,6 +108,18 @@ This pipeline calls **Higgsfield** (SoulID, FLUX.2, image-to-video), **ElevenLab
 optionally **fal.ai** (LoRA/style). If a key is missing, tell the user exactly which service
 and link `docs/services.md` — never invent a workaround, never commit a key.
 
+**Checking which keys are set (names only, never values).** To see every environment
+variable *name* without exposing any secret value, run:
+
+```
+env | sed 's/=.*/=/' | sort
+```
+
+This prints each variable as `NAME=` (value redacted). Use it to confirm whether e.g.
+`ELEVENLABS_API_KEY` / `FAL_KEY` are present. Higgsfield uses no env var — it authenticates
+its CLI (`higgsfield auth login`), so it won't show here. Never run a plain `env`, `printenv`,
+or `echo $KEY` that would print a secret's value.
+
 ## Handing off commands
 
 Whenever you give the user a command to run, make it **copy-paste-ready with
@@ -111,6 +134,12 @@ cd "/Users/<user>/Documents/Cowork/unreal-reels/lectures/<slug>/remotion" && npm
 One command per block; if there are multiple steps, number them and give each its
 own block. (Heavy/credit steps still run on the user's machine — hand off the
 command, don't claim you produced the output.)
+
+**Never make the user hand-edit a file.** If a value is missing (a `voice_id`, a
+`soul_id`, a slug, a path, a prompt tweak), *ask the user for the value* and then make
+the edit yourself — write it into `beat_sheet.json`, the preset, or wherever it belongs.
+Do not tell the user to "open the file and set X" or "edit `metadata.voice_id`." Ask for
+the info, apply it, confirm what you changed. The user pastes values; the agent edits files.
 
 ## What never to do
 

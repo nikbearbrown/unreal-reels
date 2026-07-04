@@ -49,8 +49,9 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 SCOPES = [
-    "https://www.googleapis.com/auth/youtube.upload",
-    "https://www.googleapis.com/auth/youtube",
+    "https://www.googleapis.com/auth/youtube.upload",     # videos.insert
+    "https://www.googleapis.com/auth/youtube",            # playlists / playlistItems
+    "https://www.googleapis.com/auth/youtube.force-ssl",  # captions.insert
 ]
 EDU_CATEGORY = "27"
 
@@ -142,7 +143,10 @@ def read_meta(folder: Path) -> dict:
                         if b.get("beat_type") not in ("INTRO", "OUTRO"))
         tagline = " ".join(f"#{t}" for t in tags)
         desc = f"{title}\n\n{body}\n\n{tagline}\n\nyoutube.com/@NikBearBrown"
-    return dict(slug=slug, title=title, tags=tags, description=desc)
+    srt = folder / f"{slug}.srt"
+    return dict(slug=slug, title=title, tags=tags, description=desc,
+                srt=(srt if srt.exists() else None),
+                playlist=m.get("playlist"), playlist_short=m.get("playlist_short"))
 
 
 def pick_file(folder: Path, slug: str, which: str) -> Path | None:
@@ -211,6 +215,50 @@ def upload(youtube, path: Path, meta: dict, publish_at: datetime, privacy: str, 
     return resp["id"]
 
 
+def insert_caption(youtube, video_id: str, srt: Path, language="en", name="English"):
+    """Upload an .srt as a caption track (captions.insert; needs youtube.force-ssl)."""
+    from googleapiclient.http import MediaFileUpload
+    body = {"snippet": {"videoId": video_id, "language": language,
+                        "name": name, "isDraft": False}}
+    media = MediaFileUpload(str(srt), mimetype="application/octet-stream", resumable=False)
+    youtube.captions().insert(part="snippet", body=body, media_body=media).execute()
+
+
+def ensure_playlist(youtube, title: str, cache: dict) -> str:
+    """Find a playlist by exact title on the authorized channel, or create it.
+    Cached per run so we don't re-list."""
+    if title in cache:
+        return cache[title]
+    pid, token = None, None
+    while True:
+        resp = youtube.playlists().list(part="id,snippet", mine=True,
+                                        maxResults=50, pageToken=token).execute()
+        for it in resp.get("items", []):
+            if it["snippet"]["title"] == title:
+                pid = it["id"]
+                break
+        token = resp.get("nextPageToken")
+        if pid or not token:
+            break
+    if pid is None:
+        resp = youtube.playlists().insert(
+            part="snippet,status",
+            body={"snippet": {"title": title},
+                  "status": {"privacyStatus": "public"}}).execute()
+        pid = resp["id"]
+        print(f"      + created playlist '{title}'")
+    cache[title] = pid
+    return pid
+
+
+def add_to_playlist(youtube, playlist_id: str, video_id: str):
+    youtube.playlistItems().insert(
+        part="snippet",
+        body={"snippet": {"playlistId": playlist_id,
+                          "resourceId": {"kind": "youtube#video", "videoId": video_id}}}
+    ).execute()
+
+
 # ── driver ───────────────────────────────────────────────────────────────────
 def discover(root: Path) -> list[Path]:
     out = []
@@ -238,6 +286,17 @@ def main(argv=None):
     ap.add_argument("--start", default=None, help="ISO datetime for the first slot if none scheduled")
     ap.add_argument("--privacy", choices=["private", "unlisted"], default="private")
     ap.add_argument("--category", default=EDU_CATEGORY)
+    ap.add_argument("--playlist", default=None,
+                    help="playlist for landscape/long uploads (find-or-create); "
+                         "per-folder override: metadata.playlist")
+    ap.add_argument("--shorts-playlist", default=None,
+                    help="playlist for 9:16 short uploads; per-folder override: metadata.playlist_short")
+    ap.add_argument("--no-captions", dest="captions", action="store_false", default=True,
+                    help="do NOT upload the <slug>.srt caption track with each video")
+    ap.add_argument("--caption-lang", default="en")
+    ap.add_argument("--backfill-extras", action="store_true",
+                    help="for videos ALREADY in the ledger, add captions + playlist using their "
+                         "stored videoId (no re-upload). Use to retrofit past uploads.")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--client", default="client_secret.json")
     ap.add_argument("--token", default="youtube_token.json")
@@ -260,6 +319,39 @@ def main(argv=None):
 
     ledger_path = Path(args.ledger).expanduser().resolve()
     ledger = json.loads(ledger_path.read_text()) if ledger_path.exists() else {}
+
+    # ── backfill mode: retrofit captions + playlist onto already-uploaded videos ──
+    if args.backfill_extras:
+        yt = None if args.dry_run else get_service(
+            Path(args.client).expanduser().resolve(), Path(args.token).expanduser().resolve())
+        pl_cache = {}
+        for folder in ordered:
+            meta = read_meta(folder)
+            for w in (["landscape", "short"] if args.which == "both" else [args.which]):
+                key = f"{meta['slug']}::{w}"
+                if key not in ledger:
+                    continue
+                vid = ledger[key]["videoId"]
+                pl_name = (meta.get("playlist_short") or args.shorts_playlist or meta.get("playlist") or args.playlist) \
+                    if w == "short" else (meta.get("playlist") or args.playlist)
+                print(f"[backfill] {key} -> https://youtu.be/{vid}"
+                      f"{'  captions' if (args.captions and meta.get('srt')) else ''}"
+                      f"{('  playlist=' + pl_name) if pl_name else ''}")
+                if args.dry_run:
+                    continue
+                if args.captions and meta.get("srt"):
+                    try:
+                        insert_caption(yt, vid, meta["srt"], args.caption_lang)
+                        print(f"      + captions: {meta['srt'].name}")
+                    except Exception as e:
+                        print(f"      ! caption failed: {str(e)[:160]}", file=sys.stderr)
+                if pl_name:
+                    try:
+                        add_to_playlist(yt, ensure_playlist(yt, pl_name, pl_cache), vid)
+                        print(f"      + added to playlist '{pl_name}'")
+                    except Exception as e:
+                        print(f"      ! playlist failed: {str(e)[:160]}", file=sys.stderr)
+        return 0
 
     # build the work list (skip already-uploaded per ledger)
     work, not_ready, pair_links = [], [], []
@@ -323,10 +415,23 @@ def main(argv=None):
     print(f"[yt] {len(work)} upload(s), every {args.interval_hours}h, privacy={args.privacy}")
     if scheduled:
         print(f"[yt] latest already-scheduled on channel: {max(scheduled).isoformat()}")
+    pl_cache = {}
     for key, folder, meta, w, f in work:
         stamp = slot.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
         size = f.stat().st_size / 1e6
-        print(f"  {stamp}  {w:9}  {meta['slug']}  ({size:.1f} MB)")
+        # resolve the playlist this upload belongs to
+        if w == "short":
+            pl_name = meta.get("playlist_short") or args.shorts_playlist \
+                or meta.get("playlist") or args.playlist
+        else:
+            pl_name = meta.get("playlist") or args.playlist
+        extras = []
+        if pl_name:
+            extras.append(f"playlist='{pl_name}'")
+        if args.captions and meta.get("srt"):
+            extras.append("captions")
+        tail = ("  [" + ", ".join(extras) + "]") if extras else ""
+        print(f"  {stamp}  {w:9}  {meta['slug']}  ({size:.1f} MB){tail}")
         if not args.dry_run:
             try:
                 vid = upload(youtube, f, meta, slot, args.privacy, args.category)
@@ -342,6 +447,21 @@ def main(argv=None):
             ledger[key] = {"videoId": vid, "publishAt": stamp, "file": str(f)}
             ledger_path.write_text(json.dumps(ledger, indent=2))
             print(f"      -> https://youtu.be/{vid}  (scheduled {stamp})")
+            # captions (best-effort; never fail the run over a caption)
+            if args.captions and meta.get("srt"):
+                try:
+                    insert_caption(youtube, vid, meta["srt"], args.caption_lang)
+                    print(f"      + captions: {meta['srt'].name}")
+                except Exception as e:
+                    print(f"      ! caption upload failed: {str(e)[:160]}", file=sys.stderr)
+            # playlist (best-effort)
+            if pl_name:
+                try:
+                    pid = ensure_playlist(youtube, pl_name, pl_cache)
+                    add_to_playlist(youtube, pid, vid)
+                    print(f"      + added to playlist '{pl_name}'")
+                except Exception as e:
+                    print(f"      ! playlist add failed: {str(e)[:160]}", file=sys.stderr)
         slot = slot + interval
 
     # MANUAL funnel step: the Related Video link can't be set via the Data API.

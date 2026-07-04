@@ -16,7 +16,7 @@ set -uo pipefail
 FOLDER="${1:?usage: build_videos.sh <reel_folder>}"
 SPEC="$FOLDER/beat_sheet.json"; [ -f "$SPEC" ] || { echo "no beat_sheet.json in $FOLDER" >&2; exit 1; }
 HERE="$(cd "$(dirname "$0")" && pwd)"
-SEED="$HERE/generate_video_seedance.sh"
+SEED="$HERE/generate_video.sh"
 
 if [ "${SKIP_FETCH:-0}" != 1 ]; then
   echo "=== download + rename web clips (both aspects) ==="

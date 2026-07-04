@@ -48,7 +48,36 @@ DEFAULTS = dict(
     safe_h=3.4,          # house safe-area half-height (matches scenes' SAFE_H)
     min_overlap=0.12,    # flag a text pair when intersection >= this * smaller box area
     min_box=0.02,        # ignore degenerate/empty boxes below this area
+    curve_inset=0.15,    # world units to inset a label's centerline (ignore corner clips)
+    max_segs=6000,       # cap stroke segments per snapshot (perf guard)
+    curve_strict=False,  # when True, TEXT/CURVE is an ERROR (else WARN)
 )
+
+
+def _seg_seg(x1, y1, x2, y2, x3, y3, x4, y4) -> bool:
+    """Do segments (1-2) and (3-4) intersect? Ported from ai1-cli's SVG
+    layout auditor (scripts/svg-layout-audit.mjs)."""
+    d = (x2 - x1) * (y4 - y3) - (y2 - y1) * (x4 - x3)
+    if d == 0:
+        return False
+    t = ((x3 - x1) * (y4 - y3) - (y3 - y1) * (x4 - x3)) / d
+    u = ((x3 - x1) * (y2 - y1) - (y3 - y1) * (x2 - x1)) / d
+    return 0.0 <= t <= 1.0 and 0.0 <= u <= 1.0
+
+
+def _struck(box, strokes, inset):
+    """True if any stroke segment crosses the label's horizontal OR vertical
+    centerline (each inset so a connector merely clipping a corner is ignored).
+    Same rule as the SVG auditor's TEXT/LINE + TEXT/PATH check."""
+    x0, y0, x1, y1 = box
+    px = min(inset, (x1 - x0) / 4.0)
+    py = min(inset, (y1 - y0) / 4.0)
+    cx, cy = (x0 + x1) / 2.0, (y0 + y1) / 2.0
+    for (sx1, sy1, sx2, sy2) in strokes:
+        if _seg_seg(sx1, sy1, sx2, sy2, x0 + px, cy, x1 - px, cy) or \
+           _seg_seg(sx1, sy1, sx2, sy2, cx, y0 + py, cx, y1 - py):
+            return True
+    return False
 
 # These are filled in once manim is imported (so this file imports without it).
 TEXT_TYPES: tuple = ()
@@ -96,6 +125,40 @@ def _collect_texts(mob, out):
         return
     for s in getattr(mob, "submobjects", []):
         _collect_texts(s, out)
+
+
+def _collect_strokes(mob, out, cap):
+    """Flatten every visible stroked (non-text) leaf VMobject into world-space
+    line segments — curves, axes, connectors, rung lines. Text glyphs are skipped
+    (they are labels, not strokes)."""
+    if len(out) >= cap:
+        return
+    if isinstance(mob, TEXT_TYPES):
+        return
+    subs = getattr(mob, "submobjects", [])
+    if subs:
+        for s in subs:
+            _collect_strokes(s, out, cap)
+        return
+    # leaf mobject
+    try:
+        if float(mob.get_stroke_opacity()) <= 0.02:
+            return
+    except Exception:
+        return
+    try:
+        anchors = mob.get_anchors()
+    except Exception:
+        return
+    if anchors is None or len(anchors) < 2:
+        return
+    for k in range(len(anchors) - 1):
+        if len(out) >= cap:
+            return
+        x1, y1 = float(anchors[k][0]), float(anchors[k][1])
+        x2, y2 = float(anchors[k + 1][0]), float(anchors[k + 1][1])
+        if (x1 - x2) ** 2 + (y1 - y2) ** 2 > 1e-6:
+            out.append((x1, y1, x2, y2))
 
 
 def _visible(mob) -> bool:
@@ -157,7 +220,11 @@ def _snapshot(scene, kind, t, snapshots):
             continue
         items.append((_text_of(m), b))
     if items:
-        snapshots.append(dict(idx=len(snapshots), kind=kind, t=t, items=items))
+        strokes = []
+        for m in list(getattr(scene, "mobjects", [])):
+            _collect_strokes(m, strokes, DEFAULTS["max_segs"])
+        snapshots.append(dict(idx=len(snapshots), kind=kind, t=t,
+                              items=items, strokes=strokes))
 
 
 def _analyze(snapshots, opt):
@@ -168,9 +235,24 @@ def _analyze(snapshots, opt):
 
     overlaps = {}   # key -> finding
     offframe = {}   # key -> finding
+    struck = {}     # key -> finding (text sitting on a curve/line)
 
     for snap in snapshots:
         items = snap["items"]
+        strokes = snap.get("strokes", [])
+        # --- text struck by a curve / line (ported from the SVG layout auditor) ---
+        if strokes:
+            for txt, b in items:
+                if not _struck(b, strokes, opt["curve_inset"]):
+                    continue
+                sev = "ERROR" if opt.get("curve_strict") else "WARN"
+                rec = struck.get(txt)
+                if rec is None:
+                    struck[txt] = dict(
+                        type="TEXT_ON_CURVE", severity=sev, text=txt,
+                        t=snap["t"], snap=snap["idx"],
+                        box=[round(v, 2) for v in b],
+                    )
         # --- text-on-text ---
         for i in range(len(items)):
             ti, bi = items[i]
@@ -211,7 +293,7 @@ def _analyze(snapshots, opt):
                     box=[round(v, 2) for v in b],
                 )
 
-    findings = list(overlaps.values()) + list(offframe.values())
+    findings = list(overlaps.values()) + list(offframe.values()) + list(struck.values())
     findings.sort(key=lambda f: (0 if f["severity"] == "ERROR" else 1, f["t"]))
     return findings
 
@@ -243,6 +325,9 @@ def _write_reports(folder: Path, scene_name: str, snapshots, findings, opt):
             if f["type"] == "OFF_FRAME":
                 return (f"- **{f['severity']}** · t≈{f['t']}s · off-frame: "
                         f"`{f['text']}`  box={f['box']}")
+            if f["type"] == "TEXT_ON_CURVE":
+                return (f"- **{f['severity']}** · t≈{f['t']}s · label on a curve/line: "
+                        f"`{f['text']}`  box={f['box']}")
             return (f"- **{f['severity']}** · t≈{f['t']}s · outside safe area: "
                     f"`{f['text']}`  box={f['box']}")
         if errors:
@@ -268,12 +353,16 @@ def main(argv=None):
     ap.add_argument("--png", action="store_true", help="save annotated frames at flagged moments")
     ap.add_argument("--portrait", action="store_true",
                     help="audit the 9:16 render (1080x1920) instead of the default 16:9")
+    ap.add_argument("--curve-strict", action="store_true",
+                    help="treat TEXT-ON-CURVE (label struck by a graph/line) as an ERROR, not a warning")
     args = ap.parse_args(argv)
     if args.portrait:
         # portrait safe band (half-extents) ~ matches bn_layout's portrait content band
         args.safe_w, args.safe_h = 1.95, 3.4
 
-    opt = dict(safe_w=args.safe_w, safe_h=args.safe_h, min_overlap=args.min_overlap)
+    opt = dict(safe_w=args.safe_w, safe_h=args.safe_h, min_overlap=args.min_overlap,
+               curve_inset=DEFAULTS["curve_inset"], max_segs=DEFAULTS["max_segs"],
+               curve_strict=args.curve_strict)
 
     # locate the scene file
     if args.scene:

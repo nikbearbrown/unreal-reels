@@ -35,7 +35,7 @@ md = [f"# {m.get('title','reel')} — shot list",
       f"{len(beats)} beats · {len(kling)} Kling · {len(seed)} Seedance · aspect {m.get('aspect_ratio')} · "
       f"audio `{m.get('audio_file')}`",
       "\nUpload each beat's frame(s), paste the prompt, generate, download to "
-      "`video/<beat_id>.mp4`. Then run the local assembly (`generate_video_seedance.sh FINAL=1` "
+      "`video/<beat_id>.mp4`. Then run the local assembly (`generate_video.sh FINAL=1` "
       "or the assemble step) — it stitches whatever clips are present and muxes the master track.\n",
       "---\n## Kling beats (web, Unlimited — fast run)\n"]
 md += [block(b) + "\n" for b in kling]

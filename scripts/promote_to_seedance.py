@@ -51,7 +51,7 @@ def main():
     json.dump(d, open(p, "w"), ensure_ascii=False, indent=2)
     print(f"promoted -> {d['metadata']['counts']}")
     print("next: re-run generate_startend_storyboard.sh (single start frame for the seedance beats),")
-    print("      slice_beat_audio.sh, then generate_video_seedance.sh on the promoted beats.")
+    print("      slice_beat_audio.sh, then generate_video.sh on the promoted beats.")
 
 if __name__ == "__main__":
     main()

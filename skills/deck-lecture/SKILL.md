@@ -126,8 +126,11 @@ entry animations play) for the full slide; `doodle` slides hold the iframe
 `slide_hold_s` then crossfade to the drawn sketch. Narration audio + karaoke
 captions ride on top throughout; slide length = audio + tail-padding.
 → `scripts/scaffold_remotion.py <folder> --deck "<deck>.dc.html"`
-→ `cd <folder>/remotion && npm install && npm run render` → `out/<slug>.mp4`
-(use `npm run studio` to preview before the full render).
+→ `cd <folder>/remotion && npm install && npm run studio` — **preview gate. STOP here.**
+**Never auto-render.** The human scrubs every beat in Studio (audio lands on the
+slide, captions track, charts animate) and only *then* renders it themselves:
+→ `npm run render` → `out/<slug>.mp4`. Rendering is the most expensive step and is
+always human-approved, like every other gate in the pipeline.
 
 ## Reuse map (build nothing that exists)
 
@@ -211,7 +214,8 @@ python skills/deck-lecture/scripts/align_captions.py "$FOLDER"
 # 3.5 doodles for the text slides (starters, then upgrade the important ones)
 python skills/deck-lecture/scripts/build_doodle.py "$FOLDER"
 python skills/deck-lecture/scripts/preview_doodle.py "$FOLDER" S05   # eyeball before render
-# 4. assemble + render
+# 4. assemble, then PREVIEW (never auto-render)
 python skills/deck-lecture/scripts/scaffold_remotion.py "$FOLDER" --deck "$DECK"
-cd "$FOLDER/remotion" && npm install && npm run render
+cd "$FOLDER/remotion" && npm install && npm run studio   # approve in Studio first
+npm run render                                            # only after you approve
 ```

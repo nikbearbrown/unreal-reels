@@ -13,7 +13,7 @@ source deck, it builds <folder>/remotion/:
     public/deck/             <- deck.html (rail hidden) + support.js + deck-stage.js + _ds/
     public/mp3/              <- per-slide narration
 
-Then: cd remotion && npm i && npm run render
+Then: cd remotion && npm i && npm run studio   (preview gate — approve, THEN `npm run render`)
 
 Usage:
     python scaffold_remotion.py path/to/lecture_folder \
@@ -73,7 +73,15 @@ def main():
     args = ap.parse_args()
 
     folder = Path(args.folder).expanduser().resolve()
-    deck_path = Path(args.deck).expanduser().resolve()
+    # Resolve a relative --deck against the LECTURE FOLDER first, then the CWD.
+    # (A bare filename like "01-x.dc.html" almost always means "in the folder".)
+    deck_arg = Path(args.deck).expanduser()
+    if not deck_arg.is_absolute() and (folder / deck_arg).exists():
+        deck_path = (folder / deck_arg).resolve()
+    else:
+        deck_path = deck_arg.resolve()
+    if not deck_path.exists():
+        sys.exit(f"[err] deck not found: {args.deck} (tried {folder / deck_arg} and {deck_arg.resolve()})")
     slug = args.slug or folder.name
 
     sheet_path = folder / "beat_sheet.json"
@@ -137,6 +145,25 @@ def main():
     bspec = json.loads(bullets_path.read_text()) if bullets_path.exists() else {}
     (proj / "src" / "data" / "bullets.json").write_text(json.dumps(bspec, indent=2, ensure_ascii=False))
 
+    # 4c-fig) progressive-figure specs: reveal an authored SVG's parts in sync with
+    #     narration. <folder>/figures.json is { beat_id: {file, title?} }; we embed
+    #     the SVG text (so no runtime fetch) and count its reveal groups (pf-N).
+    fig_path = folder / "figures.json"
+    figraw = json.loads(fig_path.read_text()) if fig_path.exists() else {}
+    figout = {}
+    for bid, f in figraw.items():
+        svgp = (folder / f["file"]).resolve()
+        if not svgp.exists():
+            print(f"[warn] figure svg not found for {bid}: {svgp}")
+            continue
+        txt = svgp.read_text(encoding="utf-8")
+        idxs = [int(m) for m in re.findall(r"pf-(\d+)", txt)]
+        groups = (max(idxs) + 1) if idxs else 1
+        figout[bid] = {"svg": txt, "groups": groups, "title": f.get("title")}
+    (proj / "src" / "data" / "figures.json").write_text(json.dumps(figout, ensure_ascii=False))
+    fig_summary = ", ".join("%s:%dg" % (b, v["groups"]) for b, v in figout.items()) or "none"
+    print("[ok] progressive figures wired: %d (%s)" % (len(figout), fig_summary))
+
     # 4d) equation-tangent specs (the 5-zone explainer after each equation slide)
     tang_path = folder / "tangents.json"
     tspec = json.loads(tang_path.read_text()) if tang_path.exists() else {}
@@ -167,15 +194,17 @@ def main():
     bulleted = [bid for bid, s in bspec.items() if s.get("bullets") and bid not in authored]
     still_live = [b["beat_id"] for b in sheet["beats"]
                   if b.get("visual_mode") == "doodle"
-                  and b["beat_id"] not in authored and b["beat_id"] not in bulleted]
+                  and b["beat_id"] not in authored and b["beat_id"] not in bulleted
+                  and b["beat_id"] not in figout]  # progressive-figure slides aren't "live"
     print(f"[ok] bullet specs wired: {len(bulleted)} slides "
           f"| still falling back to live: {len(still_live)}")
 
     print(f"[ok] scaffolded {proj}")
-    print("[next]")
+    print("[next] preview first — NEVER auto-render. The human approves in Studio, then renders.")
     print(f"    cd {proj}")
     print("    npm install")
-    print("    npm run studio     # preview")
+    print("    npm run studio     # <- STOP HERE: preview all beats, audio, captions, charts")
+    print("    # only if it looks good, YOU render it:")
     print("    npm run render     # -> remotion/out/{}.mp4".format(slug))
 
 

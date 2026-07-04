@@ -19,6 +19,16 @@ Concept → scope (what deserves a video) → ordered explanatory beats (hook �
 each with a label-free `image_prompt` and the overlay text kept in a separate field for Remotion.
 Then the shared stages run, with the overlay stage adding labels/arrows/equations.
 
+## The two explainer skills
+
+- **`bears-doodles/`** — MinutePhysics template: progressive-disclosure line art on white,
+  Shadows Into Light, 1–5 min, optional SVG/doodle overlays.
+- **`brownblue/`** — 3Blue1Brown template: pure Manim (no overlays, ever), EB Garamond,
+  blue+brown palette (dark canvas default), Bear Brown voice, length derived from the
+  pedagogical arc (concrete-before-abstract, mystery openings, transform-don't-cut).
+  Reuses the bears-doodles pipeline scripts; its own constitution lives in
+  `brownblue/reference/pedagogy.md` + `style.md`.
+
 ## Source skills to fold in
 
 From the existing work: **`bears-doodles`** (MinutePhysics-style progressive-disclosure sketch

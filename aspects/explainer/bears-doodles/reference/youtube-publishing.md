@@ -60,6 +60,20 @@ The 1-min *16:9* and the deep *9:16* are **not published** — wrong fit for the
 - **Pairs mode (default).** The script pairs each deep folder with its 1-min source and queues a concept **only when both the deep 16:9 and the 1-min 9:16 short exist** — otherwise it's listed "NOT publish-ready" and skipped. At 6 uploads/day that's **3 concepts/day** (deep + short each). `--no-pairs` falls back to the legacy single-folder mode.
 - **Related Video is a manual Studio step** (not in the Data API). The rule: **each 1-min Short points at its concept's deep 16:9** (the worked example genuinely has *more* than the Short — not a same-content twin). The script prints a per-concept "Short → Deep" checklist after each run.
 
+## Captions + playlists (auto)
+
+- **Captions.** Each video's `<slug>.srt` (from `emit_transcript.py`) is uploaded as an
+  English caption track automatically. Disable with `--no-captions`; language via
+  `--caption-lang`. This needs the **`youtube.force-ssl`** scope — if you authorized
+  before this was added, **delete `youtube_token.json` and re-run** to re-consent.
+- **Playlists.** Videos are added to a playlist (find-or-create). Long/16:9 uses
+  `metadata.playlist` (or `--playlist`); 9:16 shorts use `metadata.playlist_short`
+  (or `--shorts-playlist`). Lets you split audiences — e.g. a "Full Explainers"
+  playlist for the profs' long cuts and a separate "One-Minute" playlist for the
+  1-min doodles.
+- **Backfill.** `--backfill-extras` applies captions + playlist to videos ALREADY in
+  the ledger (uses the stored videoId, no re-upload) — to retrofit past uploads.
+
 ## Notes
 - Category 27 = Education; `selfDeclaredMadeForKids` is set to false.
 - `--which short` posts the 9:16 cut as its own video (YouTube auto-classifies vertical < 3 min as a Short).

@@ -1,13 +1,23 @@
 #!/usr/bin/env bash
-# Backstop: refuse to commit large files (media should already be in .gitignore).
+# Backstop: refuse to commit media or large files (media should already be in .gitignore).
 # Activate once per clone:  git config core.hooksPath .githooks
 # Bash 3.2-safe.
 
-LIMIT_MB=50
+LIMIT_MB=10
 LIMIT=$((LIMIT_MB * 1024 * 1024))
 big=""
+media=""
 while IFS= read -r f; do
   [ -f "$f" ] || continue
+  case "$f" in
+    *.wav|*.WAV|*.mp3|*.MP3|*.m4a|*.M4A|*.aiff|*.AIFF|*.flac|*.FLAC|*.ogg|*.OGG|\
+*.mp4|*.MP4|*.mov|*.MOV|*.mkv|*.MKV|*.webm|*.WEBM|*.avi|*.AVI|\
+*.png|*.PNG|*.gif|*.GIF|*.tiff|*.TIFF|*.bmp|*.BMP|*.psd|*.PSD|\
+*.safetensors|*.ckpt|*.bin|*.zip|*.tar|*.gz)
+      media="${media}
+  $f"
+      ;;
+  esac
   sz=$(wc -c < "$f" 2>/dev/null | tr -d ' ')
   [ -z "$sz" ] && continue
   if [ "$sz" -gt "$LIMIT" ]; then
@@ -16,11 +26,18 @@ while IFS= read -r f; do
   fi
 done < <(git diff --cached --name-only --diff-filter=AM)
 
+if [ -n "$media" ]; then
+  echo "commit blocked - staged media/binary file(s):${media}"
+  echo ""
+  echo "Media belongs outside git. Unstage with: git restore --staged <file>"
+  exit 1
+fi
+
 if [ -n "$big" ]; then
-  echo "✗ commit blocked — staged file(s) over ${LIMIT_MB}MB:${big}"
+  echo "commit blocked - staged file(s) over ${LIMIT_MB}MB:${big}"
   echo ""
   echo "These are almost certainly media that belongs in .gitignore."
-  echo "Unstage with:  git restore --staged <file>   (then add a rule to .gitignore)"
+  echo "Unstage with: git restore --staged <file>   (then add a rule to .gitignore)"
   exit 1
 fi
 exit 0

@@ -1,5 +1,35 @@
 # Getting started — your first video
 
+## Step 1 — recreate an existing video (one command)
+
+The fastest way to see the whole pipeline work is to **rebuild a finished reel from the assets
+already in the repo.** No authoring, no keys — one command, one video. The repo ships a complete
+Bios example, `reels/bio-bose` (a ~30s mini-bio of Satyendra Nath Bose). From the repo root:
+
+```bash
+cd "/Users/<you>/Documents/Cowork/unreal-reels" && bash scripts/recreate.sh reels/bio-bose
+```
+
+That renders the Manim cards, composites the committed clips over them, muxes the narration, and
+opens `reels/bio-bose/mp4/bio-bose.mp4`. Want the vertical 9:16 Short too?
+
+```bash
+cd "/Users/<you>/Documents/Cowork/unreal-reels" && bash scripts/recreate.sh reels/bio-bose --short
+```
+
+**What you see depends on the reel's skill.** `recreate.sh` reads `beat_sheet.json` and dispatches:
+a Manim mini-bio (Bios) rebuilds and opens an **MP4**; a Songbird / lecture reel (one with a
+`remotion/` project) instead launches **Remotion studio** so you watch it live. Same one command,
+different renderer.
+
+> Requirements for the MP4 path: `manim`, `ffmpeg`, `jq`, `python3` on PATH (see [setup](setup.md)).
+> Because `reels/bio-bose` already contains its narration (`mp3/`) and footage (`clips/`), no
+> paid API keys are needed to recreate it — you only need keys when you author a *new* figure.
+
+Once that plays, you understand the shape. The rest of this page shows how to author your own.
+
+---
+
 Three quick walkthroughs, one per aspect. They all produce a `reels/<slug>/beat_sheet.json` and
 run the same gated pipeline; they differ only in how the beats and look are authored. Do
 [setup](setup.md) first.
@@ -14,7 +44,7 @@ A ✅ marks a step you can do with **only free / open-source tools** (see
 
 ---
 
-## Step 0 — just cloned the repo? Paste this to orient your agent
+## Driving it with an agent — paste this to orient it
 
 Open the `unreal-reels` folder in Cowork (or Claude Code / Cursor) and paste this. It tells the
 agent to read the repo's contract and pipeline, then check whether your keys are set — so it knows
@@ -38,6 +68,61 @@ Don't run any generation yet; wait for me to choose.
 
 The agent will read itself in, report which paid services you're set up for, and stop and ask
 what you want to make. From there, follow the matching walkthrough below.
+
+---
+
+## Keys — check what you have (only needed to author a NEW video)
+
+Before the paid stages, confirm which service keys are set. To list every environment variable
+**name** without printing any secret value, run:
+
+```bash
+env | sed 's/=.*/=/' | sort
+```
+
+Each variable prints as `NAME=` (value stripped). Look for these two:
+
+- `ELEVENLABS_API_KEY=` — narration TTS (needed for audio)
+- `FAL_KEY=` — optional: FLUX LoRA / style training, alternate models
+
+To grep for just those, without exposing values:
+
+```bash
+env | grep -E '^(ELEVENLABS_API_KEY|FAL_KEY)=' | sed 's/=.*/= (set)/'
+```
+
+**Higgsfield does not use an env var** and won't appear in that list — it authenticates its CLI
+once instead. Log in (and check status) with:
+
+```bash
+higgsfield auth login
+```
+
+### Adding the keys you're missing
+
+**Option A — the repo's `.env` file (recommended, git-ignored).** Copy the template, fill in
+your real keys, and load it into your shell:
+
+```bash
+cp .env.example .env      # creates a private, git-ignored .env
+# edit .env and paste your real keys after the = signs
+set -a; source .env; set +a   # load them into the current shell
+```
+
+`.env.example` shows the exact variable names to fill in (`ELEVENLABS_API_KEY`, `FAL_KEY`).
+Never commit `.env` or paste keys into a chat — they're read at runtime only.
+
+**Option B — your shell environment (persistent).** Add the exports to your shell profile
+(`~/.zshrc` on macOS default, or `~/.bashrc`), then reload:
+
+```bash
+echo 'export ELEVENLABS_API_KEY="your-key-here"' >> ~/.zshrc
+echo 'export FAL_KEY="your-key-here"'            >> ~/.zshrc
+source ~/.zshrc
+```
+
+Re-run the `env | sed 's/=.*/=/' | sort` check to confirm they now show up. Full setup and
+where to get each key: [`setup.md`](setup.md) and [`services.md`](services.md).
 
 ---
 

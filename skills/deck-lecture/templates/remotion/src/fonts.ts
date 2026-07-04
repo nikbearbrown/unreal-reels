@@ -8,7 +8,7 @@
 import { useEffect, useState } from "react";
 import { continueRender, delayRender, staticFile } from "remotion";
 
-export const OVERLAY_FONT = "InterLocal";
+export const OVERLAY_FONT = "InterLocal, Inter, system-ui, sans-serif";
 export const MONO_FONT = "JetBrainsMonoLocal, ui-monospace, Menlo, monospace";
 
 const FACES: ReadonlyArray<[string, string, string]> = [
