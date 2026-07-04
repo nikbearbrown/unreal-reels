@@ -75,7 +75,7 @@
     "motion": "drawon"
    },
    "viz": {
-    "scene": "V04_MeasuredHump",
+    "scene": "B04_MeasuredHump",
     "data": "axes: frequency vs spectral energy density; navy measured hump, draw-on; second fainter hump at higher T, peak shifted right",
     "note": "VERIFY hump shapes against Planck curve at T=3000K and T=4500K"
    }
@@ -105,7 +105,7 @@
     "motion": "isotype"
    },
    "viz": {
-    "scene": "V06_EqualShares",
+    "scene": "B06_EqualShares",
     "data": "isotype square grid, ~30 modes, each square receives an identical 'kT' chip; count-up in reading order, lag_ratio from audio window",
     "note": "equipartition: 2 quadratic terms per EM mode -> kBT per mode (chapter)"
    }
@@ -122,7 +122,7 @@
     "motion": "drawon"
    },
    "viz": {
-    "scene": "V07_RJRunaway",
+    "scene": "B07_RJRunaway",
     "data": "same axes as V04; crimson RJ curve draws left-to-right, hugs the navy data at low frequency, then diverges upward off-frame; runaway timed to 'runs away'",
     "note": "RJ: u = (8 pi nu^2 / c^3) kBT"
    }
@@ -151,7 +151,7 @@
     "source": "own"
    },
    "viz": {
-    "scene": "V09_WhichAssumption",
+    "scene": "B09_WhichAssumption",
     "data": "three serif labels stacked: 'counting the modes' (check), 'equal shares' (check), 'energy flows continuously' — third gets the terracotta hand-drawn ring on the narration cue",
     "note": "one editor's-pen voice: the ring only"
    }
@@ -180,7 +180,7 @@
     "source": "own"
    },
    "viz": {
-    "scene": "V11_Staircase",
+    "scene": "B11_Staircase",
     "data": "energy staircase: levels 0, hv, 2hv, 3hv as slate steps; a small marker tries to sit between steps and snaps to the nearest one on the cue 'nothing in between'",
     "note": "Planck quantized WALL OSCILLATORS, not the field (chapter) — keep narration faithful to that"
    }
@@ -286,7 +286,7 @@
     "motion": "drawon"
    },
    "viz": {
-    "scene": "V12_PlanckCurve",
+    "scene": "B12_PlanckCurve",
     "data": "return to V04/V07 axes: crimson runaway greys out; navy Planck curve draws through the measured data points; label 'PLANCK 1900' chip",
     "note": "low-freq limit -> kBT (matches RJ); high-freq -> exponential falloff (chapter)"
    }
@@ -302,7 +302,7 @@
     "source": "own"
    },
    "viz": {
-    "scene": "V13_TwentyOrders",
+    "scene": "B13_TwentyOrders",
     "data": "number beat: '10²⁰' large serif; beneath, small mono '100,000,000,000,000,000,000 ×'; zeros count up on the cue 'twenty zeros'",
     "note": "VERIFY: ratio 7e-20 at x=47.9 (chapter worked example)"
    }
