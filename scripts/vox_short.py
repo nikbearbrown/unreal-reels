@@ -6,12 +6,13 @@ that don't earn vertical time (documents, the bear outro), end on a SILENT
 branded card the viewer reads (@handle + the Next: line), stay under the
 3:00 Shorts cap.
 
-THE REFORMAT RULE (16:9 → 9:16): every slot center-cuts, biased by the
-beat's shot.focus (the crop window follows the subject). The auto-cut is
-written NEXT TO the source as <beat>-916.mp4|.png so it is inspectable and
-replaceable: drop your own <beat>-916.* into media/ (or manim/) and the
-build uses it instead — rerun vox_short + compile, only that slot rebuilds.
-Auto-cuts are not overwritten once they exist (--recut forces).
+THE REFORMAT RULE (16:9 → 9:16): you ONLY cut captured/generated media
+(media/*.mp4|png) — center-cut biased by shot.focus, written beside the
+source as <beat>-916.* (inspectable, replaceable; --recut regenerates).
+GENERATED GRAPHICS ARE NEVER CUT: Manim/Remotion beats are RE-LAID-OUT for
+portrait in the short's own vox_scenes.py and rendered by vox_run on the
+short/ folder (the runner prefers a reel-local scenes file). A hand-made
+<beat>-916.mp4|png in media/ or manim/ always wins over both paths.
 
 Usage:
   python3 scripts/vox_short.py reels/<slug> --drop B14 B16 [--end-s 4.5] [--recut]
@@ -129,6 +130,11 @@ def main():
             if src is None:
                 continue                        # slate — nothing to cut
             sub, p, ext = src
+            if sub == "manim":                  # NEVER cut generated graphics
+                print(f"[short] {bid}  GENERATED — no cut; needs a portrait "
+                      f"scene in short/vox_scenes.py (render via vox_run) or "
+                      f"a hand-made manim/{bid}-916.mp4")
+                continue
             cut = folder / sub / f"{bid}-916{ext}"
             if a.recut or not cut.exists():
                 if ext == ".mp4":

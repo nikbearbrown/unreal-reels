@@ -108,6 +108,8 @@ def main():
     beat = next((b for b in beats if b["beat_id"] == a.beat), beats[-1] if a.beat is None else None)
     if beat is None:
         sys.exit(f"[outro] beat {a.beat} not found")
+    if beat.get("card", {}).get("silent"):
+        sys.exit(f"[outro] {beat['beat_id']} is a silent endcard (shorts law) — not rebranding it")
     bid = beat["beat_id"]
 
     # frame follows the reel's aspect
