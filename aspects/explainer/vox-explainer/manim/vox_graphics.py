@@ -156,8 +156,11 @@ class EquationCard(VGroup):
         card = Rectangle(width=width, height=eq.height + 1.0)
         card.set_fill(SLATE, 1).set_stroke(width=0)
         eq.move_to(card)
-        if spotlight and hasattr(eq, "set_color_by_tex"):
-            eq.set_color_by_tex(spotlight, CRIMSON)
+        if spotlight:
+            try:                # real MathTex only — on the Text fallback,
+                eq.set_color_by_tex(spotlight, CRIMSON)
+            except (AttributeError, TypeError):
+                pass            # Mobject.__getattr__ fakes a setter and TypeErrors
         self.eq = eq
         self.add(card, eq)
 
