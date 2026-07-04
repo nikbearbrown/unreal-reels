@@ -15,6 +15,9 @@
 #   Skip both with VOX_QC=0 (e.g. `VOX_QC=0 bash scripts/vox_run.sh …`).
 set -e
 REEL="$1"; shift || true
+case "$REEL" in /*)                      # absolute paths welcome — normalize
+  _R="$(cd "$(dirname "$0")/.." && pwd)"; REEL="${REEL#"$_R"/}";;
+esac
 HEIGHT=1080
 if [ "$1" = "--height" ]; then HEIGHT="$2"; fi
 VOX_QC="${VOX_QC:-1}"
