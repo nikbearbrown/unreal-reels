@@ -88,3 +88,8 @@ venv/
 **/clips/
 **/media/texts/
 **/media/videos/
+
+# OAuth credentials — NEVER in this (public) repo; live in ../../publish-workspace/
+client_secret*.json
+youtube_token*.json
+youtube_publish_ledger*.json
