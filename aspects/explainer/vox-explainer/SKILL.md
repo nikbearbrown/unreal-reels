@@ -264,7 +264,13 @@ A 9:16 Short is a DERIVATIVE CUT, never a re-edit: drop the beats that don't
 earn vertical time (documents, the bear outro — the bear belongs to the 16:9
 master), end on a SILENT branded card the viewer reads (@handle, terracotta
 hairline, the Next: line inherited from the dropped outro), stay under the
-3:00 Shorts cap. `python3 scripts/vox_short.py reels/<slug> --drop B14 B16`
+3:00 Shorts cap.
+
+THE COMPOSITION LOGIC: 16:9 lays out SIDE BY SIDE; 9:16 stacks TOP AND
+BOTTOM. Portrait relayouts re-band the same content vertically — they never
+merely scale the landscape composition down. (Machinery note: vox_graphics
+syncs frame_width to the real pixel aspect at import — Manim CE does not —
+so portrait scenes truly get the 4.5×8 frame they compose for.) `python3 scripts/vox_short.py reels/<slug> --drop B14 B16`
 writes `short/` with symlinked slots (nothing re-renders), the endcard, and
 a 9:16 `fit: pad` sheet — the film letterboxes on the newsprint ground, so
 graphics beats read as native portrait layouts. Then compile `short/` with
