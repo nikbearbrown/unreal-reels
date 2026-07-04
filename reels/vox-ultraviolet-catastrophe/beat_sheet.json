@@ -35,7 +35,8 @@
      0.47,
      0.58
     ],
-    "note": "Higgsfield i2v motion from the archival still (seed credited in sidecar) — synthetic motion, disclose in credits"
+    "note": "Higgsfield i2v motion from the archival still (seed credited in sidecar) — synthetic motion, disclose in credits",
+    "treatment": "light"
    },
    "new_visual_element": "[PHOTO] foundry interior, worker with glowing iron bar, early 1900s; set shot.focus on the glow once the image lands"
   },
@@ -96,7 +97,8 @@
     "type": "COMPOSITE",
     "source": "ai",
     "motion": "hold",
-    "note": "Higgsfield i2v motion from the archival still (seed credited in sidecar) — synthetic motion, disclose in credits"
+    "note": "Higgsfield i2v motion from the archival still (seed credited in sidecar) — synthetic motion, disclose in credits",
+    "treatment": "light"
    },
    "new_visual_element": "[PHOTO+ANNOTATION] kiln or furnace interior plate; annotation plane draws 3-4 standing-wave arcs inside the cavity mouth (terracotta, hand-drawn) — annotation lands at assembly, plate slots now"
   },
@@ -142,12 +144,14 @@
    "audio_file": "mp3/beat-B08.mp3",
    "shot": {
     "type": "STILL",
-    "source": "archive",
+    "source": "ai",
     "motion": "kenburns",
     "focus": [
      0.45,
      0.45
-    ]
+    ],
+    "treatment": "light",
+    "note": "Higgsfield i2v from the stoker still — synthetic motion, disclose in credits"
    },
    "new_visual_element": "[PHOTO] domestic hearth with fire iron / poker, early 1900s interior; set shot.focus on the poker"
   },

@@ -124,9 +124,16 @@ def resolve_slot(folder, bid):
 def vf_fit(w, h):
     return f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}"
 
-def vf_treatment(source):
+def vf_treatment(source, override=None):
     """The laundering function: desaturate + printed contrast for photographic
-    sources. Manim fragments and design-system beats pass through untouched."""
+    sources. Manim fragments and design-system beats pass through untouched.
+    Per-beat override (shot.treatment): 'none' = as generated (the one loud
+    element); 'light' = keep the color, seat it in the collage — for beats
+    whose color IS the information (a forge glow the narration names)."""
+    if override == "none":
+        return None
+    if override == "light":
+        return "hue=s=0.8,eq=contrast=1.06:brightness=0.005"
     if source in ("archive", "ai"):
         return "hue=s=0.25,eq=contrast=1.12:brightness=0.01"
     return None
@@ -137,7 +144,7 @@ def compile_clip(folder, beat, out, w, h, fps, font, work):
     src, status = resolve_slot(folder, bid)
     enc = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
            "-pix_fmt", "yuv420p", "-r", str(fps), "-an", str(out)]
-    treat = vf_treatment(shot.get("source", "own"))
+    treat = vf_treatment(shot.get("source", "own"), shot.get("treatment"))
 
     if status in ("VIDEO", "MANIM"):
         d = probe_dur(src) or dur
@@ -271,7 +278,8 @@ def main():
         src, status = resolve_slot(folder, bid)
         bshot = b.get("shot", {})
         key = (f"L2|{w}x{h}@{fps}|{dur:.3f}|{bshot.get('motion', '')}"
-               f"|{bshot.get('focus', '')}|" + (sha1(src) if src else "slate"))
+               f"|{bshot.get('focus', '')}|{bshot.get('treatment', '')}|"
+               + (sha1(src) if src else "slate"))
         if a.force or manifest.get(bid) != key or not out.exists():
             src, status = compile_clip(folder, b, out, w, h, fps, font, work)
             manifest[bid] = key
