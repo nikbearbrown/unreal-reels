@@ -15,7 +15,7 @@ import numpy as np
 
 # ------------------------------------------------------- portrait chart idiom
 PX0, PX1, PY0, PY1 = -1.9, 2.0, -2.3, 1.5      # chart region, portrait units
-SAFE_W = 4.1                                     # max content width
+SAFE_W = 3.8                                     # max content width (safe ±1.95)
 
 
 def smooth_curve(fn, x0, x1, color, width=5, n=90):
@@ -177,27 +177,30 @@ class B07_RJRunaway(Scene):        # 9.69s
         self.wait(4.2)
 
 
-class B09_WhichAssumption(Scene):  # 11.55s
+class B09_WhichAssumption(Scene):  # 11.55s — checklist: marks INSIDE, left
     def construct(self):
-        rows = VGroup(
-            fit(SerifLabel("counting the modes", BLUE, size=28)),
-            fit(SerifLabel("equal shares for each", BLUE, size=28)),
-            fit(SerifLabel("energy flows continuously", INK, size=28)),
-        ).arrange(DOWN, aligned_edge=LEFT, buff=0.85)
+        def row(text, color, checked):
+            mark = Text("✓" if checked else " ", font=SERIF, color=NAVY,
+                        font_size=28)
+            lb = SerifLabel(text, color, size=26)
+            if lb.width > 3.1:
+                lb.scale_to_fit_width(3.1)
+            r = VGroup(mark, lb).arrange(RIGHT, buff=0.25)
+            return r, mark, lb
+        r1, c1, _ = row("counting the modes", BLUE, True)
+        r2, c2, _ = row("equal shares for each", BLUE, True)
+        r3, _, l3 = row("energy flows continuously", INK, False)
+        rows = VGroup(r1, r2, r3).arrange(DOWN, aligned_edge=LEFT, buff=0.85)
         fit(rows)
-        checks = VGroup()
-        for i in (0, 1):
-            c = Text("✓", font=SERIF, color=NAVY, font_size=32)
-            c.next_to(rows[i], RIGHT, buff=0.3)
-            checks.add(c)
-        self.play(FadeIn(rows[0], shift=UP * 0.1), run_time=0.8)
-        self.play(FadeIn(checks[0]), run_time=0.5)
+        c1.set_opacity(0); c2.set_opacity(0)
+        self.play(FadeIn(r1, shift=UP * 0.1), run_time=0.8)
+        self.play(c1.animate.set_opacity(1), run_time=0.5)
         self.wait(1.2)
-        self.play(FadeIn(rows[1], shift=UP * 0.1), run_time=0.8)
-        self.play(FadeIn(checks[1]), run_time=0.5)
+        self.play(FadeIn(r2, shift=UP * 0.1), run_time=0.8)
+        self.play(c2.animate.set_opacity(1), run_time=0.5)
         self.wait(1.6)
-        self.play(FadeIn(rows[2], shift=UP * 0.1), run_time=0.8)
-        ring = HandRing(rows[2], color=TERRA)
+        self.play(FadeIn(r3, shift=UP * 0.1), run_time=0.8)
+        ring = HandRing(l3, color=TERRA)
         self.play(Create(ring), run_time=1.1)
         self.wait(4.2)
 
