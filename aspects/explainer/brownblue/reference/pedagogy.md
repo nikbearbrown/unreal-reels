@@ -74,6 +74,7 @@ HOOK        the key exercise/case, unsolved (opens the video)
 INSTANCE    a concrete parametrized example, shown moving   (≥2 before any ABSTRACTION)
 TRANSFORM   the same object morphing — the intuition carrier
 ABSTRACTION the general statement/definition — arrives as an ENDPOINT
+TANGENT     unpacks a landed equation — fires after any ABSTRACTION that is an equation (see equations.md)
 PAYOFF      the hook resolved by the abstraction; optionally one scale-shift
 BOUNDARY    what this video did NOT teach + the viewer's exercise (fused with OUTRO)
 ```
@@ -81,7 +82,11 @@ BOUNDARY    what this video did NOT teach + the viewer's exercise (fused with OU
 Audit rule: walking the beat sheet top to bottom, an `ABSTRACTION` beat with
 fewer than two prior `INSTANCE` beats *for that abstraction* is a Gate-2
 rejection. The PAYOFF must reference the HOOK explicitly (same object back on
-screen — persistent objects, not a re-draw).
+screen — persistent objects, not a re-draw). **Any `ABSTRACTION` beat that lands
+an equation must be followed by a `TANGENT` bracket** (`reference/equations.md`:
+five zones, ≤ ~45s, explain never derive); a landed equation with no tangent is
+a Gate-2 rejection. The tangent explains the symbol — it does not re-derive it
+(the derivation was the ABSTRACTION arrival).
 
 (Schema mapping: these roles ride in the shared bears-doodles schema —
 `beat_type` keeps its ACCUMULATE/CUT/HOLD/ZOOM mechanics; the role is recorded
@@ -145,6 +150,7 @@ or procedural fluency, and it must not pretend to.
 | Opens unsolved, zero vocabulary before the felt problem | §1.2, §2 | |
 | ≥2 moving instances before each abstraction | §1.3 | |
 | Every definition arrives as an endpoint | §1.4 | |
+| Every landed equation followed by a TANGENT bracket | §4, equations.md | |
 | Nothing included "for completeness"; deferrals logged | §1.5, §6 | |
 | Mystery-framed opener (utility framing absent) | §2 | |
 | Discovery voice; no "it can be shown that" | §3 | |

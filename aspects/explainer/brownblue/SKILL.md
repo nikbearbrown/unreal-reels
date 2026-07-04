@@ -51,6 +51,9 @@ do the other.
 - `reference/style.md` — identity: fonts, the two named styles (`dark` default,
   `light`), color roles, voice defaults, intro/outro convention.
   **Read first, every video.**
+- `reference/equations.md` — the fixed equation-tangent template (five zones,
+  ~45s, explain-never-derive). **Read whenever any beat lands an equation on
+  screen** — the tangent fires every time.
 - `templates/brand.brownblue.json` — the brand profile (drop a copy into
   `Manim/tools/brands/` for production runs there).
 - `../bears-doodles/templates/beat_sheet.schema.json` — the beat-sheet contract
@@ -97,6 +100,11 @@ bears-doodles-only — never run them for a brownblue video.)
    YouTube Shorts' hard limit). If it fails, the Short needs its own shortened
    beat sheet — never render an over-limit Short. The 16:9 long-form has no such
    limit.
+10. **Every equation fires the equation tangent.** When a finished equation
+    lands on screen, a ~45s TANGENT bracket unpacks it (five zones, explain
+    never derive) before the video moves on — `reference/equations.md`. The
+    derivation stays in the `ABSTRACTION` beat; the tangent only explains. This
+    is audited at Gate 2.
 
 ## Where a video folder lives
 
@@ -178,8 +186,12 @@ defaults. Every beat `render: manim` — no exceptions, no doodle values. Tag
 each beat's role in `beat_type` semantics from pedagogy.md §4 (HOOK /
 INSTANCE / TRANSFORM / ABSTRACTION / PAYOFF / BOUNDARY map onto the schema's
 ACCUMULATE/CUT/HOLD/ZOOM plus a `role` note in `new_visual_element`). Reject
-your own sheet if an abstraction precedes its instances. Present the summary
-table + derived duration. No dollar estimates. Ask approval. Stop. (Gate 2.)
+your own sheet if an abstraction precedes its instances. **For every equation
+that lands on screen, author the TANGENT bracket immediately after its
+`ABSTRACTION` beat** (`reference/equations.md`: zones 2→3→4→(5)→re-entry,
+≤ ~45s, explain never derive) and run the equation audit there — a landed
+equation with no tangent is a Gate-2 rejection. Present the summary table +
+derived duration. No dollar estimates. Ask approval. Stop. (Gate 2.)
 
 ### `audio`
 Confirm `ELEVENLABS_API_KEY` and `mutagen`. Run
@@ -206,6 +218,14 @@ and a SIDE region (labels / cards / equations) from `band()` — side-by-side
 `cols()` in landscape, stacked `rows()` in portrait — and place EVERY element
 with `fit()` / `fit_width()` / `fit_text()` into those rects. Never hardcode a
 world x/y or a `font_size` that assumes the 14.22-wide frame. Audit both aspects.
+
+**Equation tangents use exactly this MAIN/SIDE split** (`reference/equations.md`):
+the `MathTex` equation holds in MAIN and **persists** across the whole tangent;
+each zone (LHS/RHS claim → Role glossary → worked example → the claim it commits
+you to → re-entry) writes on into the SIDE band, one per beat. The symbol being
+explained turns `--highlight` in the equation, its glossary row, and its worked
+value at once — one moving spotlight, one emphasis, no red. Never re-draw the
+equation per zone.
 
 ### `assemble` — the CLEAN master (version 1, no captions)
 16:9 first (no limit):
