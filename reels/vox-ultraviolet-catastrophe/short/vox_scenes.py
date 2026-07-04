@@ -225,8 +225,8 @@ class B11_Staircase(Scene):        # 10.03s
         self.play(FadeIn(marker), run_time=0.4)
         self.wait(1.2)
         self.play(marker.animate.move_to([-0.6, -1.65, 0]), run_time=0.7)
-        self.play(marker.animate.move_to([-0.3, -2.2 + 1.05 + 0.12, 0]),
-                  run_time=0.5)
+        self.play(marker.animate.move_to([0.02, -2.2 + 1.05 + 0.12, 0]),
+                  run_time=0.5)               # right half of the step — clear of the hν label
         self.wait(3.9)
 
 
