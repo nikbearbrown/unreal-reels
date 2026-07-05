@@ -87,6 +87,8 @@ def main():
     ap.add_argument("--handle", default="@nikbearbrown")
     ap.add_argument("--recut", action="store_true",
                     help="regenerate auto -916 cuts (never touches hand-made ones you added while no auto-cut existed)")
+    ap.add_argument("--no-endcard", action="store_true",
+                    help="end on the last kept beat (e.g. the bio kicker) instead of the silent branded card")
     a = ap.parse_args()
     folder = a.folder.resolve()
     sheet = json.loads((folder / "beat_sheet.json").read_text())
@@ -168,21 +170,22 @@ def main():
         if mp3.exists() and not mdst.exists():
             mdst.symlink_to(Path("../..") / "mp3" / mp3.name)
 
-    # the silent endcard: branded, read-only
-    endcard_png(short / "media" / "END.png", a.handle, next_text, dark=True)
-    subprocess.run([FFMPEG, "-y", "-v", "error", "-f", "lavfi",
-                    "-i", "anullsrc=r=44100:cl=mono", "-t", f"{a.end_s:.2f}",
-                    "-c:a", "libmp3lame", "-q:a", "9",
-                    str(short / "mp3" / "beat-END.mp3")], check=True)
-    kept.append({
-        "beat_id": "END",
-        "narration_text": "",
-        "actual_duration_s": a.end_s,
-        "audio_file": "mp3/beat-END.mp3",
-        "shot": {"type": "CARD", "source": "own", "motion": "hold",
-                 "treatment": "none"},
-        "card": {"handle": a.handle, "next": next_text, "silent": True},
-    })
+    # the silent endcard: branded, read-only (unless the film ends on a beat)
+    if not a.no_endcard:
+        endcard_png(short / "media" / "END.png", a.handle, next_text, dark=True)
+        subprocess.run([FFMPEG, "-y", "-v", "error", "-f", "lavfi",
+                        "-i", "anullsrc=r=44100:cl=mono", "-t", f"{a.end_s:.2f}",
+                        "-c:a", "libmp3lame", "-q:a", "9",
+                        str(short / "mp3" / "beat-END.mp3")], check=True)
+        kept.append({
+            "beat_id": "END",
+            "narration_text": "",
+            "actual_duration_s": a.end_s,
+            "audio_file": "mp3/beat-END.mp3",
+            "shot": {"type": "CARD", "source": "own", "motion": "hold",
+                     "treatment": "none"},
+            "card": {"handle": a.handle, "next": next_text, "silent": True},
+        })
 
     meta = dict(sheet["metadata"])
     meta.update({"slug": f"{slug}-short", "aspect_ratio": "9:16", "fit": "crop",
@@ -196,7 +199,9 @@ def main():
 
     cap = "OK" if total <= 180 else "⚠ OVER the 3:00 Shorts cap — drop more"
     print(f"[short] {len(kept)} beats · {total:.1f}s ({int(total//60)}:{total%60:04.1f}) {cap}")
-    print(f"[short] dropped: {', '.join(a.drop) or 'none'} · silent endcard {a.end_s}s")
+    tail_note = ("ends on the last beat (no endcard)" if a.no_endcard
+                 else f"silent endcard {a.end_s}s")
+    print(f"[short] dropped: {', '.join(a.drop) or 'none'} · {tail_note}")
     print(f"[short] now: python3 scripts/vox_compile.py {folder.relative_to(folder.parents[1])}/short --review --height 1920")
 
 
