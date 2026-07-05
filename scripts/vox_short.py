@@ -113,6 +113,12 @@ def main():
     # else auto-cut the 16:9 winner (focus-aware) into <bid>-916.* beside it
     for b in kept:
         bid = b["beat_id"]
+        # narration link FIRST — every kept beat needs its audio regardless of
+        # how (or whether) its visual slot resolves; the compiler is all-or-silent
+        mp3 = folder / (b.get("audio_file") or f"mp3/beat-{bid}.mp3")
+        mdst = short / "mp3" / mp3.name
+        if mp3.exists() and not mdst.exists():
+            mdst.symlink_to(Path("../..") / "mp3" / mp3.name)
         fx = float((b.get("shot", {}).get("focus") or [0.5, 0.5])[0])
         override = None
         for sub, exts in (("media", (".mp4", ".png", ".jpg")),
@@ -165,10 +171,6 @@ def main():
         if dst.is_symlink() or dst.exists():
             dst.unlink()
         dst.symlink_to(Path("../..") / sub / p.name)
-        mp3 = folder / (b.get("audio_file") or f"mp3/beat-{bid}.mp3")
-        mdst = short / "mp3" / mp3.name
-        if mp3.exists() and not mdst.exists():
-            mdst.symlink_to(Path("../..") / "mp3" / mp3.name)
 
     # the silent endcard: branded, read-only (unless the film ends on a beat)
     if not a.no_endcard:
