@@ -93,7 +93,7 @@ def main():
                         ("  ⚠ extreme slow-mo, consider a longer generation"
                          if need / d > 3.0 else ""))
             print(f"[pantry] {bid}  VIDEO  sound stripped -> media/{bid}.mp4{note}")
-            looks_gen = any(t in f.name for t in ("hf_", "humanitarians.ai", "midjourney", "_mj_"))
+            looks_gen = any(t in f.name for t in ("hf_", "humanitarians.ai", "midjourney", "_mj_", "grok"))
             if shot.get("source") == "archive" and looks_gen:
                 print(f"[pantry] {bid}  ⚠ sheet says source=archive but file looks "
                       f"GENERATED — set shot.source to 'ai' + disclosure sidecar")
