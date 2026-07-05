@@ -1,5 +1,9 @@
 # SHOTLIST — vox-matter-waves
 
+
+Working on Vox style explainer videos
+
+
 Typed work order. `pantry` command applies: drop restored beat-prefixed assets
 into `pantry/`, portrait clips auto-become `-916` overrides. Set `shot.focus`
 per still after intake. GRAPHIC beats render from this reel's `vox_scenes.py`
@@ -35,6 +39,8 @@ Hyper-realistic portrait of 46-year-old Clinton Davisson and 31-year-old Lester 
 
 People prompt:
 ```
+
+slight smile,
 Hyper-realistic portrait of a 47-year-old Akira Tonomura, 1989, Japanese physicist beside a tall electron microscope column at Hitachi, in the style of Edward Burtynsky, hyper-realist photograph, clean sharp focus, clear facial features --ar 16:9
 ```
 
