@@ -81,10 +81,11 @@ def main():
                         ("  ⚠ extreme slow-mo, consider a longer generation"
                          if need / d > 3.0 else ""))
             print(f"[pantry] {bid}  VIDEO  sound stripped -> media/{bid}.mp4{note}")
-            if shot.get("source") == "archive" and "hf_" in f.name:
+            looks_gen = any(t in f.name for t in ("hf_", "humanitarians.ai", "midjourney", "_mj_"))
+            if shot.get("source") == "archive" and looks_gen:
                 print(f"[pantry] {bid}  ⚠ sheet says source=archive but file looks "
-                      f"Higgsfield — set shot.source to 'ai' + disclosure sidecar")
-            done.append((bid, out, "ai" if "hf_" in f.name else shot.get("source", "own")))
+                      f"GENERATED — set shot.source to 'ai' + disclosure sidecar")
+            done.append((bid, out, "ai" if looks_gen else shot.get("source", "own")))
 
         elif ext in (".png", ".jpg", ".jpeg", ".webp", ".tif", ".tiff"):
             out = media / f"{bid}.png"

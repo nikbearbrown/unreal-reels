@@ -60,19 +60,21 @@
    "photoelectric",
    "scienceHistory"
   ],
-  "description_blurb": "In 1887 Heinrich Hertz proved light is a wave — and noticed, the same year, the experiment that would break the wave theory. Three impossible facts, one patent clerk, and the equation that made light come apart in chunks."
+  "description_blurb": "In 1887 Heinrich Hertz proved light is a wave — and noticed, the same year, the experiment that would break the wave theory. Three impossible facts, one patent clerk, and the equation that made light come apart in chunks.",
+  "total_estimated_duration_seconds": 184.13
  },
  "beats": [
   {
    "beat_id": "B01",
    "narration_text": "In 1887, Heinrich Hertz proved light is a wave — the crowning triumph of classical physics. The same year, he noticed something that would destroy it.",
    "tts_normalized_text": "In 1887, Heinrich Hertz proved light is a wave — the crowning triumph of classical physics. The same year, he noticed something that would destroy it.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 9.27,
+   "audio_file": "mp3/beat-B01.mp3",
    "shot": {
     "type": "STILL",
-    "source": "archive",
-    "motion": "kenburns"
+    "source": "ai",
+    "motion": "kenburns",
+    "note": "AI-generated portrayal of Hertz (PORTRAIT preset) — synthetic, disclose in credits"
    },
    "new_visual_element": "[PHOTO] Heinrich Hertz portrait or spark-gap apparatus, 1880s; set shot.focus on his face / the gap"
   },
@@ -80,8 +82,8 @@
    "beat_id": "B02",
    "narration_text": "Ultraviolet light striking metal knocks out sparks. Simple to see, impossible to explain. This is the experiment that broke the wave theory of light.",
    "tts_normalized_text": "Ultraviolet light striking metal knocks out sparks. Simple to see, impossible to explain. This is the experiment that broke the wave theory of light.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 9.61,
+   "audio_file": "mp3/beat-B02.mp3",
    "shot": {
     "type": "CARD",
     "source": "own"
@@ -96,12 +98,13 @@
    "beat_id": "B03",
    "narration_text": "By 1902, Philipp Lenard had shown the sparks were electrons. By 1914, Robert Millikan had measured every feature of them. The data said three impossible things.",
    "tts_normalized_text": "By 1902, Philipp Lenard had shown the sparks were electrons. By 1914, Robert Millikan had measured every feature of them. The data said three impossible things.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 10.63,
+   "audio_file": "mp3/beat-B03.mp3",
    "shot": {
     "type": "STILL",
-    "source": "archive",
-    "motion": "kenburns"
+    "source": "ai",
+    "motion": "kenburns",
+    "note": "AI-generated portrayal of Lenard (PORTRAIT preset) — synthetic, disclose in credits"
    },
    "new_visual_element": "[PHOTO] Philipp Lenard at apparatus, or a cathode-ray-era laboratory, circa 1900"
   },
@@ -109,12 +112,13 @@
    "beat_id": "B04",
    "narration_text": "One: below a threshold frequency, nothing. A blinding red arc lamp frees no electrons from sodium. A dim ultraviolet lamp frees them instantly.",
    "tts_normalized_text": "One: below a threshold frequency, nothing. A blinding red arc lamp frees no electrons from sodium. A dim ultraviolet lamp frees them instantly.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 9.74,
+   "audio_file": "mp3/beat-B04.mp3",
    "shot": {
     "type": "COMPOSITE",
-    "source": "archive",
-    "motion": "hold"
+    "source": "ai",
+    "motion": "hold",
+    "note": "AI-generated plate — synthetic, disclose in credits"
    },
    "new_visual_element": "[PHOTO+ANNOTATION] carbon arc lamp / searchlight plate; annotation plane adds 'RED: nothing' vs 'UV: instantly' chips at assembly — plate slots now"
   },
@@ -122,8 +126,8 @@
    "beat_id": "B05",
    "narration_text": "Two: brighter light means more electrons — but not faster ones. Double the brightness, and each electron carries exactly the same energy as before.",
    "tts_normalized_text": "Two: brighter light means more electrons — but not faster ones. Double the brightness, and each electron carries exactly the same energy as before.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 9.14,
+   "audio_file": "mp3/beat-B05.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own",
@@ -139,12 +143,13 @@
    "beat_id": "B06",
    "narration_text": "Three: no delay. Emission begins within nanoseconds, at any brightness above threshold. Even the dimmest lamp never needs time to charge up an electron.",
    "tts_normalized_text": "Three: no delay. Emission begins within nanoseconds, at any brightness above threshold. Even the dimmest lamp never needs time to charge up an electron.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 10.16,
+   "audio_file": "mp3/beat-B06.mp3",
    "shot": {
     "type": "STILL",
-    "source": "archive",
-    "motion": "kenburns"
+    "source": "ai",
+    "motion": "kenburns",
+    "note": "AI-generated plate — synthetic, disclose in credits"
    },
    "new_visual_element": "[PHOTO] gold-leaf electroscope or precision lab instrument, circa 1900; set shot.focus on the instrument"
   },
@@ -152,8 +157,8 @@
    "beat_id": "B07",
    "narration_text": "Waves can't do any of this. A wave delivers energy smoothly, everywhere at once. Given enough time, any color should shake an electron loose. None of it happens.",
    "tts_normalized_text": "Waves can't do any of this. A wave delivers energy smoothly, everywhere at once. Given enough time, any color should shake an electron loose. None of it happens.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 9.74,
+   "audio_file": "mp3/beat-B07.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own"
@@ -168,12 +173,13 @@
    "beat_id": "B08",
    "narration_text": "Enter a twenty-six-year-old patent clerk in Bern, in his miracle year: Albert Einstein, taking the step Planck himself refused.",
    "tts_normalized_text": "Enter a twenty-six-year-old patent clerk in Bern, in his miracle year: Albert Einstein, taking the step Planck himself refused.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 7.76,
+   "audio_file": "mp3/beat-B08.mp3",
    "shot": {
     "type": "STILL",
-    "source": "archive",
-    "motion": "kenburns"
+    "source": "ai",
+    "motion": "kenburns",
+    "note": "AI-generated portrayal of Einstein (PORTRAIT preset) — synthetic, disclose in credits"
    },
    "new_visual_element": "[PHOTO] Einstein at the Bern patent office era (~1905, young, seated at desk); set shot.focus on his face"
   },
@@ -181,8 +187,8 @@
    "beat_id": "B09",
    "narration_text": "Light isn't a smooth wave spread everywhere. It arrives in whole packets — Planck's chunks, now for light itself. Einstein called them light quanta. We call them photons.",
    "tts_normalized_text": "Light isn't a smooth wave spread everywhere. It arrives in whole packets — Planck's chunks, now for light itself. Einstein called them light quanta. We call them photons.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 11.1,
+   "audio_file": "mp3/beat-B09.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own"
@@ -197,8 +203,8 @@
    "beat_id": "B10",
    "narration_text": "The rules become simple. One photon is absorbed by one electron. Whole packet or nothing — a photon cannot pay in installments.",
    "tts_normalized_text": "The rules become simple. One photon is absorbed by one electron. Whole packet or nothing — a photon cannot pay in installments.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 8.12,
+   "audio_file": "mp3/beat-B10.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own"
@@ -213,8 +219,8 @@
    "beat_id": "T01",
    "narration_text": "One line explains every impossible fact: the electron's energy is the photon's payment, minus the exit fee. Physicists call that fee the work function.",
    "tts_normalized_text": "One line explains every impossible fact: the electron's energy is the photon's payment, minus the exit fee. Physicists call that fee the work function.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 9.27,
+   "audio_file": "mp3/beat-T01.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own"
@@ -268,8 +274,8 @@
    "beat_id": "T02",
    "narration_text": "K max, the fastest electron's energy. H nu, the photon's payment. And phi — the work function — what the metal charges to let an electron leave.",
    "tts_normalized_text": "Kay max, the fastest electron's energy. H new, the photon's payment. And fie — the work function — what the metal charges to let an electron leave.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 10.21,
+   "audio_file": "mp3/beat-T02.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own"
@@ -285,8 +291,8 @@
    "beat_id": "T03",
    "narration_text": "Ultraviolet on sodium: pay 4.13, fee 2.28 — the electron keeps 1.85 electron volts. Green light pays 2.27. One hundredth short. Nothing escapes. Ever.",
    "tts_normalized_text": "Ultraviolet on sodium: pay 4.13, fee 2.28 — the electron keeps 1.85 electron volts. Green light pays 2.27. One hundredth short. Nothing escapes. Ever.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 13.74,
+   "audio_file": "mp3/beat-T03.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own"
@@ -302,8 +308,8 @@
    "beat_id": "B11",
    "narration_text": "Threshold, explained: below the fee, no photon can pay. Faster electrons from bluer light: the payment is set by frequency alone. And no delay: one photon, one electron.",
    "tts_normalized_text": "Threshold, explained: below the fee, no photon can pay. Faster electrons from bluer light: the payment is set by frequency alone. And no delay: one photon, one electron.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 12.36,
+   "audio_file": "mp3/beat-B11.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own"
@@ -318,12 +324,13 @@
    "beat_id": "B12",
    "narration_text": "Robert Millikan thought photons were absurd. He spent two years trying to prove Einstein wrong — freshly scraped metal surfaces, vacuum, exquisite care.",
    "tts_normalized_text": "Robert Millikan thought photons were absurd. He spent two years trying to prove Einstein wrong — freshly scraped metal surfaces, vacuum, exquisite care.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 10.21,
+   "audio_file": "mp3/beat-B12.mp3",
    "shot": {
     "type": "STILL",
-    "source": "archive",
-    "motion": "kenburns"
+    "source": "ai",
+    "motion": "kenburns",
+    "note": "AI-generated portrayal of Millikan (PORTRAIT preset) — synthetic, disclose in credits"
    },
    "new_visual_element": "[PHOTO] Robert Millikan portrait or at apparatus (Caltech-era acceptable); set shot.focus on his face"
   },
@@ -331,8 +338,8 @@
    "beat_id": "B13",
    "narration_text": "Every metal gave the same slope: h over e. Einstein's equation fit perfectly. Millikan published his own defeat — \"in spite of my personal conviction.\"",
    "tts_normalized_text": "Every metal gave the same slope: h over e. Einstein's equation fit perfectly. Millikan published his own defeat — \"in spite of my personal conviction.\"",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 9.51,
+   "audio_file": "mp3/beat-B13.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own",
@@ -348,8 +355,8 @@
    "beat_id": "B14",
    "narration_text": "Einstein's Nobel Prize came in 1921 — for the photoelectric effect, not relativity. Millikan's came two years later, for proving the theory he'd set out to kill.",
    "tts_normalized_text": "Einstein's Nobel Prize came in 1921 — for the photoelectric effect, not relativity. Millikan's came two years later, for proving the theory he'd set out to kill.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 10.21,
+   "audio_file": "mp3/beat-B14.mp3",
    "shot": {
     "type": "GRAPHIC",
     "source": "own"
@@ -364,12 +371,13 @@
    "beat_id": "B15",
    "narration_text": "Who was this patent clerk? A story of its own. What he did to light — wave AND particle at once — has no classical answer.",
    "tts_normalized_text": "Who was this patent clerk? A story of its own. What he did to light — wave AND particle at once — has no classical answer.",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 8.39,
+   "audio_file": "mp3/beat-B15.mp3",
    "shot": {
     "type": "STILL",
-    "source": "archive",
-    "motion": "kenburns"
+    "source": "ai",
+    "motion": "kenburns",
+    "note": "AI-generated portrayal of Einstein (PORTRAIT preset) — synthetic, disclose in credits"
    },
    "new_visual_element": "[PHOTO] Einstein portrait ~1905 (young, not the elderly icon); name label + dates at assembly; bio kicker per SKILL.md"
   },
@@ -377,8 +385,8 @@
    "beat_id": "B16",
    "narration_text": "Next: if light is both wave and particle — what, exactly, is an electron?",
    "tts_normalized_text": "Next: if light is both wave and particle — what, exactly, is an electron?",
-   "actual_duration_s": null,
-   "audio_file": null,
+   "actual_duration_s": 6.042,
+   "audio_file": "mp3/beat-B16.mp3",
    "shot": {
     "type": "CARD",
     "source": "own"

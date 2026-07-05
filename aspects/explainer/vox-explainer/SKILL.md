@@ -124,6 +124,12 @@ reels/<slug>/
 
 ## The pantry law (`scripts/vox_pantry.py`)
 
+**THE COMMAND WORD: when the user says `pantry`, run the intake on the
+current reel immediately** — copy pantry/ media to where it belongs, strip
+any audio, rename to slot names for compositing (length conforms to the beat
+at compile: the slow-to-fit ladder). Then reconcile the source axis (generated
+media of real people → `source: ai` + disclosure sidecar) and report.
+
 Raw finds never go straight into `media/`. They land in `reels/<slug>/pantry/`,
 prefixed with their beat id, already RESTORED: nanobanana (via Higgsfield)
 restoration pass — WARMONO for period images, NATGEO for modern ones
