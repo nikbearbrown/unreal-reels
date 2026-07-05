@@ -271,7 +271,7 @@ def _analyze(snapshots, opt):
                 if ratio < opt["min_overlap"]:
                     continue
                 key = tuple(sorted((ti, tj)))
-                sev = "ERROR" if ratio >= 0.5 else "WARN"
+                sev = "ERROR" if ratio >= 0.25 else "WARN"   # visible is visible
                 rec = overlaps.get(key)
                 if rec is None or ratio > rec["ratio"]:
                     overlaps[key] = dict(

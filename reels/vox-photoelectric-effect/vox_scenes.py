@@ -261,16 +261,15 @@ class B14_NobelIrony(Scene):       # ~10s
         c2 = StateCard("MILLIKAN", side=3.0,
                        figures=[("Nobel Prize", "1923", False)])
         pair = VGroup(c1, c2).arrange(RIGHT, buff=2.2).shift(UP * 0.6)
-        sub1 = Text("for the photoelectric effect — not relativity",
-                    font=SERIF, color=INK, font_size=26)
-        sub2 = Text("for proving the theory he set out to kill",
-                    font=SERIF, color=INK, font_size=26)
-        sub1.next_to(c1, DOWN, buff=1.5)
-        sub2.next_to(c2, DOWN, buff=1.5)
-        if sub1.width > 5.6:
-            sub1.scale_to_fit_width(5.6)
-        if sub2.width > 5.6:
-            sub2.scale_to_fit_width(5.6)
+        def caption(lines, under):
+            g = VGroup(*[Text(t, font=SERIF, color=INK, font_size=26)
+                         for t in lines]).arrange(DOWN, buff=0.12)
+            for t in g:
+                if t.width > 4.4:              # stay inside the card's column
+                    t.scale_to_fit_width(4.4)
+            return g.next_to(under, DOWN, buff=1.5)
+        sub1 = caption(["for the photoelectric effect", "— not relativity"], c1)
+        sub2 = caption(["for proving the theory", "he set out to kill"], c2)
         self.play(FadeIn(c1, shift=UP * 0.15), run_time=0.8)
         self.play(FadeIn(sub1), run_time=0.6)
         self.wait(2.0)
