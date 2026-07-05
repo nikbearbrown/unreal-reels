@@ -249,7 +249,9 @@ class B13_MillikanSlope(Scene):    # ~10s — three metals, one slope
                       rate_func=linear)
         chip = LabelChip("slope: h/e — the same for every metal",
                          accent=CRIMSON, size=26)
-        chip.to_edge(DOWN, buff=0.7).shift(RIGHT * 1.2)
+        if chip.width > 6.0:
+            chip.scale_to_fit_width(6.0)
+        chip.move_to([-2.1, 2.3, 0])           # empty upper-left, clear of axis labels
         self.play(FadeIn(chip, shift=UP * 0.15), run_time=0.8)
         self.wait(2.6)
 
