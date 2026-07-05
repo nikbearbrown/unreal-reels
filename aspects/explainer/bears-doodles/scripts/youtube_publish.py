@@ -245,12 +245,34 @@ def upload(youtube, path: Path, meta: dict, publish_at: datetime, privacy: str, 
 
 
 def insert_caption(youtube, video_id: str, srt: Path, language="en", name="English"):
-    """Upload an .srt as a caption track (captions.insert; needs youtube.force-ssl)."""
+    """Upload an .srt as a caption track (captions.insert; needs youtube.force-ssl).
+
+    Freshly-uploaded videos intermittently 403 captions.insert until YouTube
+    finishes processing them. Retry with backoff — 9 attempts over ~14.5 min
+    (20s → 40s → 60s → 90s → 120s → then 180s each) — returning immediately
+    on the first success. Still best-effort at the call site: a final failure
+    never blocks the upload/schedule/playlist."""
+    import time
     from googleapiclient.http import MediaFileUpload
     body = {"snippet": {"videoId": video_id, "language": language,
                         "name": name, "isDraft": False}}
-    media = MediaFileUpload(str(srt), mimetype="application/octet-stream", resumable=False)
-    youtube.captions().insert(part="snippet", body=body, media_body=media).execute()
+    waits = [20, 40, 60, 90, 120, 180, 180, 180]
+    last = None
+    for attempt in range(len(waits) + 1):
+        try:
+            media = MediaFileUpload(str(srt), mimetype="application/octet-stream",
+                                    resumable=False)
+            youtube.captions().insert(part="snippet", body=body,
+                                      media_body=media).execute()
+            return
+        except Exception as e:
+            last = e
+            if attempt >= len(waits):
+                break
+            print(f"      · captions attempt {attempt + 1} failed "
+                  f"(video likely still processing) — retrying in {waits[attempt]}s")
+            time.sleep(waits[attempt])
+    raise last
 
 
 def ensure_playlist(youtube, title: str, cache: dict) -> str:
@@ -373,10 +395,11 @@ def main(argv=None):
                       f"{('  playlist=' + pl_name) if pl_name else ''}")
                 if args.dry_run:
                     continue
-                if args.captions and meta.get("srt"):
+                srt = (meta.get("srt_short") or meta.get("srt")) if w == "short" else meta.get("srt")
+                if args.captions and srt:
                     try:
-                        insert_caption(yt, vid, meta["srt"], args.caption_lang)
-                        print(f"      + captions: {meta['srt'].name}")
+                        insert_caption(yt, vid, srt, args.caption_lang)
+                        print(f"      + captions: {srt.name}")
                     except Exception as e:
                         print(f"      ! caption failed: {str(e)[:160]}", file=sys.stderr)
                 if pl_name:
@@ -495,17 +518,16 @@ def main(argv=None):
             ledger[key] = {"videoId": vid, "publishAt": stamp, "file": str(f)}
             ledger_path.write_text(json.dumps(ledger, indent=2))
             print(f"      -> https://youtu.be/{vid}  (scheduled {stamp})")
-            # captions (best-effort). Shorts REFUSE uploaded caption tracks
-            # (captions.insert 403s on a vertical <3:00 video — YouTube uses
-            # auto-captions there), so the short surface skips cleanly.
-            if w == "short":
-                print("      · captions: skipped (Shorts use YouTube auto-captions)")
-            elif args.captions and meta.get("srt"):
+            # captions (best-effort; per-surface — the short's cut has its own
+            # timing; retries inside insert_caption cover processing latency)
+            srt = (meta.get("srt_short") or meta.get("srt")) if w == "short" else meta.get("srt")
+            if args.captions and srt:
                 try:
-                    insert_caption(youtube, vid, meta["srt"], args.caption_lang)
-                    print(f"      + captions: {meta['srt'].name}")
+                    insert_caption(youtube, vid, srt, args.caption_lang)
+                    print(f"      + captions: {srt.name}")
                 except Exception as e:
-                    print(f"      ! caption upload failed: {str(e)[:160]}", file=sys.stderr)
+                    print(f"      ! caption upload failed after retries: {str(e)[:160]}",
+                          file=sys.stderr)
             # playlist (best-effort)
             if pl_name:
                 try:
