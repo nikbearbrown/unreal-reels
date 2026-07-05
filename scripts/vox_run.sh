@@ -28,7 +28,7 @@ if [ -f "$ROOT/$REEL/vox_scenes.py" ]; then   # converted reels carry their own 
   GFX="$ROOT/$REEL"; GFXFILE="vox_scenes.py"
 fi
 QC="$ROOT/tmp/qc-tooling"
-mkdir -p "$ROOT/$REEL/manim"
+mkdir -p "$ROOT/$REEL/manim" "$ROOT/$REEL/media" "$ROOT/$REEL/pantry"
 
 SCENES=$(python3 -c "
 import re
