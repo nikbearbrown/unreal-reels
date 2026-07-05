@@ -110,6 +110,10 @@ def main():
         sys.exit(f"[outro] beat {a.beat} not found")
     if beat.get("card", {}).get("silent"):
         sys.exit(f"[outro] {beat['beat_id']} is a silent endcard (shorts law) — not rebranding it")
+    if beat.get("shot", {}).get("type") != "CARD":
+        sys.exit(f"[outro] {beat['beat_id']} is a {beat.get('shot', {}).get('type')} beat — "
+                 f"the outro law brands closing CARDs only (a film may deliberately "
+                 f"end on a kicker; nothing to do here)")
     bid = beat["beat_id"]
 
     # frame follows the reel's aspect
@@ -175,6 +179,8 @@ def main():
     #   key : legacy green-screen bear over the solid ground
     out = folder / "media" / f"{bid}.mp4"
     out.parent.mkdir(exist_ok=True)
+    if out.is_symlink():
+        out.unlink()            # NEVER write through a derivative's symlink
     if mode == "base":
         fc = (
             f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,"
@@ -211,6 +217,8 @@ def main():
     padded = work / f"outro-{bid}.mp3"
     sh([FFMPEG, "-y", "-i", str(orig), "-af", f"apad=whole_dur={target:.3f}",
         "-c:a", "libmp3lame", "-q:a", "2", str(padded)])
+    if mp3.is_symlink():
+        mp3.unlink()            # pad a LOCAL copy — never the parent's file
     shutil.copy(padded, mp3)
 
     beat["actual_duration_s"] = round(probe_dur(mp3), 3)

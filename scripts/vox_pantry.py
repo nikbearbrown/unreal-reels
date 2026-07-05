@@ -70,9 +70,21 @@ def main():
         ext = f.suffix.lower()
 
         if ext in (".mp4", ".mov", ".webm", ".mkv"):
-            out = media / f"{bid}.mp4"
+            # portrait clips are 9:16 OVERRIDES for the short (<bid>-916.mp4)
+            r = subprocess.run([FFPROBE, "-v", "error", "-select_streams", "v:0",
+                                "-show_entries", "stream=width,height",
+                                "-of", "csv=p=0", str(f)],
+                               capture_output=True, text=True)
+            try:
+                vw, vh = (int(x) for x in r.stdout.strip().splitlines()[0].split(","))
+            except (ValueError, IndexError):
+                vw, vh = 16, 9
+            suffix = "-916" if vh > vw else ""
+            out = media / f"{bid}{suffix}.mp4"
             subprocess.run([FFMPEG, "-y", "-v", "error", "-i", str(f),
                             "-c:v", "copy", "-an", str(out)], check=True)
+            if suffix:
+                print(f"[pantry] {bid}  PORTRAIT clip -> media/{out.name} (9:16 override)")
             d, need = probe_dur(out), float(beat.get("actual_duration_s") or 0)
             note = ""
             if d and need and d < need * 0.85:
