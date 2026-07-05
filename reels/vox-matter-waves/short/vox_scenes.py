@@ -264,8 +264,8 @@ class B09_BothPaths(Scene):        # ~10s — vertical: source top, screen botto
         src = Dot([0, 3.1, 0], radius=0.13, color=TERRA)
         wire = Dot([0, 0.9, 0], radius=0.08, color=INK)
         wl = Text("the splitter", font=SERIF, color=INK, font_size=18)
-        wl.next_to(wire, RIGHT, buff=0.22)
-        fit(wl, 1.6)
+        fit(wl, 0.95)
+        wl.move_to([1.42, 1.35, 0])            # clear of both bowed paths
         screen = Line([-1.9, -2.4, 0], [1.9, -2.4, 0], color=INK,
                       stroke_width=3)
         self.add(wire, wl, screen)
@@ -280,9 +280,9 @@ class B09_BothPaths(Scene):        # ~10s — vertical: source top, screen botto
                                     np.array([0.2, -2.4, 0])])
         self.play(Create(path_l), Create(path_r), run_time=1.8,
                   rate_func=linear)
-        lb = serif_lines(["one electron —", "both paths"], size=24,
+        lb = serif_lines(["one electron —", "both paths"], size=22,
                          color=NAVY)
-        lb.move_to([0, -0.9, 0])
+        lb.move_to([0, -3.02, 0])              # below the detector, off the paths
         self.play(FadeIn(lb), run_time=0.9)
         fringes = VGroup(*[Rectangle(width=0.42, height=0.14)
                            .set_fill(NAVY, 0.25 + 0.55 * (np.cos(2.4 * x) ** 2))
