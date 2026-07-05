@@ -495,12 +495,15 @@ def main(argv=None):
             ledger[key] = {"videoId": vid, "publishAt": stamp, "file": str(f)}
             ledger_path.write_text(json.dumps(ledger, indent=2))
             print(f"      -> https://youtu.be/{vid}  (scheduled {stamp})")
-            # captions (best-effort; per-surface: the short's cut has its own timing)
-            srt = (meta.get("srt_short") or meta.get("srt")) if w == "short" else meta.get("srt")
-            if args.captions and srt:
+            # captions (best-effort). Shorts REFUSE uploaded caption tracks
+            # (captions.insert 403s on a vertical <3:00 video — YouTube uses
+            # auto-captions there), so the short surface skips cleanly.
+            if w == "short":
+                print("      · captions: skipped (Shorts use YouTube auto-captions)")
+            elif args.captions and meta.get("srt"):
                 try:
-                    insert_caption(youtube, vid, srt, args.caption_lang)
-                    print(f"      + captions: {srt.name}")
+                    insert_caption(youtube, vid, meta["srt"], args.caption_lang)
+                    print(f"      + captions: {meta['srt'].name}")
                 except Exception as e:
                     print(f"      ! caption upload failed: {str(e)[:160]}", file=sys.stderr)
             # playlist (best-effort)
