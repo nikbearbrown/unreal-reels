@@ -1,145 +1,150 @@
-# HANDOFF — unreal-reels: the vox-explainer skill and first two Vox reels
+# HANDOFF — unreal-reels: the vox-explainer production pipeline, three films shipped
 
 **The repository is the source of truth.** Verify everything below against the
-files (read, grep, run with `--help` or `--dry-run`) before acting — including
-this handoff. Where a claim and the files disagree, the files win.
+files (read, grep, run with `--help`) before acting — including this handoff.
+Where a claim and the files disagree, the files win.
 
 Repo root: `/Users/bear/Documents/CoWork/bear-textbooks/books/unreal-reels`
-(a clone of `github.com/nikbearbrown/unreal-reels`). A second working copy
-lives on the other Mac at `/Users/nik/Documents/Cowork/unreal-reels`.
+(clone of `github.com/nikbearbrown/unreal-reels`, PUBLIC). A second working
+copy lives on the other Mac at `/Users/nik/Documents/Cowork/unreal-reels`;
+the two sync through origin and have occasionally diverged — check
+`git status -sb` before assuming either is current.
 
 ## What this is
 
-This session built **vox-explainer**: a production compositing pipeline for
-Vox-style mixed-media explainers (editorial newsprint collage — desaturated
-archival plates, isotype square grids, serif labels with hairline underlines,
-one hand-drawn annotation per graphic). Voiceover or music is the master
-clock; the film is a composite of Manim fragments, Ken Burns stills,
-archival/AI media, assembled per beat. It was tested end-to-end on two reels:
-a recreation of Vox's Electoral College video, and a conversion of an existing
-physics doodle video (the ultraviolet catastrophe), which Bear judged
-"looking good."
+The vox-explainer skill
+(`/Users/bear/Documents/CoWork/bear-textbooks/books/unreal-reels/aspects/explainer/vox-explainer/SKILL.md`)
+is a production compositing pipeline for Vox-style editorial explainers.
+This session it went from settled architecture to a working factory: THREE
+complete films were built from Quantum Mechanics vol 1 chapters and published
+to YouTube (playlist "Quantum Mechanics (Vox Style)", shorts to "Shorts"),
+each as a 16:9 master plus a true 9:16 portrait Short:
 
-## The architecture (settled)
+- `reels/vox-ultraviolet-catastrophe/` — ch 1 concept 1 (Planck). Supersedes
+  the older conversion test `reels/vox-the-ultraviolet-catastrophe/`.
+- `reels/vox-photoelectric-effect/` — ch 1 concept 2 (Einstein 1905). Its
+  Short ends ON the Einstein kicker (no endcard).
+- `reels/vox-matter-waves/` — ch 2 (de Broglie). Its Short keeps the closing
+  CARD, branded by the outro law with a vertical pool clip.
 
-- **Two-axis shot system.** Every beat carries `shot.type`
-  (STILL / FOOTAGE / DOCUMENT / GRAPHIC / COMPOSITE / CARD — the presentation
-  form, locked at plan time) and `shot.source` (`archive` / `ai` / `own` —
-  provenance, late-bound and swappable). Full spec:
-  `/Users/bear/Documents/CoWork/bear-textbooks/books/unreal-reels/aspects/explainer/vox-explainer/SKILL.md`.
-- **Slot contract.** Every beat compiles to a conformed per-beat mp4 in
-  `clips/` (machine-owned). Inputs resolve by precedence
-  `media/<beat>.mp4` > `manim/<beat>.mp4` > `media/<beat>.png` (Ken Burns or
-  hold) > slate. Slates say in terracotta whose job the slot is (YOU vs
-  PIPELINE). Rebuilds recompile only slots whose input hash changed.
-- **Audio.** `scripts/generate_audio.py` (ElevenLabs, Bear's voice
-  `TyW6NH39JcFb5M3xdIIk`) writes mp3s + measured durations back into
-  `beat_sheet.json`; the compiler muxes per-beat mp3s automatically when they
-  exist. For conversions, narration is per-beat `keep` (reuse audio) or
-  `rewrite` (regenerate only those beats with `--only`). The API key was
-  hardened against whitespace/CR in `.env` values; the key now lives in
-  `~/.zshrc`, and handed-off commands no longer source `.env`.
-- **QC gates are wired into the runner.** Gate A: `static_scene_check.py`
-  (render-free) on every pending scene before any render — the scenes file is
-  checked from an isolated copy because the checker's repeated-animation
-  heuristic assumes whole-video scenes, not per-beat fragments. Gate B:
-  `manim_layout_audit.py --png` (pixel-true text-overlap/overflow audit) after
-  each render; errors refuse to slot the mp4. Skip with `VOX_QC=0`. The tools
-  live in `tmp/qc-tooling/` (consolidated from both machines and pushed; see
-  its README and FINDINGS). The compiler also writes `qc-sheet.png` (mid-frame
-  of every beat, tiled) on every `--review` build.
-- **Greybox is dead for this aspect.** An earlier attempt built the test on
-  the greybox previz renderer and was rejected ("a video is collaged" — the
-  target is a production pipeline, not a renderer imitating one). The
-  vox-explainer SKILL.md contains no greybox stage; a leftover `greybox/`
-  folder in the electoral-college reel can be deleted.
+## The pipeline (each stage is a script; SKILL.md documents the workflow)
 
-## The engine files (all new/modified this session, mostly UNCOMMITTED)
+plan (script.md + beat_sheet.json + SHOTLIST.md, gate: human approves) →
+factcheck (FACTCHECK.md per reel; `vox_run` REFUSES to render without it —
+Gate F) → audio (`scripts/generate_audio.py`, ElevenLabs, Bear's voice
+`TyW6NH39JcFb5M3xdIIk` in metadata.voice_id — REQUIRED or the API 404s) →
+`scripts/vox_run.sh` (the full machine pass: Gate A static check → Manim
+renders at the sheet's aspect → Gate B pixel audit `--curve-strict` → slot →
+outro law → compile `--review`) → `pantry` (the COMMAND WORD: run
+`scripts/vox_pantry.py` on the current reel — copies beat-prefixed media
+from `pantry/`, strips audio, portrait clips auto-become `-916` overrides;
+then reconcile source axis to `ai` + disclosure sidecars for generated
+media) → `scripts/vox_short.py` (9:16 derivative; `--no-endcard` ends on the
+last beat) → clean compiles (`vox_compile` without `--review` REFUSES
+slates — the master law) → `scripts/vox_emit.py` (SRTs from beat sheets,
+description with chapters/credits/AI-disclosure, mp4/ links) →
+`aspects/explainer/bears-doodles/scripts/youtube_publish.py --no-pairs
+--schedule-scope playlist --interval-hours 2 --floor-minutes 15`.
 
-- `/Users/bear/Documents/CoWork/bear-textbooks/books/unreal-reels/aspects/explainer/vox-explainer/SKILL.md` — the skill.
-- `.../aspects/explainer/vox-explainer/manim/vox_graphics.py` — Manim library
-  (IsotypeGrid with count-up, SerifLabel, LabelChip, StateCard with fit-to-card
-  guard, HandRing, quote scenes) + the electoral-college fixture scenes. Has a
-  BOLD guard for stub environments.
-- `.../scripts/vox_compile.py` — slot compiler + assembler (conform ladder,
-  treatment, Ken Burns via zoompan, incremental manifest, PIL slates/labels so
-  it works on ffmpeg builds without drawtext, review burn-ins, QC sheet).
-- `.../scripts/vox_run.sh` — one command: Gate A → render pending scenes →
-  Gate B → slot → compile. Uses a reel's own `vox_scenes.py` if present, else
-  the aspect library.
-- `.../scripts/vox_convert.py` — converts a `physics/<slug>` doodle/brownblue
-  folder into a vox reel: narration + durations carried, every visual
-  re-planned (heuristic types, all `needs_review`), typed SHOTLIST with
-  archive query URLs, `vox_scenes.py` scaffold.
-- `.../scripts/generate_audio.py` — modified: strips whitespace/quotes/CR from
-  the API key.
+OAuth credentials live OUTSIDE all repos at
+`/Users/bear/Documents/CoWork/bear-textbooks/publish-workspace/`
+(client_secret.json, youtube_token.json, youtube_publish_ledger.json);
+.gitignore blocks credential filenames anyway. Publishing runs on Bear's
+Mac; the sandbox cannot push to GitHub or call paid APIs. All commands the
+user runs use absolute paths, and `open <file>` commands accompany outputs.
 
-## The two reels
+## Doctrine written this session (each lives in its own file)
 
-**`reels/vox-electoral-college/`** — ~133s excerpt recreation (transcript
-timestamps as clock, then real ElevenLabs narration generated; 22 beats, every
-shot type). 16 Manim slots rendered and slotted; `media/` holds B06/B21 stills
-and a synthetic B02 test clip (replace with real news footage). Open archive
-slots per its SHOTLIST: B02, B03 footage; B06, B15, B21 images. Reference
-frames from the real Vox video are in `vox/` at repo root; full transcript in
-the session record only.
+- Equation tangent (rule owner
+  `aspects/explainer/brownblue/reference/equations.md`; vox rendering in
+  SKILL.md + the `EquationTangent` kit in
+  `aspects/explainer/vox-explainer/manim/vox_graphics.py`). Every landed
+  equation fires a zones-2→3→4(→5) beat group; zone 5 = the physical
+  commitment, mergeable into the sign-as-claim for simple equations.
+- Motion pantry (`aspects/explainer/vox-explainer/MOTION.md`): seven motion
+  languages, chef's-pantry discipline, 40% cap (compiler lints), captions
+  are SIDECARS handed to the platform, never burn-ins, for explainers.
+- "Who was X?" bio kicker: relevance-gated, end-of-film (SKILL.md).
+- The pantry law + command word; the outro law (brands closing CARDs only,
+  never writes through a derivative's symlinks; pool at
+  `bearbrown/bearbrown-<ground>-<aspect>-NNN.mp4` — 17 light 9x16 + 6 light
+  16x9 clips exist, legacy green-screen bears in `bearbrown/MP4/`); the
+  Shorts law (derivative cut; 16:9 lays out SIDE BY SIDE, 9:16 stacks TOP
+  AND BOTTOM; generated graphics are RE-LAID-OUT in the short's own
+  `vox_scenes.py`, never cut; captured/generated media center-cuts
+  focus-aware into inspectable `<beat>-916.*` files a human file always
+  overrides); the master law (no slates in clean masters) — all in SKILL.md.
+- Stock styles (`aspects/stock-styles.md`): WARMONO, NATGEO, and the
+  PORTRAIT people-prompt template (ages COMPUTED from birth years, never
+  guessed). Every person slot in a SHOTLIST carries a filled PORTRAIT
+  prompt; generated portrayals of real people are always `source: ai` +
+  disclosure sidecar, surfacing in the YouTube credits block via vox_emit.
+- `arcads-collage-motion/` — a separate Arcads ads skill, UNTRACKED, not
+  yet committed (user's call pending).
 
-**`reels/vox-the-ultraviolet-catastrophe/`** — converted from
-`physics/the-ultraviolet-catastrophe`, editorial pass DONE: 4 beats rewritten
-into Vox register (INTRO cold open, H02 infinite-UV prediction, A08 Planck
-paper DOCUMENT, A12 Planck portrait kicker), 11 kept; audio regenerated (mp3/
-exists); 12 scenes in its `vox_scenes.py` (single continuous chart arc:
-axes → wave patterns → equal shares isotype → crimson Rayleigh–Jeans runaway →
-navy Planck curve → chunk staircase → grey-out → runaway transforms into the
-real curve); review mp4 + layout audit artifacts present. Open: 3 archive
-images per its SHOTLIST (H01 foundry glow, A08 paper scan, A12 portrait — the
-A12_Fuse scene renders as fallback until the portrait lands), and H02's
-annotation-plane runaway (needs the Remotion assembly stage).
+## Key machinery facts
 
-## Not yet built
+- Manim CE does NOT recompute frame_width from `-r W,H`; `vox_graphics.py`
+  syncs it at import (portrait frame = 4.5×8 units, safe area ±1.95/±3.4).
+- Conform ladder: short clips SLOW to fit (never freeze; loud warn >3×);
+  long clips trim tails. Per-beat `shot.treatment: light|none` relaxes the
+  newsprint launder (used when color IS the information, e.g. forge glow).
+- QC: `tmp/qc-tooling/` — Gate A render-free, Gate B pixel-true; annotation
+  strokes declare `mob._qc_intentional = True` to exempt intentional
+  strike-throughs/rings; text-on-text errors at ≥25% overlap.
+- youtube_publish captions: retry over processing latency (9 attempts over
+  ~14.5 min) — an earlier "Shorts refuse caption tracks" diagnosis was
+  WRONG and was corrected in this copy and the book-repo copy. Shorts
+  published before the fix may lack caption tracks; `--backfill-extras`
+  retrofits them (per-surface SRTs).
 
-The **Remotion assembly stage** (word-timestamp-keyed annotations: strike-X,
-hand-rings on cue, highlighter sweeps, karaoke captions, credits from
-`.source.txt` sidecars) is specified in SKILL.md but not implemented — beats
-that depend on it (electoral-college B04; UV H02) slate or approximate until
-then. Real map geometry for choropleths (PD shapefiles via SVGMobject) is also
-pending; the 1948/2016 maps currently use tile-grid or legend-only stand-ins,
-and B11/B12/B13 electoral data are approximations flagged VERIFY in
-`vox_graphics.py`.
+## Current state (verified against the repo at handoff time)
 
-## Git state (needs a minute of attention)
+HEAD `62a3df1` on main, **ahead of origin by 19 commits — needs
+`git push origin main` from a Mac terminal** (the sandbox cannot push).
+Working tree: modified `reels/vox-photoelectric-effect/SHOTLIST.md` (user
+edits; stray prompt fragments sit at the top of the photoelectric and
+matter-waves SHOTLISTs — unresolved whether to fold into people prompts or
+delete), untracked `arcads-collage-motion/` plus regenerable per-reel audit
+artifacts.
 
-`git log` shows HEAD at `60e7657` while an earlier `git pull` reported
-fast-forwarding `60e7657..8dc88d9` and printed a stale-lock warning ("may have
-crashed... remove the file manually"). All pulled `physics/` files show as
-staged adds in `git status`. So the fast-forward appears half-applied: working
-tree and index have the new content, HEAD may not have moved. Before
-committing session work, check `git status`, remove any stale `.git/*.lock`,
-and re-run `git pull origin main` (should no-op or complete cleanly). The
-session's engine files (vox-explainer aspect, the three vox scripts, the
-generate_audio fix) are engine code and were intended to be committed and
-pushed; `reels/` content follows the repo's usual commit policy (definitions
-yes, heavy media no — see `.gitignore` and README).
+All three films: masters compiled, emitted, published via the ledger-driven
+publisher (private-with-publishAt — they flip public automatically on their
+drip slots). The caption backfill command for the pre-fix Shorts was handed
+to the user; whether it was run is not recorded here — check the ledger and
+YouTube Studio.
 
-## Environment facts (this Mac)
+## Open items
 
-ffmpeg 8.1.2 via Homebrew, built WITHOUT freetype — no drawtext filter; the
-compiler auto-detects and uses PIL overlays instead (labels carry time ranges
-in review builds; no running timecode). Do not swap ffmpeg for the tap build —
-brew's manim links against this one. Manim CE 0.20.1 works (brew, plus a pip
-copy in the `~/ai` venv). The venv was created with a pre-parenthesized prompt
-(`'(ai) '`), which rendered `((ai) )`; the sed fix for
-`~/ai/bin/activate` and `~/ai/pyvenv.cfg` was provided at session end — verify
-it was applied. ElevenLabs credits ~1.37M remain; FLUX/nano-banana on
-Higgsfield are cheap and approved-in-principle, but every paid call still gets
-per-step user approval (AGENTS.md rule 6).
+1. **Authoring preflight** — highest value next build: Gate B caught 5+
+   layout errors only after paid renders this session. A render-free check
+   measuring declared text with real font metrics (PIL) against safe areas
+   and declared strokes would catch these before any render command goes to
+   the user.
+2. **Remotion assembly plane** — specified in SKILL.md, never built:
+   word-timestamp annotations (kiln arcs, document highlight sweeps, kicker
+   name/dates), karaoke captions where wanted, auto-credits from sidecars.
+3. **Film four** — matter-waves' outro promises THE WAVE FUNCTION (ch 3:
+   `/Users/bear/Documents/CoWork/bear-textbooks/books/quantum-mechanics-vol1/chapters/03-the-wave-function.md`).
+   The cycle is fully patterned; the three existing reels are the template.
+4. Dark-ground outro pool (`bearbrown-dark-*`) not yet populated; dark-
+   seeded reels fall back to the legacy keyed bear.
+5. UV film book erratum candidate: "h within one percent" is strictly 1.15%
+   (the chapter's own claim; noted in that reel's FACTCHECK.md).
 
 ## Key files
 
-- Skill: `aspects/explainer/vox-explainer/SKILL.md`
-- Scripts: `scripts/vox_compile.py`, `scripts/vox_run.sh`, `scripts/vox_convert.py`
-- Manim: `aspects/explainer/vox-explainer/manim/vox_graphics.py`, `reels/vox-the-ultraviolet-catastrophe/vox_scenes.py`
-- QC: `tmp/qc-tooling/` (README + FINDINGS), per-reel `qc-sheet.png`, `layout_audit.md`
-- Work orders: each reel's `SHOTLIST.md`
-- Reference frames: `vox/` (Vox Electoral College screenshots, visual ground truth)
-- Sibling prior art: `aspects/bios/voxbio/` (same collage language for bios), `physics/` (37 source videos, 29 with layout audits — conversion candidates; convert FIRST, audit after, since conversion drops scenes)
+- Skill/doctrine: `aspects/explainer/vox-explainer/{SKILL.md, MOTION.md}`,
+  `aspects/stock-styles.md`, `brutalist/EQUATIONS.md`,
+  `aspects/explainer/brownblue/reference/equations.md`
+- Scripts: `scripts/{vox_run.sh, vox_compile.py, vox_pantry.py,
+  vox_short.py, vox_outro.py, vox_emit.py, vox_convert.py,
+  generate_audio.py}`; publisher at
+  `aspects/explainer/bears-doodles/scripts/youtube_publish.py`
+- Manim library: `aspects/explainer/vox-explainer/manim/vox_graphics.py`;
+  per-reel scenes in `reels/<slug>/vox_scenes.py` and
+  `reels/<slug>/short/vox_scenes.py`
+- QC: `tmp/qc-tooling/{static_scene_check.py, manim_layout_audit.py}`
+- Each reel: beat_sheet.json (single source of truth), SHOTLIST.md,
+  FACTCHECK.md, script.md, pantry/, media/ (+ `.source.txt` sidecars),
+  manim/, clips/ (machine-owned), short/
