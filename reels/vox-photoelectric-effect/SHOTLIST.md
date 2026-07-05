@@ -1,5 +1,7 @@
 # SHOTLIST — vox-photoelectric-effect
 
+ handsome man with short buzz-cut hair, slight smirk,
+
 Typed work order. Archive slots: drop restored assets into `pantry/` prefixed
 by beat id (the pantry law — nanobanana restoration, WARMONO for period
 plates, upscaled), then `python3 scripts/vox_pantry.py reels/vox-photoelectric-effect`.

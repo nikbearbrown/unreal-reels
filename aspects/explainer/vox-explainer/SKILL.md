@@ -6,7 +6,7 @@ description: >
   clock; the film is a composite of Manim motion-graphics fragments, Ken Burns
   animation over stills (archival or FLUX/nano-banana), AI video clips
   (Higgsfield/Hailuo/Seedance), public-domain footage, and a Remotion
-  annotation/caption plane — all unified by the editorial newsprint treatment
+  annotation plane (REMOTION.md) — all unified by the editorial newsprint treatment
   and assembled per beat. Two-axis shot system (type × source), slot contract
   (swap media/<beat>.png|.mp4 by filename, rebuild recompiles only changed
   slots). Use when the user types `vox`, `vox-explainer`, `vox style`, or asks
@@ -38,7 +38,8 @@ media is EASIER here than one visual style.
 
 1. **Voiceover films:** script → beats → ElevenLabs mp3 per beat
    (`scripts/generate_audio.py`, Bear's voice default) → measured
-   `actual_duration_s` + word timestamps. GATE 0: audio lock. Credits are
+   `actual_duration_s`; then `scripts/vox_align.py` (REMOTION.md) writes the
+   word clock `mp3/words.json`. GATE 0: audio lock. Credits are
    cheap and available — ask, then generate. Runs on the user's machine.
 2. **Music films:** librosa beat grid on the track (songbird machinery);
    downbeat-aligned segments become the beats.
@@ -256,10 +257,13 @@ slot rebuilds.
    only changed slots recompile.
 6. `video` — Higgsfield i2v only for beats where the still + audio demand
    motion (the expensive step, last, per-beat approval).
-7. `assemble` — Remotion annotation/caption plane keyed to word timestamps,
-   treatment pass, credits from sidecars → clean master. **GATE: ship.**
-   (Not yet built — until it lands, DOCUMENT/COMPOSITE annotation beats
-   degrade gracefully to clean plates.)
+7. `assemble` — Remotion annotation plane keyed to word timestamps +
+   auto-credits from sidecars → clean master. **GATE: ship.** Spec and rule
+   owner: `REMOTION.md` (this folder). Captions are NOT plane scope —
+   sidecars per the caption policy; karaoke is a separate human-invoked
+   derivative (`vox_karaoke.py`, spec'd in REMOTION.md). (Not yet built —
+   until it lands, DOCUMENT/COMPOSITE annotation beats degrade gracefully
+   to clean plates.)
 
 Swaps at any later date: drop the new file in `media/`, rerun compile —
 only that slot recompiles.
