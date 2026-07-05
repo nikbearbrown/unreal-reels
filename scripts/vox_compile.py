@@ -259,6 +259,9 @@ def main():
     ap.add_argument("--height", type=int, default=720)
     ap.add_argument("--audio", help="master audio file (music bed / narration mix)")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--allow-slates", action="store_true",
+                    help="permit slates in a CLEAN master (default: refuse — "
+                         "a slate in a review cut is information, in a master it's a defect)")
     a = ap.parse_args()
     folder = a.folder.resolve()
     sheet = json.loads((folder / "beat_sheet.json").read_text())
@@ -293,6 +296,14 @@ def main():
         report.append((bid, t0, dur, status, b.get("shot", {}).get("type", "?")))
         t0 += dur
     man_path.write_text(json.dumps(manifest, indent=1))
+
+    # THE MASTER LAW: no slates in a clean master. Review cuts show slates as
+    # information; a master with a slate is an unfinished film shipping.
+    slated = [bid for bid, _, _, status, _ in report if status == "SLATE"]
+    if slated and not a.review and not a.allow_slates:
+        sys.exit(f"[vox] REFUSED: clean master would carry {len(slated)} slate(s): "
+                 f"{' '.join(slated)} — run vox_run.sh to render/fill them "
+                 f"(or --allow-slates to override deliberately)")
 
     # motion pantry lint (MOTION.md): no language carries > ~40% of beats
     def _eff_motion(b):
