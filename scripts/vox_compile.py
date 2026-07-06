@@ -291,8 +291,9 @@ def main():
             src, status = compile_clip(folder, b, out, w, h, fps, font, work,
                                        fit=sheet.get("metadata", {}).get("fit", "crop"))
             manifest[bid] = key
+            man_path.write_text(json.dumps(manifest, indent=1))  # crash-safe
             print(f"[vox] compiled {bid}  {status:6}  {dur:5.1f}s" +
-                  (f"  ← {src.name}" if src else ""))
+                  (f"  ← {src.name}" if src else ""), flush=True)
         report.append((bid, t0, dur, status, b.get("shot", {}).get("type", "?")))
         t0 += dur
     man_path.write_text(json.dumps(manifest, indent=1))

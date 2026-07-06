@@ -1,0 +1,1229 @@
+{
+  "metadata": {
+    "slug": "lift-every-voice-and-sing",
+    "title": "Lift Every Voice and Sing",
+    "artist": "Mayfield King",
+    "aspect_ratio": "16:9",
+    "fps": 30,
+    "duration_s": 169.668,
+    "duration_frames": 5090,
+    "bpm": 92.29,
+    "key": "G# minor",
+    "audio_file": "LifteveryvoiceandsingMayfieldGDMusinique-mastered.wav",
+    "lyrics_file": "song-06.txt",
+    "beat_data": "beat_data.json",
+    "lyrics_timing": "lyrics.json",
+    "source_video": "Lift Every Voice and Sing _ Mayfield King.mp4",
+    "timing_source": "librosa beat grid (master clock) + beat-grid seed lyric timing (faster-whisper forced alignment unavailable in this sandbox — review/nudge anchors at the overlay gate)",
+    "language": "en",
+    "style_preset": "mayfield-king-soul-portrait",
+    "style_bible": {
+      "visual_style": "soulful contemporary music-video portraiture intercut with archival-style monochrome and sepia portraits, derived from the Mayfield King 'Lift Every Voice and Sing' video: a young Black singer in a warm sun-flared studio crossfading with high-contrast black-and-white and sepia portraits of Black elders, ancestors and everyday people; cinematic shallow depth of field, dramatic single-source chiaroscuro, gentle double-exposure transitions",
+      "color_palette": "warm amber and gold studio light with lens flare; rich charcoal-black and silver monochrome; sepia archival browns",
+      "lighting_style": "warm low window light and golden lens flare in the studio; hard single-source chiaroscuro against pure black for the portraits; soft sepia daylight for the period tableaux"
+    },
+    "style_suffix": "in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark",
+    "subjects": [
+      {
+        "name": "Singer",
+        "subject_key": "singer",
+        "driver": "described",
+        "reference_frames": [
+          "Lift Every Voice and Sing _ Mayfield King_frame_000005.png",
+          "Lift Every Voice and Sing _ Mayfield King_frame_000090.png"
+        ],
+        "look": "a young Black male singer with short cropped hair in a blue button-up shirt, in a warm sunlit studio with a vintage microphone, acoustic guitars and an old radio; lit by golden window light and lens flare. Carries the hook and the dawn/victory beats."
+      },
+      {
+        "name": "Archive",
+        "subject_key": "archive",
+        "driver": "described",
+        "reference_frames": [
+          "Lift Every Voice and Sing _ Mayfield King_frame_000110.png",
+          "Lift Every Voice and Sing _ Mayfield King_frame_000070.png",
+          "Lift Every Voice and Sing _ Mayfield King_frame_000150.png",
+          "Lift Every Voice and Sing _ Mayfield King_frame_000140.png",
+          "Lift Every Voice and Sing _ Mayfield King_frame_000035.png"
+        ],
+        "look": "high-contrast black-and-white and sepia portraits and tableaux of Black ancestors, elders and everyday people — Frederick Douglass-era dignitaries, a grand piano and top hats, congregations, marchers, a stony road, double-exposure street montages. Carries the dark-past / stony-road / weary-years beats."
+      }
+    ],
+    "generation": {
+      "still_backend": "TBD (Higgsfield Soul / FLUX.2 or nano_banana); use the listed reference_frame per beat to match the source-video look",
+      "images_per_beat": 2,
+      "video_model": "minimax (image-to-video)",
+      "rule": "Each beat is image-to-image: the source_still (a sharp frame from the original Mayfield King video, chosen within the beat's time window) is the input; image_prompt preserves its subject/composition and pushes expression + light toward the lyric, in the shared style_suffix grade. Generate images_per_beat candidates, pick chosen_still at the gate. All beats <= 6s -> clip_tier 6."
+    },
+    "counts": {
+      "beats": 32,
+      "singer_beats": 6,
+      "archive_beats": 26
+    },
+    "design_signals": {
+      "brightness": 0.296,
+      "dynamic_range_db": 11.0,
+      "density": {
+        "words_per_second": 1.53,
+        "density_class": "moderate",
+        "avg_line_length": 8.1,
+        "line_count": 32,
+        "word_count": 260
+      },
+      "note": "dark/warm brightness + moderate dynamics support the amber-and-black palette; moderate lyric density (~1.5 w/s) allows word-by-word caption animation."
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B01",
+      "start_s": 0.0,
+      "end_s": 5.53,
+      "start_frame": 0,
+      "end_frame": 166,
+      "duration_s": 5.53,
+      "section": "section_1",
+      "kind": "vocal",
+      "subject": "singer",
+      "line_indices": [
+        0
+      ],
+      "lyric_text": "I lift every voice like a lantern in the dawn",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000005.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000003.png), preserving its subject, pose and composition: the young Black singer in profile in a warm sunlit studio, city skyline in the window behind him, short cropped hair, blue striped shirt. first light catches his face like a lantern at dawn; calm, gathering the first breath to sing; warm amber glow and a soft flare.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000003.png), preserving its subject, pose and composition: the young Black singer in profile in a warm sunlit studio, city skyline in the window behind him, short cropped hair, blue striped shirt. first light catches his face like a lantern at dawn; calm, gathering the first breath to sing; warm amber glow and a soft flare.",
+        "Same subject and framing as the source frame, regraded for the reel: the young Black singer in profile in a warm sunlit studio, city skyline in the window behind him, short cropped hair, blue striped shirt; push the expression and light toward — first light catches his face like a lantern at dawn; calm, gathering the first breath to sing; warm amber glow and a soft flare."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "the young Black singer in profile in a warm sunlit studio, city skyline in the window behind him, short cropped hair, blue striped shirt. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.53s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B01_v1.png"
+      ],
+      "chosen_still": "stills/B01_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000003.png",
+      "source_frame_number": 3,
+      "source_frame_sharpness": 1204.6,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B01_v1.png"
+    },
+    {
+      "beat_id": "B02",
+      "start_s": 5.53,
+      "end_s": 10.5,
+      "start_frame": 166,
+      "end_frame": 315,
+      "duration_s": 4.97,
+      "section": "section_1",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        1
+      ],
+      "lyric_text": "I hold every syllable like a seed of freedom rising",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000005.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000009.png), preserving its subject, pose and composition: a high-contrast black-and-white portrait of an older bearded Black man, eyes lowered, lit by a single hard source against deep black. he holds something precious and unspoken within, like a seed about to rise; quiet gravity, a held breath; chiaroscuro.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000009.png), preserving its subject, pose and composition: a high-contrast black-and-white portrait of an older bearded Black man, eyes lowered, lit by a single hard source against deep black. he holds something precious and unspoken within, like a seed about to rise; quiet gravity, a held breath; chiaroscuro.",
+        "Same subject and framing as the source frame, regraded for the reel: a high-contrast black-and-white portrait of an older bearded Black man, eyes lowered, lit by a single hard source against deep black; push the expression and light toward — he holds something precious and unspoken within, like a seed about to rise; quiet gravity, a held breath; chiaroscuro."
+      ],
+      "camera": "static",
+      "video_prompt": "a high-contrast black-and-white portrait of an older bearded Black man, eyes lowered, lit by a single hard source against deep black. static; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 4.97s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B02_v1.png"
+      ],
+      "chosen_still": "stills/B02_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000009.png",
+      "source_frame_number": 9,
+      "source_frame_sharpness": 347.4,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B02_v1.png"
+    },
+    {
+      "beat_id": "B03",
+      "start_s": 10.5,
+      "end_s": 15.43,
+      "start_frame": 315,
+      "end_frame": 463,
+      "duration_s": 4.93,
+      "section": "section_1",
+      "kind": "vocal",
+      "subject": "singer",
+      "line_indices": [
+        2
+      ],
+      "lyric_text": "Lift every voice and sing as the heavens ring",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000090.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000011.png), preserving its subject, pose and composition: the singer at a vintage studio microphone, blue shirt, mid-phrase, recording gear around him, warm color. full-voiced, head lifting into the note as the room rings; warm light, gentle lens flare.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000011.png), preserving its subject, pose and composition: the singer at a vintage studio microphone, blue shirt, mid-phrase, recording gear around him, warm color. full-voiced, head lifting into the note as the room rings; warm light, gentle lens flare.",
+        "Same subject and framing as the source frame, regraded for the reel: the singer at a vintage studio microphone, blue shirt, mid-phrase, recording gear around him, warm color; push the expression and light toward — full-voiced, head lifting into the note as the room rings; warm light, gentle lens flare."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "the singer at a vintage studio microphone, blue shirt, mid-phrase, recording gear around him, warm color. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 4.93s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B03_v1.png"
+      ],
+      "chosen_still": "stills/B03_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000011.png",
+      "source_frame_number": 11,
+      "source_frame_sharpness": 962.8,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B03_v1.png"
+    },
+    {
+      "beat_id": "B04",
+      "start_s": 15.43,
+      "end_s": 20.37,
+      "start_frame": 463,
+      "end_frame": 611,
+      "duration_s": 4.93,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        3
+      ],
+      "lyric_text": "Let the harmonies of liberty breathe through our bones",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000140.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000018.png), preserving its subject, pose and composition: a black-and-white early-1900s studio portrait of two young Black men in pinstripe suits and ties, one standing close behind the other. two voices joined in harmony, dignified and composed; soft period light, silver tones, fine grain.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000018.png), preserving its subject, pose and composition: a black-and-white early-1900s studio portrait of two young Black men in pinstripe suits and ties, one standing close behind the other. two voices joined in harmony, dignified and composed; soft period light, silver tones, fine grain.",
+        "Same subject and framing as the source frame, regraded for the reel: a black-and-white early-1900s studio portrait of two young Black men in pinstripe suits and ties, one standing close behind the other; push the expression and light toward — two voices joined in harmony, dignified and composed; soft period light, silver tones, fine grain."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "a black-and-white early-1900s studio portrait of two young Black men in pinstripe suits and ties, one standing close behind the other. slow pan; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 4.93s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B04_v1.png"
+      ],
+      "chosen_still": "stills/B04_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000018.png",
+      "source_frame_number": 18,
+      "source_frame_sharpness": 599.7,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B04_v1.png"
+    },
+    {
+      "beat_id": "B05",
+      "start_s": 20.37,
+      "end_s": 25.5,
+      "start_frame": 611,
+      "end_frame": 765,
+      "duration_s": 5.13,
+      "section": "section_3",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        4
+      ],
+      "lyric_text": "Let rejoicing rise high as listening skies",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000005.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000025.png), preserving its subject, pose and composition: a sepia early-1900s portrait of two elegantly dressed Black men in three-piece suits, one seated, one standing adjusting his tie. quiet pride rising, chins lifting toward a listening sky; warm sepia, period grain.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000025.png), preserving its subject, pose and composition: a sepia early-1900s portrait of two elegantly dressed Black men in three-piece suits, one seated, one standing adjusting his tie. quiet pride rising, chins lifting toward a listening sky; warm sepia, period grain.",
+        "Same subject and framing as the source frame, regraded for the reel: a sepia early-1900s portrait of two elegantly dressed Black men in three-piece suits, one seated, one standing adjusting his tie; push the expression and light toward — quiet pride rising, chins lifting toward a listening sky; warm sepia, period grain."
+      ],
+      "camera": "tilt_up",
+      "video_prompt": "a sepia early-1900s portrait of two elegantly dressed Black men in three-piece suits, one seated, one standing adjusting his tie. tilt up; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.13s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B05_v1.png"
+      ],
+      "chosen_still": "stills/B05_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000025.png",
+      "source_frame_number": 25,
+      "source_frame_sharpness": 806.1,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B05_v1.png"
+    },
+    {
+      "beat_id": "B06",
+      "start_s": 25.5,
+      "end_s": 31.33,
+      "start_frame": 765,
+      "end_frame": 940,
+      "duration_s": 5.83,
+      "section": "section_5",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        5
+      ],
+      "lyric_text": "Let it roll like a sea of hope we built stone by stone",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000035.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000026.png), preserving its subject, pose and composition: a sepia portrait of two well-dressed Black men in an early-1900s parlor, one seated and one standing. the steady dignity of people who built something lasting, stone by stone; warm sepia stillness.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000026.png), preserving its subject, pose and composition: a sepia portrait of two well-dressed Black men in an early-1900s parlor, one seated and one standing. the steady dignity of people who built something lasting, stone by stone; warm sepia stillness.",
+        "Same subject and framing as the source frame, regraded for the reel: a sepia portrait of two well-dressed Black men in an early-1900s parlor, one seated and one standing; push the expression and light toward — the steady dignity of people who built something lasting, stone by stone; warm sepia stillness."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "a sepia portrait of two well-dressed Black men in an early-1900s parlor, one seated and one standing. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.83s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B06_v1.png"
+      ],
+      "chosen_still": "stills/B06_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000026.png",
+      "source_frame_number": 26,
+      "source_frame_sharpness": 929.1,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B06_v1.png"
+    },
+    {
+      "beat_id": "B07",
+      "start_s": 31.33,
+      "end_s": 36.7,
+      "start_frame": 940,
+      "end_frame": 1101,
+      "duration_s": 5.37,
+      "section": "section_5",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        6
+      ],
+      "lyric_text": "Sing a song full of the faith the dark past taught",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000110.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000036.png), preserving its subject, pose and composition: a black-and-white civil-rights rally: a woman in cat-eye sunglasses singing into a vintage microphone, fist raised, a man beside her holding a portrait placard, crowd behind. song as testimony forged by the dark past; raised fist, open mouth, fierce faith; hard documentary daylight.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000036.png), preserving its subject, pose and composition: a black-and-white civil-rights rally: a woman in cat-eye sunglasses singing into a vintage microphone, fist raised, a man beside her holding a portrait placard, crowd behind. song as testimony forged by the dark past; raised fist, open mouth, fierce faith; hard documentary daylight.",
+        "Same subject and framing as the source frame, regraded for the reel: a black-and-white civil-rights rally: a woman in cat-eye sunglasses singing into a vintage microphone, fist raised, a man beside her holding a portrait placard, crowd behind; push the expression and light toward — song as testimony forged by the dark past; raised fist, open mouth, fierce faith; hard documentary daylight."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "a black-and-white civil-rights rally: a woman in cat-eye sunglasses singing into a vintage microphone, fist raised, a man beside her holding a portrait placard, crowd behind. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.37s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B07_v1.png"
+      ],
+      "chosen_still": "stills/B07_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000036.png",
+      "source_frame_number": 36,
+      "source_frame_sharpness": 1316.1,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B07_v1.png"
+    },
+    {
+      "beat_id": "B08",
+      "start_s": 36.7,
+      "end_s": 41.73,
+      "start_frame": 1101,
+      "end_frame": 1252,
+      "duration_s": 5.03,
+      "section": "section_5",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        7
+      ],
+      "lyric_text": "Sing a song full of the hope this new day brought",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000090.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000037.png), preserving its subject, pose and composition: a tighter black-and-white frame of the same woman singing passionately into the silver microphone at the rally, white shawl. her face full of the hope of a new day; bright hard daylight, motion in the moment.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000037.png), preserving its subject, pose and composition: a tighter black-and-white frame of the same woman singing passionately into the silver microphone at the rally, white shawl. her face full of the hope of a new day; bright hard daylight, motion in the moment.",
+        "Same subject and framing as the source frame, regraded for the reel: a tighter black-and-white frame of the same woman singing passionately into the silver microphone at the rally, white shawl; push the expression and light toward — her face full of the hope of a new day; bright hard daylight, motion in the moment."
+      ],
+      "camera": "static",
+      "video_prompt": "a tighter black-and-white frame of the same woman singing passionately into the silver microphone at the rally, white shawl. static; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.03s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B08_v1.png"
+      ],
+      "chosen_still": "stills/B08_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000037.png",
+      "source_frame_number": 37,
+      "source_frame_sharpness": 1277.1,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B08_v1.png"
+    },
+    {
+      "beat_id": "B09",
+      "start_s": 41.73,
+      "end_s": 47.07,
+      "start_frame": 1252,
+      "end_frame": 1412,
+      "duration_s": 5.33,
+      "section": "section_5",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        8
+      ],
+      "lyric_text": "Facing the rising sun of a morning just begun",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000005.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000046.png), preserving its subject, pose and composition: a tender dramatic black-and-white portrait of an elderly Black person with soft grey curls and wide expressive eyes, hand resting on the cheek, knit sweater, against black. the wonder of one who lived to face a rising sun and a morning just begun; a soft light dawning across the face.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000046.png), preserving its subject, pose and composition: a tender dramatic black-and-white portrait of an elderly Black person with soft grey curls and wide expressive eyes, hand resting on the cheek, knit sweater, against black. the wonder of one who lived to face a rising sun and a morning just begun; a soft light dawning across the face.",
+        "Same subject and framing as the source frame, regraded for the reel: a tender dramatic black-and-white portrait of an elderly Black person with soft grey curls and wide expressive eyes, hand resting on the cheek, knit sweater, against black; push the expression and light toward — the wonder of one who lived to face a rising sun and a morning just begun; a soft light dawning across the face."
+      ],
+      "camera": "tilt_up",
+      "video_prompt": "a tender dramatic black-and-white portrait of an elderly Black person with soft grey curls and wide expressive eyes, hand resting on the cheek, knit sweater, against black. tilt up; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.33s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B09_v1.png"
+      ],
+      "chosen_still": "stills/B09_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000046.png",
+      "source_frame_number": 46,
+      "source_frame_sharpness": 1004.1,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B09_v1.png"
+    },
+    {
+      "beat_id": "B10",
+      "start_s": 47.07,
+      "end_s": 52.47,
+      "start_frame": 1412,
+      "end_frame": 1574,
+      "duration_s": 5.4,
+      "section": "section_5",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        9
+      ],
+      "lyric_text": "We march on till victory is won",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000035.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000052.png), preserving its subject, pose and composition: a black-and-white portrait of a Black photographer holding a large vintage press camera, moustache, direct gaze. the witness who records the march forward; steady, resolute, unblinking; hard key light.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000052.png), preserving its subject, pose and composition: a black-and-white portrait of a Black photographer holding a large vintage press camera, moustache, direct gaze. the witness who records the march forward; steady, resolute, unblinking; hard key light.",
+        "Same subject and framing as the source frame, regraded for the reel: a black-and-white portrait of a Black photographer holding a large vintage press camera, moustache, direct gaze; push the expression and light toward — the witness who records the march forward; steady, resolute, unblinking; hard key light."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "a black-and-white portrait of a Black photographer holding a large vintage press camera, moustache, direct gaze. slow pan; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.4s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B10_v1.png"
+      ],
+      "chosen_still": "stills/B10_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000052.png",
+      "source_frame_number": 52,
+      "source_frame_sharpness": 1084.7,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B10_v1.png"
+    },
+    {
+      "beat_id": "B11",
+      "start_s": 52.47,
+      "end_s": 58.43,
+      "start_frame": 1574,
+      "end_frame": 1753,
+      "duration_s": 5.97,
+      "section": "section_5",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        10
+      ],
+      "lyric_text": "Stony is the road we trod",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000035.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000055.png), preserving its subject, pose and composition: a warm black-and-white street close-up of an older Black man in a flat cap, smiling with deep creased joy. a face that has walked the stony road and still smiles; weathered warmth, soft street light.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000055.png), preserving its subject, pose and composition: a warm black-and-white street close-up of an older Black man in a flat cap, smiling with deep creased joy. a face that has walked the stony road and still smiles; weathered warmth, soft street light.",
+        "Same subject and framing as the source frame, regraded for the reel: a warm black-and-white street close-up of an older Black man in a flat cap, smiling with deep creased joy; push the expression and light toward — a face that has walked the stony road and still smiles; weathered warmth, soft street light."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "a warm black-and-white street close-up of an older Black man in a flat cap, smiling with deep creased joy. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.97s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B11_v1.png"
+      ],
+      "chosen_still": "stills/B11_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000055.png",
+      "source_frame_number": 55,
+      "source_frame_sharpness": 4205.7,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B11_v1.png"
+    },
+    {
+      "beat_id": "B12",
+      "start_s": 58.43,
+      "end_s": 63.67,
+      "start_frame": 1753,
+      "end_frame": 1910,
+      "duration_s": 5.23,
+      "section": "section_5",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        11
+      ],
+      "lyric_text": "Bitter was the rod that tried to bend our light",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000150.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000062.png), preserving its subject, pose and composition: a black-and-white shot of a muscular shirtless Black man shadow-boxing on a porch, his fist blurred in motion. the body that took the bitter rod and fought to keep its light; tension, motion, defiance; hard daylight.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000062.png), preserving its subject, pose and composition: a black-and-white shot of a muscular shirtless Black man shadow-boxing on a porch, his fist blurred in motion. the body that took the bitter rod and fought to keep its light; tension, motion, defiance; hard daylight.",
+        "Same subject and framing as the source frame, regraded for the reel: a black-and-white shot of a muscular shirtless Black man shadow-boxing on a porch, his fist blurred in motion; push the expression and light toward — the body that took the bitter rod and fought to keep its light; tension, motion, defiance; hard daylight."
+      ],
+      "camera": "static",
+      "video_prompt": "a black-and-white shot of a muscular shirtless Black man shadow-boxing on a porch, his fist blurred in motion. static; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.23s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B12_v1.png"
+      ],
+      "chosen_still": "stills/B12_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000062.png",
+      "source_frame_number": 62,
+      "source_frame_sharpness": 2331.2,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B12_v1.png"
+    },
+    {
+      "beat_id": "B13",
+      "start_s": 63.67,
+      "end_s": 68.9,
+      "start_frame": 1910,
+      "end_frame": 2067,
+      "duration_s": 5.23,
+      "section": "section_5",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        12
+      ],
+      "lyric_text": "Yet with a steady beat our weary feet",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000035.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000068.png), preserving its subject, pose and composition: a sepia period music room: a double bass and empty chairs, a figure in a plumed bicorne hat reading sheet music at a stand, a pianist seated. the steady rehearsal of endurance, music carrying weary feet onward; soft sepia, grain.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000068.png), preserving its subject, pose and composition: a sepia period music room: a double bass and empty chairs, a figure in a plumed bicorne hat reading sheet music at a stand, a pianist seated. the steady rehearsal of endurance, music carrying weary feet onward; soft sepia, grain.",
+        "Same subject and framing as the source frame, regraded for the reel: a sepia period music room: a double bass and empty chairs, a figure in a plumed bicorne hat reading sheet music at a stand, a pianist seated; push the expression and light toward — the steady rehearsal of endurance, music carrying weary feet onward; soft sepia, grain."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "a sepia period music room: a double bass and empty chairs, a figure in a plumed bicorne hat reading sheet music at a stand, a pianist seated. slow pan; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.23s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B13_v1.png"
+      ],
+      "chosen_still": "stills/B13_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000068.png",
+      "source_frame_number": 68,
+      "source_frame_sharpness": 2410.4,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B13_v1.png"
+    },
+    {
+      "beat_id": "B14",
+      "start_s": 68.9,
+      "end_s": 74.27,
+      "start_frame": 2067,
+      "end_frame": 2228,
+      "duration_s": 5.37,
+      "section": "section_6",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        13
+      ],
+      "lyric_text": "Came to the place our elders dreamed in night",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000150.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000071.png), preserving its subject, pose and composition: a luminous black-and-white glamour portrait of a Black woman with a full afro and a radiant open smile. the realized dream made flesh, the joy elders imagined in the night; soft glowing light.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000071.png), preserving its subject, pose and composition: a luminous black-and-white glamour portrait of a Black woman with a full afro and a radiant open smile. the realized dream made flesh, the joy elders imagined in the night; soft glowing light.",
+        "Same subject and framing as the source frame, regraded for the reel: a luminous black-and-white glamour portrait of a Black woman with a full afro and a radiant open smile; push the expression and light toward — the realized dream made flesh, the joy elders imagined in the night; soft glowing light."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "a luminous black-and-white glamour portrait of a Black woman with a full afro and a radiant open smile. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.37s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B14_v1.png"
+      ],
+      "chosen_still": "stills/B14_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000071.png",
+      "source_frame_number": 71,
+      "source_frame_sharpness": 1956.3,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B14_v1.png"
+    },
+    {
+      "beat_id": "B15",
+      "start_s": 74.27,
+      "end_s": 79.57,
+      "start_frame": 2228,
+      "end_frame": 2387,
+      "duration_s": 5.3,
+      "section": "section_6",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        14
+      ],
+      "lyric_text": "We have come over a way watered with tears",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000070.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000078.png), preserving its subject, pose and composition: a black-and-white early-1900s scene of two men in suits, one gently offering something into the other's open cupped hands. an offering passed between generations along a way watered with tears; solemn period light.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000078.png), preserving its subject, pose and composition: a black-and-white early-1900s scene of two men in suits, one gently offering something into the other's open cupped hands. an offering passed between generations along a way watered with tears; solemn period light.",
+        "Same subject and framing as the source frame, regraded for the reel: a black-and-white early-1900s scene of two men in suits, one gently offering something into the other's open cupped hands; push the expression and light toward — an offering passed between generations along a way watered with tears; solemn period light."
+      ],
+      "camera": "static",
+      "video_prompt": "a black-and-white early-1900s scene of two men in suits, one gently offering something into the other's open cupped hands. static; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.3s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B15_v1.png"
+      ],
+      "chosen_still": "stills/B15_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000078.png",
+      "source_frame_number": 78,
+      "source_frame_sharpness": 931.2,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B15_v1.png"
+    },
+    {
+      "beat_id": "B16",
+      "start_s": 79.57,
+      "end_s": 85.5,
+      "start_frame": 2387,
+      "end_frame": 2565,
+      "duration_s": 5.93,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        15
+      ],
+      "lyric_text": "We have come through a path soaked by the slaughtered years",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000140.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000080.png), preserving its subject, pose and composition: an intense black-and-white portrait of a Black man in a pinstripe suit, hand to his chin, brooding, in a brick alley. the weight of the slaughtered years held in a steady jaw; deep shadow, hard side light.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000080.png), preserving its subject, pose and composition: an intense black-and-white portrait of a Black man in a pinstripe suit, hand to his chin, brooding, in a brick alley. the weight of the slaughtered years held in a steady jaw; deep shadow, hard side light.",
+        "Same subject and framing as the source frame, regraded for the reel: an intense black-and-white portrait of a Black man in a pinstripe suit, hand to his chin, brooding, in a brick alley; push the expression and light toward — the weight of the slaughtered years held in a steady jaw; deep shadow, hard side light."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "an intense black-and-white portrait of a Black man in a pinstripe suit, hand to his chin, brooding, in a brick alley. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.93s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B16_v1.png"
+      ],
+      "chosen_still": "stills/B16_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000080.png",
+      "source_frame_number": 80,
+      "source_frame_sharpness": 824.5,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B16_v1.png"
+    },
+    {
+      "beat_id": "B17",
+      "start_s": 85.5,
+      "end_s": 90.67,
+      "start_frame": 2565,
+      "end_frame": 2720,
+      "duration_s": 5.17,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        16
+      ],
+      "lyric_text": "Out from the gloomy past",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000035.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000086.png), preserving its subject, pose and composition: a dramatic black-and-white portrait of an elder with a white halo of hair and a goatee, glasses, against pure black. emerging out of the gloomy past, the face beginning to lift toward light; chiaroscuro against black.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000086.png), preserving its subject, pose and composition: a dramatic black-and-white portrait of an elder with a white halo of hair and a goatee, glasses, against pure black. emerging out of the gloomy past, the face beginning to lift toward light; chiaroscuro against black.",
+        "Same subject and framing as the source frame, regraded for the reel: a dramatic black-and-white portrait of an elder with a white halo of hair and a goatee, glasses, against pure black; push the expression and light toward — emerging out of the gloomy past, the face beginning to lift toward light; chiaroscuro against black."
+      ],
+      "camera": "tilt_up",
+      "video_prompt": "a dramatic black-and-white portrait of an elder with a white halo of hair and a goatee, glasses, against pure black. tilt up; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.17s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B17_v1.png"
+      ],
+      "chosen_still": "stills/B17_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000086.png",
+      "source_frame_number": 86,
+      "source_frame_sharpness": 1174.5,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B17_v1.png"
+    },
+    {
+      "beat_id": "B18",
+      "start_s": 90.67,
+      "end_s": 95.97,
+      "start_frame": 2720,
+      "end_frame": 2879,
+      "duration_s": 5.3,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "singer",
+      "line_indices": [
+        17
+      ],
+      "lyric_text": "To stand where a gleam breaks through at last",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000005.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000091.png), preserving its subject, pose and composition: an overhead studio shot of the singer leaning forward in a blue shirt, surrounded by guitars, a microphone and an old radio, warm color. a gleam of warm light breaking across him from above at last; relief and arrival; gentle flare.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000091.png), preserving its subject, pose and composition: an overhead studio shot of the singer leaning forward in a blue shirt, surrounded by guitars, a microphone and an old radio, warm color. a gleam of warm light breaking across him from above at last; relief and arrival; gentle flare.",
+        "Same subject and framing as the source frame, regraded for the reel: an overhead studio shot of the singer leaning forward in a blue shirt, surrounded by guitars, a microphone and an old radio, warm color; push the expression and light toward — a gleam of warm light breaking across him from above at last; relief and arrival; gentle flare."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "an overhead studio shot of the singer leaning forward in a blue shirt, surrounded by guitars, a microphone and an old radio, warm color. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.3s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B18_v1.png"
+      ],
+      "chosen_still": "stills/B18_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000091.png",
+      "source_frame_number": 91,
+      "source_frame_sharpness": 746.1,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B18_v1.png"
+    },
+    {
+      "beat_id": "B19",
+      "start_s": 95.97,
+      "end_s": 101.13,
+      "start_frame": 2879,
+      "end_frame": 3034,
+      "duration_s": 5.17,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        18
+      ],
+      "lyric_text": "God of our weary years",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000110.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000096.png), preserving its subject, pose and composition: a sepia-toned early-1900s portrait of a Black woman in a beaded gown with a warm smile and opera-singer poise. grace carried through long weary years; warm period light, soft grain.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000096.png), preserving its subject, pose and composition: a sepia-toned early-1900s portrait of a Black woman in a beaded gown with a warm smile and opera-singer poise. grace carried through long weary years; warm period light, soft grain.",
+        "Same subject and framing as the source frame, regraded for the reel: a sepia-toned early-1900s portrait of a Black woman in a beaded gown with a warm smile and opera-singer poise; push the expression and light toward — grace carried through long weary years; warm period light, soft grain."
+      ],
+      "camera": "static",
+      "video_prompt": "a sepia-toned early-1900s portrait of a Black woman in a beaded gown with a warm smile and opera-singer poise. static; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.17s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B19_v1.png"
+      ],
+      "chosen_still": "stills/B19_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000096.png",
+      "source_frame_number": 96,
+      "source_frame_sharpness": 955.4,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B19_v1.png"
+    },
+    {
+      "beat_id": "B20",
+      "start_s": 101.13,
+      "end_s": 106.33,
+      "start_frame": 3034,
+      "end_frame": 3190,
+      "duration_s": 5.2,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        19
+      ],
+      "lyric_text": "God of our silent tears",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000070.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000106.png), preserving its subject, pose and composition: a sepia period music room, a figure in a plumed bicorne hat reading at a music stand, a pianist, a double bass. music made in quiet, silent sorrow, heads bowed to the page; hushed sepia light.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000106.png), preserving its subject, pose and composition: a sepia period music room, a figure in a plumed bicorne hat reading at a music stand, a pianist, a double bass. music made in quiet, silent sorrow, heads bowed to the page; hushed sepia light.",
+        "Same subject and framing as the source frame, regraded for the reel: a sepia period music room, a figure in a plumed bicorne hat reading at a music stand, a pianist, a double bass; push the expression and light toward — music made in quiet, silent sorrow, heads bowed to the page; hushed sepia light."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "a sepia period music room, a figure in a plumed bicorne hat reading at a music stand, a pianist, a double bass. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.2s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B20_v1.png"
+      ],
+      "chosen_still": "stills/B20_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000106.png",
+      "source_frame_number": 106,
+      "source_frame_sharpness": 2016.4,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B20_v1.png"
+    },
+    {
+      "beat_id": "B21",
+      "start_s": 106.33,
+      "end_s": 111.6,
+      "start_frame": 3190,
+      "end_frame": 3348,
+      "duration_s": 5.27,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        20
+      ],
+      "lyric_text": "You carried us thus far on the way",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000035.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000107.png), preserving its subject, pose and composition: the same sepia music-room tableau, the plumed figure at the stand and the pianist seated. the long accompaniment of faith that carried us thus far; warm sepia, stillness.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000107.png), preserving its subject, pose and composition: the same sepia music-room tableau, the plumed figure at the stand and the pianist seated. the long accompaniment of faith that carried us thus far; warm sepia, stillness.",
+        "Same subject and framing as the source frame, regraded for the reel: the same sepia music-room tableau, the plumed figure at the stand and the pianist seated; push the expression and light toward — the long accompaniment of faith that carried us thus far; warm sepia, stillness."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "the same sepia music-room tableau, the plumed figure at the stand and the pianist seated. slow pan; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.27s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B21_v1.png"
+      ],
+      "chosen_still": "stills/B21_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000107.png",
+      "source_frame_number": 107,
+      "source_frame_sharpness": 2045.5,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B21_v1.png"
+    },
+    {
+      "beat_id": "B22",
+      "start_s": 111.6,
+      "end_s": 117.43,
+      "start_frame": 3348,
+      "end_frame": 3523,
+      "duration_s": 5.83,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        21
+      ],
+      "lyric_text": "You led us by might into the light",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000005.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000112.png), preserving its subject, pose and composition: a black-and-white Frederick Douglass-style portrait of a dignified Black elder with white hair and beard in a formal coat. the patriarch who led by might into the light; strong key light building on the face.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000112.png), preserving its subject, pose and composition: a black-and-white Frederick Douglass-style portrait of a dignified Black elder with white hair and beard in a formal coat. the patriarch who led by might into the light; strong key light building on the face.",
+        "Same subject and framing as the source frame, regraded for the reel: a black-and-white Frederick Douglass-style portrait of a dignified Black elder with white hair and beard in a formal coat; push the expression and light toward — the patriarch who led by might into the light; strong key light building on the face."
+      ],
+      "camera": "tilt_up",
+      "video_prompt": "a black-and-white Frederick Douglass-style portrait of a dignified Black elder with white hair and beard in a formal coat. tilt up; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.83s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B22_v1.png"
+      ],
+      "chosen_still": "stills/B22_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000112.png",
+      "source_frame_number": 112,
+      "source_frame_sharpness": 1562.0,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B22_v1.png"
+    },
+    {
+      "beat_id": "B23",
+      "start_s": 117.43,
+      "end_s": 122.63,
+      "start_frame": 3523,
+      "end_frame": 3679,
+      "duration_s": 5.2,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        22
+      ],
+      "lyric_text": "Keep our steps in the path we pray",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000140.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000121.png), preserving its subject, pose and composition: a black-and-white portrait of a young Black man in a black turtleneck in a doorway, protest posters behind him, 1960s. the next generation keeping its steps in the path; quiet prayerful resolve, soft window light.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000121.png), preserving its subject, pose and composition: a black-and-white portrait of a young Black man in a black turtleneck in a doorway, protest posters behind him, 1960s. the next generation keeping its steps in the path; quiet prayerful resolve, soft window light.",
+        "Same subject and framing as the source frame, regraded for the reel: a black-and-white portrait of a young Black man in a black turtleneck in a doorway, protest posters behind him, 1960s; push the expression and light toward — the next generation keeping its steps in the path; quiet prayerful resolve, soft window light."
+      ],
+      "camera": "static",
+      "video_prompt": "a black-and-white portrait of a young Black man in a black turtleneck in a doorway, protest posters behind him, 1960s. static; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.2s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B23_v1.png"
+      ],
+      "chosen_still": "stills/B23_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000121.png",
+      "source_frame_number": 121,
+      "source_frame_sharpness": 352.4,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B23_v1.png"
+    },
+    {
+      "beat_id": "B24",
+      "start_s": 122.63,
+      "end_s": 127.8,
+      "start_frame": 3679,
+      "end_frame": 3834,
+      "duration_s": 5.17,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        23
+      ],
+      "lyric_text": "Lest our feet stray from the ground where we met you",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000035.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000126.png), preserving its subject, pose and composition: the same young Black man in the black turtleneck in the doorway, posters behind. rooted, refusing to let his feet stray from the ground; steady level gaze, flat daylight.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000126.png), preserving its subject, pose and composition: the same young Black man in the black turtleneck in the doorway, posters behind. rooted, refusing to let his feet stray from the ground; steady level gaze, flat daylight.",
+        "Same subject and framing as the source frame, regraded for the reel: the same young Black man in the black turtleneck in the doorway, posters behind; push the expression and light toward — rooted, refusing to let his feet stray from the ground; steady level gaze, flat daylight."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "the same young Black man in the black turtleneck in the doorway, posters behind. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.17s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B24_v1.png"
+      ],
+      "chosen_still": "stills/B24_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000126.png",
+      "source_frame_number": 126,
+      "source_frame_sharpness": 352.0,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B24_v1.png"
+    },
+    {
+      "beat_id": "B25",
+      "start_s": 127.8,
+      "end_s": 132.97,
+      "start_frame": 3834,
+      "end_frame": 3989,
+      "duration_s": 5.17,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        24
+      ],
+      "lyric_text": "Keep us true keep us true",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000005.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000132.png), preserving its subject, pose and composition: a black-and-white Sojourner Truth-style portrait of an older Black woman in a shawl and white cap, seated, 1800s. the very embodiment of truth held firm; plain hard light, period stillness.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000132.png), preserving its subject, pose and composition: a black-and-white Sojourner Truth-style portrait of an older Black woman in a shawl and white cap, seated, 1800s. the very embodiment of truth held firm; plain hard light, period stillness.",
+        "Same subject and framing as the source frame, regraded for the reel: a black-and-white Sojourner Truth-style portrait of an older Black woman in a shawl and white cap, seated, 1800s; push the expression and light toward — the very embodiment of truth held firm; plain hard light, period stillness."
+      ],
+      "camera": "static",
+      "video_prompt": "a black-and-white Sojourner Truth-style portrait of an older Black woman in a shawl and white cap, seated, 1800s. static; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.17s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B25_v1.png"
+      ],
+      "chosen_still": "stills/B25_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000132.png",
+      "source_frame_number": 132,
+      "source_frame_sharpness": 891.9,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B25_v1.png"
+    },
+    {
+      "beat_id": "B26",
+      "start_s": 132.97,
+      "end_s": 138.03,
+      "start_frame": 3989,
+      "end_frame": 4141,
+      "duration_s": 5.07,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        25
+      ],
+      "lyric_text": "Lest our hearts drunk with the wine of the world forget you",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000150.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000138.png), preserving its subject, pose and composition: a sepia portrait of two men in top hats and tails beside a grand piano, elegant, early 1900s. worldly finery and the wine of the world, yet a call not to forget; warm sepia, refined light.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000138.png), preserving its subject, pose and composition: a sepia portrait of two men in top hats and tails beside a grand piano, elegant, early 1900s. worldly finery and the wine of the world, yet a call not to forget; warm sepia, refined light.",
+        "Same subject and framing as the source frame, regraded for the reel: a sepia portrait of two men in top hats and tails beside a grand piano, elegant, early 1900s; push the expression and light toward — worldly finery and the wine of the world, yet a call not to forget; warm sepia, refined light."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "a sepia portrait of two men in top hats and tails beside a grand piano, elegant, early 1900s. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.07s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B26_v1.png"
+      ],
+      "chosen_still": "stills/B26_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000138.png",
+      "source_frame_number": 138,
+      "source_frame_sharpness": 928.7,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B26_v1.png"
+    },
+    {
+      "beat_id": "B27",
+      "start_s": 138.03,
+      "end_s": 143.77,
+      "start_frame": 4141,
+      "end_frame": 4313,
+      "duration_s": 5.73,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        26
+      ],
+      "lyric_text": "Keep us near keep us near",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000090.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000139.png), preserving its subject, pose and composition: the same sepia top-hat-and-tails duo at the grand piano. drawn close around the music, kept near; intimate sepia glow.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000139.png), preserving its subject, pose and composition: the same sepia top-hat-and-tails duo at the grand piano. drawn close around the music, kept near; intimate sepia glow.",
+        "Same subject and framing as the source frame, regraded for the reel: the same sepia top-hat-and-tails duo at the grand piano; push the expression and light toward — drawn close around the music, kept near; intimate sepia glow."
+      ],
+      "camera": "static",
+      "video_prompt": "the same sepia top-hat-and-tails duo at the grand piano. static; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.73s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B27_v1.png"
+      ],
+      "chosen_still": "stills/B27_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000139.png",
+      "source_frame_number": 139,
+      "source_frame_sharpness": 985.0,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B27_v1.png"
+    },
+    {
+      "beat_id": "B28",
+      "start_s": 143.77,
+      "end_s": 148.83,
+      "start_frame": 4313,
+      "end_frame": 4465,
+      "duration_s": 5.07,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        27
+      ],
+      "lyric_text": "Shadowed beneath your hand we stand",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000035.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000148.png), preserving its subject, pose and composition: a dramatic black-and-white portrait of the white-haired elder against black, steady unflinching gaze. standing unbowed, shadowed beneath a sheltering hand; single hard light against black.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000148.png), preserving its subject, pose and composition: a dramatic black-and-white portrait of the white-haired elder against black, steady unflinching gaze. standing unbowed, shadowed beneath a sheltering hand; single hard light against black.",
+        "Same subject and framing as the source frame, regraded for the reel: a dramatic black-and-white portrait of the white-haired elder against black, steady unflinching gaze; push the expression and light toward — standing unbowed, shadowed beneath a sheltering hand; single hard light against black."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "a dramatic black-and-white portrait of the white-haired elder against black, steady unflinching gaze. slow pan; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.07s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B28_v1.png"
+      ],
+      "chosen_still": "stills/B28_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000148.png",
+      "source_frame_number": 148,
+      "source_frame_sharpness": 1123.6,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B28_v1.png"
+    },
+    {
+      "beat_id": "B29",
+      "start_s": 148.83,
+      "end_s": 153.9,
+      "start_frame": 4465,
+      "end_frame": 4617,
+      "duration_s": 5.07,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "archive",
+      "line_indices": [
+        28
+      ],
+      "lyric_text": "True to our God",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000110.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000149.png), preserving its subject, pose and composition: the same white-haired elder portrait, fierce and faithful. unwavering faith, true to God, in the eyes; hard key light, deep black.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000149.png), preserving its subject, pose and composition: the same white-haired elder portrait, fierce and faithful. unwavering faith, true to God, in the eyes; hard key light, deep black.",
+        "Same subject and framing as the source frame, regraded for the reel: the same white-haired elder portrait, fierce and faithful; push the expression and light toward — unwavering faith, true to God, in the eyes; hard key light, deep black."
+      ],
+      "camera": "static",
+      "video_prompt": "the same white-haired elder portrait, fierce and faithful. static; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.07s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B29_v1.png"
+      ],
+      "chosen_still": "stills/B29_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000149.png",
+      "source_frame_number": 149,
+      "source_frame_sharpness": 1134.1,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B29_v1.png"
+    },
+    {
+      "beat_id": "B30",
+      "start_s": 153.9,
+      "end_s": 159.0,
+      "start_frame": 4617,
+      "end_frame": 4770,
+      "duration_s": 5.1,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "singer",
+      "line_indices": [
+        29
+      ],
+      "lyric_text": "True to our native land",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000140.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000154.png), preserving its subject, pose and composition: a warm color close-up of the singer at the vintage microphone, earnest, studio light. devotion, true to his native land and people; warm gold light, steady gaze.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000154.png), preserving its subject, pose and composition: a warm color close-up of the singer at the vintage microphone, earnest, studio light. devotion, true to his native land and people; warm gold light, steady gaze.",
+        "Same subject and framing as the source frame, regraded for the reel: a warm color close-up of the singer at the vintage microphone, earnest, studio light; push the expression and light toward — devotion, true to his native land and people; warm gold light, steady gaze."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "a warm color close-up of the singer at the vintage microphone, earnest, studio light. slow pan; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.1s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B30_v1.png"
+      ],
+      "chosen_still": "stills/B30_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000154.png",
+      "source_frame_number": 154,
+      "source_frame_sharpness": 410.3,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B30_v1.png"
+    },
+    {
+      "beat_id": "B31",
+      "start_s": 159.0,
+      "end_s": 164.03,
+      "start_frame": 4770,
+      "end_frame": 4921,
+      "duration_s": 5.03,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "singer",
+      "line_indices": [
+        30
+      ],
+      "lyric_text": "Rising like a dawn that refuses to dim",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000005.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000153.png), preserving its subject, pose and composition: a color close-up of the singer, blue shirt, mid-line at the microphone. the light rising and holding on his face like a dawn that refuses to dim; growing warm glow, flare blooming.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000153.png), preserving its subject, pose and composition: a color close-up of the singer, blue shirt, mid-line at the microphone. the light rising and holding on his face like a dawn that refuses to dim; growing warm glow, flare blooming.",
+        "Same subject and framing as the source frame, regraded for the reel: a color close-up of the singer, blue shirt, mid-line at the microphone; push the expression and light toward — the light rising and holding on his face like a dawn that refuses to dim; growing warm glow, flare blooming."
+      ],
+      "camera": "tilt_up",
+      "video_prompt": "a color close-up of the singer, blue shirt, mid-line at the microphone. tilt up; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.03s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B31_v1.png"
+      ],
+      "chosen_still": "stills/B31_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000153.png",
+      "source_frame_number": 153,
+      "source_frame_sharpness": 622.4,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B31_v1.png"
+    },
+    {
+      "beat_id": "B32",
+      "start_s": 164.03,
+      "end_s": 169.67,
+      "start_frame": 4921,
+      "end_frame": 5090,
+      "duration_s": 5.63,
+      "section": "section_8",
+      "kind": "vocal",
+      "subject": "singer",
+      "line_indices": [
+        31
+      ],
+      "lyric_text": "Till victory calls our name",
+      "reference_frame": "Lift Every Voice and Sing _ Mayfield King_frame_000090.png",
+      "image_prompt": "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000152.png), preserving its subject, pose and composition: a color close-up of the singer, mouth open on the final note at the microphone. the last triumphant note as victory calls his name; full voice, radiant gold, the look held.",
+      "storyboard_prompts": [
+        "Image-to-image from the source frame (Lift Every Voice and Sing _ Mayfield King_frame_000152.png), preserving its subject, pose and composition: a color close-up of the singer, mouth open on the final note at the microphone. the last triumphant note as victory calls his name; full voice, radiant gold, the look held.",
+        "Same subject and framing as the source frame, regraded for the reel: a color close-up of the singer, mouth open on the final note at the microphone; push the expression and light toward — the last triumphant note as victory calls his name; full voice, radiant gold, the look held."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "a color close-up of the singer, mouth open on the final note at the microphone. slow push in; subtle natural motion only; land the key moment early and hold so it cuts cleanly to the beat; duration 5.63s. Style: in the style of the Mayfield King 'Lift Every Voice and Sing' video — soulful cinematic portrait look, warm amber studio with lens flare intercut with high-contrast B&W and sepia archival portraits, shallow depth of field, film grain, no text, no captions, no watermark.",
+      "clip_tier": 6,
+      "images_per_beat": 2,
+      "storyboard_candidates": [
+        "stills/B32_v1.png"
+      ],
+      "chosen_still": "stills/B32_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "source_still": "Lift Every Voice and Sing _ Mayfield King_frame_000152.png",
+      "source_frame_number": 152,
+      "source_frame_sharpness": 789.6,
+      "prompt_mode": "image-to-image",
+      "chosen_still_916": "stills/916/B32_v1.png"
+    }
+  ]
+}

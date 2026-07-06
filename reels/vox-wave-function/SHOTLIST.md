@@ -53,10 +53,16 @@ they ship as needs_review placeholders.
 
 ### B09 — COMPOSITE·ai · detector plate (moral beat)
 ```
-macro photograph of a dark laboratory detector plate with faint white dot impacts accumulating in soft bands, shallow depth of field, moody studio lighting, photoreal --ar 16:9
+hyperrealist macro photograph in the style of National Geographic laboratory photography — a single flat square glass detector plate, 10 cm across, matte dark-gray phosphor coating, photographed straight-on with a slight 10-degree downward tilt, plate filling 80 percent of the frame; the surface carries thousands of tiny pin-sharp white specks accumulated into five soft vertical interference bands — dense bright central band, two fainter bands each side, empty at the edges — like a long-exposure electron detection record; specks individually resolved, bands clearly banded, never smeared or glowing; thin anodized-aluminum mount edge visible along the left side only; one cool overhead softbox, gentle falloff to a deep charcoal seamless background; no hands, no people, no instruments, no text, no labels, no reflections of the camera --ar 16:9
 ```
-Chips ("NOT the particle / THE RULE for the odds") land at assembly on the
-Remotion plane; degrades to clean plate.
+The five-band speck pattern is the content — it echoes B08's histogram and
+Tonomura's record; wrong = random speck scatter, glow blobs, or a smooth
+gradient. Chips ("NOT the particle / THE RULE for the odds") land at
+assembly on the Remotion plane; degrades to clean plate.
+PROMPT LAW (this reel onward): name the object, the count, the geometry,
+the distribution, the material, the camera angle, the light source, and
+the exclusions. A vague noun phrase returns thirty different images; a
+specified one returns variations of the right image.
 
 ### B10 — STILL · Born kicker (direct gaze)
 People prompt:

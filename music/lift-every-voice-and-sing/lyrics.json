@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "fps": 30,
+  "lines": [
+    {
+      "index": 0,
+      "text": "I lift every voice like a lantern in the dawn",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 2,
+      "endFrame": 163
+    },
+    {
+      "index": 1,
+      "text": "I hold every syllable like a seed of freedom rising",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 166,
+      "endFrame": 312
+    },
+    {
+      "index": 2,
+      "text": "Lift every voice and sing as the heavens ring",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 315,
+      "endFrame": 460
+    },
+    {
+      "index": 3,
+      "text": "Let the harmonies of liberty breathe through our bones",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 463,
+      "endFrame": 608
+    },
+    {
+      "index": 4,
+      "text": "Let rejoicing rise high as listening skies",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 611,
+      "endFrame": 762
+    },
+    {
+      "index": 5,
+      "text": "Let it roll like a sea of hope we built stone by stone",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 765,
+      "endFrame": 937
+    },
+    {
+      "index": 6,
+      "text": "Sing a song full of the faith the dark past taught",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 940,
+      "endFrame": 1098
+    },
+    {
+      "index": 7,
+      "text": "Sing a song full of the hope this new day brought",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 1101,
+      "endFrame": 1249
+    },
+    {
+      "index": 8,
+      "text": "Facing the rising sun of a morning just begun",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 1252,
+      "endFrame": 1409
+    },
+    {
+      "index": 9,
+      "text": "We march on till victory is won",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 1412,
+      "endFrame": 1571
+    },
+    {
+      "index": 10,
+      "text": "Stony is the road we trod",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 1574,
+      "endFrame": 1750
+    },
+    {
+      "index": 11,
+      "text": "Bitter was the rod that tried to bend our light",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 1753,
+      "endFrame": 1907
+    },
+    {
+      "index": 12,
+      "text": "Yet with a steady beat our weary feet",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 1910,
+      "endFrame": 2064
+    },
+    {
+      "index": 13,
+      "text": "Came to the place our elders dreamed in night",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 2067,
+      "endFrame": 2225
+    },
+    {
+      "index": 14,
+      "text": "We have come over a way watered with tears",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 2228,
+      "endFrame": 2384
+    },
+    {
+      "index": 15,
+      "text": "We have come through a path soaked by the slaughtered years",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 2387,
+      "endFrame": 2562
+    },
+    {
+      "index": 16,
+      "text": "Out from the gloomy past",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 2565,
+      "endFrame": 2717
+    },
+    {
+      "index": 17,
+      "text": "To stand where a gleam breaks through at last",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 2720,
+      "endFrame": 2876
+    },
+    {
+      "index": 18,
+      "text": "God of our weary years",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 2879,
+      "endFrame": 3031
+    },
+    {
+      "index": 19,
+      "text": "God of our silent tears",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 3034,
+      "endFrame": 3187
+    },
+    {
+      "index": 20,
+      "text": "You carried us thus far on the way",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 3190,
+      "endFrame": 3345
+    },
+    {
+      "index": 21,
+      "text": "You led us by might into the light",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 3348,
+      "endFrame": 3520
+    },
+    {
+      "index": 22,
+      "text": "Keep our steps in the path we pray",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 3523,
+      "endFrame": 3676
+    },
+    {
+      "index": 23,
+      "text": "Lest our feet stray from the ground where we met you",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 3679,
+      "endFrame": 3831
+    },
+    {
+      "index": 24,
+      "text": "Keep us true keep us true",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 3834,
+      "endFrame": 3986
+    },
+    {
+      "index": 25,
+      "text": "Lest our hearts drunk with the wine of the world forget you",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 3989,
+      "endFrame": 4138
+    },
+    {
+      "index": 26,
+      "text": "Keep us near keep us near",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4141,
+      "endFrame": 4310
+    },
+    {
+      "index": 27,
+      "text": "Shadowed beneath your hand we stand",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4313,
+      "endFrame": 4462
+    },
+    {
+      "index": 28,
+      "text": "True to our God",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4465,
+      "endFrame": 4614
+    },
+    {
+      "index": 29,
+      "text": "True to our native land",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4617,
+      "endFrame": 4767
+    },
+    {
+      "index": 30,
+      "text": "Rising like a dawn that refuses to dim",
+      "section": "section_7",
+      "tag": null,
+      "startFrame": 4770,
+      "endFrame": 4918
+    },
+    {
+      "index": 31,
+      "text": "Till victory calls our name",
+      "section": "section_8",
+      "tag": null,
+      "startFrame": 4921,
+      "endFrame": 5087
+    }
+  ],
+  "density": {
+    "words_per_second": 1.53,
+    "density_class": "moderate",
+    "avg_line_length": 8.1,
+    "line_count": 32,
+    "word_count": 260
+  },
+  "title": "Lift Every Voice and Sing"
+}

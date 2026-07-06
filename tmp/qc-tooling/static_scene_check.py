@@ -620,7 +620,11 @@ def check_scene(scene_path: Path, scene_cls="BearsDoodlesVideo"):
     _TEXT_SNAPS.clear()
 
     folder = scene_path.parent
-    result = {"scene": str(scene_path.relative_to(REPO)), "errors": [], "warnings": [], "info": {}}
+    try:                              # isolated-copy runs live outside REPO (vox_run Gate A)
+        scene_label = str(scene_path.relative_to(REPO))
+    except ValueError:
+        scene_label = scene_path.name
+    result = {"scene": scene_label, "errors": [], "warnings": [], "info": {}}
 
     src = scene_path.read_text(errors="ignore")
     if "generic_art" in src:

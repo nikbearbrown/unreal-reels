@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "slug": "little-red-cap",
+    "title": "Little Red Cap",
+    "voice_id": "TyW6NH39JcFb5M3xdIIk",
+    "style_preset": "cinematic",
+    "aspect_ratio": "16:9",
+    "style_bible": {
+      "visual_style": "photoreal cinematic live-action fairy tale, Netflix period-drama look, naturalistic",
+      "color_palette": "cold forest greens and greys, the bright red cloak, warm candlelit cottage interior",
+      "lighting_style": "flat overcast winter daylight in the wood; warm low light inside the cottage"
+    },
+    "characters": [
+      {
+        "name": "Red Cap",
+        "driver": "soul",
+        "soul_id": "dc7b4aba-3da7-4373-9fe0-cc380f45bd4e",
+        "look": "young woman, dark braided hair, a red hooded cloak over a cream dress"
+      },
+      {
+        "name": "Wolf",
+        "driver": "reference",
+        "reference_image": "../../../Manim/Muzak/grimms/shots/red-riding-hood/bad-wolf.png",
+        "look": "a massive black wolf with pale ice-blue eyes and tan brow markings"
+      },
+      {
+        "name": "Grandmother",
+        "driver": "soul",
+        "soul_id": "dc7b4aba-3da7-4373-9fe0-cc380f45bd4e",
+        "look": "the Red Cap actress aged — silver hair, 60s, kindly lined face, nightdress and shawl"
+      },
+      {
+        "name": "Huntsman",
+        "driver": "soul",
+        "soul_id": "5c969ba3-1686-4440-b4b3-220056fdd351",
+        "look": "tall crossfit-built man, buzz cut, red-and-black plaid flannel, black beanie"
+      }
+    ],
+    "total_estimated_duration_seconds": 75.76
+  },
+  "beats": [
+    {
+      "beat_id": "B01",
+      "narration_text": "A little girl wore a red velvet cap her grandmother made, and would wear nothing else — so everyone called her Little Red Cap.",
+      "tts_normalized_text": "A little girl wore a red velvet cap her grandmother made, and would wear nothing else, so everyone called her Little Red Cap.",
+      "scene_description": "Red Cap in her red cloak at the village cottage gate.",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "Little Red Cap in her red hooded cloak over a cream dress, standing at a village cottage gate, soft overcast light",
+      "video_prompt": "slow push-in as Red Cap smiles and pulls her red hood up",
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 6.92,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B02",
+      "narration_text": "Her mother said: take this cake and wine to Grandmother, who is weak and ill. Keep to the path, and walk nicely.",
+      "tts_normalized_text": "Her mother said, take this cake and wine to Grandmother, who is weak and ill. Keep to the path, and walk nicely.",
+      "scene_description": "The mother hands Red Cap a covered basket at the doorway.",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "static",
+      "image_prompt": "Red Cap taking a covered basket from her mother at a cottage doorway, warm interior light behind them",
+      "video_prompt": "static shot, the mother hands over the basket, Red Cap nods and turns to go",
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 6.4,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B03",
+      "narration_text": "In the deep wood, a wolf met her. Red Cap did not know what a wicked beast he was.",
+      "tts_normalized_text": "In the deep wood, a wolf met her. Red Cap did not know what a wicked beast he was.",
+      "scene_description": "Red Cap on the forest path meets the black wolf.",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "slow_pan",
+      "image_prompt": "Red Cap on a forest path meeting a large black wolf with pale blue eyes among bare winter trees",
+      "video_prompt": "slow pan from Red Cap to the black wolf as he steps onto the path, snow drifting",
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 5.02,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B04",
+      "narration_text": "Where are you going so early? he asked. To Grandmother's house, beyond the wood, under the three oak trees.",
+      "tts_normalized_text": "Where are you going so early, he asked. To Grandmother's house, beyond the wood, under the three oak trees.",
+      "scene_description": "The wolf walks close beside Red Cap, asking her way.",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the black wolf close beside Red Cap on the path, head tilted as if speaking, cold forest light",
+      "video_prompt": "slow push-in on the wolf's blue-eyed face as Red Cap answers",
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 6.35,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B05",
+      "narration_text": "Look at the pretty flowers, said the wolf. So Red Cap left the path to gather them, deeper among the trees.",
+      "tts_normalized_text": "Look at the pretty flowers, said the wolf. So Red Cap left the path to gather them, deeper among the trees.",
+      "scene_description": "Red Cap strays off the path to pick flowers.",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "push_in",
+      "image_prompt": "Red Cap straying off the path to pick pale winter flowers, drifting deeper into the dim woods",
+      "video_prompt": "slow push-in following Red Cap as she wanders off the path gathering flowers",
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 6.5,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B06",
+      "narration_text": "The wolf ran ahead to the cottage, knocked, and swallowed the poor grandmother whole. Then he climbed into her bed.",
+      "tts_normalized_text": "The wolf ran ahead to the cottage, knocked, and swallowed the poor grandmother whole. Then he climbed into her bed.",
+      "scene_description": "The wolf reaches the cottage and takes the grandmother.",
+      "characters_present": [
+        "Wolf",
+        "Grandmother"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the black wolf at the threshold of a dim cottage bedroom, the frail silver-haired grandmother in her bed",
+      "video_prompt": "slow push-in toward the cottage bed as the wolf slips inside, the room dim",
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 6.35,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B07",
+      "narration_text": "He put on her cap and gown and drew the curtains. Soon Red Cap arrived, and felt a strange unease.",
+      "tts_normalized_text": "He put on her cap and gown and drew the curtains. Soon Red Cap arrived, and felt a strange unease.",
+      "scene_description": "The disguised wolf waits in bed as Red Cap enters.",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "static",
+      "image_prompt": "the wolf in the grandmother's cap and nightgown lying in bed, curtains drawn, Red Cap stepping in uneasily",
+      "video_prompt": "static uneasy shot, Red Cap steps to the bedside, the disguised wolf still",
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 5.93,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B08",
+      "narration_text": "Grandmother, what big ears you have! The better to hear you with. What big eyes you have! The better to see you with.",
+      "tts_normalized_text": "Grandmother, what big ears you have! The better to hear you with. What big eyes you have! The better to see you with.",
+      "scene_description": "The famous exchange begins at the bedside.",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "push_in",
+      "image_prompt": "close on the disguised wolf in cap and gown in bed, pale blue eyes wide, Red Cap leaning in",
+      "video_prompt": "slow push-in on the wolf's eyes and ears as the exchange builds",
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 6.87,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B09",
+      "narration_text": "But Grandmother, what big teeth you have! The better to eat you with — and the wolf swallowed Little Red Cap whole.",
+      "tts_normalized_text": "But Grandmother, what big teeth you have! The better to eat you with, and the wolf swallowed Little Red Cap whole.",
+      "scene_description": "The wolf reveals himself and swallows Red Cap.",
+      "characters_present": [
+        "Red Cap",
+        "Wolf"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the wolf's open jaws and bright red tongue filling the frame, the bed and Red Cap beyond",
+      "video_prompt": "fast push-in to the wolf's open mouth, then to black",
+      "audio_file": "mp3/beat-B09.mp3",
+      "actual_duration_s": 6.09,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B10",
+      "narration_text": "A huntsman passing by heard loud snoring. He found the wolf, took his shears, and cut the sleeping belly open.",
+      "tts_normalized_text": "A huntsman passing by heard loud snoring. He found the wolf, took his shears, and cut the sleeping belly open.",
+      "scene_description": "The huntsman opens the sleeping wolf.",
+      "characters_present": [
+        "Huntsman",
+        "Wolf"
+      ],
+      "camera": "push_in",
+      "image_prompt": "the crossfit huntsman in red plaid and a black beanie at the bedside over the sleeping bloated wolf, shears in hand",
+      "video_prompt": "slow push-in as the huntsman leans over the snoring wolf and raises the shears",
+      "audio_file": "mp3/beat-B10.mp3",
+      "actual_duration_s": 6.82,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B11",
+      "narration_text": "Out sprang Little Red Cap, then her grandmother, alive. They filled the wolf with heavy stones, and he fell down dead.",
+      "tts_normalized_text": "Out sprang Little Red Cap, then her grandmother, alive. They filled the wolf with heavy stones, and he fell down dead.",
+      "scene_description": "Red Cap and Grandmother freed; the wolf weighted with stones.",
+      "characters_present": [
+        "Red Cap",
+        "Grandmother",
+        "Huntsman",
+        "Wolf"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "Red Cap and her silver-haired grandmother standing safe beside the huntsman, the black wolf still on the floor",
+      "video_prompt": "slow pull-back revealing the three standing together, the wolf motionless",
+      "audio_file": "mp3/beat-B11.mp3",
+      "actual_duration_s": 7.42,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    },
+    {
+      "beat_id": "B12",
+      "narration_text": "And Red Cap thought: never again will I leave the path, when my mother has told me not to.",
+      "tts_normalized_text": "And Red Cap thought, never again will I leave the path, when my mother has told me not to.",
+      "scene_description": "Red Cap resolves to stay on the path; close.",
+      "characters_present": [
+        "Red Cap"
+      ],
+      "camera": "pull_back",
+      "image_prompt": "Red Cap back on the forest path in her red cloak, resolute, the wood brightening behind her",
+      "video_prompt": "slow pull-back as Red Cap walks the path, a faint resolved smile, light lifting",
+      "audio_file": "mp3/beat-B12.mp3",
+      "actual_duration_s": 5.09,
+      "word_timestamps": null,
+      "clip_tier": null,
+      "storyboard_candidates": [],
+      "chosen_still": null,
+      "raw_clip": null,
+      "video_file": null
+    }
+  ]
+}

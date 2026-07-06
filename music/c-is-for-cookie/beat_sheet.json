@@ -1,0 +1,1550 @@
+{
+  "metadata": {
+    "slug": "c-is-for-cookie",
+    "title": "C is for Cookie",
+    "artist": "Parvati & Tuzi",
+    "aspect_ratio": "16:9",
+    "fps": 30,
+    "duration_s": 174.96,
+    "duration_frames": 5249,
+    "bpm": 129.2,
+    "key": "A minor",
+    "audio_file": "CisforCookieParvatiTuzi-mastered.wav",
+    "lyrics_file": "song-07.txt",
+    "beat_data": "beat_data.json",
+    "lyrics_timing": "lyrics.json",
+    "source_video": "C is for Cookie _ Sing-a-Long.mp4",
+    "timing_source": "unknown",
+    "language": "en",
+    "style_preset": "cookie-grover-felt-duet",
+    "style_bible": {
+      "visual_style": "tactile needle-felt / claymation stop-motion folk-art DUET; a blue googly-eyed Cookie-Monster-style felt creature busking with a banjo, joined by Grover, a lanky teal-blue felt monster with a long magenta nose; two puppets per frame, one clay diorama set",
+      "color_palette": "denim and cobalt-blue felt, warm ochre and terracotta, cream, muted clay backdrops",
+      "lighting_style": "soft warm diffuse studio light, gentle shadows, cozy storybook glow"
+    },
+    "style_suffix": "tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark",
+    "generation": {
+      "still_source": "16:9 outpaint from the preserved 9:16 Cookie stills in stills/916/, adding Grover",
+      "image_model": "nano_banana_2_shots or flux_2 (image-to-image, aspect 16:9)",
+      "video_model": "minimax_hailuo (image-to-video)",
+      "duration_request_s": 10,
+      "rule": "every 16:9 shot is a Cookie+Grover duet; only Cookie plays; Grover's side alternates per beat. 9:16 originals kept in stills/916/ for the vertical cut."
+    },
+    "counts": {
+      "beats": 44,
+      "duet_beats": 44
+    },
+    "subjects": [
+      {
+        "name": "Cookie",
+        "subject_key": "cookie",
+        "driver": "described",
+        "look": "blue googly-eyed needle-felt Cookie-Monster-style creature in an ochre felt vest, plays the banjo; the player in every shot."
+      },
+      {
+        "name": "Grover",
+        "subject_key": "grover",
+        "driver": "described",
+        "look": "lanky teal-blue needle-felt monster, long magenta nose, big wobbly googly eyes; the non-playing duet partner, added when widening to 16:9."
+      }
+    ]
+  },
+  "beats": [
+    {
+      "beat_id": "B01",
+      "start_s": 0.0,
+      "end_s": 3.73,
+      "start_frame": 0,
+      "end_frame": 112,
+      "duration_s": 3.73,
+      "section": "section_1",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        0
+      ],
+      "lyric_text": "On Sesame Street,where the cookies crumble,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000002.png",
+      "source_frame_number": 2,
+      "source_frame_sharpness": 1703.8,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B01_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — busking on the clay street corner, strumming. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, ambling into frame to join in, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B01_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — busking on the clay street corner, strumming. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, ambling into frame to join in, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is busking on the clay street corner, strumming; on the right Grover is ambling into frame to join in. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.73s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B01_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B01_v1.png"
+      ],
+      "duet_source_916": "stills/916/B01_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B02",
+      "start_s": 3.73,
+      "end_s": 7.83,
+      "start_frame": 112,
+      "end_frame": 235,
+      "duration_s": 4.1,
+      "section": "section_1",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        1
+      ],
+      "lyric_text": "Cookie Monster sings,his voice a humble",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000004.png",
+      "source_frame_number": 4,
+      "source_frame_sharpness": 1537.8,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B02_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — head tilted, humble open-mouthed note, strumming. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, leaning in to listen, a paw cupped to his ear, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B02_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — head tilted, humble open-mouthed note, strumming. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, leaning in to listen, a paw cupped to his ear, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is head tilted, humble open-mouthed note, strumming; on the left Grover is leaning in to listen, a paw cupped to his ear. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B02_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B02_v1.png"
+      ],
+      "duet_source_916": "stills/916/B02_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B03",
+      "start_s": 7.83,
+      "end_s": 11.97,
+      "start_frame": 235,
+      "end_frame": 359,
+      "duration_s": 4.13,
+      "section": "section_1",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        2
+      ],
+      "lyric_text": "Five-note wonder,a simple song,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000011.png",
+      "source_frame_number": 11,
+      "source_frame_sharpness": 1579.7,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B03_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — plucking a simple five-note phrase, wool notes drifting up. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, nodding along, counting the notes on his fingers, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B03_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — plucking a simple five-note phrase, wool notes drifting up. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, nodding along, counting the notes on his fingers, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is plucking a simple five-note phrase, wool notes drifting up; on the right Grover is nodding along, counting the notes on his fingers. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.13s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B03_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B03_v1.png"
+      ],
+      "duet_source_916": "stills/916/B03_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B04",
+      "start_s": 11.97,
+      "end_s": 15.83,
+      "start_frame": 359,
+      "end_frame": 475,
+      "duration_s": 3.87,
+      "section": "section_1",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        3
+      ],
+      "lyric_text": "Where cookies and melodies belong.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000015.png",
+      "source_frame_number": 15,
+      "source_frame_sharpness": 1861.7,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B04_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — cozy and content over the banjo, a bowl of cookies at his feet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, happily holding up a cookie, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B04_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — cozy and content over the banjo, a bowl of cookies at his feet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, happily holding up a cookie, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is cozy and content over the banjo, a bowl of cookies at his feet; on the left Grover is happily holding up a cookie. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.87s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B04_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B04_v1.png"
+      ],
+      "duet_source_916": "stills/916/B04_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B05",
+      "start_s": 15.83,
+      "end_s": 19.93,
+      "start_frame": 475,
+      "end_frame": 598,
+      "duration_s": 4.1,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        4
+      ],
+      "lyric_text": "\"C is for cookie,\" that's good enough for me,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000016.png",
+      "source_frame_number": 16,
+      "source_frame_sharpness": 1607.9,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B05_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B05_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is taking a big happy bite of a cookie mid-strum, crumbs flying; on the right Grover is clapping with delight. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B05_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B05_v1.png"
+      ],
+      "duet_source_916": "stills/916/B05_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B06",
+      "start_s": 19.93,
+      "end_s": 24.03,
+      "start_frame": 598,
+      "end_frame": 721,
+      "duration_s": 4.1,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        5
+      ],
+      "lyric_text": "Five little notes in a cookie melody.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000022.png",
+      "source_frame_number": 22,
+      "source_frame_sharpness": 1535.8,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B06_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B06_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is strumming brightly, cookie-shaped felt notes floating; on the left Grover is bouncing to the tune. slow pan; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B06_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B06_v1.png"
+      ],
+      "duet_source_916": "stills/916/B06_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B07",
+      "start_s": 24.03,
+      "end_s": 28.13,
+      "start_frame": 721,
+      "end_frame": 844,
+      "duration_s": 4.1,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        6
+      ],
+      "lyric_text": "A monster's voice,deep and true,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000028.png",
+      "source_frame_number": 28,
+      "source_frame_sharpness": 1324.6,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B07_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B07_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is eyes closed, head tipped back, belting a deep soulful note; on the right Grover is swaying with eyes closed, harmonizing. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B07_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B07_v1.png"
+      ],
+      "duet_source_916": "stills/916/B07_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B08",
+      "start_s": 28.13,
+      "end_s": 31.77,
+      "start_frame": 844,
+      "end_frame": 953,
+      "duration_s": 3.63,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        7
+      ],
+      "lyric_text": "Singing the blues,'bout cookies too.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000030.png",
+      "source_frame_number": 30,
+      "source_frame_sharpness": 1633.0,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B08_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B08_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is bluesy slouch over the banjo, wistful and sweet; on the left Grover is snapping along in a bluesy sway. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.63s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B08_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B08_v1.png"
+      ],
+      "duet_source_916": "stills/916/B08_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B09",
+      "start_s": 31.77,
+      "end_s": 35.87,
+      "start_frame": 953,
+      "end_frame": 1076,
+      "duration_s": 4.1,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        8
+      ],
+      "lyric_text": "No ballads here,just crunchy treats,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000035.png",
+      "source_frame_number": 35,
+      "source_frame_sharpness": 1601.5,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B09_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — bouncing upbeat, crumbs flying, lively strum. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, munching a cookie, crumbs flying, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B09_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — bouncing upbeat, crumbs flying, lively strum. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, munching a cookie, crumbs flying, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is bouncing upbeat, crumbs flying, lively strum; on the right Grover is munching a cookie, crumbs flying. slow pan; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B09_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B09_v1.png"
+      ],
+      "duet_source_916": "stills/916/B09_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B10",
+      "start_s": 35.87,
+      "end_s": 40.0,
+      "start_frame": 1076,
+      "end_frame": 1200,
+      "duration_s": 4.13,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        9
+      ],
+      "lyric_text": "On the stage,he feels the beats.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000038.png",
+      "source_frame_number": 38,
+      "source_frame_sharpness": 1865.9,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B10_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — tapping a felt foot, leaning into the rhythm. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, stomping a felt foot to the beat, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B10_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — tapping a felt foot, leaning into the rhythm. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, stomping a felt foot to the beat, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is tapping a felt foot, leaning into the rhythm; on the left Grover is stomping a felt foot to the beat. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.13s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B10_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B10_v1.png"
+      ],
+      "duet_source_916": "stills/916/B10_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B11",
+      "start_s": 40.0,
+      "end_s": 44.07,
+      "start_frame": 1200,
+      "end_frame": 1322,
+      "duration_s": 4.07,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        10
+      ],
+      "lyric_text": "Grover might join,a duet they'd try,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000044.png",
+      "source_frame_number": 44,
+      "source_frame_sharpness": 1679.7,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B11_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — turning with a delighted grin to welcome his bandmate, strumming. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, stepping right up beside Cookie, thrilled to join the duet, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B11_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — turning with a delighted grin to welcome his bandmate, strumming. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, stepping right up beside Cookie, thrilled to join the duet, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is turning with a delighted grin to welcome his bandmate, strumming; on the right Grover is stepping right up beside Cookie, thrilled to join the duet. slow pan; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.07s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B11_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B11_v1.png"
+      ],
+      "duet_source_916": "stills/916/B11_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B12",
+      "start_s": 44.07,
+      "end_s": 47.7,
+      "start_frame": 1322,
+      "end_frame": 1431,
+      "duration_s": 3.63,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        11
+      ],
+      "lyric_text": "Sounds like a cookie-filled battle cry.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000045.png",
+      "source_frame_number": 45,
+      "source_frame_sharpness": 1703.3,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B12_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — banjo raised high, mouth wide in a playful whoop. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, throwing both lanky arms up in a playful cheer, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B12_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — banjo raised high, mouth wide in a playful whoop. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, throwing both lanky arms up in a playful cheer, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is banjo raised high, mouth wide in a playful whoop; on the left Grover is throwing both lanky arms up in a playful cheer. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.63s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B12_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B12_v1.png"
+      ],
+      "duet_source_916": "stills/916/B12_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B13",
+      "start_s": 47.7,
+      "end_s": 51.8,
+      "start_frame": 1431,
+      "end_frame": 1554,
+      "duration_s": 4.1,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        12
+      ],
+      "lyric_text": "Bill Sherman laughs,says it's quite a show,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000049.png",
+      "source_frame_number": 49,
+      "source_frame_sharpness": 2777.4,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B13_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — grinning wide, performing showman-style. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, laughing and gesturing grandly to the audience, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B13_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — grinning wide, performing showman-style. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, laughing and gesturing grandly to the audience, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is grinning wide, performing showman-style; on the right Grover is laughing and gesturing grandly to the audience. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B13_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B13_v1.png"
+      ],
+      "duet_source_916": "stills/916/B13_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B14",
+      "start_s": 51.8,
+      "end_s": 55.9,
+      "start_frame": 1554,
+      "end_frame": 1677,
+      "duration_s": 4.1,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        13
+      ],
+      "lyric_text": "With growls and gargles,the tunes they flow.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000053.png",
+      "source_frame_number": 53,
+      "source_frame_sharpness": 1829.0,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B14_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — a comical open-mouthed growl mid-strum. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, gargling a comic note, tongue out, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B14_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — a comical open-mouthed growl mid-strum. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, gargling a comic note, tongue out, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is a comical open-mouthed growl mid-strum; on the left Grover is gargling a comic note, tongue out. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B14_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B14_v1.png"
+      ],
+      "duet_source_916": "stills/916/B14_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B15",
+      "start_s": 55.9,
+      "end_s": 59.53,
+      "start_frame": 1677,
+      "end_frame": 1786,
+      "duration_s": 3.63,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        14
+      ],
+      "lyric_text": "\"Arrggh\" they sing,not always on key,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000059.png",
+      "source_frame_number": 59,
+      "source_frame_sharpness": 2385.1,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B15_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — an exaggerated off-key wail, banjo akimbo. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, wailing an off-key 'arrgh', wobbly googly eyes spinning, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B15_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — an exaggerated off-key wail, banjo akimbo. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, wailing an off-key 'arrgh', wobbly googly eyes spinning, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is an exaggerated off-key wail, banjo akimbo; on the right Grover is wailing an off-key 'arrgh', wobbly googly eyes spinning. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.63s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B15_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B15_v1.png"
+      ],
+      "duet_source_916": "stills/916/B15_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B16",
+      "start_s": 59.53,
+      "end_s": 63.63,
+      "start_frame": 1786,
+      "end_frame": 1909,
+      "duration_s": 4.1,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        15
+      ],
+      "lyric_text": "But in Cookie's world,it's perfect harmony.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000060.png",
+      "source_frame_number": 60,
+      "source_frame_sharpness": 2648.6,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B16_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — blissful, eyes closed, gentle harmonious strum. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, blissful, swaying in perfect harmony, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B16_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — blissful, eyes closed, gentle harmonious strum. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, blissful, swaying in perfect harmony, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is blissful, eyes closed, gentle harmonious strum; on the left Grover is blissful, swaying in perfect harmony. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B16_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B16_v1.png"
+      ],
+      "duet_source_916": "stills/916/B16_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B17",
+      "start_s": 63.63,
+      "end_s": 67.73,
+      "start_frame": 1909,
+      "end_frame": 2032,
+      "duration_s": 4.1,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        16
+      ],
+      "lyric_text": "\"C is for cookie,\" that's good enough for me,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000066.png",
+      "source_frame_number": 66,
+      "source_frame_sharpness": 1637.8,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B17_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B17_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is taking a big happy bite of a cookie mid-strum, crumbs flying; on the right Grover is clapping with delight. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B17_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B17_v1.png"
+      ],
+      "duet_source_916": "stills/916/B17_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B18",
+      "start_s": 67.73,
+      "end_s": 71.83,
+      "start_frame": 2032,
+      "end_frame": 2155,
+      "duration_s": 4.1,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        17
+      ],
+      "lyric_text": "Five little notes in a cookie melody.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000069.png",
+      "source_frame_number": 69,
+      "source_frame_sharpness": 1722.9,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B18_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B18_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is strumming brightly, cookie-shaped felt notes floating; on the left Grover is bouncing to the tune. slow pan; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B18_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B18_v1.png"
+      ],
+      "duet_source_916": "stills/916/B18_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B19",
+      "start_s": 71.83,
+      "end_s": 75.63,
+      "start_frame": 2155,
+      "end_frame": 2269,
+      "duration_s": 3.8,
+      "section": "section_2",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        18
+      ],
+      "lyric_text": "A monster's voice,deep and true,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000072.png",
+      "source_frame_number": 72,
+      "source_frame_sharpness": 1131.0,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B19_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B19_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is eyes closed, head tipped back, belting a deep soulful note; on the right Grover is swaying with eyes closed, harmonizing. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.8s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B19_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B19_v1.png"
+      ],
+      "duet_source_916": "stills/916/B19_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B20",
+      "start_s": 75.63,
+      "end_s": 79.8,
+      "start_frame": 2269,
+      "end_frame": 2394,
+      "duration_s": 4.17,
+      "section": "section_3",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        19
+      ],
+      "lyric_text": "Singing the blues,'bout cookies too.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000077.png",
+      "source_frame_number": 77,
+      "source_frame_sharpness": 1421.5,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B20_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B20_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is bluesy slouch over the banjo, wistful and sweet; on the left Grover is snapping along in a bluesy sway. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.17s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B20_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B20_v1.png"
+      ],
+      "duet_source_916": "stills/916/B20_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B21",
+      "start_s": 79.8,
+      "end_s": 83.9,
+      "start_frame": 2394,
+      "end_frame": 2517,
+      "duration_s": 4.1,
+      "section": "section_3",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        20
+      ],
+      "lyric_text": "So if you wander down Sesame Street,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000083.png",
+      "source_frame_number": 83,
+      "source_frame_sharpness": 1540.9,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B21_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — busking down the clay street, mid-strum. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, waving a big hello down the street, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B21_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — busking down the clay street, mid-strum. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, waving a big hello down the street, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is busking down the clay street, mid-strum; on the right Grover is waving a big hello down the street. slow pan; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B21_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B21_v1.png"
+      ],
+      "duet_source_916": "stills/916/B21_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B22",
+      "start_s": 83.9,
+      "end_s": 87.77,
+      "start_frame": 2517,
+      "end_frame": 2633,
+      "duration_s": 3.87,
+      "section": "section_3",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        21
+      ],
+      "lyric_text": "And a singing monster you happen to meet.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000084.png",
+      "source_frame_number": 84,
+      "source_frame_sharpness": 1746.3,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B22_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — greeting the camera warmly, banjo in paw. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, tipping an imaginary hat in friendly greeting, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B22_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — greeting the camera warmly, banjo in paw. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, tipping an imaginary hat in friendly greeting, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is greeting the camera warmly, banjo in paw; on the left Grover is tipping an imaginary hat in friendly greeting. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.87s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B22_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B22_v1.png"
+      ],
+      "duet_source_916": "stills/916/B22_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B23",
+      "start_s": 87.77,
+      "end_s": 91.43,
+      "start_frame": 2633,
+      "end_frame": 2743,
+      "duration_s": 3.67,
+      "section": "section_3",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        22
+      ],
+      "lyric_text": "Remember it's Cookie,with his charming range,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000091.png",
+      "source_frame_number": 91,
+      "source_frame_sharpness": 1510.5,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B23_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — a charming wink mid-note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, a charmed grin, a paw over his heart, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B23_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — a charming wink mid-note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, a charmed grin, a paw over his heart, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is a charming wink mid-note; on the right Grover is a charmed grin, a paw over his heart. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.67s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B23_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B23_v1.png"
+      ],
+      "duet_source_916": "stills/916/B23_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B24",
+      "start_s": 91.43,
+      "end_s": 95.5,
+      "start_frame": 2743,
+      "end_frame": 2865,
+      "duration_s": 4.07,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        23
+      ],
+      "lyric_text": "Five notes of joy,and none would change.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000095.png",
+      "source_frame_number": 95,
+      "source_frame_sharpness": 1459.1,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B24_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — a satisfied final strum, content. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, beaming as little felt notes float between them, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B24_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — a satisfied final strum, content. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, beaming as little felt notes float between them, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is a satisfied final strum, content; on the left Grover is beaming as little felt notes float between them. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.07s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B24_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B24_v1.png"
+      ],
+      "duet_source_916": "stills/916/B24_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B25",
+      "start_s": 95.5,
+      "end_s": 99.6,
+      "start_frame": 2865,
+      "end_frame": 2988,
+      "duration_s": 4.1,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        24
+      ],
+      "lyric_text": "\"C is for cookie,\" that's good enough for me,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000097.png",
+      "source_frame_number": 97,
+      "source_frame_sharpness": 1785.6,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B25_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B25_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is taking a big happy bite of a cookie mid-strum, crumbs flying; on the right Grover is clapping with delight. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B25_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B25_v1.png"
+      ],
+      "duet_source_916": "stills/916/B25_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B26",
+      "start_s": 99.6,
+      "end_s": 103.23,
+      "start_frame": 2988,
+      "end_frame": 3097,
+      "duration_s": 3.63,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        25
+      ],
+      "lyric_text": "Five little notes in a cookie melody.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000100.png",
+      "source_frame_number": 100,
+      "source_frame_sharpness": 1692.8,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B26_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B26_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is strumming brightly, cookie-shaped felt notes floating; on the left Grover is bouncing to the tune. slow pan; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.63s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B26_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B26_v1.png"
+      ],
+      "duet_source_916": "stills/916/B26_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B27",
+      "start_s": 103.23,
+      "end_s": 107.33,
+      "start_frame": 3097,
+      "end_frame": 3220,
+      "duration_s": 4.1,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        26
+      ],
+      "lyric_text": "A monster's voice,deep and true,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000107.png",
+      "source_frame_number": 107,
+      "source_frame_sharpness": 1135.9,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B27_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B27_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is eyes closed, head tipped back, belting a deep soulful note; on the right Grover is swaying with eyes closed, harmonizing. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B27_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B27_v1.png"
+      ],
+      "duet_source_916": "stills/916/B27_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B28",
+      "start_s": 107.33,
+      "end_s": 111.43,
+      "start_frame": 3220,
+      "end_frame": 3343,
+      "duration_s": 4.1,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        27
+      ],
+      "lyric_text": "Singing the blues,'bout cookies too.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000111.png",
+      "source_frame_number": 111,
+      "source_frame_sharpness": 1583.4,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B28_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B28_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is bluesy slouch over the banjo, wistful and sweet; on the left Grover is snapping along in a bluesy sway. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B28_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B28_v1.png"
+      ],
+      "duet_source_916": "stills/916/B28_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B29",
+      "start_s": 111.43,
+      "end_s": 115.53,
+      "start_frame": 3343,
+      "end_frame": 3466,
+      "duration_s": 4.1,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        28
+      ],
+      "lyric_text": "Bill Sherman laughs,says it's quite a show,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000115.png",
+      "source_frame_number": 115,
+      "source_frame_sharpness": 1760.1,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B29_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — grinning wide, performing showman-style. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, laughing and gesturing grandly to the audience, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B29_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — grinning wide, performing showman-style. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, laughing and gesturing grandly to the audience, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is grinning wide, performing showman-style; on the right Grover is laughing and gesturing grandly to the audience. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B29_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B29_v1.png"
+      ],
+      "duet_source_916": "stills/916/B29_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B30",
+      "start_s": 115.53,
+      "end_s": 119.2,
+      "start_frame": 3466,
+      "end_frame": 3576,
+      "duration_s": 3.67,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        29
+      ],
+      "lyric_text": "With growls and gargles,the tunes they flow.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000117.png",
+      "source_frame_number": 117,
+      "source_frame_sharpness": 1683.0,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B30_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — a comical open-mouthed growl mid-strum. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, gargling a comic note, tongue out, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B30_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — a comical open-mouthed growl mid-strum. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, gargling a comic note, tongue out, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is a comical open-mouthed growl mid-strum; on the left Grover is gargling a comic note, tongue out. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.67s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B30_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B30_v1.png"
+      ],
+      "duet_source_916": "stills/916/B30_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B31",
+      "start_s": 119.2,
+      "end_s": 123.27,
+      "start_frame": 3576,
+      "end_frame": 3698,
+      "duration_s": 4.07,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        30
+      ],
+      "lyric_text": "\"Arrggh\" they sing,not always on key,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000122.png",
+      "source_frame_number": 122,
+      "source_frame_sharpness": 1528.9,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B31_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — an exaggerated off-key wail, banjo akimbo. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, wailing an off-key 'arrgh', wobbly googly eyes spinning, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B31_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — an exaggerated off-key wail, banjo akimbo. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, wailing an off-key 'arrgh', wobbly googly eyes spinning, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is an exaggerated off-key wail, banjo akimbo; on the right Grover is wailing an off-key 'arrgh', wobbly googly eyes spinning. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.07s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B31_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B31_v1.png"
+      ],
+      "duet_source_916": "stills/916/B31_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B32",
+      "start_s": 123.27,
+      "end_s": 127.4,
+      "start_frame": 3698,
+      "end_frame": 3822,
+      "duration_s": 4.13,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        31
+      ],
+      "lyric_text": "But in Cookie's world,it's perfect harmony.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000124.png",
+      "source_frame_number": 124,
+      "source_frame_sharpness": 3014.7,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B32_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — blissful, eyes closed, gentle harmonious strum. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, blissful, swaying in perfect harmony, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B32_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — blissful, eyes closed, gentle harmonious strum. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, blissful, swaying in perfect harmony, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is blissful, eyes closed, gentle harmonious strum; on the left Grover is blissful, swaying in perfect harmony. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.13s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B32_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B32_v1.png"
+      ],
+      "duet_source_916": "stills/916/B32_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B33",
+      "start_s": 127.4,
+      "end_s": 131.47,
+      "start_frame": 3822,
+      "end_frame": 3944,
+      "duration_s": 4.07,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        32
+      ],
+      "lyric_text": "\"C is for cookie,\" that's good enough for me,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000131.png",
+      "source_frame_number": 131,
+      "source_frame_sharpness": 1835.7,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B33_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B33_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is taking a big happy bite of a cookie mid-strum, crumbs flying; on the right Grover is clapping with delight. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.07s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B33_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B33_v1.png"
+      ],
+      "duet_source_916": "stills/916/B33_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B34",
+      "start_s": 131.47,
+      "end_s": 135.13,
+      "start_frame": 3944,
+      "end_frame": 4054,
+      "duration_s": 3.67,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        33
+      ],
+      "lyric_text": "Five little notes in a cookie melody.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000134.png",
+      "source_frame_number": 134,
+      "source_frame_sharpness": 1830.8,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B34_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B34_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is strumming brightly, cookie-shaped felt notes floating; on the left Grover is bouncing to the tune. slow pan; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.67s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B34_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B34_v1.png"
+      ],
+      "duet_source_916": "stills/916/B34_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B35",
+      "start_s": 135.13,
+      "end_s": 139.2,
+      "start_frame": 4054,
+      "end_frame": 4176,
+      "duration_s": 4.07,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        34
+      ],
+      "lyric_text": "A monster's voice,deep and true,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000139.png",
+      "source_frame_number": 139,
+      "source_frame_sharpness": 2004.3,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B35_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B35_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is eyes closed, head tipped back, belting a deep soulful note; on the right Grover is swaying with eyes closed, harmonizing. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.07s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B35_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B35_v1.png"
+      ],
+      "duet_source_916": "stills/916/B35_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B36",
+      "start_s": 139.2,
+      "end_s": 143.3,
+      "start_frame": 4176,
+      "end_frame": 4299,
+      "duration_s": 4.1,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        35
+      ],
+      "lyric_text": "Singing the blues,'bout cookies too.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000140.png",
+      "source_frame_number": 140,
+      "source_frame_sharpness": 2109.7,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B36_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B36_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is bluesy slouch over the banjo, wistful and sweet; on the left Grover is snapping along in a bluesy sway. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B36_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B36_v1.png"
+      ],
+      "duet_source_916": "stills/916/B36_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B37",
+      "start_s": 143.3,
+      "end_s": 146.93,
+      "start_frame": 4299,
+      "end_frame": 4408,
+      "duration_s": 3.63,
+      "section": "section_4",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        36
+      ],
+      "lyric_text": "So if you wander down Sesame Street,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000146.png",
+      "source_frame_number": 146,
+      "source_frame_sharpness": 1007.6,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B37_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — busking down the clay street, mid-strum. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, waving a big hello down the street, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B37_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — busking down the clay street, mid-strum. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, waving a big hello down the street, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is busking down the clay street, mid-strum; on the right Grover is waving a big hello down the street. slow pan; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.63s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B37_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B37_v1.png"
+      ],
+      "duet_source_916": "stills/916/B37_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B38",
+      "start_s": 146.93,
+      "end_s": 151.03,
+      "start_frame": 4408,
+      "end_frame": 4531,
+      "duration_s": 4.1,
+      "section": "section_6",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        37
+      ],
+      "lyric_text": "And a singing monster you happen to meet.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000147.png",
+      "source_frame_number": 147,
+      "source_frame_sharpness": 1619.5,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B38_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — greeting the camera warmly, banjo in paw. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, tipping an imaginary hat in friendly greeting, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B38_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — greeting the camera warmly, banjo in paw. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, tipping an imaginary hat in friendly greeting, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is greeting the camera warmly, banjo in paw; on the left Grover is tipping an imaginary hat in friendly greeting. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B38_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B38_v1.png"
+      ],
+      "duet_source_916": "stills/916/B38_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B39",
+      "start_s": 151.03,
+      "end_s": 155.17,
+      "start_frame": 4531,
+      "end_frame": 4655,
+      "duration_s": 4.13,
+      "section": "section_6",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        38
+      ],
+      "lyric_text": "Remember it's Cookie,with his charming range,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000153.png",
+      "source_frame_number": 153,
+      "source_frame_sharpness": 1716.3,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B39_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — a charming wink mid-note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, a charmed grin, a paw over his heart, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B39_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — a charming wink mid-note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, a charmed grin, a paw over his heart, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is a charming wink mid-note; on the right Grover is a charmed grin, a paw over his heart. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.13s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B39_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B39_v1.png"
+      ],
+      "duet_source_916": "stills/916/B39_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B40",
+      "start_s": 155.17,
+      "end_s": 159.23,
+      "start_frame": 4655,
+      "end_frame": 4777,
+      "duration_s": 4.07,
+      "section": "section_6",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        39
+      ],
+      "lyric_text": "Five notes of joy,and none would change.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000159.png",
+      "source_frame_number": 159,
+      "source_frame_sharpness": 1865.1,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B40_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — a satisfied final strum, content. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, beaming as little felt notes float between them, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B40_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — a satisfied final strum, content. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, beaming as little felt notes float between them, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is a satisfied final strum, content; on the left Grover is beaming as little felt notes float between them. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.07s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B40_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B40_v1.png"
+      ],
+      "duet_source_916": "stills/916/B40_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B41",
+      "start_s": 159.23,
+      "end_s": 162.87,
+      "start_frame": 4777,
+      "end_frame": 4886,
+      "duration_s": 3.63,
+      "section": "section_6",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        40
+      ],
+      "lyric_text": "\"C is for cookie,\" that's good enough for me,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000160.png",
+      "source_frame_number": 160,
+      "source_frame_sharpness": 1899.4,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B41_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B41_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — taking a big happy bite of a cookie mid-strum, crumbs flying. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, clapping with delight, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is taking a big happy bite of a cookie mid-strum, crumbs flying; on the right Grover is clapping with delight. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.63s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B41_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B41_v1.png"
+      ],
+      "duet_source_916": "stills/916/B41_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B42",
+      "start_s": 162.87,
+      "end_s": 167.0,
+      "start_frame": 4886,
+      "end_frame": 5010,
+      "duration_s": 4.13,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        41
+      ],
+      "lyric_text": "Five little notes in a cookie melody.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000158.png",
+      "source_frame_number": 158,
+      "source_frame_sharpness": 1687.2,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B42_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B42_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — strumming brightly, cookie-shaped felt notes floating. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, bouncing to the tune, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_pan",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is strumming brightly, cookie-shaped felt notes floating; on the left Grover is bouncing to the tune. slow pan; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.13s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B42_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B42_v1.png"
+      ],
+      "duet_source_916": "stills/916/B42_v1.png",
+      "grover_side": "left"
+    },
+    {
+      "beat_id": "B43",
+      "start_s": 167.0,
+      "end_s": 171.1,
+      "start_frame": 5010,
+      "end_frame": 5133,
+      "duration_s": 4.1,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        42
+      ],
+      "lyric_text": "A monster's voice,deep and true,",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000157.png",
+      "source_frame_number": 157,
+      "source_frame_sharpness": 1705.3,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B43_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B43_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the left, still the only one playing — eyes closed, head tipped back, belting a deep soulful note. On the right, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, swaying with eyes closed, harmonizing, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "slow_push_in",
+      "video_prompt": "A felt-puppet duet: on the left Cookie is eyes closed, head tipped back, belting a deep soulful note; on the right Grover is swaying with eyes closed, harmonizing. slow push in; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 4.1s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B43_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B43_v1.png"
+      ],
+      "duet_source_916": "stills/916/B43_v1.png",
+      "grover_side": "right"
+    },
+    {
+      "beat_id": "B44",
+      "start_s": 171.1,
+      "end_s": 174.97,
+      "start_frame": 5133,
+      "end_frame": 5249,
+      "duration_s": 3.87,
+      "section": "section_7",
+      "kind": "vocal",
+      "subject": "duet",
+      "line_indices": [
+        43
+      ],
+      "lyric_text": "Singing the blues,'bout cookies too.",
+      "source_still": "C is for Cookie _ Sing-a-Long_frame_000156.png",
+      "source_frame_number": 156,
+      "source_frame_sharpness": 493.9,
+      "prompt_mode": "image-to-image (outpaint to 16:9 + add Grover)",
+      "image_prompt": "Image-to-image: take the vertical still (stills/916/B44_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting.",
+      "storyboard_prompts": [
+        "Image-to-image: take the vertical still (stills/916/B44_v1.png) of the blue felt Cookie monster and extend it into a wide 16:9 frame. Keep Cookie exactly as-is on the right, still the only one playing — bluesy slouch over the banjo, wistful and sweet. On the left, add Grover — a lanky teal-blue needle-felt monster with a long magenta nose and big wobbly googly eyes, same handmade claymation folk style as Cookie, snapping along in a bluesy sway, not playing. A two-puppet felt duet on one clay diorama set, consistent lighting."
+      ],
+      "camera": "static",
+      "video_prompt": "A felt-puppet duet: on the right Cookie is bluesy slouch over the banjo, wistful and sweet; on the left Grover is snapping along in a bluesy sway. static; gentle stop-motion motion only; only Cookie plays; land the key moment early and hold so it cuts cleanly to the beat; duration 3.87s. Style: tactile needle-felt / claymation stop-motion folk-art duet, two felt puppets sharing one warm clay diorama set, handmade wool textures, ochre and cobalt palette, soft cozy storybook light, shallow depth of field, wide 16:9, no text, no captions, no lettering, no watermark.",
+      "clip_tier": 6,
+      "chosen_still": "stills/B44_v1.png",
+      "raw_clip": null,
+      "video_file": null,
+      "storyboard_candidates": [
+        "stills/B44_v1.png"
+      ],
+      "duet_source_916": "stills/916/B44_v1.png",
+      "grover_side": "left"
+    }
+  ]
+}

@@ -44,3 +44,26 @@ rules; the credits block says so).
   (SKILL.md provenance rules). The style prompt does not exempt the slot.
 - These are STILL styles. i2v prompts inherit the look from the seed frame —
   do not restate the style in motion prompts.
+
+## THE PROMPT LAW (generic subjects — lab equipment, apparatus, non-famous people)
+
+A vague noun phrase returns thirty different images; a specified one
+returns variations of the same image. For any generic subject, the prompt
+NAMES ALL EIGHT: the object (count + what it is), its size, the geometry
+(camera angle, tilt, fill-of-frame), the content distribution (where the
+detail concentrates and where it is empty — this is usually the physics),
+the material, the light source, the setting/ground, and the EXCLUSIONS
+(no hands, no text, no labels, no reflections, no people).
+
+Rationale: generation is seconds; hunting archives is minutes-to-hours.
+A specified prompt makes generation the reliable FIRST pass — candidates
+converge, the human picks, archives are for when generation is wrong in
+kind, not in detail. (Fixture: vox-wave-function B09 — 'dark laboratory
+detector plate' returned 30 different objects; the eight-part prompt
+returned the same plate six ways, pick-and-ship.)
+
+Selection criteria when judging candidates: content correctness first
+(the distribution IS the argument), photographic realism second (straight
+lines stay straight — wavering bands/edges are the AI tell), compositing
+fitness third (calm regions for assembly-plane chips, survives the
+launder).

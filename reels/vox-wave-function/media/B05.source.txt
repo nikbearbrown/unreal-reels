@@ -1,0 +1,6 @@
+Born, M. (1926). Zur Quantenmechanik der Stoßvorgänge (Vorläufige Mitteilung).
+Zeitschrift für Physik 37, 863–867. Page 865, footnote 1 ('Anmerkung bei der Korrektur').
+Facsimile: public scan (US public domain since 2022; published 1926).
+Open equivalent: https://babel.hathitrust.org/cgi/pt?id=uc1.b3295926 (v.37 1926, Univ. of California copy)
+Crop: bottom-anchored 16:9 (footnote is the payload — deliberate override of the title-survives rule).
+Original symbol is Φnm (Born's transition quantity); narration's 'psi squared' is the chapter's modern gloss (see FACTCHECK).

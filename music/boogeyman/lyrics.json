@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "fps": 30,
+  "lines": [
+    {
+      "index": 0,
+      "text": "In the shadowy corners,where the cobwebs weave,",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 6,
+      "endFrame": 200
+    },
+    {
+      "index": 1,
+      "text": "Lives the Boogeyman,so they believe.",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 203,
+      "endFrame": 393
+    },
+    {
+      "index": 2,
+      "text": "Under beds,in closets,just out of sight,",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 396,
+      "endFrame": 593
+    },
+    {
+      "index": 3,
+      "text": "He lurks in the darkness,keeping away the light.",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 596,
+      "endFrame": 788
+    },
+    {
+      "index": 4,
+      "text": "No face to see,he changes his look,",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 791,
+      "endFrame": 988
+    },
+    {
+      "index": 5,
+      "text": "From a shadowy figure to the monster in your book.",
+      "section": "section_1",
+      "tag": null,
+      "startFrame": 991,
+      "endFrame": 1186
+    },
+    {
+      "index": 6,
+      "text": "In every home,he's a different shade,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1189,
+      "endFrame": 1384
+    },
+    {
+      "index": 7,
+      "text": "Crafted by the fears that night has made.",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1387,
+      "endFrame": 1582
+    },
+    {
+      "index": 8,
+      "text": "Boogeyman,Boogeyman,hidden so grand,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1585,
+      "endFrame": 1780
+    },
+    {
+      "index": 9,
+      "text": "Teaching lessons across every land.",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1783,
+      "endFrame": 1977
+    },
+    {
+      "index": 10,
+      "text": "Eat your veggies,say your prayers,",
+      "section": "section_2",
+      "tag": null,
+      "startFrame": 1980,
+      "endFrame": 2173
+    },
+    {
+      "index": 11,
+      "text": "Or the Boogeyman will catch you unawares.",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2176,
+      "endFrame": 2356
+    },
+    {
+      "index": 12,
+      "text": "Some nights he's tall,some days he's small,",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2359,
+      "endFrame": 2553
+    },
+    {
+      "index": 13,
+      "text": "Sometimes he's not even scary at all.",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2556,
+      "endFrame": 2755
+    },
+    {
+      "index": 14,
+      "text": "But one thing's consistent,his mysterious plan,",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2758,
+      "endFrame": 2951
+    },
+    {
+      "index": 15,
+      "text": "To sneak into dreams,as only a Boogeyman can.",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 2954,
+      "endFrame": 3146
+    },
+    {
+      "index": 16,
+      "text": "He's there to remind,with a nudge or a fright,",
+      "section": "section_3",
+      "tag": null,
+      "startFrame": 3149,
+      "endFrame": 3337
+    },
+    {
+      "index": 17,
+      "text": "To brush your teeth and say goodnight.",
+      "section": "section_4",
+      "tag": null,
+      "startFrame": 3340,
+      "endFrame": 3532
+    },
+    {
+      "index": 18,
+      "text": "Parents whisper,children heed,",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3535,
+      "endFrame": 3731
+    },
+    {
+      "index": 19,
+      "text": "The Boogeyman's watching,so do good deeds.",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3734,
+      "endFrame": 3927
+    },
+    {
+      "index": 20,
+      "text": "Boogeyman,Boogeyman,hidden so grand,",
+      "section": "section_5",
+      "tag": null,
+      "startFrame": 3930,
+      "endFrame": 4116
+    },
+    {
+      "index": 21,
+      "text": "Teaching lessons across every land.",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4119,
+      "endFrame": 4310
+    },
+    {
+      "index": 22,
+      "text": "Clean your room,don't you whine,",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4313,
+      "endFrame": 4514
+    },
+    {
+      "index": 23,
+      "text": "Or the Boogeyman will come at bedtime",
+      "section": "section_6",
+      "tag": null,
+      "startFrame": 4517,
+      "endFrame": 4714
+    }
+  ],
+  "density": {
+    "words_per_second": 0.95,
+    "density_class": "sparse",
+    "avg_line_length": 6.2,
+    "line_count": 24,
+    "word_count": 150
+  },
+  "title": "Boogeyman"
+}
